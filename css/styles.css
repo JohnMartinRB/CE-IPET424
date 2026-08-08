@@ -1,0 +1,26 @@
+
+:root {
+    --blanco: #fff;
+    --negro: #000;
+
+    --azul: #010f8f;
+    --azul_oscuro: #000745;
+    --celeste: #0088ff;
+    --celeste_claro: #75aee0;
+    --lila: #9f93eb;
+    --cian: #00ffff;
+
+}
+
+
+body {
+    /* background-image: linear-gradient(to bottom, var(--blanco) 0%, var(--celeste) 100%); */
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.logo {
+    height: 180px;
+}
