@@ -9,7 +9,6 @@
     --celeste_claro: #75aee0;
     --lila: #9f93eb;
     --cian: #00ffff;
-
 }
 
 
@@ -23,4 +22,19 @@ body {
 
 .logo {
     height: 180px;
+}
+
+/* TELÉFONOS GRANDES O TABLET */
+@media (min-width: 768px) {
+    body {
+        margin: 0 auto;
+    }
+}
+
+/* COMPUTADORAS DE ESCRITORIO */
+@media (min-width: 1024px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
