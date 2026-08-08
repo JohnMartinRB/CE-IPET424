@@ -27,14 +27,13 @@ body {
 /* TELÉFONOS GRANDES O TABLET */
 @media (min-width: 768px) {
     body {
-        margin: 0 auto;
+        margin: 0;
     }
 }
 
 /* COMPUTADORAS DE ESCRITORIO */
 @media (min-width: 1024px) {
     body {
-        max-width: 1200px;
-        margin: 0 auto;
+        margin: 0;
     }
 }
