@@ -1,6 +1,8 @@
 
 :root {
     --blanco: #fff;
+    --gris-claro: #ddd;
+    --oscuro: #1a1a1a;
     --negro: #000;
 
     --azul: #010f8f;
@@ -18,7 +20,18 @@ body {
     font-size: 16px;
     font-weight: normal;
     margin: 0;
+
+    background-color: var(--gris-claro);
+    color: var(--oscuro);
+    transition: background 0.2s ease;
 }
+
+/* MODO OSCURO */
+body.modo-oscuro {
+    background-color: var(--oscuro);
+    color: var(--cian);
+}
+
 
 .logo {
     height: 180px;
