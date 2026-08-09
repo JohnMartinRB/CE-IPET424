@@ -13,6 +13,9 @@
     --cian: #00ffff;
 }
 
+* {
+    padding: 0;
+}
 
 body {
     font-family: "Nunito Sans";
@@ -32,8 +35,33 @@ body.modo-oscuro {
 }
 
 
-.logo {
-    height: 180px;
+.logo-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo-header-img {
+    height: 70px;
+    width: auto;
+}
+
+
+h1 {
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.menu {
+    display: inline;
+    justify-content: space-between;
+}
+
+.menu-item {
+    list-style: none;
+    display: inline;
 }
 
 /* TELÉFONOS GRANDES O TABLET */
