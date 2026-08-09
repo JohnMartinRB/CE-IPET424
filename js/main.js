@@ -15,9 +15,9 @@ botonmodo.addEventListener('click', function() {
     // Comprobamos: ¿El body tiene ahora la clase 'dark-mode'?
     if (cuerpo.classList.contains('modo-oscuro')) {
     // Si la tiene, cambiamos el texto a "Modo Claro" con un sol
-    boton.textContent = "Modo Claro ☀️";
+    botonmodo.textContent = "Modo Claro ☀️";
     } else {
         // Si NO la tiene, volvemos al texto original
-        boton.textContent = "Modo Oscuro 🌙";
+        botonmodo.textContent = "Modo Oscuro 🌙";
     }
 });
