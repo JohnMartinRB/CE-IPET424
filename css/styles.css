@@ -1,7 +1,7 @@
 
 :root {
     --blanco: #fff;
-    --gris-claro: #ddd;
+    --claro: #ddd;
     --oscuro: #1a1a1a;
     --negro: #000;
 
@@ -17,52 +17,64 @@
     padding: 0;
 }
 
+button {
+    border: none;
+}
+a {
+    text-decoration: none;
+    color: var(--oscuro);
+}
+
+a:hover {
+    color: var(--azul);
+}
+
+.boton {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #000745;
+    background-color: var(--blanco);
+}
+.boton:hover {
+    cursor: pointer;
+    background-color: var(--celeste_claro);
+}
+
+
 body {
     font-family: "Nunito Sans";
     font-size: 16px;
     font-weight: normal;
     margin: 0;
 
-    background-color: var(--gris-claro);
+    background-color: var(--claro);
     color: var(--oscuro);
     transition: background 0.2s ease;
 }
 
 /* MODO OSCURO */
 body.modo-oscuro {
-    background-color: var(--oscuro);
+    background-color: var(--azul_oscuro);
     color: var(--cian);
 }
 
-
-.logo-contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
+body.modo-oscuro a {
+    color: var(--cian);
 }
 
-.logo-header-img {
-    height: 70px;
-    width: auto;
+body.modo-oscuro a:hover {
+    color: var(--blanco);
+}
+body.modo-oscuro .boton {
+    color: var(--azul);
+    background-color: var(--celeste);
+}
+body.modo-oscuro .boton:hover {
+    color: var(--azul);
+    background-color: var(--cian);
 }
 
 
-h1 {
-    text-align: center;
-    flex-grow: 1;
-    margin: 0;
-}
-
-.menu {
-    display: inline;
-    justify-content: space-between;
-}
-
-.menu-item {
-    list-style: none;
-    display: inline;
-}
 
 /* TELÉFONOS GRANDES O TABLET */
 @media (min-width: 768px) {
@@ -73,7 +85,32 @@ h1 {
 
 /* COMPUTADORAS DE ESCRITORIO */
 @media (min-width: 1024px) {
-    body {
+    .logo-contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .logo-header-img {
+        height: 70px;
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+        flex-grow: 1;
         margin: 0;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .menu-item {
+        list-style: none;
     }
 }
