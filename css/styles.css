@@ -1,4 +1,5 @@
 
+/* PALETA DE COLORES */
 :root {
     --blanco: #fff;
     --claro: #ddd;
@@ -13,13 +14,15 @@
     --cian: #00ffff;
 }
 
+/* REINICIO DE ESTILOS */
 * {
     padding: 0;
 }
-
 button {
     border: none;
 }
+
+/* ESTILOS GENERALES */
 a {
     text-decoration: none;
     color: var(--oscuro);
@@ -40,10 +43,28 @@ a:hover {
     background-color: var(--celeste_claro);
 }
 
+.logo-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
 
+.logo-header-img {
+    height: 20px;
+    width: auto;
+}
+
+h1 {
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;
+}
+
+/* COLORES Y TEXTO DEL BODY */
 body {
     font-family: "Nunito Sans";
-    font-size: 16px;
+    font-size: 8px;
     font-weight: normal;
     margin: 0;
 
@@ -85,6 +106,11 @@ body.modo-oscuro .boton:hover {
 
 /* COMPUTADORAS DE ESCRITORIO */
 @media (min-width: 1024px) {
+
+    body {
+        font-size: 16px;
+    }
+
     .logo-contenedor {
         display: flex;
         align-items: center;

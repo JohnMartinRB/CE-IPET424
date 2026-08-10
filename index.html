@@ -57,6 +57,183 @@
         </nav>
     </header>
 
+    <main>
+        <!-- SECCIÓN: INICIO / INFORMATIVA -->
+        <section id="inicio" class="hero-section">
+            <h1>Portal del Estudiante</h1>
+            <p>Espacio oficial de consulta, recursos y trámites del Centro de Estudiantes del IPET N° 424.</p>
+        </section>
+
+        <!-- SECCIÓN 1: TRÁMITES Y DESCARGAS -->
+        <section id="tramites" class="seccion-bloque">
+            <h2>Trámites y Descargas Frecuentes</h2>
+            <p>Descargá los formularios oficiales. Imprimilos y entregalos en preceptoría o dirección según corresponda.</p>
+
+            <div class="grid-tarjetas">
+                <article class="tarjeta-descarga">
+                    <h3>Ficha Médica</h3>
+                    <p>Requisito obligatorio para educación física y actividades escolares.</p>
+                    <a href="assets/docs/CERTIFICADO UNICO DE SALUD (C.U.S.) 2026.pdf" download class="boton-descarga">Descargar PDF</a>
+                </article>
+
+                <article class="tarjeta-descarga">
+                    <h3>Autorización de Uso de Imagen, Voz y Video</h3>
+                    <p>Permiso firmado por tutor/a para salidas y eventos.</p>
+                    <a href="assets/docs/AUTORIZACION DE IMAGEN, VOZ Y VIDEO 2026.pdf" download class="boton-descarga">Descargar PDF</a>
+                </article>
+
+                <article class="tarjeta-descarga">
+                    <h3>Ficha de Datos Familiares</h3>
+                    <p>Planilla con información del grupo familiar del alumno.</p>
+                    <a href="assets/docs/FICHA DE DATOS FAMILIARES.pdf" download class="boton-descarga">Descargar PDF</a>
+                </article>
+
+                <article class="tarjeta-descarga">
+                    <h3>Informe de Salud Anual (I.S.A.)</h3>
+                    <p>Planilla completada por las familias para dar a conocer detalles de salud del alumno.</p>
+                    <a href="assets/docs/INFORME DE SALUD ANUAL (I.S.A.).pdf" download class="boton-descarga">Descargar PDF</a>
+                </article>
+
+                <article class="tarjeta-descarga">
+                    <h3>Solicitud de Matrícula 2026</h3>
+                    <p>Solicitud para anotarse al colegio.</p>
+                    <a href="assets/docs/SOLICITUD DE MATRICULA 2026.pdf" download class="boton-descarga">Descargar PDF</a>
+                </article>
+            </div>
+
+            <div class="info-adicional">
+                <h3>Boleto Educativo Gratuito (BEG)</h3>
+                <ol>
+                    <li>Ingresá a Ciudadano Digital (CiDi) con tu cuenta o la de tu tutor.</li>
+                    <li>Buscá el servicio "Boleto Educativo Cordobés".</li>
+                    <li>Completa el formulario y selecciona tu empresa de transporte habitual.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: REGLAMENTO Y HORARIOS -->
+        <section id="reglamento" class="seccion-bloque">
+            <h2>Reglamento Interno y Horarios</h2>
+
+            <!-- Grilla de Timbres -->
+            <div class="tabla-contenedor">
+                <h3>Estructura Horaria de Turnos</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Módulo / Recreo</th>
+                            <th>Entrada</th>
+                            <th>Salida</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1° Módulo</td>
+                            <td>07:30</td>
+                            <td>08:50</td>
+                        </tr>
+                        <tr>
+                            <td>Recreo</td>
+                            <td>08:50</td>
+                            <td>09:00</td>
+                        </tr>
+                        <tr>
+                            <td>2° Módulo</td>
+                            <td>09:00</td>
+                            <td>10:20</td>
+                        </tr>
+                        <tr>
+                            <td>Recreo Largo</td>
+                            <td>10:20</td>
+                            <td>10:35</td>
+                        </tr>
+                        <tr>
+                            <td>3° Módulo</td>
+                            <td>10:35</td>
+                            <td>12:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Puntos clave del Acuerdo de Convivencia -->
+            <div class="acuerdos-convivencia">
+                <h3>Puntos clave del AEC</h3>
+                <details>
+                    <summary>Régimen de Inasistencias y Pases</summary>
+                    <p>Se requiere un mínimo del 85% de asistencia obligatoria para mantener la regularidad en cada espacio curricular.</p>
+                </details>
+                <details>
+                    <summary>Condiciones de Evaluación y Promoción</summary>
+                    <p>Para acreditar la materia se requiere una nota mínima de 6 (seis) en cada cuatrimestre y aprobar los coloquios o instancias finales según corresponda.</p>
+                </details>
+                <article class="tarjeta-descarga">
+                    <h3>AECs completos</h3>
+                    <p>Leelos e informate.</p>
+                    <a href="assets/docs/AECs.pdf" download class="boton-descarga">Descargar PDF</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: CALCULADORA DE PROMEDIOS (WIDGET JS) -->
+        <section id="herramientas" class="seccion-bloque">
+            <h2>Herramientas Estudiantiles</h2>
+            <div class="calculadora-box">
+                <h3>Calculadora Rápida de Promedios</h3>
+                <p>Ingresá tus notas para calcular el promedio del trimestre o cuatrimestre:</p>
+
+                <form id="form-promedio" onsubmit="event.preventDefault();">
+                    <div class="campo-nota">
+                        <label for="nota1">Nota 1:</label>
+                        <input type="number" id="nota1" min="1" max="10" step="0.5" placeholder="Ej: 7">
+                    </div>
+                    <div class="campo-nota">
+                        <label for="nota2">Nota 2:</label>
+                        <input type="number" id="nota2" min="1" max="10" step="0.5" placeholder="Ej: 8">
+                    </div>
+                    <div class="campo-nota">
+                        <label for="nota3">Nota 3:</label>
+                        <input type="number" id="nota3" min="1" max="10" step="0.5" placeholder="Ej: 6">
+                    </div>
+                    <button type="button" id="btn-calcular">Calcular Promedio</button>
+                </form>
+
+                <div id="resultado-promedio" class="resultado-box">
+                <!-- JS insertará el resultado acá -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: INFORMACIÓN DEL CENTRO -->
+        <section id="centro" class="seccion-bloque">
+            <h2>El Centro de Estudiantes</h2>
+            <p>Somos la comisión electa por los estudiantes para representar tus derechos, organizar jornadas y mejorar nuestro espacio escolar.</p>
+
+            <article class="tarjeta-descarga">
+                <h3>Conocé nuestro estatuto!</h3>
+                <p>Es el documento oficial que rige el funcionamiento del Centro de Estudiantes.</p>
+                <a href="assets/docs/ESTATUTO DEL C.E. IPET  N° 424 (31-07-2022).pdf" download class="boton-descarga">Descargar PDF</a>
+            </article>
+            
+            <div class="plano-escuela-contenedor">
+                <h3>Mapa / Ubicación de las Instalaciones</h3>
+                <img src="assets/img/plano-escuela.png" alt="Plano de talleres y aulas IPET 424" class="img-responsive">
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: BUZÓN Y CONTACTO -->
+        <section id="contacto" class="seccion-bloque">
+            <h2>Buzón de Sugerencias y Reclamos</h2>
+            <p>Tu opinión es anónima (si así lo preferís) y nos sirve para llevar propuestas a la dirección.</p>
+
+            <!-- Integración sencilla con Google Forms (remplazar URL) -->
+            <div class="iframe-contenedor">
+                <iframe src="https://forms.gle/KFcTqgLzoBkV67tN6" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+            </div>
+        </section>
+
+    </main>
+
     <!-- PIE DE PÁGINA -->
     <footer class="footer">
         <p>Instagram Oficial:
@@ -68,7 +245,7 @@
         <p>Ubicación:
             <a href="https://maps.app.goo.gl/sc45qfdvuMjJbHG78" target="_blank" rel="noopener">20 de Junio 201, B° Porvenir</a>
         </p>
-        <p>&copy; 2026 Centro de Estudiantes IPET N° 424. Sitio estático desarrollado por y para estudiantes. Todos los derechos reservados.</p>
+        <p>&copy; 2026-2027 Centro de Estudiantes IPET N° 424. Sitio estático desarrollado por y para estudiantes. Todos los derechos reservados.</p>
         
     </footer>
 
