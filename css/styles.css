@@ -6,6 +6,21 @@
     --oscuro: #1a1a1a;
     --negro: #000;
 
+    --azul1: #000423;
+    --azul2: #000745;
+    --azul3: #010F8F;
+    --azul4: #012EAB;
+
+    --celeste1: #014CC7;
+    --celeste2: #0088FF;
+    --celeste3: #00C4FF;
+    --celeste4: #50C9F5;
+
+    --lila1: #78AEF0;
+    --lila2: #9f93eb;
+    --cian: #00ffff;
+
+
     --azul: #010f8f;
     --azul_oscuro: #000745;
     --celeste: #0088ff;
@@ -40,7 +55,7 @@ a:hover {
 }
 .boton:hover {
     cursor: pointer;
-    background-color: var(--celeste_claro);
+    background-color: var(-celeste3);
 }
 
 .logo-contenedor {
@@ -75,7 +90,7 @@ body {
 
 /* MODO OSCURO */
 body.modo-oscuro {
-    background-color: var(--azul_oscuro);
+    background-color: var(--azul1);
     color: var(--cian);
 }
 
@@ -88,7 +103,7 @@ body.modo-oscuro a:hover {
 }
 body.modo-oscuro .boton {
     color: var(--azul);
-    background-color: var(--celeste);
+    background-color: var(--celeste2);
 }
 body.modo-oscuro .boton:hover {
     color: var(--azul);
