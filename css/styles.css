@@ -36,68 +36,70 @@ body {
     font-size: 16px;
     font-weight: normal;
     margin: 0;
-
     background-color: var(--claro1);
     color: var(--azul1);
     transition: background 0.2s ease;
 }
 
 /* ESTILOS GENERALES */
-a {
-    text-decoration: none;
-    color: var(--oscuro);
-}
-a:hover {
-    color: var(--azul);
-}
-.boton {
-    padding: 5px;
-    border-radius: 10px;
-    border: 1px solid #000745;
-    background-color: var(--blanco);
-}
-.boton:hover {
-    cursor: pointer;
-    background-color: var(--celeste3);
-}
-.logo-contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-}
-.logo-header-img {
-    height: 60px;
-    width: auto;
-}
-h1 {
-    text-align: center;
-    flex-grow: 1;
-    margin: 0;
-}
+    a {
+        text-decoration: none;
+        color: var(--oscuro);
+    }
+    a:hover {
+        color: var(--azul);
+    }
+    .boton {
+        padding: 5px;
+        border-radius: 10px;
+        border: 1px solid #000745;
+        background-color: var(--blanco);
+    }
+    .boton:hover {
+        cursor: pointer;
+        background-color: var(--celeste3);
+    }
+    .logo-contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .logo-header-img {
+        height: 60px;
+        width: auto;
+    }
+    h1 {
+        text-align: center;
+        flex-grow: 1;
+        margin: 0;
+    }
 
 
 /* MODO OSCURO */
-body.modo-oscuro {
-    background-color: var(--azul1);
-    color: var(--celeste5);
-}
-body.modo-oscuro a {
-    color: var(--celeste5);
-}
-body.modo-oscuro a:hover {
-    color: var(--blanco);
-}
-body.modo-oscuro .boton {
-    color: var(--azul);
-    background-color: var(--celeste2);
-}
-body.modo-oscuro .boton:hover {
-    color: var(--azul);
-    background-color: var(--celeste4);
-}
+    body.modo-oscuro {
+        background-color: var(--azul1);
+        color: var(--celeste5);
+    }
+    body.modo-oscuro .contenido {
+        background-color: var(--azul2);
+    }
+    body.modo-oscuro a {
+        color: var(--celeste5);
+    }
+    body.modo-oscuro a:hover {
+        color: var(--blanco);
+    }
+    body.modo-oscuro .boton {
+        color: var(--azul);
+        background-color: var(--celeste2);
+    }
+    body.modo-oscuro .boton:hover {
+        color: var(--azul);
+        background-color: var(--celeste4);
+    }
 
-/* TELÉFONOS GRANDES O TABLET */
+/* TELÉFONOS GRANDES O TABLETS */
 @media (min-width: 768px) {
     body {
         margin: 0;
@@ -108,10 +110,11 @@ body.modo-oscuro .boton:hover {
 @media (min-width: 1024px) {
     body {
         font-size: 16px;
-        max-width: 1000px;
+        max-width: 880px;
         margin: 0 auto;
     }
     .contenido {
+        padding: 30px;
         background-color: var(--claro2);
     }
     .logo-contenedor {
