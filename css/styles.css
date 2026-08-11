@@ -2,7 +2,7 @@
 /* PALETA DE COLORES */
 :root {
     --blanco: #fff;
-    --claro: #ddd;
+    --claro: #eee;
     --oscuro: #1a1a1a;
     --negro: #000;
 
@@ -15,6 +15,9 @@
     --celeste2: #0088FF;
     --celeste3: #00C4FF;
     --celeste4: #50C9F5;
+    --celeste5: #7CD7F8;
+    --celeste6: #A8E4FA;
+    --celeste7: #D4F2FD;
 
     --lila1: #78AEF0;
     --lila2: #9f93eb;
@@ -55,7 +58,7 @@ a:hover {
 }
 .boton:hover {
     cursor: pointer;
-    background-color: var(-celeste3);
+    background-color: var(--celeste3);
 }
 
 .logo-contenedor {
@@ -91,11 +94,11 @@ body {
 /* MODO OSCURO */
 body.modo-oscuro {
     background-color: var(--azul1);
-    color: var(--cian);
+    color: var(--celeste5);
 }
 
 body.modo-oscuro a {
-    color: var(--cian);
+    color: var(--celeste5);
 }
 
 body.modo-oscuro a:hover {
@@ -107,7 +110,7 @@ body.modo-oscuro .boton {
 }
 body.modo-oscuro .boton:hover {
     color: var(--azul);
-    background-color: var(--cian);
+    background-color: var(--celeste4);
 }
 
 
