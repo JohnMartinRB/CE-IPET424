@@ -57,17 +57,28 @@ body {
     }
     .boton:hover {
         cursor: pointer;
-        background-color: var(--celeste3);
+        background-color: var(--celeste5);
     }
-    .logo-contenedor {
+    input {
+        padding: 5px;
+        border-radius: 10px;
+        border: 1px solid #000745;
+        background-color: var(--blanco);
+    }
+    .logo-header-contenedor {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 10px 20px;
     }
-    .logo-header-img {
+    .logo-header {
         height: 60px;
         width: auto;
+    }
+    .logo-footer {
+        height: 20px;
+        width: auto;
+        margin: 0 auto;
     }
     h1 {
         text-align: center;
@@ -102,7 +113,7 @@ body {
     }
     body.modo-oscuro .boton:hover {
         color: var(--azul);
-        background-color: var(--celeste4);
+        background-color: var(--azul4);
     }
 
 /* TELÉFONOS GRANDES O TABLETS */
@@ -129,9 +140,14 @@ body {
         justify-content: space-between;
         padding: 10px 20px;
     }
-    .logo-header-img {
+    .logo-header {
         height: 70px;
         width: auto;
+    }
+    .logo-footer {
+        height: 40px;
+        width: auto;
+        margin: 0 auto;
     }
     h1 {
         text-align: center;
