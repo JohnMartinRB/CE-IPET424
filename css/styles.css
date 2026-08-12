@@ -74,6 +74,12 @@ body {
         flex-grow: 1;
         margin: 0;
     }
+    .contenido {
+        background-color: var(--claro2);
+    }
+    #copyright {
+        text-align: center;
+    }
 
 
 /* MODO OSCURO */
@@ -110,12 +116,12 @@ body {
 @media (min-width: 1024px) {
     body {
         font-size: 16px;
-        max-width: 880px;
-        margin: 0 auto;
     }
     .contenido {
         padding: 30px;
-        background-color: var(--claro2);
+        margin: 20px auto;
+        max-width: 770px;
+        border-radius: 40px;
     }
     .logo-contenedor {
         display: flex;
