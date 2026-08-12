@@ -69,13 +69,14 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-bottom: 20px;
+        padding: 10px 20px;
     }
     .logo-header {
         height: 60px;
         width: auto;
     }
     .logo-footer {
+        display: block;
         height: 20px;
         width: auto;
         margin: 0 auto;
@@ -87,9 +88,14 @@ body {
     }
     .contenido {
         background-color: var(--claro2);
+        padding: 10px;
     }
     #copyright {
         text-align: center;
+    }
+    #boton-modo {
+        display: block;
+        margin: 0 auto;
     }
 
 
@@ -138,7 +144,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-bottom: 0;
+        padding: 0;
     }
     .logo-header {
         height: 70px;
