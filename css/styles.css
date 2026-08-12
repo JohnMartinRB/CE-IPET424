@@ -69,7 +69,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 20px;
+        padding-bottom: 20px;
     }
     .logo-header {
         height: 60px;
@@ -134,11 +134,11 @@ body {
         max-width: 770px;
         border-radius: 40px;
     }
-    .logo-contenedor {
+    .logo-header-contenedor {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 20px;
+        padding-bottom: 0;
     }
     .logo-header {
         height: 70px;
@@ -162,5 +162,8 @@ body {
     }
     .menu-item {
         list-style: none;
+    }
+    #boton-menu {
+        display: none;
     }
 }
