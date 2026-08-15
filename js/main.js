@@ -1,5 +1,9 @@
 
 
+/* ==========================================
+    CARGAR COMPONENTES HTML
+   ========================================== */
+
 // Función para cargar HTML dinámicamente
 function cargarComponente(idContenedor, archivoHTML) {
     fetch(archivoHTML)
@@ -16,21 +20,43 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// MODO OSCURO (Delegación de eventos para componentes dinámicos)
+/* ==========================================
+    MODO OSCURO
+   ========================================== */
+
+// 1. AL CARGAR LA PÁGINA: Comprobar si ya estaba guardado el modo oscuro
+const modoOscuroGuardado = localStorage.getItem('modoOscuro');
+if (modoOscuroGuardado === 'true') {
+    document.body.classList.add('modo-oscuro');
+}
+// 2. EVENTO CLIC: Cambiar modo y actualizar el localStorage
 document.addEventListener('click', function (e) {
-    // Verificamos si lo que cliqueó el usuario fue el botón del modo oscuro
     const botonmodo = e.target.closest('#boton-modo');
     if (botonmodo) {
         const cuerpo = document.body;
-        // toggle agrega la clase si no está, y la quita si ya está
+        // Con toggle activamos/desactivamos la clase
         cuerpo.classList.toggle('modo-oscuro');
-        // Comprobamos: ¿El body tiene ahora la clase 'dark-mode'?
-        if (cuerpo.classList.contains('modo-oscuro')) {
-            // Si la tiene, cambiamos el texto a "Modo Claro" con un sol
+        // Verificamos si quedó activo
+        const esModoOscuro = cuerpo.classList.contains('modo-oscuro');
+        // Guardamos la preferencia en el navegador
+        localStorage.setItem('modoOscuro', esModoOscuro);
+        // Actualizamos el texto del botón
+        if (esModoOscuro) {
             botonmodo.textContent = "Modo Claro ☀️";
         } else {
-            // Si NO la tiene, volvemos al texto original
-            botonmodo.textContent = "Modo Oscuro 🌙";
+        botonmodo.textContent = "Modo Oscuro 🌙";
         }
     }
 });
+// 3. ACTUALIZAR TEXTO DEL BOTÓN SI SE CARGA POR FETCH
+// Como el botón se inyecta por fetch, cuando aparezca en pantalla sincronizamos su texto
+const observador = new MutationObserver(() => {
+    const botonmodo = document.getElementById('boton-modo');
+    if (botonmodo) {
+        if (document.body.classList.contains('modo-oscuro')) {
+        botonmodo.textContent = "Modo Claro ☀️";
+        }
+        observador.disconnect(); // Una vez actualizado, dejamos de observar
+    }
+});
+observador.observe(document.body, { childList: true, subtree: true });

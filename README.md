@@ -6,7 +6,7 @@ Portal institucional para consulta de trámites, horarios, solicitudes y herrami
 ---
 
 ## 🚀 Estado del Proyecto
-* **Versión actual:** v0.8 (En desarrollo)
+* **Versión actual:** 0.9 (En desarrollo)
 * **Hosting:** GitHub Pages - Cloudfare Pages / Workers
 * **Inicio del desarrollo:** viernes 07/08/2026
 * **Lanzamiento planeado:** Marzo de 2027 (v1.0)
@@ -24,6 +24,7 @@ Portal institucional para consulta de trámites, horarios, solicitudes y herrami
 - [x] Formulario de contacto
 - [x] Descarga de PDFs
 - [x] Botón de modo oscuro
+- [x] Sub-páginas provisorias
 - [x] Construcción del sitio
 
 ---
