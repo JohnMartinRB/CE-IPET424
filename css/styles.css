@@ -32,15 +32,19 @@
 button { border: none; }
 
 /* COLORES Y TEXTO DEL BODY */
-body {
-    font-family: "Nunito Sans";
-    font-size: 16px;
-    font-weight: normal;
-    margin: 0;
-    background-color: var(--claro1);
-    color: var(--azul1);
-    transition: background 0.2s ease;
-}
+    body {
+        font-family: "Nunito Sans";
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0;
+        background-color: var(--claro1);
+        color: var(--azul1);
+        transition: background 0.2s ease;
+    }
+    body.modo-oscuro {
+        background-color: var(--azul1);
+        color: var(--celeste5);
+    }
 
 /* ESTILOS GENERALES */
     a {
@@ -66,6 +70,8 @@ body {
         border: 1px solid #000745;
         background-color: var(--blanco);
     }
+
+/* ESTILOS ESPECIFICOS */
     .logo-header-contenedor {
         display: flex;
         align-items: center;
@@ -102,11 +108,7 @@ body {
     }
 
 
-/* MODO OSCURO */
-    body.modo-oscuro {
-        background-color: var(--azul1);
-        color: var(--celeste5);
-    }
+/* ELEMENTOS EN MODO OSCURO */
     body.modo-oscuro .contenido {
         background-color: var(--azul2);
     }
