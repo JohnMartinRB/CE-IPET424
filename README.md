@@ -6,9 +6,9 @@ Portal institucional para consulta de trámites, horarios, solicitudes y herrami
 ---
 
 ## 🚀 Estado del Proyecto
-* **Versión actual:** v0.3 (En desarrollo)
-* **Hosting:** GitHub Pages
-* **Inicio del desarrollo:** 07/08/2026
+* **Versión actual:** v0.8 (En desarrollo)
+* **Hosting:** GitHub Pages - Cloudfare Pages / Workers
+* **Inicio del desarrollo:** viernes 07/08/2026
 * **Lanzamiento planeado:** Marzo de 2027 (v1.0)
 
 ---
@@ -16,12 +16,16 @@ Portal institucional para consulta de trámites, horarios, solicitudes y herrami
 ## 🛠️ Tecnologías Usadas
 * **HTML5:** Estructura semántica
 * **CSS3:** Estilos
-* *JavaScript:* Interactividad (futuro)
+* **JavaScript:** Modos visuales y Componentes
 
 ---
 
 ## 📂 Contenido del Sitio
-- [x] Estructura base de carpetas
+- [x] Formulario de contacto
+- [x] Descarga de PDFs
+- [x] Botón de modo oscuro
+- [x] Construcción del sitio
 
 ---
-*Desarrollado por Juan Martín Rodríguez, Presidente del Centro de Estudiantes del IPET 424 - Gestión 26.*
+
+*Desarrollado por Juan Martín Rodríguez, Presidente del Centro de Estudiantes del IPET 424 - Gestión 2026.*
