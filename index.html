@@ -8,15 +8,11 @@
     <meta name="description" content="Sitio oficial del Centro de Estudiantes IPET 424. Novedades, proyectos y contacto.">
     <!-- TITULO DE LA PESTAÑA -->
     <title>Centro de Estudiantes IPET N° 424</title>
-    <!-- TIPOGRAFÍAS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link  rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap">
     <!-- HOJAS DE ESTILO -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- FAVICON Y JAVASCRIPT -->
-    <link rel="icon" type="image/png+xml" href="assets/img/logo-ce.png" sizes="any">
+    <link rel="icon" type="image/png+xml" href="assets/img/logos/centro.png" sizes="any">
     <script src="js/main.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
@@ -40,27 +36,27 @@
                     <article class="tarjeta-descarga">
                         <h3>Ficha Médica</h3>
                         <p>Requisito obligatorio para educación física y actividades escolares.</p>
-                        <a href="assets/docs/CERTIFICADO UNICO DE SALUD (C.U.S.) 2026.pdf" download class="boton boton-descarga">Descargar PDF</a>
+                        <a href="assets/docs/cus.pdf" download="CERTIFICADO UNICO DE SALUD (C.U.S.) 2026.pdf" class="boton boton-descarga">Descargar PDF</a>
                     </article>
                     <article class="tarjeta-descarga">
                         <h3>Autorización de Uso de Imagen, Voz y Video</h3>
                         <p>Permiso firmado por tutor/a para salidas y eventos.</p>
-                        <a href="assets/docs/AUTORIZACION DE IMAGEN, VOZ Y VIDEO 2026.pdf" download class="boton boton-descarga">Descargar PDF</a>
+                        <a href="assets/docs/autorizacion-imagen.pdf" download="AUTORIZACION DE USO DE IMAGEN, VOZ Y VIDEO 2026.pdf" class="boton boton-descarga">Descargar PDF</a>
                     </article>
                     <article class="tarjeta-descarga">
                         <h3>Ficha de Datos Familiares</h3>
                         <p>Planilla con información del grupo familiar del alumno.</p>
-                        <a href="assets/docs/FICHA DE DATOS FAMILIARES.pdf" download class="boton boton-descarga">Descargar PDF</a>
+                        <a href="assets/docs/ficha-datos-familiares.pdf" download="FICHA DE DATOS FAMILIARES.pdf" class="boton boton-descarga">Descargar PDF</a>
                     </article>
                     <article class="tarjeta-descarga">
                         <h3>Informe de Salud Anual (I.S.A.)</h3>
                         <p>Planilla completada por las familias para dar a conocer detalles de salud del alumno.</p>
-                        <a href="assets/docs/INFORME DE SALUD ANUAL (I.S.A.).pdf" download class="boton boton-descarga">Descargar PDF</a>
+                        <a href="assets/docs/isa.pdf" download="INFORME DE SALUD ANUAL (I.S.A.).pdf" class="boton boton-descarga">Descargar PDF</a>
                     </article>
                     <article class="tarjeta-descarga">
                         <h3>Solicitud de Matrícula 2026</h3>
                         <p>Solicitud para anotarse al colegio.</p>
-                        <a href="assets/docs/SOLICITUD DE MATRICULA 2026.pdf" download class="boton boton-descarga">Descargar PDF</a>
+                        <a href="assets/docs/solicitud-matricula.pdf" download="SOLICITUD DE MATRICULA 2026.pdf" class="boton boton-descarga">Descargar PDF</a>
                     </article>
                 </div>
                 <div class="info-adicional">
@@ -129,7 +125,7 @@
                     <article class="tarjeta-descarga">
                         <h3>AECs completos</h3>
                         <p>Leelos e informate.</p>
-                        <a href="assets/docs/AECs.pdf" download class="boton boton-descarga">Descargar PDF</a>
+                        <a href="assets/docs/aec.pdf" download="Acuerdos Escolares de Convivencia - IPET 424.pdf" class="boton boton-descarga">Descargar PDF</a>
                     </article>
                 </div>
             </section>
@@ -166,7 +162,7 @@
                 <article class="tarjeta-descarga">
                     <h3>Conocé nuestro estatuto!</h3>
                     <p>Es el documento oficial que rige el funcionamiento del Centro de Estudiantes.</p>
-                    <a href="assets/docs/ESTATUTO DEL C.E. IPET  N° 424 (31-07-2022).pdf" download class="boton boton-descarga">Descargar PDF</a>
+                    <a href="assets/docs/estatuto.pdf" download="ESTATUTO DEL C.E. IPET  N° 424 (31-07-2022).pdf" class="boton boton-descarga">Descargar PDF</a>
                 </article>
                 
                 <div class="plano-escuela-contenedor">
@@ -175,12 +171,12 @@
                 </div>
             </section>
             <!-- SECCIÓN 5: BUZÓN Y CONTACTO -->
-            <section id="contacto" class="seccion-bloque">
+            <section class="seccion-bloque">
                 <h2>Buzón de Sugerencias y Reclamos</h2>
                 <p>Tu opinión es anónima (si así lo preferís) y nos sirve para llevar propuestas a la dirección.</p>
                 <!-- Integración sencilla con Google Forms -->
-                <div class="iframe-contenedor">
-                    <iframe src="https://forms.gle/KFcTqgLzoBkV67tN6" width="80%" height="500" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                <div id="formulario-contacto" class="iframe-contenedor">
+                    <iframe src="https://forms.gle/KFcTqgLzoBkV67tN6" width="90%" height="500" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
                 </div>
             </section>
         </main>

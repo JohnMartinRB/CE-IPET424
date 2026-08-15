@@ -1,5 +1,7 @@
 
-/* PALETA DE COLORES */
+/* ==========================================
+    VARIABLES Y PALETA DE COLORES
+   ========================================== */
 :root {
     /* principales */
     --blanco: #fff;
@@ -27,11 +29,54 @@
     --cian: #00ffff;
 }
 
-/* REINICIO DE ESTILOS */
+/* ==========================================
+    TIPOGRAFIAS LOCALES
+   ========================================== */
+/* Nunito (regular) */
+@font-face {
+    font-display: swap;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/nunito-v32-latin-regular.woff2') format('woff2');
+}
+/* Nunito (negrita) */
+@font-face {
+    font-display: swap; 
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/nunito-v32-latin-700.woff2') format('woff2');
+}
+
+/* Nunito Sans (regular) */
+@font-face {
+    font-display: swap; 
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/nunito-sans-v19-latin-regular.woff2') format('woff2');
+}
+/* Nunito Sans (negrita) */
+@font-face {
+    font-display: swap; 
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/nunito-sans-v19-latin-700.woff2') format('woff2');
+}
+
+
+/* ==========================================
+    TIPOGRAFIAS LOCALES
+   ========================================== */
 * { padding: 0; }
 button { border: none; }
 
-/* COLORES Y TEXTO DEL BODY */
+
+/* ==========================================
+    BODY: TEXTO Y COLORES
+   ========================================== */
     body {
         font-family: "Nunito Sans";
         font-size: 16px;
@@ -46,7 +91,9 @@ button { border: none; }
         color: var(--celeste5);
     }
 
-/* ESTILOS GENERALES */
+/* ==========================================
+    ESTILOS GENERALES
+   ========================================== */
     a {
         text-decoration: none;
         color: var(--oscuro);
@@ -71,7 +118,9 @@ button { border: none; }
         background-color: var(--blanco);
     }
 
-/* ESTILOS ESPECIFICOS */
+/* ==========================================
+    ESTILOS ESPECIFICOS
+   ========================================== */
     .logo-header-contenedor {
         display: flex;
         align-items: center;
@@ -108,7 +157,9 @@ button { border: none; }
     }
 
 
-/* ELEMENTOS EN MODO OSCURO */
+/* ==========================================
+    MODO OSCURO
+   ========================================== */
     body.modo-oscuro .contenido {
         background-color: var(--azul2);
     }
@@ -127,14 +178,18 @@ button { border: none; }
         background-color: var(--azul4);
     }
 
-/* TELÉFONOS GRANDES O TABLETS */
+/* ==========================================
+    TELEFONOS GRANDES O TABLETS
+   ========================================== */
 @media (min-width: 768px) {
     body {
         margin: 0;
     }
 }
 
-/* COMPUTADORAS DE ESCRITORIO */
+/* ==========================================
+    COMPUTADORAS DE ESCRITORIO / PCS
+   ========================================== */
 @media (min-width: 1024px) {
     body {
         font-size: 16px;
@@ -176,5 +231,12 @@ button { border: none; }
     }
     #boton-menu {
         display: none;
+    }
+    #formulario-contacto {
+        border-radius: 40px;
+    }
+    .iframe-contenedor {
+        display: flex;
+        justify-content: center;
     }
 }
