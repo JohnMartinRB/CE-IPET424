@@ -19,6 +19,7 @@ button { border: none; }
         background-color: var(--claro1);
         color: var(--azul1);
         transition: background 0.2s ease;
+        cursor: url('../assets/img/icons/cursor.svg'), auto;
     }
 
 /* ==========================================
@@ -30,6 +31,7 @@ button { border: none; }
     }
     a:hover {
         color: var(--azul);
+        cursor: url('../assets/img/icons/cursor-hover.svg'), pointer;
     }
     .boton {
         padding: 5px;
@@ -40,12 +42,14 @@ button { border: none; }
     .boton:hover {
         cursor: pointer;
         background-color: var(--celeste5);
+        cursor: url('../assets/img/icons/cursor-hover.svg'), pointer;
     }
     input {
         padding: 5px;
         border-radius: 10px;
         border: 1px solid #000745;
         background-color: var(--blanco);
+        cursor: url('../assets/img/icons/cursor-text.svg'), text;
     }
 
 /* ==========================================
@@ -76,7 +80,7 @@ button { border: none; }
         background-color: var(--claro2);
         padding: 10px;
     }
-    #copyright {
+    .copyright {
         text-align: center;
         font-size: 85%;
         color: var(--gris);

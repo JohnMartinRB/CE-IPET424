@@ -4,6 +4,7 @@
     body.modo-oscuro {
         background-color: var(--azul1);
         color: var(--celeste5);
+        cursor: url('../assets/img/icons/cursor-dark.svg'), auto;
     }
     body.modo-oscuro .contenido {
         background-color: var(--azul2);
@@ -13,12 +14,20 @@
     }
     body.modo-oscuro a:hover {
         color: var(--blanco);
+        cursor: url('../assets/img/icons/cursor-hover-dark.svg'), pointer;
     }
     body.modo-oscuro .boton {
         color: var(--azul);
-        background-color: var(--celeste2);
+        background-color: var(--celeste1);
     }
     body.modo-oscuro .boton:hover {
         color: var(--azul);
-        background-color: var(--azul4);
+        background-color: var(--azul3);
+        cursor: url('../assets/img/icons/cursor-hover-dark.svg'), pointer;
+    }
+    body.modo-oscuro .copyright {
+        color: var(--celeste1);
+    }
+    body.modo-oscuro input {
+        cursor: url('../assets/img/icons/cursor-text.svg'), text;
     }
