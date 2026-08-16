@@ -1,0 +1,96 @@
+/* ==========================================
+    REINICIO DE ESTILOS
+   ========================================== */
+* { padding: 0; }
+button { border: none; }
+
+
+/* ==========================================
+    BODY: TEXTO Y COLORES
+   ========================================== */
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0;
+        background-color: var(--claro1);
+        color: var(--azul1);
+        transition: background 0.2s ease;
+    }
+
+/* ==========================================
+    ESTILOS GENERALES
+   ========================================== */
+    a {
+        text-decoration: none;
+        color: var(--oscuro);
+    }
+    a:hover {
+        color: var(--azul);
+    }
+    .boton {
+        padding: 5px;
+        border-radius: 10px;
+        border: 1px solid #000745;
+        background-color: var(--blanco);
+    }
+    .boton:hover {
+        cursor: pointer;
+        background-color: var(--celeste5);
+    }
+    input {
+        padding: 5px;
+        border-radius: 10px;
+        border: 1px solid #000745;
+        background-color: var(--blanco);
+    }
+
+/* ==========================================
+    ESTILOS ESPECIFICOS
+   ========================================== */
+    .logo-header-contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .logo-header {
+        height: 60px;
+        width: auto;
+    }
+    .logo-footer {
+        display: block;
+        height: 40px;
+        width: auto;
+        margin: 0 auto;
+    }
+    h1 {
+        text-align: center;
+        flex-grow: 1;
+        margin: 0;
+    }
+    .contenido {
+        background-color: var(--claro2);
+        padding: 10px;
+    }
+    #copyright {
+        text-align: center;
+        font-size: 85%;
+        color: var(--gris);
+    }
+    #boton-modo {
+        display: block;
+        margin: 0 auto;
+    }
+    .error-section {
+        text-align: center;
+        padding: 4rem 1rem;
+    }
+    .error-code {
+        font-size: 6rem;
+        color: var(--primary-color, #2b3a4a);
+        margin-bottom: 0.5rem;
+    }

@@ -1,0 +1,53 @@
+/* ==========================================
+    COMPUTADORAS DE ESCRITORIO / PCS
+   ========================================== */
+@media (min-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+    .contenido {
+        padding: 30px;
+        margin: 20px auto;
+        max-width: 770px;
+        border-radius: 40px;
+    }
+    .logo-header-contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .logo-header {
+        height: 70px;
+        width: auto;
+    }
+    .logo-footer {
+        height: 80px;
+        width: auto;
+        margin: 0 auto;
+    }
+    h1 {
+        text-align: center;
+        flex-grow: 1;
+        margin: 0;
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .menu-item {
+        list-style: none;
+    }
+    #boton-menu {
+        display: none;
+    }
+    #formulario-contacto {
+        border-radius: 40px;
+    }
+    .iframe-contenedor {
+        display: flex;
+        justify-content: center;
+    }
+}

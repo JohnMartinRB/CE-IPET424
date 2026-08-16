@@ -1,0 +1,24 @@
+/* ==========================================
+    MODO OSCURO
+   ========================================== */
+    body.modo-oscuro {
+        background-color: var(--azul1);
+        color: var(--celeste5);
+    }
+    body.modo-oscuro .contenido {
+        background-color: var(--azul2);
+    }
+    body.modo-oscuro a {
+        color: var(--celeste5);
+    }
+    body.modo-oscuro a:hover {
+        color: var(--blanco);
+    }
+    body.modo-oscuro .boton {
+        color: var(--azul);
+        background-color: var(--celeste2);
+    }
+    body.modo-oscuro .boton:hover {
+        color: var(--azul);
+        background-color: var(--azul4);
+    }

@@ -1,4 +1,11 @@
 
+// js/main.js
+/* import { cargarComponentes } from 'components.js';
+import { inicializarTemas } from 'theme.js';
+
+// Inicializamos los módulos
+cargarComponente();
+inicializarTemas(); */
 
 /* ==========================================
     CARGAR COMPONENTES HTML

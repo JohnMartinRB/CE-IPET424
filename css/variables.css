@@ -1,0 +1,29 @@
+/* ==========================================
+    VARIABLES Y PALETA DE COLORES
+   ========================================== */
+:root {
+    /* principales */
+    --blanco: #fff;
+    --claro1: #ccc;
+    --claro2: #eee;
+    --oscuro: #1a1a1a;
+    --gris: #444;
+    --negro: #000;
+    /* azules */
+    --azul1: #000423;
+    --azul2: #000745;
+    --azul3: #010F8F;
+    --azul4: #012EAB;
+    /* celestes */
+    --celeste1: #014CC7;
+    --celeste2: #0088FF;
+    --celeste3: #00C4FF;
+    --celeste4: #50C9F5;
+    --celeste5: #7CD7F8;
+    --celeste6: #A8E4FA;
+    --celeste7: #D4F2FD;
+    /* otros */
+    --lila1: #78AEF0;
+    --lila2: #9f93eb;
+    --cian: #00ffff;
+}
