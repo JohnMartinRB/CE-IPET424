@@ -1,0 +1,22 @@
+{
+    "name": "Centro de Estudiantes IPET 424",
+    "short_name": "CE IPET 424",
+    "start_url": "../../index.html",
+    "display": "standalone",
+    "background_color": "#010F8F",
+    "theme_color": "#010F8F",
+    "icons": [
+        {
+        "src": "../img/logos/centro-cuadrado.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+        },
+        {
+        "src": "../img/logos/centro-cuadrado.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+        }
+    ]
+}

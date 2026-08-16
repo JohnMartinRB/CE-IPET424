@@ -8,8 +8,8 @@ export function initTheme() {
         const favicon = document.getElementById('favicon');
         if (favicon) {
             favicon.href = esOscuro 
-            ? 'assets/img/logos/centro-dark.png' 
-            : 'assets/img/logos/centro.png';
+            ? 'assets/img/favicons/dark.png' 
+            : 'assets/img/favicons/light.png';
         }
     }
 
