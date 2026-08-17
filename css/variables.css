@@ -2,12 +2,16 @@
     VARIABLES Y PALETA DE COLORES
    ========================================== */
 :root {
-    /* principales */
+    /* Variable que habilita la transición fluida hacia tamaños dinámicos (auto) */
+    interpolate-size: allow-keywords;
+
+    /* colores principales */
     --blanco: #fff;
     --claro1: #ccc;
     --claro2: #eee;
     --oscuro: #1a1a1a;
-    --gris: #444;
+    --gris1: #444;
+    --gris2: #888;
     --negro: #000;
     /* azules */
     --azul1: #000423;
@@ -26,4 +30,60 @@
     --lila1: #78AEF0;
     --lila2: #9f93eb;
     --cian: #00ffff;
+
+    /* BODY */
+    --bg-body: var(--claro1);
+    --text-body: var(--azul1);
+    /* CONTENIDO */
+    --bg-content: var(--claro2);
+    /* TARJETAS */
+    --bg-section-card: var(--blanco);
+    --text-section-card: var(--azul2);
+    --border-section-card: var(--claro1);
+    --bg-subsection-card: var(--celeste7);
+    --text-subsection-card: var(--azul1);
+    --border-subsection-card: var(--celeste6);
+    --shadow-section-card: 0 4px 16px rgba(1, 76, 199, 0.08);
+    --shadow-subsection-card: 0 4px 16px rgba(1, 76, 199, 0.08);
+    /* TITULOS */
+    --text-titles: var(--azul1);
+    /* BOTONES / ENLACES */
+    --bg-button: var(--blanco);
+    --bg-button-hover: var(--celeste6);
+    --text-button: var(--azul1);
+    --text-button-hover: var(--azul1);
+    --border-button: var(--gris1);
+    /* INPUTS */
+    --bg-input: var(--blanco);
+    --text-input: var(--azul1);
+    --border-input: var(--gris1);
+    /* FOOOTER */
+    --bg-footer: var(--claro1);
+    --text-footer: var(--azul1);
+    --border-footer: var(--gris2);
+    --text-copy: var(--gris1);
+
+    /* --bg-gradient: linear-gradient(180deg, var(--celeste7) 0%, var(--blanco) 100%); */
+}
+
+/* MODO OSCURO */
+body.modo-oscuro {
+    --bg-pagina: var(--azul1);
+    --bg-gradient: radial-gradient(circle at top, var(--azul2), var(--azul1));
+    --bg-tarjeta: rgba(1, 15, 143, 0.25);
+    --bg-tarjeta-solida: var(--azul2);
+    
+    --border-tarjeta: var(--celeste2);
+    --shadow-tarjeta: 0 8px 24px rgba(0, 196, 255, 0.15);
+
+    --texto-principal: var(--blanco);
+    --texto-secundario: var(--celeste6);
+    --texto-destacado: var(--cian);
+
+    --btn-bg: var(--celeste2);
+    --btn-texto: var(--blanco);
+    --btn-hover: var(--celeste3);
+
+    --alerta-bg: #c0392b;
+    --alerta-texto: var(--blanco);
 }

@@ -16,10 +16,10 @@ li { list-style: none; }
         font-size: 16px;
         font-weight: normal;
         margin: 0;
-        background-color: var(--claro1);
-        color: var(--azul1);
+        background-color: var(--bg-body);
+        color: var(--text-body);
         transition: background 0.2s ease;
-        cursor: url('../assets/img/icons/cursor.svg'), auto;
+        cursor: url('../assets/img/cursors/cursor.svg'), auto;
     }
 
 /* ==========================================
@@ -27,33 +27,51 @@ li { list-style: none; }
    ========================================== */
     h1, h2, h3, h4, h5, h6 {
         font-family: "Nunito Sans", sans-serif;
+        text-align: center;
     }
     a {
         text-decoration: none;
-        color: var(--oscuro);
+        color: var(--text-button);
     }
     a:hover {
-        color: var(--azul);
-        cursor: url('../assets/img/icons/cursor-hover.svg'), pointer;
+        color: var(--text-button-hover);
+        cursor: url('../assets/img/cursors/cursor-hover.svg'), pointer;
     }
     .boton {
-        padding: 5px;
-        border-radius: 10px;
-        border: 1px solid var(--azul2);
-        background-color: var(--blanco);
+        padding: 10px;
+        font-weight: 700;
+        border-radius: 15px;
+        border: 2px solid var(--border-button);
+        background-color: var(--bg-button);
         min-width: 40px;
     }
     .boton:hover, .boton-activo {
         cursor: pointer;
-        background-color: var(--celeste5);
-        cursor: url('../assets/img/icons/cursor-hover.svg'), pointer;
+        background-color: var(--bg-button-hover);
+        cursor: url('../assets/img/cursors/cursor-hover.svg'), pointer;
     }
     input {
-        padding: 5px;
-        border-radius: 10px;
-        border: 1px solid #000745;
-        background-color: var(--blanco);
-        cursor: url('../assets/img/icons/cursor-text.svg'), text;
+        color: var(--text-input);
+        padding: 10px;
+        border-radius: 15px;
+        border: 2px solid var(--border-input);
+        background-color: var(--bg-input);
+        cursor: url('../assets/img/cursors/cursor-text.svg'), text;
+    }
+    details { /* Transición suave para el contenedor <details> */
+        overflow: hidden;
+        transition: height 0.3s ease, padding 0.3s ease;
+    }
+    details::details-content { /* Transición para el contenido desplegable */
+        display: block;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: height 0.3s ease, opacity 0.3s ease, display 0.3s allow-discrete; /* allow-discrete permite que el cierre sea animado */
+    }
+    details[open]::details-content { /* Estado cuando está abierto */
+        height: auto;
+        opacity: 1;
     }
 
 /* ==========================================
@@ -81,13 +99,13 @@ li { list-style: none; }
         margin: 0;
     }
     .contenido {
-        background-color: var(--claro2);
+        background-color: var(--bg-content);
         padding: 10px;
     }
     .copyright {
         text-align: center;
         font-size: 85%;
-        color: var(--gris);
+        color: var(--text-copy);
     }
     #boton-modo {
         display: block;
@@ -99,6 +117,45 @@ li { list-style: none; }
     }
     .error-code {
         font-size: 6rem;
-        color: var(--primary-color, #2b3a4a);
-        margin-bottom: 0.5rem;
+        color: var(--text-body);
+    }
+    #formulario-contacto {
+        border-radius: 10px;
+    }
+    .section-card {
+        background: var(--bg-section-card);
+        border: 2.5px solid var(--border-section-card);
+        border-radius: 40px;
+        padding: 1.5rem;
+        margin: 20px auto;
+        color: var(--text-section-card);
+        box-shadow: var(--shadow-section-card);
+        backdrop-filter: blur(8px); /* Efecto cristal sutil sobre el fondo */
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .subsection-card {
+        background: var(--bg-subsection-card);
+        border: 2.5px solid var(--border-subsection-card);
+        border-radius: 30px;
+        padding: 1.5rem;
+        margin: 20px auto;
+        color: var(--text-subsection-card);
+        box-shadow: var(--shadow-subsection-card);
+        backdrop-filter: blur(8px); /* Efecto cristal sutil sobre el fondo */
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .section-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 28px rgba(0, 207, 255, 0.25);
+    }
+    .subsection-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 28px rgba(0, 114, 139, 0.25);
+    }
+    .footer-card {
+        background: var(--bg-footer);
+        border-radius: 40px;
+        padding: 1.5rem;
+        margin: 20px auto;
+        color: var(--text-footer);
     }
