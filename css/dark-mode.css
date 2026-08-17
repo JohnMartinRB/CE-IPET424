@@ -31,3 +31,7 @@
     body.modo-oscuro input {
         cursor: url('../assets/img/cursor/cursor-text.svg'), text;
     }
+    body.modo-oscuro ::selection { /* Color de selección de texto */
+        background-color: var(--azul3);
+        color: var(--blanco);
+    }
