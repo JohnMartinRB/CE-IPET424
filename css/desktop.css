@@ -36,9 +36,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 10px 20px;
-    }
-    .menu-item {
-        list-style: none;
+        text-align: center;
     }
     #boton-menu {
         display: none;
@@ -49,5 +47,12 @@
     .iframe-contenedor {
         display: flex;
         justify-content: center;
+    }
+    .enlaces {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        text-align: center;
     }
 }

@@ -3,8 +3,8 @@
     "short_name": "CE IPET 424",
     "start_url": "../../index.html",
     "display": "standalone",
-    "background_color": "#010F8F",
-    "theme_color": "#010F8F",
+    "background_color": "#000745",
+    "theme_color": "#000745",
     "icons": [
         {
         "src": "../img/logos/app-icon.png",
