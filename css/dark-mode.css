@@ -14,7 +14,7 @@
     }
     body.modo-oscuro a:hover {
         color: var(--blanco);
-        cursor: url('../assets/img/icons/cursor-hover-dark.svg'), pointer;
+        cursor: url('../assets/img/cursor/cursor-hover-dark.svg'), pointer;
     }
     body.modo-oscuro .boton {
         color: var(--azul);
@@ -23,11 +23,11 @@
     body.modo-oscuro .boton:hover {
         color: var(--azul);
         background-color: var(--azul3);
-        cursor: url('../assets/img/icons/cursor-hover-dark.svg'), pointer;
+        cursor: url('../assets/img/cursor/cursor-hover-dark.svg'), pointer;
     }
     body.modo-oscuro .copyright {
         color: var(--celeste1);
     }
     body.modo-oscuro input {
-        cursor: url('../assets/img/icons/cursor-text.svg'), text;
+        cursor: url('../assets/img/cursor/cursor-text.svg'), text;
     }

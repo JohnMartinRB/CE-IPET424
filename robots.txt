@@ -1,0 +1,10 @@
+# ====================================================
+#   CE IPET N° 424 - Sitio Web Oficial
+#   Desarrollado por el Centro de Estudiantes.
+#   ¿Revisando el código fuente?
+#   Visitá el repositorio: https://github.com/JohnMartinRB/CE-IPET424
+# ====================================================
+
+User-agent: *
+Allow: /
+Disallow: /assets/data/*.json

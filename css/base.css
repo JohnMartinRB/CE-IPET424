@@ -39,16 +39,23 @@ li { list-style: none; }
     }
     .boton {
         padding: 10px;
-        font-weight: 700;
+        font-size: 90%;
+        font-weight: bold;
+        text-transform: uppercase;
         border-radius: 15px;
         border: 2px solid var(--border-button);
         background-color: var(--bg-button);
         min-width: 40px;
+        margin: 15px auto;
     }
     .boton:hover, .boton-activo {
         cursor: pointer;
         background-color: var(--bg-button-hover);
         cursor: url('../assets/img/cursors/cursor-hover.svg'), pointer;
+    }
+    .boton:active, a:active {
+        transform: scale(0.97);
+        transition: transform 0.1s ease;
     }
     input {
         color: var(--text-input);
@@ -110,6 +117,10 @@ li { list-style: none; }
     #boton-modo {
         display: block;
         margin: 0 auto;
+    }
+    #plano-escuela {
+        width: 100%;
+        height: auto;
     }
     .error-section {
         text-align: center;
