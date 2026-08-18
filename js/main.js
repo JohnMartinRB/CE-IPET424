@@ -6,6 +6,17 @@ document.addEventListener("DOMContentLoaded", () => {
     initTheme();
 });
 
+// Acceso rápido por teclado al modo oscuro
+document.addEventListener('keydown', (e) => {
+    if (e.altKey && e.key.toLowerCase() === 'd') {
+        e.preventDefault();
+        const botonmodo = document.getElementById('boton-modo');
+        if (botonmodo) {
+            botonmodo.click();
+        }
+    }
+});
+
 // Deshabilitar el menú contextual en imágenes
 document.querySelectorAll('img').forEach(img => {
     img.addEventListener('contextmenu', e => e.preventDefault());
