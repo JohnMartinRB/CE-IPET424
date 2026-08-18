@@ -1,9 +1,13 @@
 import { initComponents } from './components.js';
 import { initTheme } from './theme.js';
+import { konamiCode } from './secret.js';
+import { consoleMsg } from './secret.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     initComponents();
     initTheme();
+    konamiCode();
+    consoleMsg();
 });
 
 // Acceso rápido por teclado al modo oscuro
@@ -22,24 +26,38 @@ document.querySelectorAll('img').forEach(img => {
     img.addEventListener('contextmenu', e => e.preventDefault());
 });
 
-// Konami Code (Easter Egg)
-const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
-let konamiIndex = 0;
-document.addEventListener('keydown', (e) => {
-    if (e.key.toLowerCase() === konamiCode[konamiIndex].toLowerCase()) {
-        konamiIndex++;
-        if (konamiIndex === konamiCode.length) {
-        alert('🚀 ¡Descubriste el modo desarrollador del CE IPET 424!');
-        konamiIndex = 0;
+// Botón de copiar enlace con feedback toast
+document.addEventListener('click', (e) => {
+    if (e.target.closest('#btn-copiar-link')) {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+        const toast = document.getElementById('toast-copiado');
+        if (toast) {
+            toast.classList.add('visible');
+            setTimeout(() => toast.classList.remove('visible'), 2500);
         }
-    } else {
-        konamiIndex = 0;
+        });
     }
 });
 
-// Easter egg en la consola
-console.log(
-    "%c ¡Hola dev! 🚀 %c\n¿Te interesa la programación o querés colaborar en la web del Centro de Estudiantes? ¡Sumate al equipo!",
-    "font-size: 18px; font-weight: bold; color: #007bff;",
-    "font-size: 14px; color: #555;"
-);
+// Banner de sin conexión a internet (offline toast)
+function asegurarBannerOffline() {
+    let banner = document.getElementById('offline-banner');
+    if (!banner) {
+        banner = document.createElement('div');
+        banner.id = 'offline-banner';
+        banner.className = 'offline-banner';
+        banner.textContent = '⚠️ Sin conexión a internet. Mostrando versión guardada.';
+        document.body.prepend(banner);
+    }
+    return banner;
+}
+
+window.addEventListener('offline', () => {
+    const banner = asegurarBannerOffline();
+    banner.classList.add('visible');
+});
+
+window.addEventListener('online', () => {
+    const banner = document.getElementById('offline-banner');
+    if (banner) banner.classList.remove('visible');
+});

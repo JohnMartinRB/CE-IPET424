@@ -133,6 +133,41 @@ li { list-style: none; }
     #formulario-contacto {
         border-radius: 10px;
     }
+    .toast {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #2b3a4a;
+        color: #ffffff;
+        padding: 12px 20px;
+        border-radius: 8px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+        z-index: 1000;
+    }
+    .toast.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .offline-banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #d9534f;
+        color: #ffffff;
+        text-align: center;
+        padding: 8px 12px;
+        font-weight: bold;
+        font-size: 0.9rem;
+        display: none;
+        z-index: 9999;
+    }
+    .offline-banner.visible {
+        display: block;
+    }
     .section-card {
         background: var(--bg-section-card);
         border: 2.5px solid var(--border-section-card);
