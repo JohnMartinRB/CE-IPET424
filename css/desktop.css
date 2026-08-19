@@ -3,7 +3,7 @@
    ========================================== */
 @media (min-width: 1024px) {
     ::selection { /* Color de selección de texto */
-        background-color: var(--celeste2);
+        background-color: var(--bg-selection);
         color: var(--blanco);
     }
     body {

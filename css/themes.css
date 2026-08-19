@@ -1,37 +1,38 @@
 /* ==========================================
-    VARIABLES Y PALETA DE COLORES
+    MODO OSCURO
    ========================================== */
-:root {
-    /* Variable que habilita la transición fluida hacia tamaños dinámicos (auto) */
-    interpolate-size: allow-keywords;
+    body.modo-oscuro {
+        background-color: var(--azul1);
+        color: var(--celeste5);
+    }
+    body.modo-oscuro .contenido {
+        background-color: var(--azul2);
+    }
+    body.modo-oscuro a {
+        color: var(--celeste5);
+    }
+    body.modo-oscuro a:hover {
+        color: var(--blanco);
+    }
+    body.modo-oscuro .boton {
+        color: var(--azul);
+        background-color: var(--celeste1);
+    }
+    body.modo-oscuro .boton:hover {
+        color: var(--azul);
+        background-color: var(--azul3);
+    }
+    body.modo-oscuro .copyright {
+        color: var(--celeste1);
+    }
+    body.modo-oscuro ::selection { /* Color de selección de texto */
+        background-color: var(--azul3);
+        color: var(--blanco);
+    }
 
-    /* colores principales */
-    --blanco: #fff;
-    --claro1: #ccc;
-    --claro2: #eee;
-    --oscuro: #1a1a1a;
-    --gris1: #444;
-    --gris2: #888;
-    --negro: #000;
-    /* azules */
-    --azul1: #000423;
-    --azul2: #000745;
-    --azul3: #010F8F;
-    --azul4: #012EAB;
-    /* celestes */
-    --celeste1: #014CC7;
-    --celeste2: #0088FF;
-    --celeste3: #00C4FF;
-    --celeste4: #50C9F5;
-    --celeste5: #7CD7F8;
-    --celeste6: #A8E4FA;
-    --celeste7: #D4F2FD;
-    /* otros */
-    --lila1: #78AEF0;
-    --lila2: #9f93eb;
-    --cian: #00ffff;
-    --naranja: #912c28;
 
+/* MODO OSCURO */
+body.modo-oscuro {
     /* BODY */
     --bg-body: var(--claro1);
     --text-body: var(--azul1);
@@ -68,6 +69,17 @@
     --bg-banner: var(--naranja);
     /* SELECTION */
     --bg-selection: var(--celeste2);
+}
 
-    /* --bg-gradient: linear-gradient(180deg, var(--celeste7) 0%, var(--blanco) 100%); */
+body.modo-oscuro {
+    cursor: url('../assets/img/icons/cursor-dark.svg'), auto;
+}
+body.modo-oscuro a:hover {
+    cursor: url('../assets/img/cursor/cursor-hover-dark.svg'), pointer;
+}
+body.modo-oscuro .boton:hover {
+    cursor: url('../assets/img/cursor/cursor-hover-dark.svg'), pointer;
+}
+body.modo-oscuro input {
+    cursor: url('../assets/img/cursor/cursor-text.svg'), text;
 }
