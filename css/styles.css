@@ -1,12 +1,15 @@
-/* 1. Fuentes y Variables */
+/* 1. Reseteo de estilos */
+@import url('normalize.css');
+
+/* 2. Fuentes y variables */
 @import url('fonts.css');
 @import url('variables.css');
 
-/* 2. Estilos según el tamaño de pantalla (Mobile First) */
+/* 3. Estilos según el tamaño de pantalla (Mobile First) */
 @import url('base.css');      /* Estilos generales y móviles */
 @import url('tablet.css');    /* Tablets y celus grandes (768px+) */
 @import url('desktop.css');   /* Pantallas de PC (1024px+) */
 
-/* 3. Modos de color y accesibilidad */
+/* 4. Modos de color y accesibilidad */
 @import url('dark-mode.css');
 @import url('high-contrast.css');

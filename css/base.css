@@ -137,15 +137,15 @@ li { list-style: none; }
         position: fixed;
         bottom: 20px;
         right: 20px;
-        background-color: #2b3a4a;
-        color: #ffffff;
+        background-color: var(--bg-toast);
+        color: var(--blanco);
         padding: 12px 20px;
-        border-radius: 8px;
+        border-radius: 20px;
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s ease, transform 0.3s ease;
         transform: translateY(10px);
-        z-index: 1000;
+        z-index: 100;
     }
     .toast.visible {
         opacity: 1;
@@ -156,14 +156,12 @@ li { list-style: none; }
         top: 0;
         left: 0;
         width: 100%;
-        background-color: #d9534f;
-        color: #ffffff;
+        background-color: var(--bg-banner);
+        color: var(--blanco);
         text-align: center;
         padding: 8px 12px;
-        font-weight: bold;
-        font-size: 0.9rem;
         display: none;
-        z-index: 9999;
+        z-index: 100;
     }
     .offline-banner.visible {
         display: block;

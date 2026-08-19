@@ -30,6 +30,7 @@
     --lila1: #78AEF0;
     --lila2: #9f93eb;
     --cian: #00ffff;
+    --naranja: #912c28;
 
     /* BODY */
     --bg-body: var(--claro1);
@@ -62,6 +63,9 @@
     --text-footer: var(--azul1);
     --border-footer: var(--gris2);
     --text-copy: var(--gris1);
+    /* TOAST / BANNER */
+    --bg-toast: var(--celeste1);
+    --bg-banner: var(--naranja);
 
     /* --bg-gradient: linear-gradient(180deg, var(--celeste7) 0%, var(--blanco) 100%); */
 }

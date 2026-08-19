@@ -1,7 +1,7 @@
 import { initComponents } from './components.js';
 import { initTheme } from './theme.js';
-import { konamiCode } from './secret.js';
-import { consoleMsg } from './secret.js';
+import { konamiCode } from './config.js';
+import { consoleMsg } from './config.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     initComponents();
