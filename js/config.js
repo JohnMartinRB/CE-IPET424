@@ -26,8 +26,8 @@ export function konamiCode() {
 export function consoleMsg() {
     // Easter egg en la consola
     console.log(
-        "%c ¡Hola dev! 🚀 %c\n¿Te interesa la programación o querés colaborar en la web del Centro de Estudiantes? ¡Sumate al equipo!",
-        "font-size: 20px; font-weight: bold; color: #012EAB;",
-        "font-size: 16px; color: #333;"
+        "%c ¡Hola usuario! 🚀 %c\n¿Te interesa la programación o querés colaborar en la web del Centro de Estudiantes? ¡Sumate al equipo!",
+        "font-size: 20px; font-weight: bold; color: #00C4FF;",
+        "font-size: 16px; color: #ccc;"
     );
 }

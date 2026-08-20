@@ -1,43 +1,15 @@
 /* ==========================================
     MODO OSCURO
    ========================================== */
-    body.modo-oscuro {
-        background-color: var(--azul1);
-        color: var(--celeste5);
-    }
-    body.modo-oscuro .contenido {
-        background-color: var(--azul2);
-    }
-    body.modo-oscuro a {
-        color: var(--celeste5);
-    }
-    body.modo-oscuro a:hover {
-        color: var(--blanco);
-    }
-    body.modo-oscuro .boton {
-        color: var(--azul);
-        background-color: var(--celeste1);
-    }
-    body.modo-oscuro .boton:hover {
-        color: var(--azul);
-        background-color: var(--azul3);
-    }
-    body.modo-oscuro .copyright {
-        color: var(--celeste1);
-    }
-    body.modo-oscuro ::selection { /* Color de selección de texto */
-        background-color: var(--azul3);
-        color: var(--blanco);
-    }
-
-
-/* MODO OSCURO */
 body.modo-oscuro {
     /* BODY */
-    --bg-body: var(--claro1);
-    --text-body: var(--azul1);
+    --bg-body: var(--azul1);
+    --text-body: var(--celeste5);
     /* CONTENIDO */
-    --bg-content: var(--claro2);
+    --bg-content: var(--azul2);
+    /* LINK */
+    --link: var(--azul1);
+    --link-hover: var(--blanco);
     /* TARJETAS */
     --bg-section-card: var(--blanco);
     --text-section-card: var(--azul2);
@@ -48,12 +20,12 @@ body.modo-oscuro {
     --shadow-section-card: 0 4px 16px rgba(1, 76, 199, 0.08);
     --shadow-subsection-card: 0 4px 16px rgba(1, 76, 199, 0.08);
     /* TITULOS */
-    --text-titles: var(--azul1);
+    --text-titles: var(--celeste5);
     /* BOTONES / ENLACES */
-    --bg-button: var(--blanco);
-    --bg-button-hover: var(--celeste6);
-    --text-button: var(--azul1);
-    --text-button-hover: var(--azul1);
+    --bg-button: var(--celeste1);
+    --bg-button-hover: var(--azul3);
+    --text-button: var(--azul);
+    --text-button-hover: var(--azul);
     --border-button: var(--gris2);
     /* INPUTS */
     --bg-input: var(--blanco);
@@ -63,12 +35,12 @@ body.modo-oscuro {
     --bg-footer: var(--claro1);
     --text-footer: var(--azul1);
     --border-footer: var(--gris2);
-    --text-copy: var(--gris1);
+    --text-copy: var(--celeste1);
     /* TOAST / BANNER */
     --bg-toast: var(--celeste1);
     --bg-banner: var(--naranja);
     /* SELECTION */
-    --bg-selection: var(--celeste2);
+    --bg-selection: var(--azul3);
 }
 
 body.modo-oscuro {

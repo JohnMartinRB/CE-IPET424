@@ -37,6 +37,9 @@
     --text-body: var(--azul1);
     /* CONTENIDO */
     --bg-content: var(--claro2);
+    /* LINK */
+    --link: var(--azul1);
+    --link-hover: var(--celeste1);
     /* TARJETAS */
     --bg-section-card: var(--blanco);
     --text-section-card: var(--azul2);
