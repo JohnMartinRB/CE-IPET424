@@ -168,7 +168,7 @@ li { list-style: none; }
     }
     .section-card {
         background: var(--bg-section-card);
-        border: 2.5px solid var(--border-section-card);
+        /* border: 2.5px solid var(--border-section-card); */
         border-radius: 40px;
         padding: 1.5rem;
         margin: 20px auto;
@@ -179,7 +179,7 @@ li { list-style: none; }
     }
     .subsection-card {
         background: var(--bg-subsection-card);
-        border: 2.5px solid var(--border-subsection-card);
+        /* border: 2.5px solid var(--border-subsection-card); */
         border-radius: 30px;
         padding: 1.5rem;
         margin: 20px auto;

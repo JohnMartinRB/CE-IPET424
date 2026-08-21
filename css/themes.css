@@ -11,12 +11,12 @@ body.modo-oscuro {
     --link: var(--azul1);
     --link-hover: var(--blanco);
     /* TARJETAS */
-    --bg-section-card: var(--blanco);
-    --text-section-card: var(--azul2);
-    --border-section-card: var(--claro1);
-    --bg-subsection-card: var(--celeste7);
-    --text-subsection-card: var(--azul1);
-    --border-subsection-card: var(--celeste6);
+    --bg-section-card: var(--celeste1);
+    --text-section-card: var(--celeste6);
+    --border-section-card: var(--celeste3);
+    --bg-subsection-card: var(--celeste2);
+    --text-subsection-card: var(--blanco);
+    --border-subsection-card: var(--celeste4);
     --shadow-section-card: 0 4px 16px rgba(1, 76, 199, 0.08);
     --shadow-subsection-card: 0 4px 16px rgba(1, 76, 199, 0.08);
     /* TITULOS */
@@ -26,16 +26,16 @@ body.modo-oscuro {
     --bg-button-hover: var(--azul3);
     --text-button: var(--azul);
     --text-button-hover: var(--azul);
-    --border-button: var(--gris2);
+    --border-button: var(--azul4);
     /* INPUTS */
     --bg-input: var(--blanco);
     --text-input: var(--azul1);
     --border-input: var(--gris1);
     /* FOOOTER */
-    --bg-footer: var(--claro1);
-    --text-footer: var(--azul1);
+    --bg-footer: var(--azul3);
+    --text-footer: var(--celeste5);
     --border-footer: var(--gris2);
-    --text-copy: var(--celeste1);
+    --text-copy: var(--celeste4);
     /* TOAST / BANNER */
     --bg-toast: var(--celeste1);
     --bg-banner: var(--naranja);
@@ -44,14 +44,14 @@ body.modo-oscuro {
 }
 
 body.modo-oscuro {
-    cursor: url('../assets/img/icons/cursor-dark.svg'), auto;
+    cursor: url('../assets/img/cursors/cursor-dark.svg'), auto;
 }
 body.modo-oscuro a:hover {
-    cursor: url('../assets/img/cursor/cursor-hover-dark.svg'), pointer;
+    cursor: url('../assets/img/cursors/cursor-hover-dark.svg'), pointer;
 }
 body.modo-oscuro .boton:hover {
-    cursor: url('../assets/img/cursor/cursor-hover-dark.svg'), pointer;
+    cursor: url('../assets/img/cursors/cursor-hover-dark.svg'), pointer;
 }
 body.modo-oscuro input {
-    cursor: url('../assets/img/cursor/cursor-text.svg'), text;
+    cursor: url('../assets/img/cursors/cursor-text.svg'), text;
 }
