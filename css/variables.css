@@ -37,6 +37,7 @@
     --text-body: var(--azul1);
     /* CONTENIDO */
     --bg-content: var(--claro2);
+    --shadow-content: 0 4px 16px rgba(1, 76, 199, 0.08);
     /* LINK */
     --link: var(--azul1);
     --link-hover: var(--celeste1);

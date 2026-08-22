@@ -10,10 +10,12 @@
         font-size: 16px;
     }
     .contenido {
-        padding: 30px;
-        margin: 20px auto;
+        padding: 2rem;
+        margin: 2rem auto;
         max-width: 770px;
-        border-radius: 40px;
+        border-radius: 2.5rem;
+        box-shadow: var(--shadow-content);
+        background: var(--bg-content);
     }
     .logo-header-contenedor {
         display: flex;
@@ -22,11 +24,11 @@
         padding: 0;
     }
     .logo-header {
-        height: 70px;
+        height: 5rem;
         width: auto;
     }
     .logo-footer {
-        height: 80px;
+        height: 5.5rem;
         width: auto;
         margin: 0 auto;
     }
@@ -39,14 +41,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 20px;
+        padding: 0.8rem 1.5rem;
         text-align: center;
     }
     #boton-menu {
         display: none;
     }
     #formulario-contacto {
-        border-radius: 20px;
+        border-radius: 1.5rem;
     }
     .iframe-contenedor {
         display: flex;
@@ -56,7 +58,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 20px;
+        padding: 0.8rem 1.5rem;
         text-align: center;
     }
 }

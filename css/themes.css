@@ -6,7 +6,8 @@ body.modo-oscuro {
     --bg-body: var(--azul1);
     --text-body: var(--celeste5);
     /* CONTENIDO */
-    --bg-content: linear-gradient(90deg, var(--celeste1) 0%, var(--azul4) 100%);
+    --bg-content: linear-gradient(90deg, var(--azul2) 0%, var(--azul3) 100%);
+    --shadow-content: 0 4px 16px rgba(1, 76, 199, 0.08);
     /* LINK */
     --link: var(--azul1);
     --link-hover: var(--blanco);

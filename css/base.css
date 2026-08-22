@@ -20,11 +20,17 @@ li { list-style: none; }
         color: var(--text-body);
         transition: background 0.2s ease;
         cursor: url('../assets/img/cursors/cursor.svg'), auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
 
 /* ==========================================
     ESTILOS GENERALES
    ========================================== */
+    main {
+        flex: 1; /* Empuja el footer siempre al fondo de la pantalla */
+    }
     h1, h2, h3, h4, h5, h6 {
         font-family: "Nunito Sans", sans-serif;
         text-align: center;
@@ -38,16 +44,16 @@ li { list-style: none; }
         cursor: url('../assets/img/cursors/cursor-hover.svg'), pointer;
     }
     .boton {
-        padding: 10px;
+        padding: 0.8rem;
         font-size: 90%;
         font-weight: bold;
         text-transform: uppercase;
-        border-radius: 15px;
+        border-radius: 1rem;
         border: 2px solid var(--border-button);
         background-color: var(--bg-button);
-        min-width: 40px;
-        margin: 15px auto;
-        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        min-width: 3rem;
+        margin: 1rem auto;
+        transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     }
     .boton:hover, .boton-activo {
         cursor: pointer;
@@ -60,8 +66,8 @@ li { list-style: none; }
     }
     input {
         color: var(--text-input);
-        padding: 10px;
-        border-radius: 15px;
+        padding: 0.8rem;
+        border-radius: 1rem;
         border: 2px solid var(--border-input);
         background-color: var(--bg-input);
         cursor: url('../assets/img/cursors/cursor-text.svg'), text;
@@ -92,12 +98,12 @@ li { list-style: none; }
         padding: 10px 20px;
     }
     .logo-header {
-        height: 60px;
+        height: 4rem;
         width: auto;
     }
     .logo-footer {
         display: block;
-        height: 40px;
+        height: 3rem;
         width: auto;
         margin: 0 auto;
     }
@@ -108,7 +114,7 @@ li { list-style: none; }
     }
     .contenido {
         background-color: var(--bg-content);
-        padding: 10px;
+        padding: 0.8rem;
     }
     .copyright {
         text-align: center;
@@ -136,16 +142,16 @@ li { list-style: none; }
     }
     .toast {
         position: fixed;
-        bottom: 20px;
-        right: 20px;
+        bottom: 1.5rem;
+        right: 1.5rem;
         background-color: var(--bg-toast);
         color: var(--blanco);
-        padding: 12px 20px;
-        border-radius: 20px;
+        padding: 0.9rem 1.5rem;
+        border-radius: 1.5rem;
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s ease, transform 0.3s ease;
-        transform: translateY(10px);
+        transform: translateY(0.8rem);
         z-index: 100;
     }
     .toast.visible {
@@ -160,7 +166,7 @@ li { list-style: none; }
         background-color: var(--bg-banner);
         color: var(--blanco);
         text-align: center;
-        padding: 8px 12px;
+        padding: 0.5rem 0.8rem;
         display: none;
         z-index: 100;
     }
@@ -170,9 +176,9 @@ li { list-style: none; }
     .section-card {
         background: var(--bg-section-card);
         /* border: 2.5px solid var(--border-section-card); */
-        border-radius: 40px;
+        border-radius: 2.5rem;
         padding: 1.5rem;
-        margin: 20px auto;
+        margin: 1.5rem auto;
         color: var(--text-section-card);
         box-shadow: var(--shadow-section-card);
         backdrop-filter: blur(8px); /* Efecto cristal sutil sobre el fondo */
@@ -181,9 +187,9 @@ li { list-style: none; }
     .subsection-card {
         background: var(--bg-subsection-card);
         /* border: 2.5px solid var(--border-subsection-card); */
-        border-radius: 30px;
+        border-radius: 2rem;
         padding: 1.5rem;
-        margin: 20px auto;
+        margin: 1.5rem auto;
         color: var(--text-subsection-card);
         box-shadow: var(--shadow-subsection-card);
         backdrop-filter: blur(8px); /* Efecto cristal sutil sobre el fondo */
@@ -199,8 +205,8 @@ li { list-style: none; }
     }
     .footer-card {
         background: var(--bg-footer);
-        border-radius: 40px;
+        border-radius: 2.5rem;
         padding: 1.5rem;
-        margin: 20px auto;
+        margin: 1.5rem auto;
         color: var(--text-footer);
     }
