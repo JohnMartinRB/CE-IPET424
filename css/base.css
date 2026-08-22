@@ -47,6 +47,7 @@ li { list-style: none; }
         background-color: var(--bg-button);
         min-width: 40px;
         margin: 15px auto;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
     }
     .boton:hover, .boton-activo {
         cursor: pointer;
@@ -131,7 +132,7 @@ li { list-style: none; }
         color: var(--text-body);
     }
     #formulario-contacto {
-        border-radius: 10px;
+        border-radius: 5px;
     }
     .toast {
         position: fixed;
