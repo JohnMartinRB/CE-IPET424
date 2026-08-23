@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener('keydown', (e) => {
     if (e.altKey && e.key.toLowerCase() === 'd') {
         e.preventDefault();
-        const botonmodo = document.getElementById('boton-modo');
+        const botonmodo = document.getElementById('button-theme');
         if (botonmodo) {
             botonmodo.click();
         }
@@ -28,9 +28,9 @@ document.querySelectorAll('img').forEach(img => {
 
 // Botón de copiar enlace con feedback toast
 document.addEventListener('click', (e) => {
-    if (e.target.closest('#btn-copiar-link')) {
+    if (e.target.closest('#button-copy-link')) {
         navigator.clipboard.writeText(window.location.href).then(() => {
-        const toast = document.getElementById('toast-copiado');
+        const toast = document.getElementById('toast-copied');
         if (toast) {
             toast.classList.add('visible');
             setTimeout(() => toast.classList.remove('visible'), 2500);
