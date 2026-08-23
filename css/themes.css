@@ -27,11 +27,11 @@ body.modo-oscuro {
     --bg-button-hover: var(--celeste2);
     --text-button: var(--azul1);
     --text-button-hover: var(--azul1);
-    --border-button: var(--azul4);
+    --border-button: var(--celeste3);
     /* INPUTS */
     --bg-input: var(--blanco);
     --text-input: var(--azul1);
-    --border-input: var(--gris1);
+    --border-input: var(--blanco);
     /* FOOOTER */
     --bg-footer: linear-gradient(90deg, var(--azul3) 0%, var(--azul2) 100%);
     --text-footer: var(--celeste5);
@@ -40,6 +40,7 @@ body.modo-oscuro {
     --text-copy: var(--celeste4);
     /* TOAST / BANNER */
     --bg-toast: var(--celeste1);
+    --text-toast: var(--blanco);
     --bg-banner: var(--naranja);
     /* SELECTION */
     --bg-selection: var(--azul3);
@@ -51,7 +52,7 @@ body.modo-oscuro {
 body.modo-oscuro a:hover {
     cursor: url('../assets/img/cursors/cursor-hover-dark.svg'), pointer;
 }
-body.modo-oscuro .boton:hover {
+body.modo-oscuro .button:hover {
     cursor: url('../assets/img/cursors/cursor-hover-dark.svg'), pointer;
 }
 body.modo-oscuro input {

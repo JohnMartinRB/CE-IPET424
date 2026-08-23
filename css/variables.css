@@ -61,14 +61,16 @@
     /* INPUTS */
     --bg-input: var(--blanco);
     --text-input: var(--azul1);
-    --border-input: var(--gris1);
+    --border-input: var(--gris2);
     /* FOOOTER */
     --bg-footer: var(--claro1);
     --text-footer: var(--azul1);
+    --text-footer-hover: var(--celeste1);
     --border-footer: var(--gris2);
     --text-copy: var(--gris1);
     /* TOAST / BANNER */
-    --bg-toast: var(--celeste1);
+    --bg-toast: var(--celeste3);
+    --text-toast: var(--azul1);
     --bg-banner: var(--naranja);
     /* SELECTION */
     --bg-selection: var(--celeste2);
