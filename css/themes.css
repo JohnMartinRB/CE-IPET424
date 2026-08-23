@@ -33,7 +33,7 @@ body.modo-oscuro {
     --text-input: var(--azul1);
     --border-input: var(--gris1);
     /* FOOOTER */
-    --bg-footer: var(--azul3);
+    --bg-footer: linear-gradient(90deg, var(--azul3) 0%, var(--azul2) 100%);
     --text-footer: var(--celeste5);
     --text-footer-hover: var(--celeste7);
     --border-footer: var(--gris2);

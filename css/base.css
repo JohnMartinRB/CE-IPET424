@@ -2,7 +2,7 @@
     REINICIO DE ESTILOS
    ========================================== */
 * { padding: 0; }
-button { border: none; }
+button, input { border: none; }
 a { text-decoration: none; }
 li { list-style: none; }
 
@@ -43,7 +43,7 @@ li { list-style: none; }
         text-transform: uppercase;
         border-radius: 1rem;
         color: var(--text-button) !important;
-        border: 2px solid var(--border-button);
+        /* border: 2px solid var(--border-button);  */
         background-color: var(--bg-button);
         min-width: 3rem;
         margin: 1rem auto;
@@ -72,7 +72,8 @@ li { list-style: none; }
         color: var(--text-input);
         padding: 0.8rem;
         border-radius: 1rem;
-        border: 2px solid var(--border-input);
+        margin: 0.1rem 0;
+        /* border: 2px solid var(--border-input); */
         background-color: var(--bg-input);
         cursor: url('../assets/img/cursors/cursor-text.svg'), text;
     }
