@@ -74,22 +74,60 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 El código está estructurado de forma modular y limpia, facilitando la escalabilidad del sistema:
 
 ```text
-CE-IPET-424/
-├── .github/
-│   └── workflows/
-│       └── static.yml          # Workflow de despliegue automático a GitHub Pages
-├── assets/                     # Recursos estáticos (Imágenes, SVG, PDFs, íconos)
-├── css/                        # Hoja de estilos modularizada
-│   ├── main.css                # Estilos generales y variables CSS
-│   └── components/             # Estilos de componentes (Modales, Tablas, Menú)
-├── js/                         # Lógica de cliente en JS nativo (ES6+)
-│   ├── main.js                 # Inicialización y control del DOM
-│   ├── theme-toggle.js         # Módulo para el control de modo oscuro/claro
-│   └── horarios.js             # Módulo de filtrado y búsqueda de horarios
-├── pages/                      # Sub-páginas del sitio (Contacto, Trámites, FAQ)
-├── index.html                  # Landing Page / Portal Principal
-├── LICENSE                     # Licencia del proyecto
-└── README.md                   # Documentación principal
+CE-IPET424/
+├── .well-known/                      # Archivos de seguridad e infraestructura
+│   └── security.txt                  # Contacto oficial para reportes de seguridad
+├── assets/                           # Recursos estáticos del sitio
+│   ├── audio/                        # Archivos de audio (comunicados, accesibilidad)
+│   ├── data/                         # Archivos de datos estructurados
+│   │   ├── events.json               # Datos de eventos y calendario
+│   │   ├── faqs.json                 # Preguntas frecuentes
+│   │   ├── manifest.json             # Manifiesto para instalación PWA
+│   │   ├── news.json                 # Noticias y comunicados
+│   │   └── team.json                 # Integrantes del Centro de Estudiantes
+│   ├── docs/                         # Documentos descargables (PDFs, autorizaciones)
+│   ├── fonts/                        # Tipografías locales
+│   ├── img/                          # Imágenes del sitio
+│   │   ├── cursors/                  # Punteros personalizados (.svg)
+│   │   ├── favicons/                 # Favicons para modo claro y oscuro
+│   │   ├── gallery/                  # Galería de fotos e instalaciones
+│   │   ├── icons/                    # Íconos de interfaz y redes
+│   │   ├── logos/                    # Logos e insignias del CE e IPET
+│   │   └── mascot/                   # Ilustraciones de la mascota
+│   └── videos/                       # Clips y videos institucionales
+├── components/                       # Componentes HTML reutilizables
+│   ├── footer.html                   # Pie de página modular
+│   └── header.html                   # Encabezado y navegación modular
+├── css/                              # Estilos e identidades visuales
+│   ├── base.css                      # Reset y estilos globales
+│   ├── dark-mode.css                 # Estilos específicos de modo oscuro
+│   ├── desktop.css                   # Responsive design para pantallas grandes
+│   ├── fonts.css                     # Carga y definición de fuentes
+│   ├── high-contrast.css             # Modo de alto contraste para accesibilidad
+│   ├── normalize.css                 # Normalización entre navegadores
+│   ├── styles.css                    # Hoja de ruta principal (@import)
+│   ├── tablet.css                    # Responsive design para tablets
+│   ├── themes.css                    # Variables CSS de temas de color
+│   └── variables.css                 # Variables generales del sistema
+├── js/                               # Lógica e interactividad del cliente
+│   ├── accessibility.js              # Herramientas de accesibilidad
+│   ├── components.js                 # Carga dinámica de header y footer
+│   ├── config.js                     # Configuración general del sitio
+│   ├── main.js                       # Inicialización y control global del DOM
+│   └── theme.js                      # Control y persistencia del modo oscuro/claro
+├── .nojekyll                         # Evita que GitHub Pages omita carpetas con guion bajo
+├── 404.html                          # Página personalizada de error 404
+├── about.html                        # Sub-página institucional ("Sobre Nosotros")
+├── contact.html                      # Sub-página con formulario y datos de contacto
+├── credits.html                      # Sub-página de créditos del equipo de desarrollo
+├── humans.txt                        # Créditos e información de autores del proyecto
+├── index.html                        # Portal principal (Landing Page)
+├── LICENSE                           # Licencia de software libre (Licencia MIT)
+├── projects.html                     # Sub-página de proyectos y propuestas
+├── README.md                         # Documentación principal del repositorio
+├── robots.txt                        # Instrucciones para motores de búsqueda
+└── school.html                       # Sub-página sobre la historia e instalaciones de la escuela
+```
 
 ---
 
@@ -113,17 +151,24 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 
 ## 📜 Historial de Versiones (Changelog)
 
+AVISO: Se incluyen únicamente las versiones completas
+
+* **`v0.17` (Actual)**
+  * Se implementó una MIT License
+  * Se corrigió el README
+* **`v0.16` (Actual)**
+  * Se cambiaron todas las clases e ids a inglés
+  * Se cambió totalmente la forma en que se manejan los botones y enlaces para tener un mejor funcionamiento y coherencia, así como arreglar varios errores
 * **`v0.15` (Actual)**
-  * Implementación del módulo dinámico de consulta de horarios.
-  * Automatización del despliegue vía GitHub Actions.
-  * Ajustes de accesibilidad y refactorización de hojas de estilo CSS.
-* **`v0.10`**
-  * Integración del selector de tema visual (Modo Claro / Modo Oscuro) con persistencia en `localStorage`.
-  * Incorporación del módulo de descargas de archivos PDF institucionales.
-* **`v0.05`**
-  * Rediseño de componentes responsive y sub-páginas internas.
-* **`v0.01`**
-  * Estructura base en HTML5/CSS3 y lanzamiento de la primera versión borrador.
+  * Se agregaron variables para el modo oscuro
+* **`v0.14` (Actual)**
+  * Ahora todas las secciones se encuentran en tarjetas con colores (provisorios), sombras y animaciones
+  * Se agregaron nuevas clases a todas las secciones
+  * Se agregaron variables por elemento para trabajar los colores unicamente desde las variables base (aun no funciona para el modo oscuro)
+  * Se agregó un plano general como placeholder del plano de la escuela 
+  * Ahora todos los títulos están centrados
+  * El texto de los botones está en negrita y posee más padding, además de distinto color de borde
+  * Se agregaron animaciones a los details y summary -
 
 ## 🗺️ Roadmap de Desarrollo (Hacia la v1.0)
 
