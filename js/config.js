@@ -27,7 +27,7 @@ export function consoleMsg() {
     // Easter egg en la consola
     console.log(
         "%c ¡Hola usuario! 🚀 %c\n¿Te interesa la programación o querés colaborar en la web del Centro de Estudiantes? ¡Sumate al equipo!",
-        "font-size: 20px; font-weight: bold; color: #00C4FF;",
-        "font-size: 16px; color: #ccc;"
+        "font-size: 1.5rem; font-weight: bold; color: #00C4FF;",
+        "font-size: 1rem; color: #ccc;"
     );
 }

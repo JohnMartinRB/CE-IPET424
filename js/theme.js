@@ -27,7 +27,7 @@ export function initTheme() {
 
     // 2. EVENTO CLIC: Cambiar modo, actualizar localStorage y Favicon
     document.addEventListener('click', function (e) {
-        const botonmodo = e.target.closest('#boton-modo');
+        const botonmodo = e.target.closest('#button-theme');
         if (botonmodo) {
             const cuerpo = document.body;
             // Con toggle activamos/desactivamos la clase
@@ -52,7 +52,7 @@ export function initTheme() {
     // 3. ACTUALIZAR TEXTO DEL BOTÓN SI SE CARGA POR FETCH
     // Como el botón se inyecta por fetch, cuando aparezca en pantalla sincronizamos su texto
     const observador = new MutationObserver(() => {
-        const botonmodo = document.getElementById('boton-modo');
+        const botonmodo = document.getElementById('button-theme');
         if (botonmodo) {
             if (document.body.classList.contains('modo-oscuro')) {
                 botonmodo.textContent = "Modo Claro ☀️";
@@ -70,7 +70,7 @@ export function initTheme() {
             document.body.classList.toggle('modo-oscuro', esOscuro);
             actualizarFavicon(esOscuro);
             
-            const botonmodo = document.getElementById('boton-modo');
+            const botonmodo = document.getElementById('button-theme');
             if (botonmodo) {
                 botonmodo.textContent = esOscuro ? "Modo Claro ☀️" : "Modo Oscuro 🌙";
             }

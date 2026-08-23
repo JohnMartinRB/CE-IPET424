@@ -3,6 +3,7 @@
    ========================================== */
 * { padding: 0; }
 button { border: none; }
+a { text-decoration: none; }
 li { list-style: none; }
 
 /* ==========================================
@@ -35,34 +36,37 @@ li { list-style: none; }
         font-family: "Nunito Sans", sans-serif;
         text-align: center;
     }
-    a {
-        text-decoration: none;
-        color: var(--text-button);
-    }
-    a:hover {
-        color: var(--text-button-hover);
-        cursor: url('../assets/img/cursors/cursor-hover.svg'), pointer;
-    }
-    .boton {
+    .button, a.button {
         padding: 0.8rem;
         font-size: 90%;
         font-weight: bold;
         text-transform: uppercase;
         border-radius: 1rem;
+        color: var(--text-button) !important;
         border: 2px solid var(--border-button);
         background-color: var(--bg-button);
         min-width: 3rem;
         margin: 1rem auto;
         transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+        user-select: none;
     }
-    .boton:hover, .boton-activo {
+    .button:hover, a.button.hover {
         cursor: pointer;
         background-color: var(--bg-button-hover);
         cursor: url('../assets/img/cursors/cursor-hover.svg'), pointer;
     }
-    .boton:active, a:active {
-        transform: scale(0.97);
-        transition: transform 0.1s ease;
+    .button:active, a.button:active {
+        transform: scale(0.95) translateY(2px);
+        background-color: var(--bg-button-hover);
+        transition: transform 0.05s ease;
+    }
+    .button-active {
+        cursor: pointer;
+        background-color: var(--bg-button-hover);
+        cursor: url('../assets/img/cursors/cursor-hover.svg'), pointer;
+    }
+    .button:visited, a.button:visited {
+        color: var(--text-button) !important;
     }
     input {
         color: var(--text-input);
@@ -91,15 +95,21 @@ li { list-style: none; }
 /* ==========================================
     ESTILOS ESPECIFICOS
    ========================================== */
-    .logo-header-contenedor {
-        display: flex;
+    ::selection {
+        background-color: var(--bg-selection);
+        color: var(--blanco);
+    }
+    .logo-header-container {
+        display: grid !important;
+        grid-template-columns: 60px 1fr 60px; 
         align-items: center;
-        justify-content: space-between;
-        padding: 10px 20px;
+        justify-items: center;
+        width: 100%;
     }
     .logo-header {
-        height: 4rem;
+        height: 5rem;
         width: auto;
+        object-fit: contain;
     }
     .logo-footer {
         display: block;
@@ -109,10 +119,10 @@ li { list-style: none; }
     }
     h1 {
         text-align: center;
-        flex-grow: 1;
         margin: 0;
+        width: 100%;
     }
-    .contenido {
+    .content {
         background-color: var(--bg-content);
         padding: 0.8rem;
     }
@@ -121,11 +131,11 @@ li { list-style: none; }
         font-size: 85%;
         color: var(--text-copy);
     }
-    #boton-modo {
+    #button-theme {
         display: block;
         margin: 0 auto;
     }
-    #plano-escuela {
+    #school-map {
         width: 100%;
         height: auto;
     }
@@ -137,7 +147,7 @@ li { list-style: none; }
         font-size: 6rem;
         color: var(--text-body);
     }
-    #formulario-contacto {
+    #form-contact {
         border-radius: 5px;
     }
     .toast {
@@ -175,7 +185,6 @@ li { list-style: none; }
     }
     .section-card {
         background: var(--bg-section-card);
-        /* border: 2.5px solid var(--border-section-card); */
         border-radius: 2.5rem;
         padding: 1.5rem;
         margin: 1.5rem auto;
@@ -186,7 +195,6 @@ li { list-style: none; }
     }
     .subsection-card {
         background: var(--bg-subsection-card);
-        /* border: 2.5px solid var(--border-subsection-card); */
         border-radius: 2rem;
         padding: 1.5rem;
         margin: 1.5rem auto;
@@ -209,4 +217,27 @@ li { list-style: none; }
         padding: 1.5rem;
         margin: 1.5rem auto;
         color: var(--text-footer);
+    }
+    a.menu-item, a.menu-item:visited {
+        color: var(--link) !important;
+        transition: color 0.2s ease, transform 0.1s ease;
+        display: inline-block !important;
+    }
+    a.menu-item:hover {
+        color: var(--link-hover) !important;
+    }
+    a.menu-item:active {
+        transform: scale(0.95);
+        color: var(--link-hover) !important;
+    }
+    a.footer-link, a.footer-link:visited {
+        color: var(--text-footer) !important;
+        transition: color 0.2s ease, transform 0.1s ease;
+    }
+    a.footer-link:hover {
+        color: var(--text-footer-hover) !important;
+    }
+    a.footer-link:active {
+        transform: scale(0.95);
+        color: var(--text-footer-hover) !important;
     }

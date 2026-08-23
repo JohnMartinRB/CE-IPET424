@@ -2,30 +2,16 @@
     COMPUTADORAS DE ESCRITORIO / PCS
    ========================================== */
 @media (min-width: 1024px) {
-    ::selection { /* Color de selección de texto */
-        background-color: var(--bg-selection);
-        color: var(--blanco);
-    }
     body {
         font-size: 16px;
     }
-    .contenido {
+    .content {
         padding: 2rem;
         margin: 2rem auto;
         max-width: 770px;
         border-radius: 2.5rem;
         box-shadow: var(--shadow-content);
         background: var(--bg-content);
-    }
-    .logo-header-contenedor {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0;
-    }
-    .logo-header {
-        height: 5rem;
-        width: auto;
     }
     .logo-footer {
         height: 5.5rem;
@@ -34,7 +20,6 @@
     }
     h1 {
         text-align: center;
-        flex-grow: 1;
         margin: 0;
     }
     .menu {
@@ -44,17 +29,17 @@
         padding: 0.8rem 1.5rem;
         text-align: center;
     }
-    #boton-menu {
+    #button-menu {
         display: none;
     }
-    #formulario-contacto {
+    #form-contact {
         border-radius: 1.5rem;
     }
-    .iframe-contenedor {
+    .iframe-container {
         display: flex;
         justify-content: center;
     }
-    .enlaces {
+    .links {
         display: flex;
         align-items: center;
         justify-content: space-between;
