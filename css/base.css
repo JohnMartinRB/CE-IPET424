@@ -1,20 +1,23 @@
 /* ==========================================
     REINICIO DE ESTILOS
    ========================================== */
-* { padding: 0; }
+* { padding: 0;}
+*, *::before, *::after { box-sizing: border-box; }
 button { border: none; }
 a { text-decoration: none; }
 li { list-style: none; }
+img { user-select: none; -webkit-user-drag: none; }
 
 /* ==========================================
     BODY: TEXTO Y COLORES
    ========================================== */
     html {
         scroll-behavior: smooth;
+        overflow-x: clip;
     }
     body {
         font-family: "Nunito", serif;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: normal;
         margin: 0;
         background-color: var(--bg-body);
@@ -24,11 +27,15 @@ li { list-style: none; }
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+        overflow-x: clip;
     }
 
 /* ==========================================
     ESTILOS GENERALES
    ========================================== */
+    body, main, header, footer, section, article, aside, nav {
+        transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
     main {
         flex: 1; /* Empuja el footer siempre al fondo de la pantalla */
     }
@@ -78,6 +85,34 @@ li { list-style: none; }
         background-color: var(--bg-input);
         cursor: url('../assets/img/cursors/cursor-text.svg'), text;
     }
+    .section-card {
+        background: var(--bg-section-card);
+        border-radius: 2.5rem;
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+        color: var(--text-section-card);
+        box-shadow: var(--shadow-section-card);
+        backdrop-filter: blur(8px); /* Efecto cristal sutil sobre el fondo */
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .subsection-card {
+        background: var(--bg-subsection-card);
+        border-radius: 2rem;
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+        color: var(--text-subsection-card);
+        box-shadow: var(--shadow-subsection-card);
+        backdrop-filter: blur(8px); /* Efecto cristal sutil sobre el fondo */
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .section-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 28px rgba(0, 207, 255, 0.25);
+    }
+    .subsection-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 28px rgba(0, 114, 139, 0.25);
+    }
     details { /* Transición suave para el contenedor <details> */
         overflow: hidden;
         transition: height 0.3s ease, padding 0.3s ease;
@@ -109,7 +144,7 @@ li { list-style: none; }
         width: 100%;
     }
     .logo-header {
-        height: 5rem;
+        height: 4rem;
         width: auto;
         object-fit: contain;
     }
@@ -118,6 +153,34 @@ li { list-style: none; }
         height: 3rem;
         width: auto;
         margin: 0 auto;
+    }
+    .header-main {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+        background-color: var(--bg-content);
+    }
+    .header-main.scrolled {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+    .reading-progress-container {
+        width: 80%;
+        height: 4px;
+        background-color: transparent;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .reading-progress-bar {
+        height: 100%;
+        width: 0%;
+        margin-left: 10%;
+        background-color: var(--celeste2);
+        transition: width 0.1s ease-out;
     }
     h1 {
         text-align: center;
@@ -133,9 +196,11 @@ li { list-style: none; }
         font-size: 85%;
         color: var(--text-copy);
     }
-    #button-theme {
-        display: block;
-        margin: 0 auto;
+    .options {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
     }
     #school-map {
         width: 100%;
@@ -185,34 +250,6 @@ li { list-style: none; }
     .offline-banner.visible {
         display: block;
     }
-    .section-card {
-        background: var(--bg-section-card);
-        border-radius: 2.5rem;
-        padding: 1.5rem;
-        margin: 1.5rem auto;
-        color: var(--text-section-card);
-        box-shadow: var(--shadow-section-card);
-        backdrop-filter: blur(8px); /* Efecto cristal sutil sobre el fondo */
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .subsection-card {
-        background: var(--bg-subsection-card);
-        border-radius: 2rem;
-        padding: 1.5rem;
-        margin: 1.5rem auto;
-        color: var(--text-subsection-card);
-        box-shadow: var(--shadow-subsection-card);
-        backdrop-filter: blur(8px); /* Efecto cristal sutil sobre el fondo */
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .section-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 12px 28px rgba(0, 207, 255, 0.25);
-    }
-    .subsection-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 12px 28px rgba(0, 114, 139, 0.25);
-    }
     .footer-card {
         background: var(--bg-footer);
         border-radius: 2.5rem;
@@ -242,4 +279,31 @@ li { list-style: none; }
     a.footer-link:active {
         transform: scale(0.95);
         color: var(--text-footer-hover) !important;
+    }
+    ::-webkit-scrollbar { /* Ancho total de la barra */
+        width: 0.7rem;
+    }
+    ::-webkit-scrollbar-track { /* Carril / Fondo de la barra */
+        background-color: var(--scrollbar-track);
+    }
+    ::-webkit-scrollbar-thumb { /* El indicador desplazable (Thumb) */
+        background-color: var(--scrollbar-thumb);
+        border-radius: 1rem;
+        height: 8rem;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--scrollbar-thumb-hover);
+    }
+    .weather-widget {
+        background-color: var(--bg-weather-widget);
+        color: var(--text-weather-widget);
+        border: 2px solid var(--border-weather-widget);
+        padding: 0.8rem;
+        font-size: 90%;
+        font-weight: bold;
+        border-radius: 1rem;
+        min-width: 3rem;
+        margin: 1rem auto;
+        transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+        user-select: none;
     }

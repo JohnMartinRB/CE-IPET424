@@ -7,11 +7,26 @@
     }
     .content {
         padding: 2rem;
-        margin: 2rem auto;
-        max-width: 770px;
+        margin: 0.5rem auto;
+        max-width: 790px;
         border-radius: 2.5rem;
         box-shadow: var(--shadow-content);
         background: var(--bg-content);
+    }
+    #header-container {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+    }
+    .header-main {
+        padding: 2rem;
+        margin: 0.5rem auto;
+        max-width: 790px;
+        border-radius: 2.5rem;
+        box-shadow: var(--shadow-content);
+        background: var(--bg-content);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
     }
     .logo-footer {
         height: 5.5rem;

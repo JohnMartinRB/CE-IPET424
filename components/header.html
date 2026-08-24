@@ -1,4 +1,4 @@
-<header class="header-main">
+<header id="header-main" class="header-main">
     <div class="logo-header-container">
         <img src="assets/img/logos/centro.png" alt="Logo del Centro de Estudiantes" class="logo-header" loading="lazy">
         <h1 class="title">CENTRO DE ESTUDIANTES IPET N° 424</h1>
@@ -13,7 +13,19 @@
             <li><a class="menu-item" href="#centro">Nuestro Centro</a></li>
             <li><a class="menu-item" href="#contacto">Contacto</a></li>
         </ul>
-        <!-- BOTÓN DE MODO OSCURO -->
-        <button id="button-theme" class="button">Modo Oscuro 🌙</button>
     </nav>
+    <div class="options">
+            <!-- BOTÓN DE MODO OSCURO -->
+            <button id="button-theme" class="button">Modo Oscuro 🌙</button>
+            <!-- Widget de Clima Local (Villa Dolores) -->
+            <div class="weather-widget" id="weather-widget">
+                <span class="weather-icon" id="weather-icon">☀️</span>
+                <span class="weather-temp" id="weather-temp">--°C</span>
+                <span class="weather-location">Villa Dolores</span>
+            </div>
+        </div>
+    </div>
+    <div class="reading-progress-container">
+        <div id="reading-progress-bar" class="reading-progress-bar">
+    </div>
 </header>

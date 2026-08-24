@@ -44,6 +44,14 @@ body.modo-oscuro {
     --bg-banner: var(--naranja);
     /* SELECTION */
     --bg-selection: var(--azul3);
+    /* SCROLLBAR */
+    --scrollbar-track: var(--azul3);
+    --scrollbar-thumb: var(--celeste2);
+    --scrollbar-thumb-hover: var(--celeste1);
+    /* WEATHER WIDGET */
+    --bg-weather-widget: rgba(255, 255, 255, 0.15);
+    --text-weather-widget: var(--blanco);
+    --border-weather-widget: rgba(255, 255, 255, 0.2);
 }
 
 body.modo-oscuro {

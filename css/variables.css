@@ -74,4 +74,12 @@
     --bg-banner: var(--naranja);
     /* SELECTION */
     --bg-selection: var(--celeste2);
+    /* SCROLLBAR */
+    --scrollbar-track: var(--claro2);
+    --scrollbar-thumb: var(--celeste3);
+    --scrollbar-thumb-hover: var(--celeste2);
+    /* WEATHER WIDGET */
+    --bg-weather-widget: rgba(129, 129, 129, 0.15);
+    --text-weather-widget: var(--azul1);
+    --border-weather-widget: rgba(129, 129, 129, 0.2);
 }
