@@ -196,6 +196,6 @@ Proyecto diseñado, programado y mantenido por:
 * **Juan Martín Rodríguez**  
   *Presidente del Centro de Estudiantes — IPET N° 424 (Gestión 2026)*
   * **GitHub:** [@JohnMartinRB](https://github.com/JohnMartinRB)
-  * **Repositorio oficial:** [CE-IPET-424](https://github.com/JohnMartinRB/CE-IPET-424)
+  * **Repositorio oficial:** [CE-IPET-424](https://github.com/JohnMartinRB/CE-IPET424)
 
 ---
