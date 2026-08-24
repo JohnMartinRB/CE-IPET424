@@ -37,7 +37,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro | Detalle |
 | :--- | :--- |
-| **Versión Actual** | `v0.18` (Fase beta - En desarrollo) |
+| **Versión Actual** | `v0.18` (Fase alpha - En desarrollo) |
 | **Inicio de Desarrollo** | 07 de agosto de 2026 |
 | **Lanzamiento Estable (v1.0)** | Marzo de 2027 |
 | **Entorno de Hosting** | Cloudflare Pages / GitHub Pages |
