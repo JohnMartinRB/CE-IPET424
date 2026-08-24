@@ -153,15 +153,23 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 
 AVISO: Se incluyen únicamente las versiones completas
 
-* **`v0.17` (Actual)**
+* **`v0.18` (Actual)**
+  * El header ahora se encuentra en un contenedor aparte de .content, tiene posición sticky por lo que se mantiene al hacer scroll
+  * Se añadió una barra del progreso de lectura en el head
+  * Se agregó un widget de tiempo atmosférico de Villa Dolores en el header
+  * Se reworkeó la función de deshabilitar el menú contextual en imágenes para hacerla mas completa
+  * Se personalizó la scrollbar (colores, ancho, etc)
+  * Se agregaron más transiciones y animaciones
+  * Ahora el boton de modo oscuro y el weather widget están en un contenedor aparte del nav -
+* **`v0.17`**
   * Se implementó una MIT License
   * Se corrigió el README
-* **`v0.16` (Actual)**
+* **`v0.16`**
   * Se cambiaron todas las clases e ids a inglés
   * Se cambió totalmente la forma en que se manejan los botones y enlaces para tener un mejor funcionamiento y coherencia, así como arreglar varios errores
-* **`v0.15` (Actual)**
+* **`v0.15`**
   * Se agregaron variables para el modo oscuro
-* **`v0.14` (Actual)**
+* **`v0.14`**
   * Ahora todas las secciones se encuentran en tarjetas con colores (provisorios), sombras y animaciones
   * Se agregaron nuevas clases a todas las secciones
   * Se agregaron variables por elemento para trabajar los colores unicamente desde las variables base (aun no funciona para el modo oscuro)
