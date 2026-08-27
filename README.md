@@ -37,7 +37,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro | Detalle |
 | :--- | :--- |
-| **Versión Actual** | `v0.18` (Fase alpha - En desarrollo) |
+| **Versión Actual** | `v0.19` (Fase alpha - En desarrollo) |
 | **Inicio de Desarrollo** | 07 de agosto de 2026 |
 | **Lanzamiento Estable (v1.0)** | Marzo de 2027 |
 | **Entorno de Hosting** | Cloudflare Pages / GitHub Pages |
@@ -153,14 +153,17 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 
 AVISO: Se incluyen únicamente las versiones completas
 
-* **`v0.18` (Actual)**
+* **`v0.19` (Actual)**
+  * Se agregó una pantalla de carga sencilla para cubrir el contendio mientras se cargan los componentes de la página.
+  * Se agregó un border radius a la barra de progreso de lectura
+* **`v0.18`**
   * El header ahora se encuentra en un contenedor aparte de .content, tiene posición sticky por lo que se mantiene al hacer scroll
   * Se añadió una barra del progreso de lectura en el head
   * Se agregó un widget de tiempo atmosférico de Villa Dolores en el header
   * Se reworkeó la función de deshabilitar el menú contextual en imágenes para hacerla mas completa
   * Se personalizó la scrollbar (colores, ancho, etc)
   * Se agregaron más transiciones y animaciones
-  * Ahora el boton de modo oscuro y el weather widget están en un contenedor aparte del nav -
+  * Ahora el boton de modo oscuro y el weather widget están en un contenedor aparte del nav
 * **`v0.17`**
   * Se implementó una MIT License
   * Se corrigió el README
@@ -176,7 +179,7 @@ AVISO: Se incluyen únicamente las versiones completas
   * Se agregó un plano general como placeholder del plano de la escuela 
   * Ahora todos los títulos están centrados
   * El texto de los botones está en negrita y posee más padding, además de distinto color de borde
-  * Se agregaron animaciones a los details y summary -
+  * Se agregaron animaciones a los details y summary
 
 ## 🗺️ Roadmap de Desarrollo (Hacia la v1.0)
 

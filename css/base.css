@@ -157,7 +157,7 @@ img { user-select: none; -webkit-user-drag: none; }
     .header-main {
         position: sticky;
         top: 0;
-        z-index: 1000;
+        z-index: 100;
         width: 100%;
         transition: background-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
         background-color: var(--bg-content);
@@ -179,6 +179,7 @@ img { user-select: none; -webkit-user-drag: none; }
         height: 100%;
         width: 0%;
         margin-left: 10%;
+        border-radius: 1rem;
         background-color: var(--celeste2);
         transition: width 0.1s ease-out;
     }
@@ -307,4 +308,50 @@ img { user-select: none; -webkit-user-drag: none; }
         margin: 1rem auto;
         transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
         user-select: none;
+    }
+    #loader-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--celeste2); /* O el color de fondo principal de tu web */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000; /* Asegúrate de que esté por encima de todo */
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 1s ease, visibility 1s ease;
+    }
+    #loader-screen.fade-out {
+        opacity: 0;
+        visibility: hidden;
+    }
+    #loader-content {
+        text-align: center;
+        color: var(--blanco);
+        font-family: "Nunito Sans", sans-serif;
+    }
+    #loader-content h2 {
+        font-size: 5rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    #loader-content p {
+        font-size: 2rem;
+        opacity: 0.8;
+    }
+    #loader-spinner {
+        width: 90px;
+        height: 90px;
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        border-top: 4px solid var(--celeste6);
+        border-radius: 50%;
+        margin: 0 auto;
+        animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
     }

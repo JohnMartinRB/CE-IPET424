@@ -121,3 +121,14 @@ window.addEventListener('scroll', () => {
         }
     }
 });
+
+
+// Ocultar pantalla de bienvenida 1 segundos después de que todo cargue
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        const loader = document.getElementById('loader-screen');
+        if (loader) {
+            loader.classList.add('fade-out');
+        }
+    }, 500); // 500 ms = 0.5 segundos de espera
+});
