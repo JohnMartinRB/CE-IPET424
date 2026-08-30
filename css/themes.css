@@ -66,3 +66,6 @@ body.modo-oscuro .button:hover {
 body.modo-oscuro input {
     cursor: url('../assets/img/cursors/cursor-text.svg'), text;
 }
+body.modo-oscuro #inicio {
+    background-image: url('../assets/img/bg/bg_5.jpg');
+}

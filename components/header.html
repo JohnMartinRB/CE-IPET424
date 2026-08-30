@@ -1,31 +1,14 @@
 <header id="header-main" class="header-main">
-    <div class="logo-header-container">
-        <img src="assets/img/logos/centro.png" alt="Logo del Centro de Estudiantes" class="logo-header" loading="lazy">
-        <h1 class="title">CENTRO DE ESTUDIANTES IPET N° 424</h1>
-        <img src="assets/img/logos/escudo.png" alt="Escudo del IPET N° 424" class="logo-header" loading="lazy">
-    </div>
-    <nav class="nav-main">
-        <button id="button-menu" class="button" aria-label="Abrir menú">☰</button>
-        <ul class="menu">
-            <li><a class="menu-item" href="#tramites">Trámites y PDFs</a></li>
-            <li><a class="menu-item" href="#reglamento">Reglamento y Horarios</a></li>
-            <li><a class="menu-item" href="#herramientas">Calculadora</a></li>
-            <li><a class="menu-item" href="#centro">Nuestro Centro</a></li>
-            <li><a class="menu-item" href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-    <div class="options">
-            <!-- BOTÓN DE MODO OSCURO -->
-            <button id="button-theme" class="button">Modo Oscuro 🌙</button>
-            <!-- Widget de Clima Local (Villa Dolores) -->
-            <div class="weather-widget" id="weather-widget">
-                <span class="weather-icon" id="weather-icon">☀️</span>
-                <span class="weather-temp" id="weather-temp">--°C</span>
-                <span class="weather-location">Villa Dolores</span>
-            </div>
+    <div id="logo-header-container" class="logo-header-container">
+        <img src="assets/img/logos/centro.png" id="logo-header" class="logo-header" alt="Logo del Centro de Estudiantes" loading="lazy">
+        <div>
+            <h1 id="title" class="title">CENTRO DE ESTUDIANTES IPET N° 424</h1>
+            <p id="subtitle" class="subtitle">Portal Estudiantil Oficial. Novedades, proyectos y contacto.</p>
         </div>
+        <img src="assets/img/logos/escudo.png" id="logo-escudo" class="logo-header" alt="Escudo del IPET N° 424" loading="lazy">
     </div>
-    <div class="reading-progress-container">
-        <div id="reading-progress-bar" class="reading-progress-bar">
+    <!-- BARRA DE PROGRESO DE LECTURA -->
+    <div id="progress-bar-container" class="progress-bar-container">
+        <div id="progress-bar" class="progress-bar"></div>
     </div>
 </header>

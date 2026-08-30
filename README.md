@@ -37,7 +37,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro | Detalle |
 | :--- | :--- |
-| **Versión Actual** | `v0.19` (Fase alpha - En desarrollo) |
+| **Versión Actual** | `v0.20` (Fase alpha - En desarrollo) |
 | **Inicio de Desarrollo** | 07 de agosto de 2026 |
 | **Lanzamiento Estable (v1.0)** | Marzo de 2027 |
 | **Entorno de Hosting** | Cloudflare Pages / GitHub Pages |
@@ -88,6 +88,7 @@ CE-IPET424/
 │   ├── docs/                         # Documentos descargables (PDFs, autorizaciones)
 │   ├── fonts/                        # Tipografías locales
 │   ├── img/                          # Imágenes del sitio
+│   │   ├── bg/                       # Imágenes tecnológicas de fondo (.jpg)
 │   │   ├── cursors/                  # Punteros personalizados (.svg)
 │   │   ├── favicons/                 # Favicons para modo claro y oscuro
 │   │   ├── gallery/                  # Galería de fotos e instalaciones
@@ -96,14 +97,13 @@ CE-IPET424/
 │   │   └── mascot/                   # Ilustraciones de la mascota
 │   └── videos/                       # Clips y videos institucionales
 ├── components/                       # Componentes HTML reutilizables
+│   ├── aside-config.html             # Aside desplegable modular
 │   ├── footer.html                   # Pie de página modular
 │   └── header.html                   # Encabezado y navegación modular
 ├── css/                              # Estilos e identidades visuales
 │   ├── base.css                      # Reset y estilos globales
-│   ├── dark-mode.css                 # Estilos específicos de modo oscuro
 │   ├── desktop.css                   # Responsive design para pantallas grandes
 │   ├── fonts.css                     # Carga y definición de fuentes
-│   ├── high-contrast.css             # Modo de alto contraste para accesibilidad
 │   ├── normalize.css                 # Normalización entre navegadores
 │   ├── styles.css                    # Hoja de ruta principal (@import)
 │   ├── tablet.css                    # Responsive design para tablets
@@ -111,9 +111,12 @@ CE-IPET424/
 │   └── variables.css                 # Variables generales del sistema
 ├── js/                               # Lógica e interactividad del cliente
 │   ├── accessibility.js              # Herramientas de accesibilidad
+│   ├── banners.js                    # Banners, barras y toasts
+│   ├── buttons.js                    # Botones y widgets
 │   ├── components.js                 # Carga dinámica de header y footer
 │   ├── config.js                     # Configuración general del sitio
 │   ├── main.js                       # Inicialización y control global del DOM
+│   ├── shortcuts.js                  # Atajos de teclado
 │   └── theme.js                      # Control y persistencia del modo oscuro/claro
 ├── .nojekyll                         # Evita que GitHub Pages omita carpetas con guion bajo
 ├── 404.html                          # Página personalizada de error 404
@@ -153,7 +156,34 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 
 AVISO: Se incluyen únicamente las versiones completas
 
-* **`v0.19` (Actual)**
+* **`v0.20` (Actual)**
+La actualización más grande hasta el momento: se actualizó casi toda la interfaz de la página (la actu estuvo enfocada en el diseño en pc)
+ESTRUCTURA:
+  * Ahora el nav se encuentra en una tarjeta aparte del Header
+  * Se agregó un subtítulo al header y ahora es más ancho
+  * El footer se encuentra en una tarjeta separada, más ancha, al final de la página
+  * Se movieron los botones de modo oscuro, copiar enlace y el widget de clima a un aside de opciones, desplegable (el cual se inyecta con fetch al igual que el header y el footer)
+  * En este mismo aside, se agregaron dos botones para futuros temas de color
+  * En el footer, se agregaron enlaces al repositorio github y a la licencia MIT. Tambien, se separó la línea de copyright de la de desarrollo, haciendo esta ultima un poco mas pequeña (ahora los textos del copyright se manejan por clases)
+  * Se agregó la carpeta assets/img/bg para incluir fondos tecnológicos para tarjetas futuras
+  * Ahora 404.html no tiene menú, aside y tiene un footer personalizado únicamente con el copyright
+  * Se cambió la forma en que se manejan las clases e ids: ahora todos los elementos tienen una clase y un id idénticos y específicos, y clases adicionales para estilos generales
+  * CSS ahora trabaja únicamente con las clases genéricas y específicas, reservando los ids unicamente para javascript
+DISEÑO:
+  * Se cambiaron todos los colores de fondo y tarjetas en modo claro, paasando de gris/blanco a degrades con celeste/blanco
+  * Ahora la tarjeta de hero tiene un fondo tecnologico
+  * Se agrego más interlineado al texto, el cual tiene una nueva clase "text" . Además, este ahora se encuentra centrado
+  * Se agregó un ancho fijo a los botones del aside
+  * Ahora el input:focus tiene un borde diferente y además un sombreado (el input ahora se trabaja por clase)
+  * Se cambió el ancho de la barra de progreso de lectura
+  * Se cambió el padding/margin de muchas tarjetas
+FUNCIONES:
+  * Se modularizó más el archivo main.js en buttons.js, banners.js y shortcuts.js el primero conteniendo los botones y el widget, el segundo conteniendo el toast, el offline-banner y la barra de lectura, y el ultimo los atajos de teclado
+  * Sus funciones ahora se importan
+  * Se cambió el funcionamiento del widget del clima
+  * Se agregó un atajo de teclado para copiar el enlace de la web, y otros para el modo de escala de grises/alto contraste (aun no implementados)
+  * Nueva función para que el aside quede arriba al llegar al footer, de forma que no lo tape.
+* **`v0.19`**
   * Se agregó una pantalla de carga sencilla para cubrir el contendio mientras se cargan los componentes de la página.
   * Se agregó un border radius a la barra de progreso de lectura
 * **`v0.18`**
@@ -167,19 +197,6 @@ AVISO: Se incluyen únicamente las versiones completas
 * **`v0.17`**
   * Se implementó una MIT License
   * Se corrigió el README
-* **`v0.16`**
-  * Se cambiaron todas las clases e ids a inglés
-  * Se cambió totalmente la forma en que se manejan los botones y enlaces para tener un mejor funcionamiento y coherencia, así como arreglar varios errores
-* **`v0.15`**
-  * Se agregaron variables para el modo oscuro
-* **`v0.14`**
-  * Ahora todas las secciones se encuentran en tarjetas con colores (provisorios), sombras y animaciones
-  * Se agregaron nuevas clases a todas las secciones
-  * Se agregaron variables por elemento para trabajar los colores unicamente desde las variables base (aun no funciona para el modo oscuro)
-  * Se agregó un plano general como placeholder del plano de la escuela 
-  * Ahora todos los títulos están centrados
-  * El texto de los botones está en negrita y posee más padding, además de distinto color de borde
-  * Se agregaron animaciones a los details y summary
 
 ## 🗺️ Roadmap de Desarrollo (Hacia la v1.0)
 
@@ -199,6 +216,6 @@ Proyecto diseñado, programado y mantenido por:
 * **Juan Martín Rodríguez**  
   *Presidente del Centro de Estudiantes — IPET N° 424 (Gestión 2026)*
   * **GitHub:** [@JohnMartinRB](https://github.com/JohnMartinRB)
-  * **Repositorio oficial:** [CE-IPET-424](https://github.com/JohnMartinRB/CE-IPET424)
+  * **Repositorio oficial:** [CE-IPET424](https://github.com/JohnMartinRB/CE-IPET424)
 
 ---

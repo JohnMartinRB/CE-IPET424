@@ -1,7 +1,8 @@
 /* ==========================================
     REINICIO DE ESTILOS
    ========================================== */
-* { padding: 0;}
+* { padding: 0; }
+/* * { outline: 1px solid red; } */
 *, *::before, *::after { box-sizing: border-box; }
 button { border: none; }
 a { text-decoration: none; }
@@ -42,6 +43,12 @@ img { user-select: none; -webkit-user-drag: none; }
     h1, h2, h3, h4, h5, h6 {
         font-family: "Nunito Sans", sans-serif;
         text-align: center;
+        line-height: 1.5;
+    }
+    .text {
+        font-family: "Nunito", sans-serif;
+        line-height: 1.5;
+        text-align: center;
     }
     .button, a.button {
         padding: 0.8rem;
@@ -52,10 +59,12 @@ img { user-select: none; -webkit-user-drag: none; }
         color: var(--text-button) !important;
         border: 2px solid var(--border-button);
         background-color: var(--bg-button);
-        min-width: 3rem;
+        min-width: 10rem;
+        width: 13rem;
         margin: 1rem auto;
         transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
         user-select: none;
+        text-align: center;
     }
     .button:hover, a.button:hover {
         background-color: var(--bg-button-hover);
@@ -76,7 +85,7 @@ img { user-select: none; -webkit-user-drag: none; }
     .button:visited, a.button:visited {
         color: var(--text-button) !important;
     }
-    input {
+    .input {
         color: var(--text-input);
         padding: 0.8rem;
         border-radius: 1rem;
@@ -84,6 +93,11 @@ img { user-select: none; -webkit-user-drag: none; }
         border: 2px solid var(--border-input);
         background-color: var(--bg-input);
         cursor: url('../assets/img/cursors/cursor-text.svg'), text;
+    }
+    .input:focus {
+        outline: none;
+        border-color: var(--celeste2);
+        box-shadow: 0 0 16px rgba(1, 76, 199, 0.25);
     }
     .section-card {
         background: var(--bg-section-card);
@@ -143,8 +157,13 @@ img { user-select: none; -webkit-user-drag: none; }
         justify-items: center;
         width: 100%;
     }
+    .logo-header-container > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .logo-header {
-        height: 4rem;
+        height: 5rem;
         width: auto;
         object-fit: contain;
     }
@@ -167,19 +186,20 @@ img { user-select: none; -webkit-user-drag: none; }
         -webkit-backdrop-filter: blur(12px);
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     }
-    .reading-progress-container {
-        width: 80%;
+    .progress-bar-container {
+        width: 82%;
         height: 4px;
+        margin: 0 9% 0 9%;
+        border-radius: 0.5rem;
         background-color: transparent;
         position: absolute;
         bottom: 0;
         left: 0;
+        pointer-events: none;
     }
-    .reading-progress-bar {
+    .progress-bar {
         height: 100%;
         width: 0%;
-        margin-left: 10%;
-        border-radius: 1rem;
         background-color: var(--celeste2);
         transition: width 0.1s ease-out;
     }
@@ -192,18 +212,13 @@ img { user-select: none; -webkit-user-drag: none; }
         background-color: var(--bg-content);
         padding: 0.8rem;
     }
-    .copyright {
-        text-align: center;
-        font-size: 85%;
-        color: var(--text-copy);
-    }
     .options {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
-        gap: 1rem;
+        gap: 0.1rem;
     }
-    #school-map {
+    .school-map {
         width: 100%;
         height: auto;
     }
@@ -215,7 +230,7 @@ img { user-select: none; -webkit-user-drag: none; }
         font-size: 6rem;
         color: var(--text-body);
     }
-    #form-contact {
+    .form-contact {
         border-radius: 0.3rem;
         width: 100%;
     }
@@ -231,7 +246,7 @@ img { user-select: none; -webkit-user-drag: none; }
         pointer-events: none;
         transition: opacity 0.3s ease, transform 0.3s ease;
         transform: translateY(0.8rem);
-        z-index: 100;
+        z-index: 2000;
     }
     .toast.visible {
         opacity: 1;
@@ -247,7 +262,7 @@ img { user-select: none; -webkit-user-drag: none; }
         text-align: center;
         padding: 0.5rem 0.8rem;
         display: none;
-        z-index: 100;
+        z-index: 2000;
     }
     .offline-banner.visible {
         display: block;
@@ -255,8 +270,6 @@ img { user-select: none; -webkit-user-drag: none; }
     .footer-card {
         background: var(--bg-footer);
         border-radius: 2.5rem;
-        padding: 1.5rem;
-        margin: 1.5rem auto;
         color: var(--text-footer);
     }
     a.menu-item, a.menu-item:visited {
@@ -309,7 +322,7 @@ img { user-select: none; -webkit-user-drag: none; }
         transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
         user-select: none;
     }
-    #loader-screen {
+    .loader-screen {
         position: fixed;
         top: 0;
         left: 0;
@@ -324,25 +337,25 @@ img { user-select: none; -webkit-user-drag: none; }
         visibility: visible;
         transition: opacity 1s ease, visibility 1s ease;
     }
-    #loader-screen.fade-out {
+    .loader-screen.fade-out {
         opacity: 0;
         visibility: hidden;
     }
-    #loader-content {
+    .loader-content {
         text-align: center;
         color: var(--blanco);
         font-family: "Nunito Sans", sans-serif;
     }
-    #loader-content h2 {
+    .loader-content h2 {
         font-size: 5rem;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
     }
-    #loader-content p {
+    .loader-content p {
         font-size: 2rem;
         opacity: 0.8;
     }
-    #loader-spinner {
+    .loader-spinner {
         width: 90px;
         height: 90px;
         border: 4px solid rgba(0, 0, 0, 0.1);
@@ -354,4 +367,30 @@ img { user-select: none; -webkit-user-drag: none; }
     @keyframes spin {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
+    }
+    .footer-copyright {
+        text-align: center;
+        margin-top: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .copyright-main {
+        font-size: 1rem;
+        color: var(--text-footer);
+        margin-bottom: 0.3rem;
+        letter-spacing: 0.3px;
+    }
+    .copyright-sub {
+        font-size: 0.9rem;
+        color: var(--text-footer);
+        opacity: 0.85;
+    }
+    .copyright-sub span {
+        font-weight: bold;
+    }
+    #inicio {
+        background-image: url('../assets/img/bg/bg_6.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
     }

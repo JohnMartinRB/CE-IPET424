@@ -5,49 +5,67 @@
     body {
         font-size: 16px;
     }
-    .content {
-        padding: 2rem;
-        margin: 0.5rem auto;
-        max-width: 790px;
-        border-radius: 2.5rem;
-        box-shadow: var(--shadow-content);
-        background: var(--bg-content);
-    }
-    #header-container {
+    .header-container {
         position: sticky;
         top: 0;
-        z-index: 100;
+        z-index: 200;
         width: 100%;
     }
     .header-main {
-        padding: 2rem;
+        padding: 1rem 2rem 1rem 2rem;
         margin: 0.5rem auto;
-        max-width: 790px;
+        width: 100%;
+        max-width: 70%;
+        height: auto;
         border-radius: 2.5rem;
         box-shadow: var(--shadow-content);
         background: var(--bg-content);
         transition: background-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
     }
-    .logo-footer {
-        height: 5.5rem;
-        width: auto;
-        margin: 0 auto;
-    }
-    h1 {
-        text-align: center;
-        margin: 0;
+    .nav-main {
+        margin: 0.5rem auto;
+        width: 100%;
+        max-width: 58%;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        background: var(--bg-content);
+        box-shadow: var(--shadow-content);
     }
     .menu {
         display: flex;
-        align-items: center;
+        flex-direction: row;
         justify-content: space-between;
-        padding: 0.8rem 1.5rem;
+        align-items: center;
         text-align: center;
+        gap: 40px;
+        padding: 0.8rem 1.5rem;
     }
-    #button-menu {
+    .content {
+        display: flex;
+        align-items: flex-start;
+        padding: 1rem 2rem 1rem 2rem;
+        margin: 0.5rem auto;
+        width: 100%;
+        max-width: 58%;
+        border-radius: 2.5rem;
+        box-shadow: var(--shadow-content);
+        background: var(--bg-content);
+        position: relative;
+    }
+    .title {
+        text-align: center;
+        margin: 0;
+    }
+    .subtitle {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0.4rem;
+    }
+    .button-menu {
         display: none;
     }
-    #form-contact {
+    .form-contact {
         border-radius: 1.5rem;
         width: 100%;
     }
@@ -61,5 +79,90 @@
         justify-content: space-between;
         padding: 0.8rem 1.5rem;
         text-align: center;
+    }
+    .aside-drawer {
+        position: fixed;
+        top: 59vh;
+        left: 1%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 78%;
+        max-height: 80vh; 
+        background: var(--bg-content);
+        box-shadow: var(--shadow-content);
+        border-radius: 2.5rem;
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        z-index: 100;
+        overflow: hidden;
+        transition: width 1s cubic-bezier(0.25, 1, 0.5, 1);
+        display: flex;
+        align-items: center;
+    }
+    .button-toggle-aside {
+        position: fixed;
+        right: 1%;
+        top: 65%;
+        width: 20px;
+        height: 100%;
+        background: transparent;
+        border: none;
+        border-radius: 0 10px 10px 0;
+        cursor: url(../assets/img/cursors/cursor-hover.svg), pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        box-shadow: 3px 0 8px rgba(0, 0, 0, 0.15);
+        transition: background-color 1s ease;
+    }
+    .icono-toggle {
+        font-weight: bold;
+        font-size: 14px;
+        color: var(--text-body);
+        transition: transform 0.4s ease;
+        user-select: none;
+    }
+    .options {
+        width: 230px;
+        opacity: 0;
+        max-height: 80vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        visibility: hidden;
+        transition: opacity 0.6s ease, visibility 0.6s ease;
+        gap: 0.1rem;
+    }
+    .options::-webkit-scrollbar {
+        display: none;
+    }
+    .aside-drawer.open {
+        width: 19%;
+    }
+    .aside-drawer.open .aside-content,
+    .aside-drawer.open .options {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.6s ease 0.6s;
+    }
+    .button-toggle-aside:hover {
+        filter: brightness(1.1);
+    }
+    .aside-drawer.open .icono-toggle{
+        transform: rotate(180deg);
+        transition: transform 0.6s ease;
+    }
+    .footer-card {
+        padding: 1rem 2rem 1rem 2rem;
+        margin: 0.5rem auto;
+        width: 100%;
+        max-width: 960px;
+        height: auto;
+        box-shadow: var(--shadow-content);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+    }
+    .logo-footer {
+        height: 5.5rem;
+        width: auto;
+        margin: 0 auto;
     }
 }

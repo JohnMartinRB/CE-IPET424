@@ -1,25 +1,20 @@
 import { initComponents } from './components.js';
+import { initButtons } from './buttons.js';
+import { obtenerClimaVillaDolores } from './buttons.js';
+import { initBanners } from './banners.js';
 import { initTheme } from './theme.js';
+import { initShortcuts } from './shortcuts.js';
 import { konamiCode } from './config.js';
 import { consoleMsg } from './config.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     initComponents();
+    initShortcuts();
+    initButtons();
+    initBanners();
     initTheme();
     konamiCode();
     consoleMsg();
-});
-
-
-// Acceso rápido por teclado al modo oscuro
-document.addEventListener('keydown', (e) => {
-    if (e.altKey && e.key.toLowerCase() === 'd') {
-        e.preventDefault();
-        const botonmodo = document.getElementById('button-theme');
-        if (botonmodo) {
-            botonmodo.click();
-        }
-    }
 });
 
 
@@ -37,98 +32,33 @@ document.addEventListener('dragstart', function (e) {
 });
 
 
-// Botón de copiar enlace con feedback toast
-document.addEventListener('click', (e) => {
-    if (e.target.closest('#button-copy-link')) {
-        navigator.clipboard.writeText(window.location.href).then(() => {
-        const toast = document.getElementById('toast-copied');
-        if (toast) {
-            toast.classList.add('visible');
-            setTimeout(() => toast.classList.remove('visible'), 2500);
-        }
-        });
-    }
-});
-
-
-// Banner de sin conexión a internet (offline toast)
-function asegurarBannerOffline() {
-    let banner = document.getElementById('offline-banner');
-    if (!banner) {
-        banner = document.createElement('div');
-        banner.id = 'offline-banner';
-        banner.className = 'offline-banner';
-        banner.textContent = '⚠️ Sin conexión a internet. Mostrando versión guardada.';
-        document.body.prepend(banner);
-    }
-    return banner;
-}
-window.addEventListener('offline', () => {
-    const banner = asegurarBannerOffline();
-    banner.classList.add('visible');
-});
-window.addEventListener('online', () => {
-    const banner = document.getElementById('offline-banner');
-    if (banner) banner.classList.remove('visible');
-});
-
-
-// Widget de Clima Local (Villa Dolores) Consulta la API pública y gratuita de Open-Meteo
-async function obtenerClimaVillaDolores() {
-    const lat = -31.9458;
-    const lon = -65.1883;
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`;
-    try {
-        const res = await fetch(url);
-        const data = await res.parse ? await res.json() : await res.json();
-        const temp = Math.round(data.current_weather.temperature);
-        const code = data.current_weather.weathercode;
-        const tempEl = document.getElementById('weather-temp');
-        const iconEl = document.getElementById('weather-icon');
-        if (tempEl) tempEl.textContent = `${temp}°C`;
-        if (iconEl) iconEl.textContent = obtenerIconoClima(code);
-    } catch (error) {
-        console.warn("No se pudo cargar el clima", error);
-    }
-}
-function obtenerIconoClima(code) {
-    if (code === 0) return '☀️';
-    if (code >= 1 && code <= 3) return '⛅';
-    if (code >= 51 && code <= 67) return '🌧️';
-    if (code >= 95) return '⛈️';
-    return '☁️';
-}
-document.addEventListener('DOMContentLoaded', obtenerClimaVillaDolores);
-
-
-// Header Fijo e Indicador de Progreso de Lectura - Mide la altura del scroll y calcula el porcentaje
-window.addEventListener('scroll', () => {
-    const bar = document.getElementById('reading-progress-bar');
-    if (!bar) return;
-    const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
-    bar.style.width = scrolled + '%';
-});
-// JS: Añade la clase .scrolled al pasar los 20px de scroll
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('.header-main');
-    if (header) {
-        if (window.scrollY > 20) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    }
-});
-
-
-// Ocultar pantalla de bienvenida 1 segundos después de que todo cargue
+// Ocultar pantalla de bienvenida 0.3 segundos después de que todo cargue
 window.addEventListener('load', () => {
     setTimeout(() => {
         const loader = document.getElementById('loader-screen');
         if (loader) {
             loader.classList.add('fade-out');
         }
-    }, 500); // 500 ms = 0.5 segundos de espera
+    }, 300); // 300 ms = 0.3 segundos de espera
+});
+
+
+// Ajustar posición del aside para no solapar el footer al hacer scroll
+window.addEventListener('scroll', () => {
+    const aside = document.querySelector('.aside-drawer');
+    const footer = document.querySelector('#footer-container') || document.querySelector('footer');
+    if (!aside || !footer) return;
+    const footerRect = footer.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    // Distancia visible del footer en la ventana
+    const footerTop = footerRect.top;
+    // Si el footer entra en la pantalla
+    if (footerTop < windowHeight) {
+        // Calculamos cuánto espacio invade el footer y subimos el aside esa misma distancia
+        const overlap = windowHeight - footerTop;
+        aside.style.transform = `translateY(calc(-50% - ${overlap}px))`;
+    } else {
+        // Posición normal centrada
+        aside.style.transform = 'translateY(-50%)';
+    }
 });

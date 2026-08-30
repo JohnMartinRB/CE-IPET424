@@ -17,7 +17,6 @@
     font-weight: 700;
     src: url('../assets/fonts/nunito-v32-latin-700.woff2') format('woff2');
 }
-
 /* Nunito Sans (regular) */
 @font-face {
     font-display: swap; 

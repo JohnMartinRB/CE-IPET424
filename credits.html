@@ -17,10 +17,23 @@
 </head>
 
 <body>
-    <!-- HEADER DE TITULO Y NAVEGACIÓN -->
-    <div id="header-container"></div>
+    <!-- HEADER DE TITULO -->
+    <div id="header-container" class="header-container"></div>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav id="nav-main" class="nav-main">
+        <button id="button-menu" class="button button-menu" aria-label="Abrir menú">☰</button>
+        <ul id="menu" class="menu">
+            <li><a class="menu-item" href="#tramites">Trámites y PDFs</a></li>
+            <li><a class="menu-item" href="#reglamento">Reglamento y Horarios</a></li>
+            <li><a class="menu-item" href="#herramientas">Calculadora</a></li>
+            <li><a class="menu-item" href="#centro">Nuestro Centro</a></li>
+            <li><a class="menu-item" href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- PANEL LATERAL DE CONFIGURACIÓN -->
+    <div id="aside-config-container" class="aside-config-container"></div>
     <!-- CONTENEDOR PRINCIPAL -->
-    <div class="content">
+    <div id="content" class="content">
         <main>
         <!---5. Página de "Créditos / Acerca del Equipo" (credits.html o modal)
         Muy pocos sitios de colegios tienen una sección o pantalla dedicada a los creadores de la plataforma.
@@ -34,7 +47,7 @@
                 <p>Visitá nuestros diferentes sitios de consultas</p>
                 <!-- Botones de enlaces a sub-páginas -->
                 <!-- Botones de enlaces a sub-páginas -->
-                <ul class="links">
+                <ul id="links" class="links">
                     <li><a class="links-item button" href="index.html">Inicio</a></li>
                     <li><a class="links-item button" href="about.html">Nosotros</a></li>
                     <li><a class="links-item button" href="contact.html">Contacto</a></li>
@@ -44,9 +57,8 @@
                 </ul>
             </section>
         </main>
-            
-        <!-- PIE DE PÁGINA -->
-        <div id="footer-container"></div>
     </div> <!-- FIN DE "CONTENIDO" -->
+    <!-- PIE DE PÁGINA -->
+    <div id="footer-container" class="footer-container"></div>
 </body>
 </html>

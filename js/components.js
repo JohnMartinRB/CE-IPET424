@@ -1,8 +1,9 @@
 /* ==========================================
     CARGAR COMPONENTES HTML - FUNCIÓN INICIAR COMPONENTES
    ========================================== */
+import { obtenerClimaVillaDolores } from './buttons.js';
 
-export function initComponents() {
+export async function initComponents() {
     // Función para cargar HTML dinámicamente
     function cargarComponente(idContenedor, archivoHTML) {
         fetch(archivoHTML)
@@ -26,7 +27,13 @@ export function initComponents() {
                 }
             });
     }
-    // Cargar el header y el footer
-    cargarComponente("header-container", "components/header.html");
-    cargarComponente("footer-container", "components/footer.html");
+    // Esperamos a que todos los componentes se terminen de inyectar
+    await Promise.all([
+        cargarComponente("header-container", "components/header.html"),
+        cargarComponente("aside-config-container", "components/aside-config.html"),
+        cargarComponente("footer-container", "components/footer.html")
+    ]);
+
+    // Una vez inyectado el HTML del aside en el DOM:
+    await obtenerClimaVillaDolores();
 }
