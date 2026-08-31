@@ -4,7 +4,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.20%20(Alfa)-blue)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.20%20(Alpha)-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange)
 
@@ -37,7 +37,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro | Detalle |
 | :--- | :--- |
-| **Versión Actual** | `v0.20` (Fase alpha - En desarrollo) |
+| **Versión Actual** | `v0.20` (Fase Alpha - En desarrollo) |
 | **Inicio de Desarrollo** | 07 de agosto de 2026 |
 | **Lanzamiento Estable (v1.0)** | Marzo de 2027 |
 | **Entorno de Hosting** | Cloudflare Pages / GitHub Pages |
