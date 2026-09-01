@@ -1,0 +1,16 @@
+/* TEAM */
+  Presidente & Desarrollador Principal: Juan Martín Rodríguez Bizón
+  Github: https://github.com/JohnMartinRB
+  Organización: Centro de Estudiantes - IPET N° 424
+  Ubicación: Villa Dolores, Córdoba, Argentina
+
+/* THANKS */
+  A la comunidad educativa y cuerpo docente del IPET N° 424 por el apoyo constante a las iniciativas estudiantiles.
+
+/* SITE */
+  Last update: 2026/08/30
+  Language: Español (es)
+  Standards: HTML5, CSS3, JS (ES6+)
+  Components: Modular CSS, Vanilla JS
+  Software / Editors: Visual Studio Code, Git, GitHub
+  Hosting: Cloudflare Pages & GitHub Pages
