@@ -18,6 +18,13 @@ export async function initComponents() {
                 if (contenedor) {
                     contenedor.innerHTML = data;
                 }
+                // SI SE CARGÓ EL FOOTER: Actualizamos el año automáticamente
+                if (idContenedor === "footer-container") {
+                    const yearSpan = document.getElementById("copyright-year");
+                    if (yearSpan) {
+                        yearSpan.textContent = new Date().getFullYear();
+                    }
+                }
             })
             .catch(error => {
                 console.error(error);
