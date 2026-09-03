@@ -12,11 +12,9 @@ export function initTheme() {
             : 'assets/img/favicons/light.png';
         }
     }
-
     // 1. AL CARGAR LA PÁGINA: Comprobar localStorage O preferencia del dispositivo
     const modoOscuroGuardado = localStorage.getItem('modoOscuro');
     const prefiereOscuroSistema = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
     // Si ya guardó 'true' O (no guardó nada Y su celular/PC está en modo oscuro)
     if (modoOscuroGuardado === 'true' || (modoOscuroGuardado === null && prefiereOscuroSistema)) {
         document.body.classList.add('modo-oscuro');
@@ -24,7 +22,6 @@ export function initTheme() {
     } else {
         actualizarFavicon(false);
     }
-
     // 2. EVENTO CLIC: Cambiar modo, actualizar localStorage y Favicon
     document.addEventListener('click', function (e) {
         const botonmodo = e.target.closest('#button-theme');
@@ -36,10 +33,8 @@ export function initTheme() {
             const esModoOscuro = cuerpo.classList.contains('modo-oscuro');
             // Guardamos la preferencia en el navegador
             localStorage.setItem('modoOscuro', esModoOscuro);
-
             // Actualizamos el Favicon
             actualizarFavicon(esModoOscuro);
-
             // Actualizamos el texto del botón
             if (esModoOscuro) {
                 botonmodo.textContent = "Modo Claro ☀️";
@@ -48,7 +43,6 @@ export function initTheme() {
             }
         }
     });
-
     // 3. ACTUALIZAR TEXTO DEL BOTÓN SI SE CARGA POR FETCH
     // Como el botón se inyecta por fetch, cuando aparezca en pantalla sincronizamos su texto
     const observador = new MutationObserver(() => {
@@ -61,7 +55,6 @@ export function initTheme() {
         }
     });
     observador.observe(document.body, { childList: true, subtree: true });
-
     // 4. CAMBIOS EN TIEMPO REAL DEL SISTEMA (Opcional pero recomendado)
     // Si el usuario cambia el tema de su celular y NUNCA tocó el botón del sitio
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {

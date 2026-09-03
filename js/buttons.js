@@ -24,6 +24,7 @@ export function initButtons() {
         }
     });
 } 
+
 export async function obtenerClimaVillaDolores() {
     // Widget de Clima Local (Villa Dolores) Consulta la API pública y gratuita de Open-Meteo
     const lat = -31.9458;

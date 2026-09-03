@@ -40,7 +40,6 @@ export async function initComponents() {
         cargarComponente("aside-config-container", "components/aside-config.html"),
         cargarComponente("footer-container", "components/footer.html")
     ]);
-
     // Una vez inyectado el HTML del aside en el DOM:
     await obtenerClimaVillaDolores();
 }
