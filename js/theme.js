@@ -12,6 +12,18 @@ export function initTheme() {
             : 'assets/img/favicons/light.png';
         }
     }
+    // Función para actualizar el color de la barra del navegador
+    function actualizarMetaThemeColor() {
+        const metaTheme = document.getElementById('theme-color');
+        if (metaTheme) {
+            // Extrae el color real asignado a la variable --bg-header del CSS activo
+            const colorFondo = getComputedStyle(document.documentElement)
+                .getPropertyValue('--bg-header').trim();
+            if (colorFondo) {
+                metaTheme.setAttribute('content', colorFondo);
+            }
+        }
+    }
     // 1. AL CARGAR LA PÁGINA: Comprobar localStorage O preferencia del dispositivo
     const modoOscuroGuardado = localStorage.getItem('modoOscuro');
     const prefiereOscuroSistema = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -22,6 +34,7 @@ export function initTheme() {
     } else {
         actualizarFavicon(false);
     }
+    setTimeout(actualizarMetaThemeColor, 50);
     // 2. EVENTO CLIC: Cambiar modo, actualizar localStorage y Favicon
     document.addEventListener('click', function (e) {
         const botonmodo = e.target.closest('#button-theme');
@@ -35,6 +48,8 @@ export function initTheme() {
             localStorage.setItem('modoOscuro', esModoOscuro);
             // Actualizamos el Favicon
             actualizarFavicon(esModoOscuro);
+            // Actualizamos el Meta Theme Color para la barra del navegador
+            actualizarMetaThemeColor();
             // Actualizamos el texto del botón
             if (esModoOscuro) {
                 botonmodo.textContent = "Modo Claro ☀️";
@@ -62,7 +77,7 @@ export function initTheme() {
             const esOscuro = e.matches;
             document.body.classList.toggle('modo-oscuro', esOscuro);
             actualizarFavicon(esOscuro);
-            
+            actualizarMetaThemeColor();
             const botonmodo = document.getElementById('button-theme');
             if (botonmodo) {
                 botonmodo.textContent = esOscuro ? "Modo Claro ☀️" : "Modo Oscuro 🌙";
