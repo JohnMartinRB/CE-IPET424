@@ -228,7 +228,11 @@ img { user-select: none; -webkit-user-drag: none; }
     }
     .error-code {
         font-size: 6rem;
+        padding: 1rem 0;
         color: var(--text-body);
+    }
+    .button-home {
+        margin-top: 2rem;
     }
     .form-contact {
         border-radius: 0.3rem;
@@ -372,9 +376,6 @@ img { user-select: none; -webkit-user-drag: none; }
         text-align: center;
         margin-top: 1.5rem;
         border-top: 1px solid rgba(255, 255, 255, 0.15);
-    }
-    .button-home {
-        margin-top: 1rem;
     }
     .copyright-main {
         font-size: 1rem;
