@@ -157,8 +157,18 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 AVISO: Se incluyen únicamente las versiones completas
 
 * **`v0.21-alpha` (Actual)**
-  * Separación estratégica de estilos globales en `base.css` (mobile) y adaptaciones de pantalla en `desktop.css`.
-  * Rediseño del layout adaptable para celulares, menú de opciones móvil y ajuste de tipografías fluidas.
+  * Se separaron correctamente todos los estilos de celular y base (base.css) y los de pc (desktop.css)
+  * Se implementó y trabajó correctamente el layout de celular para darle una apariencia ordenada y corregida
+  * Se restructuró todo el css del sitio, sepando los selectores y propiedades por secciones de contenido y elementos
+  * Se renombraron muchos ids y clases para mas claridad y especificidad
+  * Ahora el texto tiene las clases "text" y "Paragraph" para poder centrarlos y hacer que tengan cursor:text. Además, los párrafos tienen text-wrap:balance para tener mejor estructura
+  * Ahora el cursor:text es más grande - Ahora el fondo del hero-section ya no se mueve al hacer scroll
+  * Se oscureció el color del texto del footer en modo oscuro
+  * Ahora la pantalla de carga en modo oscuro es azul en lugar de celeste
+  * Se cambiaron muchísimos padding, margin, border-radius y tamaños entre el diseño en pc y en celular
+  * Ahora en celular el título no está en uppercase y hay un solo logo en lugar de dos
+  * Los enlaces del footer ahora se encuentran divididos en dos columnas: una para redes de contacto y otra para los enlaces del proyecto
+  * Se corrigieron muchos ids y clases en los archivos .js
 * **`v0.20-alpha`**
 La actualización más grande hasta el momento: se actualizó casi toda la interfaz de la página (la actu estuvo enfocada en el diseño en pc)
 ESTRUCTURA:
