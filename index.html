@@ -27,14 +27,14 @@
     <!-- HEADER DE TITULO -->
     <div id="header-container" class="header-container"></div>
     <!-- BARRA DE NAVEGACIÓN -->
-    <nav id="nav-main" class="nav-main">
-        <button id="button-menu" class="button button-menu" aria-label="Abrir menú">☰</button>
-        <ul id="menu" class="menu">
-            <li><a class="menu-item" href="#tramites">Trámites y PDFs</a></li>
-            <li><a class="menu-item" href="#reglamento">Reglamento y Horarios</a></li>
-            <li><a class="menu-item" href="#herramientas">Calculadora</a></li>
-            <li><a class="menu-item" href="#centro">Nuestro Centro</a></li>
-            <li><a class="menu-item" href="#contacto">Contacto</a></li>
+    <nav id="nav-card" class="nav-card">
+        <button id="nav-button-menu" class="button nav-button-menu" aria-label="Abrir menú">☰</button>
+        <ul id="nav-menu" class="nav-menu">
+            <li><a class="nav-menu-item" href="#tramites">Trámites y PDFs</a></li>
+            <li><a class="nav-menu-item" href="#reglamento">Reglamento y Horarios</a></li>
+            <li><a class="nav-menu-item" href="#herramientas">Calculadora</a></li>
+            <li><a class="nav-menu-item" href="#centro">Nuestro Centro</a></li>
+            <li><a class="nav-menu-item" href="#contacto">Contacto</a></li>
         </ul>
     </nav>
     <!-- CONTENEDOR PRINCIPAL -->
@@ -45,36 +45,36 @@
             <!-- SECCIÓN: INICIO / INFORMATIVA -->
             <section id="inicio" class="section-card hero-section">
                 <h2>Portal del Estudiante</h2>
-                <p class="text">Espacio oficial de consulta, recursos y trámites del Centro de Estudiantes del IpET N° 424.</p>
+                <p class="text paragraph">Espacio oficial de consulta, recursos y trámites del Centro de Estudiantes del IPET N° 424.</p>
             </section>
             <!-- SECCIÓN 1: TRÁMITES Y DESCARGAS -->
             <section id="tramites" class="section-card tramites-section">
                 <h2>Trámites y Descargas Frecuentes</h2>
-                <p class="text">Descargá los formularios oficiales. Imprimilos y entregalos en preceptoría o dirección según cprresponda.</p>
+                <p class="text paragraph">Descargá los formularios oficiales. Imprimilos y entregalos en preceptoría o dirección según corresponda.</p>
                 <div id="grid-tarjetas" class="grid-tarjetas">
                     <article class="subsection-card download-card">
                         <h3>Ficha Médica</h3>
-                        <p class="text">Requisito obligatorio para educación física y actividadespescolares.</p>
+                        <p class="text paragraph">Requisito obligatorio para educación física y actividades escolares.</p>
                         <a href="assets/docs/cus.pdf" download="CERTIFICADO UNICO DE SALUD (C.U.S.) 2026.pdf" class="button download-button">Descargar PDF</a>
                     </article>
                     <article class="subsection-card download-card">
                         <h3>Autorización de Uso de Imagen, Voz y Video</h3>
-                        <p class="text">Permiso firmado por tutor/a para salidaspy eventos.</p>
+                        <p class="text paragraph">Permiso firmado por tutor/a para salidas y eventos.</p>
                         <a href="assets/docs/autorizacion-imagen.pdf" download="AUTORIZACION DE USO DE IMAGEN, VOZ Y VIDEO 2026.pdf" class="button download-button">Descargar PDF</a>
                     </article>
                     <article class="subsection-card download-card">
                         <h3>Ficha de Datos Familiares</h3>
-                        <p class="text">Planilla con información del grupo familiar pel alumno.</p>
+                        <p class="text paragraph">Planilla con información del grupo familiar del alumno.</p>
                         <a href="assets/docs/ficha-datos-familiares.pdf" download="FICHA DE DATOS FAMILIARES.pdf" class="button download-button">Descargar PDF</a>
                     </article>
                     <article class="subsection-card download-card">
                         <h3>Informe de Salud Anual (I.S.A.)</h3>
-                        <p class="text">Planilla completada por las familias para dar a conocer detalles de salud pel alumno.</p>
+                        <p class="text paragraph">Planilla completada por las familias para dar a conocer detalles de salud del alumno.</p>
                         <a href="assets/docs/isa.pdf" download="INFORME DE SALUD ANUAL (I.S.A.).pdf" class="button download-button">Descargar PDF</a>
                     </article>
                     <article class="subsection-card download-card">
                         <h3>Solicitud de Matrícula 2026</h3>
-                        <p class="text">Solicitud para anotarse al colegio.</p>
+                        <p class="text paragraph">Solicitud para anotarse al colegio.</p>
                         <a href="assets/docs/solicitud-matricula.pdf" download="SOLICITUD DE MATRICULA 2026.pdf" class="button download-button">Descargar PDF</a>
                     </article>
                 </div>
@@ -139,7 +139,7 @@
                     </details>
                     <details>
                         <summary>Condiciones de Evaluación y Promoción</summary>
-                        <p>Para acreditar la materia se requiere una nota mínima de 6 (seis) en cada cuatrimestre y aprobar los coloquios o instancias finales según cprresponda.</p>
+                        <p>Para acreditar la materia se requiere una nota mínima de 7 (siete) en cada cuatrimestre y aprobar los coloquios o instancias finales según cprresponda.</p>
                     </details>
                     <article class="download-card">
                         <h3>AECs completos</h3>
@@ -153,7 +153,7 @@
                 <h2>Herramientas Estudiantiles</h2>
                 <div id="calculator-box" class="calculator-box">
                     <h3>Calculadora Rápida de Promedios</h3>
-                    <p class="text">Ingresá tus notas para calcular el promedio del trimestre o cuptrimestre:</p>
+                    <p class="text">Ingresá tus notas para calcular el promedio del trimestre o cuatrimestre:</p>
                     <form id="form-promedio" onsubmit="event.preventDefault();">
                         <div class="campo-nota">
                             <label for="nota1">Nota 1:</label>
@@ -177,10 +177,10 @@
             <!-- SECCIÓN 4: INFORMACIÓN DEL CENTRO -->
             <section id="centro" class="section-card centro-section">
                 <h2>El Centro de Estudiantes</h2>
-                <p class="text">Somos la comisión electa por los estudiantes para representar tus derechos, organizar jornadas y mejorar nuestro espacpo escolar.</p>
+                <p class="text paragraph">Somos la comisión electa por los estudiantes para representar tus derechos, organizar jornadas y mejorar nuestro espacio escolar.</p>
                 <article class="download-card">
                     <h3>Conocé nuestro estatuto!</h3>
-                    <p class="text">Es el documento oficial que rige el funcionamiento del Centro de Eptudiantes.</p>
+                    <p class="text paragraph">Es el documento oficial que rige el funcionamiento del Centro de Estudiantes.</p>
                     <a href="assets/docs/estatuto.pdf" download="ESTATUTO DEL C.E. IPET  N° 424 (31-07-2022).pdf" class="button download-button">Descargar PDF</a>
                 </article>
                 
@@ -193,12 +193,14 @@
             <!-- SECCIÓN 5: BUZÓN Y CONTACTO -->
             <section id="contacto" class="section-card contacto-section">
                 <h2>Buzón de Sugerencias y Reclamos</h2>
-                <p class="text">Tu opinión es anónima (si así lo preferís) y nos sirve para llevar propuestas a la dirección.</p>
+                <p class="text paragraph">Tu opinión es anónima (si así lo preferís) y nos sirve para llevar propuestas a la dirección.</p>
                 <!-- Integración sencilla con Google Forms -->
                 <div id="iframe-container" class="iframe-container">
-                    <iframe src="https://forms.gle/KFcTqgLzoBkV67tN6" id="form-contact" class="form-contact" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                    <iframe src="https://forms.gle/KFcTqgLzoBkV67tN6" id="form-contact" class="form-contact" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                    <!-- src="https://ipet424.edu.ar" -->
                 </div>
-                <p class="text">Los datos enviados a través del formulario de contacto se utilizan únicamente para responder consultas institucionales y no se comparten cop terceros.</p>
+                <p class="text paragraph">Los datos enviados a través del formulario de contacto se utilizan únicamente para responder consultas institucionales y no se comparten con terceros.</p>
             </section>
             <!-- SECCIÓN 6: SUB SITIOS -->
             <section id="sub-sitios" class="section-card">

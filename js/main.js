@@ -1,6 +1,5 @@
 import { initComponents } from './components.js';
 import { initButtons } from './buttons.js';
-import { obtenerClimaVillaDolores } from './buttons.js';
 import { initBanners } from './banners.js';
 import { initTheme } from './theme.js';
 import { initShortcuts } from './shortcuts.js';

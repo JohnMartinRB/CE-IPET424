@@ -5,7 +5,7 @@
 export function initBanners() {
     // Header Fijo e Indicador de Progreso de Lectura - Mide la altura del scroll y calcula el porcentaje
     window.addEventListener('scroll', () => {
-        const bar = document.getElementById('progress-bar');
+        const bar = document.getElementById('header-progress-bar');
         if (!bar) return;
         const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -14,7 +14,7 @@ export function initBanners() {
     });
     // JS: Añade la clase .scrolled al pasar los 20px de scroll
     window.addEventListener('scroll', () => {
-        const header = document.querySelector('.header-main');
+        const header = document.querySelector('.header-card');
         if (header) {
             if (window.scrollY > 20) {
                 header.classList.add('scrolled');

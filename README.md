@@ -4,7 +4,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.20%20(Alpha)-blue)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.21%20(Alpha)-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange)
 
@@ -37,7 +37,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro | Detalle |
 | :--- | :--- |
-| **Versión Actual** | `v0.20` (Fase Alpha - En desarrollo) |
+| **Versión Actual** | `v0.21` (Fase Alpha - En desarrollo) |
 | **Inicio de Desarrollo** | 07 de agosto de 2026 |
 | **Lanzamiento Estable (v1.0)** | Marzo de 2027 |
 | **Entorno de Hosting** | Cloudflare Pages / GitHub Pages |
@@ -156,7 +156,10 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 
 AVISO: Se incluyen únicamente las versiones completas
 
-* **`v0.20` (Actual)**
+* **`v0.21-alpha` (Actual)**
+  * Separación estratégica de estilos globales en `base.css` (mobile) y adaptaciones de pantalla en `desktop.css`.
+  * Rediseño del layout adaptable para celulares, menú de opciones móvil y ajuste de tipografías fluidas.
+* **`v0.20-alpha`**
 La actualización más grande hasta el momento: se actualizó casi toda la interfaz de la página (la actu estuvo enfocada en el diseño en pc)
 ESTRUCTURA:
   * Ahora el nav se encuentra en una tarjeta aparte del Header
@@ -183,10 +186,10 @@ FUNCIONES:
   * Se cambió el funcionamiento del widget del clima
   * Se agregó un atajo de teclado para copiar el enlace de la web, y otros para el modo de escala de grises/alto contraste (aun no implementados)
   * Nueva función para que el aside quede arriba al llegar al footer, de forma que no lo tape.
-* **`v0.19`**
+* **`v0.19-alpha`**
   * Se agregó una pantalla de carga sencilla para cubrir el contendio mientras se cargan los componentes de la página.
   * Se agregó un border radius a la barra de progreso de lectura
-* **`v0.18`**
+* **`v0.18-alpha`**
   * El header ahora se encuentra en un contenedor aparte de .content, tiene posición sticky por lo que se mantiene al hacer scroll
   * Se añadió una barra del progreso de lectura en el head
   * Se agregó un widget de tiempo atmosférico de Villa Dolores en el header
@@ -194,9 +197,6 @@ FUNCIONES:
   * Se personalizó la scrollbar (colores, ancho, etc)
   * Se agregaron más transiciones y animaciones
   * Ahora el boton de modo oscuro y el weather widget están en un contenedor aparte del nav
-* **`v0.17`**
-  * Se implementó una MIT License
-  * Se corrigió el README
 
 ## 🗺️ Roadmap de Desarrollo (Hacia la v1.0)
 

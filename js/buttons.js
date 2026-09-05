@@ -17,7 +17,7 @@ export function initButtons() {
     });
     // CONTROL DEL ASIDE DESPLEGABLE
     document.addEventListener('click', function (e) {
-        const buttonToggle = e.target.closest('#button-toggle-aside');
+        const buttonToggle = e.target.closest('#aside-button-toggle');
         const aside = document.getElementById('aside-config');
         if (buttonToggle && aside) {
             aside.classList.toggle('open');

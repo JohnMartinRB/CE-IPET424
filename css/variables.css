@@ -35,6 +35,8 @@
     /* BODY */
     --bg-body: var(--celeste6);
     --text-body: var(--azul1);
+    /* PANTALLA DE CARGA */
+    --bg-loader-screen: var(--celeste2);
     /* CONTENIDO */
     --bg-content: linear-gradient(90deg, var(--blanco) 0%, var(--celeste7) 100%);
     --shadow-content: 0 4px 16px rgba(1, 76, 199, 0.08);
@@ -44,10 +46,8 @@
     /* TARJETAS */
     --bg-section-card: linear-gradient(90deg, var(--celeste7) 0%, var(--celeste6) 100%);
     --text-section-card: var(--azul2);
-    --border-section-card: var(--claro1);
     --bg-subsection-card: linear-gradient(90deg, var(--celeste6) 0%, var(--celeste5) 100%);
     --text-subsection-card: var(--azul1);
-    --border-subsection-card: var(--celeste6);
     --shadow-section-card: 0 4px 16px rgba(1, 76, 199, 0.08);
     --shadow-subsection-card: 0 4px 16px rgba(1, 76, 199, 0.08);
     /* TITULOS */
@@ -66,7 +66,6 @@
     --bg-footer: linear-gradient(90deg, var(--celeste3) 0%, var(--celeste4) 100%);
     --text-footer: var(--azul1);
     --text-footer-hover: var(--celeste1);
-    --border-footer: var(--gris2);
     --text-copy: var(--gris1);
     /* TOAST / BANNER */
     --bg-toast: var(--celeste3);

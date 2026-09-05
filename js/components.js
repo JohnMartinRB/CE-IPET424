@@ -20,7 +20,7 @@ export async function initComponents() {
                 }
                 // SI SE CARGÓ EL FOOTER: Actualizamos el año automáticamente
                 if (idContenedor === "footer-container") {
-                    const yearSpan = document.getElementById("copyright-year");
+                    const yearSpan = document.getElementById("footer-copyright-year");
                     if (yearSpan) {
                         yearSpan.textContent = new Date().getFullYear();
                     }
