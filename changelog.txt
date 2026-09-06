@@ -1,3 +1,6 @@
+
+0.22 Se agregó contenido de placeholder y un menú personalizado a todas las subpáginas con el objetivo de mejorar la navegación - Se arreglaron los button-active del menú al fondo de cada página - Se corrigió el footer en 404.html - Se eliminaron los íconos innecesarios en assets/img/icons, volviendo a tener .gitkeep
+
 0.21.10 Se cambió la función de obtener año para evitar el año duplicado en el copyright del footer
 &copy; 2026-<span id="footer-copyright-year">2026</span> Centro de Estudiantes IPET N° 424. Todos los derechos reservados.
 

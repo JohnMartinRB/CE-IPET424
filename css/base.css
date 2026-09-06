@@ -216,8 +216,7 @@
         transition: transform 0.05s ease;
     }
     .button-active {
-        cursor: pointer;
-        background-color: var(--bg-button-hover);
+        background-color: var(--bg-button-hover) !important;
         cursor: url('../assets/img/cursors/cursor-hover.svg'), pointer;
     }
     .button:visited, a.button:visited {

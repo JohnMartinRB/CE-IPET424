@@ -20,20 +20,78 @@
     <div id="header-container" class="header-container"></div>
     <!-- BARRA DE NAVEGACIÓN -->
     <nav id="nav-card" class="nav-card">
-        <button id="nav-button-menu" class="button nav-button-menu" aria-label="Abrir menú">☰</button>
-        <ul id="nav-menu" class="nav-menu">
-            <li><a class="nav-menu-item" href="#tramites">Trámites y PDFs</a></li>
-            <li><a class="nav-menu-item" href="#reglamento">Reglamento y Horarios</a></li>
-            <li><a class="nav-menu-item" href="#herramientas">Calculadora</a></li>
-            <li><a class="nav-menu-item" href="#centro">Nuestro Centro</a></li>
-            <li><a class="nav-menu-item" href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+    <button id="nav-button-menu" class="button nav-button-menu" aria-label="Abrir menú">☰</button>
+    <ul id="nav-menu" class="nav-menu">
+        <li><a class="nav-menu-item" href="#formulario">Mesa de Entrada</a></li>
+        <li><a class="nav-menu-item" href="#redes">Redes Sociales</a></li>
+        <li><a class="nav-menu-item" href="#buzon">Buzón de Sugerencias</a></li>
+        <li><a class="nav-menu-item" href="#ubicacion">Cómo Llegar</a></li>
+        <li><a class="nav-menu-item" href="#faq">Preguntas Frecuentes</a></li>
+    </ul>
+</nav>
     <!-- PANEL LATERAL DE CONFIGURACIÓN -->
     <div id="aside-config-container" class="aside-config-container"></div>
     <!-- CONTENEDOR PRINCIPAL -->
     <div id="content" class="content">
         <main>
+            <!-- SECCIÓN: INICIO / INFORMATIVA -->
+            <section id="inicio" class="section-card hero-section">
+                <h2>Atención y Contacto</h2>
+                <p class="text paragraph">Ponete en contacto directo con el Centro de Estudiantes o envianos tu mensaje.</p>
+            </section>
+            <!-- SECCIÓN 1: MESA DE ENTRADA -->
+            <section id="formulario" class="section-card formulario-section">
+                <h2>Mesa de Entrada Digital</h2>
+                <p class="text paragraph">Completá el formulario para enviar tus consultas de forma rápida y directa.</p>
+                <div id="iframe-container" class="iframe-container">
+                    <iframe src="https://forms.gle/KFcTqgLzoBkV67tN6" id="form-contact" class="form-contact" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" sandbox="allow-scripts allow-same-origin"></iframe>
+                </div>
+            </section>
+            <!-- SECCIÓN 2: REDES SOCIALES -->
+            <section id="redes" class="section-card redes-section">
+                <h2>Canales Oficiales</h2>
+                <div id="grid-tarjetas" class="grid-tarjetas">
+                    <article class="subsection-card download-card">
+                        <h3>Instagram</h3>
+                        <p class="text paragraph">Seguinos para enterarte de todas las novedades diarias.</p>
+                        <a href="https://www.instagram.com/ce.ipet424/" target="_blank" rel="noopener" class="button download-button">Ir a Instagram</a>
+                    </article>
+                    <article class="subsection-card download-card">
+                        <h3>Correo Electrónico</h3>
+                        <p class="text paragraph">Contacto institucional formal para dudas y notas.</p>
+                        <a href="mailto:ceipet424@gmail.com" class="button download-button">Enviar Mail</a>
+                    </article>
+                </div>
+            </section>
+            <!-- SECCIÓN 3: BUZÓN DE SUGERENCIAS -->
+            <section id="buzon" class="section-card buzon-section">
+                <h2>Buzón Anónimo</h2>
+                <p class="text paragraph">Tu opinión importa. Podés dejarnos tus comentarios y críticas constructivas sin revelar tu identidad.</p>
+            </section>
+            <!-- SECCIÓN 4: CÓMO LLEGAR -->
+            <section id="ubicacion" class="section-card ubicacion-section">
+                <h2>Ubicación del Establecimiento</h2>
+                <p class="text paragraph">Dirección: 20 de Junio 201, Bº Porvenir.</p>
+                <div id="school-map-container" class="subsection-card school-map-container">
+                    <h3>Mapa Institucional</h3>
+                    <a href="https://maps.app.goo.gl/sc4sqfdvuMJjbHG78" target="_blank" rel="noopener" class="button download-button">Abrir en Google Maps</a>
+                </div>
+            </section>
+            <!-- SECCIÓN 5: PREGUNTAS FRECUENTES -->
+            <section id="faq" class="section-card faq-section">
+                <h2>Preguntas Frecuentes</h2>
+                <div id="aec" class="subsection-card aec">
+                    <h3>Consultas Comunes</h3>
+                    <details>
+                        <summary>¿Cuándo se reúnen?</summary>
+                        <p>Nos reunimos semanalmente durante los recreos largos o contra-turnos fijados.</p>
+                    </details>
+                    <details>
+                        <summary>¿Cómo puedo sumarme?</summary>
+                        <p>Cualquier alumno del colegio puede colaborar en las subcomisiones de trabajo.</p>
+                    </details>
+                </div>
+            </section>
             <!-- SECCIÓN 6: SUB SITIOS -->
             <section class="section-card">
                 <h2>¿Buscas algo específico?</h2>

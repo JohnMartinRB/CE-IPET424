@@ -4,7 +4,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.21%20(Alpha)-blue)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.22%20(Alpha)-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange)
 
@@ -37,8 +37,8 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro | Detalle |
 | :--- | :--- |
-| **Versión Actual** | `v0.21` (Fase Alpha - En desarrollo) |
-| **Inicio de Desarrollo** | 07 de agosto de 2026 |
+| **Versión Actual** | `v0.22` (Fase Alpha, en desarrollo) |
+| **Inicio de Desarrollo** | 7 de agosto de 2026 |
 | **Lanzamiento Estable (v1.0)** | Marzo de 2027 |
 | **Entorno de Hosting** | Cloudflare Pages / GitHub Pages |
 | **Mantenimiento** | Activo (CI/CD Automático) |
@@ -157,7 +157,12 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 
 AVISO: Se incluyen únicamente las versiones completas
 
-* **`v0.21-alpha` (Actual)**
+* **`v0.22-alpha` (Actual)**
+  * Se agregó contenido de placeholder y un menú personalizado a todas las subpáginas con el objetivo de mejorar la navegación
+  * Se arreglaron los button-active del menú al fondo de cada página
+  * Se corrigió el footer en 404.html
+  * Se eliminaron los íconos innecesarios en assets/img/icons, volviendo a tener .gitkeep
+* **`v0.21-alpha`**
   * Se separaron correctamente todos los estilos de celular y base (base.css) y los de pc (desktop.css)
   * Se implementó y trabajó correctamente el layout de celular para darle una apariencia ordenada y corregida
   * Se restructuró todo el css del sitio, sepando los selectores y propiedades por secciones de contenido y elementos
