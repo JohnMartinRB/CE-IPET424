@@ -3,6 +3,25 @@
    ========================================== */
 import { obtenerClimaVillaDolores } from './buttons.js';
 
+export function renderLoader() {
+    // Comprobamos si la página actual es la principal (index.html o la raíz "/")
+    const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+    const loaderText = isHomePage ? '¡Bienvenido al sitio!' : 'Cargando...';
+    const loaderSubtext = isHomePage ? '<p>Centro de Estudiantes IPET Nº 424</p>' : '';
+    const loaderHTML = `
+        <div id="loader-screen" class="loader-screen">
+        <div id="loader-content" class="loader-content">
+            <div id="loader-spinner" class="loader-spinner"></div>
+            <h2>${loaderText}</h2>
+            ${loaderSubtext}
+        </div>
+        </div>
+    `;
+
+    // Se inserta como primer elemento dentro del <body>
+    document.body.insertAdjacentHTML('afterbegin', loaderHTML);
+}
+
 export async function initComponents() {
     // Función para cargar HTML dinámicamente
     function cargarComponente(idContenedor, archivoHTML) {

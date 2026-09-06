@@ -1,0 +1,13 @@
+
+0.21.2 Ahora la pantalla de carga es un elemento que se inyecta en cada subpágina, así como en la principal, con una nueva función en components.js - Ya no es un elemento que se encuentra únicamente en el index.html - En las subpáginas el h2 es Cargando... - Se agregó un archivo changelog.txt para llevar registro de los cambios en cada versión, tanto permanentes como temporales
+
+Eliminada la pantalla de carga en el index
+
+<!-- PANTALLA DE CARGA -->
+<div id="loader-screen" class="loader-screen">
+    <div id="loader-content" class="loader-content">
+        <div id="loader-spinner" class="loader-spinner"></div>
+        <h2>¡Bienvenido al sitio!</h2>
+        <p>Centro de Estudiantes IPET N° 424</p>
+    </div>
+</div>

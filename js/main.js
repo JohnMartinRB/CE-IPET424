@@ -1,3 +1,4 @@
+import { renderLoader } from './components.js';
 import { initComponents } from './components.js';
 import { initButtons } from './buttons.js';
 import { initBanners } from './banners.js';
@@ -7,6 +8,7 @@ import { konamiCode } from './config.js';
 import { consoleMsg } from './config.js';
 
 document.addEventListener("DOMContentLoaded", () => {
+    renderLoader();
     initComponents();
     initShortcuts();
     initButtons();
@@ -38,7 +40,7 @@ window.addEventListener('load', () => {
         if (loader) {
             loader.classList.add('fade-out');
         }
-    }, 300); // 300 ms = 0.3 segundos de espera
+    }, 1000); // 300 ms = 0.3 segundos de espera
 });
 
 
