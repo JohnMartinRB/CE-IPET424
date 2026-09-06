@@ -456,7 +456,7 @@
         height: 20px;
         width: 20px;
         stroke: var(--text-footer);
-        stroke-width: 1.25;
+        stroke-width: 1.75;
     }
     a.footer-link, .footer-text {
         margin: 0.5rem 0;
