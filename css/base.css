@@ -458,12 +458,11 @@
         stroke: var(--text-footer);
         stroke-width: 1.75;
     }
+    .footer-column-title {
+        display: none;
+    }
     a.footer-link, .footer-text {
         margin: 0.5rem 0;
-    }
-    .footer-links-social, .footer-links-project {
-        display: flex;
-        flex-direction: column;
     }
     .footer-text {
         text-align: left;

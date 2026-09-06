@@ -194,7 +194,17 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    .footer-column-title {
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+    }
+    .footer-links-social, .footer-links-project {
+        display: flex;
+        flex-direction: column;
+    }
     .footer-logo {
-        height: 5.5rem;
+        height: 4.5rem;
     }
 }
