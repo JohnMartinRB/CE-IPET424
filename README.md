@@ -121,6 +121,7 @@ CE-IPET424/
 ├── .nojekyll                         # Evita que GitHub Pages omita carpetas con guion bajo
 ├── 404.html                          # Página personalizada de error 404
 ├── about.html                        # Sub-página institucional ("Sobre Nosotros")
+├── changelog.txt                     # Registro de cambios y actualizaciones
 ├── contact.html                      # Sub-página con formulario y datos de contacto
 ├── credits.html                      # Sub-página de créditos del equipo de desarrollo
 ├── humans.txt                        # Créditos e información de autores del proyecto

@@ -183,7 +183,7 @@
     /* --- 4.5 PIE DE PÁGINA / FOOTER --- */
     .footer-card {
         width: 100%;
-        padding: 1rem 2rem;
+        padding: 2rem;
         max-width: 70%;
         height: auto !important;     /* Permite que el contenedor crezca según el contenido */
         max-height: none !important; /* Quita cualquier límite superior de altura */
@@ -197,8 +197,7 @@
     .footer-column-title {
         display: flex;
         text-align: left;
-        font-size: 1.1rem;
-        font-weight: bold;
+        font-size: 1rem;
         text-transform: uppercase;
         margin-bottom: 0.5rem;
     }
