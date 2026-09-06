@@ -447,6 +447,24 @@
         transform: scale(0.95);
         color: var(--text-footer-hover) !important;
     }
+    .footer-icon-link {
+        display: inline-flex;
+        gap: 0.4rem;
+        margin: 0;
+    }
+    .footer-icon {
+        height: 24px;
+        width: 24px;
+        stroke: var(--text-footer);
+        stroke-width: 1;
+    }
+    a.footer-link, .footer-text {
+        margin: 0.5rem 0;
+    }
+    .footer-links-social, .footer-links-project {
+        display: flex;
+        flex-direction: column;
+    }
     .footer-text {
         text-align: left;
     }

@@ -185,11 +185,14 @@
         width: 100%;
         padding: 1rem 2rem;
         max-width: 70%;
+        height: auto !important;     /* Permite que el contenedor crezca según el contenido */
+        max-height: none !important; /* Quita cualquier límite superior de altura */
+        min-height: fit-content;    /* Se ajusta quirúrgicamente a lo que tenga adentro */
+        overflow: visible;
     }
     .footer-links {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1rem;
     }
     .footer-logo {
         height: 5.5rem;
