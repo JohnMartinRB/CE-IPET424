@@ -1,4 +1,6 @@
 
+0.21.7 Se agregó un pequeño título a cada columna del footer
+
 0.21.6 Se eliminaron las palabras redundantes del footer al estar los íconos - Ahora los íconos son más gruesos
 
 
