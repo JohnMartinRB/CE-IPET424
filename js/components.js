@@ -41,7 +41,12 @@ export async function initComponents() {
                 if (idContenedor === "footer-container") {
                     const yearSpan = document.getElementById("footer-copyright-year");
                     if (yearSpan) {
-                        yearSpan.textContent = new Date().getFullYear();
+                        const startYear = 2026;
+                        const currentYear = new Date().getFullYear();
+
+                        yearSpan.textContent = (startYear === currentYear) 
+                            ? `${startYear}` 
+                            : `${startYear}-${currentYear}`;
                     }
                 }
             })

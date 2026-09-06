@@ -1,3 +1,6 @@
+0.21.10 Se cambió la función de obtener año para evitar el año duplicado en el copyright del footer
+&copy; 2026-<span id="footer-copyright-year">2026</span> Centro de Estudiantes IPET N° 424. Todos los derechos reservados.
+
 
 0.21.7 Se agregó un pequeño título a cada columna del footer
 
