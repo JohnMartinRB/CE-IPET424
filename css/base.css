@@ -75,9 +75,9 @@
     .loader-content {
         text-align: center;
         color: var(--blanco);
-        font-family: "Nunito", serif;
     }
     .loader-content h2 {
+        font-family: "Nunito", serif;
         font-size: 3rem;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
