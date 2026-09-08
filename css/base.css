@@ -174,7 +174,7 @@
         line-height: 1;
     }
     .text {
-        font-family: "Nunito", sans-serif;
+        font-family: "Nunito", serif;
         line-height: 1;
         text-align: center;
     }
@@ -451,14 +451,25 @@
         gap: 0.4rem;
         margin: 0;
     }
-    .footer-icon {
-        height: 20px;
-        width: 20px;
-        stroke: var(--text-footer);
-        stroke-width: 1.75;
+    .footer-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     .footer-column-title {
-        display: none;
+        display: flex;
+        text-align: left;
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+    }
+    .footer-links-social, .footer-links-project {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-icon {
+        height: 16px;
+        width: 16px;
+        stroke-width: 1.5;
     }
     a.footer-link, .footer-text {
         margin: 0.5rem 0;

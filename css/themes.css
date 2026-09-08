@@ -71,3 +71,7 @@ body.modo-oscuro .text:hover {
 body.modo-oscuro #inicio {
     background-image: url('../assets/img/bg/bg_5.jpg');
 }
+body.modo-oscuro iframe {
+    filter: invert(0.9) hue-rotate(180deg) brightness(0.95) contrast(0.9);
+    transition: filter 0.3s ease;
+}
