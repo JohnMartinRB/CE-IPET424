@@ -41,9 +41,9 @@ export function initTheme() {
         if (botonmodo) {
             const cuerpo = document.body;
             // Con toggle activamos/desactivamos la clase
-            cuerpo.classList.toggle('modo-oscuro');
+            cuerpo.classList.toggle('dark-mode');
             // Verificamos si quedó activo
-            const esModoOscuro = cuerpo.classList.contains('modo-oscuro');
+            const esModoOscuro = cuerpo.classList.contains('dark-mode');
             // Guardamos la preferencia en el navegador
             localStorage.setItem('modoOscuro', esModoOscuro);
             // Actualizamos el Favicon
@@ -63,7 +63,7 @@ export function initTheme() {
     const observador = new MutationObserver(() => {
         const botonmodo = document.getElementById('button-theme');
         if (botonmodo) {
-            if (document.body.classList.contains('modo-oscuro')) {
+            if (document.body.classList.contains('dark-mode')) {
                 botonmodo.textContent = "Modo Claro ☀️";
             }
             observador.disconnect(); // Una vez actualizado, dejamos de observar
@@ -75,7 +75,7 @@ export function initTheme() {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
         if (localStorage.getItem('modoOscuro') === null) {
             const esOscuro = e.matches;
-            document.body.classList.toggle('modo-oscuro', esOscuro);
+            document.body.classList.toggle('dark-mode', esOscuro);
             actualizarFavicon(esOscuro);
             actualizarMetaThemeColor();
             const botonmodo = document.getElementById('button-theme');

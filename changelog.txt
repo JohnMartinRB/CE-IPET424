@@ -1,4 +1,6 @@
 
+0.23 Se añadió un botón de modo descanso que añade un filtro de color a toda la página -Se añadió una barra de scroll al aside de opciones - Se renombró la clase modo-oscuro a dark-mode
+
 0.22 Se agregó contenido de placeholder y un menú personalizado a todas las subpáginas con el objetivo de mejorar la navegación - Se arreglaron los button-active del menú al fondo de cada página - Se corrigió el footer en 404.html - Se eliminaron los íconos innecesarios en assets/img/icons, volviendo a tener .gitkeep
 
 0.21.10 Se cambió la función de obtener año para evitar el año duplicado en el copyright del footer

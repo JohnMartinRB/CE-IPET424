@@ -15,6 +15,29 @@ export function initButtons() {
             });
         }
     });
+    // 1. Al cargar la página, verificamos si el modo descanso estaba activado
+    document.addEventListener('DOMContentLoaded', () => {
+    const descansoGuardado = localStorage.getItem('modoDescanso');
+    if (descansoGuardado === 'activado') {
+        document.documentElement.classList.add('rest-mode');
+    }
+    });
+    document.addEventListener('click', function (e) {
+    const botonDescanso = e.target.closest('#button-rest');
+    if (botonDescanso) {
+        const html = document.documentElement;
+        // Alternamos la clase en el body
+        html.classList.toggle('rest-mode');
+        // Guardamos la preferencia y actualizamos el texto/icono del botón
+        if (html.classList.contains('rest-mode')) {
+            localStorage.setItem('modoDescanso', 'activado');
+            botonDescanso.textContent = "Modo Normal 👁️";
+        } else {
+            localStorage.setItem('modoDescanso', 'desactivado');
+            botonDescanso.textContent = "Modo Descanso 👁️";
+        }
+    }
+    });
     // CONTROL DEL ASIDE DESPLEGABLE
     document.addEventListener('click', function (e) {
         const buttonToggle = e.target.closest('#aside-button-toggle');

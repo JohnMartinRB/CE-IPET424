@@ -1,7 +1,7 @@
 /* ==========================================
     MODO OSCURO
    ========================================== */
-body.modo-oscuro {
+body.dark-mode {
     /* BODY */
     --bg-body: var(--azul1);
     --text-body: var(--celeste5);
@@ -53,25 +53,48 @@ body.modo-oscuro {
     --border-weather-widget: rgba(255, 255, 255, 0.2);
 }
 
-body.modo-oscuro {
+body.dark-mode {
     cursor: url('../assets/img/cursors/cursor-dark.svg'), auto;
 }
-body.modo-oscuro a:hover {
+body.dark-mode a:hover {
     cursor: url('../assets/img/cursors/cursor-hover-dark.svg'), pointer;
 }
-body.modo-oscuro .button:hover {
+body.dark-mode .button:hover {
     cursor: url('../assets/img/cursors/cursor-hover-dark.svg'), pointer;
 }
-body.modo-oscuro .aside-button-toggle:hover {
+body.dark-mode .aside-button-toggle:hover {
     cursor: url('../assets/img/cursors/cursor-hover-dark.svg'), pointer;
 }
-body.modo-oscuro .text:hover {
+body.dark-mode .text:hover {
     cursor: url('../assets/img/cursors/cursor-text-dark.svg'), text;
 }
-body.modo-oscuro #inicio {
+body.dark-mode #inicio {
     background-image: url('../assets/img/bg/bg_5.jpg');
 }
-body.modo-oscuro iframe {
+body.dark-mode iframe {
     filter: invert(0.9) hue-rotate(180deg) brightness(0.95) contrast(0.9);
     transition: filter 0.3s ease;
+}
+
+/* ==========================================
+    MODO DESCANSO
+   ========================================== */
+/* Tinte de luz azul / Filtro cálido para el modo descanso */
+html.rest-mode::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* Color anaranjado/ámbar suave semitransparente */
+    background-color: rgba(255, 162, 0, 0.233); 
+    /* Permite hacer clic a través de la capa sin bloquear los botones */
+    pointer-events: none; 
+    z-index: 998; /* Un nivel por debajo del loader de carga */
+    transition: background-color 0.7s ease, opacity 0.7s ease;
+}
+html.rest-mode {
+    filter: sepia(20%) brightness(95%);
+    transition: filter 0.7s ease;
 }
