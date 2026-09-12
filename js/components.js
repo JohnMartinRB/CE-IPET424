@@ -1,7 +1,7 @@
 /* ==========================================
     CARGAR COMPONENTES HTML - FUNCIÓN INICIAR COMPONENTES
    ========================================== */
-import { obtenerClimaVillaDolores } from './buttons.js';
+import { getVillaDoloresWeather } from './buttons.js';
 
 export function renderLoader() {
     // Comprobamos si la página actual es la principal (index.html o la raíz "/")
@@ -24,21 +24,21 @@ export function renderLoader() {
 
 export async function initComponents() {
     // Función para cargar HTML dinámicamente
-    function cargarComponente(idContenedor, archivoHTML) {
-        fetch(archivoHTML)
+    function loadComponent(containerId, htmlFile) {
+        fetch(htmlFile)
             .then(response => {
                 if (!response.ok) {
-                    throw new Error(`No se pudo cargar ${archivoHTML}: ${response.status}`);
+                    throw new Error(`No se pudo cargar ${htmlFile}: ${response.status}`);
                 }
                 return response.text();
             })
             .then(data => {
-                const contenedor = document.getElementById(idContenedor);
-                if (contenedor) {
-                    contenedor.innerHTML = data;
+                const container = document.getElementById(containerId);
+                if (container) {
+                    container.innerHTML = data;
                 }
                 // SI SE CARGÓ EL FOOTER: Actualizamos el año automáticamente
-                if (idContenedor === "footer-container") {
+                if (containerId === "footer-container") {
                     const yearSpan = document.getElementById("footer-copyright-year");
                     if (yearSpan) {
                         const startYear = 2026;
@@ -52,18 +52,18 @@ export async function initComponents() {
             })
             .catch(error => {
                 console.error(error);
-                const contenedor = document.getElementById(idContenedor);
-                if (contenedor) {
-                    contenedor.innerHTML = '<p class="component-error">No se pudo cargar esta parte de la página.</p>';
+                const container = document.getElementById(containerId);
+                if (container) {
+                    container.innerHTML = '<p class="component-error">No se pudo cargar esta parte de la página.</p>';
                 }
             });
     }
     // Esperamos a que todos los componentes se terminen de inyectar
     await Promise.all([
-        cargarComponente("header-container", "components/header.html"),
-        cargarComponente("aside-config-container", "components/aside-config.html"),
-        cargarComponente("footer-container", "components/footer.html")
+        loadComponent("header-container", "components/header.html"),
+        loadComponent("aside-config-container", "components/aside-config.html"),
+        loadComponent("footer-container", "components/footer.html")
     ]);
     // Una vez inyectado el HTML del aside en el DOM:
-    await obtenerClimaVillaDolores();
+    await getVillaDoloresWeather();
 }

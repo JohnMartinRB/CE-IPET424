@@ -17,24 +17,24 @@ export function initButtons() {
     });
     // 1. Al cargar la página, verificamos si el modo descanso estaba activado
     document.addEventListener('DOMContentLoaded', () => {
-    const descansoGuardado = localStorage.getItem('modoDescanso');
-    if (descansoGuardado === 'activado') {
+    const savedRestMode = localStorage.getItem('restMode');
+    if (savedRestMode === 'activado') {
         document.documentElement.classList.add('rest-mode');
     }
     });
     document.addEventListener('click', function (e) {
-    const botonDescanso = e.target.closest('#button-rest');
-    if (botonDescanso) {
+    const buttonRestMode = e.target.closest('#button-rest');
+    if (buttonRestMode) {
         const html = document.documentElement;
         // Alternamos la clase en el body
         html.classList.toggle('rest-mode');
         // Guardamos la preferencia y actualizamos el texto/icono del botón
         if (html.classList.contains('rest-mode')) {
-            localStorage.setItem('modoDescanso', 'activado');
-            botonDescanso.textContent = "Modo Normal 👁️";
+            localStorage.setItem('restMode', 'activado');
+            buttonRestMode.textContent = "Modo Normal";
         } else {
-            localStorage.setItem('modoDescanso', 'desactivado');
-            botonDescanso.textContent = "Modo Descanso 👁️";
+            localStorage.setItem('restMode', 'desactivado');
+            buttonRestMode.textContent = "Modo Descanso";
         }
     }
     });
@@ -48,7 +48,7 @@ export function initButtons() {
     });
 } 
 
-export async function obtenerClimaVillaDolores() {
+export async function getVillaDoloresWeather() {
     // Widget de Clima Local (Villa Dolores) Consulta la API pública y gratuita de Open-Meteo
     const lat = -31.9458;
     const lon = -65.1883;
@@ -61,11 +61,11 @@ export async function obtenerClimaVillaDolores() {
         const tempEl = document.getElementById('weather-temp');
         const iconEl = document.getElementById('weather-icon');
         if (tempEl) tempEl.textContent = `${temp}°C`;
-        if (iconEl) iconEl.textContent = obtenerIconoClima(code);
+        if (iconEl) iconEl.textContent = getWeatherIcon(code);
     } catch (error) {
         console.warn("No se pudo cargar el clima", error);
     }
-    function obtenerIconoClima(code) {
+    function getWeatherIcon(code) {
         if (code === 0) return '☀️';
         if (code >= 1 && code <= 3) return '⛅';
         if (code >= 51 && code <= 67) return '🌧️';

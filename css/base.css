@@ -4,7 +4,7 @@
 /* Reglas que aplican a toda la página sin importar las clases */
     * { 
         padding: 0;
-        /* outline: 1px solid red; */
+        outline: 1px solid red;
     }
     *, *::before, *::after { 
         box-sizing: border-box; 
@@ -225,6 +225,7 @@
     /* --- 3.3 ENTRADAS DE TEXTO --- */
     .input {
         color: var(--text-input);
+        caret-color: var(--text-input);
         padding: 0.6rem;
         border-radius: 0.8rem;
         margin: 0.1rem 0;
@@ -480,6 +481,7 @@
     }
     .footer-copyright {
         text-align: center;
+        text-wrap: balance;
         margin-top: 1.5rem;
         border-top: 1px solid rgba(255, 255, 255, 0.15);
     }

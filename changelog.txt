@@ -1,26 +1,31 @@
 
+Posicionamiento y Maquetación (Layout & Position)
+
+    Propiedades: display, position, top, right, bottom, left, z-index, flex-..., grid-...
+
+Modelo de Caja y Dimensiones (Box Model & Sizing)
+
+    Propiedades: width, min-width, max-width, height, margin
+
+Espaciado Interno y Bordes (Padding & Border structure)
+
+    Propiedades: padding, border (ancho/estilo), border-radius, overflow
+
+Tipografía y Texto (Typography)
+
+    Propiedades: font-family, font-size, font-weight, line-height, text-align, text-transform, text-wrap
+
+Colores y Estilos Visuales (Visuals & Colors)
+
+    Propiedades: color, background-color, border-color, box-shadow, cursor, opacity
+
+Transiciones y Animaciones (Misc & Transitions)
+
+    Propiedades: transition, animation, transform
+
+0.23.2 Se modificó el nombre de muchas variables y funciones js a inglés
+
 0.23 Se añadió un botón de modo descanso que añade un filtro de color a toda la página -Se añadió una barra de scroll al aside de opciones - Se renombró la clase modo-oscuro a dark-mode
 
+
 0.22 Se agregó contenido de placeholder y un menú personalizado a todas las subpáginas con el objetivo de mejorar la navegación - Se arreglaron los button-active del menú al fondo de cada página - Se corrigió el footer en 404.html - Se eliminaron los íconos innecesarios en assets/img/icons, volviendo a tener .gitkeep
-
-0.21.10 Se cambió la función de obtener año para evitar el año duplicado en el copyright del footer
-&copy; 2026-<span id="footer-copyright-year">2026</span> Centro de Estudiantes IPET N° 424. Todos los derechos reservados.
-
-
-0.21.7 Se agregó un pequeño título a cada columna del footer
-
-0.21.6 Se eliminaron las palabras redundantes del footer al estar los íconos - Ahora los íconos son más gruesos
-
-
-0.21.2 Ahora la pantalla de carga es un elemento que se inyecta en cada subpágina, así como en la principal, con una nueva función en components.js - Ya no es un elemento que se encuentra únicamente en el index.html - En las subpáginas el h2 es Cargando... - Se agregó un archivo changelog.txt para llevar registro de los cambios en cada versión, tanto permanentes como temporales
-
-Eliminada la pantalla de carga en el index
-
-<!-- PANTALLA DE CARGA -->
-<div id="loader-screen" class="loader-screen">
-    <div id="loader-content" class="loader-content">
-        <div id="loader-spinner" class="loader-spinner"></div>
-        <h2>¡Bienvenido al sitio!</h2>
-        <p>Centro de Estudiantes IPET N° 424</p>
-    </div>
-</div>

@@ -30,7 +30,7 @@ export function initBanners() {
             banner = document.createElement('div');
             banner.id = 'offline-banner';
             banner.className = 'offline-banner';
-            banner.textContent = '⚠️ Sin conexión a internet. Mostrando versión guardada.';
+            banner.textContent = 'Sin conexión a internet. Mostrando versión guardada.';
             document.body.prepend(banner);
         }
         return banner;
