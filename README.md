@@ -4,7 +4,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.23%20(Alpha)-blue)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.24%20(Alpha)-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange)
 
@@ -37,7 +37,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro | Detalle |
 | :--- | :--- |
-| **Versión Actual** | `v0.23` (Fase Alpha, en desarrollo) |
+| **Versión Actual** | `v0.24` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo** | 7 de agosto de 2026 |
 | **Lanzamiento Estable (v1.0)** | Marzo de 2027 |
 | **Entorno de Hosting** | Cloudflare Pages / GitHub Pages |
@@ -157,7 +157,12 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 
 AVISO: Se incluyen únicamente las versiones completas
 
-* **`v0.23-alpha` (Actual)**
+* **`v0.24-alpha` (Actual)**
+  * 0.24 Se agregaron dos nuevos modos de color: alto contraste y escala de grises (monocromático). El primero modifica toda la paleta de colores y el segundo aplica un filtro a la página. Ambos modifican además el favicon
+  * Se reworkeó todo el archivo theme.js y sus funciones para permitir añadir más temas de color en un futuro
+  * Se agregaron nuevos atributos a los botones del aside
+  * Se cambió el texto del footer-copyright en 404.html
+* **`v0.23-alpha`**
   * Se añadió un botón de modo descanso que añade un filtro de color a toda la página
   * Se añadió una barra de scroll al aside de opciones
   * Se renombró la clase modo-oscuro a dark-mode

@@ -1,6 +1,7 @@
 /* ==========================================
     CARGAR COMPONENTES HTML - FUNCIÓN INICIAR COMPONENTES
    ========================================== */
+
 import { getVillaDoloresWeather } from './buttons.js';
 
 export function renderLoader() {
@@ -17,7 +18,6 @@ export function renderLoader() {
         </div>
         </div>
     `;
-
     // Se inserta como primer elemento dentro del <body>
     document.body.insertAdjacentHTML('afterbegin', loaderHTML);
 }
@@ -43,7 +43,6 @@ export async function initComponents() {
                     if (yearSpan) {
                         const startYear = 2026;
                         const currentYear = new Date().getFullYear();
-
                         yearSpan.textContent = (startYear === currentYear) 
                             ? `${startYear}` 
                             : `${startYear}-${currentYear}`;

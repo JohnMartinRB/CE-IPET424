@@ -1,44 +1,35 @@
 /* ==========================================
-    BOTONES
+    BOTONES DE INTERFAZ Y UTILIDADES
    ========================================== */
 
 export function initButtons() {
     // Botón de copiar enlace con feedback toast
     document.addEventListener('click', (e) => {
+         if (e.target.closest('#button-copy-link')) {
+             navigator.clipboard.writeText(window.location.href).then(() => {
+                 const toastCopied = document.getElementById('toast-copied-link');
+                 if (toastCopied) {
+                     toastCopied.classList.add('visible');
+                     setTimeout(() => toastCopied.classList.remove('visible'), 2500);
+                 }
+             });
+         }
+     });
+    // Botón de copiar enlace con feedback toast
+    document.addEventListener('click', (e) => {
         if (e.target.closest('#button-copy-link')) {
-            navigator.clipboard.writeText(window.location.href).then(() => {
+            navigator.clipboard.writeText(window.location.href);
+            
             const toast = document.getElementById('toast-copied');
             if (toast) {
                 toast.classList.add('visible');
                 setTimeout(() => toast.classList.remove('visible'), 2500);
+            } else {
+                console.log("El elemento #toast-copied no existe en el DOM");
             }
-            });
         }
     });
-    // 1. Al cargar la página, verificamos si el modo descanso estaba activado
-    document.addEventListener('DOMContentLoaded', () => {
-    const savedRestMode = localStorage.getItem('restMode');
-    if (savedRestMode === 'activado') {
-        document.documentElement.classList.add('rest-mode');
-    }
-    });
-    document.addEventListener('click', function (e) {
-    const buttonRestMode = e.target.closest('#button-rest');
-    if (buttonRestMode) {
-        const html = document.documentElement;
-        // Alternamos la clase en el body
-        html.classList.toggle('rest-mode');
-        // Guardamos la preferencia y actualizamos el texto/icono del botón
-        if (html.classList.contains('rest-mode')) {
-            localStorage.setItem('restMode', 'activado');
-            buttonRestMode.textContent = "Modo Normal";
-        } else {
-            localStorage.setItem('restMode', 'desactivado');
-            buttonRestMode.textContent = "Modo Descanso";
-        }
-    }
-    });
-    // CONTROL DEL ASIDE DESPLEGABLE
+    // Control del aside desplegable
     document.addEventListener('click', function (e) {
         const buttonToggle = e.target.closest('#aside-button-toggle');
         const aside = document.getElementById('aside-config');
@@ -46,16 +37,16 @@ export function initButtons() {
             aside.classList.toggle('open');
         }
     });
-} 
+}
 
 export async function getVillaDoloresWeather() {
-    // Widget de Clima Local (Villa Dolores) Consulta la API pública y gratuita de Open-Meteo
+    // Widget de Clima Local (Villa Dolores)
     const lat = -31.9458;
     const lon = -65.1883;
     const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`;
     try {
         const res = await fetch(url);
-        const data = await res.parse ? await res.json() : await res.json();
+        const data = await res.json();
         const temp = Math.round(data.current_weather.temperature);
         const code = data.current_weather.weathercode;
         const tempEl = document.getElementById('weather-temp');
@@ -65,6 +56,7 @@ export async function getVillaDoloresWeather() {
     } catch (error) {
         console.warn("No se pudo cargar el clima", error);
     }
+
     function getWeatherIcon(code) {
         if (code === 0) return '☀️';
         if (code >= 1 && code <= 3) return '⛅';

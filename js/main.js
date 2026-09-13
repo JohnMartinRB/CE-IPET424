@@ -33,14 +33,14 @@ document.addEventListener('dragstart', function (e) {
 });
 
 
-// Ocultar pantalla de bienvenida 0.3 segundos después de que todo cargue
+// Ocultar pantalla de bienvenida 1 segundo después de que todo cargue
 window.addEventListener('load', () => {
     setTimeout(() => {
         const loader = document.getElementById('loader-screen');
         if (loader) {
             loader.classList.add('fade-out');
         }
-    }, 1000); // 300 ms = 0.3 segundos de espera
+    }, 1000); // 1000 ms = 1 segundo de espera
 });
 
 

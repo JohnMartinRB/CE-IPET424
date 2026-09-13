@@ -52,7 +52,6 @@ body.dark-mode {
     --text-weather-widget: var(--blanco);
     --border-weather-widget: rgba(255, 255, 255, 0.2);
 }
-
 body.dark-mode {
     cursor: url('../assets/img/cursors/cursor-dark.svg'), auto;
 }
@@ -77,9 +76,101 @@ body.dark-mode iframe {
 }
 
 /* ==========================================
+    MODO ALTO CONTRASTE
+   ========================================== */
+body.high-contrast-mode {
+    /* BODY */
+    --bg-body: var(--negro);
+    --text-body: var(--blanco);
+    /* PANTALLA DE CARGA */
+    --bg-loader-screen: var(--negro);
+    /* CONTENIDO */
+    --bg-content: var(--negro);
+    --shadow-content: none;
+    /* LINK */
+    --link: var(--cian);
+    --link-hover: var(--amarillo);
+    /* TARJETAS */
+    --bg-section-card: var(--negro);
+    --text-section-card: var(--blanco);
+    --bg-subsection-card: var(--negro);
+    --text-subsection-card: var(--blanco);
+    --shadow-section-card: none;
+    --shadow-subsection-card: none;
+    /* TITULOS */
+    --text-titles: var(--amarillo);
+    /* BOTONES / ENLACES */
+    --bg-button: var(--negro);
+    --bg-button-hover: var(--amarillo);
+    --text-button: var(--amarillo);
+    --text-button-hover: var(--negro);
+    --border-button: var(--amarillo);
+    /* INPUTS */
+    --bg-input: var(--negro);
+    --text-input: var(--blanco);
+    --border-input: var(--cian);
+    /* FOOTER */
+    --bg-footer: var(--negro);
+    --text-footer: var(--cian);
+    --text-footer-hover: var(--amarillo);
+    --text-copy: var(--blanco);
+    /* TOAST / BANNER */
+    --bg-toast: var(--negro);
+    --text-toast: var(--amarillo);
+    --bg-banner: var(--amarillo);
+    /* SELECTION */
+    --bg-selection: var(--cian);
+    /* SCROLLBAR */
+    --scrollbar-track: var(--negro);
+    --scrollbar-thumb: var(--cian);
+    --scrollbar-thumb-hover: var(--amarillo);
+    /* WEATHER WIDGET */
+    --bg-weather-widget: var(--negro);
+    --text-weather-widget: var(--blanco);
+    --border-weather-widget: var(--cian);
+}
+
+body.high-contrast-mode {
+    cursor: url('../assets/img/cursors/cursor-dark.svg'), auto;
+}
+body.high-contrast-mode a:hover {
+    cursor: url('../assets/img/cursors/cursor-hover-dark.svg'), pointer;
+}
+body.high-contrast-mode .button:hover {
+    cursor: url('../assets/img/cursors/cursor-hover-dark.svg'), pointer;
+}
+body.high-contrast-mode .aside-button-toggle:hover {
+    cursor: url('../assets/img/cursors/cursor-hover-dark.svg'), pointer;
+}
+body.high-contrast-mode .text:hover {
+    cursor: url('../assets/img/cursors/cursor-text-dark.svg'), text;
+}
+body.high-contrast-mode #inicio {
+    background-image: url('../assets/img/bg/bg_5.jpg');
+}
+
+body.high-contrast-mode :is(
+    .header-card,
+    .nav-card,
+    .footer-card,
+    .aside-drawer,
+    .content,
+    .section-card,
+    .subsection-card
+) {
+    outline: 2px solid var(--cian);
+}
+
+/* ==========================================
+    MODO ESCALA DE GRISES
+   ========================================== */
+html.grayscale-mode, body.grayscale-mode {
+    filter: grayscale(100%);
+}
+
+/* ==========================================
     MODO DESCANSO
    ========================================== */
-/* Tinte de luz azul / Filtro cálido para el modo descanso */
 html.rest-mode::after {
     content: "";
     position: fixed;

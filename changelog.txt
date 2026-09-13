@@ -23,6 +23,12 @@ Transiciones y Animaciones (Misc & Transitions)
 
     Propiedades: transition, animation, transform
 
+
+0.24 Se agregaron dos nuevos modos de color: alto contraste y escala de grises (monocromático). El primero modifica toda la paleta de colores y el segundo aplica un filtro a la página. Ambos modifican además el favicon
+Se reworkeó todo el archivo theme.js y sus funciones para permitir añadir más temas de color en un futuro
+Se agregaron nuevos atributos a los botones del aside
+
+
 0.23.2 Se modificó el nombre de muchas variables y funciones js a inglés
 
 0.23 Se añadió un botón de modo descanso que añade un filtro de color a toda la página -Se añadió una barra de scroll al aside de opciones - Se renombró la clase modo-oscuro a dark-mode
