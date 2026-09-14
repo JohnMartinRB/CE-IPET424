@@ -164,7 +164,6 @@ body.dark-mode iframe {
 body.high-contrast-mode :is(
     .header-card,
     .content,
-    .section-card,
     .subsection-card
 ) {
     outline: 2px solid var(--cian);
@@ -173,7 +172,7 @@ body.high-contrast-mode :is(
     .nav-card,
     .footer-card,
     .aside-drawer,
-    .subsection-card
+    .section-card
 ) {
     outline: 2px solid var(--celeste1);
 }
