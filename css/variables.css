@@ -44,6 +44,8 @@
     /* LINK */
     --link: var(--azul1);
     --link-hover: var(--celeste1);
+    /* BARRA DE PROGRESO */
+    --progress-bar: var(--celeste2);
     /* TARJETAS */
     --bg-section-card: linear-gradient(90deg, var(--celeste7) 0%, var(--celeste6) 100%);
     --text-section-card: var(--azul2);
@@ -59,6 +61,7 @@
     --text-button: var(--azul1);
     --text-button-hover: var(--azul1);
     --border-button: var(--gris2);
+    --bg-aside-button-hover: var(--blanco);
     /* INPUTS */
     --bg-input: var(--blanco);
     --text-input: var(--azul1);
@@ -74,10 +77,11 @@
     --bg-banner: var(--naranja);
     /* SELECTION */
     --bg-selection: var(--celeste2);
+    --text-selection: var(--blanco);
     /* SCROLLBAR */
-    --scrollbar-track: var(--claro2);
-    --scrollbar-thumb: var(--celeste3);
-    --scrollbar-thumb-hover: var(--celeste2);
+    --scrollbar-track: var(--celeste6);
+    --scrollbar-thumb: var(--celeste2);
+    --scrollbar-thumb-hover: var(--celeste1);
     /* WEATHER WIDGET */
     --bg-weather-widget: rgba(129, 129, 129, 0.15);
     --text-weather-widget: var(--azul1);

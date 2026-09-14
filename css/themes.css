@@ -13,6 +13,8 @@ body.dark-mode {
     /* LINK */
     --link: var(--celeste2);
     --link-hover: var(--blanco);
+    /* BARRA DE PROGRESO */
+    --progress-bar: var(--celeste2);
     /* TARJETAS */
     --bg-section-card: linear-gradient(90deg, var(--celeste1) 0%, var(--azul4) 100%);
     --text-section-card: var(--celeste6);
@@ -28,6 +30,7 @@ body.dark-mode {
     --text-button: var(--azul1);
     --text-button-hover: var(--azul1);
     --border-button: var(--celeste3);
+    --bg-aside-button-hover: var(--azul4);
     /* INPUTS */
     --bg-input: var(--blanco);
     --text-input: var(--azul1);
@@ -43,8 +46,9 @@ body.dark-mode {
     --bg-banner: var(--naranja);
     /* SELECTION */
     --bg-selection: var(--azul3);
+    --text-selection: var(--blanco);
     /* SCROLLBAR */
-    --scrollbar-track: var(--azul3);
+    --scrollbar-track: var(--azul1);
     --scrollbar-thumb: var(--celeste2);
     --scrollbar-thumb-hover: var(--celeste1);
     /* WEATHER WIDGET */
@@ -90,6 +94,8 @@ body.high-contrast-mode {
     /* LINK */
     --link: var(--cian);
     --link-hover: var(--amarillo);
+    /* BARRA DE PROGRESO */
+    --progress-bar: var(--amarillo);
     /* TARJETAS */
     --bg-section-card: var(--negro);
     --text-section-card: var(--blanco);
@@ -105,6 +111,7 @@ body.high-contrast-mode {
     --text-button: var(--amarillo);
     --text-button-hover: var(--negro);
     --border-button: var(--amarillo);
+    --bg-aside-button-hover: var(--cian);
     /* INPUTS */
     --bg-input: var(--negro);
     --text-input: var(--blanco);
@@ -120,6 +127,7 @@ body.high-contrast-mode {
     --bg-banner: var(--amarillo);
     /* SELECTION */
     --bg-selection: var(--cian);
+    --text-selection: var(--negro);
     /* SCROLLBAR */
     --scrollbar-track: var(--negro);
     --scrollbar-thumb: var(--cian);
@@ -146,19 +154,28 @@ body.high-contrast-mode .text:hover {
     cursor: url('../assets/img/cursors/cursor-text-dark.svg'), text;
 }
 body.high-contrast-mode #inicio {
-    background-image: url('../assets/img/bg/bg_5.jpg');
+    background-image: url('../assets/img/bg/bg_2.jpg');
+}
+body.dark-mode iframe {
+    filter: invert(0.9) hue-rotate(180deg) brightness(0.95) contrast(0.9);
+    transition: filter 0.3s ease;
 }
 
 body.high-contrast-mode :is(
     .header-card,
-    .nav-card,
-    .footer-card,
-    .aside-drawer,
     .content,
     .section-card,
     .subsection-card
 ) {
     outline: 2px solid var(--cian);
+}
+body.high-contrast-mode :is(
+    .nav-card,
+    .footer-card,
+    .aside-drawer,
+    .subsection-card
+) {
+    outline: 2px solid var(--celeste1);
 }
 
 /* ==========================================

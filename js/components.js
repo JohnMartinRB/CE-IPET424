@@ -61,6 +61,7 @@ export async function initComponents() {
     await Promise.all([
         loadComponent("header-container", "components/header.html"),
         loadComponent("aside-config-container", "components/aside-config.html"),
+        loadComponent("aside-news-container", "components/aside-news.html"),
         loadComponent("footer-container", "components/footer.html")
     ]);
     // Una vez inyectado el HTML del aside en el DOM:

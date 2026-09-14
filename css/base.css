@@ -46,7 +46,7 @@
     }
     ::selection {
         background-color: var(--bg-selection);
-        color: var(--blanco);
+        color: var(--text-selection);
     }
 
 /* ==========================================================================
@@ -101,7 +101,7 @@
     }
     /* --- 2.2 BARRA DE DESPLAZAMIENTO / SCROLL --- */
     ::-webkit-scrollbar {
-        width: 0.7rem;
+        width: 0.6rem;
     }
     ::-webkit-scrollbar-track {
         background-color: var(--scrollbar-track);
@@ -162,9 +162,6 @@
         margin: 0;
         color: var(--text-body);
     }
-    .button-home {
-        margin-top: 2rem;
-    }
 
 /* ==========================================================================
     3. COMPONENTES GENÉRICOS (Reutilizables en cualquier parte)
@@ -186,7 +183,7 @@
     .text:hover {
         cursor: url('../assets/img/cursors/cursor-text.svg'), text;
     }
-    .options, .aside-drawer, .aside-button-toggle {
+    .options, .aside-drawer, .aside-config-button-toggle {
         display: none;
     }
     /* --- 3.2 BOTONES --- */
@@ -202,7 +199,7 @@
         min-width: 10rem;
         width: 13rem;
         margin: 1rem auto;
-        transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+        transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
         user-select: none;
         text-align: center;
     }
@@ -364,7 +361,7 @@
     .header-progress-bar {
         height: 100%;
         width: 0%;
-        background-color: var(--celeste2);
+        background-color: var(--progress-bar);
         transition: width 0.1s ease-out;
     }
     /* --- 4.2 NAVEGACIÓN PRINCIPAL --- */
@@ -417,11 +414,14 @@
         background-color: var(--bg-weather-widget);
         color: var(--text-weather-widget);
         border: 2px solid var(--border-weather-widget);
-        padding: 0.8rem;
+        padding: 1rem;
         font-size: 90%;
         font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
         border-radius: 1rem;
-        min-width: 3rem;
+        min-width: 10rem;
+        width: 13rem;
         margin: 1rem auto;
         transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
         user-select: none;

@@ -123,7 +123,7 @@
         display: flex;
         align-items: center;
     }
-    .aside-button-toggle {
+    .aside-config-button-toggle {
         position: fixed;
         right: 1%;
         top: 65%;
@@ -140,8 +140,8 @@
         box-shadow: 3px 0 8px rgba(0, 0, 0, 0.15);
         transition: background-color 1s ease;
     }
-    .aside-drawer::-webkit-scrollbar {
-        width: 4px;
+    .aside-config-button-toggle:hover {
+        background-color: var(--bg-aside-button-hover);
     }
     .aside-icon-toggle {
         font-weight: bold;
@@ -168,6 +168,8 @@
     }
     .aside-options::-webkit-scrollbar {
         width: 0.3rem;
+    }
+    .aside-options::-webkit-scrollbar-track {
         background-color: var(--bg-content);
     }
     .aside-options::-webkit-scrollbar-thumb {
@@ -192,6 +194,9 @@
     .aside-drawer.open .aside-icon-toggle{
         transform: rotate(180deg);
         transition: transform 0.6s ease;
+    }
+    .aside-news {
+        display: none;
     }
     /* --- 4.5 PIE DE PÁGINA / FOOTER --- */
     .footer-card {

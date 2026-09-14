@@ -5,16 +5,16 @@
 export function initButtons() {
     // Botón de copiar enlace con feedback toast
     document.addEventListener('click', (e) => {
-         if (e.target.closest('#button-copy-link')) {
-             navigator.clipboard.writeText(window.location.href).then(() => {
-                 const toastCopied = document.getElementById('toast-copied-link');
-                 if (toastCopied) {
-                     toastCopied.classList.add('visible');
-                     setTimeout(() => toastCopied.classList.remove('visible'), 2500);
-                 }
-             });
-         }
-     });
+    if (e.target.closest('#button-copy-link')) {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+        const toastCopied = document.getElementById('toast-copied-link');
+        if (toastCopied) {
+            toastCopied.classList.add('visible');
+            setTimeout(() => toastCopied.classList.remove('visible'), 2500);
+        }
+        });
+    }
+    });
     // Botón de copiar enlace con feedback toast
     document.addEventListener('click', (e) => {
         if (e.target.closest('#button-copy-link')) {
@@ -31,7 +31,7 @@ export function initButtons() {
     });
     // Control del aside desplegable
     document.addEventListener('click', function (e) {
-        const buttonToggle = e.target.closest('#aside-button-toggle');
+        const buttonToggle = e.target.closest('#aside-config-button-toggle');
         const aside = document.getElementById('aside-config');
         if (buttonToggle && aside) {
             aside.classList.toggle('open');

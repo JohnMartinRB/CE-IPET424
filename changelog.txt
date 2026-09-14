@@ -23,6 +23,13 @@ Transiciones y Animaciones (Misc & Transitions)
 
     Propiedades: transition, animation, transform
 
+0.24.1 Se prepararon todos los archivos html y components para la adición futura de un nuevo aside
+Se actualizó el favicon de escala de grises
+Ahora los colores de ::selection y la barra de progreso de lectura se manejan con variables
+En modo de alto contraste, se cambió el fondo del hero, así como varios colores de texto, fondo y outlines
+Se agregó un nuevo titulo para separar más los botones del aside-config
+Se unificó el estilo del weather-widget con los botones
+Se eliminó el fondo de la scrollbar
 
 0.24 Se agregaron dos nuevos modos de color: alto contraste y escala de grises (monocromático). El primero modifica toda la paleta de colores y el segundo aplica un filtro a la página. Ambos modifican además el favicon
 Se reworkeó todo el archivo theme.js y sus funciones para permitir añadir más temas de color en un futuro
