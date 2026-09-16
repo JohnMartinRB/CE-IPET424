@@ -1,4 +1,13 @@
 
+0.25 Se formatearon todos los archivos js, css y html - Se reordenaron las propiedades de todos los archivos css con el enfoque outside-in, este es el orden:
+Posicionamiento y Maquetación (Layout & Position)
+Modelo de Caja y Dimensiones (Box Model & Sizing)
+Espaciado Interno y Bordes (Padding & Border structure)
+Tipografía y Texto (Typography)
+Colores y Estilos Visuales (Visuals & Colors)
+Transiciones y Animaciones (Misc & Transitions)
+
+
 Posicionamiento y Maquetación (Layout & Position)
 
     Propiedades: display, position, top, right, bottom, left, z-index, flex-..., grid-...

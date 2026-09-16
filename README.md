@@ -1,18 +1,18 @@
-
 # 🏫 Sitio Web del Centro de Estudiantes - IPET N° 424
 
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.24%20(Alpha)-blue)
+![Versión](<https://img.shields.io/badge/versi%C3%B3n-0.25%20(Alpha)-blue>)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
-![Tecnologías](https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange)
+![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
 Portal web institucional desarrollado para concentrar, digitalizar y facilitar el acceso a la información académica, solicitudes, formularios, trámites y herramientas interactivas para la comunidad educativa del **IPET N° 424**.
 
 ---
 
 ## 📌 Índice de Contenidos
+
 - [Vista General y Propósito](#-vista-general-y-propósito)
 - [Estado del Proyecto](#-estado-del-proyecto)
 - [Funcionalidades Principales](#-funcionalidades-principales)
@@ -27,7 +27,7 @@ Portal web institucional desarrollado para concentrar, digitalizar y facilitar e
 
 ## 🎯 Vista General y Propósito
 
-El portal del Centro de Estudiantes nace con la necesidad de **centralizar y modernizar los canales de comunicación estudiantiles**. Tradicionalmente, la información sobre trámites, horarios, planes de estudio y solicitudes escolares se encontraba dispersa. 
+El portal del Centro de Estudiantes nace con la necesidad de **centralizar y modernizar los canales de comunicación estudiantiles**. Tradicionalmente, la información sobre trámites, horarios, planes de estudio y solicitudes escolares se encontraba dispersa.
 
 Este proyecto busca resolver dicha problemática mediante una **plataforma accesible, liviana, responsiva y orientada a la experiencia de usuario (UX/UI)**, optimizada para funcionar correctamente en dispositivos móviles y de escritorio.
 
@@ -35,35 +35,40 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 ## 🚀 Estado del Proyecto
 
-| Parámetro | Detalle |
-| :--- | :--- |
-| **Versión Actual** | `v0.24` (Fase Alpha, en desarrollo) |
-| **Inicio de Desarrollo** | 7 de agosto de 2026 |
-| **Lanzamiento Estable (v1.0)** | Marzo de 2027 |
-| **Entorno de Hosting** | Cloudflare Pages / GitHub Pages |
-| **Mantenimiento** | Activo (CI/CD Automático) |
+| Parámetro                      | Detalle                             |
+| :----------------------------- | :---------------------------------- |
+| **Versión Actual**             | `v0.25` (Fase Alpha, en desarrollo) |
+| **Inicio de Desarrollo**       | 7 de agosto de 2026                 |
+| **Lanzamiento Estable (v1.0)** | Marzo de 2027                       |
+| **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages     |
+| **Mantenimiento**              | Activo (CI/CD Automático)           |
 
 ---
 
 ## ✨ Funcionalidades Principales
 
 ### 🔍 1. Módulo de Horarios Escolar Interactivo (futuro)
+
 - **Buscador/Filtro Dinámico:** Consulta personalizada por curso, división, turno o materia.
 - **Visualización Limpia:** Tablas de horarios adaptables con resaltado visual.
 
 ### 🌓 2. Sistema de Interfaz Adaptativa (Dark / Light Mode)
+
 - **Modo Oscuro Integrado:** Detección de preferencia del sistema operativo y alternancia dinámica vía JS.
 - **Persistencia de Selección:** Guardado de preferencias mediante `localStorage`.
 
 ### 📂 3. Centro de Documentación y Descargas
+
 - Acceso directo a formularios institucionales, solicitudes de pase, certificados e instructivos en formato PDF.
 - Enlaces organizados por categorías de trámite.
 
 ### ✉️ 4. Formulario Institucional y Canal de Sugerencias
+
 - Sistema de contacto directo con la comisión directiva del Centro de Estudiantes.
 - Validación de campos en tiempo real mediante JavaScript.
 
 ### ❓ 5. Sección FAQ y Mapa Interactivo (futuro)
+
 - Preguntas frecuentes sobre matriculación, régimen de asistencia y convivencia escolar.
 - Ubicación y mapa del establecimiento educativo.
 
@@ -137,17 +142,18 @@ CE-IPET424/
 
 ## 🛠️ Tecnologías e Infraestructura
 
-* **Frontend Nativo:** `HTML5` semántico, `CSS3` (utilizando variables nativas CSS y Flexbox/Grid) y `JavaScript (ES6+)` sin dependencias pesadas de terceros para garantizar una carga ultrarrápida.
-* **Alojamiento y Servidores:** Infraestructura distribuida en **Cloudflare Pages** y servidor estático en **GitHub Pages**.
-* **Control de Versiones:** Git & GitHub Workflow.
+- **Frontend Nativo:** `HTML5` semántico, `CSS3` (utilizando variables nativas CSS y Flexbox/Grid) y `JavaScript (ES6+)` sin dependencias pesadas de terceros para garantizar una carga ultrarrápida.
+- **Alojamiento y Servidores:** Infraestructura distribuida en **Cloudflare Pages** y servidor estático en **GitHub Pages**.
+- **Control de Versiones:** Git & GitHub Workflow.
 
 ---
 
 ## ⚙️ Automatización y Integración Continua (CI/CD)
 
-El proyecto cuenta con integración continua configurada mediante **GitHub Actions** (`static.yml`). 
+El proyecto cuenta con integración continua configurada mediante **GitHub Actions** (`static.yml`).
 
 Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un proceso automatizado que:
+
 1. Verifica la integridad de los archivos estáticos.
 2. Despliega automáticamente los últimos cambios al servidor de producción en cuestión de segundos.
 
@@ -157,71 +163,80 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 
 AVISO: Se incluyen únicamente las versiones completas
 
-* **`v0.24-alpha` (Actual)**
-  * 0.24 Se agregaron dos nuevos modos de color: alto contraste y escala de grises (monocromático). El primero modifica toda la paleta de colores y el segundo aplica un filtro a la página. Ambos modifican además el favicon
-  * Se reworkeó todo el archivo theme.js y sus funciones para permitir añadir más temas de color en un futuro
-  * Se agregaron nuevos atributos a los botones del aside
-  * Se cambió el texto del footer-copyright en 404.html
-* **`v0.23-alpha`**
-  * Se añadió un botón de modo descanso que añade un filtro de color a toda la página
-  * Se añadió una barra de scroll al aside de opciones
-  * Se renombró la clase modo-oscuro a dark-mode
-* **`v0.22-alpha`**
-  * Se agregó contenido de placeholder y un menú personalizado a todas las subpáginas con el objetivo de mejorar la navegación
-  * Se arreglaron los button-active del menú al fondo de cada página
-  * Se corrigió el footer en 404.html
-  * Se eliminaron los íconos innecesarios en assets/img/icons, volviendo a tener .gitkeep
-* **`v0.21-alpha`**
-  * Se separaron correctamente todos los estilos de celular y base (base.css) y los de pc (desktop.css)
-  * Se implementó y trabajó correctamente el layout de celular para darle una apariencia ordenada y corregida
-  * Se restructuró todo el css del sitio, sepando los selectores y propiedades por secciones de contenido y elementos
-  * Se renombraron muchos ids y clases para mas claridad y especificidad
-  * Ahora el texto tiene las clases "text" y "Paragraph" para poder centrarlos y hacer que tengan cursor:text. Además, los párrafos tienen text-wrap:balance para tener mejor estructura
-  * Ahora el cursor:text es más grande - Ahora el fondo del hero-section ya no se mueve al hacer scroll
-  * Se oscureció el color del texto del footer en modo oscuro
-  * Ahora la pantalla de carga en modo oscuro es azul en lugar de celeste
-  * Se cambiaron muchísimos padding, margin, border-radius y tamaños entre el diseño en pc y en celular
-  * Ahora en celular el título no está en uppercase y hay un solo logo en lugar de dos
-  * Los enlaces del footer ahora se encuentran divididos en dos columnas: una para redes de contacto y otra para los enlaces del proyecto
-  * Se corrigieron muchos ids y clases en los archivos .js
-* **`v0.20-alpha`**
-La actualización más grande hasta el momento: se actualizó casi toda la interfaz de la página (la actu estuvo enfocada en el diseño en pc)
-ESTRUCTURA:
-  * Ahora el nav se encuentra en una tarjeta aparte del Header
-  * Se agregó un subtítulo al header y ahora es más ancho
-  * El footer se encuentra en una tarjeta separada, más ancha, al final de la página
-  * Se movieron los botones de modo oscuro, copiar enlace y el widget de clima a un aside de opciones, desplegable (el cual se inyecta con fetch al igual que el header y el footer)
-  * En este mismo aside, se agregaron dos botones para futuros temas de color
-  * En el footer, se agregaron enlaces al repositorio github y a la licencia MIT. Tambien, se separó la línea de copyright de la de desarrollo, haciendo esta ultima un poco mas pequeña (ahora los textos del copyright se manejan por clases)
-  * Se agregó la carpeta assets/img/bg para incluir fondos tecnológicos para tarjetas futuras
-  * Ahora 404.html no tiene menú, aside y tiene un footer personalizado únicamente con el copyright
-  * Se cambió la forma en que se manejan las clases e ids: ahora todos los elementos tienen una clase y un id idénticos y específicos, y clases adicionales para estilos generales
-  * CSS ahora trabaja únicamente con las clases genéricas y específicas, reservando los ids unicamente para javascript
-DISEÑO:
-  * Se cambiaron todos los colores de fondo y tarjetas en modo claro, paasando de gris/blanco a degrades con celeste/blanco
-  * Ahora la tarjeta de hero tiene un fondo tecnologico
-  * Se agrego más interlineado al texto, el cual tiene una nueva clase "text" . Además, este ahora se encuentra centrado
-  * Se agregó un ancho fijo a los botones del aside
-  * Ahora el input:focus tiene un borde diferente y además un sombreado (el input ahora se trabaja por clase)
-  * Se cambió el ancho de la barra de progreso de lectura
-  * Se cambió el padding/margin de muchas tarjetas
-FUNCIONES:
-  * Se modularizó más el archivo main.js en buttons.js, banners.js y shortcuts.js el primero conteniendo los botones y el widget, el segundo conteniendo el toast, el offline-banner y la barra de lectura, y el ultimo los atajos de teclado
-  * Sus funciones ahora se importan
-  * Se cambió el funcionamiento del widget del clima
-  * Se agregó un atajo de teclado para copiar el enlace de la web, y otros para el modo de escala de grises/alto contraste (aun no implementados)
-  * Nueva función para que el aside quede arriba al llegar al footer, de forma que no lo tape.
-* **`v0.19-alpha`**
-  * Se agregó una pantalla de carga sencilla para cubrir el contendio mientras se cargan los componentes de la página.
-  * Se agregó un border radius a la barra de progreso de lectura
-* **`v0.18-alpha`**
-  * El header ahora se encuentra en un contenedor aparte de .content, tiene posición sticky por lo que se mantiene al hacer scroll
-  * Se añadió una barra del progreso de lectura en el head
-  * Se agregó un widget de tiempo atmosférico de Villa Dolores en el header
-  * Se reworkeó la función de deshabilitar el menú contextual en imágenes para hacerla mas completa
-  * Se personalizó la scrollbar (colores, ancho, etc)
-  * Se agregaron más transiciones y animaciones
-  * Ahora el boton de modo oscuro y el weather widget están en un contenedor aparte del nav
+- **`v0.25-alpha` (Actual)**
+    - 0.25 Se formatearon todos los archivos js, css y html
+    - Se reordenaron las propiedades de todos los archivos css con el enfoque outside-in, este es el orden:
+      Posicionamiento y Maquetación (Layout & Position)
+      Modelo de Caja y Dimensiones (Box Model & Sizing)
+      Espaciado Interno y Bordes (Padding & Border structure)
+      Tipografía y Texto (Typography)
+      Colores y Estilos Visuales (Visuals & Colors)
+      Transiciones y Animaciones (Misc & Transitions)
+- **`v0.24-alpha`**
+    - 0.24 Se agregaron dos nuevos modos de color: alto contraste y escala de grises (monocromático). El primero modifica toda la paleta de colores y el segundo aplica un filtro a la página. Ambos modifican además el favicon
+    - Se reworkeó todo el archivo theme.js y sus funciones para permitir añadir más temas de color en un futuro
+    - Se agregaron nuevos atributos a los botones del aside
+    - Se cambió el texto del footer-copyright en 404.html
+- **`v0.23-alpha`**
+    - Se añadió un botón de modo descanso que añade un filtro de color a toda la página
+    - Se añadió una barra de scroll al aside de opciones
+    - Se renombró la clase modo-oscuro a dark-mode
+- **`v0.22-alpha`**
+    - Se agregó contenido de placeholder y un menú personalizado a todas las subpáginas con el objetivo de mejorar la navegación
+    - Se arreglaron los button-active del menú al fondo de cada página
+    - Se corrigió el footer en 404.html
+    - Se eliminaron los íconos innecesarios en assets/img/icons, volviendo a tener .gitkeep
+- **`v0.21-alpha`**
+    - Se separaron correctamente todos los estilos de celular y base (base.css) y los de pc (desktop.css)
+    - Se implementó y trabajó correctamente el layout de celular para darle una apariencia ordenada y corregida
+    - Se restructuró todo el css del sitio, sepando los selectores y propiedades por secciones de contenido y elementos
+    - Se renombraron muchos ids y clases para mas claridad y especificidad
+    - Ahora el texto tiene las clases "text" y "Paragraph" para poder centrarlos y hacer que tengan cursor:text. Además, los párrafos tienen text-wrap:balance para tener mejor estructura
+    - Ahora el cursor:text es más grande - Ahora el fondo del hero-section ya no se mueve al hacer scroll
+    - Se oscureció el color del texto del footer en modo oscuro
+    - Ahora la pantalla de carga en modo oscuro es azul en lugar de celeste
+    - Se cambiaron muchísimos padding, margin, border-radius y tamaños entre el diseño en pc y en celular
+    - Ahora en celular el título no está en uppercase y hay un solo logo en lugar de dos
+    - Los enlaces del footer ahora se encuentran divididos en dos columnas: una para redes de contacto y otra para los enlaces del proyecto
+    - Se corrigieron muchos ids y clases en los archivos .js
+- **`v0.20-alpha`**
+  La actualización más grande hasta el momento: se actualizó casi toda la interfaz de la página (la actu estuvo enfocada en el diseño en pc)
+  ESTRUCTURA:
+    - Ahora el nav se encuentra en una tarjeta aparte del Header
+    - Se agregó un subtítulo al header y ahora es más ancho
+    - El footer se encuentra en una tarjeta separada, más ancha, al final de la página
+    - Se movieron los botones de modo oscuro, copiar enlace y el widget de clima a un aside de opciones, desplegable (el cual se inyecta con fetch al igual que el header y el footer)
+    - En este mismo aside, se agregaron dos botones para futuros temas de color
+    - En el footer, se agregaron enlaces al repositorio github y a la licencia MIT. Tambien, se separó la línea de copyright de la de desarrollo, haciendo esta ultima un poco mas pequeña (ahora los textos del copyright se manejan por clases)
+    - Se agregó la carpeta assets/img/bg para incluir fondos tecnológicos para tarjetas futuras
+    - Ahora 404.html no tiene menú, aside y tiene un footer personalizado únicamente con el copyright
+    - Se cambió la forma en que se manejan las clases e ids: ahora todos los elementos tienen una clase y un id idénticos y específicos, y clases adicionales para estilos generales
+    - CSS ahora trabaja únicamente con las clases genéricas y específicas, reservando los ids unicamente para javascript
+      DISEÑO:
+    - Se cambiaron todos los colores de fondo y tarjetas en modo claro, paasando de gris/blanco a degrades con celeste/blanco
+    - Ahora la tarjeta de hero tiene un fondo tecnologico
+    - Se agrego más interlineado al texto, el cual tiene una nueva clase "text" . Además, este ahora se encuentra centrado
+    - Se agregó un ancho fijo a los botones del aside
+    - Ahora el input:focus tiene un borde diferente y además un sombreado (el input ahora se trabaja por clase)
+    - Se cambió el ancho de la barra de progreso de lectura
+    - Se cambió el padding/margin de muchas tarjetas
+      FUNCIONES:
+    - Se modularizó más el archivo main.js en buttons.js, banners.js y shortcuts.js el primero conteniendo los botones y el widget, el segundo conteniendo el toast, el offline-banner y la barra de lectura, y el ultimo los atajos de teclado
+    - Sus funciones ahora se importan
+    - Se cambió el funcionamiento del widget del clima
+    - Se agregó un atajo de teclado para copiar el enlace de la web, y otros para el modo de escala de grises/alto contraste (aun no implementados)
+    - Nueva función para que el aside quede arriba al llegar al footer, de forma que no lo tape.
+- **`v0.19-alpha`**
+    - Se agregó una pantalla de carga sencilla para cubrir el contendio mientras se cargan los componentes de la página.
+    - Se agregó un border radius a la barra de progreso de lectura
+- **`v0.18-alpha`**
+    - El header ahora se encuentra en un contenedor aparte de .content, tiene posición sticky por lo que se mantiene al hacer scroll
+    - Se añadió una barra del progreso de lectura en el head
+    - Se agregó un widget de tiempo atmosférico de Villa Dolores en el header
+    - Se reworkeó la función de deshabilitar el menú contextual en imágenes para hacerla mas completa
+    - Se personalizó la scrollbar (colores, ancho, etc)
+    - Se agregaron más transiciones y animaciones
+    - Ahora el boton de modo oscuro y el weather widget están en un contenedor aparte del nav
 
 ## 🗺️ Roadmap de Desarrollo (Hacia la v1.0)
 
@@ -238,9 +253,9 @@ FUNCIONES:
 
 Proyecto diseñado, programado y mantenido por:
 
-* **Juan Martín Rodríguez**  
-  *Presidente del Centro de Estudiantes — IPET N° 424 (Gestión 2026)*
-  * **GitHub:** [@JohnMartinRB](https://github.com/JohnMartinRB)
-  * **Repositorio oficial:** [CE-IPET424](https://github.com/JohnMartinRB/CE-IPET424)
+- **Juan Martín Rodríguez**  
+  _Presidente del Centro de Estudiantes — IPET N° 424 (Gestión 2026)_
+    - **GitHub:** [@JohnMartinRB](https://github.com/JohnMartinRB)
+    - **Repositorio oficial:** [CE-IPET424](https://github.com/JohnMartinRB/CE-IPET424)
 
 ---

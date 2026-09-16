@@ -3,14 +3,25 @@
    ========================================== */
 
 export function konamiCode() {
-    const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+    const konamiCode = [
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowLeft",
+        "ArrowRight",
+        "ArrowLeft",
+        "ArrowRight",
+        "b",
+        "a",
+    ];
     let konamiIndex = 0;
-    document.addEventListener('keydown', (e) => {
+    document.addEventListener("keydown", (e) => {
         if (e.key.toLowerCase() === konamiCode[konamiIndex].toLowerCase()) {
             konamiIndex++;
             if (konamiIndex === konamiCode.length) {
-            alert('🚀 ¡Descubriste el modo desarrollador del CE IPET 424!');
-            konamiIndex = 0;
+                alert("🚀 ¡Descubriste el modo desarrollador del CE IPET 424!");
+                konamiIndex = 0;
             }
         } else {
             konamiIndex = 0;
@@ -26,6 +37,6 @@ export function consoleMsg() {
     console.log(
         "%c ¡Hola usuario! 🚀 %c\n¿Te interesa la programación o querés colaborar en la web del Centro de Estudiantes? ¡Sumate al equipo!",
         "font-size: 1.5rem; font-weight: bold; color: #00C4FF;",
-        "font-size: 1rem; color: #ccc;"
+        "font-size: 1rem; color: #ccc;",
     );
 }

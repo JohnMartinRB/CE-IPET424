@@ -36,7 +36,14 @@ body.dark-mode {
     --text-input: var(--azul1);
     --border-input: var(--blanco);
     /* FOOOTER */
-    --bg-footer: linear-gradient(90deg, var(--azul1) 0%, var(--azul2) 20%, var(--azul3) 50%, var(--azul2) 80%, var(--azul1) 100%);
+    --bg-footer: linear-gradient(
+        90deg,
+        var(--azul1) 0%,
+        var(--azul2) 20%,
+        var(--azul3) 50%,
+        var(--azul2) 80%,
+        var(--azul1) 100%
+    );
     --text-footer: var(--celeste2);
     --text-footer-hover: var(--blanco);
     --text-copy: var(--celeste4);
@@ -57,22 +64,22 @@ body.dark-mode {
     --border-weather-widget: rgba(255, 255, 255, 0.2);
 }
 body.dark-mode {
-    cursor: url('../assets/img/cursors/cursor-dark.svg'), auto;
+    cursor: url("../assets/img/cursors/cursor-dark.svg"), auto;
 }
 body.dark-mode a:hover {
-    cursor: url('../assets/img/cursors/cursor-hover-dark.svg'), pointer;
+    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
 }
 body.dark-mode .button:hover {
-    cursor: url('../assets/img/cursors/cursor-hover-dark.svg'), pointer;
+    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
 }
-body.dark-mode .aside-button-toggle:hover {
-    cursor: url('../assets/img/cursors/cursor-hover-dark.svg'), pointer;
+body.dark-mode .aside-config-button-toggle:hover {
+    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
 }
 body.dark-mode .text:hover {
-    cursor: url('../assets/img/cursors/cursor-text-dark.svg'), text;
+    cursor: url("../assets/img/cursors/cursor-text-dark.svg"), text;
 }
 body.dark-mode #inicio {
-    background-image: url('../assets/img/bg/bg_5.jpg');
+    background-image: url("../assets/img/bg/bg_5.jpg");
 }
 body.dark-mode iframe {
     filter: invert(0.9) hue-rotate(180deg) brightness(0.95) contrast(0.9);
@@ -139,48 +146,40 @@ body.high-contrast-mode {
 }
 
 body.high-contrast-mode {
-    cursor: url('../assets/img/cursors/cursor-dark.svg'), auto;
+    cursor: url("../assets/img/cursors/cursor-dark.svg"), auto;
 }
 body.high-contrast-mode a:hover {
-    cursor: url('../assets/img/cursors/cursor-hover-dark.svg'), pointer;
+    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
 }
 body.high-contrast-mode .button:hover {
-    cursor: url('../assets/img/cursors/cursor-hover-dark.svg'), pointer;
+    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
 }
-body.high-contrast-mode .aside-button-toggle:hover {
-    cursor: url('../assets/img/cursors/cursor-hover-dark.svg'), pointer;
+body.high-contrast-mode .aside-config-button-toggle:hover {
+    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
 }
 body.high-contrast-mode .text:hover {
-    cursor: url('../assets/img/cursors/cursor-text-dark.svg'), text;
+    cursor: url("../assets/img/cursors/cursor-text-dark.svg"), text;
 }
 body.high-contrast-mode #inicio {
-    background-image: url('../assets/img/bg/bg_2.jpg');
+    background-image: url("../assets/img/bg/bg_2.jpg");
 }
 body.dark-mode iframe {
     filter: invert(0.9) hue-rotate(180deg) brightness(0.95) contrast(0.9);
     transition: filter 0.3s ease;
 }
 
-body.high-contrast-mode :is(
-    .header-card,
-    .content,
-    .subsection-card
-) {
+body.high-contrast-mode :is(.header-card, .content, .subsection-card) {
     outline: 2px solid var(--cian);
 }
-body.high-contrast-mode :is(
-    .nav-card,
-    .footer-card,
-    .aside-drawer,
-    .section-card
-) {
+body.high-contrast-mode :is(.nav-card, .footer-card, .aside-drawer, .section-card) {
     outline: 2px solid var(--celeste1);
 }
 
 /* ==========================================
     MODO ESCALA DE GRISES
    ========================================== */
-html.grayscale-mode, body.grayscale-mode {
+html.grayscale-mode,
+body.grayscale-mode {
     filter: grayscale(100%);
 }
 
@@ -188,20 +187,125 @@ html.grayscale-mode, body.grayscale-mode {
     MODO DESCANSO
    ========================================== */
 html.rest-mode::after {
-    content: "";
+    z-index: 998; /* Un nivel por debajo del loader de carga */
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     /* Color anaranjado/ámbar suave semitransparente */
-    background-color: rgba(255, 162, 0, 0.233); 
+    background-color: rgba(255, 162, 0, 0.233);
+    content: "";
     /* Permite hacer clic a través de la capa sin bloquear los botones */
-    pointer-events: none; 
-    z-index: 998; /* Un nivel por debajo del loader de carga */
-    transition: background-color 0.7s ease, opacity 0.7s ease;
+    pointer-events: none;
+    transition:
+        background-color 0.7s ease,
+        opacity 0.7s ease;
 }
 html.rest-mode {
     filter: sepia(20%) brightness(95%);
     transition: filter 0.7s ease;
+}
+
+/* ==========================================
+    MODO CÓDIGO
+   ========================================== */
+body.code-mode {
+    /* BODY */
+    --bg-body: #0a0a0a;
+    --text-body: #e0e0e0;
+    /* PANTALLA DE CARGA */
+    --bg-loader-screen: #0a0a0a;
+    /* CONTENIDO */
+    --bg-content: #121212;
+    --shadow-content: none;
+    /* LINK */
+    --link: #00ff66;
+    --link-hover: #00e5ff;
+    /* BARRA DE PROGRESO */
+    --progress-bar: #00ff66;
+    /* TARJETAS */
+    --bg-section-card: #121212;
+    --text-section-card: #e0e0e0;
+    --bg-subsection-card: #1a1a1a;
+    --text-subsection-card: #e0e0e0;
+    --shadow-section-card: none;
+    --shadow-subsection-card: none;
+    /* TITULOS */
+    --text-titles: #00ff66;
+    /* BOTONES / ENLACES */
+    --bg-button: #121212;
+    --bg-button-hover: #00ff66;
+    --text-button: #00ff66;
+    --text-button-hover: #0a0a0a;
+    --border-button: #00ff66;
+    --bg-aside-button-hover: #00e5ff;
+    /* INPUTS */
+    --bg-input: #121212;
+    --text-input: #00ff66;
+    --border-input: #00cc55;
+    /* FOOTER */
+    --bg-footer: #0a0a0a;
+    --text-footer: #00cc55;
+    --text-footer-hover: #00ff66;
+    --text-copy: #888888;
+    /* TOAST / BANNER */
+    --bg-toast: #121212;
+    --text-toast: #00ff66;
+    --bg-banner: #00ff66;
+    /* SELECTION */
+    --bg-selection: #00ff66;
+    --text-selection: #0a0a0a;
+    /* SCROLLBAR */
+    --scrollbar-track: #0a0a0a;
+    --scrollbar-thumb: #00cc55;
+    --scrollbar-thumb-hover: #00ff66;
+    /* WEATHER WIDGET */
+    --bg-weather-widget: #121212;
+    --text-weather-widget: #00ff66;
+    --border-weather-widget: #00cc55;
+}
+
+body.code-mode
+    :is(
+        .header-card,
+        .content,
+        .subsection-card,
+        .nav-card,
+        .footer-card,
+        .aside-drawer,
+        .section-card,
+        .button,
+        .input,
+        iframe,
+        ::-webkit-scrollbar
+    ) {
+    border-radius: 0;
+}
+
+body.code-mode :is(h1, h2, h3, h4, h5, h6, p, a, span, .button, summary, details, label, ::placeholder) {
+    font-family: monospace;
+}
+
+body.code-mode {
+    cursor: url("../assets/img/cursors/cursor-dark.svg"), auto;
+}
+body.code-mode a:hover {
+    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
+}
+body.code-mode .button:hover {
+    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
+}
+body.code-mode .aside-config-button-toggle:hover {
+    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
+}
+body.code-mode .text:hover {
+    cursor: url("../assets/img/cursors/cursor-text-dark.svg"), text;
+}
+body.code-mode #inicio {
+    background: var(--bg-section-card);
+}
+body.code-mode iframe {
+    filter: invert(0.9) hue-rotate(180deg) brightness(0.95) contrast(0.9);
+    transition: filter 0.3s ease;
 }

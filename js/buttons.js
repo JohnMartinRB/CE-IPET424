@@ -4,37 +4,36 @@
 
 export function initButtons() {
     // Botón de copiar enlace con feedback toast
-    document.addEventListener('click', (e) => {
-    if (e.target.closest('#button-copy-link')) {
-        navigator.clipboard.writeText(window.location.href).then(() => {
-        const toastCopied = document.getElementById('toast-copied-link');
-        if (toastCopied) {
-            toastCopied.classList.add('visible');
-            setTimeout(() => toastCopied.classList.remove('visible'), 2500);
+    document.addEventListener("click", (e) => {
+        if (e.target.closest("#button-copy-link")) {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                const toastCopied = document.getElementById("toast-copied-link");
+                if (toastCopied) {
+                    toastCopied.classList.add("visible");
+                    setTimeout(() => toastCopied.classList.remove("visible"), 2500);
+                }
+            });
         }
-        });
-    }
     });
     // Botón de copiar enlace con feedback toast
-    document.addEventListener('click', (e) => {
-        if (e.target.closest('#button-copy-link')) {
+    document.addEventListener("click", (e) => {
+        if (e.target.closest("#button-copy-link")) {
             navigator.clipboard.writeText(window.location.href);
-            
-            const toast = document.getElementById('toast-copied');
+            const toast = document.getElementById("toast-copied");
             if (toast) {
-                toast.classList.add('visible');
-                setTimeout(() => toast.classList.remove('visible'), 2500);
+                toast.classList.add("visible");
+                setTimeout(() => toast.classList.remove("visible"), 2500);
             } else {
                 console.log("El elemento #toast-copied no existe en el DOM");
             }
         }
     });
     // Control del aside desplegable
-    document.addEventListener('click', function (e) {
-        const buttonToggle = e.target.closest('#aside-config-button-toggle');
-        const aside = document.getElementById('aside-config');
+    document.addEventListener("click", function (e) {
+        const buttonToggle = e.target.closest("#aside-config-button-toggle");
+        const aside = document.getElementById("aside-config");
         if (buttonToggle && aside) {
-            aside.classList.toggle('open');
+            aside.classList.toggle("open");
         }
     });
 }
@@ -49,19 +48,18 @@ export async function getVillaDoloresWeather() {
         const data = await res.json();
         const temp = Math.round(data.current_weather.temperature);
         const code = data.current_weather.weathercode;
-        const tempEl = document.getElementById('weather-temp');
-        const iconEl = document.getElementById('weather-icon');
+        const tempEl = document.getElementById("weather-temp");
+        const iconEl = document.getElementById("weather-icon");
         if (tempEl) tempEl.textContent = `${temp}°C`;
         if (iconEl) iconEl.textContent = getWeatherIcon(code);
     } catch (error) {
         console.warn("No se pudo cargar el clima", error);
     }
-
     function getWeatherIcon(code) {
-        if (code === 0) return '☀️';
-        if (code >= 1 && code <= 3) return '⛅';
-        if (code >= 51 && code <= 67) return '🌧️';
-        if (code >= 95) return '⛈️';
-        return '☁️';
+        if (code === 0) return "☀️";
+        if (code >= 1 && code <= 3) return "⛅";
+        if (code >= 51 && code <= 67) return "🌧️";
+        if (code >= 95) return "⛈️";
+        return "☁️";
     }
 }

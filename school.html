@@ -1,125 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <!-- ETIQUETAS META -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sitio oficial del Centro de Estudiantes IPET 424. Novedades, proyectos y contacto.">
-    <meta name="theme-color" id="theme-color" content="#0088FF">
-    <!-- TITULO DE LA PESTAÑA Y FAVICON -->
-    <title>Trámites | Centro de Estudiantes IPET N° 424</title>
-    <link rel="icon" id="favicon" type="image/png" href="assets/img/favicons/light.png" sizes="any">
-    <!-- CSS, JAVASCRIPT Y JSON -->
-    <link rel="stylesheet" href="css/styles.css">
-    <script type="module" src="js/main.js"></script>
-    <link rel="manifest" href="assets/data/manifest.json">
-</head>
+    <head>
+        <!-- ETIQUETAS META -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Sitio oficial del Centro de Estudiantes IPET 424. Novedades, proyectos y contacto."
+        />
+        <meta name="theme-color" id="theme-color" content="#0088FF" />
+        <!-- TITULO DE LA PESTAÑA Y FAVICON -->
+        <title>Trámites | Centro de Estudiantes IPET N° 424</title>
+        <link rel="icon" id="favicon" type="image/png" href="assets/img/favicons/light.png" sizes="any" />
+        <!-- CSS, JAVASCRIPT Y JSON -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <script type="module" src="js/main.js"></script>
+        <link rel="manifest" href="assets/data/manifest.json" />
+    </head>
 
-<body>
-    <!-- HEADER DE TITULO -->
-    <div id="header-container" class="header-container"></div>
-    <!-- BARRA DE NAVEGACIÓN -->
-    <nav id="nav-card" class="nav-card">
-        <button id="nav-button-menu" class="button nav-button-menu" aria-label="Abrir menú">☰</button>
-        <ul id="nav-menu" class="nav-menu">
-            <li><a class="nav-menu-item" href="#tramites">Trámites y PDFs</a></li>
-            <li><a class="nav-menu-item" href="#reglamento">Reglamento y Horarios</a></li>
-            <li><a class="nav-menu-item" href="#herramientas">Calculadora de Promedios</a></li>
-            <li><a class="nav-menu-item" href="#orientaciones">Especialidades Técnicas</a></li>
-            <li><a class="nav-menu-item" href="#mesas">Mesas de Examen</a></li>
-        </ul>
-    </nav>
-    <!-- PANEL LATERAL DE CONFIGURACIÓN -->
-    <div id="aside-config-container" class="aside-config-container"></div>
-    <!-- PANEL LATERAL DE NOVEDADES -->
-    <div id="aside-news-container" class="aside-news-container"></div>
-    <!-- CONTENEDOR PRINCIPAL -->
-    <div id="content" class="content">
-        <main>
-            <!-- SECCIÓN: INICIO / INFORMATIVA -->
-            <section id="inicio" class="section-card hero-section">
-                <h2>Información Escolar</h2>
-                <p class="text paragraph">Reglamentos, horarios, mesas de examen y descargables para la vida académica en el IPET N° 424.</p>
-            </section>
-            <!-- SECCIÓN 1: TRÁMITES Y PDFS -->
-            <section id="tramites" class="section-card tramites-section">
-                <h2>Trámites y Formularios</h2>
-                <div id="grid-tarjetas" class="grid-tarjetas">
-                    <article class="subsection-card download-card">
-                        <h3>Ficha Médica (CUS)</h3>
-                        <p class="text paragraph">Formulario oficial de salud para educación física.</p>
-                        <a href="assets/docs/cus.pdf" download="CUS_2026.pdf" class="button download-button">Descargar PDF</a>
-                    </article>
-                    <article class="subsection-card download-card">
-                        <h3>Uso de Imagen</h3>
-                        <p class="text paragraph">Autorización firmada por tutor/a legal.</p>
-                        <a href="assets/docs/autorizacion-imagen.pdf" download="Autorizacion_Imagen.pdf" class="button download-button">Descargar PDF</a>
-                    </article>
-                </div>
-            </section>
-            <!-- SECCIÓN 2: REGLAMENTO Y HORARIOS -->
-            <section id="reglamento" class="section-card reglamento-section">
-                <h2>Reglamento y Horarios</h2>
-                <div id="table-container" class="table-container">
-                    <h3>Turnos de Clase</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Módulo</th>
-                                <th>Entrada</th>
-                                <th>Salida</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Mañana</td>
-                                <td>07:30</td>
-                                <td>12:00</td>
-                            </tr>
-                            <tr>
-                                <td>Tarde</td>
-                                <td>13:00</td>
-                                <td>17:30</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-            <!-- SECCIÓN 3: CALCULADORA DE PROMEDIOS -->
-            <section id="herramientas" class="section-card herramientas-section">
-                <h2>Herramientas Estudiantiles</h2>
-                <div id="calculator-box" class="calculator-box">
-                    <h3>Calculadora de Promedios</h3>
-                    <p class="text">Herramienta en desarrollo para el cálculo del cuatrimestre.</p>
-                </div>
-            </section>
-            <!-- SECCIÓN 4: ESPECIALIDADES TÉCNICAS -->
-            <section id="orientaciones" class="section-card orientaciones-section">
-                <h2>Especialidades Técnicas</h2>
-                <p class="text paragraph">Información sobre los ciclos de especialidad: Informática y Electromecánica.</p>
-            </section>
-            <!-- SECCIÓN 5: MESAS DE EXAMEN -->
-            <section id="mesas" class="section-card mesas-section">
-                <h2>Mesas de Examen</h2>
-                <p class="text paragraph">Fechas, permisos y horarios para rendir materias pendientes y coloquios.</p>
-            </section>
-            <!-- SECCIÓN 6: SUB SITIOS -->
-            <section class="section-card">
-                <h2>¿Buscas algo específico?</h2>
-                <p>Visitá nuestros diferentes sitios de consultas</p>
-                <!-- Botones de enlaces a sub-páginas -->
-                <ul id="links" class="links">
-                    <li><a class="links-item button" href="index.html">Inicio</a></li>
-                    <li><a class="links-item button" href="about.html">Nosotros</a></li>
-                    <li><a class="links-item button" href="contact.html">Contacto</a></li>
-                    <li><a class="links-item button" href="projects.html">Proyectos</a></li>
-                    <li><a class="links-item button button-active" href="#">Trámites</a></li>
-                    <li><a class="links-item button" href="credits.html">Créditos</a></li>
-                </ul>
-            </section>
-        </main>
-    </div> <!-- FIN DE "CONTENIDO" -->
-    <!-- PIE DE PÁGINA -->
-    <div id="footer-container" class="footer-container"></div>
-</body>
+    <body>
+        <!-- HEADER DE TITULO -->
+        <div id="header-container" class="header-container"></div>
+        <!-- BARRA DE NAVEGACIÓN -->
+        <nav id="nav-card" class="nav-card">
+            <button id="nav-button-menu" class="button nav-button-menu" aria-label="Abrir menú">☰</button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a class="nav-menu-item" href="#tramites">Trámites y PDFs</a></li>
+                <li><a class="nav-menu-item" href="#reglamento">Reglamento y Horarios</a></li>
+                <li><a class="nav-menu-item" href="#herramientas">Calculadora de Promedios</a></li>
+                <li><a class="nav-menu-item" href="#orientaciones">Especialidades Técnicas</a></li>
+                <li><a class="nav-menu-item" href="#mesas">Mesas de Examen</a></li>
+            </ul>
+        </nav>
+        <!-- PANEL LATERAL DE CONFIGURACIÓN -->
+        <div id="aside-config-container" class="aside-config-container"></div>
+        <!-- PANEL LATERAL DE NOVEDADES -->
+        <div id="aside-news-container" class="aside-news-container"></div>
+        <!-- CONTENEDOR PRINCIPAL -->
+        <div id="content" class="content">
+            <main>
+                <!-- SECCIÓN: INICIO / INFORMATIVA -->
+                <section id="inicio" class="section-card hero-section">
+                    <h2>Información Escolar</h2>
+                    <p class="text paragraph">
+                        Reglamentos, horarios, mesas de examen y descargables para la vida académica en el IPET N° 424.
+                    </p>
+                </section>
+                <!-- SECCIÓN 1: TRÁMITES Y PDFS -->
+                <section id="tramites" class="section-card tramites-section">
+                    <h2>Trámites y Formularios</h2>
+                    <div id="grid-tarjetas" class="grid-tarjetas">
+                        <article class="subsection-card download-card">
+                            <h3>Ficha Médica (CUS)</h3>
+                            <p class="text paragraph">Formulario oficial de salud para educación física.</p>
+                            <a href="assets/docs/cus.pdf" download="CUS_2026.pdf" class="button download-button"
+                                >Descargar PDF</a
+                            >
+                        </article>
+                        <article class="subsection-card download-card">
+                            <h3>Uso de Imagen</h3>
+                            <p class="text paragraph">Autorización firmada por tutor/a legal.</p>
+                            <a
+                                href="assets/docs/autorizacion-imagen.pdf"
+                                download="Autorizacion_Imagen.pdf"
+                                class="button download-button"
+                                >Descargar PDF</a
+                            >
+                        </article>
+                    </div>
+                </section>
+                <!-- SECCIÓN 2: REGLAMENTO Y HORARIOS -->
+                <section id="reglamento" class="section-card reglamento-section">
+                    <h2>Reglamento y Horarios</h2>
+                    <div id="table-container" class="table-container">
+                        <h3>Turnos de Clase</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Módulo</th>
+                                    <th>Entrada</th>
+                                    <th>Salida</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mañana</td>
+                                    <td>07:30</td>
+                                    <td>12:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Tarde</td>
+                                    <td>13:00</td>
+                                    <td>17:30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <!-- SECCIÓN 3: CALCULADORA DE PROMEDIOS -->
+                <section id="herramientas" class="section-card herramientas-section">
+                    <h2>Herramientas Estudiantiles</h2>
+                    <div id="calculator-box" class="calculator-box">
+                        <h3>Calculadora de Promedios</h3>
+                        <p class="text">Herramienta en desarrollo para el cálculo del cuatrimestre.</p>
+                    </div>
+                </section>
+                <!-- SECCIÓN 4: ESPECIALIDADES TÉCNICAS -->
+                <section id="orientaciones" class="section-card orientaciones-section">
+                    <h2>Especialidades Técnicas</h2>
+                    <p class="text paragraph">
+                        Información sobre los ciclos de especialidad: Informática y Electromecánica.
+                    </p>
+                </section>
+                <!-- SECCIÓN 5: MESAS DE EXAMEN -->
+                <section id="mesas" class="section-card mesas-section">
+                    <h2>Mesas de Examen</h2>
+                    <p class="text paragraph">
+                        Fechas, permisos y horarios para rendir materias pendientes y coloquios.
+                    </p>
+                </section>
+                <!-- SECCIÓN 6: SUB SITIOS -->
+                <section class="section-card">
+                    <h2>¿Buscas algo específico?</h2>
+                    <p>Visitá nuestros diferentes sitios de consultas</p>
+                    <!-- Botones de enlaces a sub-páginas -->
+                    <ul id="links" class="links">
+                        <li><a class="links-item button" href="index.html">Inicio</a></li>
+                        <li><a class="links-item button" href="about.html">Nosotros</a></li>
+                        <li><a class="links-item button" href="contact.html">Contacto</a></li>
+                        <li><a class="links-item button" href="projects.html">Proyectos</a></li>
+                        <li><a class="links-item button button-active" href="#">Trámites</a></li>
+                        <li><a class="links-item button" href="credits.html">Créditos</a></li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <!-- FIN DE "CONTENIDO" -->
+        <!-- PIE DE PÁGINA -->
+        <div id="footer-container" class="footer-container"></div>
+    </body>
 </html>
