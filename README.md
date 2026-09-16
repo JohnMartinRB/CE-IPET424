@@ -164,7 +164,7 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 AVISO: Se incluyen únicamente las versiones completas
 
 - **`v0.25-alpha` (Actual)**
-    - 0.25 Se formatearon todos los archivos js, css y html
+    - Se formatearon todos los archivos js, css y html
     - Se reordenaron las propiedades de todos los archivos css con el enfoque outside-in, este es el orden:
       Posicionamiento y Maquetación (Layout & Position)
       Modelo de Caja y Dimensiones (Box Model & Sizing)
@@ -173,7 +173,7 @@ AVISO: Se incluyen únicamente las versiones completas
       Colores y Estilos Visuales (Visuals & Colors)
       Transiciones y Animaciones (Misc & Transitions)
 - **`v0.24-alpha`**
-    - 0.24 Se agregaron dos nuevos modos de color: alto contraste y escala de grises (monocromático). El primero modifica toda la paleta de colores y el segundo aplica un filtro a la página. Ambos modifican además el favicon
+    - Se agregaron dos nuevos modos de color: alto contraste y escala de grises (monocromático). El primero modifica toda la paleta de colores y el segundo aplica un filtro a la página. Ambos modifican además el favicon
     - Se reworkeó todo el archivo theme.js y sus funciones para permitir añadir más temas de color en un futuro
     - Se agregaron nuevos atributos a los botones del aside
     - Se cambió el texto del footer-copyright en 404.html
@@ -199,44 +199,6 @@ AVISO: Se incluyen únicamente las versiones completas
     - Ahora en celular el título no está en uppercase y hay un solo logo en lugar de dos
     - Los enlaces del footer ahora se encuentran divididos en dos columnas: una para redes de contacto y otra para los enlaces del proyecto
     - Se corrigieron muchos ids y clases en los archivos .js
-- **`v0.20-alpha`**
-  La actualización más grande hasta el momento: se actualizó casi toda la interfaz de la página (la actu estuvo enfocada en el diseño en pc)
-  ESTRUCTURA:
-    - Ahora el nav se encuentra en una tarjeta aparte del Header
-    - Se agregó un subtítulo al header y ahora es más ancho
-    - El footer se encuentra en una tarjeta separada, más ancha, al final de la página
-    - Se movieron los botones de modo oscuro, copiar enlace y el widget de clima a un aside de opciones, desplegable (el cual se inyecta con fetch al igual que el header y el footer)
-    - En este mismo aside, se agregaron dos botones para futuros temas de color
-    - En el footer, se agregaron enlaces al repositorio github y a la licencia MIT. Tambien, se separó la línea de copyright de la de desarrollo, haciendo esta ultima un poco mas pequeña (ahora los textos del copyright se manejan por clases)
-    - Se agregó la carpeta assets/img/bg para incluir fondos tecnológicos para tarjetas futuras
-    - Ahora 404.html no tiene menú, aside y tiene un footer personalizado únicamente con el copyright
-    - Se cambió la forma en que se manejan las clases e ids: ahora todos los elementos tienen una clase y un id idénticos y específicos, y clases adicionales para estilos generales
-    - CSS ahora trabaja únicamente con las clases genéricas y específicas, reservando los ids unicamente para javascript
-      DISEÑO:
-    - Se cambiaron todos los colores de fondo y tarjetas en modo claro, paasando de gris/blanco a degrades con celeste/blanco
-    - Ahora la tarjeta de hero tiene un fondo tecnologico
-    - Se agrego más interlineado al texto, el cual tiene una nueva clase "text" . Además, este ahora se encuentra centrado
-    - Se agregó un ancho fijo a los botones del aside
-    - Ahora el input:focus tiene un borde diferente y además un sombreado (el input ahora se trabaja por clase)
-    - Se cambió el ancho de la barra de progreso de lectura
-    - Se cambió el padding/margin de muchas tarjetas
-      FUNCIONES:
-    - Se modularizó más el archivo main.js en buttons.js, banners.js y shortcuts.js el primero conteniendo los botones y el widget, el segundo conteniendo el toast, el offline-banner y la barra de lectura, y el ultimo los atajos de teclado
-    - Sus funciones ahora se importan
-    - Se cambió el funcionamiento del widget del clima
-    - Se agregó un atajo de teclado para copiar el enlace de la web, y otros para el modo de escala de grises/alto contraste (aun no implementados)
-    - Nueva función para que el aside quede arriba al llegar al footer, de forma que no lo tape.
-- **`v0.19-alpha`**
-    - Se agregó una pantalla de carga sencilla para cubrir el contendio mientras se cargan los componentes de la página.
-    - Se agregó un border radius a la barra de progreso de lectura
-- **`v0.18-alpha`**
-    - El header ahora se encuentra en un contenedor aparte de .content, tiene posición sticky por lo que se mantiene al hacer scroll
-    - Se añadió una barra del progreso de lectura en el head
-    - Se agregó un widget de tiempo atmosférico de Villa Dolores en el header
-    - Se reworkeó la función de deshabilitar el menú contextual en imágenes para hacerla mas completa
-    - Se personalizó la scrollbar (colores, ancho, etc)
-    - Se agregaron más transiciones y animaciones
-    - Ahora el boton de modo oscuro y el weather widget están en un contenedor aparte del nav
 
 ## 🗺️ Roadmap de Desarrollo (Hacia la v1.0)
 
