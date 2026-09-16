@@ -478,9 +478,8 @@ a.nav-menu-item:active {
     background-color: var(--bg-weather-widget);
     color: var(--text-weather-widget);
     font-weight: bold;
-    font-size: 90%;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     transition:
         background-color 0.2s ease,
         color 0.2s ease,
