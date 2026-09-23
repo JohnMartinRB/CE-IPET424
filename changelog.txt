@@ -1,3 +1,12 @@
+0.26 Se agregaron efectos de sonido a los botones, toasts y banners
+Estos archivos de sonido se encuentran en assets/audio
+Se separó una nueva sección en el aside: Accesibilidad, que incluye el modo escala de grises y un nuevo botón para controlar desactivar los efectos de sonido
+Se agregó el archivo sound.js y funciones para controlar el sonido
+Se agregó más padding vertical al aside
+Se agregaron variables para controlar el outline de los elementos para la navegación con tab
+Se eliminó código innecesario
+Se incluyó un nuevo Roadmap en el archivo README
+
 
 0.25 Se formatearon todos los archivos js, css y html - Se reordenaron las propiedades de todos los archivos css con el enfoque outside-in, este es el orden:
 Posicionamiento y Maquetación (Layout & Position)
@@ -7,30 +16,6 @@ Tipografía y Texto (Typography)
 Colores y Estilos Visuales (Visuals & Colors)
 Transiciones y Animaciones (Misc & Transitions)
 
-
-Posicionamiento y Maquetación (Layout & Position)
-
-    Propiedades: display, position, top, right, bottom, left, z-index, flex-..., grid-...
-
-Modelo de Caja y Dimensiones (Box Model & Sizing)
-
-    Propiedades: width, min-width, max-width, height, margin
-
-Espaciado Interno y Bordes (Padding & Border structure)
-
-    Propiedades: padding, border (ancho/estilo), border-radius, overflow
-
-Tipografía y Texto (Typography)
-
-    Propiedades: font-family, font-size, font-weight, line-height, text-align, text-transform, text-wrap
-
-Colores y Estilos Visuales (Visuals & Colors)
-
-    Propiedades: color, background-color, border-color, box-shadow, cursor, opacity
-
-Transiciones y Animaciones (Misc & Transitions)
-
-    Propiedades: transition, animation, transform
 
 0.24.1 Se prepararon todos los archivos html y components para la adición futura de un nuevo aside
 Se actualizó el favicon de escala de grises

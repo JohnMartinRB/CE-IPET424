@@ -30,11 +30,13 @@ body.dark-mode {
     --text-button: var(--azul1);
     --text-button-hover: var(--azul1);
     --border-button: var(--celeste3);
+    --outline-button-focus: var(--blanco);
     --bg-aside-button-hover: var(--azul4);
     /* INPUTS */
     --bg-input: var(--blanco);
     --text-input: var(--azul1);
     --border-input: var(--blanco);
+    --border-input-focus: var(--azul3);
     /* FOOOTER */
     --bg-footer: linear-gradient(
         90deg,
@@ -118,11 +120,13 @@ body.high-contrast-mode {
     --text-button: var(--amarillo);
     --text-button-hover: var(--negro);
     --border-button: var(--amarillo);
+    --outline-button-focus: var(--cian);
     --bg-aside-button-hover: var(--cian);
     /* INPUTS */
     --bg-input: var(--negro);
     --text-input: var(--blanco);
     --border-input: var(--cian);
+    --border-input-focus: var(--amarillo);
     /* FOOTER */
     --bg-footer: var(--negro);
     --text-footer: var(--cian);
@@ -239,11 +243,13 @@ body.code-mode {
     --text-button: #00ff66;
     --text-button-hover: #0a0a0a;
     --border-button: #00ff66;
+    --outline-button-focus: var(--azul3);
     --bg-aside-button-hover: #00e5ff;
     /* INPUTS */
     --bg-input: #121212;
     --text-input: #00ff66;
     --border-input: #00cc55;
+    --border-input-focus: var(--celeste2);
     /* FOOTER */
     --bg-footer: #0a0a0a;
     --text-footer: #00cc55;

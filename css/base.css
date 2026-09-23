@@ -259,6 +259,10 @@ a.button:active {
 a.button:visited {
     color: var(--text-button) !important;
 }
+.button:focus,
+a.button:focus {
+    outline: 2px solid var(--outline-button-focus);
+}
 /* --- 3.3 ENTRADAS DE TEXTO --- */
 .input {
     margin: 0.1rem 0;
@@ -271,7 +275,7 @@ a.button:visited {
     cursor: url("../assets/img/cursors/cursor-text.svg"), text;
 }
 .input:focus {
-    border-color: var(--celeste2);
+    border-color: var(--border-input-focus);
     outline: none;
     box-shadow: 0 0 16px rgba(1, 76, 199, 0.25);
 }

@@ -3,7 +3,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](<https://img.shields.io/badge/versi%C3%B3n-0.25%20(Alpha)-blue>)
+![Versión](<https://img.shields.io/badge/versi%C3%B3n-0.26%20(Alpha)-blue>)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
@@ -35,13 +35,13 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 ## 🚀 Estado del Proyecto
 
-| Parámetro                      | Detalle                             |
-| :----------------------------- | :---------------------------------- |
-| **Versión Actual**             | `v0.25` (Fase Alpha, en desarrollo) |
-| **Inicio de Desarrollo**       | 7 de agosto de 2026                 |
-| **Lanzamiento Estable (v1.0)** | Marzo de 2027                       |
-| **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages     |
-| **Mantenimiento**              | Activo (CI/CD Automático)           |
+| Parámetro                      | Detalle                            |
+| :----------------------------- | :--------------------------------- |
+| **Versión Actual**             | `0.26` (Fase Alpha, en desarrollo) |
+| **Inicio de Desarrollo**       | 7 de agosto de 2026                |
+| **Lanzamiento Estable (v1.0)** | Marzo de 2027                      |
+| **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
+| **Mantenimiento**              | Activo (CI/CD Automático)          |
 
 ---
 
@@ -122,6 +122,7 @@ CE-IPET424/
 │   ├── config.js                     # Configuración general del sitio
 │   ├── main.js                       # Inicialización y control global del DOM
 │   ├── shortcuts.js                  # Atajos de teclado
+│   ├── sound.js                      # Efectos de sonido
 │   └── theme.js                      # Control y persistencia del modo oscuro/claro
 ├── .nojekyll                         # Evita que GitHub Pages omita carpetas con guion bajo
 ├── 404.html                          # Página personalizada de error 404
@@ -163,7 +164,16 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 
 AVISO: Se incluyen únicamente las versiones completas
 
-- **`v0.25-alpha` (Actual)**
+- **`v0.26-alpha` (Actual)**
+    - 0.26 Se agregaron efectos de sonido a los botones, toasts y banners
+    - Estos archivos de sonido se encuentran en assets/audio
+    - Se separó una nueva sección en el aside: Accesibilidad, que incluye el modo escala de grises y un nuevo botón para controlar desactivar los efectos de sonido
+    - Se agregó el archivo sound.js y funciones para controlar el sonido
+    - Se agregó más padding vertical al aside
+    - Se agregaron variables para controlar el outline de los elementos para la navegación con tab
+    - Se eliminó código innecesario
+    - Se incluyó un nuevo Roadmap en el archivo README
+- **`v0.25-alpha`**
     - Se formatearon todos los archivos js, css y html
     - Se reordenaron las propiedades de todos los archivos css con el enfoque outside-in, este es el orden:
       Posicionamiento y Maquetación (Layout & Position)
@@ -200,14 +210,52 @@ AVISO: Se incluyen únicamente las versiones completas
     - Los enlaces del footer ahora se encuentran divididos en dos columnas: una para redes de contacto y otra para los enlaces del proyecto
     - Se corrigieron muchos ids y clases en los archivos .js
 
-## 🗺️ Roadmap de Desarrollo (Hacia la v1.0)
+## 🗺️ Roadmap de Desarrollo
 
-- [x] Módulo de consulta de horarios.
-- [x] Conexión y automatización CI/CD.
-- [x] Sistema de modo oscuro persistente.
-- [ ] **v0.20:** Integración de un panel de novedades y noticias del colegio en tiempo real.
-- [ ] **v0.50:** Sistema de consulta de calendarios de exámenes e integración de turnos.
-- [ ] **v1.00:** Lanzamiento oficial optimizado y testeo final de accesibilidad escolar (Marzo 2027).
+### 🚀 Próximas Versiones (Ciclo v0.26 - v0.35)
+
+- [x] **v0.26 - Feedback Sonoro (UI Sound Effects)**
+    - Implementación de motor de audio ligero en JavaScript para interacciones de interfaz.
+    - Sonidos para switches (modo oscuro/claro), clics en botones principales y apertura de modales.
+    - Control de activación/desactivación de sonido con persistencia en `localStorage`.
+
+- [ ] **v0.27 - Arquitectura CSS & Rework de Variables**
+    - Expansión de `variables.css` para crear un sistema completo de _Design Tokens_.
+    - Estandarización de variables para `padding`, `margin`, `gap`, `border-radius`, escalas tipográficas y tiempos de transición.
+    - Refactorización de reglas en `base.css` y `desktop.css` eliminando valores estáticos (_hardcodeados_).
+
+- [ ] **v0.28 - Sistema de Novedades (What's New Modal)**
+    - Ventana emergente (modal/toast) interactiva al detectar una actualización de versión.
+    - Lectura dinámica del _changelog_ para mostrar las últimas mejoras al usuario al ingresar al sitio.
+
+- [ ] **v0.29 - Suite de Accesibilidad Ampliada**
+    - Nuevos controles para ajustar el tamaño del texto (+ / -).
+    - Selector de alto contraste e indicador de fuentes para dislexia.
+    - Mejoras en la navegación por teclado (`:focus-visible`) y atributos ARIA.
+
+- [ ] **v0.30 - Aside Desplegable de Noticias (News Drawer)**
+    - Panel lateral deslizante (_drawer_) dedicado a comunicados urgentes e insumos del colegio.
+    - Filtrado rápido por etiquetas (_Urgente_, _Centro de Estudiantes_, _Institucional_).
+
+- [ ] **v0.31 - Sección "Sabías qué..." / Datos Curiosos del IPET 424**
+    - Widget dinámico de datos curiosos sobre la historia de la escuela, las especialidades técnicas y el Centro de Estudiantes.
+    - Generador aleatorio de datos al presionar un botón interactivo.
+
+- [ ] **v0.32 - Efectos Visuales & Micro-interacciones Avanzadas**
+    - Integración de animación al hacer scroll (AOS / Animate On Scroll) en tarjetas y proyectos.
+    - Efectos de brillo/glow dinámico en bordes al pasar el cursor (Hover UX).
+
+- [ ] **v0.33 - Hub de Utilidades Estudiantiles (Calculadora de Promedios / Materias)**
+    - Herramienta interactiva para que los estudiantes calculen sus promedios por trimestre.
+    - Indicadores visuales de rendimiento por materia (Técnicas / Físico-Matemáticas / Generales).
+
+- [ ] **v0.34 - Descarga Organizada de Materiales & Formularios**
+    - Buscador e indexador de PDFs institucionales (fichas de salud, permisos de salidas de campo, reglamentos).
+    - Previsualización rápida de documentos antes de descargar.
+
+- [ ] **v0.35 - Modo Off-Line & Optimización PWA (Progressive Web App)**
+    - Registro de _Service Worker_ para habilitar navegación básica sin conexión a Internet.
+    - Optimización de caché de recursos estáticos e instalación como app en dispositivos móviles.
 
 ---
 

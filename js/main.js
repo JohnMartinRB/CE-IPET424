@@ -1,19 +1,20 @@
-import { renderLoader } from "./components.js";
-import { initComponents } from "./components.js";
+import { renderLoader, initComponents } from "./components.js";
 import { initButtons } from "./buttons.js";
 import { initBanners } from "./banners.js";
 import { initTheme } from "./theme.js";
+import { initSound, playSound } from "./sound.js";
 import { initShortcuts } from "./shortcuts.js";
-import { konamiCode } from "./config.js";
-import { consoleMsg } from "./config.js";
+import { konamiCode, consoleMsg } from "./config.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     renderLoader();
     initComponents();
-    initShortcuts();
     initButtons();
     initBanners();
     initTheme();
+    initSound();
+    playSound();
+    initShortcuts();
     konamiCode();
     consoleMsg();
 });

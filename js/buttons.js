@@ -2,6 +2,8 @@
     BOTONES DE INTERFAZ Y UTILIDADES
    ========================================== */
 
+import { playSound } from "./sound.js";
+
 export function initButtons() {
     // Botón de copiar enlace con feedback toast
     document.addEventListener("click", (e) => {
@@ -10,22 +12,11 @@ export function initButtons() {
                 const toastCopied = document.getElementById("toast-copied-link");
                 if (toastCopied) {
                     toastCopied.classList.add("visible");
+                    // Reprodúcí el sonido del Toast justo al mostrar el cartel
+                    playSound("toast.mp3", 0.3); // <-- LÍNEA NUEVA
                     setTimeout(() => toastCopied.classList.remove("visible"), 2500);
                 }
             });
-        }
-    });
-    // Botón de copiar enlace con feedback toast
-    document.addEventListener("click", (e) => {
-        if (e.target.closest("#button-copy-link")) {
-            navigator.clipboard.writeText(window.location.href);
-            const toast = document.getElementById("toast-copied");
-            if (toast) {
-                toast.classList.add("visible");
-                setTimeout(() => toast.classList.remove("visible"), 2500);
-            } else {
-                console.log("El elemento #toast-copied no existe en el DOM");
-            }
         }
     });
     // Control del aside desplegable

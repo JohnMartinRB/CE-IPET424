@@ -2,6 +2,8 @@
     BANNERS / READING-PROGRESS-BAR
    ========================================== */
 
+import { playSound } from "./sound.js";
+
 export function initBanners() {
     // Header Fijo e Indicador de Progreso de Lectura - Mide la altura del scroll y calcula el porcentaje
     window.addEventListener("scroll", () => {
@@ -38,6 +40,8 @@ export function initBanners() {
     window.addEventListener("offline", () => {
         const banner = asegurarBannerOffline();
         banner.classList.add("visible");
+        // Reprodúcí el sonido offline cuando se va la conexión
+        playSound("offline.mp3", 0.3);
     });
     window.addEventListener("online", () => {
         const banner = document.getElementById("offline-banner");

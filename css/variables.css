@@ -66,6 +66,7 @@
     --bg-input: var(--blanco);
     --text-input: var(--azul1);
     --border-input: var(--gris2);
+    --border-input-focus: var(--celeste2);
     /* FOOOTER */
     --bg-footer: linear-gradient(90deg, var(--celeste3) 0%, var(--celeste4) 100%);
     --text-footer: var(--azul1);
