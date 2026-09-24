@@ -7,9 +7,9 @@ import { initWhatsNew } from "./whats-new.js";
 import { initShortcuts } from "./shortcuts.js";
 import { konamiCode, consoleMsg } from "./config.js";
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
     renderLoader();
-    initComponents();
+    await initComponents();
     initButtons();
     initBanners();
     initTheme();

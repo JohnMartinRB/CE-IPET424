@@ -173,7 +173,7 @@ nav {
     color: var(--text-toast);
 }
 /* --- 2.5 MODAL DE "WHAT'S NEW --- */
-.whats-new-overlay {
+.whats-new-modal {
     display: flex;
     z-index: 9998;
     position: fixed;
