@@ -200,7 +200,7 @@ nav {
     max-width: 45%;
     padding: 2rem;
     border-radius: 2rem;
-    background-color: var(--bg-section-card) !important;
+    background: var(--bg-section-card);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     color: var(--text-body);
 }

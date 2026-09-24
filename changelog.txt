@@ -1,3 +1,6 @@
+0.27.9
+Se cambió el fondo de la ventana modal
+
 0.27.8
 Se cambió el ancho de la ventana modal
 Se cambiaron algunos colores y estilos de la ventana modal
