@@ -57,7 +57,6 @@ body.dark-mode {
     --bg-selection: var(--azul3);
     --text-selection: var(--blanco);
     /* SCROLLBAR */
-    --scrollbar-track: var(--azul1);
     --scrollbar-thumb: var(--celeste2);
     --scrollbar-thumb-hover: var(--celeste1);
     /* WEATHER WIDGET */
@@ -140,7 +139,6 @@ body.high-contrast-mode {
     --bg-selection: var(--cian);
     --text-selection: var(--negro);
     /* SCROLLBAR */
-    --scrollbar-track: var(--negro);
     --scrollbar-thumb: var(--cian);
     --scrollbar-thumb-hover: var(--amarillo);
     /* WEATHER WIDGET */
@@ -263,7 +261,6 @@ body.code-mode {
     --bg-selection: #00ff66;
     --text-selection: #0a0a0a;
     /* SCROLLBAR */
-    --scrollbar-track: #0a0a0a;
     --scrollbar-thumb: #00cc55;
     --scrollbar-thumb-hover: #00ff66;
     /* WEATHER WIDGET */

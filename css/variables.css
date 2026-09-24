@@ -80,7 +80,6 @@
     --bg-selection: var(--celeste2);
     --text-selection: var(--blanco);
     /* SCROLLBAR */
-    --scrollbar-track: var(--celeste6);
     --scrollbar-thumb: var(--celeste2);
     --scrollbar-thumb-hover: var(--celeste1);
     /* WEATHER WIDGET */
