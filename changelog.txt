@@ -1,3 +1,5 @@
+0.27.3 Se corrigió nuevamente el funcionamiento de la ventana modal
+
 0.27.2 Se corrigió el funcionamiento de la ventana modal
 Se agregó el archivo notes.txt
 

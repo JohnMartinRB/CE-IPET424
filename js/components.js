@@ -62,6 +62,7 @@ export async function initComponents() {
         loadComponent("aside-config-container", "components/aside-config.html"),
         loadComponent("aside-news-container", "components/aside-news.html"),
         loadComponent("footer-container", "components/footer.html"),
+        loadComponent("whats-new-container", "components/whats-new-modal.html"),
     ]);
     // Una vez inyectado el HTML del aside en el DOM:
     await getVillaDoloresWeather();
