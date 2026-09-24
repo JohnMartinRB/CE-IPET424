@@ -1,18 +1,28 @@
-0.27.4 Se modificaron algunos estilos de la ventana modal
-Se arregló la función para extraer os cambios desde changelog.txt
+0.27.5
+Se modificó el funcionamiento de la función para extraer el changelog.txt
+Se cambió el ancho de la ventana modal
 
-0.27.3 Se corrigió nuevamente el funcionamiento de la ventana modal
+0.27.4
+Se modificaron algunos estilos de la ventana modal
+Se arregló la función para extraer los cambios desde changelog.txt
 
-0.27.2 Se corrigió el funcionamiento de la ventana modal
+0.27.3
+Se corrigió nuevamente el funcionamiento de la ventana modal
+
+0.27.2
+Se corrigió el funcionamiento de la ventana modal
 Se agregó el archivo notes.txt
 
-0.27.1 Se corrigió y actualizó el README
+0.27.1
+Se corrigió y actualizó el README
 
-0.27 Se agregó una ventana modal para mostrar la última versión y las novedades
+0.27
+Se agregó una ventana modal para mostrar la última versión y las novedades
 Se agregó whats-new-modal.html y whats-new.js para controlar el funcionamiento
 
 
-0.26 Se agregaron efectos de sonido a los botones, toasts y banners
+0.26
+Se agregaron efectos de sonido a los botones, toasts y banners
 Estos archivos de sonido se encuentran en assets/audio
 Se separó una nueva sección en el aside: Accesibilidad, que incluye el modo escala de grises y un nuevo botón para controlar desactivar los efectos de sonido
 Se agregó el archivo sound.js y funciones para controlar el sonido
@@ -22,7 +32,8 @@ Se eliminó código innecesario
 Se incluyó un nuevo Roadmap en el archivo README
 
 
-0.25 Se formatearon todos los archivos js, css y html - Se reordenaron las propiedades de todos los archivos css con el enfoque outside-in, este es el orden:
+0.25
+Se formatearon todos los archivos js, css y html - Se reordenaron las propiedades de todos los archivos css con el enfoque outside-in, este es el orden:
 Posicionamiento y Maquetación (Layout & Position)
 Modelo de Caja y Dimensiones (Box Model & Sizing)
 Espaciado Interno y Bordes (Padding & Border structure)

@@ -199,8 +199,8 @@ nav {
 .whats-new-card {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    max-width: 480px;
+    width: 100%;
+    max-width: 40%;
     padding: 1.8rem;
     border: 2px solid var(--border-card, #60a5fa);
     border-radius: 1.8rem;
