@@ -3,6 +3,7 @@ import { initButtons } from "./buttons.js";
 import { initBanners } from "./banners.js";
 import { initTheme } from "./theme.js";
 import { initSound, playSound } from "./sound.js";
+import { initWhatsNew } from "./whats-new.js";
 import { initShortcuts } from "./shortcuts.js";
 import { konamiCode, consoleMsg } from "./config.js";
 
@@ -14,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initTheme();
     initSound();
     playSound();
+    initWhatsNew();
     initShortcuts();
     konamiCode();
     consoleMsg();

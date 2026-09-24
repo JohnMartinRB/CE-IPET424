@@ -3,7 +3,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](<https://img.shields.io/badge/versi%C3%B3n-0.26%20(Alpha)-blue>)
+![Versión](<https://img.shields.io/badge/versi%C3%B3n-0.27%20(Alpha)-blue>)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
@@ -37,9 +37,9 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.26` (Fase Alpha, en desarrollo) |
-| **Inicio de Desarrollo**       | 7 de agosto de 2026                |
-| **Lanzamiento Estable (v1.0)** | Marzo de 2027                      |
+| **Versión Actual**             | `0.27` (Fase Alpha, en desarrollo) |
+| **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
+| **Lanzamiento Estable (v1.0)** | Martes 3 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
 | **Mantenimiento**              | Activo (CI/CD Automático)          |
 
@@ -164,7 +164,10 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 
 AVISO: Se incluyen únicamente las versiones completas
 
-- **`v0.26-alpha` (Actual)**
+- **`v0.27-alpha` (Actual)**
+    - Se agregó una ventana modal para mostrar la última versión y las novedades
+    - Se agregó whats-new-modal.html y whats-new.js para controlar el funcionamiento
+- **`v0.26-alpha`**
     - 0.26 Se agregaron efectos de sonido a los botones, toasts y banners
     - Estos archivos de sonido se encuentran en assets/audio
     - Se separó una nueva sección en el aside: Accesibilidad, que incluye el modo escala de grises y un nuevo botón para controlar desactivar los efectos de sonido
@@ -196,19 +199,6 @@ AVISO: Se incluyen únicamente las versiones completas
     - Se arreglaron los button-active del menú al fondo de cada página
     - Se corrigió el footer en 404.html
     - Se eliminaron los íconos innecesarios en assets/img/icons, volviendo a tener .gitkeep
-- **`v0.21-alpha`**
-    - Se separaron correctamente todos los estilos de celular y base (base.css) y los de pc (desktop.css)
-    - Se implementó y trabajó correctamente el layout de celular para darle una apariencia ordenada y corregida
-    - Se restructuró todo el css del sitio, sepando los selectores y propiedades por secciones de contenido y elementos
-    - Se renombraron muchos ids y clases para mas claridad y especificidad
-    - Ahora el texto tiene las clases "text" y "Paragraph" para poder centrarlos y hacer que tengan cursor:text. Además, los párrafos tienen text-wrap:balance para tener mejor estructura
-    - Ahora el cursor:text es más grande - Ahora el fondo del hero-section ya no se mueve al hacer scroll
-    - Se oscureció el color del texto del footer en modo oscuro
-    - Ahora la pantalla de carga en modo oscuro es azul en lugar de celeste
-    - Se cambiaron muchísimos padding, margin, border-radius y tamaños entre el diseño en pc y en celular
-    - Ahora en celular el título no está en uppercase y hay un solo logo en lugar de dos
-    - Los enlaces del footer ahora se encuentran divididos en dos columnas: una para redes de contacto y otra para los enlaces del proyecto
-    - Se corrigieron muchos ids y clases en los archivos .js
 
 ## 🗺️ Roadmap de Desarrollo
 

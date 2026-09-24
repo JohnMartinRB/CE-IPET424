@@ -1,3 +1,7 @@
+0.27 Se agregó una ventana modal para mostrar la última versión y las novedades
+Se agregó whats-new-modal.html y whats-new.js para controlar el funcionamiento
+
+
 0.26 Se agregaron efectos de sonido a los botones, toasts y banners
 Estos archivos de sonido se encuentran en assets/audio
 Se separó una nueva sección en el aside: Accesibilidad, que incluye el modo escala de grises y un nuevo botón para controlar desactivar los efectos de sonido
