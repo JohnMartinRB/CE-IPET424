@@ -183,8 +183,9 @@ nav {
     justify-content: center;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(4px);
-    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
     transition:
         opacity 0.3s ease,
@@ -196,33 +197,53 @@ nav {
     pointer-events: none;
 }
 .whats-new-card {
+    display: flex;
+    flex-direction: column;
     width: 90%;
     max-width: 480px;
-    padding: 1.5rem;
-    border: 2px solid var(--border-card);
-    border-radius: 1rem;
-    background-color: var(--bg-card);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    color: var(--text-main);
+    padding: 1.8rem;
+    border: 2px solid var(--border-card, #60a5fa);
+    border-radius: 1.8rem;
+    background-color: var(--bg-card, #dbeafe);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    color: var(--text-main, #1e293b);
 }
 .whats-new-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
+}
+.whats-new-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
 }
 .whats-new-version {
-    padding: 0.2rem 0.6rem;
-    border-radius: 0.5rem;
-    background-color: var(--azul1);
-    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.8rem;
+    background-color: var(--azul1, #1e40af);
+    color: #ffffff;
     font-weight: bold;
-    font-size: 0.85rem;
+    font-size: 1rem;
 }
-.whats-new-body {
+.whats-new-content {
     max-height: 250px;
     margin-bottom: 1.5rem;
     overflow-y: auto;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.whats-new-content ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+.whats-new-content li {
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+}
+.button-close-whats-new {
+    display: block;
+    margin: 0 auto;
 }
 /* --- 2.6 SECCIÓN DE ERROR (404.html) --- */
 .error-section {
