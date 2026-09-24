@@ -103,8 +103,10 @@ CE-IPET424/
 │   └── videos/                       # Clips y videos institucionales
 ├── components/                       # Componentes HTML reutilizables
 │   ├── aside-config.html             # Aside desplegable modular
+│   ├── aside-news.html               # Aside desplegable modular
 │   ├── footer.html                   # Pie de página modular
-│   └── header.html                   # Encabezado y navegación modular
+│   ├── header.html                   # Encabezado y navegación modular
+│   └── whats-new-modal.html          # Modal de novedades de la version
 ├── css/                              # Estilos e identidades visuales
 │   ├── base.css                      # Reset y estilos globales
 │   ├── desktop.css                   # Responsive design para pantallas grandes
@@ -123,7 +125,8 @@ CE-IPET424/
 │   ├── main.js                       # Inicialización y control global del DOM
 │   ├── shortcuts.js                  # Atajos de teclado
 │   ├── sound.js                      # Efectos de sonido
-│   └── theme.js                      # Control y persistencia del modo oscuro/claro
+│   ├── theme.js                      # Control y persistencia del modo oscuro/claro
+│   └── whats-new.js                  # Ventana modal de novedades
 ├── .nojekyll                         # Evita que GitHub Pages omita carpetas con guion bajo
 ├── 404.html                          # Página personalizada de error 404
 ├── about.html                        # Sub-página institucional ("Sobre Nosotros")
@@ -209,14 +212,14 @@ AVISO: Se incluyen únicamente las versiones completas
     - Sonidos para switches (modo oscuro/claro), clics en botones principales y apertura de modales.
     - Control de activación/desactivación de sonido con persistencia en `localStorage`.
 
-- [ ] **v0.27 - Arquitectura CSS & Rework de Variables**
+- [x] **v0.27 - Sistema de Novedades (What's New Modal)**
+    - Ventana emergente (modal/toast) interactiva al detectar una actualización de versión.
+    - Lectura dinámica del _changelog_ para mostrar las últimas mejoras al usuario al ingresar al sitio.
+
+- [ ] **v0.28 - Arquitectura CSS & Rework de Variables**
     - Expansión de `variables.css` para crear un sistema completo de _Design Tokens_.
     - Estandarización de variables para `padding`, `margin`, `gap`, `border-radius`, escalas tipográficas y tiempos de transición.
     - Refactorización de reglas en `base.css` y `desktop.css` eliminando valores estáticos (_hardcodeados_).
-
-- [ ] **v0.28 - Sistema de Novedades (What's New Modal)**
-    - Ventana emergente (modal/toast) interactiva al detectar una actualización de versión.
-    - Lectura dinámica del _changelog_ para mostrar las últimas mejoras al usuario al ingresar al sitio.
 
 - [ ] **v0.29 - Suite de Accesibilidad Ampliada**
     - Nuevos controles para ajustar el tamaño del texto (+ / -).

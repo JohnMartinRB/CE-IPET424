@@ -1,3 +1,5 @@
+0.27.1 Se corrigió y actualizó el README
+
 0.27 Se agregó una ventana modal para mostrar la última versión y las novedades
 Se agregó whats-new-modal.html y whats-new.js para controlar el funcionamiento
 
