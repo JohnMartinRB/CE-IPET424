@@ -200,13 +200,12 @@ nav {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 40%;
-    padding: 1.8rem;
-    border: 2px solid var(--border-card, #60a5fa);
-    border-radius: 1.8rem;
-    background-color: var(--bg-card, #dbeafe);
+    max-width: 60%;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: var(--bg-section-card);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    color: var(--text-main, #1e293b);
+    color: var(--text-body);
 }
 .whats-new-header {
     display: flex;
@@ -219,10 +218,10 @@ nav {
     font-size: 1.3rem;
 }
 .whats-new-version {
-    padding: 0.3rem 0.8rem;
-    border-radius: 0.8rem;
-    background-color: var(--azul1, #1e40af);
-    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: var(--azul3);
+    color: var(--blanco);
     font-weight: bold;
     font-size: 1rem;
 }
