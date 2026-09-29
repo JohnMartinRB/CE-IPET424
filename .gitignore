@@ -1,0 +1,19 @@
+# Archivos de notas o borradores personales
+notes.txt
+*.log
+*note*.txt
+*notas*.txt
+
+# Módulos de Node (si usás dependencias o build tools como Vite/React)
+node_modules/
+
+# Archivos de configuración del entorno / credenciales
+.env
+.env.local
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Configuración local de editores (opcional)
+.vscode/
