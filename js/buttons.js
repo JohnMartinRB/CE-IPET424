@@ -1,7 +1,6 @@
 /* ==========================================
     BOTONES DE INTERFAZ Y UTILIDADES
-   ========================================== */
-
+========================================== */
 import { playSound } from "./sound.js";
 
 export function initButtons() {
@@ -14,7 +13,7 @@ export function initButtons() {
                     toastCopied.classList.add("visible");
                     // Reprodúcí el sonido del Toast justo al mostrar el cartel
                     playSound("toast.mp3", 0.3); // <-- LÍNEA NUEVA
-                    setTimeout(() => toastCopied.classList.remove("visible"), 2500);
+                    setTimeout(() => toastCopied.classList.remove("visible"), 3500);
                 }
             });
         }

@@ -1,7 +1,6 @@
 /* ==========================================
     BANNERS / READING-PROGRESS-BAR
-   ========================================== */
-
+========================================== */
 import { playSound } from "./sound.js";
 
 export function initBanners() {

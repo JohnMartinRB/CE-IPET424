@@ -5,7 +5,7 @@ import { initTheme } from "./theme.js";
 import { initSound, playSound } from "./sound.js";
 import { initWhatsNew } from "./whats-new.js";
 import { initShortcuts } from "./shortcuts.js";
-import { konamiCode, consoleMsg } from "./config.js";
+import { config } from "./config.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     renderLoader();
@@ -17,8 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     playSound();
     initWhatsNew();
     initShortcuts();
-    konamiCode();
-    consoleMsg();
+    config();
 });
 
 // Delegación global para interceptar el clic derecho en imágenes fijas y dinámicas

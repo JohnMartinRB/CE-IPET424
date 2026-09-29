@@ -1,3 +1,63 @@
-border: 2px solid var(--border-section-card, #60a5fa);
-    border-radius: 1.8rem;
-    background-color: var(--bg-section-card, #dbeafe);
+
+
+function getWeatherIcon(code) {
+        if (code === 0) {
+            return '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="weather-icon weather-icon-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>';
+        }
+        if (code >= 1 && code <= 3) {
+            return '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="weather-icon weather-icon-cloud-with-sun"><path d="M12 2v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="M20 12h2"/><path d="m19.07 4.93-1.41 1.41"/><path d="M15.947 12.65a4 4 0 0 0-5.925-4.128"/><path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z"/></svg>';
+        }
+        if (code >= 51 && code <= 67) {
+            return '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="weather-icon weather-icon-rain"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg>';
+        }
+        if (code >= 95) {
+            return '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="weather-icon weather-icon-storm"><path d="M6 16.326A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 .5 8.973"/><path d="m13 12-3 5h4l-3 5"/></svg>';
+        }
+        return '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="weather-icon weather-icon-cloud"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>';
+    }
+
+
+localStorage.removeItem("siteVersion");
+location.reload();
+
+
+
+function extractLatestVersionChanges(fullText) {
+    // 1. Extraemos la versión base sin la 'v' ni parches (ej: de "v0.27" o "v0.27.4" obtenemos "0.27")
+    const baseVersion = CURRENT_VERSION.replace(/^v/i, "").split(".").slice(0, 2).join(".");
+    // 2. Buscamos dónde empieza el bloque de esta versión (ej: "v0.27" o "0.27")
+    const versionRegex = new RegExp(`\\[?v?${baseVersion}(?:\\.\\d+)*\\]?`, "i");
+    const match = fullText.match(versionRegex);
+    if (!match) {
+        return `<p>¡Bienvenido a la versión ${CURRENT_VERSION}! Revisa el sitio para descubrir las últimas mejoras.</p>`;
+    }
+    // Cortamos el texto desde el primer inicio de esta versión
+    const textFromCurrent = fullText.substring(match.index);
+    const lines = textFromCurrent.split("\n");
+    let currentVersionLines = [];
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i];
+        // Si encontramos el inicio de OTRA versión mayor/menor diferente (ej: v0.26), frenamos la lectura
+        if (i > 0 && line.match(/^\[?v?\d+\.\d+/i)) {
+            const foundVersion = line.match(/\d+\.\d+/)[0];
+            if (!foundVersion.startsWith(baseVersion)) {
+                break;
+            }
+        }
+        currentVersionLines.push(line);
+    }
+    // 3. Convertimos todas las líneas en HTML respetando subtítulos y viñetas
+    let htmlResult = "<ul>";
+    currentVersionLines.forEach((line) => {
+        const trimmed = line.trim();
+        if (trimmed.startsWith("-") || trimmed.startsWith("*")) {
+            // Viñetas / Items de cambios
+            htmlResult += `<li>${trimmed.substring(1).trim()}</li>`;
+        } else if (trimmed.length > 0) {
+            // Títulos de versión o subtítulos (ej: "v0.27.1 - Correcciones")
+            htmlResult += `<p style="margin-top: 0.8rem; font-weight: bold; color: var(--azul1, #1e40af);">${trimmed}</p>`;
+        }
+    });
+    htmlResult += "</ul>";
+    return htmlResult;
+}

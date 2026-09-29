@@ -1,14 +1,18 @@
 /* ==========================================
     MODO OSCURO
-   ========================================== */
+========================================== */
 body.dark-mode {
     /* BODY */
     --bg-body: var(--azul1);
     --text-body: var(--celeste5);
     /* PANTALLA DE CARGA */
     --bg-loader-screen: var(--azul3);
+    /* WHATS NEW VERSION */
+    --bg-whats-new-version: var(--azul3);
+    --text-whats-new-version: var(--blanco);
     /* CONTENIDO */
-    --bg-content: linear-gradient(90deg, var(--azul2) 0%, var(--azul3) 100%);
+    --bg-base: linear-gradient(90deg, var(--azul2) 0%, var(--azul3) 100%);
+    --bg-base-inverted: linear-gradient(-90deg, var(--azul2) 0%, var(--azul3) 100%);
     --shadow-content: 0 4px 16px rgba(1, 76, 199, 0.08);
     /* LINK */
     --link: var(--celeste2);
@@ -89,16 +93,20 @@ body.dark-mode iframe {
 
 /* ==========================================
     MODO ALTO CONTRASTE
-   ========================================== */
+========================================== */
 body.high-contrast-mode {
     /* BODY */
     --bg-body: var(--negro);
     --text-body: var(--blanco);
     /* PANTALLA DE CARGA */
     --bg-loader-screen: var(--negro);
+    /* WHATS NEW VERSION */
+    --bg-whats-new-version: var(--azul3);
+    --text-whats-new-version: var(--blanco);
     /* CONTENIDO */
-    --bg-content: var(--negro);
-    --shadow-content: none;
+    --bg-base: var(--negro);
+    --bg-base-inverted: var(--negro);
+    --shadow-base: none;
     /* LINK */
     --link: var(--cian);
     --link-hover: var(--amarillo);
@@ -179,7 +187,7 @@ body.high-contrast-mode :is(.nav-card, .footer-card, .aside-drawer, .section-car
 
 /* ==========================================
     MODO ESCALA DE GRISES
-   ========================================== */
+========================================== */
 html.grayscale-mode,
 body.grayscale-mode {
     filter: grayscale(100%);
@@ -187,7 +195,7 @@ body.grayscale-mode {
 
 /* ==========================================
     MODO DESCANSO
-   ========================================== */
+========================================== */
 html.rest-mode::after {
     z-index: 998; /* Un nivel por debajo del loader de carga */
     position: fixed;
@@ -195,10 +203,8 @@ html.rest-mode::after {
     left: 0;
     width: 100vw;
     height: 100vh;
-    /* Color anaranjado/ámbar suave semitransparente */
     background-color: rgba(255, 162, 0, 0.233);
     content: "";
-    /* Permite hacer clic a través de la capa sin bloquear los botones */
     pointer-events: none;
     transition:
         background-color 0.7s ease,
@@ -211,16 +217,20 @@ html.rest-mode {
 
 /* ==========================================
     MODO CÓDIGO
-   ========================================== */
+========================================== */
 body.code-mode {
     /* BODY */
     --bg-body: #0a0a0a;
     --text-body: #e0e0e0;
     /* PANTALLA DE CARGA */
     --bg-loader-screen: #0a0a0a;
+    /* WHATS NEW VERSION */
+    --bg-whats-new-version: var(--azul3);
+    --text-whats-new-version: var(--blanco);
     /* CONTENIDO */
-    --bg-content: #121212;
-    --shadow-content: none;
+    --bg-base: #121212;
+    --bg-base-inverted: #121212;
+    --shadow-base: none;
     /* LINK */
     --link: #00ff66;
     --link-hover: #00e5ff;

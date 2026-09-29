@@ -1,3 +1,21 @@
+0.28
+Se expandió el archivo `variables.css` para crear un sistema completo de Design Tokens
+Se estandarizaron y unificaron las variables para `padding`, `margin`, `border-radius`, escalas tipográficas, sombras y tiempos de transición
+Estas variables ahora son iguales tanto para celular como para pc
+Se refactorizaron las propiedades reglas en `base.css` y `desktop.css` eliminando valores estáticos (hardcodeados)
+Se cambió el color de algunas tarjetas en modo claro
+Ahora el logo del C.E. del header dirige hacia la página de inicio
+El spinner de carga ahora es más ancho
+Se suavizó el color del borde de los botones/inputs y el de las barras de scroll
+Ahora el toast dura más tiempo
+Se renombraron muchas clases e ids para mayor claridad
+Se corrigió la separación de los enlaces a las subpáginas
+Se eliminaron propiedades innecesarias
+Se mejoraron algunos comentarios del código
+Pequeño cambio en la Licencia
+Se modificó el .gitignore
+
+
 0.27
 Se agregó una ventana modal para mostrar la última versión y las novedades
 Se agregó whats-new-modal.html y whats-new.js para controlar el funcionamiento
@@ -37,6 +55,13 @@ Se cambió el fondo de la ventana modal
 
 0.27.10
 Se reordenó el changelog
+
+0.27.11
+Se agregó una nueva clase al widget
+
+0.27.12
+Se agregó -gitignore para evitar hacer commit a archivos locales
+
 
 0.26
 Se agregaron efectos de sonido a los botones, toasts y banners

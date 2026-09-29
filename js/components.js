@@ -1,7 +1,6 @@
 /* ==========================================
-    CARGAR COMPONENTES HTML - FUNCIÓN INICIAR COMPONENTES
-   ========================================== */
-
+    CARGAR COMPONENTES HTML
+========================================== */
 import { getVillaDoloresWeather } from "./buttons.js";
 
 export function renderLoader() {

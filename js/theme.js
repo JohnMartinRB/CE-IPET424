@@ -1,8 +1,6 @@
 /* ==========================================
     SISTEMA GLOBAL DE TEMAS Y MODOS VISUALES
-   ========================================== */
-
-// Configuración de temas disponibles y su información de UI
+========================================== */
 const THEMES = {
     light: {
         class: "",

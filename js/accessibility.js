@@ -1,4 +1,6 @@
-// Funciones de accesibilidad web para la página
+/* ==========================================
+    FUNCIONES DE ACCESIBILIDAD WEB
+========================================== */
 (function () {
     "use strict";
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

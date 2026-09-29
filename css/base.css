@@ -1,10 +1,9 @@
 /* ==========================================================================
     1. RESET, NORMALIZACIÓN Y ETIQUETAS GLOBALES
-   ========================================================================== */
-/* Reglas que aplican a toda la página sin importar las clases */
+========================================================================== */
 * {
     padding: 0;
-    /* outline: 1px solid red; */
+    /* outline: 1px solid red;*/
 }
 *,
 *::before,
@@ -39,9 +38,9 @@ body {
     background-color: var(--bg-body);
     color: var(--text-body);
     font-weight: normal;
-    font-family: "Nunito", serif;
+    font-family: var(--font-main);
     cursor: url("../assets/img/cursors/cursor.svg"), auto;
-    transition: background 0.2s ease;
+    transition: var(--transition-fast);
 }
 body,
 main,
@@ -51,11 +50,7 @@ section,
 article,
 aside,
 nav {
-    transition:
-        background-color 0.2s ease,
-        color 0.2s ease,
-        border-color 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: var(--transition-fast);
 }
 ::selection {
     background-color: var(--bg-selection);
@@ -64,7 +59,7 @@ nav {
 
 /* ==========================================================================
     2. COMPONENTES QUE NO FORMAN PARTE DEL FLUJO DE LA PÁGINA
-   ========================================================================== */
+========================================================================== */
 /* --- 2.1 PANTALLA DE CARGA --- */
 .loader-screen {
     display: flex;
@@ -79,9 +74,7 @@ nav {
     height: 100vh;
     background-color: var(--bg-loader-screen);
     opacity: 1;
-    transition:
-        opacity 1s ease,
-        visibility 1s ease;
+    transition: var(--transition-loader);
 }
 .loader-screen.fade-out {
     visibility: hidden;
@@ -92,22 +85,22 @@ nav {
     text-align: center;
 }
 .loader-content h2 {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    font-size: 3rem;
-    font-family: "Nunito", serif;
+    margin-top: var(--space-base);
+    margin-bottom: var(--space-xs);
+    font-size: var(--fs-2xl);
+    font-family: var(--font-main);
 }
 .loader-content p {
-    font-size: 1.25rem;
+    font-size: var(--fs-xl);
     opacity: 0.8;
 }
 .loader-spinner {
     width: 45px;
     height: 45px;
     margin: 0 auto;
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-top: 4px solid var(--celeste6);
-    border-radius: 50%;
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    border-top: 6px solid var(--celeste6);
+    border-radius: var(--radius-full);
     animation: spin 0.8s linear infinite;
 }
 @keyframes spin {
@@ -124,7 +117,7 @@ nav {
 }
 ::-webkit-scrollbar-thumb {
     height: 8rem;
-    border-radius: 1rem;
+    border-radius: var(--radius-sm);
     background-color: var(--scrollbar-thumb);
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -138,7 +131,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0.5rem 0.8rem;
+    padding: var(--space-xs) var(--space-sm);
     background-color: var(--bg-banner);
     color: var(--blanco);
     text-align: center;
@@ -150,16 +143,14 @@ nav {
 .toast {
     z-index: 2000;
     position: fixed;
-    right: 1.5rem;
-    bottom: 1.5rem;
-    padding: 1rem 1.5rem;
+    right: var(--space-md);
+    bottom: var(--space-md);
+    padding: var(--space-base) var(--space-md);
     transform: translateY(0.8rem);
-    border-radius: 1.5rem;
+    border-radius: var(--radius-md);
     opacity: 0;
     pointer-events: none;
-    transition:
-        opacity 0.3s ease,
-        transform 0.3s ease;
+    transition: var(--transition-fade);
 }
 .toast.visible {
     transform: translateY(0);
@@ -180,13 +171,11 @@ nav {
     justify-content: center;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: var(--blur-modal);
+    -webkit-backdrop-filter: var(--blur-modal);
+    background-color: var(--blur-modal-color);
     opacity: 1;
-    transition:
-        opacity 0.3s ease,
-        visibility 0.3s ease;
+    transition: var(--transition-fade);
 }
 .whats-new-modal.hidden {
     visibility: hidden;
@@ -198,43 +187,30 @@ nav {
     flex-direction: column;
     width: 100%;
     max-width: 45%;
-    padding: 2rem;
-    border-radius: 2rem;
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
     background: var(--bg-section-card);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow-modal);
     color: var(--text-body);
 }
 .whats-new-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1.2rem;
-}
-.whats-new-header h3 {
-    margin: 0;
-    font-size: 1.3rem;
 }
 .whats-new-version {
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
-    background-color: var(--azul3);
-    color: var(--blanco);
+    padding: var(--space-xs) var(--space-base);
+    border-radius: var(--radius-sm);
+    background-color: var(--bg-whats-new-version);
+    color: var(--text-whats-new-version);
     font-weight: bold;
-    font-size: 1rem;
 }
 .whats-new-content {
     max-height: 250px;
-    margin-bottom: 1.5rem;
     overflow-y: auto;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-.whats-new-content ul {
-    margin: 0;
-    padding-left: 1.2rem;
+    line-height: var(--lh-normal);
 }
 .whats-new-content li {
-    margin-bottom: 0.5rem;
     list-style-type: disc;
 }
 .button-close-whats-new {
@@ -243,19 +219,19 @@ nav {
 }
 /* --- 2.6 SECCIÓN DE ERROR (404.html) --- */
 .error-section {
-    padding: 4rem 1rem;
+    padding: var(--space-xl) var(--space-base);
     text-align: center;
 }
 .error-code {
     margin: 0;
-    padding: 1rem 0;
+    padding: var(--space-base) 0;
     color: var(--text-body);
-    font-size: 6rem;
+    font-size: var(--fs-4xl);
 }
 
 /* ==========================================================================
     3. COMPONENTES GENÉRICOS (Reutilizables en cualquier parte)
-   ========================================================================== */
+========================================================================== */
 /* --- 3.1 TEXTO / TÍTULOS --- */
 h1,
 h2,
@@ -263,13 +239,29 @@ h3,
 h4,
 h5,
 h6 {
-    line-height: 1;
-    font-family: "Nunito Sans", sans-serif;
+    line-height: var(--lh-normal);
+    font-family: var(--font-titles);
     text-align: center;
 }
+h1 {
+    font-size: var(--fs-xl);
+}
+h2 {
+    font-size: var(--fs-lg);
+}
+h3 {
+    font-size: var(--fs-md);
+}
+h4,
+h5,
+h6 {
+    font-size: var(--fs-base);
+}
+
 .text {
-    line-height: 1;
-    font-family: "Nunito", serif;
+    font-size: var(--fs-base);
+    line-height: var(--lh-tight);
+    font-family: var(--font-main);
     text-align: center;
 }
 .paragraph {
@@ -288,20 +280,17 @@ h6 {
 a.button {
     width: 13rem;
     min-width: 10rem;
-    margin: 1rem auto;
-    padding: 0.6rem;
+    margin: var(--space-base) auto;
+    padding: var(--space-xs);
     border: 2px solid var(--border-button);
-    border-radius: 0.8rem;
+    border-radius: var(--radius-sm);
     background-color: var(--bg-button);
     color: var(--text-button);
     font-weight: bold;
-    font-size: 90%;
+    font-size: var(--fs-sm);
     text-align: center;
     text-transform: uppercase;
-    transition:
-        background-color 0.4s ease,
-        color 0.4s ease,
-        border-color 0.4s ease;
+    transition: var(--transition-button);
     user-select: none;
 }
 .button:hover,
@@ -317,7 +306,7 @@ a:hover {
 a.button:active {
     transform: scale(0.95) translateY(2px);
     background-color: var(--bg-button-hover);
-    transition: transform 0.05s ease;
+    transition: var(--transition-active);
 }
 .button-active {
     background-color: var(--bg-button-hover) !important;
@@ -334,10 +323,10 @@ a.button:focus {
 }
 /* --- 3.3 ENTRADAS DE TEXTO --- */
 .input {
-    margin: 0.1rem 0;
-    padding: 0.6rem;
+    margin: var(--space-2xs) 0;
+    padding: var(--space-xs);
     border: 2px solid var(--border-input);
-    border-radius: 0.8rem;
+    border-radius: var(--radius-sm);
     background-color: var(--bg-input);
     color: var(--text-input);
     caret-color: var(--text-input);
@@ -346,42 +335,36 @@ a.button:focus {
 .input:focus {
     border-color: var(--border-input-focus);
     outline: none;
-    box-shadow: 0 0 16px rgba(1, 76, 199, 0.25);
+    box-shadow: var(--shadow-input-focus);
 }
 /* --- 3.4 TARJETAS --- */
 .section-card {
     max-width: 100%;
-    margin: 1.5rem auto;
-    padding: 0.5rem 1rem;
-    border-radius: 1.5rem;
-    backdrop-filter: blur(8px); /* Efecto cristal sutil sobre el fondo */
+    margin: var(--space-md) auto;
+    padding: var(--space-xs) var(--space-base);
+    border-radius: var(--radius-xl);
     background: var(--bg-section-card);
     box-shadow: var(--shadow-section-card);
     color: var(--text-section-card);
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: var(--transition-smooth);
 }
 .section-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 28px rgba(0, 207, 255, 0.25);
+    box-shadow: var(--shadow-section-card-hover);
 }
 .subsection-card {
     max-width: 100%;
-    margin: 1.5rem auto;
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
-    backdrop-filter: blur(8px); /* Efecto cristal sutil sobre el fondo */
+    margin: var(--space-md) auto;
+    padding: var(--space-xs) var(--space-base);
+    border-radius: var(--radius-lg);
     background: var(--bg-subsection-card);
     box-shadow: var(--shadow-subsection-card);
     color: var(--text-subsection-card);
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: var(--transition-smooth);
 }
 .subsection-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 28px rgba(0, 114, 139, 0.25);
+    box-shadow: var(--shadow-subsection-card-hover);
 }
 .section-card p,
 .subsection-card p,
@@ -396,9 +379,7 @@ h6 {
 /* --- 3.5 MENÚES DESPLEGABLES --- */
 details {
     overflow: hidden;
-    transition:
-        height 0.3s ease,
-        padding 0.3s ease;
+    transition: var(--transition-fade);
 }
 details::details-content {
     display: block;
@@ -417,7 +398,7 @@ details[open]::details-content {
 
 /* ==========================================================================
     4. SECCIONES EN ORDEN DE APARICIÓN EN EL HTML
-   ========================================================================== */
+========================================================================== */
 /* --- 4.1 ENCABEZADO / HEADER --- */
 .header-container {
     z-index: 200;
@@ -429,20 +410,12 @@ details[open]::details-content {
     width: 95%;
     max-width: 95%;
     height: auto;
-    margin: 0.5rem auto;
-    padding: 1rem 1.5rem;
-    border-radius: 1.5rem;
-    background: var(--bg-content);
-    box-shadow: var(--shadow-content);
-    transition:
-        background-color 0.3s ease,
-        box-shadow 0.3s ease,
-        backdrop-filter 0.3s ease;
-}
-.header-card.scrolled {
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin: var(--space-xs) auto;
+    padding: var(--space-base) var(--space-md);
+    border-radius: var(--radius-xl);
+    background: var(--bg-base);
+    box-shadow: var(--shadow-base);
+    transition: var(--transition-fade);
 }
 .header-logo-container {
     display: grid !important;
@@ -467,12 +440,12 @@ details[open]::details-content {
 .header-title {
     width: 100%;
     margin: 0;
-    font-size: 2rem;
+    font-size: var(--fs-xl);
     text-align: center;
 }
 .header-subtitle {
     display: none;
-    margin: 0.4rem;
+    margin: var(--space-xs);
     text-align: center;
     text-transform: uppercase;
 }
@@ -482,7 +455,7 @@ details[open]::details-content {
     left: 0;
     width: 100%;
     height: 4px;
-    border-radius: 0.5rem;
+    border-radius: var(--radius-xs);
     background-color: transparent;
     pointer-events: none;
 }
@@ -490,27 +463,26 @@ details[open]::details-content {
     width: 0%;
     height: 100%;
     background-color: var(--progress-bar);
-    transition: width 0.1s ease-out;
+    transition: var(--transition-ultra-fast);
 }
 /* --- 4.2 NAVEGACIÓN PRINCIPAL --- */
 .nav-card {
     width: 95%;
     max-width: 95%;
-    margin: 0.5rem auto;
-    border-radius: 1rem;
-    background: var(--bg-content);
-    box-shadow: var(--shadow-content);
+    margin: var(--space-xs) auto;
+    border-radius: var(--radius-lg);
+    background: var(--bg-base-inverted);
+    box-shadow: var(--shadow-base);
 }
 /* --- 4.3 CONTENIDO PRINCIPAL --- */
-.content {
+.content-card {
     width: 95%;
     max-width: 95%;
-    margin: 0.5rem auto;
-    padding: 0.5rem 1rem;
-    border-radius: 1.5rem;
-    background: var(--bg-content);
-    background-color: var(--bg-content);
-    box-shadow: var(--shadow-content);
+    margin: var(--space-xs) auto;
+    padding: var(--space-xs) var(--space-base);
+    border-radius: var(--radius-xl);
+    background: var(--bg-base);
+    box-shadow: var(--shadow-base);
 }
 .hero-section {
     background-image: url("../assets/img/bg/bg_6.jpg");
@@ -524,63 +496,66 @@ details[open]::details-content {
 }
 .form-contact {
     width: 100%;
-    border-radius: 1.5rem;
+    border-radius: var(--radius-md);
 }
-a.nav-menu-item,
-a.nav-menu-item:visited {
+a.nav-menu-link,
+a.nav-menu-link:visited {
     display: inline-block !important;
+    padding: var(--space-2xs);
+    border-radius: var(--radius-sm);
     color: var(--link) !important;
-    transition:
-        color 0.2s ease,
-        transform 0.1s ease;
+    transition: var(--transition-fast);
 }
-a.nav-menu-item:hover {
+a.nav-menu-link:hover {
+    background-color: var(--bg-link-hover);
     color: var(--link-hover) !important;
 }
-a.nav-menu-item:active {
+a.nav-menu-link:active {
     transform: scale(0.95);
+    background-color: var(--bg-link-hover);
     color: var(--link-hover) !important;
+}
+.widget {
+    padding: var(--space-base);
+    border: 2px solid var(--border-weather-widget);
+    border-radius: var(--radius-sm);
+    background-color: var(--bg-weather-widget);
+    color: var(--text-weather-widget);
+    text-align: center;
+    text-transform: capitalize;
+    transition: var(--transition-fast);
+    user-select: none;
 }
 .weather-widget {
     width: 13rem;
     min-width: 10rem;
-    margin: 1rem auto;
-    padding: 1rem;
-    border: 2px solid var(--border-weather-widget);
-    border-radius: 1rem;
-    background-color: var(--bg-weather-widget);
-    color: var(--text-weather-widget);
+    margin: var(--space-base) auto;
     font-weight: bold;
     text-align: center;
     text-transform: capitalize;
-    transition:
-        background-color 0.2s ease,
-        color 0.2s ease,
-        border-color 0.2s ease;
-    user-select: none;
+}
+.weather-icon {
+    width: 16px;
+    height: 16px;
+    stroke: var(--text-body);
+    stroke-width: 1.5;
 }
 /* --- 4.5 PIE DE PÁGINA / FOOTER --- */
 .footer-card {
     width: 95%;
     max-width: 95%;
     height: auto;
-    margin: 0.5rem auto;
-    padding: 0.5rem 1rem;
-    border-radius: 2.5rem;
+    margin: var(--space-xs) auto;
+    padding: var(--space-xs) var(--space-base);
+    border-radius: var(--radius-xl);
     background: var(--bg-footer);
     color: var(--text-footer);
-    font-size: 1rem;
-    transition:
-        background-color 0.3s ease,
-        box-shadow 0.3s ease,
-        backdrop-filter 0.3s ease;
+    transition: var(--transition-fade);
 }
 a.footer-link,
 a.footer-link:visited {
     color: var(--text-footer) !important;
-    transition:
-        color 0.2s ease,
-        transform 0.1s ease;
+    transition: var(--transition-fast);
 }
 a.footer-link:hover {
     color: var(--text-footer-hover) !important;
@@ -593,7 +568,7 @@ a.footer-link:active {
     display: inline-flex;
     align-items: center;
     margin: 0;
-    gap: 0.4rem;
+    gap: var(--space-xs);
 }
 .footer-links {
     display: grid;
@@ -601,8 +576,7 @@ a.footer-link:active {
 }
 .footer-column-title {
     display: flex;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
+    margin-bottom: var(--space-xs);
     text-align: left;
     text-transform: uppercase;
 }
@@ -619,13 +593,13 @@ a.footer-link:active {
 }
 a.footer-link,
 .footer-text {
-    margin: 0.5rem 0;
+    margin: var(--space-xs) 0;
 }
 .footer-text {
     text-align: left;
 }
 .footer-copyright {
-    margin-top: 1.5rem;
+    margin-top: var(--space-md);
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     text-align: center;
     text-wrap: balance;
@@ -633,11 +607,11 @@ a.footer-link,
 .footer-copyright-main {
     margin-bottom: 0.3rem;
     color: var(--text-footer);
-    font-size: 0.9rem;
+    font-size: var(--fs-sm);
 }
 .footer-copyright-sub {
     color: var(--text-footer);
-    font-size: 0.8rem;
+    font-size: var(--fs-xs);
     opacity: 0.85;
 }
 .footer-copyright-sub span {

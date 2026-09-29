@@ -1,10 +1,13 @@
 /* ==========================================
-    VARIABLES Y PALETA DE COLORES
-   ========================================== */
+    VARIABLES DE LA WEB
+========================================== */
 :root {
     /* Variable que habilita la transición fluida hacia tamaños dinámicos (auto) */
     interpolate-size: allow-keywords;
 
+    /* ==========================================================================
+    1. COLORES Y PALETAS
+    ========================================================================== */
     /* colores principales */
     --blanco: #fff;
     --claro1: #ccc;
@@ -38,21 +41,24 @@
     --text-body: var(--azul1);
     /* PANTALLA DE CARGA */
     --bg-loader-screen: var(--celeste2);
+    /* WHATS NEW VERSION */
+    --bg-whats-new-version: var(--azul4);
+    --text-whats-new-version: var(--blanco);
     /* CONTENIDO */
-    --bg-content: linear-gradient(90deg, var(--blanco) 0%, var(--celeste7) 100%);
-    --shadow-content: 0 4px 16px rgba(1, 76, 199, 0.08);
+    --bg-base: linear-gradient(90deg, var(--blanco) 0%, var(--celeste7) 100%);
+    --bg-base-inverted: linear-gradient(-90deg, var(--blanco) 0%, var(--celeste7) 100%);
     /* LINK */
     --link: var(--azul1);
     --link-hover: var(--celeste1);
+    --bg-link-hover: rgba(168, 228, 250, 0.4);
     /* BARRA DE PROGRESO */
     --progress-bar: var(--celeste2);
     /* TARJETAS */
     --bg-section-card: linear-gradient(90deg, var(--celeste7) 0%, var(--celeste6) 100%);
     --text-section-card: var(--azul2);
-    --bg-subsection-card: linear-gradient(90deg, var(--celeste6) 0%, var(--celeste5) 100%);
+    --bg-subsection-card: linear-gradient(-90deg, var(--celeste7) 0%, var(--celeste5) 100%);
+    /* --bg-subsection-card: linear-gradient(90deg, var(--celeste6) 0%, var(--celeste5) 100%); */
     --text-subsection-card: var(--azul1);
-    --shadow-section-card: 0 4px 16px rgba(1, 76, 199, 0.08);
-    --shadow-subsection-card: 0 4px 16px rgba(1, 76, 199, 0.08);
     /* TITULOS */
     --text-titles: var(--azul1);
     /* BOTONES / ENLACES */
@@ -60,12 +66,12 @@
     --bg-button-hover: var(--celeste7);
     --text-button: var(--azul1);
     --text-button-hover: var(--azul1);
-    --border-button: var(--gris2);
+    --border-button: var(--claro1);
     --bg-aside-button-hover: var(--blanco);
     /* INPUTS */
     --bg-input: var(--blanco);
     --text-input: var(--azul1);
-    --border-input: var(--gris2);
+    --border-input: var(--claro1);
     --border-input-focus: var(--celeste2);
     /* FOOOTER */
     --bg-footer: linear-gradient(90deg, var(--celeste3) 0%, var(--celeste4) 100%);
@@ -80,10 +86,81 @@
     --bg-selection: var(--celeste2);
     --text-selection: var(--blanco);
     /* SCROLLBAR */
-    --scrollbar-thumb: var(--celeste2);
-    --scrollbar-thumb-hover: var(--celeste1);
+    --scrollbar-thumb: var(--celeste3);
+    --scrollbar-thumb-hover: var(--celeste2);
     /* WEATHER WIDGET */
     --bg-weather-widget: rgba(129, 129, 129, 0.15);
     --text-weather-widget: var(--azul1);
     --border-weather-widget: rgba(129, 129, 129, 0.2);
+
+    /* ==========================================================================
+    2. TIPOGRAFÍAS Y ESCALA (FONT-SIZE)
+    ========================================================================== */
+    --font-titles: "Nunito Sans", sans-serif;
+    --font-main: "Nunito", serif;
+
+    /* Escala tipográfica */
+    --fs-xs: 0.8rem;
+    --fs-sm: 0.9rem;
+    --fs-base: 1rem;
+    --fs-md: 1.25rem;
+    --fs-lg: 1.5rem;
+    --fs-xl: 2rem;
+    --fs-2xl: 3rem;
+    --fs-3xl: 5rem;
+    --fs-4xl: 6rem;
+
+    /* Line Heights */
+    --lh-tight: 1;
+    --lh-normal: 1.5;
+
+    /* ==========================================================================
+    3. ESPACIADO (PADDING, MARGIN, GAP)
+    ========================================================================== */
+    --space-2xs: 0.1rem;
+    --space-xs: 0.5rem;
+    --space-sm: 0.8rem;
+    --space-base: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 4rem;
+
+    /* ==========================================================================
+    4. BORDES / REDONDEO
+    ========================================================================== */
+    --radius-xs: 0.5rem;
+    --radius-sm: 1rem;
+    --radius-md: 1.5rem;
+    --radius-lg: 2rem;
+    --radius-xl: 2.5rem;
+    --radius-full: 50%;
+
+    /* ==========================================================================
+    5. SOMBRAS Y EFECTOS
+    ========================================================================== */
+    --shadow-base: 0 4px 16px rgba(1, 76, 199, 0.08);
+    --shadow-section-card: 0 4px 16px rgba(1, 76, 199, 0.08);
+    --shadow-section-card-hover: 0 12px 28px rgba(0, 207, 255, 0.25);
+    --shadow-subsection-card: 0 4px 16px rgba(1, 76, 199, 0.08);
+    --shadow-subsection-card-hover: 0 12px 28px rgba(0, 114, 139, 0.25);
+    --shadow-modal: 0 15px 30px rgba(0, 0, 0, 0.3);
+    --shadow-input-focus: 0 0 16px rgba(1, 76, 199, 0.25);
+    --shadow-aside-button: 3px 0 8px rgba(0, 0, 0, 0.15);
+    --blur-modal: blur(6px);
+    --blur-modal-color: rgba(0, 0, 0, 0.5);
+
+    /* ==========================================================================
+    6. TIEMPOS Y FUNCIONES DE TRANSICIÓN
+    ========================================================================== */
+    --transition-active: transform 0.05s ease;
+    --transition-ultra-fast: color 0.1s ease, transform 0.1s ease, width 0.1s ease-out;
+    --transition-fast: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    --transition-smooth: transform 0.2s ease, box-shadow 0.2s ease;
+    --transition-button: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+    --transition-fade:
+        opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, height 0.3s ease, background-color 0.3s ease,
+        box-shadow 0.3s ease, backdrop-filder 0.3s ease;
+    --transition-drawer-content: opacity 0.6s ease, visibility 0.6s ease, transform 0.6s ease;
+    --transition-drawer: width 1s cubic-bezier(0.25, 1, 0.5, 1);
+    --transition-loader: opacity 1s ease, visibility 1s ease;
 }

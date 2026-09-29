@@ -25,11 +25,11 @@
         <nav id="nav-card" class="nav-card">
             <button id="nav-button-menu" class="button nav-button-menu" aria-label="Abrir menú">☰</button>
             <ul id="nav-menu" class="nav-menu">
-                <li><a class="nav-menu-item" href="#tramites">Trámites y PDFs</a></li>
-                <li><a class="nav-menu-item" href="#reglamento">Reglamento y Horarios</a></li>
-                <li><a class="nav-menu-item" href="#herramientas">Calculadora</a></li>
-                <li><a class="nav-menu-item" href="#centro">Nuestro Centro</a></li>
-                <li><a class="nav-menu-item" href="#contacto">Contacto</a></li>
+                <li><a class="nav-menu-link" href="#tramites">Trámites y PDFs</a></li>
+                <li><a class="nav-menu-link" href="#reglamento">Reglamento y Horarios</a></li>
+                <li><a class="nav-menu-link" href="#herramientas">Calculadora</a></li>
+                <li><a class="nav-menu-link" href="#centro">Nuestro Centro</a></li>
+                <li><a class="nav-menu-link" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
         <!-- PANEL LATERAL DE CONFIGURACIÓN -->
@@ -37,7 +37,7 @@
         <!-- PANEL LATERAL DE NOVEDADES -->
         <div id="aside-news-container" class="aside-news-container"></div>
         <!-- CONTENEDOR PRINCIPAL -->
-        <div id="content" class="content">
+        <div id="content-card" class="content-card">
             <main>
                 <!-- SECCIÓN: INICIO / INFORMATIVA -->
                 <section id="inicio" class="section-card hero-section">
@@ -122,7 +122,7 @@
                 <section id="reglamento" class="section-card reglamento-section">
                     <h2>Reglamento Interno y Horarios</h2>
                     <!-- Grilla de Timbres -->
-                    <div id="table-container" class="table-container">
+                    <div id="table-container" class="subsection-card table-container">
                         <h3>Estructura Horaria de Turnos</h3>
                         <table>
                             <thead>
@@ -193,7 +193,7 @@
                 <!-- SECCIÓN 3: CALCULADORA DE PROMEDIOS (WIDGET JS) -->
                 <section id="herramientas" class="section-card herramientas-section">
                     <h2>Herramientas Estudiantiles</h2>
-                    <div id="calculator-box" class="calculator-box">
+                    <div id="calculator-box" class="subsection-card calculator-box">
                         <h3>Calculadora Rápida de Promedios</h3>
                         <p class="text">Ingresá tus notas para calcular el promedio del trimestre o cuatrimestre:</p>
                         <form id="form-promedio" onsubmit="event.preventDefault()">
@@ -247,7 +247,7 @@
                         Somos la comisión electa por los estudiantes para representar tus derechos, organizar jornadas y
                         mejorar nuestro espacio escolar.
                     </p>
-                    <article class="download-card">
+                    <article class="subsection-card">
                         <h3>Conocé nuestro estatuto!</h3>
                         <p class="text paragraph">
                             Es el documento oficial que rige el funcionamiento del Centro de Estudiantes.
@@ -305,13 +305,13 @@
                     <h2>¿Buscas algo específico?</h2>
                     <p class="text">Visitá nuestros diferentes sitios de consultas</p>
                     <!-- Botones de enlaces a sub-páginas -->
-                    <ul id="links" class="links">
-                        <li><a class="links-item button button-active" href="#">Inicio</a></li>
-                        <li><a class="links-item button" href="about.html">Nosotros</a></li>
-                        <li><a class="links-item button" href="contact.html">Contacto</a></li>
-                        <li><a class="links-item button" href="projects.html">Proyectos</a></li>
-                        <li><a class="links-item button" href="school.html">Trámites</a></li>
-                        <li><a class="links-item button" href="credits.html">Créditos</a></li>
+                    <ul id="subpages" class="subpages">
+                        <li><a class="subpages-link button button-active" href="#">Inicio</a></li>
+                        <li><a class="subpages-link button" href="about.html">Nosotros</a></li>
+                        <li><a class="subpages-link button" href="contact.html">Contacto</a></li>
+                        <li><a class="subpages-link button" href="projects.html">Proyectos</a></li>
+                        <li><a class="subpages-link button" href="school.html">Trámites</a></li>
+                        <li><a class="subpages-link button" href="credits.html">Créditos</a></li>
                     </ul>
                 </section>
             </main>

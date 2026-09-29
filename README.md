@@ -3,7 +3,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](<https://img.shields.io/badge/versi%C3%B3n-0.27%20(Alpha)-blue>)
+![Versión](<https://img.shields.io/badge/versi%C3%B3n-0.28%20(Alpha)-blue>)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
@@ -37,7 +37,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.27` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.28` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
 | **Lanzamiento Estable (v1.0)** | Martes 3 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
@@ -167,7 +167,23 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 
 AVISO: Se incluyen únicamente las versiones completas
 
-- **`v0.27-alpha` (Actual)**
+- **`v0.28-alpha` (Actual)**
+    - Se expandió el archivo `variables.css` para crear un sistema completo de Design Tokens
+    - Se estandarizaron y unificaron las variables para `padding`, `margin`, `border-radius`, escalas tipográficas, sombras y tiempos de transición
+    - Estas variables ahora son iguales tanto para celular como para pc
+    - Se refactorizaron las propiedades reglas en `base.css` y `desktop.css` eliminando valores estáticos (hardcodeados)
+    - Se cambió el color de algunas tarjetas en modo claro
+    - Ahora el logo del C.E. del header dirige hacia la página de inicio
+    - El spinner de carga ahora es más ancho
+    - Se suavizó el color del borde de los botones/inputs y el de las barras de scroll
+    - Ahora el toast dura más tiempo
+    - Se renombraron muchas clases e ids para mayor claridad
+    - Se corrigió la separación de los enlaces a las subpáginas
+    - Se eliminaron propiedades innecesarias
+    - Se mejoraron algunos comentarios del código
+    - Pequeño cambio en la Licencia
+    - Se modificó el .gitignore
+- **`v0.27-alpha`**
     - Se agregó una ventana modal para mostrar la última versión y las novedades
     - Se agregó whats-new-modal.html y whats-new.js para controlar el funcionamiento
 - **`v0.26-alpha`**
@@ -193,15 +209,8 @@ AVISO: Se incluyen únicamente las versiones completas
     - Se reworkeó todo el archivo theme.js y sus funciones para permitir añadir más temas de color en un futuro
     - Se agregaron nuevos atributos a los botones del aside
     - Se cambió el texto del footer-copyright en 404.html
-- **`v0.23-alpha`**
-    - Se añadió un botón de modo descanso que añade un filtro de color a toda la página
-    - Se añadió una barra de scroll al aside de opciones
-    - Se renombró la clase modo-oscuro a dark-mode
-- **`v0.22-alpha`**
-    - Se agregó contenido de placeholder y un menú personalizado a todas las subpáginas con el objetivo de mejorar la navegación
-    - Se arreglaron los button-active del menú al fondo de cada página
-    - Se corrigió el footer en 404.html
-    - Se eliminaron los íconos innecesarios en assets/img/icons, volviendo a tener .gitkeep
+
+---
 
 ## 🗺️ Roadmap de Desarrollo
 
@@ -216,7 +225,7 @@ AVISO: Se incluyen únicamente las versiones completas
     - Ventana emergente (modal/toast) interactiva al detectar una actualización de versión.
     - Lectura dinámica del _changelog_ para mostrar las últimas mejoras al usuario al ingresar al sitio.
 
-- [ ] **v0.28 - Arquitectura CSS & Rework de Variables**
+- [x] **v0.28 - Arquitectura CSS & Rework de Variables**
     - Expansión de `variables.css` para crear un sistema completo de _Design Tokens_.
     - Estandarización de variables para `padding`, `margin`, `gap`, `border-radius`, escalas tipográficas y tiempos de transición.
     - Refactorización de reglas en `base.css` y `desktop.css` eliminando valores estáticos (_hardcodeados_).

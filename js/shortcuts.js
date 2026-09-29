@@ -1,7 +1,6 @@
 /* ==========================================
     ATAJOS DE TECLADO
-   ========================================== */
-
+========================================== */
 export function initShortcuts() {
     // Acceso rápido por teclado al modo oscuro
     document.addEventListener("keydown", (e) => {

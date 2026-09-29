@@ -1,7 +1,6 @@
 /* ==========================================
     MÓDULO DE EFECTOS DE SONIDO (UI SOUNDS)
-   ========================================== */
-
+========================================== */
 // 1. Estado inicial desde localStorage (por defecto 'activado' o 'true')
 let soundEnabled = localStorage.getItem("soundEffects") !== "false";
 
