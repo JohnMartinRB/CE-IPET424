@@ -15,6 +15,15 @@ Se mejoraron algunos comentarios del código
 Pequeño cambio en la Licencia
 Se modificó el .gitignore
 
+0.28.1
+Se actualizaron y agregaron nuevos atajos de teclado
+Ahora los cursores también se manejan por clases
+Se modificaron las clases del whats-new-modal
+Se renombraron todos los archivos de componentes html
+
+0.28.2
+Se actualizó el changelog
+
 
 0.27
 Se agregó una ventana modal para mostrar la última versión y las novedades
