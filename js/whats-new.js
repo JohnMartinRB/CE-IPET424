@@ -11,7 +11,7 @@ export function initWhatsNew() {
 }
 
 async function checkAndShowModal() {
-    const modal = document.getElementById("whats-new-modal");
+    const modal = document.getElementById("modal-whats-new");
     const contentBox = document.getElementById("whats-new-content");
     const closeButton = document.getElementById("button-close-whats-new");
     const versionTag = document.getElementById("whats-new-version");

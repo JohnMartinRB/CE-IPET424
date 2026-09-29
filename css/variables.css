@@ -163,4 +163,15 @@
     --transition-drawer-content: opacity 0.6s ease, visibility 0.6s ease, transform 0.6s ease;
     --transition-drawer: width 1s cubic-bezier(0.25, 1, 0.5, 1);
     --transition-loader: opacity 1s ease, visibility 1s ease;
+
+    /* ==========================================================================
+    7. CURSORES
+    ========================================================================== */
+    --cursor-default: url("../assets/img/cursors/cursor-default.svg"), auto;
+    --cursor-hover: url("../assets/img/cursors/cursor-hover.svg"), pointer;
+    --cursor-text: url("../assets/img/cursors/cursor-text.svg"), text;
+    /* Modo Oscuro */
+    --cursor-default-dark: url("../assets/img/cursors/cursor-default-dark.svg"), auto;
+    --cursor-hover-dark: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
+    --cursor-text-dark: url("../assets/img/cursors/cursor-text-dark.svg"), text;
 }

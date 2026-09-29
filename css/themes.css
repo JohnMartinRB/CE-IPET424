@@ -69,19 +69,19 @@ body.dark-mode {
     --border-weather-widget: rgba(255, 255, 255, 0.2);
 }
 body.dark-mode {
-    cursor: url("../assets/img/cursors/cursor-dark.svg"), auto;
+    cursor: var(--cursor-default-dark);
 }
 body.dark-mode a:hover {
-    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
+    cursor: var(--cursor-hover-dark);
 }
 body.dark-mode .button:hover {
-    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
+    cursor: var(--cursor-hover-dark);
 }
 body.dark-mode .aside-config-button-toggle:hover {
-    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
+    cursor: var(--cursor-hover-dark);
 }
 body.dark-mode .text:hover {
-    cursor: url("../assets/img/cursors/cursor-text-dark.svg"), text;
+    cursor: var(--cursor-text-dark);
 }
 body.dark-mode #inicio {
     background-image: url("../assets/img/bg/bg_5.jpg");
@@ -156,19 +156,19 @@ body.high-contrast-mode {
 }
 
 body.high-contrast-mode {
-    cursor: url("../assets/img/cursors/cursor-dark.svg"), auto;
+    cursor: var(--cursor-default-dark);
 }
 body.high-contrast-mode a:hover {
-    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
+    cursor: var(--cursor-hover-dark);
 }
 body.high-contrast-mode .button:hover {
-    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
+    cursor: var(--cursor-hover-dark);
 }
 body.high-contrast-mode .aside-config-button-toggle:hover {
-    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
+    cursor: var(--cursor-hover-dark);
 }
 body.high-contrast-mode .text:hover {
-    cursor: url("../assets/img/cursors/cursor-text-dark.svg"), text;
+    cursor: var(--cursor-text-dark);
 }
 body.high-contrast-mode #inicio {
     background-image: url("../assets/img/bg/bg_2.jpg");
@@ -301,19 +301,19 @@ body.code-mode :is(h1, h2, h3, h4, h5, h6, p, a, span, .button, summary, details
 }
 
 body.code-mode {
-    cursor: url("../assets/img/cursors/cursor-dark.svg"), auto;
+    cursor: var(--cursor-default-dark);
 }
 body.code-mode a:hover {
-    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
+    cursor: var(--cursor-hover-dark);
 }
 body.code-mode .button:hover {
-    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
+    cursor: var(--cursor-hover-dark);
 }
 body.code-mode .aside-config-button-toggle:hover {
-    cursor: url("../assets/img/cursors/cursor-hover-dark.svg"), pointer;
+    cursor: var(--cursor-hover-dark);
 }
 body.code-mode .text:hover {
-    cursor: url("../assets/img/cursors/cursor-text-dark.svg"), text;
+    cursor: var(--cursor-text-dark);
 }
 body.code-mode #inicio {
     background: var(--bg-section-card);

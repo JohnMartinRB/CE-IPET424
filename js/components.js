@@ -57,11 +57,11 @@ export async function initComponents() {
     }
     // Esperamos a que todos los componentes se terminen de inyectar
     await Promise.all([
-        loadComponent("header-container", "components/header.html"),
-        loadComponent("aside-config-container", "components/aside-config.html"),
-        loadComponent("aside-news-container", "components/aside-news.html"),
-        loadComponent("footer-container", "components/footer.html"),
-        loadComponent("whats-new-container", "components/whats-new-modal.html"),
+        loadComponent("header-container", "components/_header.html"),
+        loadComponent("aside-config-container", "components/_aside-config.html"),
+        loadComponent("aside-news-container", "components/_aside-news.html"),
+        loadComponent("footer-container", "components/_footer.html"),
+        loadComponent("modal-whats-new-container", "components/_modal-whats-new.html"),
     ]);
     // Una vez inyectado el HTML del aside en el DOM:
     await getVillaDoloresWeather();
