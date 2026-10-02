@@ -1,7 +1,7 @@
 /* ==========================================
     BANNERS / READING-PROGRESS-BAR
 ========================================== */
-import { playSound } from "./sound.js";
+import { playSound } from "../utils/sound.js";
 
 export function initBanners() {
     // Header Fijo e Indicador de Progreso de Lectura - Mide la altura del scroll y calcula el porcentaje

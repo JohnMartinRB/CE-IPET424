@@ -1,0 +1,21 @@
+/* ==========================================
+    ACORDEONES DESPLEGABLES
+========================================== */
+details {
+    overflow: hidden;
+    transition: var(--transition-fade);
+}
+details::details-content {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition:
+        height 0.3s ease,
+        opacity 0.3s ease,
+        display 0.3s allow-discrete;
+}
+details[open]::details-content {
+    height: auto;
+    opacity: 1;
+}

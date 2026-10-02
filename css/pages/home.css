@@ -1,0 +1,31 @@
+/* ==========================================
+    PÁGINAS ESPECÍFICAS
+========================================== */
+.hero-section {
+    background-image: url("../../assets/img/bg/bg_6.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.school-map {
+    width: 100%;
+    height: auto;
+}
+.form-contact {
+    width: 100%;
+    border-radius: var(--radius-md);
+}
+
+@media (min-width: 1024px) {
+    .iframe-container {
+        display: flex;
+        justify-content: center;
+    }
+    .subpages {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--space-base) 0;
+        text-align: center;
+    }
+}

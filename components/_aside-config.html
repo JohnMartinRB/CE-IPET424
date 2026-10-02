@@ -1,8 +1,8 @@
 <aside id="aside-config" class="aside-drawer aside-config">
     <button id="aside-config-button-toggle" class="aside-config-button-toggle" aria-label="Abrir panel de opciones">
-        <span id="icono-toggle" class="aside-icon-toggle">&lt;</span>
+        <span id="aside-config-icono-toggle" class="aside-icon-toggle">&lt;</span>
     </button>
-    <div id="aside-options" class="aside-options">
+    <div id="aside-config-options" class="aside-options">
         <h3>Temas</h3>
         <!-- Botón de Modo Oscuro -->
         <button id="button-theme" class="button button-theme" data-set-theme="dark">Modo oscuro</button>
@@ -19,13 +19,29 @@
         <button id="button-copy-link" class="button button-copy-link">Copiar enlace web</button>
         <h3>Accesibilidad</h3>
         <!-- Botón de Efectos de Sonido -->
-        <button id="button-sound" class="button button-sound">Efectos de sonido: sí</button>
-        <!-- Botón de Animaciones
-        <button id="button-animations" class="button button-animations">Animaciones: sí</button> -->
+        <button id="button-sound" class="button button-sound">Sonido: sí</button>
+        <!-- Botón de Animaciones -->
+        <button id="button-animations" class="button button-animations">Animaciones: sí</button>
         <!-- Botón de Modo Monocromático -->
         <button id="button-grayscale" class="button button-grayscale" data-set-theme="grayscale">
             Escala de grises
         </button>
+        <!-- Botón de Tamaño de Texto -->
+        <div class="font-size-control-container">
+            <h4 class="font-size-label">Tamaño de texto</h4>
+            <div class="font-size-buttons-group">
+                <button id="button-font-decrease" class="button button-small" aria-label="Achicar tamaño de texto">
+                    A-
+                </button>
+                <span id="font-size-indicator" class="font-size-value">100%</span>
+                <button id="button-font-increase" class="button button-small" aria-label="Agrandar tamaño de texto">
+                    A+
+                </button>
+                <button id="button-font-reset" class="button button-small" aria-label="Restablecer tamaño de texto">
+                    🔄
+                </button>
+            </div>
+        </div>
         <h3>Otros</h3>
         <!-- Widget de Clima Local (Villa Dolores) -->
         <div id="weather-widget" class="widget weather-widget">

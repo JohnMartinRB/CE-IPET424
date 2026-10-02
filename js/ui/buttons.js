@@ -1,7 +1,7 @@
 /* ==========================================
     BOTONES DE INTERFAZ Y UTILIDADES
 ========================================== */
-import { playSound } from "./sound.js";
+import { playSound } from "../utils/sound.js";
 
 export function initButtons() {
     // Botón de copiar enlace con feedback toast

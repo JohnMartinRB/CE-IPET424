@@ -1,0 +1,18 @@
+/* ==========================================
+    INPUTS
+========================================== */
+.input {
+    margin: var(--space-2xs) 0;
+    padding: var(--space-sm);
+    border: 2px solid var(--border-input);
+    border-radius: var(--radius-sm);
+    background-color: var(--bg-input);
+    color: var(--text-input);
+    caret-color: var(--text-input);
+    cursor: var(--cursor-text);
+}
+.input:focus {
+    border-color: var(--border-input-focus);
+    outline: none;
+    box-shadow: var(--shadow-input-focus);
+}

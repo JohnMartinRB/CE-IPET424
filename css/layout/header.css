@@ -1,0 +1,97 @@
+/* ==========================================
+    TARJETA DE HEADER
+========================================== */
+.header-container {
+    z-index: 200;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.header-card {
+    width: 95%;
+    max-width: 95%;
+    height: auto;
+    margin: var(--space-xs) auto;
+    padding: var(--space-base) var(--space-lg);
+    border-radius: var(--radius-xl);
+    background: var(--bg-base);
+    box-shadow: var(--shadow-base);
+    transition: var(--transition-fade);
+}
+.header-logo-container {
+    display: grid !important;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+.header-logo-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header-logo {
+    width: auto;
+    height: 3.5rem;
+    object-fit: contain;
+}
+.header-escudo-ipet {
+    display: none;
+}
+.header-title {
+    width: 100%;
+    margin: 0;
+    font-size: var(--fs-xl);
+    text-align: center;
+}
+.header-subtitle {
+    display: none;
+    margin: var(--space-xs);
+    text-align: center;
+    text-transform: uppercase;
+}
+.header-progress-bar-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: var(--radius-xs);
+    background-color: transparent;
+    pointer-events: none;
+}
+.header-progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: var(--progress-bar);
+    transition: var(--transition-ultra-fast);
+}
+
+@media (min-width: 1024px) {
+    .header-container {
+        width: 100%;
+    }
+    .header-logo-container {
+        grid-template-columns: 60px 1fr 60px;
+    }
+    .header-card {
+        width: 100%;
+        max-width: 70%;
+    }
+    .header-logo {
+        height: 4.8rem;
+    }
+    .header-escudo-ipet {
+        display: block;
+    }
+    .header-title {
+        text-transform: uppercase;
+    }
+    .header-subtitle {
+        display: block;
+    }
+    .header-progress-bar-container {
+        width: 84%;
+        margin: 0 8%;
+    }
+}

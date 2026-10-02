@@ -47,6 +47,16 @@ export function initTheme() {
             }
         }
     }
+    function updateLogo(themeKey) {
+        const logoHeader = document.getElementById("header-logo-centro");
+        if (logoHeader) {
+            if (themeKey === "dark" || themeKey === "high-contrast") {
+                logoHeader.src = "assets/img/logos/centro-dark.png";
+            } else {
+                logoHeader.src = "assets/img/logos/centro.png";
+            }
+        }
+    }
     // Detecta cuál es el tema actualmente aplicado en el DOM
     function getActiveThemeFromDOM() {
         const body = document.body;
@@ -74,6 +84,7 @@ export function initTheme() {
         localStorage.setItem("activeTheme", themeKey);
         // Actualizar interfaz
         updateFavicon(themeKey);
+        updateLogo(themeKey);
         setTimeout(updateMetaThemeColor, 50);
         syncUIButtons();
     }

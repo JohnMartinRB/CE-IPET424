@@ -1,0 +1,19 @@
+/* ==========================================
+    TARJETA DE CONTENIDO PRINCIPAL
+========================================== */
+.content-card {
+    width: 95%;
+    max-width: 95%;
+    margin: var(--space-xs) auto;
+    padding: var(--space-base) var(--space-lg);
+    border-radius: var(--radius-xl);
+    background: var(--bg-base);
+    box-shadow: var(--shadow-base);
+}
+
+@media (min-width: 1024px) {
+    .content-card {
+        width: 100%;
+        max-width: 58%;
+    }
+}

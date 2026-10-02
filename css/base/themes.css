@@ -4,36 +4,37 @@
 body.dark-mode {
     /* BODY */
     --bg-body: var(--azul1);
-    --text-body: var(--celeste5);
+    --text-body: var(--celeste6);
     /* PANTALLA DE CARGA */
     --bg-loader-screen: var(--azul3);
     /* WHATS NEW VERSION */
     --bg-whats-new-version: var(--azul3);
     --text-whats-new-version: var(--blanco);
     /* CONTENIDO */
-    --bg-base: linear-gradient(90deg, var(--azul2) 0%, var(--azul3) 100%);
-    --bg-base-inverted: linear-gradient(-90deg, var(--azul2) 0%, var(--azul3) 100%);
+    --bg-base: linear-gradient(90deg, var(--azul3) 0%, var(--azul2) 100%);
+    --bg-base-inverted: linear-gradient(-90deg, var(--azul3) 0%, var(--azul2) 100%);
     --shadow-content: 0 4px 16px rgba(1, 76, 199, 0.08);
     /* LINK */
     --link: var(--celeste2);
     --link-hover: var(--blanco);
+    --bg-link-hover: rgba(0, 7, 69, 0.4);
     /* BARRA DE PROGRESO */
     --progress-bar: var(--celeste2);
     /* TARJETAS */
     --bg-section-card: linear-gradient(90deg, var(--celeste1) 0%, var(--azul4) 100%);
     --text-section-card: var(--celeste6);
-    --bg-subsection-card: linear-gradient(-90deg, var(--celeste1) 0%, var(--celeste2) 100%);
+    --bg-subsection-card: linear-gradient(-90deg, var(--celeste1) 0%, var(--azul4) 100%);
     --text-subsection-card: var(--blanco);
     --shadow-section-card: 0 4px 16px rgba(1, 76, 199, 0.08);
     --shadow-subsection-card: 0 4px 16px rgba(1, 76, 199, 0.08);
     /* TITULOS */
-    --text-titles: var(--celeste5);
+    --text-titles: var(--celeste6);
     /* BOTONES / ENLACES */
-    --bg-button: var(--celeste3);
-    --bg-button-hover: var(--celeste2);
+    --bg-button: var(--celeste2);
+    --bg-button-hover: var(--celeste3);
     --text-button: var(--azul1);
     --text-button-hover: var(--azul1);
-    --border-button: var(--celeste3);
+    --border-button: var(--celeste2);
     --outline-button-focus: var(--blanco);
     --bg-aside-button-hover: var(--azul4);
     /* INPUTS */
@@ -61,8 +62,8 @@ body.dark-mode {
     --bg-selection: var(--azul3);
     --text-selection: var(--blanco);
     /* SCROLLBAR */
-    --scrollbar-thumb: var(--celeste2);
-    --scrollbar-thumb-hover: var(--celeste1);
+    --scrollbar-thumb: var(--azul4);
+    --scrollbar-thumb-hover: var(--azul3);
     /* WEATHER WIDGET */
     --bg-weather-widget: rgba(255, 255, 255, 0.15);
     --text-weather-widget: var(--blanco);
@@ -84,7 +85,7 @@ body.dark-mode .text:hover {
     cursor: var(--cursor-text-dark);
 }
 body.dark-mode #inicio {
-    background-image: url("../assets/img/bg/bg_5.jpg");
+    background-image: url("../../assets/img/bg/bg_5.jpg");
 }
 body.dark-mode iframe {
     filter: invert(0.9) hue-rotate(180deg) brightness(0.95) contrast(0.9);
@@ -197,7 +198,7 @@ body.grayscale-mode {
     MODO DESCANSO
 ========================================== */
 html.rest-mode::after {
-    z-index: 998; /* Un nivel por debajo del loader de carga */
+    z-index: 998;
     position: fixed;
     top: 0;
     left: 0;
@@ -321,4 +322,29 @@ body.code-mode #inicio {
 body.code-mode iframe {
     filter: invert(0.9) hue-rotate(180deg) brightness(0.95) contrast(0.9);
     transition: filter 0.3s ease;
+}
+
+/* ==========================================
+    ACCESIBILIDAD: DESACTIVACIÓN DE ANIMACIONES
+========================================== */
+html.reduce-motion *,
+html.reduce-motion *::before,
+html.reduce-motion *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+}
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+html.reduce-motion .loader-spinner {
+    animation: none !important;
 }

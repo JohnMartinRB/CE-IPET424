@@ -1,7 +1,6 @@
 /* ==========================================
     MÓDULO DE EFECTOS DE SONIDO (UI SOUNDS)
 ========================================== */
-// 1. Estado inicial desde localStorage (por defecto 'activado' o 'true')
 let soundEnabled = localStorage.getItem("soundEffects") !== "false";
 
 /**
@@ -42,12 +41,11 @@ export function initSound() {
 function updateSoundButton() {
     const buttonSound = document.getElementById("button-sound");
     if (buttonSound) {
-        buttonSound.textContent = soundEnabled ? "Efectos de Sonido: Sí" : "Efectos de Sonido: No";
+        buttonSound.textContent = soundEnabled ? "Sonido: sí" : "Sonido: no";
         buttonSound.setAttribute("aria-pressed", soundEnabled);
     }
 }
 
-// Escuchamos clics globales en el botón de accesibilidad mediante delegación
 document.addEventListener("click", (e) => {
     const buttonSound = e.target.closest("#button-sound");
     if (buttonSound) {
@@ -57,11 +55,8 @@ document.addEventListener("click", (e) => {
 
 /* ==========================================
     LISTENERS GLOBALES PARA EFECTOS DE SONIDO
-   ========================================== */
-
-// Captura cualquier clic en la página para reproducir sonido de botones de forma general
+========================================== */
 document.addEventListener("click", (e) => {
-    // Detecta si el clic fue en un botón, enlace, resumen de FAQ (<summary>), o elementos interactivos
     const isButton = e.target.closest('.button, button, [role="button"]');
     const isLink = e.target.closest("summary, .nav-menu-item");
     if (isButton) {

@@ -1,0 +1,45 @@
+/* ==========================================
+    AJUSTES DE TEXTO
+========================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: var(--lh-normal);
+    font-family: var(--font-titles);
+    text-align: center;
+}
+h1 {
+    font-size: var(--fs-xl);
+}
+h2 {
+    font-size: var(--fs-lg);
+}
+h3 {
+    font-size: var(--fs-md);
+}
+h4,
+h5,
+h6 {
+    font-size: var(--fs-base);
+}
+.text {
+    font-size: var(--fs-base);
+    line-height: var(--lh-tight);
+    font-family: var(--font-main);
+    text-align: center;
+}
+.paragraph {
+    text-wrap: balance;
+}
+.text:hover {
+    cursor: var(--cursor-text);
+}
+
+@media (min-width: 1024px) {
+    .text {
+        line-height: var(--lh-normal);
+    }
+}

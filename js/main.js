@@ -1,10 +1,15 @@
-import { renderLoader, initComponents } from "./components.js";
-import { initButtons } from "./buttons.js";
-import { initBanners } from "./banners.js";
-import { initTheme } from "./theme.js";
-import { initSound, playSound } from "./sound.js";
-import { initWhatsNew } from "./whats-new.js";
-import { initShortcuts } from "./shortcuts.js";
+/* ==========================================================================
+    MAIN.JS - ARCHIVO PRINCIPAL DE JAVASCRIPT
+========================================================================== */
+import { renderLoader, initComponents } from "./ui/components.js";
+import { initButtons } from "./ui/buttons.js";
+import { initBanners } from "./ui/banners.js";
+import { initTheme } from "./ui/theme.js";
+import { initModals } from "./ui/modals.js";
+import { initFontSize } from "./utils/font-size.js";
+import { initAnimations } from "./utils/animations.js";
+import { initSound, playSound } from "./utils/sound.js";
+import { initShortcuts } from "./utils/shortcuts.js";
 import { config } from "./config.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -13,9 +18,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     initButtons();
     initBanners();
     initTheme();
+    initModals();
+    initFontSize();
+    initAnimations();
     initSound();
     playSound();
-    initWhatsNew();
     initShortcuts();
     config();
 });
@@ -45,7 +52,7 @@ window.addEventListener("load", () => {
 
 // Ajustar posición del aside para no solapar el footer al hacer scroll
 window.addEventListener("scroll", () => {
-    const aside = document.querySelector(".aside-drawer");
+    const aside = document.querySelectorAll(".aside-drawer");
     const footer = document.querySelector("#footer-container") || document.querySelector("footer");
     if (!aside || !footer) return;
     const footerRect = footer.getBoundingClientRect();

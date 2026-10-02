@@ -1,0 +1,23 @@
+/* ==========================================
+    TOASTS / CARTELES FLOTANTES
+========================================== */
+.toast {
+    z-index: 2000;
+    position: fixed;
+    right: var(--space-md);
+    bottom: var(--space-md);
+    padding: var(--space-base) var(--space-md);
+    transform: translateY(0.8rem);
+    border-radius: var(--radius-md);
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition-fade);
+}
+.toast.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+.toast-copied-link {
+    background-color: var(--bg-toast);
+    color: var(--text-toast);
+}

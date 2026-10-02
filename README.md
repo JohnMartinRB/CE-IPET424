@@ -3,7 +3,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](<https://img.shields.io/badge/versi%C3%B3n-0.28%20(Alpha)-blue>)
+![Versión](<https://img.shields.io/badge/versi%C3%B3n-0.29%20(Alpha)-blue>)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
@@ -37,7 +37,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.28` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.29` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
 | **Lanzamiento Estable (v1.0)** | Martes 3 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
@@ -102,11 +102,11 @@ CE-IPET424/
 │   │   └── mascot/                   # Ilustraciones de la mascota
 │   └── videos/                       # Clips y videos institucionales
 ├── components/                       # Componentes HTML reutilizables
-│   ├── aside-config.html             # Aside desplegable modular
-│   ├── aside-news.html               # Aside desplegable modular
-│   ├── footer.html                   # Pie de página modular
-│   ├── header.html                   # Encabezado y navegación modular
-│   └── whats-new-modal.html          # Modal de novedades de la version
+│   ├── _aside-config.html            # Aside desplegable modular
+│   ├── _aside-news.html              # Aside desplegable modular
+│   ├── _footer.html                  # Pie de página modular
+│   ├── _header.html                  # Encabezado y navegación modular
+│   └── _modal-whats-new.html         # Modal de novedades de la version
 ├── css/                              # Estilos e identidades visuales
 │   ├── base.css                      # Reset y estilos globales
 │   ├── desktop.css                   # Responsive design para pantallas grandes
@@ -167,7 +167,23 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 
 AVISO: Se incluyen únicamente las versiones completas
 
-- **`v0.28-alpha` (Actual)**
+- **`v0.29-alpha` (Actual)**
+    - Se agregó un nuevo modal de bienvenida y advertencia informando que el sitio está en desarrollo
+    - Se agregó un botón en accesibilidad para desactivar las Transiciones
+    - Se agregó un controlador para el tamaño de texto del sitio
+    - Se cambiaron muchos colores en modo oscuro
+    - Ahora el logo del header en modo oscuro y alto contraste
+    - Se restructuraron las carpetas de css y js, dividiendo los archivos en varias subcarpetas
+    - El css ahora se encuentra dividido en módulos por componentes
+    - Se eliminaron los archivos base, tablet y desktop.css ya que ahora las propiedades se encuentran repartidas
+    - Los módulos de js ahora están divididos en carpetas
+    - Se rehizo la función para mostrar los modales
+    - Se agregaron muchos comentarios y se eliminaron otros
+    - Se renombraron las clases del modal
+    - Se modificó el robots.txt para evitar la indexación
+    - Se agregó la etiqueta meta name="robots" en los html con el mismo propósito
+    - Se expandieron y actualizaron security.txt y humans.txt
+- **`v0.28-alpha`**
     - Se expandió el archivo `variables.css` para crear un sistema completo de Design Tokens
     - Se estandarizaron y unificaron las variables para `padding`, `margin`, `border-radius`, escalas tipográficas, sombras y tiempos de transición
     - Estas variables ahora son iguales tanto para celular como para pc
@@ -230,7 +246,7 @@ AVISO: Se incluyen únicamente las versiones completas
     - Estandarización de variables para `padding`, `margin`, `gap`, `border-radius`, escalas tipográficas y tiempos de transición.
     - Refactorización de reglas en `base.css` y `desktop.css` eliminando valores estáticos (_hardcodeados_).
 
-- [ ] **v0.29 - Suite de Accesibilidad Ampliada**
+- [x] **v0.29 - Suite de Accesibilidad Ampliada**
     - Nuevos controles para ajustar el tamaño del texto (+ / -).
     - Selector de alto contraste e indicador de fuentes para dislexia.
     - Mejoras en la navegación por teclado (`:focus-visible`) y atributos ARIA.

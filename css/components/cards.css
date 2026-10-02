@@ -1,0 +1,41 @@
+/* ==========================================
+    TARJETAS DE SECCIONES Y SUBSECCIONES
+========================================== */
+.section-card {
+    max-width: 100%;
+    margin: var(--space-md) auto;
+    padding: var(--space-base) var(--space-md);
+    border-radius: var(--radius-xl);
+    background: var(--bg-section-card);
+    box-shadow: var(--shadow-section-card);
+    color: var(--text-section-card);
+    transition: var(--transition-smooth);
+}
+.section-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-section-card-hover);
+}
+.subsection-card {
+    max-width: 100%;
+    margin: var(--space-md) auto;
+    padding: var(--space-base) var(--space-md);
+    border-radius: var(--radius-lg);
+    background: var(--bg-subsection-card);
+    box-shadow: var(--shadow-subsection-card);
+    color: var(--text-subsection-card);
+    transition: var(--transition-smooth);
+}
+.subsection-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-subsection-card-hover);
+}
+.section-card p,
+.subsection-card p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}

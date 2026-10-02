@@ -1,0 +1,13 @@
+/* ==========================================
+    PÁGINA DE ERROR 404
+========================================== */
+.error-section {
+    padding: var(--space-xl) var(--space-base);
+    text-align: center;
+}
+.error-code {
+    margin: 0;
+    padding: var(--space-base) 0;
+    color: var(--text-body);
+    font-size: var(--fs-4xl);
+}

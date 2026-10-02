@@ -1,0 +1,104 @@
+/* ==========================================
+    TARJETA DE FOOTER
+========================================== */
+.footer-card {
+    width: 95%;
+    max-width: 95%;
+    height: auto;
+    margin: var(--space-xs) auto;
+    padding: var(--space-lg);
+    border-radius: var(--radius-xl);
+    background: var(--bg-footer);
+    color: var(--text-footer);
+    transition: var(--transition-fade);
+}
+a.footer-link,
+a.footer-link:visited {
+    color: var(--text-footer) !important;
+    transition: var(--transition-fast);
+}
+a.footer-link:hover {
+    color: var(--text-footer-hover) !important;
+}
+a.footer-link:active {
+    transform: scale(0.95);
+    color: var(--text-footer-hover) !important;
+}
+.footer-icon-link {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    gap: var(--space-xs);
+}
+.footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer-column-title {
+    display: flex;
+    margin-bottom: var(--space-xs);
+    text-align: left;
+    text-transform: uppercase;
+}
+.footer-links-social,
+.footer-links-project {
+    display: flex;
+    flex-direction: column;
+}
+.footer-icon {
+    width: 16px;
+    height: 16px;
+    stroke: var(--text-footer);
+    stroke-width: 1.5;
+}
+a.footer-link,
+.footer-text {
+    margin: var(--space-xs) 0;
+}
+.footer-text {
+    text-align: left;
+}
+.footer-copyright {
+    margin-top: var(--space-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    text-wrap: balance;
+}
+.footer-copyright-main {
+    margin-bottom: 0.3rem;
+    color: var(--text-footer);
+    font-size: var(--fs-sm);
+}
+.footer-copyright-sub {
+    color: var(--text-footer);
+    font-size: var(--fs-xs);
+    opacity: 0.85;
+}
+.footer-copyright-sub span {
+    font-weight: bold;
+}
+.footer-logo {
+    display: block;
+    width: auto;
+    height: 3rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .footer-card {
+        width: 100%;
+        max-width: 70%;
+        height: auto !important;
+        min-height: fit-content;
+        max-height: none !important;
+        overflow: visible;
+    }
+    .footer-icon {
+        width: 20px;
+        height: 20px;
+        stroke-width: 1.75;
+    }
+    .footer-logo {
+        height: 4.5rem;
+    }
+}

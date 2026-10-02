@@ -1,3 +1,21 @@
+0.29
+Se agregó un nuevo modal de bienvenida y advertencia informando que el sitio está en desarrollo
+Se agregó un botón en accesibilidad para desactivar las Transiciones
+Se agregó un controlador para la fuente de texto del sitio
+Se cambiaron muchos colores en modo oscuro
+Ahora el logo del header en modo oscuro y alto contraste
+Se restructuraron las carpetas de css y js, dividiendo los archivos en varias subcarpetas
+El css ahora se encuentra dividido en módulos por componentes
+Se eliminaron los archivos base, tablet y desktop.css ya que ahora las propiedades se encuentran repartidas
+Los módulos de js ahora están divididos en carpetas
+Se rehizo la función para mostrar los modales
+Se agregaron muchos comentarios y se eliminaron otros
+Se renombraron las clases del modal
+Se modificó el robots.txt para evitar la indexación
+Se agregó la etiqueta meta name="robots" en los html con el mismo propósito
+Se expandieron y actualizaron security.txt y humans.txt
+
+
 0.28
 Se expandió el archivo `variables.css` para crear un sistema completo de Design Tokens
 Se estandarizaron y unificaron las variables para `padding`, `margin`, `border-radius`, escalas tipográficas, sombras y tiempos de transición

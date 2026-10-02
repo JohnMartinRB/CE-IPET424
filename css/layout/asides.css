@@ -1,0 +1,125 @@
+/* ==========================================
+    ASIDES DESPLEGABLES
+========================================== */
+.options,
+.aside-drawer,
+.aside-config-button-toggle {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .aside-drawer {
+        display: flex;
+        z-index: 100;
+        position: fixed;
+        top: 59vh;
+        left: 1%;
+        align-items: center;
+        width: 20px;
+        height: 76%;
+        max-height: 80vh;
+        padding: var(--space-base) var(--space-md);
+        overflow: hidden;
+        transform: translateY(-50%);
+        border-radius: var(--radius-xl);
+        background: var(--bg-base-inverted);
+        box-shadow: var(--shadow-base);
+        transition: var(--transition-drawer);
+    }
+    .aside-config-button-toggle {
+        display: flex;
+        z-index: 2;
+        position: fixed;
+        top: 65%;
+        right: 1%;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 100%;
+        border: none;
+        border-radius: var(--radius-sm);
+        background: transparent;
+        box-shadow: var(--shadow-aside-button);
+        cursor: url(../assets/img/cursors/cursor-hover.svg), pointer;
+        transition: var(--transition-ultra-fast);
+    }
+    .aside-config-button-toggle:hover {
+        background-color: var(--bg-aside-button-hover);
+    }
+    .aside-icon-toggle {
+        color: var(--text-body);
+        font-weight: bold;
+        transition: var(--transition-button);
+        user-select: none;
+    }
+    .aside-options {
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 230px;
+        max-height: 80vh;
+        padding: var(--space-lg) 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        opacity: 0;
+        transition: var(--transition-drawer-content);
+    }
+    .aside-options::-webkit-scrollbar {
+        width: 0.3rem;
+    }
+    .aside-options::-webkit-scrollbar-thumb {
+        border-radius: var(--radius-xs);
+        background-color: var(--scrollbar-thumb);
+    }
+    .aside-options::-webkit-scrollbar-thumb:hover {
+        background-color: var(--scrollbar-thumb-hover);
+    }
+    .aside-drawer.open {
+        width: 19%;
+    }
+    .aside-drawer.open .aside-content,
+    .aside-drawer.open .aside-options {
+        visibility: visible;
+        opacity: 1;
+        transition: var(--transition-drawer-content);
+    }
+    .aside-button-toggle:hover {
+        filter: brightness(1.1);
+    }
+    .aside-drawer.open .aside-icon-toggle {
+        transform: rotate(180deg);
+        transition: var(--transition-drawer-content);
+    }
+
+    /* ==========================================
+    ACCESIBILIDAD: CONTROL DE TAMAÑO DE TEXTO
+    ========================================== */
+    .font-size-control-container {
+        width: 100%;
+        margin: 1rem 0;
+        text-align: center;
+    }
+    .font-size-label {
+        display: block;
+        margin-top: 0;
+        margin-bottom: var(--space-xs);
+        font-weight: bold;
+        text-transform: none;
+    }
+    .font-size-buttons-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-xs);
+    }
+    .font-size-value {
+        min-width: 3rem;
+        font-weight: bold;
+        user-select: none;
+    }
+    .aside-news {
+        display: none;
+    }
+}

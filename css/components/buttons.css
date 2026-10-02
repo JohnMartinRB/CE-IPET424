@@ -1,0 +1,63 @@
+/* ==========================================
+    PERSONALIZACIÓN DE BOTONES
+========================================== */
+.button,
+a.button {
+    width: 12rem;
+    min-width: 10rem;
+    margin: var(--space-base) auto;
+    padding: var(--space-sm);
+    border: 2px solid var(--border-button);
+    border-radius: var(--radius-sm);
+    background-color: var(--bg-button);
+    color: var(--text-button);
+    font-weight: bold;
+    font-size: var(--fs-sm);
+    text-align: center;
+    text-transform: uppercase;
+    transition: var(--transition-button);
+    user-select: none;
+}
+.button:hover,
+a.button:hover {
+    background-color: var(--bg-button-hover);
+    color: var(--text-button-hover) !important;
+}
+.button:hover,
+a:hover {
+    cursor: var(--cursor-hover);
+}
+.button:active,
+a.button:active {
+    transform: scale(0.95) translateY(2px);
+    background-color: var(--bg-button-hover);
+    transition: var(--transition-active);
+}
+.button-active {
+    background-color: var(--bg-button-hover) !important;
+    color: var(--text-button-hover) !important;
+    cursor: var(--cursor-hover);
+}
+.button:visited,
+a.button:visited {
+    color: var(--text-button) !important;
+}
+.button:focus,
+a.button:focus {
+    outline: 2px solid var(--outline-button-focus);
+}
+
+@media (min-width: 1024px) {
+    .button-small {
+        width: auto !important;
+        min-width: 2.4rem !important;
+        margin: 0 !important;
+        padding: var(--space-xs) !important;
+        font-size: 90% !important;
+    }
+    .button-small:disabled {
+        transform: none !important;
+        cursor: not-allowed !important;
+        opacity: 0.4;
+    }
+}

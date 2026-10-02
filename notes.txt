@@ -18,8 +18,8 @@ function getWeatherIcon(code) {
 
 
 localStorage.removeItem("siteVersion");
+localStorage.removeItem("inDevWarningSeen");
 location.reload();
-
 
 
 function extractLatestVersionChanges(fullText) {

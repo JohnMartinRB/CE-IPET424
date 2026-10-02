@@ -24,7 +24,7 @@ export function renderLoader() {
 export async function initComponents() {
     // Función para cargar HTML dinámicamente
     function loadComponent(containerId, htmlFile) {
-        fetch(htmlFile)
+        return fetch(htmlFile)
             .then((response) => {
                 if (!response.ok) {
                     throw new Error(`No se pudo cargar ${htmlFile}: ${response.status}`);
@@ -61,6 +61,7 @@ export async function initComponents() {
         loadComponent("aside-config-container", "components/_aside-config.html"),
         loadComponent("aside-news-container", "components/_aside-news.html"),
         loadComponent("footer-container", "components/_footer.html"),
+        loadComponent("modal-in-dev-container", "components/_modal-in-dev.html"),
         loadComponent("modal-whats-new-container", "components/_modal-whats-new.html"),
     ]);
     // Una vez inyectado el HTML del aside en el DOM:
