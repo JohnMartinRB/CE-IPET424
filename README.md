@@ -107,26 +107,53 @@ CE-IPET424/
 │   ├── _footer.html                  # Pie de página modular
 │   ├── _header.html                  # Encabezado y navegación modular
 │   └── _modal-whats-new.html         # Modal de novedades de la version
-├── css/                              # Estilos e identidades visuales
-│   ├── base.css                      # Reset y estilos globales
-│   ├── desktop.css                   # Responsive design para pantallas grandes
-│   ├── fonts.css                     # Carga y definición de fuentes
-│   ├── normalize.css                 # Normalización entre navegadores
-│   ├── styles.css                    # Hoja de ruta principal (@import)
-│   ├── tablet.css                    # Responsive design para tablets
-│   ├── themes.css                    # Variables CSS de temas de color
-│   └── variables.css                 # Variables generales del sistema
-├── js/                               # Lógica e interactividad del cliente
-│   ├── accessibility.js              # Herramientas de accesibilidad
-│   ├── banners.js                    # Banners, barras y toasts
-│   ├── buttons.js                    # Botones y widgets
-│   ├── components.js                 # Carga dinámica de header y footer
-│   ├── config.js                     # Configuración general del sitio
-│   ├── main.js                       # Inicialización y control global del DOM
-│   ├── shortcuts.js                  # Atajos de teclado
-│   ├── sound.js                      # Efectos de sonido
-│   ├── theme.js                      # Control y persistencia del modo oscuro/claro
-│   └── whats-new.js                  # Ventana modal de novedades
+├── css/                              # Hojas de estilos CSS
+│   ├── base/                         # Hojas de estilos principales
+│   │   ├── accessibility.css         # Estilos para opciones de accesibilidad
+│   │   ├── fonts.css                 # Carga y definición de tipografías
+│   │   ├── normalize.css             # Normalización entre navegadores
+│   │   ├── reset.css                 # Reset y estilos globales del DOM
+│   │   ├── themes.css                # Variables CSS de temas de color
+│   │   ├── typography.css            # Jerarquía y estilos tipográficos
+│   │   └── variables.css             # Variables generales del sistema
+│   ├── components/                   # Hojas de estilos por componente
+│   │   ├── accordion.css             # Estilos para acordeones desplegables
+│   │   ├── banners.css               # Banners informativos
+│   │   ├── buttons.css               # Botones e interactividad
+│   │   ├── cards.css                 # Tarjetas de contenido
+│   │   ├── inputs.css                # Campos de formulario y controles
+│   │   ├── loader.css                # Pantalla y animación de carga
+│   │   ├── modals.css                # Ventanas modales
+│   │   ├── scrollbar.css             # Personalización de la barra de desplazamiento
+│   │   ├── toasts.css                # Notificaciones flotantes / mensajes emergentes
+│   │   └── widgets.css               # Widgets (clima, accesibilidad, etc.)
+│   ├── layout/                       # Hojas de estilos del layout
+│   │   ├── asides.css                # Menús y paneles laterales
+│   │   ├── content.css               # Disposición del contenedor principal
+│   │   ├── footer.css                # Pie de página
+│   │   ├── header.css                # Encabezado principal
+│   │   └── nav.css                   # Barra de navegación
+│   ├── pages/                        # Hojas de estilos específicas por página
+│   │   ├── error.css                 # Estilos para la página 404 / errores
+│   │   └── home.css                  # Estilos específicos de la página principal
+│   └── styles.css                    # Hoja de ruta principal (@import maestro)
+├── js/                               # Funciones Javascript
+│   ├── ui/                           # Funciones de la interfaz
+│   │   ├── banners.js                # Control de banners de aviso
+│   │   ├── buttons.js                # Comportamiento e interacción de botones
+│   │   ├── components.js             # Control de componentes varios
+│   │   ├── modals.js                 # Apertura y cierre de ventanas modales
+│   │   └── theme.js                  # Lógica de conmutación de temas (oscuro/claro)
+│   ├── utils/                        # Funciones del back
+│   │   ├── accessibility.js          # Utilidades generales de accesibilidad
+│   │   ├── animations.js             # Efectos y animaciones
+│   │   ├── dyslexia.js               # Modo de tipografía accesible (Atkinson)
+│   │   ├── font-size.js              # Ajuste dinámico de tamaño de fuente
+│   │   ├── shortcuts.js              # Atajos de teclado
+│   │   └── sound.js                  # Efectos de audio / feedback sonoro
+│   ├── config.js                     # Configuraciones
+│   └── main.js                       # Punto de entrada principal e inicializador
+├── .gitignore                        # Ignora ciertos archivos al hacer commit
 ├── .nojekyll                         # Evita que GitHub Pages omita carpetas con guion bajo
 ├── 404.html                          # Página personalizada de error 404
 ├── about.html                        # Sub-página institucional ("Sobre Nosotros")
@@ -170,9 +197,11 @@ AVISO: Se incluyen únicamente las versiones completas
 - **`v0.29-alpha` (Actual)**
     - Se agregó un nuevo modal de bienvenida y advertencia informando que el sitio está en desarrollo
     - Se agregó un botón en accesibilidad para desactivar las Transiciones
+    - Se agregó un botón en accesibilidad para cambiar a una fuente de texto para personas con dislexia
     - Se agregó un controlador para el tamaño de texto del sitio
     - Se cambiaron muchos colores en modo oscuro
     - Ahora el logo del header en modo oscuro y alto contraste
+    - Se agregó un atajo de teclado para abrir el aside
     - Se restructuraron las carpetas de css y js, dividiendo los archivos en varias subcarpetas
     - El css ahora se encuentra dividido en módulos por componentes
     - Se eliminaron los archivos base, tablet y desktop.css ya que ahora las propiedades se encuentran repartidas
@@ -220,11 +249,6 @@ AVISO: Se incluyen únicamente las versiones completas
       Tipografía y Texto (Typography)
       Colores y Estilos Visuales (Visuals & Colors)
       Transiciones y Animaciones (Misc & Transitions)
-- **`v0.24-alpha`**
-    - Se agregaron dos nuevos modos de color: alto contraste y escala de grises (monocromático). El primero modifica toda la paleta de colores y el segundo aplica un filtro a la página. Ambos modifican además el favicon
-    - Se reworkeó todo el archivo theme.js y sus funciones para permitir añadir más temas de color en un futuro
-    - Se agregaron nuevos atributos a los botones del aside
-    - Se cambió el texto del footer-copyright en 404.html
 
 ---
 

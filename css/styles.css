@@ -9,6 +9,7 @@
 @import "base/themes.css";
 @import "base/fonts.css";
 @import "base/typography.css";
+@import "base/accessibility.css";
 
 /* COMPONENTES DE UI Y UTILIDADES */
 @import "components/loader.css";

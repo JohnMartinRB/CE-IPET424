@@ -18,6 +18,13 @@ Se expandieron y actualizaron security.txt y humans.txt
 0.29.1
 Se cambió la fuente por defecto a 100% en lugar de 90%
 
+0.29.2
+Se agregó un botón en accesibilidad para cambiar a una fuente de texto para personas con dislexia
+Se agregó un atajo de teclado para abrir el aside
+Se movieron los temas de accesibilidad a su propio archivo css
+Se actualizó el README y su árbol de carpetas
+
+
 0.28
 Se expandió el archivo `variables.css` para crear un sistema completo de Design Tokens
 Se estandarizaron y unificaron las variables para `padding`, `margin`, `border-radius`, escalas tipográficas, sombras y tiempos de transición

@@ -8,6 +8,7 @@ import { initTheme } from "./ui/theme.js";
 import { initModals } from "./ui/modals.js";
 import { initFontSize } from "./utils/font-size.js";
 import { initAnimations } from "./utils/animations.js";
+import { initDyslexia } from "./utils/dyslexia.js";
 import { initSound, playSound } from "./utils/sound.js";
 import { initShortcuts } from "./utils/shortcuts.js";
 import { config } from "./config.js";
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initModals();
     initFontSize();
     initAnimations();
+    initDyslexia();
     initSound();
     playSound();
     initShortcuts();

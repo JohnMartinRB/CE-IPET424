@@ -33,3 +33,19 @@
     font-family: "Nunito Sans";
     font-display: swap;
 }
+/* Atkinson Hyperlegible (regular) */
+@font-face {
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/atkinson-hyperlegible-v12-latin-regular.woff2") format("woff2");
+    font-family: "Atkinson Hyperlegible";
+    font-display: swap;
+}
+/* Atkinson Hyperlegible (negrita) */
+@font-face {
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/atkinson-hyperlegible-v12-latin-700.woff2") format("woff2");
+    font-family: "Atkinson Hyperlegible";
+    font-display: swap;
+}

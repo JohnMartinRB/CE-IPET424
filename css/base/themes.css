@@ -1,4 +1,8 @@
 /* ==========================================
+    TEMAS DE COLOR EN LA WEB
+========================================== */
+
+/* ==========================================
     MODO OSCURO
 ========================================== */
 body.dark-mode {
@@ -187,36 +191,6 @@ body.high-contrast-mode :is(.nav-card, .footer-card, .aside-drawer, .section-car
 }
 
 /* ==========================================
-    MODO ESCALA DE GRISES
-========================================== */
-html.grayscale-mode,
-body.grayscale-mode {
-    filter: grayscale(100%);
-}
-
-/* ==========================================
-    MODO DESCANSO
-========================================== */
-html.rest-mode::after {
-    z-index: 998;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(255, 162, 0, 0.233);
-    content: "";
-    pointer-events: none;
-    transition:
-        background-color 0.7s ease,
-        opacity 0.7s ease;
-}
-html.rest-mode {
-    filter: sepia(20%) brightness(95%);
-    transition: filter 0.7s ease;
-}
-
-/* ==========================================
     MODO CÓDIGO
 ========================================== */
 body.code-mode {
@@ -325,26 +299,23 @@ body.code-mode iframe {
 }
 
 /* ==========================================
-    ACCESIBILIDAD: DESACTIVACIÓN DE ANIMACIONES
+    MODO DESCANSO
 ========================================== */
-html.reduce-motion *,
-html.reduce-motion *::before,
-html.reduce-motion *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
+html.rest-mode::after {
+    z-index: 998;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 162, 0, 0.233);
+    content: "";
+    pointer-events: none;
+    transition:
+        background-color 0.7s ease,
+        opacity 0.7s ease;
 }
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: 0.01ms !important;
-    }
-}
-html.reduce-motion .loader-spinner {
-    animation: none !important;
+html.rest-mode {
+    filter: sepia(20%) brightness(95%);
+    transition: filter 0.7s ease;
 }
