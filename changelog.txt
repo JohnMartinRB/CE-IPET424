@@ -15,6 +15,8 @@ Se modificó el robots.txt para evitar la indexación
 Se agregó la etiqueta meta name="robots" en los html con el mismo propósito
 Se expandieron y actualizaron security.txt y humans.txt
 
+0.29.1
+Se cambió la fuente por defecto a 100% en lugar de 90%
 
 0.28
 Se expandió el archivo `variables.css` para crear un sistema completo de Design Tokens

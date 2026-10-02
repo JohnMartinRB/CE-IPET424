@@ -6,7 +6,7 @@ import { playSound } from "../utils/sound.js";
 const LEVELS = [85, 90, 95, 100, 105, 110, 115, 120, 125, 130];
 
 let currentLevelIndex =
-    localStorage.getItem("fontSizeIndex") !== null ? parseInt(localStorage.getItem("fontSizeIndex"), 10) : 1;
+    localStorage.getItem("fontSizeIndex") !== null ? parseInt(localStorage.getItem("fontSizeIndex"), 10) : 3;
 
 function applyFontSize() {
     const level = LEVELS[currentLevelIndex];
@@ -32,8 +32,8 @@ export function increaseFontSize() {
 }
 
 export function resetFontSize() {
-    if (currentLevelIndex !== 1) {
-        currentLevelIndex = 1;
+    if (currentLevelIndex !== 3) {
+        currentLevelIndex = 3;
         applyFontSize();
         playSound("pop-medium.mp3", 0.2);
     }
