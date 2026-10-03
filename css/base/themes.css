@@ -82,6 +82,9 @@ body.dark-mode a:hover {
 body.dark-mode .button:hover {
     cursor: var(--cursor-hover-dark);
 }
+body.dark-mode .button-round:hover {
+    cursor: var(--cursor-hover-dark);
+}
 body.dark-mode .aside-config-button-toggle:hover {
     cursor: var(--cursor-hover-dark);
 }
@@ -167,6 +170,9 @@ body.high-contrast-mode a:hover {
     cursor: var(--cursor-hover-dark);
 }
 body.high-contrast-mode .button:hover {
+    cursor: var(--cursor-hover-dark);
+}
+body.high-contrast-mode .button-round:hover {
     cursor: var(--cursor-hover-dark);
 }
 body.high-contrast-mode .aside-config-button-toggle:hover {
@@ -272,7 +278,7 @@ body.code-mode
 }
 
 body.code-mode :is(h1, h2, h3, h4, h5, h6, p, a, span, .button, summary, details, label, ::placeholder) {
-    font-family: monospace;
+    font-family: "JetBrains Mono";
 }
 
 body.code-mode {
@@ -282,6 +288,9 @@ body.code-mode a:hover {
     cursor: var(--cursor-hover-dark);
 }
 body.code-mode .button:hover {
+    cursor: var(--cursor-hover-dark);
+}
+body.code-mode .button-round:hover {
     cursor: var(--cursor-hover-dark);
 }
 body.code-mode .aside-config-button-toggle:hover {

@@ -115,6 +115,9 @@ body.colorblind-mode a:hover {
 body.colorblind-mode .button:hover {
     cursor: var(--cursor-hover-dark);
 }
+body.colorblind-mode .button-round:hover {
+    cursor: var(--cursor-hover-dark);
+}
 body.colorblind-mode .aside-config-button-toggle:hover {
     cursor: var(--cursor-hover-dark);
 }

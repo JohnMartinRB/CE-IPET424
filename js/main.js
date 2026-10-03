@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     config();
 });
 
+console.log("C.E. IPET 424 - Sitio inicializado correctamente");
+
 // Delegación global para interceptar el clic derecho en imágenes fijas y dinámicas
 document.addEventListener("contextmenu", function (e) {
     if (e.target.tagName === "IMG" || e.target.closest("img")) {
@@ -50,6 +52,7 @@ window.addEventListener("load", () => {
             loader.classList.add("fade-out");
         }
     }, 1000); // 1000 ms = 1 segundo de espera
+    playSound("toast.mp3", 0.5);
 });
 
 // Ajustar posición del aside para no solapar el footer al hacer scroll

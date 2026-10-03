@@ -43,6 +43,12 @@ Los cursores en modo daltónico ahora son como en el modo oscuro
 Se reordenaron los botones del aside de opciones
 El logo del Header ahora es claro en modo daltónico
 
+0.29.8
+Se agregó un botón en la parte inferior derecha para volver arribba de todo
+Se cambió la fuente del modo código, de Monospace a JetBrains Mono (aún no funciona)
+Se cambió el nombre de descarga de los AEC y AEC (anexo)
+Se agregó un mensaje en la consola
+
 
 0.28
 Se expandió el archivo `variables.css` para crear un sistema completo de Design Tokens

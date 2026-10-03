@@ -47,6 +47,38 @@ a.button:focus {
     outline: 2px solid var(--outline-button-focus);
 }
 
+/* ========================================
+    BOTÓN VOLVER ARRIBA
+======================================== */
+.button-scroll-top {
+    visibility: hidden;
+    z-index: 999;
+    position: fixed;
+    right: var(--space-md);
+    bottom: var(--space-md);
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: var(--radius-full);
+    background-color: var(--bg-button);
+    color: var(--text-button);
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: var(--transition-fade);
+}
+.button-scroll-top.visible {
+    visibility: visible;
+    opacity: 1;
+}
+.button-scroll-top:hover {
+    transform: translateY(-3px);
+    background-color: var(--bg-button-hover);
+}
+.button-round {
+    cursor: var(--cursor-hover);
+}
+
 @media (min-width: 1024px) {
     .button-small {
         width: auto !important;

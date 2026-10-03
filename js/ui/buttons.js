@@ -26,6 +26,23 @@ export function initButtons() {
             aside.classList.toggle("open");
         }
     });
+    // Botón de volver arriba
+    const buttonScrollTop = document.getElementById("button-scroll-top");
+    if (buttonScrollTop) {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 150) {
+                buttonScrollTop.classList.add("visible");
+            } else {
+                buttonScrollTop.classList.remove("visible");
+            }
+        });
+        buttonScrollTop.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        });
+    }
 }
 
 export async function getVillaDoloresWeather() {

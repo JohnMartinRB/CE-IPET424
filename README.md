@@ -198,6 +198,7 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
     - Se agregó un botón en accesibilidad para cambiar a una fuente de texto para personas con dislexia
     - Se agregó un controlador para el tamaño de texto del sitio
     - Se agregó un modo de accesibilidad para personas con daltonismo
+    - Se agregó un botón en la parte inferior derecha para volver arribba de todo
     - Se agregó un atajo de teclado para el modo daltónico y otro para abrir el aside
     - Se reordenaron los botones del aside de opciones
     - Se cambiaron muchos colores en modo oscuro
