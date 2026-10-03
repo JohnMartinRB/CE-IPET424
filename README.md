@@ -199,6 +199,7 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
     - Se agregó un controlador para el tamaño de texto del sitio
     - Se agregó un modo de accesibilidad para personas con daltonismo
     - Se agregó un atajo de teclado para el modo daltónico y otro para abrir el aside
+    - Se reordenaron los botones del aside de opciones
     - Se cambiaron muchos colores en modo oscuro
     - Ahora el logo del header en modo oscuro y alto contraste
     - Se agregó un atajo de teclado para abrir el aside

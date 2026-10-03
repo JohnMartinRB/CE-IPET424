@@ -39,6 +39,10 @@ Se agregó una nueva tarjeta de descarga del anexo
 0.29.6
 Los cursores en modo daltónico ahora son como en el modo oscuro
 
+0.29.7
+Se reordenaron los botones del aside de opciones
+El logo del Header ahora es claro en modo daltónico
+
 
 0.28
 Se expandió el archivo `variables.css` para crear un sistema completo de Design Tokens

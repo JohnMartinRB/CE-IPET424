@@ -55,12 +55,7 @@ export function initTheme() {
     function updateLogo(themeKey) {
         const logoHeader = document.getElementById("header-logo-centro");
         if (logoHeader) {
-            if (
-                themeKey === "dark" ||
-                themeKey === "high-contrast" ||
-                themeKey === "code" ||
-                themeKey === "colorblind"
-            ) {
+            if (themeKey === "dark" || themeKey === "high-contrast" || themeKey === "code") {
                 logoHeader.src = "assets/img/logos/centro-dark.png";
             } else {
                 logoHeader.src = "assets/img/logos/centro.png";
