@@ -28,6 +28,16 @@ html.reduce-motion .loader-spinner {
 }
 
 /* ==========================================
+    FUENTE PARA DISLEXIA
+========================================== */
+html.dyslexic-mode,
+html.dyslexic-mode * {
+    line-height: var(--lh-normal) !important;
+    font-family: "Atkinson Hyperlegible", sans-serif !important;
+    letter-spacing: 0.03em !important;
+}
+
+/* ==========================================
     MODO ESCALA DE GRISES
 ========================================== */
 html.grayscale-mode,
@@ -36,11 +46,66 @@ body.grayscale-mode {
 }
 
 /* ==========================================
-    FUENTE PARA DISLEXIA
+    MODO DALTÓNICO
 ========================================== */
-html.dyslexic-mode,
-html.dyslexic-mode * {
-    line-height: var(--lh-normal) !important;
-    font-family: "Atkinson Hyperlegible", sans-serif !important;
-    letter-spacing: 0.03em !important;
+body.colorblind-mode {
+    /* BODY */
+    --bg-body: #0b131e;
+    --text-body: #ffffff;
+    /* PANTALLA DE CARGA */
+    --bg-loader-screen: #0b131e;
+    /* WHATS NEW VERSION */
+    --bg-whats-new-version: #005ab5;
+    --text-whats-new-version: #ffffff;
+    /* CONTENIDO */
+    --bg-base: linear-gradient(90deg, #121d2d 0%, #0b131e 100%);
+    --bg-base-inverted: linear-gradient(-90deg, #121d2d 0%, #0b131e 100%);
+    /* LINK */
+    --link: #ffc20a;
+    --link-hover: #ffffff;
+    --bg-link-hover: rgba(255, 194, 10, 0.2);
+    /* BARRA DE PROGRESO */
+    --progress-bar: #ffc20a;
+    /* TARJETAS */
+    --bg-section-card: linear-gradient(90deg, #1a293d 0%, #121d2d 100%);
+    --text-section-card: #ffffff;
+    --bg-subsection-card: linear-gradient(-90deg, #22344d 0%, #1a293d 100%);
+    --text-subsection-card: #ffffff;
+    /* TITULOS */
+    --text-titles: #ffc20a;
+    /* BOTONES / ENLACES */
+    --bg-button: #005ab5;
+    --bg-button-hover: #ffc20a;
+    --text-button: #ffffff;
+    --text-button-hover: #0b131e;
+    --border-button: #005ab5;
+    --bg-aside-button-hover: #005ab5;
+    /* INPUTS */
+    --bg-input: #0b131e;
+    --text-input: #ffffff;
+    --border-input: #005ab5;
+    --border-input-focus: #ffc20a;
+    /* FOOTER */
+    --bg-footer: linear-gradient(90deg, #080d14 0%, #0b131e 50%, #080d14 100%);
+    --text-footer: #ffc20a;
+    --text-footer-hover: #ffffff;
+    --text-copy: #a0aec0;
+    /* TOAST / BANNER */
+    --bg-toast: #005ab5;
+    --text-toast: #ffffff;
+    --bg-banner: #d55e00;
+    /* SELECTION */
+    --bg-selection: #ffc20a;
+    --text-selection: #0b131e;
+    /* SCROLLBAR */
+    --scrollbar-thumb: #005ab5;
+    --scrollbar-thumb-hover: #ffc20a;
+    /* WEATHER WIDGET */
+    --bg-weather-widget: rgba(26, 41, 61, 0.7);
+    --text-weather-widget: #ffffff;
+    --border-weather-widget: #005ab5;
+}
+
+body.colorblind-mode #inicio {
+    background-image: url("../../assets/img/bg/bg_3.jpg");
 }

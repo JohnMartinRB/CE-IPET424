@@ -27,6 +27,11 @@ const THEMES = {
         favicon: "assets/img/favicons/dark.png",
         buttonText: "Modo Código",
     },
+    colorblind: {
+        class: "colorblind-mode",
+        favicon: "assets/img/favicons/dark.png",
+        buttonText: "Modo Daltónico",
+    },
 };
 
 export function initTheme() {
@@ -50,7 +55,12 @@ export function initTheme() {
     function updateLogo(themeKey) {
         const logoHeader = document.getElementById("header-logo-centro");
         if (logoHeader) {
-            if (themeKey === "dark" || themeKey === "high-contrast") {
+            if (
+                themeKey === "dark" ||
+                themeKey === "high-contrast" ||
+                themeKey === "code" ||
+                themeKey === "colorblind"
+            ) {
                 logoHeader.src = "assets/img/logos/centro-dark.png";
             } else {
                 logoHeader.src = "assets/img/logos/centro.png";
@@ -64,6 +74,7 @@ export function initTheme() {
         if (body.classList.contains("high-contrast-mode")) return "high-contrast";
         if (body.classList.contains("grayscale-mode")) return "grayscale";
         if (body.classList.contains("code-mode")) return "code";
+        if (body.classList.contains("colorblind-mode")) return "colorblind";
         return "light";
     }
     // Aplica el tema seleccionado al <body> borrando otros temas previos
@@ -71,7 +82,7 @@ export function initTheme() {
         const body = document.body;
         const html = document.documentElement; //
         // Remover todas las clases de temas en ambos elementos
-        body.classList.remove("dark-mode", "high-contrast-mode", "grayscale-mode", "code-mode");
+        body.classList.remove("dark-mode", "high-contrast-mode", "grayscale-mode", "code-mode", "colorblind-mode");
         html.classList.remove("grayscale-mode");
         // Si hay una clase para el tema elegido, la agregamos
         if (THEMES[themeKey] && THEMES[themeKey].class) {

@@ -82,4 +82,24 @@ export function initShortcuts() {
             }
         }
     });
+    // Acceso rápido por teclado al modo daltónico
+    document.addEventListener("keydown", (e) => {
+        if (e.altKey && e.key.toLowerCase() === "b") {
+            e.preventDefault();
+            const buttonColorblind = document.getElementById("button-colorblind");
+            if (buttonColorblind) {
+                buttonColorblind.click();
+            }
+        }
+    });
+    // Acceso rápido por teclado al aside de configuración
+    document.addEventListener("keydown", (e) => {
+        if (e.altKey && e.key.toLowerCase() === "o") {
+            e.preventDefault();
+            const buttonConfig = document.getElementById("button-config");
+            if (buttonConfig) {
+                buttonConfig.click();
+            }
+        }
+    });
 }

@@ -176,7 +176,7 @@ body.high-contrast-mode .text:hover {
     cursor: var(--cursor-text-dark);
 }
 body.high-contrast-mode #inicio {
-    background-image: url("../assets/img/bg/bg_2.jpg");
+    background-image: url("../../assets/img/bg/bg_2.jpg");
 }
 body.dark-mode iframe {
     filter: invert(0.9) hue-rotate(180deg) brightness(0.95) contrast(0.9);

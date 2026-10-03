@@ -24,6 +24,11 @@ Se agregó un atajo de teclado para abrir el aside
 Se movieron los temas de accesibilidad a su propio archivo css
 Se actualizó el README y su árbol de carpetas
 
+0.29.3
+Se agregó un modo de accesibilidad para personas con daltonismo
+Se agregó un atajo de teclado para el modo daltónico y otro para abrir el aside (ahora sí)
+Se corrigieron las rutas de los fondos del hero
+
 
 0.28
 Se expandió el archivo `variables.css` para crear un sistema completo de Design Tokens
