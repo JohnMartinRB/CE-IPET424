@@ -32,6 +32,10 @@ Se corrigieron las rutas de los fondos del hero
 0.29.4
 Se agregaron archivos de fuente cursiva (itálica) para Nunito, Nunito Sans y Atkinson Hyperlegible
 
+0.29.5
+Se actualizó el pdf de los AEC y se agregó el pdf del anexo de los AEC
+Se agregó una nueva tarjeta de descarga del anexo
+
 
 0.28
 Se expandió el archivo `variables.css` para crear un sistema completo de Design Tokens
