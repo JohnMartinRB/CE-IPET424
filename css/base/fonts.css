@@ -9,6 +9,14 @@
     font-family: "Nunito";
     font-display: swap;
 }
+/* Nunito (cursiva) */
+@font-face {
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/nunito-v32-latin-italic.woff2") format("woff2");
+    font-family: "Nunito";
+    font-display: swap;
+}
 /* Nunito (negrita) */
 @font-face {
     font-style: normal;
@@ -17,11 +25,27 @@
     font-family: "Nunito";
     font-display: swap;
 }
+/* Nunito (negrita y cursiva) */
+@font-face {
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/nunito-v32-latin-700italic.woff2") format("woff2");
+    font-family: "Nunito";
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+}
 /* Nunito Sans (regular) */
 @font-face {
     font-style: normal;
     font-weight: 400;
     src: url("../../assets/fonts/nunito-sans-v19-latin-regular.woff2") format("woff2");
+    font-family: "Nunito Sans";
+    font-display: swap;
+}
+/* Nunito Sans (cursiva) */
+@font-face {
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/nunito-sans-v19-latin-italic.woff2") format("woff2");
     font-family: "Nunito Sans";
     font-display: swap;
 }
@@ -33,6 +57,14 @@
     font-family: "Nunito Sans";
     font-display: swap;
 }
+/* Nunito Sans (negrita y cursiva) */
+@font-face {
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/nunito-sans-v19-latin-700italic.woff2") format("woff2");
+    font-family: "Nunito Sans";
+    font-display: swap;
+}
 /* Atkinson Hyperlegible (regular) */
 @font-face {
     font-style: normal;
@@ -41,11 +73,27 @@
     font-family: "Atkinson Hyperlegible";
     font-display: swap;
 }
+/* Atkinson Hyperlegible (cursiva) */
+@font-face {
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/atkinson-hyperlegible-v12-latin-italic.woff2") format("woff2");
+    font-family: "Atkinson Hyperlegible";
+    font-display: swap;
+}
 /* Atkinson Hyperlegible (negrita) */
 @font-face {
     font-style: normal;
     font-weight: 700;
     src: url("../fonts/atkinson-hyperlegible-v12-latin-700.woff2") format("woff2");
+    font-family: "Atkinson Hyperlegible";
+    font-display: swap;
+}
+/* Atkinson Hyperlegible (negrita y cursiva) */
+@font-face {
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/atkinson-hyperlegible-v12-latin-700italic.woff2") format("woff2");
     font-family: "Atkinson Hyperlegible";
     font-display: swap;
 }

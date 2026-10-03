@@ -29,6 +29,9 @@ Se agregó un modo de accesibilidad para personas con daltonismo
 Se agregó un atajo de teclado para el modo daltónico y otro para abrir el aside (ahora sí)
 Se corrigieron las rutas de los fondos del hero
 
+0.29.4
+Se agregaron archivos de fuente cursiva (itálica) para Nunito, Nunito Sans y Atkinson Hyperlegible
+
 
 0.28
 Se expandió el archivo `variables.css` para crear un sistema completo de Design Tokens

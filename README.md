@@ -192,8 +192,6 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 
 ## 📜 Historial de Versiones (Changelog)
 
-AVISO: Se incluyen únicamente las versiones completas
-
 - **`v0.29-alpha` (Actual)**
     - Se agregó un nuevo modal de bienvenida y advertencia informando que el sitio está en desarrollo
     - Se agregó un botón en accesibilidad para desactivar las Transiciones
