@@ -106,6 +106,21 @@ body.colorblind-mode {
     --border-weather-widget: #005ab5;
 }
 
+body.colorblind-mode {
+    cursor: var(--cursor-default-dark);
+}
+body.colorblind-mode a:hover {
+    cursor: var(--cursor-hover-dark);
+}
+body.colorblind-mode .button:hover {
+    cursor: var(--cursor-hover-dark);
+}
+body.colorblind-mode .aside-config-button-toggle:hover {
+    cursor: var(--cursor-hover-dark);
+}
+body.colorblind-mode .text:hover {
+    cursor: var(--cursor-text-dark);
+}
 body.colorblind-mode #inicio {
     background-image: url("../../assets/img/bg/bg_3.jpg");
 }
