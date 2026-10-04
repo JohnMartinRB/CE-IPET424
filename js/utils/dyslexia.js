@@ -1,7 +1,7 @@
 /* ==========================================
     MÓDULO DE ACCESIBILIDAD: FUENTE DYSLEXIC
 ========================================== */
-import { playSound } from "./sound.js";
+import { playSound } from "../utils/sound.js";
 
 let dyslexicEnabled = localStorage.getItem("dyslexicFont") === "true";
 

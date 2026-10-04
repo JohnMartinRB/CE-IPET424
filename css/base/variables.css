@@ -133,6 +133,7 @@
     --radius-md: 1.5rem;
     --radius-lg: 2rem;
     --radius-xl: 2.5rem;
+    --radius-2xl: 3rem;
     --radius-full: 50%;
 
     /* ==========================================================================
@@ -160,8 +161,8 @@
     --transition-fade:
         opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, height 0.3s ease, background-color 0.3s ease,
         box-shadow 0.3s ease, backdrop-filder 0.3s ease;
-    --transition-drawer-content: opacity 0.6s ease, visibility 0.6s ease, transform 0.6s ease;
-    --transition-drawer: width 1s cubic-bezier(0.25, 1, 0.5, 1);
+    --transition-drawer-content: opacity 2s ease, visibility 2s ease, transform 2s ease;
+    --transition-drawer: width 1.5s cubic-bezier(0.25, 1, 0.5, 1);
     --transition-loader: opacity 1s ease, visibility 1s ease;
 
     /* ==========================================================================

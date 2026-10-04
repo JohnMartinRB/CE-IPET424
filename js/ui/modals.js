@@ -2,7 +2,7 @@
     VENTANAS MODALES EN SECUENCIA
 ========================================== */
 export function initModals() {
-    const CURRENT_VERSION = "v0.29";
+    const CURRENT_VERSION = "v0.30.0"; // Actualizar manualmente al subir nueva versión
     // 1. COMPROBACIÓN INICIAL AL CARGAR
     const hasSeenInDev = localStorage.getItem("inDevWarningSeen");
     const savedVersion = localStorage.getItem("siteVersion");
@@ -47,7 +47,7 @@ export function initModals() {
         if (!modal || !contentBox) return;
         if (versionTag) versionTag.textContent = CURRENT_VERSION;
         try {
-            const response = await fetch("changelog.txt");
+            const response = await fetch("CHANGELOG.md");
             if (!response.ok) throw new Error("No se pudo cargar el changelog");
             const text = await response.text();
             const latestChanges = extractLatestVersionChanges(text);
@@ -68,40 +68,73 @@ export function initModals() {
         }
     }
 
-    // 4. AUXILIAR: PARSEADOR DE CHANGELOG
+    // 4. AUXILIAR: PARSEADOR DE CHANGELOG (MODO MARKDOWN)
     function extractLatestVersionChanges(fullText) {
         const baseVersion = CURRENT_VERSION.replace(/^v/i, "").split(".").slice(0, 2).join(".");
-        const versionRegex = new RegExp(`\\[?v?${baseVersion}(?:\\.\\d+)*\\]?`, "i");
+        // Buscamos la primera aparición de la versión base (ej: 0.30)
+        const versionRegex = new RegExp(`(?:##|###)?\\s*\\[?v?${baseVersion}(?:\\.\\d+)*[^\\]\\n]*\\]?`, "i");
         const match = fullText.match(versionRegex);
         if (!match) return `<p>¡Bienvenido a la versión ${CURRENT_VERSION}!</p>`;
-        const lines = fullText.substring(match.index).split("\n");
+
+        // Cortamos el texto desde el inicio de la versión actual
+        const textFromCurrent = fullText.substring(match.index);
+        const lines = textFromCurrent.split("\n");
         let htmlResult = "";
         let inList = false;
+
         for (let i = 0; i < lines.length; i++) {
-            const line = lines[i].trim();
-            // Frenar al llegar a una versión diferente
-            if (i > 0 && line.match(/^\[?v?\d+\.\d+/i)) {
-                const foundVersion = line.match(/\d+\.\d+/)[0];
-                if (!foundVersion.startsWith(baseVersion)) break;
+            let line = lines[i].trim();
+
+            // 1. Omitir líneas vacías y separadores
+            if (!line || line === "---") continue;
+
+            // 2. DETECTAR FRENADO: Si encontramos otra versión principal anterior (ej: v0.29 o v0.28)
+            if (i > 0 && line.match(/^##\s*\[?v?\d+\.\d+/i)) {
+                const foundVersionMatch = line.match(/\d+\.\d+/);
+                if (foundVersionMatch) {
+                    const foundBase = foundVersionMatch[0];
+                    // Si la versión hallada no pertenece al mismo bloque (ej: es 0.29 y estamos en 0.30), frenamos
+                    if (!foundBase.startsWith(baseVersion)) {
+                        break;
+                    }
+                }
             }
-            if (!line) continue;
-            // Detectar si es un título de versión (ej: 0.28 o 0.28.1)
-            if (line.match(/^\[?v?\d+\.\d+/i)) {
+
+            // 3. DETECTAR ENCABEZADOS (Títulos principales ## y subversiones ###)
+            if (line.startsWith("#")) {
                 if (inList) {
                     htmlResult += "</ul>";
                     inList = false;
                 }
-                htmlResult += `<h3 style="margin: 1rem 0 0.4rem;">${line}</h3>`;
-            } else {
-                // Es un ítem de la lista
+                // Limpiamos los símbolos de Markdown: #, ##, ###, corchetes [], etc.
+                let cleanTitle = line
+                    .replace(/^#+\s*/, "") // Quita los #
+                    .replace(/^\[\vert{}\]/g, "") // Quita corchetes de inicio y fin si los hay
+                    .replace(/\[(.*?)\]/g, "$1"); // Convierte [v0.30.0] en v0.30.0
+                htmlResult += `<h3 style="margin: 1.2rem 0 0.5rem; color: var(--azul1, #0284c7); font-size: 1.1rem; font-weight: bold;">${cleanTitle}</h3>`;
+            }
+
+            // 4. DETECTAR ÍTEMS DE LISTA (- o *)
+            else if (line.startsWith("-") || line.startsWith("*")) {
                 if (!inList) {
-                    htmlResult += '<ul style="padding-left: 1.2rem; margin: 0;">';
+                    htmlResult += '<ul style="padding-left: 1.2rem; margin: 0 0 1rem 0;">';
                     inList = true;
                 }
-                const cleanText = line.replace(/^[-*]\s*/, ""); // Limpia guión si tuviera
-                htmlResult += `<li style="margin-bottom: 0.4rem; line-height: 1.4; font-weight: normal;">${cleanText}</li>`;
+                // Limpiamos el guión/asterisco inicial y limpiamos corchetes/formato interno
+                let cleanItem = line.replace(/^[-*]\s*/, "").replace(/\[(.*?)\]/g, "$1");
+                htmlResult += `<li style="margin-bottom: 0.4rem; line-height: 1.4; font-weight: normal;">${cleanItem}</li>`;
+            }
+
+            // 5. TEXTO SUELTO / SUBTÍTULOS O NÚMEROS (ej: "1. ARCHITECTURE.md...")
+            else {
+                if (inList) {
+                    htmlResult += "</ul>";
+                    inList = false;
+                }
+                htmlResult += `<p style="margin: 0.4rem 0; line-height: 1.4;">${line}</p>`;
             }
         }
+
         if (inList) htmlResult += "</ul>";
         return htmlResult;
     }

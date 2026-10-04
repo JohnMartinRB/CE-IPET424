@@ -8,11 +8,13 @@
     width: 100%;
 }
 .header-card {
+    position: relative;
     width: 95%;
     max-width: 95%;
     height: auto;
     margin: var(--space-xs) auto;
     padding: var(--space-base) var(--space-lg);
+    overflow: hidden;
     border-radius: var(--radius-xl);
     background: var(--bg-base);
     box-shadow: var(--shadow-base);
@@ -46,7 +48,7 @@
 }
 .header-subtitle {
     display: none;
-    margin: var(--space-xs);
+    margin: 0.4rem;
     text-align: center;
     text-transform: uppercase;
 }
@@ -90,8 +92,10 @@
     .header-subtitle {
         display: block;
     }
+
     .header-progress-bar-container {
-        width: 84%;
-        margin: 0 8%;
+        left: 8.5%;
+        width: 83%;
+        margin: 0;
     }
 }

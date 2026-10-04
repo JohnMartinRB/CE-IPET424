@@ -4,7 +4,7 @@
 .widget {
     padding: var(--space-base);
     border: 2px solid var(--border-weather-widget);
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-md);
     background-color: var(--bg-weather-widget);
     color: var(--text-weather-widget);
     text-align: center;
@@ -25,4 +25,11 @@
     height: 16px;
     stroke: var(--text-body);
     stroke-width: 1.5;
+}
+
+.facts-icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 0;
+    stroke: var(--celeste2);
 }

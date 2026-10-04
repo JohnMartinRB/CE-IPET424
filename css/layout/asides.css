@@ -3,7 +3,7 @@
 ========================================== */
 .options,
 .aside-drawer,
-.aside-config-button-toggle {
+.aside-button-toggle {
     display: none;
 }
 
@@ -13,42 +13,44 @@
         z-index: 100;
         position: fixed;
         top: 59vh;
-        left: 1%;
         align-items: center;
         width: 20px;
-        height: 76%;
+        height: 78%;
         max-height: 80vh;
         padding: var(--space-base) var(--space-md);
         overflow: hidden;
         transform: translateY(-50%);
         border-radius: var(--radius-xl);
-        background: var(--bg-base-inverted);
         box-shadow: var(--shadow-base);
         transition: var(--transition-drawer);
     }
-    .aside-config-button-toggle {
+    .aside-button-toggle {
         display: flex;
         z-index: 2;
         position: fixed;
-        top: 65%;
-        right: 1%;
         align-items: center;
         justify-content: center;
-        width: 20px;
+        width: 100%;
         height: 100%;
         border: none;
         border-radius: var(--radius-sm);
         background: transparent;
         box-shadow: var(--shadow-aside-button);
-        cursor: url(../assets/img/cursors/cursor-hover.svg), pointer;
-        transition: var(--transition-ultra-fast);
+        transition: var(--transition-button);
     }
-    .aside-config-button-toggle:hover {
+    .aside-button-toggle.open {
+        width: 20px;
+        box-shadow: none;
+    }
+    .aside-button-toggle:hover {
         background-color: var(--bg-aside-button-hover);
+        cursor: var(--cursor-hover);
     }
     .aside-icon-toggle {
-        color: var(--text-body);
+        transform: scaleY(4);
+        color: var(--celeste5);
         font-weight: bold;
+        font-size: var(--fs-xl);
         transition: var(--transition-button);
         user-select: none;
     }
@@ -89,8 +91,27 @@
         filter: brightness(1.1);
     }
     .aside-drawer.open .aside-icon-toggle {
-        transform: rotate(180deg);
         transition: var(--transition-drawer-content);
+    }
+    .aside-config.open .aside-icon-toggle {
+        transform: rotate(180deg) scaleY(4);
+    }
+    .aside-news.open .aside-icon-toggle {
+        transform: rotate(180deg) scaleY(4);
+    }
+    .aside-config {
+        left: 1%;
+        background: var(--bg-base);
+    }
+    .aside-config-button-toggle {
+        right: 1%;
+    }
+    .aside-news {
+        right: 1%;
+        background: var(--bg-base-inverted);
+    }
+    .aside-news-button-toggle {
+        left: 1%;
     }
 
     /* ==========================================
@@ -118,8 +139,5 @@
         min-width: 3rem;
         font-weight: bold;
         user-select: none;
-    }
-    .aside-news {
-        display: none;
     }
 }

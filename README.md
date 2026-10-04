@@ -3,7 +3,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](<https://img.shields.io/badge/versi%C3%B3n-0.29%20(Alpha)-blue>)
+![Versión](<https://img.shields.io/badge/versi%C3%B3n-0.30%20(Alpha)-blue>)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
@@ -16,11 +16,12 @@ Portal web institucional desarrollado para concentrar, digitalizar y facilitar e
 - [Vista General y Propósito](#-vista-general-y-propósito)
 - [Estado del Proyecto](#-estado-del-proyecto)
 - [Funcionalidades Principales](#-funcionalidades-principales)
-- [Arquitectura y Estructura del Proyecto](#-arquitectura-y-estructura-del-proyecto)
 - [Tecnologías e Infraestructura](#-tecnologías-e-infraestructura)
-- [Automatización y Integración Continua (CI/CD)](#-automatización-y-integración-continua-cicd)
-- [Historial de Versiones (Changelog)](#-historial-de-versiones-changelog)
+- [Automatización e Integración Continua (CI/CD)](#-automatización-y-integración-continua-cicd)
+- [Arquitectura y Estructura del Proyecto](#-arquitectura-y-estructura-del-proyecto)
+- [Historial de Versiones (Changelog)](#-últimos-cambios-y-actualizaciones)
 - [Roadmap de Desarrollo](#-roadmap-de-desarrollo)
+- [¿Querés colaborar?](#-querés-colaborar)
 - [Contacto y Autoría](#-contacto-y-autoría)
 
 ---
@@ -37,7 +38,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.29` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.30` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
 | **Lanzamiento Estable (v1.0)** | Martes 3 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
@@ -74,103 +75,6 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 ---
 
-## 📂 Arquitectura y Estructura del Proyecto
-
-El código está estructurado de forma modular y limpia, facilitando la escalabilidad del sistema:
-
-```text
-CE-IPET424/
-├── .well-known/                      # Archivos de seguridad e infraestructura
-│   └── security.txt                  # Contacto oficial para reportes de seguridad
-├── assets/                           # Recursos estáticos del sitio
-│   ├── audio/                        # Archivos de audio (comunicados, accesibilidad)
-│   ├── data/                         # Archivos de datos estructurados
-│   │   ├── events.json               # Datos de eventos y calendario
-│   │   ├── faqs.json                 # Preguntas frecuentes
-│   │   ├── manifest.json             # Manifiesto para instalación PWA
-│   │   ├── news.json                 # Noticias y comunicados
-│   │   └── team.json                 # Integrantes del Centro de Estudiantes
-│   ├── docs/                         # Documentos descargables (PDFs, autorizaciones)
-│   ├── fonts/                        # Tipografías locales
-│   ├── img/                          # Imágenes del sitio
-│   │   ├── bg/                       # Imágenes tecnológicas de fondo (.jpg)
-│   │   ├── cursors/                  # Punteros personalizados (.svg)
-│   │   ├── favicons/                 # Favicons para modo claro y oscuro
-│   │   ├── gallery/                  # Galería de fotos e instalaciones
-│   │   ├── icons/                    # Íconos de interfaz y redes
-│   │   ├── logos/                    # Logos e insignias del CE e IPET
-│   │   └── mascot/                   # Ilustraciones de la mascota
-│   └── videos/                       # Clips y videos institucionales
-├── components/                       # Componentes HTML reutilizables
-│   ├── _aside-config.html            # Aside desplegable modular
-│   ├── _aside-news.html              # Aside desplegable modular
-│   ├── _footer.html                  # Pie de página modular
-│   ├── _header.html                  # Encabezado y navegación modular
-│   └── _modal-whats-new.html         # Modal de novedades de la version
-├── css/                              # Hojas de estilos CSS
-│   ├── base/                         # Hojas de estilos principales
-│   │   ├── accessibility.css         # Estilos para opciones de accesibilidad
-│   │   ├── fonts.css                 # Carga y definición de tipografías
-│   │   ├── normalize.css             # Normalización entre navegadores
-│   │   ├── reset.css                 # Reset y estilos globales del DOM
-│   │   ├── themes.css                # Variables CSS de temas de color
-│   │   ├── typography.css            # Jerarquía y estilos tipográficos
-│   │   └── variables.css             # Variables generales del sistema
-│   ├── components/                   # Hojas de estilos por componente
-│   │   ├── accordion.css             # Estilos para acordeones desplegables
-│   │   ├── banners.css               # Banners informativos
-│   │   ├── buttons.css               # Botones e interactividad
-│   │   ├── cards.css                 # Tarjetas de contenido
-│   │   ├── inputs.css                # Campos de formulario y controles
-│   │   ├── loader.css                # Pantalla y animación de carga
-│   │   ├── modals.css                # Ventanas modales
-│   │   ├── scrollbar.css             # Personalización de la barra de desplazamiento
-│   │   ├── toasts.css                # Notificaciones flotantes / mensajes emergentes
-│   │   └── widgets.css               # Widgets (clima, accesibilidad, etc.)
-│   ├── layout/                       # Hojas de estilos del layout
-│   │   ├── asides.css                # Menús y paneles laterales
-│   │   ├── content.css               # Disposición del contenedor principal
-│   │   ├── footer.css                # Pie de página
-│   │   ├── header.css                # Encabezado principal
-│   │   └── nav.css                   # Barra de navegación
-│   ├── pages/                        # Hojas de estilos específicas por página
-│   │   ├── error.css                 # Estilos para la página 404 / errores
-│   │   └── home.css                  # Estilos específicos de la página principal
-│   └── styles.css                    # Hoja de ruta principal (@import maestro)
-├── js/                               # Funciones Javascript
-│   ├── ui/                           # Funciones de la interfaz
-│   │   ├── banners.js                # Control de banners de aviso
-│   │   ├── buttons.js                # Comportamiento e interacción de botones
-│   │   ├── components.js             # Control de componentes varios
-│   │   ├── modals.js                 # Apertura y cierre de ventanas modales
-│   │   └── theme.js                  # Lógica de conmutación de temas (oscuro/claro)
-│   ├── utils/                        # Funciones del back
-│   │   ├── accessibility.js          # Utilidades generales de accesibilidad
-│   │   ├── animations.js             # Efectos y animaciones
-│   │   ├── dyslexia.js               # Modo de tipografía accesible (Atkinson)
-│   │   ├── font-size.js              # Ajuste dinámico de tamaño de fuente
-│   │   ├── shortcuts.js              # Atajos de teclado
-│   │   └── sound.js                  # Efectos de audio / feedback sonoro
-│   ├── config.js                     # Configuraciones
-│   └── main.js                       # Punto de entrada principal e inicializador
-├── .gitignore                        # Ignora ciertos archivos al hacer commit
-├── .nojekyll                         # Evita que GitHub Pages omita carpetas con guion bajo
-├── 404.html                          # Página personalizada de error 404
-├── about.html                        # Sub-página institucional ("Sobre Nosotros")
-├── changelog.txt                     # Registro de cambios y actualizaciones
-├── contact.html                      # Sub-página con formulario y datos de contacto
-├── credits.html                      # Sub-página de créditos del equipo de desarrollo
-├── humans.txt                        # Créditos e información de autores del proyecto
-├── index.html                        # Portal principal (Landing Page)
-├── LICENSE                           # Licencia de software libre (Licencia MIT)
-├── projects.html                     # Sub-página de proyectos y propuestas
-├── README.md                         # Documentación principal del repositorio
-├── robots.txt                        # Instrucciones para motores de búsqueda
-└── school.html                       # Sub-página sobre la historia e instalaciones de la escuela
-```
-
----
-
 ## 🛠️ Tecnologías e Infraestructura
 
 - **Frontend Nativo:** `HTML5` semántico, `CSS3` (utilizando variables nativas CSS y Flexbox/Grid) y `JavaScript (ES6+)` sin dependencias pesadas de terceros para garantizar una carga ultrarrápida.
@@ -190,9 +94,40 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 
 ---
 
-## 📜 Historial de Versiones (Changelog)
+## 📂 Arquitectura y Estructura del Proyecto
 
-- **`v0.29-alpha` (Actual)**
+El código está estructurado de forma modular y limpia[cite: 3]. Para consultar el árbol completo de archivos y módulos, revisá la [Guía de Arquitectura del Proyecto](./ARCHITECTURE.md).
+
+---
+
+## 📜 Últimos Cambios y Actualizaciones
+
+- **`v0.30.0-alpha` (Actual)**
+    - Se agregó un nuevo aside del lado derecho de la tarjeta principal
+    - El nuevo aside contiene un widget con datos curiosos (provisorios por ahora)
+    - También un botón para generar otro dato
+    - Ahora el botón del aside funciona como se tenía pensado en un inicio: ocupa todo el alto y ancho disponible
+    - El botón del aside ahora tiene un ícono indicador
+    - Las fuentes Atkinson Hyperlegible y JetBrains Mono ahora funcionan correctamente ya que se corrigieron las rutas
+    - Se cambió el color del botón para volver arriba
+    - Se actualizaron las transiciones del aside
+    - Los botones y widgets ahora son más redondeados
+    - Se eliminó el color de fondo al hacer hover en los links del menu
+    - Se agregaron nuevos atajos de teclado para abrir el nuevo aside y para cerrar los modales
+    - Se corrigió el atajo para abrir el aside antiguo
+    - Se modificó la funcion de `extractLatestVersionChanges` para adaptarse al nuevo formato del changelog
+    - Se agregó un nuevo archivo `assets/data/facts.json` para guardar los datos curiosos
+    - Se agregaron nuevos archivos .MD:
+    1. ARCHITECTURE.md el cual incluye el árbol de carpetas y archivos que previamente estaba en el README
+    2. CONTRIBUTING.md que incluye una guía de estándares y convenciones de desarrollo para el sitio
+    - El archivo de changelog ahora está en formato .MD y contiene el nombre completo de las versiones
+    - README.md ahora contiene un changelog más reducido y se actualizó la tabla de contenidos
+    - Se cambiaron algunas clases del aside
+    - Se corrigió el error de la barra de progreso, ahora se encuentra centrada correctamente en el header
+    - Se corrigieron rutas de sonido y de cursores
+    - Se eliminó notes.txt
+
+- **`v0.29-alpha` (Anterior)**
     - Se agregó un nuevo modal de bienvenida y advertencia informando que el sitio está en desarrollo
     - Se agregó un botón en accesibilidad para desactivar las Transiciones
     - Se agregó un botón en accesibilidad para cambiar a una fuente de texto para personas con dislexia
@@ -214,43 +149,8 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
     - Se modificó el robots.txt para evitar la indexación
     - Se agregó la etiqueta meta name="robots" en los html con el mismo propósito
     - Se expandieron y actualizaron security.txt y humans.txt
-- **`v0.28-alpha`**
-    - Se expandió el archivo `variables.css` para crear un sistema completo de Design Tokens
-    - Se estandarizaron y unificaron las variables para `padding`, `margin`, `border-radius`, escalas tipográficas, sombras y tiempos de transición
-    - Estas variables ahora son iguales tanto para celular como para pc
-    - Se refactorizaron las propiedades reglas en `base.css` y `desktop.css` eliminando valores estáticos (hardcodeados)
-    - Se cambió el color de algunas tarjetas en modo claro
-    - Ahora el logo del C.E. del header dirige hacia la página de inicio
-    - El spinner de carga ahora es más ancho
-    - Se suavizó el color del borde de los botones/inputs y el de las barras de scroll
-    - Ahora el toast dura más tiempo
-    - Se renombraron muchas clases e ids para mayor claridad
-    - Se corrigió la separación de los enlaces a las subpáginas
-    - Se eliminaron propiedades innecesarias
-    - Se mejoraron algunos comentarios del código
-    - Pequeño cambio en la Licencia
-    - Se modificó el .gitignore
-- **`v0.27-alpha`**
-    - Se agregó una ventana modal para mostrar la última versión y las novedades
-    - Se agregó whats-new-modal.html y whats-new.js para controlar el funcionamiento
-- **`v0.26-alpha`**
-    - 0.26 Se agregaron efectos de sonido a los botones, toasts y banners
-    - Estos archivos de sonido se encuentran en assets/audio
-    - Se separó una nueva sección en el aside: Accesibilidad, que incluye el modo escala de grises y un nuevo botón para controlar desactivar los efectos de sonido
-    - Se agregó el archivo sound.js y funciones para controlar el sonido
-    - Se agregó más padding vertical al aside
-    - Se agregaron variables para controlar el outline de los elementos para la navegación con tab
-    - Se eliminó código innecesario
-    - Se incluyó un nuevo Roadmap en el archivo README
-- **`v0.25-alpha`**
-    - Se formatearon todos los archivos js, css y html
-    - Se reordenaron las propiedades de todos los archivos css con el enfoque outside-in, este es el orden:
-      Posicionamiento y Maquetación (Layout & Position)
-      Modelo de Caja y Dimensiones (Box Model & Sizing)
-      Espaciado Interno y Bordes (Padding & Border structure)
-      Tipografía y Texto (Typography)
-      Colores y Estilos Visuales (Visuals & Colors)
-      Transiciones y Animaciones (Misc & Transitions)
+
+Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 
 ---
 
@@ -300,6 +200,12 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 - [ ] **v0.35 - Modo Off-Line & Optimización PWA (Progressive Web App)**
     - Registro de _Service Worker_ para habilitar navegación básica sin conexión a Internet.
     - Optimización de caché de recursos estáticos e instalación como app en dispositivos móviles.
+
+---
+
+## 🤝 ¿Querés colaborar?
+
+Si sos parte del equipo o querés aportar al proyecto, leé nuestra [Guía de Contribución y Convenciones](./CONTRIBUTING.md) antes de enviar tus commits.
 
 ---
 

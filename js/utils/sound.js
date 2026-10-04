@@ -9,6 +9,11 @@ let soundEnabled = localStorage.getItem("soundEffects") !== "false";
  * @param {number} volume - Volumen de 0.0 a 1.0 (sugerido: 0.2 o 0.3)
  */
 export function playSound(fileName, volume = 0.25) {
+    // Si no enviaron un nombre de sonido o viene como 'undefined', aborta la función
+    if (!fileName) {
+        console.trace("⚠️ Se intentó reproducir un sonido sin especificar el nombre desde:");
+        return;
+    }
     // Si el usuario desactivó los sonidos, no reproduce nada
     if (!soundEnabled) return;
     const audio = new Audio(`assets/audio/${fileName}`);

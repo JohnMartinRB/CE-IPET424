@@ -96,9 +96,29 @@ export function initShortcuts() {
     document.addEventListener("keydown", (e) => {
         if (e.altKey && e.key.toLowerCase() === "o") {
             e.preventDefault();
-            const buttonConfig = document.getElementById("button-config");
+            const buttonConfig = document.getElementById("aside-config-button-toggle");
             if (buttonConfig) {
                 buttonConfig.click();
+            }
+        }
+    });
+    // Acceso rápido por teclado al aside de novedades
+    document.addEventListener("keydown", (e) => {
+        if (e.altKey && e.key.toLowerCase() === "n") {
+            e.preventDefault();
+            const buttonNews = document.getElementById("aside-news-button-toggle");
+            if (buttonNews) {
+                buttonNews.click();
+            }
+        }
+    });
+    // Acceso rápido por teclado a cerrar los modales abiertos
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+            e.preventDefault();
+            const buttonCloseModal = document.getElementById("button-close-modal");
+            if (buttonCloseModal) {
+                buttonCloseModal.click();
             }
         }
     });

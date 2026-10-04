@@ -3,6 +3,7 @@
 ========================================================================== */
 import { renderLoader, initComponents } from "./ui/components.js";
 import { initButtons } from "./ui/buttons.js";
+import { initFactsWidget } from "./ui/widgets.js";
 import { initBanners } from "./ui/banners.js";
 import { initTheme } from "./ui/theme.js";
 import { initModals } from "./ui/modals.js";
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderLoader();
     await initComponents();
     initButtons();
+    initFactsWidget();
     initBanners();
     initTheme();
     initModals();
@@ -24,7 +26,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     initAnimations();
     initDyslexia();
     initSound();
-    playSound();
     initShortcuts();
     config();
 });
@@ -57,20 +58,20 @@ window.addEventListener("load", () => {
 
 // Ajustar posición del aside para no solapar el footer al hacer scroll
 window.addEventListener("scroll", () => {
-    const aside = document.querySelectorAll(".aside-drawer");
+    const asides = document.querySelectorAll(".aside-drawer");
     const footer = document.querySelector("#footer-container") || document.querySelector("footer");
-    if (!aside || !footer) return;
+    if (!asides.length || !footer) return;
     const footerRect = footer.getBoundingClientRect();
     const windowHeight = window.innerHeight;
-    // Distancia visible del footer en la ventana
     const footerTop = footerRect.top;
-    // Si el footer entra en la pantalla
-    if (footerTop < windowHeight) {
-        // Calculamos cuánto espacio invade el footer y subimos el aside esa misma distancia
-        const overlap = windowHeight - footerTop;
-        aside.style.transform = `translateY(calc(-50% - ${overlap}px))`;
-    } else {
-        // Posición normal centrada
-        aside.style.transform = "translateY(-50%)";
-    }
+    asides.forEach((aside) => {
+        if (footerTop < windowHeight) {
+            // Calculamos cuánto invade el footer y subimos el aside
+            const overlap = windowHeight - footerTop;
+            aside.style.transform = `translateY(calc(-50% - ${overlap}px))`;
+        } else {
+            // Volver a la posición normal centrada
+            aside.style.transform = "translateY(-50%)";
+        }
+    });
 });

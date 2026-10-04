@@ -12,18 +12,24 @@ export function initButtons() {
                 if (toastCopied) {
                     toastCopied.classList.add("visible");
                     // Reprodúcí el sonido del Toast justo al mostrar el cartel
-                    playSound("toast.mp3", 0.3); // <-- LÍNEA NUEVA
+                    playSound("toast.mp3", 0.3);
                     setTimeout(() => toastCopied.classList.remove("visible"), 3500);
                 }
             });
         }
     });
-    // Control del aside desplegable
-    document.addEventListener("click", function (e) {
-        const buttonToggle = e.target.closest("#aside-config-button-toggle");
-        const aside = document.getElementById("aside-config");
-        if (buttonToggle && aside) {
-            aside.classList.toggle("open");
+    // Control de asides desplegables (independientes)
+    document.addEventListener("click", (e) => {
+        // Detectamos si el clic fue en un botón de toggle de aside
+        const buttonToggle = e.target.closest(".aside-button-toggle");
+        if (buttonToggle) {
+            // Encontramos el aside específico al que pertenece este botón
+            const currentAside = buttonToggle.closest(".aside-drawer");
+            if (currentAside) {
+                // Alternamos la clase .open SOLO en el aside clickeado
+                currentAside.classList.toggle("open");
+                buttonToggle.classList.toggle("open");
+            }
         }
     });
     // Botón de volver arriba

@@ -12,18 +12,14 @@
 a.nav-menu-link,
 a.nav-menu-link:visited {
     display: inline-block !important;
-    padding: var(--space-2xs);
-    border-radius: var(--radius-sm);
     color: var(--link) !important;
     transition: var(--transition-fast);
 }
 a.nav-menu-link:hover {
-    background-color: var(--bg-link-hover);
     color: var(--link-hover) !important;
 }
 a.nav-menu-link:active {
     transform: scale(0.95);
-    background-color: var(--bg-link-hover);
     color: var(--link-hover) !important;
 }
 
