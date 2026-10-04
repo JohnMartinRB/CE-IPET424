@@ -42,6 +42,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se agregó la carpeta `assets/img/schedules` para una futura función
 - Se eliminó el `link rel="manifest"` de los html a fin de trabajarlo en un futuro
 
+## [v0.30.2-alpha]
+
+- Se cambió otro z-index
+
 ---
 
 ## [v0.29.0-alpha] - Versión Principal
