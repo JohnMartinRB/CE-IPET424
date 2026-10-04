@@ -2,7 +2,7 @@
     TOASTS / CARTELES FLOTANTES
 ========================================== */
 .toast {
-    z-index: 2000;
+    z-index: 350;
     position: fixed;
     right: var(--space-md);
     bottom: var(--space-md);

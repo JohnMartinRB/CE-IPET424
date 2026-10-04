@@ -32,6 +32,7 @@ CE-IPET424/
 │   ├── _aside-news.html              # Aside desplegable modular
 │   ├── _footer.html                  # Pie de página modular
 │   ├── _header.html                  # Encabezado y navegación modular
+│   ├── _modal-in-dev.html             # Modal de advertencia de desarrollo
 │   └── _modal-whats-new.html         # Modal de novedades de la version
 ├── css/                              # Hojas de estilos CSS
 │   ├── base/                         # Hojas de estilos principales
@@ -69,7 +70,8 @@ CE-IPET424/
 │   │   ├── buttons.js                # Comportamiento e interacción de botones
 │   │   ├── components.js             # Control de componentes varios
 │   │   ├── modals.js                 # Apertura y cierre de ventanas modales
-│   │   └── theme.js                  # Lógica de conmutación de temas (oscuro/claro)
+│   │   ├── theme.js                  # Lógica de conmutación de temas (oscuro/claro)
+│   │   └── widgets.js                # Widgets interactivos
 │   ├── utils/                        # Funciones del back
 │   │   ├── accessibility.js          # Utilidades generales de accesibilidad
 │   │   ├── animations.js             # Efectos y animaciones
@@ -83,14 +85,17 @@ CE-IPET424/
 ├── .nojekyll                         # Evita que GitHub Pages omita carpetas con guion bajo
 ├── 404.html                          # Página personalizada de error 404
 ├── about.html                        # Sub-página institucional ("Sobre Nosotros")
-├── changelog.txt                     # Registro de cambios y actualizaciones
+├── ARCHITECTURE.md                   # Árbol de carpetas y archivos del proyecto
+├── CHANGELOG.md                      # Registro de cambios y actualizaciones
 ├── contact.html                      # Sub-página con formulario y datos de contacto
+├── CONTRIBUTING.md                   # Guía de estándares y convenciones de desarrollo
 ├── credits.html                      # Sub-página de créditos del equipo de desarrollo
 ├── humans.txt                        # Créditos e información de autores del proyecto
 ├── index.html                        # Portal principal (Landing Page)
 ├── LICENSE                           # Licencia de software libre (Licencia MIT)
 ├── projects.html                     # Sub-página de proyectos y propuestas
 ├── README.md                         # Documentación principal del repositorio
+├── ROADMAP.md                        # Hoja de ruta de próximas versiones
 ├── robots.txt                        # Instrucciones para motores de búsqueda
 └── school.html                       # Sub-página sobre la historia e instalaciones de la escuela
 ```

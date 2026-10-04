@@ -52,7 +52,7 @@ a.button:focus {
 ======================================== */
 .button-scroll-top {
     visibility: hidden;
-    z-index: 999;
+    z-index: 300;
     position: fixed;
     right: var(--space-md);
     bottom: var(--space-md);

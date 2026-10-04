@@ -102,12 +102,13 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.30.0-alpha` (Actual)**
+- **`v0.30-alpha` (Actual)**
     - Se agregó un nuevo aside del lado derecho de la tarjeta principal
     - El nuevo aside contiene un widget con datos curiosos (provisorios por ahora)
     - También un botón para generar otro dato
     - Ahora el botón del aside funciona como se tenía pensado en un inicio: ocupa todo el alto y ancho disponible
     - El botón del aside ahora tiene un ícono indicador
+    - Ahora el escudo en el header dirige a la página web del colegio
     - Las fuentes Atkinson Hyperlegible y JetBrains Mono ahora funcionan correctamente ya que se corrigieron las rutas
     - Se cambió el color del botón para volver arriba
     - Se actualizaron las transiciones del aside
@@ -120,11 +121,14 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
     - Se agregaron nuevos archivos .MD:
     1. ARCHITECTURE.md el cual incluye el árbol de carpetas y archivos que previamente estaba en el README
     2. CONTRIBUTING.md que incluye una guía de estándares y convenciones de desarrollo para el sitio
+    3. ROADMAP.md que incluye la hoja de ruta de desarrollo para futuras versiones y actualizaciones
     - El archivo de changelog ahora está en formato .MD y contiene el nombre completo de las versiones
     - README.md ahora contiene un changelog más reducido y se actualizó la tabla de contenidos
     - Se cambiaron algunas clases del aside
     - Se corrigió el error de la barra de progreso, ahora se encuentra centrada correctamente en el header
     - Se corrigieron rutas de sonido y de cursores
+    - Se agregó la carpeta `assets/img/schedules` para una futura función
+    - Se eliminó el `link rel="manifest"` de los html a fin de trabajarlo en un futuro
     - Se eliminó notes.txt
 
 - **`v0.29-alpha` (Anterior)**
@@ -156,50 +160,9 @@ Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para
 
 ## 🗺️ Roadmap de Desarrollo
 
-### 🚀 Próximas Versiones (Ciclo v0.26 - v0.35)
+### 🚀 Próximas Versiones
 
-- [x] **v0.26 - Feedback Sonoro (UI Sound Effects)**
-    - Implementación de motor de audio ligero en JavaScript para interacciones de interfaz.
-    - Sonidos para switches (modo oscuro/claro), clics en botones principales y apertura de modales.
-    - Control de activación/desactivación de sonido con persistencia en `localStorage`.
-
-- [x] **v0.27 - Sistema de Novedades (What's New Modal)**
-    - Ventana emergente (modal/toast) interactiva al detectar una actualización de versión.
-    - Lectura dinámica del _changelog_ para mostrar las últimas mejoras al usuario al ingresar al sitio.
-
-- [x] **v0.28 - Arquitectura CSS & Rework de Variables**
-    - Expansión de `variables.css` para crear un sistema completo de _Design Tokens_.
-    - Estandarización de variables para `padding`, `margin`, `gap`, `border-radius`, escalas tipográficas y tiempos de transición.
-    - Refactorización de reglas en `base.css` y `desktop.css` eliminando valores estáticos (_hardcodeados_).
-
-- [x] **v0.29 - Suite de Accesibilidad Ampliada**
-    - Nuevos controles para ajustar el tamaño del texto (+ / -).
-    - Selector de alto contraste e indicador de fuentes para dislexia.
-    - Mejoras en la navegación por teclado (`:focus-visible`) y atributos ARIA.
-
-- [ ] **v0.30 - Aside Desplegable de Noticias (News Drawer)**
-    - Panel lateral deslizante (_drawer_) dedicado a comunicados urgentes e insumos del colegio.
-    - Filtrado rápido por etiquetas (_Urgente_, _Centro de Estudiantes_, _Institucional_).
-
-- [ ] **v0.31 - Sección "Sabías qué..." / Datos Curiosos del IPET 424**
-    - Widget dinámico de datos curiosos sobre la historia de la escuela, las especialidades técnicas y el Centro de Estudiantes.
-    - Generador aleatorio de datos al presionar un botón interactivo.
-
-- [ ] **v0.32 - Efectos Visuales & Micro-interacciones Avanzadas**
-    - Integración de animación al hacer scroll (AOS / Animate On Scroll) en tarjetas y proyectos.
-    - Efectos de brillo/glow dinámico en bordes al pasar el cursor (Hover UX).
-
-- [ ] **v0.33 - Hub de Utilidades Estudiantiles (Calculadora de Promedios / Materias)**
-    - Herramienta interactiva para que los estudiantes calculen sus promedios por trimestre.
-    - Indicadores visuales de rendimiento por materia (Técnicas / Físico-Matemáticas / Generales).
-
-- [ ] **v0.34 - Descarga Organizada de Materiales & Formularios**
-    - Buscador e indexador de PDFs institucionales (fichas de salud, permisos de salidas de campo, reglamentos).
-    - Previsualización rápida de documentos antes de descargar.
-
-- [ ] **v0.35 - Modo Off-Line & Optimización PWA (Progressive Web App)**
-    - Registro de _Service Worker_ para habilitar navegación básica sin conexión a Internet.
-    - Optimización de caché de recursos estáticos e instalación como app en dispositivos móviles.
+Para conocer las funcionalidades en la que está trabajando el equipo, te invitamos a concoer nuestra [Hoja de Ruta de Desarrollo](./ROADMAP.md).
 
 ---
 

@@ -32,6 +32,16 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se corrigieron rutas de sonido y de cursores
 - Se eliminó notes.txt
 
+## [v0.30.1-alpha]
+
+- Ahora el escudo en el header dirige a la página web del colegio
+- Se arregló el atajo de teclado para cerrar los modales
+- El roadmap del README se movió al nuevo archivo ROADMAP.md
+- Se actualizó el árbol de carpetas
+- Se cambiaron los valores de z-index
+- Se agregó la carpeta `assets/img/schedules` para una futura función
+- Se eliminó el `link rel="manifest"` de los html a fin de trabajarlo en un futuro
+
 ---
 
 ## [v0.29.0-alpha] - Versión Principal

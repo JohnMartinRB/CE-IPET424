@@ -112,14 +112,14 @@ export function initShortcuts() {
             }
         }
     });
-    // Acceso rápido por teclado a cerrar los modales abiertos
+    // Acceso rápido por teclado a cerrar los modales
     document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
             e.preventDefault();
-            const buttonCloseModal = document.getElementById("button-close-modal");
-            if (buttonCloseModal) {
-                buttonCloseModal.click();
-            }
+            const closeButtons = document.querySelectorAll(".button-close-modal");
+            closeButtons.forEach((button) => {
+                button.click();
+            });
         }
     });
 }

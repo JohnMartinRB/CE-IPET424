@@ -311,7 +311,7 @@ body.code-mode iframe {
     MODO DESCANSO
 ========================================== */
 html.rest-mode::after {
-    z-index: 998;
+    z-index: 600;
     position: fixed;
     top: 0;
     left: 0;
