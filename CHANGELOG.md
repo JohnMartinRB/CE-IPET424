@@ -46,6 +46,13 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 - Se cambió otro z-index
 
+## [v0.30.3-alpha]
+
+- Se agregaron temas futuros a theme.js
+- Se actualizaron las instrucciones de CONTRIBUTING
+- Se actualizó el ROADMAP para incluir división de periodos de desarrollo y cambio de planes
+- La fecha provisional de lanzamiento ahora es el 9 de marzo de 2027
+
 ---
 
 ## [v0.29.0-alpha] - Versión Principal

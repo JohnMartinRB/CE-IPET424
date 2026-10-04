@@ -40,7 +40,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 | :----------------------------- | :--------------------------------- |
 | **Versión Actual**             | `0.30` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
-| **Lanzamiento Estable (v1.0)** | Martes 3 de marzo de 2027          |
+| **Lanzamiento Estable (v1.0)** | Martes 9 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
 | **Mantenimiento**              | Activo (CI/CD Automático)          |
 

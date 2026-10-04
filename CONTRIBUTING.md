@@ -11,28 +11,32 @@ Este documento establece las pautas y estándares de trabajo para mantener el c�
 1. **Antes de empezar a programar:**  
    Siempre hacé un `git pull` para asegurarte de tener la versión más reciente subida al repositorio.
 2. **Durante el desarrollo:**  
-   Mantené tus cambios acotados a la tarea asignada. Evitá modificar archivos no relacionados.
+   Asegurate de que tus cambios sean acordes a la tarea asignada.
+   Evitá modificar archivos no relacionados.
+   En caso de que surjan funciones o cambios random, consultalo previamente.
 3. **Al finalizar una tarea:**  
-   Realizá un `commit` descriptivo y un `push` para sincronizar los avances. Si existen dudas con el número de versión parche, revisá el historial en GitHub antes de enviar los cambios.
+   Realizá un `commit` con el número de parche y la lista de cambios.
+   Realizá un `push` para sincronizar los avances.
+   Si tenés dudas con el número de versión parche, revisá el historial en GitHub antes de enviar los cambios.
 
 ---
 
 ## 🏷️ 2. Mensajes de Commit y Versionado (SemVer)
 
-Seguimos el estándar de **Semantic Versioning** adaptado a la fase actual de desarrollo:
+Es importante seguir el estándar de **Semantic Versioning** adaptado a la fase actual de desarrollo:
 
 ### Formato del mensaje de commit:
 
 ```text
-[VERSIÓN-FASE] Descripción clara de lo que se modificó o agregó
+[VERSIÓN-FASE] Seguido de la descripción clara de lo que se modificó o agregó
 
 ### Ejemplos válidos:
 * `0.29.0-alpha
-    Se rediseñó el componente del header principal`
+    Se rediseñó la tarjeta del header`
 * `0.29.1-alpha
-    Se corrigió la alineación del botón en pantallas móviles`
+    Se corrigió la alineación de los botones en celular`
 * `0.30.0-beta
-    Inicio de fase beta con contenido institucional precargado`
+    Se cargó el contenido institucional en el sitio`
 ```
 
 ---
@@ -43,15 +47,20 @@ Para facilitar el mantenimiento del código, respetamos las siguientes reglas se
 
 ### 🌐 HTML / CSS
 
-- **Clases e IDs (CSS/HTML):** Escribir en **inglés** usando la convención `kebab-case`.
-    - _Ejemplo:_ `.btn-primary`, `#main-header`, `.card-title`.
-- **Variables CSS (Design Tokens):** Definidas en `css/base/variables.css` usando `kebab-case` . Utilizá siempre las variables globales en lugar de valores fijos (`hardcodeados`) .
+- **Clases e IDs (CSS/HTML):**
+  Deben estar escritos en **inglés** usando el formato `kebab-case`.
+    - _Ejemplo:_ `.buttpn-primary`, `#main-header`, `.card-title`.
+- **Variables CSS (Design Tokens):**
+  Se definen en `css/base/variables.css` usando `kebab-case`.
+  Utilizá siempre las variables globales en lugar de valores fijos (`hardcodeados`) .
 
 ### ⚡ JavaScript (ES6+)
 
-- **Variables y Funciones:** Escribir en **inglés** usando la convención `camelCase` .
+- **Variables y Funciones:**
+  Deben estar escritos en **inglés** usando el formato `camelCase` .
     - _Ejemplo:_ `const darkModeButton`, `function toggleAccessibility()`.
-- **Constantes Globales:** En mayúsculas con guiones bajos (`UPPER_SNAKE_CASE`).
+- **Constantes Globales:**
+  Deben estar escritos en mayúsculas con guiones bajos (`UPPER_SNAKE_CASE`).
     - _Ejemplo:_ `MAX_FONT_SIZE`.
 
 ### 💬 Comentarios y Documentación

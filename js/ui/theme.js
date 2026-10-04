@@ -32,6 +32,21 @@ const THEMES = {
         favicon: "assets/img/favicons/dark.png",
         buttonText: "Modo Daltónico",
     },
+    halloween: {
+        class: "halloween-mode",
+        favicon: "assets/img/favicons/halloween.png",
+        buttonText: "Modo Halloween",
+    },
+    christmas: {
+        class: "christmas-mode",
+        favicon: "assets/img/favicons/christmas.png",
+        buttonText: "Modo Navidad",
+    },
+    summer: {
+        class: "summer-mode",
+        favicon: "assets/img/favicons/summer.png",
+        buttonText: "Modo Verano",
+    },
 };
 
 export function initTheme() {
@@ -70,6 +85,9 @@ export function initTheme() {
         if (body.classList.contains("grayscale-mode")) return "grayscale";
         if (body.classList.contains("code-mode")) return "code";
         if (body.classList.contains("colorblind-mode")) return "colorblind";
+        if (body.classList.contains("halloween-mode")) return "halloween";
+        if (body.classList.contains("christmas-mode")) return "christmas";
+        if (body.classList.contains("summer-mode")) return "summer";
         return "light";
     }
     // Aplica el tema seleccionado al <body> borrando otros temas previos
@@ -77,7 +95,16 @@ export function initTheme() {
         const body = document.body;
         const html = document.documentElement; //
         // Remover todas las clases de temas en ambos elementos
-        body.classList.remove("dark-mode", "high-contrast-mode", "grayscale-mode", "code-mode", "colorblind-mode");
+        body.classList.remove(
+            "dark-mode",
+            "high-contrast-mode",
+            "grayscale-mode",
+            "code-mode",
+            "colorblind-mode",
+            "halloween-mode",
+            "christmas-mode",
+            "summer-mode",
+        );
         html.classList.remove("grayscale-mode");
         // Si hay una clase para el tema elegido, la agregamos
         if (THEMES[themeKey] && THEMES[themeKey].class) {
