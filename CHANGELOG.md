@@ -53,6 +53,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se actualizó el ROADMAP para incluir división de periodos de desarrollo y cambio de planes
 - La fecha provisional de lanzamiento ahora es el 9 de marzo de 2027
 
+## [v0.30.4-alpha]
+
+- Se agregó un disfraz de halloween para la mascota
+
 ---
 
 ## [v0.29.0-alpha] - Versión Principal
