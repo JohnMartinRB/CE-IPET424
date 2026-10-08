@@ -15,10 +15,13 @@
     margin: var(--space-xs) auto;
     padding: var(--space-base) var(--space-lg);
     overflow: hidden;
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-2xl);
     background: var(--bg-base);
     box-shadow: var(--shadow-base);
     transition: var(--transition-fade);
+}
+.header-card.scrolled {
+    box-shadow: var(--shadow-section-card-hover);
 }
 .header-logo-container {
     display: grid !important;

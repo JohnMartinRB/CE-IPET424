@@ -1,0 +1,49 @@
+/* ==========================================
+    PÁGINA DE ERROR 404
+========================================== */
+.error-section {
+    padding: var(--space-xl) var(--space-base);
+    text-align: center;
+}
+.error-code {
+    margin: 0;
+    padding: var(--space-base) 0;
+    color: var(--text-body);
+    font-size: var(--fs-4xl);
+}
+
+/* ==========================================================================
+    ESTILO PARA IMÁGENES ROTAS DE CONTENIDO / GALERÍA (.img-broken)
+========================================================================== */
+
+/* Transforma la etiqueta <img> rota en una tarjeta contenedora de error */
+img.img-broken {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 180px; /* Altura mínima para que no colapse el layout */
+    object-fit: contain;
+    border: 2px dashed var(--celeste2);
+    border-radius: 1rem;
+    background-color: var(--claro2);
+}
+
+/* Diseña el mensaje descriptivo dentro de la caja usando el atributo ALT */
+img.img-broken::after {
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    content: "🖼️ La imagen '" attr(alt) "' no está disponible en este momento.";
+    color: var(--oscuro);
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: var(--font-main);
+    text-align: center;
+}

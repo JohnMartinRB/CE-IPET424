@@ -138,7 +138,7 @@
 
     /* ==========================================================================
     5. SOMBRAS Y EFECTOS
-    ========================================================================== */
+    ==========================================================================
     --shadow-base: 0 4px 16px rgba(1, 76, 199, 0.08);
     --shadow-section-card: 0 4px 16px rgba(1, 76, 199, 0.08);
     --shadow-section-card-hover: 0 12px 28px rgba(0, 207, 255, 0.25);
@@ -148,7 +148,30 @@
     --shadow-input-focus: 0 0 16px rgba(1, 76, 199, 0.25);
     --shadow-aside-button: 3px 0 8px rgba(0, 0, 0, 0.15);
     --blur-modal: blur(6px);
-    --blur-modal-color: rgba(0, 0, 0, 0.5);
+    --blur-modal-color: rgba(0, 0, 0, 0.5); */
+
+    /* ==========================================================================
+    5. SOMBRAS Y EFECTOS (INTENSIDAD MEJORADA / HIGH CONTRAST)
+    ========================================================================== */
+    /* Sombra base sutil pero más definida (aumentamos opacidad del azul) */
+    --shadow-base: 0 6px 20px rgba(1, 76, 199, 0.18);
+    /* Tarjetas principales en reposo */
+    --shadow-section-card: 0 8px 24px rgba(1, 76, 199, 0.2);
+    /* Hover de tarjetas principales: Glow neón celeste más expansivo y brillante */
+    --shadow-section-card-hover: 0 16px 36px rgba(0, 114, 139, 0.45);
+    /* Subtarjetas en reposo */
+    --shadow-subsection-card: 0 6px 20px rgba(1, 76, 199, 0.18);
+    /* Hover de subtarjetas: Brillo cian profundo remarcado */
+    --shadow-subsection-card-hover: 0 16px 36px rgba(0, 114, 139, 0.45);
+    /* Modales y elementos flotantes superpuestos (mayor profundidad dramática) */
+    --shadow-modal: 0 20px 50px rgba(0, 0, 0, 0.55);
+    /* Foco en inputs: Resplandor neón envolvente */
+    --shadow-input-focus: 0 0 20px rgba(1, 76, 199, 0.5);
+    /* Botón de Aside lateral (proyección de sombra marcada) */
+    --shadow-aside-button: 5px 0 14px rgba(0, 0, 0, 0.3);
+    /* Desenfoque de modales y color de overlay */
+    --blur-modal: blur(10px);
+    --blur-modal-color: rgba(0, 0, 0, 0.65);
 
     /* ==========================================================================
     6. TIEMPOS Y FUNCIONES DE TRANSICIÓN

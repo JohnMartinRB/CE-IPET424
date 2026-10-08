@@ -30,6 +30,7 @@
 @import "layout/asides.css";
 @import "layout/footer.css";
 
-/* PÁGINAS ESPECÍFICAS */
-@import "pages/home.css";
-@import "pages/error.css";
+/* ESTILOS ESPECÍFICAS */
+@import "misc/home.css";
+@import "misc/error.css";
+@import "misc/secret.css";

@@ -25,7 +25,8 @@ CE-IPET424/
 │   │   ├── gallery/                  # Galería de fotos e instalaciones
 │   │   ├── icons/                    # Íconos de interfaz y redes
 │   │   ├── logos/                    # Logos e insignias del CE e IPET
-│   │   └── mascot/                   # Ilustraciones de la mascota
+│   │   ├── mascot/                   # Ilustraciones de la mascota
+│   │   └── schedules/                # Horarios por curso
 │   └── videos/                       # Clips y videos institucionales
 ├── components/                       # Componentes HTML reutilizables
 │   ├── _aside-config.html            # Aside desplegable modular
@@ -60,9 +61,10 @@ CE-IPET424/
 │   │   ├── footer.css                # Pie de página
 │   │   ├── header.css                # Encabezado principal
 │   │   └── nav.css                   # Barra de navegación
-│   ├── pages/                        # Hojas de estilos específicas por página
+│   ├── misc/                         # Hojas de estilos específicas o random
 │   │   ├── error.css                 # Estilos para la página 404 / errores
-│   │   └── home.css                  # Estilos específicos de la página principal
+│   │   ├── home.css                  # Estilos específicos de la página principal
+│   │   └── secret.css                # Estilos para los elementos easter egg
 │   └── styles.css                    # Hoja de ruta principal (@import maestro)
 ├── js/                               # Funciones Javascript
 │   ├── ui/                           # Funciones de la interfaz
@@ -84,18 +86,18 @@ CE-IPET424/
 ├── .gitignore                        # Ignora ciertos archivos al hacer commit
 ├── .nojekyll                         # Evita que GitHub Pages omita carpetas con guion bajo
 ├── 404.html                          # Página personalizada de error 404
-├── about.html                        # Sub-página institucional ("Sobre Nosotros")
 ├── ARCHITECTURE.md                   # Árbol de carpetas y archivos del proyecto
 ├── CHANGELOG.md                      # Registro de cambios y actualizaciones
-├── contact.html                      # Sub-página con formulario y datos de contacto
+├── contacto.html                     # Sub-página con formulario y datos de contacto
 ├── CONTRIBUTING.md                   # Guía de estándares y convenciones de desarrollo
-├── credits.html                      # Sub-página de créditos del equipo de desarrollo
+├── creditos.html                     # Sub-página de créditos del equipo de desarrollo
 ├── humans.txt                        # Créditos e información de autores del proyecto
 ├── index.html                        # Portal principal (Landing Page)
 ├── LICENSE                           # Licencia de software libre (Licencia MIT)
-├── projects.html                     # Sub-página de proyectos y propuestas
+├── nosotros.html                     # Sub-página institucional ("Sobre Nosotros")
+├── proyectos.html                    # Sub-página de proyectos y propuestas
 ├── README.md                         # Documentación principal del repositorio
 ├── ROADMAP.md                        # Hoja de ruta de próximas versiones
 ├── robots.txt                        # Instrucciones para motores de búsqueda
-└── school.html                       # Sub-página sobre la historia e instalaciones de la escuela
+└── tramites.html                     # Sub-página sobre la historia e instalaciones de la escuela
 ```

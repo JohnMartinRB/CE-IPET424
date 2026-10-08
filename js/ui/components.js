@@ -4,17 +4,30 @@
 import { getVillaDoloresWeather } from "./buttons.js";
 
 export function renderLoader() {
-    // Comprobamos si la página actual es la principal (index.html o la raíz "/")
-    const isHomePage = window.location.pathname.endsWith("index.html") || window.location.pathname === "/";
-    const loaderText = isHomePage ? "¡Bienvenido al sitio!" : "Cargando...";
-    const loaderSubtext = isHomePage ? "<p>Centro de Estudiantes IPET Nº 424</p>" : "";
+    const path = window.location.pathname;
+    const page = path.split("/").pop() || "index.html";
+    const pageTitles = {
+        "index.html": "¡Bienvenido al sitio!",
+        "about.html": "Sobre nosotros",
+        "contact.html": "Contacto y sugerencias",
+        "projects.html": "Nuestros proyectos",
+        "school.html": "Trámites y reglamento",
+        "credits.html": "Créditos y colaboradores",
+    };
+    // 3. Evaluamos la página actual
+    const isHomePage = page === "index.html" || page === "";
+    // Título principal
+    const loaderText = pageTitles[page] || "Cargando...";
+    // Subtítulo: si es el inicio muestra la institución, en subpáginas dice "Cargando..."
+    const loaderSubtext = isHomePage ? "<p>Centro de Estudiantes IPET Nº 424</p>" : "<p>Cargando...</p>";
+    // 4. Inyectamos la estructura HTML en el DOM
     const loaderHTML = `
         <div id="loader-screen" class="loader-screen">
-        <div id="loader-content" class="loader-content">
-            <div id="loader-spinner" class="loader-spinner"></div>
-            <h2>${loaderText}</h2>
-            ${loaderSubtext}
-        </div>
+            <div id="loader-content" class="loader-content">
+                <div id="loader-spinner" class="loader-spinner"></div>
+                <h2>${loaderText}</h2>
+                ${loaderSubtext}
+            </div>
         </div>
     `;
     // Se inserta como primer elemento dentro del <body>
@@ -66,4 +79,26 @@ export async function initComponents() {
     ]);
     // Una vez inyectado el HTML del aside en el DOM:
     await getVillaDoloresWeather();
+}
+
+export function initPageTitle() {
+    // 1. Identificador institucional único (sufijo)
+    const SITE_SUFFIX = "| Centro de Estudiantes IPET N° 424";
+    // 2. Obtenemos el nombre de la página actual desde la URL
+    const path = window.location.pathname;
+    const page = path.split("/").pop() || "index.html";
+    // 3. Diccionario con el título específico para cada subpágina
+    const pageTitles = {
+        "index.html": "Inicio",
+        "nosotros.html": "Nosotros",
+        "contacto.html": "Contacto",
+        "proyectos.html": "Proyectos",
+        "tramites.html": "Trámites",
+        "creditos.html": "Créditos",
+        "404.html": "Página no encontrada",
+    };
+    // 4. Seleccionamos el nombre o usamos uno genérico si no coincide
+    const sectionName = pageTitles[page] || "Portal";
+    // 5. Asignamos el título final a la pestaña con la estructura: [Sección] | [Marca]
+    document.title = `${sectionName} ${SITE_SUFFIX}`;
 }

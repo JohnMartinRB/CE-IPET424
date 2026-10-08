@@ -1,7 +1,7 @@
 /* ==========================================================================
     MAIN.JS - ARCHIVO PRINCIPAL DE JAVASCRIPT
 ========================================================================== */
-import { renderLoader, initComponents } from "./ui/components.js";
+import { renderLoader, initComponents, initPageTitle } from "./ui/components.js";
 import { initButtons } from "./ui/buttons.js";
 import { initFactsWidget } from "./ui/widgets.js";
 import { initBanners } from "./ui/banners.js";
@@ -12,11 +12,12 @@ import { initAnimations } from "./utils/animations.js";
 import { initDyslexia } from "./utils/dyslexia.js";
 import { initSound, playSound } from "./utils/sound.js";
 import { initShortcuts } from "./utils/shortcuts.js";
-import { config } from "./config.js";
+import { config, party, matrix, flip, terminal } from "./config.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     renderLoader();
     await initComponents();
+    initPageTitle();
     initButtons();
     initFactsWidget();
     initBanners();
@@ -28,6 +29,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     initSound();
     initShortcuts();
     config();
+    party();
+    matrix();
+    flip();
+    terminal();
 });
 
 console.log("C.E. IPET 424 - Sitio inicializado correctamente");
@@ -75,3 +80,27 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+// Manejador global para captura de imágenes rotas (404 / Fallback)
+// Captura errores en fase de propagación (true) antes de que se descarten en el DOM.
+document.addEventListener(
+    "error",
+    (e) => {
+        const img = e.target;
+        // Verificamos que el elemento que falló sea una etiqueta <img>
+        if (img.tagName.toLowerCase() !== "img") return;
+        // IMPORTANTE: Evitamos bucles infinitos en caso de que la imagen de repuesto tampoco exista
+        img.onerror = null;
+        // Evaluamos el contexto: si está en Header, Footer o zonas de navegación, se trata de un Logo/Isotipo
+        const esLogo = img.closest("header, footer, nav, .header-container, .footer-card, .aside-container");
+        if (esLogo) {
+            // CASO A: Es un Logo o Isotipo -> Reemplazamos la ruta por un favicon o imagen de reserva segura
+            img.src = "assets/img/favicons/light.png";
+            img.alt = "Logotipo institucional";
+        } else {
+            // CASO B: Es una imagen de Contenido / Hero / Galería -> Aplicamos la clase para el estilo de tarjeta rota
+            img.classList.add("img-broken");
+        }
+    },
+    true,
+); // El 'true' es vital: permite interceptar el evento 'error' durante la fase de captura

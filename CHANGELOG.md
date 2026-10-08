@@ -4,6 +4,22 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## [v0.31.0-alpha] - Versión Principal
+
+- Ahora todas las subpáginas tienen su nombre en español
+- La tarjeta principal y el enlace ahora son más anchos
+- En consecuencia, los aside son más delgados
+- Las tarjetas de header y contenido tienen mas redondeado
+- Todas las sombras son más intensas
+- Se agregó una sombra al header al hacer scroll
+- Nuevos estilos para manejar cómo se ven las imágenes que no cargan o con rutas rotas
+- Se agregaron muchos easter eggs y funciones random secretas insertando mensajes
+- Ahora la página del colegio se abre en una pestaña nueva (desde el logo del header)
+- Se cambió la función para renderizar la pantalla de carga, de forma que muestra un texto diferente dependiendo la subpágina
+- Se añadió una función de respaldo pars cargar dinámicamente el título de las páginas
+- Se renombró la carpeta `pages` a `misc` para incluir reglas css especificas o aleatorias
+- Se actualizó el árbol de carpetas
+
 ## [v0.30.0-alpha] - Versión Principal
 
 - Se agregó un nuevo aside del lado derecho de la tarjeta principal
@@ -56,6 +72,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 ## [v0.30.4-alpha]
 
 - Se agregó un disfraz de halloween para la mascota
+
+## [v0.30.5-alpha]
+
+- Se agregó un asistente a los créditos del README
 
 ---
 

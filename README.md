@@ -3,7 +3,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](<https://img.shields.io/badge/versi%C3%B3n-0.30%20(Alpha)-blue>)
+![Versión](<https://img.shields.io/badge/versi%C3%B3n-0.31%20(Alpha)-blue>)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
@@ -38,7 +38,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.30` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.31` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
 | **Lanzamiento Estable (v1.0)** | Martes 9 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
@@ -102,7 +102,22 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.30-alpha` (Actual)**
+- **`v0.31-alpha` (Actual)**
+    - Ahora todas las subpáginas tienen su nombre en español
+    - La tarjeta principal y el enlace ahora son más anchos
+    - En consecuencia, los aside son más delgados
+    - Las tarjetas de header y contenido tienen mas redondeado
+    - Todas las sombras son más intensas
+    - Se agregó una sombra al header al hacer scroll
+    - Nuevos estilos para manejar cómo se ven las imágenes que no cargan o con rutas rotas
+    - Se agregaron muchos easter eggs y funciones random secretas insertando mensajes
+    - Ahora la página del colegio se abre en una pestaña nueva (desde el logo del header)
+    - Se cambió la función para renderizar la pantalla de carga, de forma que muestra un texto diferente dependiendo la subpágina
+    - Se añadió una función de respaldo pars cargar dinámicamente el título de las páginas
+    - Se renombró la carpeta `pages` a `misc` para incluir reglas css especificas o aleatorias
+    - Se actualizó el árbol de carpetas
+
+- **`v0.30-alpha` (Anterior)**
     - Se agregó un nuevo aside del lado derecho de la tarjeta principal
     - El nuevo aside contiene un widget con datos curiosos (provisorios por ahora)
     - También un botón para generar otro dato
@@ -131,29 +146,6 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
     - Se eliminó el `link rel="manifest"` de los html a fin de trabajarlo en un futuro
     - Se eliminó notes.txt
 
-- **`v0.29-alpha` (Anterior)**
-    - Se agregó un nuevo modal de bienvenida y advertencia informando que el sitio está en desarrollo
-    - Se agregó un botón en accesibilidad para desactivar las Transiciones
-    - Se agregó un botón en accesibilidad para cambiar a una fuente de texto para personas con dislexia
-    - Se agregó un controlador para el tamaño de texto del sitio
-    - Se agregó un modo de accesibilidad para personas con daltonismo
-    - Se agregó un botón en la parte inferior derecha para volver arribba de todo
-    - Se agregó un atajo de teclado para el modo daltónico y otro para abrir el aside
-    - Se reordenaron los botones del aside de opciones
-    - Se cambiaron muchos colores en modo oscuro
-    - Ahora el logo del header en modo oscuro y alto contraste
-    - Se agregó un atajo de teclado para abrir el aside
-    - Se restructuraron las carpetas de css y js, dividiendo los archivos en varias subcarpetas
-    - El css ahora se encuentra dividido en módulos por componentes
-    - Se eliminaron los archivos base, tablet y desktop.css ya que ahora las propiedades se encuentran repartidas
-    - Los módulos de js ahora están divididos en carpetas
-    - Se rehizo la función para mostrar los modales
-    - Se agregaron muchos comentarios y se eliminaron otros
-    - Se renombraron las clases del modal
-    - Se modificó el robots.txt para evitar la indexación
-    - Se agregó la etiqueta meta name="robots" en los html con el mismo propósito
-    - Se expandieron y actualizaron security.txt y humans.txt
-
 Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 
 ---
@@ -177,11 +169,10 @@ Si sos parte del equipo o querés aportar al proyecto, leé nuestra [Guía de Co
 Proyecto diseñado, programado y mantenido por:
 
 - **Juan Martín Rodríguez**  
-  _Presidente del Centro de Estudiantes — IPET N° 424 (Gestión 2026)_
-
+  _Presidente del Centro de Estudiantes — IPET N° 424 (Gestión 2026)_ - **GitHub:** [@JohnMartinRB](https://github.com/JohnMartinRB)
+    - **Repositorio oficial:** [CE-IPET424](https://github.com/JohnMartinRB/CE-IPET424)
 - **Gabriel Campana**  
   _Secretario de RR. EE. del Centro de Estudiantes — IPET N° 424 (Gestión 2026)_
-    - **GitHub:** [@JohnMartinRB](https://github.com/JohnMartinRB)
-    - **Repositorio oficial:** [CE-IPET424](https://github.com/JohnMartinRB/CE-IPET424)
+- **GitHub:** [@campanag721-tech](https://github.com/campanag721-tech)
 
 ---
