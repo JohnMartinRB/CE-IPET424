@@ -29,6 +29,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 - La barra de progreso de lectura es mas ancha
 
+## [v0.31.3-alpha]
+
+- Se arreglaron los enlaces a las subpáginas desde el inicio
+
 ---
 
 ## [v0.30.0-alpha] - Versión Principal
