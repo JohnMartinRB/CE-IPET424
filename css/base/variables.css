@@ -139,20 +139,7 @@
     /* ==========================================================================
     5. SOMBRAS Y EFECTOS
     ==========================================================================
-    --shadow-base: 0 4px 16px rgba(1, 76, 199, 0.08);
-    --shadow-section-card: 0 4px 16px rgba(1, 76, 199, 0.08);
-    --shadow-section-card-hover: 0 12px 28px rgba(0, 207, 255, 0.25);
-    --shadow-subsection-card: 0 4px 16px rgba(1, 76, 199, 0.08);
-    --shadow-subsection-card-hover: 0 12px 28px rgba(0, 114, 139, 0.25);
-    --shadow-modal: 0 15px 30px rgba(0, 0, 0, 0.3);
-    --shadow-input-focus: 0 0 16px rgba(1, 76, 199, 0.25);
-    --shadow-aside-button: 3px 0 8px rgba(0, 0, 0, 0.15);
-    --blur-modal: blur(6px);
-    --blur-modal-color: rgba(0, 0, 0, 0.5); */
 
-    /* ==========================================================================
-    5. SOMBRAS Y EFECTOS (INTENSIDAD MEJORADA / HIGH CONTRAST)
-    ========================================================================== */
     /* Sombra base sutil pero más definida (aumentamos opacidad del azul) */
     --shadow-base: 0 6px 20px rgba(1, 76, 199, 0.18);
     /* Tarjetas principales en reposo */

@@ -20,6 +20,13 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se renombró la carpeta `pages` a `misc` para incluir reglas css especificas o aleatorias
 - Se actualizó el árbol de carpetas
 
+## [v0.31.1-alpha]
+
+- Se arregló el ancho del cursor de texto
+- Se eliminó código innecesario
+
+---
+
 ## [v0.30.0-alpha] - Versión Principal
 
 - Se agregó un nuevo aside del lado derecho de la tarjeta principal

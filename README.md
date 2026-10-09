@@ -169,10 +169,11 @@ Si sos parte del equipo o querés aportar al proyecto, leé nuestra [Guía de Co
 Proyecto diseñado, programado y mantenido por:
 
 - **Juan Martín Rodríguez**  
-  _Presidente del Centro de Estudiantes — IPET N° 424 (Gestión 2026)_ - **GitHub:** [@JohnMartinRB](https://github.com/JohnMartinRB)
-    - **Repositorio oficial:** [CE-IPET424](https://github.com/JohnMartinRB/CE-IPET424)
+  _Presidente del Centro de Estudiantes — IPET N° 424 (Gestión 2026)_
+    - **GitHub:** [@JohnMartinRB](https://github.com/JohnMartinRB)
+        - **Repositorio oficial:** [CE-IPET424](https://github.com/JohnMartinRB/CE-IPET424)
 - **Gabriel Campana**  
   _Secretario de RR. EE. del Centro de Estudiantes — IPET N° 424 (Gestión 2026)_
-- **GitHub:** [@campanag721-tech](https://github.com/campanag721-tech)
+    - **GitHub:** [@campanag721-tech](https://github.com/campanag721-tech)
 
 ---
