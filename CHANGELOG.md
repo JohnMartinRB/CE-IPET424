@@ -25,6 +25,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se arregló el ancho del cursor de texto
 - Se eliminó código innecesario
 
+## [v0.31.2-alpha]
+
+- La barra de progreso de lectura es mas ancha
+
 ---
 
 ## [v0.30.0-alpha] - Versión Principal
