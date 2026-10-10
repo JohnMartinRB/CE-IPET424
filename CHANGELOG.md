@@ -47,6 +47,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se agregaron muchas carpetas y subcarpetas para futuras adiciones en `assets/` las cuales tienen `.gitkeep` adentro
 - Se cambiaron comentarios
 
+## [v0.31.5-alpha]
+
+- Se actualizó el readme
+
 ---
 
 ## [v0.30.0-alpha] - Versión Principal

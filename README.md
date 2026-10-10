@@ -113,10 +113,20 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
     - Se agregaron muchos easter eggs y funciones random secretas insertando mensajes
     - Ahora la página del colegio se abre en una pestaña nueva (desde el logo del header)
     - Se cambió la función para renderizar la pantalla de carga, de forma que muestra un texto diferente dependiendo la subpágina
-    - Se añadió una función de respaldo pars cargar dinámicamente el título de las páginas
+    - Se añadió una función de respaldo para cargar dinámicamente el título de las páginas
     - Se renombró la carpeta `pages` a `misc` para incluir reglas css especificas o aleatorias
     - Se actualizó el árbol de carpetas
-
+    - Se agregaron flechas a los botones de descarga
+    - Se actualizó la flecha del botón de volver arriba
+    - Se agregó un PDF del uso del uniforme
+    - Se agregaron los logos de Instagram y algunos logos/favicons para temas de evento
+    - Se actualizó `humans.txt` y `CONTRIBUTING.md`
+    - Se agregaron algunos archivos nuevos en `.github/`
+    - `CODE_OF_CONDUCT.m` y `PULL_REQUEST_TEMPLATE.md`
+    - Y otra subcarpeta `ISSUES_TEMPLATE/`: `bug_report.yml` y `feature_request.yml`
+    - Estos archivos de momento están vacíos
+    - Se agregaron muchas carpetas y subcarpetas para futuras adiciones en `assets/` las cuales tienen `.gitkeep` adentro
+    - Se cambiaron comentarios
 - **`v0.30-alpha` (Anterior)**
     - Se agregó un nuevo aside del lado derecho de la tarjeta principal
     - El nuevo aside contiene un widget con datos curiosos (provisorios por ahora)
