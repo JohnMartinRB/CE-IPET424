@@ -1,14 +1,15 @@
 /* TEAM */
   Presidente & Desarrollador Principal: Juan Martín Rodríguez Bizón
+  Secretario & Asistente Creativo: Gabriel Esteban Campana
   Github: https://github.com/JohnMartinRB/CE-IPET424
   Organización: Centro de Estudiantes - IPET N° 424
-  Ubicación: Villa Dolores, Córdoba, Argentina
+  Ubicación: 20 de Junio 201, Villa Dolores, Córdoba, Argentina
 
 /* THANKS */
   A la comunidad educativa y cuerpo docente del IPET N° 424 por el apoyo constante a las iniciativas estudiantiles.
 
 /* SITE */
-  Last update: 2026/10/01
+  Last update: 2026/10/10
   Language: Español (es)
   Standards: HTML5, CSS3, JS (ES6+)
   Components: Modular CSS, Vanilla JS

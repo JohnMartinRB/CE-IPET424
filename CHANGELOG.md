@@ -33,6 +33,20 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 - Se arreglaron los enlaces a las subpáginas desde el inicio
 
+## [v0.31.4-alpha]
+
+- Se agregaron flechas a los botones de descarga
+- Se actualizó la flecha del botón de volver arriba
+- Se agregó un PDF del uso del uniforme
+- Se agregaron los logos de Instagram y algunos logos/favicons para temas de evento
+- Se actualizó `humans.txt` y `CONTRIBUTING.md`
+- Se agregaron algunos archivos nuevos en `.github/`
+- `CODE_OF_CONDUCT.m` y `PULL_REQUEST_TEMPLATE.md`
+- Y otra subcarpeta `ISSUES_TEMPLATE/`: `bug_report.yml` y `feature_request.yml`
+- Estos archivos de momento están vacíos
+- Se agregaron muchas carpetas y subcarpetas para futuras adiciones en `assets/` las cuales tienen `.gitkeep` adentro
+- Se cambiaron comentarios
+
 ---
 
 ## [v0.30.0-alpha] - Versión Principal

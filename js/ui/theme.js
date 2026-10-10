@@ -72,6 +72,12 @@ export function initTheme() {
         if (logoHeader) {
             if (themeKey === "dark" || themeKey === "high-contrast" || themeKey === "code") {
                 logoHeader.src = "assets/img/logos/centro-dark.png";
+            } else if (themeKey === "halloween") {
+                logoHeader.src = "assets/img/logos/centro-halloween.png";
+            } else if (themeKey === "christmas") {
+                logoHeader.src = "assets/img/logos/centro-christmas.png";
+            } else if (themeKey === "summer") {
+                logoHeader.src = "assets/img/logos/centro-summer.png";
             } else {
                 logoHeader.src = "assets/img/logos/centro.png";
             }

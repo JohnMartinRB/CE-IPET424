@@ -81,7 +81,7 @@ CE-IPET424/
 │   ├── base/               # Reset, variables, fuentes, accesibilidad
 │   ├── components/         # Estilos por componente (botones, modales, cards)
 │   ├── layout/             # Estilos de maquetación (header, footer, asides)
-│   └── pages/              # Estilos específicos por página
+│   └── misc/               # Estilos específicos o random
 ├── js/                     # Lógica y scripts
 │   ├── ui/                 # Controladores de interfaz y DOM
 │   └── utils/              # Funciones auxiliares, accesibilidad y sonido
