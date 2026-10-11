@@ -70,8 +70,7 @@ a.footer-link,
     text-align: left;
 }
 .footer-copyright {
-    margin-top: var(--space-md);
-    margin-bottom: 0.3rem;
+    padding-top: var(--space-md);
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     color: var(--text-footer);
     font-size: var(--fs-sm);
@@ -87,7 +86,7 @@ a.footer-link,
 @media (min-width: 1024px) {
     .footer-card {
         width: 100%;
-        max-width: 70%;
+        max-width: 75%;
         height: auto !important;
         min-height: fit-content;
         max-height: none !important;

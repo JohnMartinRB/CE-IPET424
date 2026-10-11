@@ -19,6 +19,11 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se cambiaron los colores del party-mode y se agregaron más
 - Se corrigió un enlace del README
 
+## [v0.32.1-alpha]
+
+- Se separó más el copyright del borde superior
+- Ahora el footer es más ancho
+
 ---
 
 ## [v0.31.0-alpha] - Versión Principal
