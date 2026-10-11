@@ -4,6 +4,43 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## [v0.32.0-alpha] - Versión Principal
+
+- Nueva organización del footer: tres columnas
+    - Primera columna: Logo completo del C.E, nombre y descripción
+    - Segunda columna: Contacto (el contenido no cambió)
+    - Tercer columna: Proyecto (nuevo enlace al historial de cambios)
+- El copyright tiene solo una línea
+- El logo completo ya no estáa debajo del copyright
+- Se cambió la puntuación del subtítulo del header
+- Se cambió el color de borde y hover de los botones/inputs: ahora es lila
+- Se cambió el color de hover del botón de los aside
+- El footer de 404.html ahora tiene una sola línea y no tiene el logo
+- Se cambiaron los colores del party-mode y se agregaron más
+- Se corrigió un enlace del README
+
+## [v0.32.1-alpha]
+
+- Se separó más el copyright del borde superior
+- Ahora el footer es más ancho
+
+## [v0.32.2-alpha]
+
+- Se oscureció el color del toast
+- Se corrigió una clase del copyright del footer
+- Ahora el footer es más ancho
+- Corrección de ortografía en CONTRIBUTING
+
+## [v0.32.3-alpha]
+
+- Ahora la versión en la primer columna del footer está en otra línea
+
+## [v0.32.4-alpha]
+
+- La separación entre el borde del copyright y las columnas es mayor
+
+---
+
 ## [v0.31.0-alpha] - Versión Principal
 
 - Ahora todas las subpáginas tienen su nombre en español

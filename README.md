@@ -102,7 +102,10 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.31-alpha` (Actual)**
+- **`v0.32-alpha` (Actual)**
+    - Ahora todas las subpáginas tienen su nombre en español
+    - La tarjeta principal y el enlace ahora son más anchos
+- **`v0.31-alpha` (Anterior)**
     - Ahora todas las subpáginas tienen su nombre en español
     - La tarjeta principal y el enlace ahora son más anchos
     - En consecuencia, los aside son más delgados
@@ -127,34 +130,6 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
     - Estos archivos de momento están vacíos
     - Se agregaron muchas carpetas y subcarpetas para futuras adiciones en `assets/` las cuales tienen `.gitkeep` adentro
     - Se cambiaron comentarios
-- **`v0.30-alpha` (Anterior)**
-    - Se agregó un nuevo aside del lado derecho de la tarjeta principal
-    - El nuevo aside contiene un widget con datos curiosos (provisorios por ahora)
-    - También un botón para generar otro dato
-    - Ahora el botón del aside funciona como se tenía pensado en un inicio: ocupa todo el alto y ancho disponible
-    - El botón del aside ahora tiene un ícono indicador
-    - Ahora el escudo en el header dirige a la página web del colegio
-    - Las fuentes Atkinson Hyperlegible y JetBrains Mono ahora funcionan correctamente ya que se corrigieron las rutas
-    - Se cambió el color del botón para volver arriba
-    - Se actualizaron las transiciones del aside
-    - Los botones y widgets ahora son más redondeados
-    - Se eliminó el color de fondo al hacer hover en los links del menu
-    - Se agregaron nuevos atajos de teclado para abrir el nuevo aside y para cerrar los modales
-    - Se corrigió el atajo para abrir el aside antiguo
-    - Se modificó la funcion de `extractLatestVersionChanges` para adaptarse al nuevo formato del changelog
-    - Se agregó un nuevo archivo `assets/data/facts.json` para guardar los datos curiosos
-    - Se agregaron nuevos archivos .MD:
-    1. ARCHITECTURE.md el cual incluye el árbol de carpetas y archivos que previamente estaba en el README
-    2. CONTRIBUTING.md que incluye una guía de estándares y convenciones de desarrollo para el sitio
-    3. ROADMAP.md que incluye la hoja de ruta de desarrollo para futuras versiones y actualizaciones
-    - El archivo de changelog ahora está en formato .MD y contiene el nombre completo de las versiones
-    - README.md ahora contiene un changelog más reducido y se actualizó la tabla de contenidos
-    - Se cambiaron algunas clases del aside
-    - Se corrigió el error de la barra de progreso, ahora se encuentra centrada correctamente en el header
-    - Se corrigieron rutas de sonido y de cursores
-    - Se agregó la carpeta `assets/img/schedules` para una futura función
-    - Se eliminó el `link rel="manifest"` de los html a fin de trabajarlo en un futuro
-    - Se eliminó notes.txt
 
 Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 
