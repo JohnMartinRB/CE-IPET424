@@ -24,6 +24,13 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se separó más el copyright del borde superior
 - Ahora el footer es más ancho
 
+## [v0.32.2-alpha]
+
+- Se oscureció el color del toast
+- Se corrigió una clase del copyright del footer
+- Ahora el footer es más ancho
+- Corrección de ortografía en CONTRIBUTING
+
 ---
 
 ## [v0.31.0-alpha] - Versión Principal

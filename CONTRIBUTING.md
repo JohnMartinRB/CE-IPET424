@@ -49,7 +49,7 @@ Para facilitar el mantenimiento del código, respetamos las siguientes reglas se
 
 - **Clases e IDs (CSS/HTML):**
   Deben estar escritos en **inglés** usando el formato `kebab-case`.
-    - _Ejemplo:_ `.buttpn-primary`, `#main-header`, `.card-title`.
+    - _Ejemplo:_ `.button-primary`, `#main-header`, `.card-title`.
 - **Variables CSS (Design Tokens):**
   Se definen en `css/base/variables.css` usando `kebab-case`.
   Utilizá siempre las variables globales en lugar de valores fijos (`hardcodeados`) .

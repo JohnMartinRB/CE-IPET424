@@ -86,7 +86,7 @@ a.footer-link,
 @media (min-width: 1024px) {
     .footer-card {
         width: 100%;
-        max-width: 75%;
+        max-width: 80%;
         height: auto !important;
         min-height: fit-content;
         max-height: none !important;
