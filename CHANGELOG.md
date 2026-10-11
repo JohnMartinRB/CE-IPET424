@@ -35,6 +35,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 - Ahora la versión en la primer columna del footer está en otra línea
 
+## [v0.32.4-alpha]
+
+- La separación entre el borde del copyright y las columnas es mayor
+
 ---
 
 ## [v0.31.0-alpha] - Versión Principal
