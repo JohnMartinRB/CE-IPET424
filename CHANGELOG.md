@@ -47,6 +47,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 - Se cambiaron unos colores del party-mode
 
+## [v0.32.7-alpha]
+
+- Se arregló el README
+
 ---
 
 ## [v0.31.0-alpha] - Versión Principal

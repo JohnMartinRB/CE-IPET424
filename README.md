@@ -3,7 +3,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](<https://img.shields.io/badge/versi%C3%B3n-0.32%20(Alpha)-blue>)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.32%20%28Alpha%29-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
