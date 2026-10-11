@@ -57,13 +57,12 @@
     --bg-section-card: linear-gradient(90deg, var(--celeste7) 0%, var(--celeste6) 100%);
     --text-section-card: var(--azul2);
     --bg-subsection-card: linear-gradient(-90deg, var(--celeste7) 0%, var(--celeste5) 100%);
-    /* --bg-subsection-card: linear-gradient(90deg, var(--celeste6) 0%, var(--celeste5) 100%); */
     --text-subsection-card: var(--azul1);
     /* TITULOS */
     --text-titles: var(--azul1);
     /* BOTONES / ENLACES */
     --bg-button: var(--blanco);
-    --bg-button-hover: var(--celeste7);
+    --bg-button-hover: var(--claro1);
     --text-button: var(--azul1);
     --text-button-hover: var(--azul1);
     --border-button: var(--claro1);

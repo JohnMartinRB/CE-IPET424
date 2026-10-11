@@ -51,6 +51,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 - Se actualizó el readme
 
+## [v0.31.6-alpha]
+
+- Ahora al hacer hover a los botones se pintan de gris en lugar de celeste
+
 ---
 
 ## [v0.30.0-alpha] - Versión Principal
