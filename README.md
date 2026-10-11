@@ -103,8 +103,23 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
 ## 📜 Últimos Cambios y Actualizaciones
 
 - **`v0.32-alpha` (Actual)**
-    - Ahora todas las subpáginas tienen su nombre en español
-    - La tarjeta principal y el enlace ahora son más anchos
+    - Nueva organización del footer: tres columnas
+        - Primera columna: Logo completo del C.E, nombre y descripción
+        - Segunda columna: Contacto (el contenido no cambió)
+        - Tercer columna: Proyecto (nuevo enlace al historial de cambios)
+    - El copyright tiene solo una línea
+    - El logo completo ya no estáa debajo del copyright
+    - Se cambió la puntuación del subtítulo del header
+    - Se cambió el color de borde y hover de los botones/inputs: ahora es lila
+    - Se cambió el color de hover del botón de los aside
+    - El footer de 404.html ahora tiene una sola línea y no tiene el logo
+    - Se cambiaron los colores del party-mode y se agregaron más
+    - Se corrigió un enlace del README
+    - Se separó más el copyright del borde superior
+    - Ahora el footer es más ancho
+    - Se oscureció el color del toast
+    - Corrección de ortografía en CONTRIBUTING
+
 - **`v0.31-alpha` (Anterior)**
     - Ahora todas las subpáginas tienen su nombre en español
     - La tarjeta principal y el enlace ahora son más anchos
