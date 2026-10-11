@@ -126,15 +126,16 @@ export function party() {
     });
     function triggerPartyMode() {
         const colors = [
-            "#00c750",
-            "#00b9ce",
+            "#00db58",
+            "#00cde4",
             "#ffa703",
-            "#da2c26",
-            "#ae0dca",
-            "#87b607",
-            "#da8ca3",
-            "#5f0dca",
-            "#990f0a",
+            "#fffb03",
+            "#f03029",
+            "#c20ee2",
+            "#a1da07",
+            "#f89ab6",
+            "#6e0feb",
+            "#c5140e",
         ];
         const confettiCount = 60;
         for (let i = 0; i < confettiCount; i++) {

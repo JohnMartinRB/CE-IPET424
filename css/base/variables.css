@@ -31,8 +31,9 @@
     --celeste6: #a8e4fa;
     --celeste7: #d4f2fd;
     /* otros */
-    --lila1: #78aef0;
-    --lila2: #9f93eb;
+    --lila1: #b078f0;
+    --lila2: #cb93eb;
+    --lila3: #c5a1ff;
     --cian: #00ffff;
     --naranja: #912c28;
 
@@ -62,16 +63,16 @@
     --text-titles: var(--azul1);
     /* BOTONES / ENLACES */
     --bg-button: var(--blanco);
-    --bg-button-hover: var(--claro1);
+    --bg-button-hover: var(--lila3);
     --text-button: var(--azul1);
     --text-button-hover: var(--azul1);
-    --border-button: var(--claro1);
-    --bg-aside-button-hover: var(--blanco);
+    --border-button: var(--lila3);
+    --bg-aside-button-hover: var(--celeste7);
     /* INPUTS */
     --bg-input: var(--blanco);
     --text-input: var(--azul1);
-    --border-input: var(--claro1);
-    --border-input-focus: var(--celeste2);
+    --border-input: var(--lila3);
+    --border-input-focus: var(--lila1);
     /* FOOOTER */
     --bg-footer: linear-gradient(90deg, var(--celeste3) 0%, var(--celeste4) 100%);
     --text-footer: var(--azul1);
