@@ -39,6 +39,14 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 - La separación entre el borde del copyright y las columnas es mayor
 
+## [v0.32.5-alpha]
+
+- Se actualizó el README
+
+## [v0.32.6-alpha]
+
+- Se cambiaron unos colores del party-mode
+
 ---
 
 ## [v0.31.0-alpha] - Versión Principal
