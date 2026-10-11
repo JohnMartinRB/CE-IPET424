@@ -75,7 +75,6 @@ a.footer-link,
     color: var(--text-footer);
     font-size: var(--fs-sm);
     text-align: center;
-    text-wrap: balance;
 }
 .footer-logo {
     display: block;
@@ -94,7 +93,7 @@ a.footer-link,
     }
     .footer-links {
         grid-template-columns: repeat(3, 1fr);
-        gap: var(--space-lg);
+        gap: var(--space-xl);
     }
     .footer-icon {
         width: 20px;

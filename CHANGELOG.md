@@ -31,6 +31,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Ahora el footer es más ancho
 - Corrección de ortografía en CONTRIBUTING
 
+## [v0.32.3-alpha]
+
+- Ahora la versión en la primer columna del footer está en otra línea
+
 ---
 
 ## [v0.31.0-alpha] - Versión Principal
