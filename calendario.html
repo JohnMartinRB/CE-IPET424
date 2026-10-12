@@ -47,8 +47,55 @@
                         Conocé las actividades, torneos y mejoras planificadas por la comisión estudiantil.
                     </p>
                 </section>
-                <!-- SECCIÓN 1: HORARIOS Y DESCARGA -->
-                <section id="horarios" class="section-card horarios-section"></section>
+                <!-- SECCIÓN 1: CALENDARIO Y DESCARGA -->
+                <section id="calendario" class="section-card calendario-section">
+                    <h2>Generador de Calendario Anual Personalizable</h2>
+                    <p class="subtitulo-sección">
+                        Diseñá tu propio calendario para imprimir, armá tus feriados y organizá tu año.
+                    </p>
+
+                    <!-- Panel de Controles de Personalización -->
+                    <div class="panel-controles">
+                        <div class="control-grupo">
+                            <label for="selector-anio">Año:</label>
+                            <select id="selector-anio">
+                                <option value="2026" selected>2026</option>
+                                <option value="2027">2027</option>
+                            </select>
+                        </div>
+
+                        <div class="control-grupo">
+                            <label for="selector-vista">Formato de Impresión:</label>
+                            <select id="selector-vista">
+                                <option value="12-hojas">Mensual (12 Páginas - Casilleros Grandes)</option>
+                                <option value="1-hoja">Anual Compacto (1 Página - Todo el Año)</option>
+                            </select>
+                        </div>
+
+                        <div class="control-grupo">
+                            <label for="selector-fuente">Tipografía:</label>
+                            <select id="selector-fuente">
+                                <option value="Nunito, sans-serif">Nunito (Por defecto)</option>
+                                <option value="Arial, sans-serif">Arial</option>
+                                <option value="'Courier New', monospace">Courier (Tipo máquina)</option>
+                            </select>
+                        </div>
+
+                        <div class="control-grupo">
+                            <label for="color-acento">Color de Encabezados:</label>
+                            <input type="color" id="color-acento" value="#2b6cb0" />
+                        </div>
+                    </div>
+
+                    <!-- CONTENEDOR DINÁMICO: Aquí JavaScript generará los meses -->
+                    <div id="calendario-container" class="vista-12-hojas">
+                        <!-- Los meses se dibujarán automáticamente aquí -->
+                        <p class="placeholder-texto">Cargando calendarios...</p>
+                    </div>
+
+                    <!-- Botón de descarga en PDF -->
+                    <button id="btn-descargar-pdf" class="btn-primario">Descargar Calendario en PDF</button>
+                </section>
                 <!-- SECCIÓN 6: SUB SITIOS -->
                 <section class="section-card">
                     <h2>¿Buscas algo específico?</h2>
