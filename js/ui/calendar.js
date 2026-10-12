@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const calendarContainer = document.getElementById("calendar-container");
     const buttonDownload = document.getElementById("button-download-calendar");
 
-    const nombresMeses = [
+    const monthNames = [
         "Enero",
         "Febrero",
         "Marzo",
@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "Diciembre",
     ];
 
-    const nombresDias = ["L", "M", "X", "J", "V", "S", "D"]; // Lunes a Domingo
+    const dayNames = ["L", "M", "X", "J", "V", "S", "D"]; // Lunes a Domingo
 
     // Función principal para renderizar el calendario completo
     function renderCalendar() {
-        const anioSeleccionado = parseInt(selectYear.value) || 2026;
+        const selectedYear = parseInt(selectYear.value) || 2026;
         const formatoVista = selectView.value; // "12-hojas" o "1-hoja"
 
         // Aplicar clase de vista al contenedor
@@ -36,59 +36,59 @@ document.addEventListener("DOMContentLoaded", () => {
         calendarContainer.innerHTML = "";
 
         // Generar los 12 meses
-        for (let mes = 0; mes < 12; mes++) {
-            const mesElemento = document.asistenteCrearMes ? null : document.createElement("div"); // O un div normal
-            const mesDiv = document.createElement("div");
-            mesDiv.className = "mes-card";
+        for (let month = 0; month < 12; month++) {
+            const monthElement = document.asistenteCrearMes ? null : document.createElement("div"); // O un div normal
+            const monthDiv = document.createElement("div");
+            monthDiv.className = "month-card";
 
             // Título del Mes
-            const tituloMes = document.createElement("h3");
-            tituloMes.className = "mes-titulo";
-            tituloMes.style.color = accentColor.value;
-            tituloMes.textContent = `${nombresMeses[mes]} ${anioSeleccionado}`;
-            mesDiv.appendChild(tituloMes);
+            const monthTitle = document.createElement("h3");
+            monthTitle.className = "month-title";
+            monthTitle.style.color = accentColor.value;
+            monthTitle.textContent = `${monthNames[month]} ${selectedYear}`;
+            monthDiv.appendChild(monthTitle);
 
             // Grilla de días de la semana
-            const grillaDias = document.createElement("div");
-            grillaDias.className = "mes-grilla-dias";
+            const daysGrid = document.createElement("div");
+            daysGrid.className = "grid-month-days";
 
             // Cabeceras de días (L, M, X, J, V, S, D)
-            nombresDias.forEach((dia) => {
-                const diaHeader = document.createElement("div");
-                diaHeader.className = "dia-header";
-                diaHeader.textContent = dia;
-                grillaDias.appendChild(diaHeader);
+            dayNames.forEach((day) => {
+                const headerDay = document.createElement("div");
+                headerDay.className = "header-day";
+                headerDay.textContent = day;
+                daysGrid.appendChild(headerDay);
             });
 
             // Calcular días del mes
             // En JS, getDay() devuelve 0 para Domingo, 1 para Lunes, etc. Ajustamos para que la semana empiece en Lunes (0)
-            const primerDiaDelMes = new Date(anioSeleccionado, mes, 1).getDay();
-            const inicioSemanaLunes = primerDiaDelMes === 0 ? 6 : primerDiaDelMes - 1;
+            const firstDayOfMonth = new Date(selectedYear, month, 1).getDay();
+            const weekStartMonday = firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1;
 
-            const totalDiasMes = new Date(anioSeleccionado, mes + 1, 0).getDate();
+            const totalMonthDays = new Date(selectedYear, month + 1, 0).getDate();
 
             // Espacios vacíos antes del primer día del mes
-            for (let i = 0; i < inicioSemanaLunes; i++) {
-                const espacioVacio = document.createElement("div");
-                espacioVacio.className = "dia-celda vacio";
-                grillaDias.appendChild(espacioVacio);
+            for (let i = 0; i < weekStartMonday; i++) {
+                const emptySpace = document.createElement("div");
+                emptySpace.className = "cell-day empty";
+                daysGrid.appendChild(emptySpace);
             }
 
             // Días del mes
-            for (let dia = 1; dia <= totalDiasMes; dia++) {
-                const diaCelda = document.createElement("div");
-                diaCelda.className = "dia-celda";
+            for (let day = 1; day <= totalMonthDays; day++) {
+                const cellDay = document.createElement("div");
+                cellDay.className = "cell-day";
 
                 const spanNum = document.createElement("span");
-                spanNum.className = "dia-numero";
-                spanNum.textContent = dia;
-                diaCelda.appendChild(spanNum);
+                spanNum.className = "number-day";
+                spanNum.textContent = day;
+                cellDay.appendChild(spanNum);
 
-                grillaDias.appendChild(diaCelda);
+                daysGrid.appendChild(cellDay);
             }
 
-            mesDiv.appendChild(grillaDias);
-            calendarContainer.appendChild(mesDiv);
+            monthDiv.appendChild(daysGrid);
+            calendarContainer.appendChild(monthDiv);
         }
     }
 
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     accentColor.addEventListener("input", (e) => {
-        const titulos = calendarContainer.querySelectorAll(".mes-titulo");
+        const titulos = calendarContainer.querySelectorAll(".month-title");
         titulos.forEach((titulo) => {
             titulo.style.color = e.target.value;
         });
