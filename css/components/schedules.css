@@ -1,0 +1,73 @@
+/* ==========================================
+    MÓDULO DE DESCARGA DE HORARIOS
+========================================== */
+.schedule-grid {
+    display: grid;
+    grid-template-columns: 110px repeat(5, 1fr);
+    padding: 1rem;
+    overflow-x: auto;
+    gap: 6px;
+    border-radius: var(--radius-card, 12px);
+    background-color: var(--bg-card, #f0f0f0);
+}
+
+.schedule-header {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--primary, #333);
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.schedule-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: var(--bg-muted, #e2e8f0);
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.schedule-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60px;
+    padding: 8px;
+    gap: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    background-color: #ffffff;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.subject-name {
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.teacher-name {
+    color: #666;
+    font-size: 0.75rem;
+}
+
+.schedule-grid.no-teachers .teacher-name {
+    display: none;
+}
+
+.schedule-break-row {
+    grid-column: 1 / -1;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: var(--bg-accent, #cbd5e1);
+    font-weight: bold;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-align: center;
+}

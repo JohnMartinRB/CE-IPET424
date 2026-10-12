@@ -95,6 +95,7 @@ export function initPageTitle() {
         "proyectos.html": "Proyectos",
         "tramites.html": "Trámites",
         "creditos.html": "Créditos",
+        "herramientas.html": "Herramientas",
         "404.html": "Página no encontrada",
     };
     // 4. Seleccionamos el nombre o usamos uno genérico si no coincide

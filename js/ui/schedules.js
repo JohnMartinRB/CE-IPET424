@@ -1,0 +1,113 @@
+/* ==========================================
+    MÓDULO DE DESCARGA DE HORARIOS
+========================================== */
+document.addEventListener("DOMContentLoaded", () => {
+    const selectYear = document.getElementById("select-year");
+    const selectFont = document.getElementById("select-font");
+    const toggleTeachers = document.getElementById("toggle-teachers");
+    const container = document.getElementById("schedule-container");
+    const buttonDownload = document.getElementById("button-download-schedule");
+
+    let dataSchedules = {};
+
+    // 1. Cargar el JSON con fetch
+    async function loadData() {
+        try {
+            const respuesta = await fetch("../assets/data/schedules.json");
+            dataSchedules = await respuesta.json();
+
+            // Popular el selector de cursos dinámicamente si existieran varios
+            selectYear.innerHTML = '<option value="">Seleccioná tu curso...</option>';
+            for (const key in dataSchedules) {
+                selectYear.innerHTML += `<option value="${key}">${dataSchedules[key].curso}</option>`;
+            }
+        } catch (error) {
+            console.error("Error al cargar los horarios:", error);
+        }
+    }
+
+    // 2. Renderizar la grilla en pantalla
+    function renderSchedule(claveCurso) {
+        if (!claveCurso || !dataSchedules[claveCurso]) {
+            container.innerHTML = `<p class="placeholder-texto">Seleccioná un curso arriba para ver su horario.</p>`;
+            return;
+        }
+
+        const yearData = dataSchedules[claveCurso];
+
+        // Armar la estructura de la grilla con las cabeceras
+        let html = `
+      <div class="schedule-header">HORARIO</div>
+      <div class="schedule-header">LUNES</div>
+      <div class="schedule-header">MARTES</div>
+      <div class="schedule-header">MIÉRCOLES</div>
+      <div class="schedule-header">JUEVES</div>
+      <div class="schedule-header">VIERNES</div>
+    `;
+
+        // Recorrer las filas del JSON
+        yearData.rows.forEach((row) => {
+            if (row.tipo === "recreo") {
+                html += `<div class="schedule-break-row">${row.texto}</div>`;
+            } else {
+                html += `
+          <div class="schedule-time">${row.hora}</div>
+          <div class="schedule-cell">
+            <span class="subject-name">${row.monday.subject}</span>
+            <span class="teacher-name">${row.monday.teacher}</span>
+          </div>
+          <div class="schedule-cell">
+            <span class="subject-name">${row.tuesday.subject}</span>
+            <span class="teacher-name">${row.tuesday.teacher}</span>
+          </div>
+          <div class="schedule-cell">
+            <span class="subject-name">${row.wednesday.subject}</span>
+            <span class="teacher-name">${row.wednesday.teacher}</span>
+          </div>
+          <div class="schedule-cell">
+            <span class="subject-name">${row.thursday.subject}</span>
+            <span class="teacher-name">${row.thursday.teacher}</span>
+          </div>
+          <div class="schedule-cell">
+            <span class="subject-name">${row.friday.subject}</span>
+            <span class="teacher-name">${row.friday.teacher}</span>
+          </div>
+        `;
+            }
+        });
+
+        container.innerHTML = html;
+    }
+
+    // Eventos de interacción
+    selectYear.addEventListener("change", (e) => {
+        renderSchedule(e.target.value);
+    });
+
+    selectFont.addEventListener("change", (e) => {
+        container.style.fontFamily = e.target.value;
+    });
+
+    toggleTeachers.addEventListener("change", (e) => {
+        if (e.target.checked) {
+            container.classList.add("no-teachers");
+        } else {
+            container.classList.remove("no-teachers");
+        }
+    });
+
+    // 3. Descargar imagen con html2canvas
+    buttonDownload.addEventListener("click", () => {
+        if (!selectYear.value) {
+            alert("Por favor, seleccioná un curso antes de descargar.");
+            return;
+        }
+        html2canvas(container).then((canvas) => {
+            const enlace = document.createElement("a");
+            enlace.download = `Schedule_${selectYear.value}.png`;
+            enlace.href = canvas.toDataURL("image/png");
+            enlace.click();
+        });
+    });
+    loadData();
+});

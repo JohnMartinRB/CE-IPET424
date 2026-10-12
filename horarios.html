@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- ETIQUETAS META -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta
+            name="description"
+            content="Sitio oficial del Centro de Estudiantes IPET 424. Novedades, proyectos y contacto."
+        />
+        <meta name="theme-color" id="theme-color" content="#0088FF" />
+        <!-- TITULO DE LA PESTAÑA Y FAVICON -->
+        <title>Horarios | Centro de Estudiantes IPET N° 424</title>
+        <link rel="icon" id="favicon" type="image/png" href="assets/img/favicons/light.png" sizes="any" />
+        <!-- CSS Y JAVASCRIPT -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <script type="module" src="js/main.js"></script>
+        <script src="assets/libs/html2canvas.min.js"></script>
+    </head>
+
+    <body>
+        <!-- HEADER DE TITULO -->
+        <div id="header-container" class="header-container"></div>
+        <!-- BARRA DE NAVEGACIÓN -->
+        <nav id="nav-card" class="nav-card">
+            <button id="nav-button-menu" class="button nav-button-menu" aria-label="Abrir menú">☰</button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a class="nav-menu-link" href="#activos">Horarios</a></li>
+                <li><a class="nav-menu-link" href="#eventos">Calendarios</a></li>
+                <li><a class="nav-menu-link" href="#talleres">Calculadora</a></li>
+                <li><a class="nav-menu-link" href="#comunitarios">Convertores</a></li>
+                <li><a class="nav-menu-link" href="#historial">Redactores</a></li>
+            </ul>
+        </nav>
+        <!-- PANEL LATERAL DE CONFIGURACIÓN -->
+        <div id="aside-config-container" class="aside-config-container"></div>
+        <!-- PANEL LATERAL DE NOVEDADES -->
+        <div id="aside-news-container" class="aside-news-container"></div>
+        <!-- CONTENEDOR PRINCIPAL -->
+        <div id="content-card" class="content-card">
+            <main>
+                <!-- SECCIÓN: INICIO / INFORMATIVA -->
+                <section id="inicio" class="section-card hero-section">
+                    <h2>Herramientas</h2>
+                    <p class="text paragraph">
+                        Conocé las actividades, torneos y mejoras planificadas por la comisión estudiantil.
+                    </p>
+                </section>
+                <!-- SECCIÓN 1: HORARIOS Y DESCARGA -->
+                <section id="horarios" class="section-card horarios-section">
+                    <h2>Generador y Personalizador de Horarios</h2>
+                    <!-- Controles de personalización (Selectores, botones, etc.) -->
+                    <div class="panel-controls">
+                        <select id="select-year">
+                            <option value="1-A">1° A</option>
+                            <option value="1-B">1° B</option>
+                            <option value="2-A">2° A</option>
+                            <option value="2-B">2° B</option>
+                            <option value="3-A">3° A</option>
+                            <option value="3-B">3° B</option>
+                            <option value="4-A">4° A</option>
+                            <option value="4-B">4° B</option>
+                            <option value="5-A">5° A</option>
+                            <option value="5-B">5° B</option>
+                            <option value="6-A">6° A</option>
+                            <option value="6-B">6° B</option>
+                            <option value="7-A">7° A</option>
+                            <option value="7-B">7° B</option>
+                            <!-- Opciones cargadas o dinámicas -->
+                        </select>
+                        <select id="select-font">
+                            <option value="Nunito">Nunito</option>
+                            <option value="Nunito Sans">Nunito Sans</option>
+                            <option value="Arial">Arial</option>
+                            <option value="Calibri">Calibri</option>
+                            <option value="Roboto">Roboto</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Atkinson Hyperlegible">Dislexia</option>
+                        </select>
+                        <input type="color" />
+                        <label> <input type="checkbox" id="toggle-teachers" /> Ocultar profesores </label>
+                    </div>
+                    <!-- CONTENEDOR DINÁMICO: Aquí es donde JavaScript dibujará el CSS Grid -->
+                    <div id="schedule-container" class="schedule-grid">
+                        <p class="placeholder-text">Seleccioná un curso arriba para ver su horario.</p>
+                    </div>
+                    <!-- Botón de descarga con html2canvas -->
+                    <button id="button-download-schedule" class="button">Descargar Horario</button>
+                </section>
+                <!-- SECCIÓN 6: SUB SITIOS -->
+                <section class="section-card">
+                    <h2>¿Buscas algo específico?</h2>
+                    <p>Visitá nuestros diferentes sitios de consultas</p>
+                    <!-- Botones de enlaces a sub-páginas -->
+                    <ul id="subpages" class="subpages">
+                        <li><a class="subpages-link button" href="index.html">Inicio</a></li>
+                        <li><a class="subpages-link button" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="subpages-link button" href="contacto.html">Contacto</a></li>
+                        <li><a class="subpages-link button button-active" href="#">Proyectos</a></li>
+                        <li><a class="subpages-link button" href="tramites.html">Trámites</a></li>
+                        <li><a class="subpages-link button" href="creditos.html">Créditos</a></li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <!-- PIE DE PÁGINA -->
+        <div id="footer-container" class="footer-container"></div>
+        <!-- BOTÓN DE VOLVER ARRIBA -->
+        <button class="button-round button-scroll-top" id="button-scroll-top" aria-label="Volver arriba">↑</button>
+        <!-- VENTANA MODAL "EN DESARROLLO" -->
+        <div id="modal-in-dev-container" class="modal-in-dev-container"></div>
+        <!-- VENTANA MODAL DE NOVEDADES -->
+        <div id="modal-whats-new-container" class="modal-whats-new-container"></div>
+    </body>
+</html>
