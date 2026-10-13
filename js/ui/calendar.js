@@ -107,24 +107,49 @@ export function initCalendar() {
         });
     });
 
-    // Función de descarga usando html2canvas
+    // Función de descarga dual (PDF o Imagen)
     buttonDownload.addEventListener("click", () => {
-        buttonDownload.textContent = "Generando PDF / Imagen...";
+        const downloadFormat = document.getElementById("select-format").value;
+        buttonDownload.textContent = "Generando archivo...";
         buttonDownload.disabled = true;
 
         html2canvas(calendarContainer, { scale: 2 })
             .then((canvas) => {
-                const link = document.createElement("a");
-                link.download = `Calendario_Anual_${selectYear.value}.png`;
-                link.href = canvas.toDataURL("image/png");
-                link.click();
+                const imgData = canvas.toDataURL("image/png");
 
-                buttonDownload.textContent = "Descargar Calendario en PDF";
+                if (downloadFormat === "image") {
+                    // Opción A: Descargar como Imagen PNG
+                    const enlace = document.createElement("a");
+                    enlace.download = `Calendario_Anual_${selectYear.value}.png`;
+                    enlace.href = imgData;
+                    enlace.click();
+                } else {
+                    // Opción B: Descargar como PDF real usando jsPDF
+                    const { jsPDF } = window.jspdf;
+
+                    // Definimos si es orientación vertical u horizontal según la vista
+                    const isSinglePage = selectView.value === "1-hoja";
+                    const pdfOrientation = isSinglePage ? "portrait" : "landscape";
+
+                    const pdf = new jsPDF({
+                        orientation: pdfOrientation,
+                        unit: "mm",
+                        format: "a4",
+                    });
+
+                    const pdfWidth = pdf.internal.pageSize.getWidth();
+                    const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+
+                    pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+                    pdf.save(`Calendario_Anual_${selectYear.value}.pdf`);
+                }
+
+                buttonDownload.textContent = "Descargar Calendario";
                 buttonDownload.disabled = false;
             })
             .catch((error) => {
                 console.error("Error al generar la descarga:", error);
-                buttonDownload.textContent = "Descargar Calendario en PDF";
+                buttonDownload.textContent = "Descargar Calendario";
                 buttonDownload.disabled = false;
             });
     });

@@ -16,7 +16,8 @@
         <!-- CSS Y JAVASCRIPT -->
         <link rel="stylesheet" href="css/styles.css" />
         <script type="module" src="js/main.js"></script>
-        <script src="assets/html2canvas.min.js"></script>
+        <script src="assets/libs/html2canvas.min.js"></script>
+        <script src="assets/libs/jspdf.umd.min.js"></script>
     </head>
 
     <body>
@@ -90,6 +91,13 @@
                     <div id="calendar-container" class="vista-12-hojas">
                         <!-- Los meses se dibujarán automáticamente aquí -->
                         <p class="placeholder-text">Cargando calendarios...</p>
+                    </div>
+                    <div class="control-group">
+                        <label for="select-format">Formato de Descarga:</label>
+                        <select id="select-format">
+                            <option value="pdf" selected>Documento PDF</option>
+                            <option value="image">Imagen PNG</option>
+                        </select>
                     </div>
                     <!-- Botón de descarga en PDF -->
                     <button id="button-download-calendar" class="button">Descargar Calendario en PDF</button>
