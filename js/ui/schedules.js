@@ -13,13 +13,13 @@ export function initSchedules() {
     // 1. Cargar el JSON con fetch
     async function loadData() {
         try {
-            const respuesta = await fetch("../assets/data/schedules.json");
-            dataSchedules = await respuesta.json();
+            const answer = await fetch("../assets/data/schedules.json");
+            dataSchedules = await answer.json();
 
             // Popular el selector de cursos dinámicamente si existieran varios
             selectYear.innerHTML = '<option value="">Seleccioná tu curso...</option>';
             for (const key in dataSchedules) {
-                selectYear.innerHTML += `<option value="${key}">${dataSchedules[key].curso}</option>`;
+                selectYear.innerHTML += `<option value="${key}">${dataSchedules[key].year}</option>`;
             }
         } catch (error) {
             console.error("Error al cargar los horarios:", error);
@@ -29,7 +29,7 @@ export function initSchedules() {
     // 2. Renderizar la grilla en pantalla
     function renderSchedule(claveCurso) {
         if (!claveCurso || !dataSchedules[claveCurso]) {
-            container.innerHTML = `<p class="placeholder-texto">Seleccioná un curso arriba para ver su horario.</p>`;
+            container.innerHTML = `<p class="placeholder-text">Seleccioná un curso arriba para ver su horario.</p>`;
             return;
         }
 
@@ -47,11 +47,11 @@ export function initSchedules() {
 
         // Recorrer las filas del JSON
         yearData.rows.forEach((row) => {
-            if (row.tipo === "recreo") {
-                html += `<div class="schedule-break-row">${row.texto}</div>`;
+            if (row.type === "break") {
+                html += `<div class="schedule-break-row">${row.text}</div>`;
             } else {
                 html += `
-          <div class="schedule-time">${row.hora}</div>
+          <div class="schedule-time">${row.time}</div>
           <div class="schedule-cell">
             <span class="subject-name">${row.monday.subject}</span>
             <span class="teacher-name">${row.monday.teacher}</span>
@@ -103,10 +103,10 @@ export function initSchedules() {
             return;
         }
         html2canvas(container).then((canvas) => {
-            const enlace = document.createElement("a");
-            enlace.download = `Schedule_${selectYear.value}.png`;
-            enlace.href = canvas.toDataURL("image/png");
-            enlace.click();
+            const link = document.createElement("a");
+            link.download = `Schedule_${selectYear.value}.png`;
+            link.href = canvas.toDataURL("image/png");
+            link.click();
         });
     });
     loadData();

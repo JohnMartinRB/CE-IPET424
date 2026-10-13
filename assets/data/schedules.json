@@ -1,144 +1,144 @@
 {
     "5-A": {
-        "curso": "5° Año División \"A\" - Turno Tarde - Especialidad: Informática",
-        "filas": [
+        "year": "5° Año División \"A\" - Turno Tarde - Especialidad: Informática",
+        "rows": [
             {
-                "tipo": "materia",
-                "hora": "08:00 a 08:40",
-                "lunes": { "materia": "ED. FÍSICA", "profesor": "Cynthia Barrionuevo" },
-                "martes": { "materia": "PROGRAMACIÓN II", "profesor": "Miguel Berezosky" },
-                "miercoles": { "materia": "INFORMÁTICA A. II", "profesor": "Franco Prigent" },
-                "jueves": { "materia": "ED. FÍSICA", "profesor": "Cynthia Barrionuevo" },
-                "viernes": { "materia": "SIST. DE INFO.", "profesor": "Luciano Gigena" }
+                "type": "subject",
+                "time": "08:00 a 08:40",
+                "monday": { "subject": "ED. FÍSICA", "teacher": "Cynthia Barrionuevo" },
+                "tuesday": { "subject": "PROGRAMACIÓN II", "teacher": "Miguel Berezosky" },
+                "wednesday": { "subject": "INFORMÁTICA A. II", "teacher": "Franco Prigent" },
+                "thursday": { "subject": "ED. FÍSICA", "teacher": "Cynthia Barrionuevo" },
+                "friday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" }
             }
         ]
     },
     "5-B": {
-        "curso": "5° Año División \"B\" - Turno: Tarde - Especialidad: Programación",
-        "filas": [
+        "year": "5° Año División \"B\" - Turno: Tarde - Especialidad: Programación",
+        "rows": [
             {
-                "tipo": "materia",
-                "hora": "08:00 a 08:40",
-                "lunes": { "materia": "ED. FÍSICA", "profesor": "Cynthia Barrionuevo" },
-                "martes": { "materia": "", "profesor": "" },
-                "miercoles": { "materia": "", "profesor": "" },
-                "jueves": { "materia": "ED. FÍSICA", "profesor": "Cynthia Barrionuevo" },
-                "viernes": { "materia": "", "profesor": "" }
+                "type": "subject",
+                "time": "08:00 a 08:40",
+                "monday": { "subject": "ED. FÍSICA", "teacher": "Cynthia Barrionuevo" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "", "teacher": "" },
+                "thursday": { "subject": "ED. FÍSICA", "teacher": "Cynthia Barrionuevo" },
+                "friday": { "subject": "", "teacher": "" }
             },
             {
-                "tipo": "materia",
-                "hora": "08:50 a 09:30",
-                "lunes": { "materia": "", "profesor": "" },
-                "martes": { "materia": "", "profesor": "" },
-                "miercoles": { "materia": "INFORMÁTICA A. II", "profesor": "Franco Prigent" },
-                "jueves": { "materia": "PROGRAMACIÓN II", "profesor": "Miguel Berezosky" },
-                "viernes": { "materia": "SIST. DE INFO.", "profesor": "Luciano Gigena" }
+                "type": "subject",
+                "time": "08:50 a 09:30",
+                "monday": { "subject": "", "teacher": "" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "INFORMÁTICA A. II", "teacher": "Franco Prigent" },
+                "thursday": { "subject": "PROGRAMACIÓN II", "teacher": "Miguel Berezosky" },
+                "friday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" }
             },
             {
-                "tipo": "materia",
-                "hora": "09:30 a 10:10",
-                "lunes": { "materia": "INFORMÁTICA A. II", "profesor": "Franco Prigent" },
-                "martes": { "materia": "PROGRAMACIÓN II", "profesor": "Miguel Berezosky" },
-                "miercoles": { "materia": "INFORMÁTICA A. II", "profesor": "Franco Prigent" },
-                "jueves": { "materia": "INFORMÁTICA A. II", "profesor": "Franco Prigent" },
-                "viernes": { "materia": "SIST. DE INFO.", "profesor": "Luciano Gigena" }
+                "type": "subject",
+                "time": "09:30 a 10:10",
+                "monday": { "subject": "INFORMÁTICA A. II", "teacher": "Franco Prigent" },
+                "tuesday": { "subject": "PROGRAMACIÓN II", "teacher": "Miguel Berezosky" },
+                "wednesday": { "subject": "INFORMÁTICA A. II", "teacher": "Franco Prigent" },
+                "thursday": { "subject": "INFORMÁTICA A. II", "teacher": "Franco Prigent" },
+                "friday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" }
             },
             {
-                "tipo": "materia",
-                "hora": "10:10 a 10:50",
-                "lunes": { "materia": "INFORMÁTICA A. II", "profesor": "Franco Prigent" },
-                "martes": { "materia": "PROGRAMACIÓN II", "profesor": "Miguel Berezosky" },
-                "miercoles": { "materia": "SIST. DE INFO.", "profesor": "Luciano Gigena" },
-                "jueves": { "materia": "PROGRAMACIÓN II", "profesor": "Miguel Berezosky" },
-                "viernes": { "materia": "SIST. DE INFO.", "profesor": "Luciano Gigena" }
+                "type": "subject",
+                "time": "10:10 a 10:50",
+                "monday": { "subject": "INFORMÁTICA A. II", "teacher": "Franco Prigent" },
+                "tuesday": { "subject": "PROGRAMACIÓN II", "teacher": "Miguel Berezosky" },
+                "wednesday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" },
+                "thursday": { "subject": "PROGRAMACIÓN II", "teacher": "Miguel Berezosky" },
+                "friday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" }
             },
             {
-                "tipo": "recreo",
-                "texto": "RECREO"
+                "type": "break",
+                "text": "RECREO"
             },
             {
-                "tipo": "materia",
-                "hora": "11:00 a 11:40",
-                "lunes": { "materia": "INFORMÁTICA A. II", "profesor": "Franco Prigent" },
-                "martes": { "materia": "PROGRAMACIÓN II", "profesor": "Miguel Berezosky" },
-                "miercoles": { "materia": "SIST. DE INFO.", "profesor": "Luciano Gigena" },
-                "jueves": { "materia": "PROGRAMACIÓN II", "profesor": "Miguel Berezosky" },
-                "viernes": { "materia": "SIST. DE INFO.", "profesor": "Luciano Gigena" }
+                "type": "subject",
+                "time": "11:00 a 11:40",
+                "monday": { "subject": "INFORMÁTICA A. II", "teacher": "Franco Prigent" },
+                "tuesday": { "subject": "PROGRAMACIÓN II", "teacher": "Miguel Berezosky" },
+                "wednesday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" },
+                "thursday": { "subject": "PROGRAMACIÓN II", "teacher": "Miguel Berezosky" },
+                "friday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" }
             },
             {
-                "tipo": "materia",
-                "hora": "11:40 a 12:20",
-                "lunes": { "materia": "INFORMÁTICA A. II", "profesor": "Franco Prigent" },
-                "martes": { "materia": "PSICOLOGÍA", "profesor": "Liucero Palacios" },
-                "miercoles": { "materia": "LENGUA Y L.", "profesor": "Rocío Dambolena" },
-                "jueves": { "materia": "PROGRAMACIÓN II", "profesor": "Miguel Berezosky" },
-                "viernes": { "materia": "HISTORIA", "profesor": "Noemí Salgado" }
+                "type": "subject",
+                "time": "11:40 a 12:20",
+                "monday": { "subject": "INFORMÁTICA A. II", "teacher": "Franco Prigent" },
+                "tuesday": { "subject": "PSICOLOGÍA", "teacher": "Liucero Palacios" },
+                "wednesday": { "subject": "LENGUA Y L.", "teacher": "Rocío Dambolena" },
+                "thursday": { "subject": "PROGRAMACIÓN II", "teacher": "Miguel Berezosky" },
+                "friday": { "subject": "HISTORIA", "teacher": "Noemí Salgado" }
             },
             {
-                "tipo": "recreo",
-                "texto": "ALMUERZO"
+                "type": "break",
+                "text": "ALMUERZO"
             },
             {
-                "tipo": "materia",
-                "hora": "13:00 a 13:40",
-                "lunes": { "materia": "MATEMÁTICA", "profesor": "Romina Sosa" },
-                "martes": { "materia": "PSICOLOGÍA", "profesor": "Liucero Palacios" },
-                "miercoles": { "materia": "LENGUA Y L.", "profesor": "Rocío Dambolena" },
-                "jueves": { "materia": "MATEMÁTICA", "profesor": "Romina Sosa" },
-                "viernes": { "materia": "HISTORIA", "profesor": "Noemí Salgado" }
+                "type": "subject",
+                "time": "13:00 a 13:40",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "tuesday": { "subject": "PSICOLOGÍA", "teacher": "Liucero Palacios" },
+                "wednesday": { "subject": "LENGUA Y L.", "teacher": "Rocío Dambolena" },
+                "thursday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "friday": { "subject": "HISTORIA", "teacher": "Noemí Salgado" }
             },
             {
-                "tipo": "materia",
-                "hora": "13:40 a 14:20",
-                "lunes": { "materia": "MATEMÁTICA", "profesor": "Romina Sosa" },
-                "martes": { "materia": "PSICOLOGÍA", "profesor": "Liucero Palacios" },
-                "miercoles": { "materia": "LENGUA Y L.", "profesor": "Rocío Dambolena" },
-                "jueves": { "materia": "MATEMÁTICA", "profesor": "Romina Sosa" },
-                "viernes": { "materia": "HISTORIA", "profesor": "Noemí Salgado" }
+                "type": "subject",
+                "time": "13:40 a 14:20",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "tuesday": { "subject": "PSICOLOGÍA", "teacher": "Liucero Palacios" },
+                "wednesday": { "subject": "LENGUA Y L.", "teacher": "Rocío Dambolena" },
+                "thursday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "friday": { "subject": "HISTORIA", "teacher": "Noemí Salgado" }
             },
             {
-                "tipo": "materia",
-                "hora": "14:20 a 15:00",
-                "lunes": { "materia": "MATEMÁTICA", "profesor": "Romina Sosa" },
-                "martes": { "materia": "GEOGRAFÍA", "profesor": "Jorge González" },
-                "miercoles": { "materia": "QUÍMICA", "profesor": "Pablo Rinaldi" },
-                "jueves": { "materia": "FÍSICA", "profesor": "Laura Aldeco (Sup. Candela Villarreal)" },
-                "viernes": { "materia": "INGLÉS", "profesor": "Carlos R. Bustos" }
+                "type": "subject",
+                "time": "14:20 a 15:00",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Jorge González" },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Pablo Rinaldi" },
+                "thursday": { "subject": "FÍSICA", "teacher": "Laura Aldeco (Sup. Candela Villarreal)" },
+                "friday": { "subject": "INGLÉS", "teacher": "Carlos R. Bustos" }
             },
             {
-                "tipo": "recreo",
-                "texto": "RECREO"
+                "type": "break",
+                "text": "RECREO"
             },
             {
-                "tipo": "materia",
-                "hora": "15:10 a 15:50",
-                "lunes": { "materia": "FÍSICA", "profesor": "Laura Aldeco (Sup. Candela Villarreal)" },
-                "martes": { "materia": "GEOGRAFÍA", "profesor": "Jorge González" },
-                "miercoles": { "materia": "QUÍMICA", "profesor": "Pablo Rinaldi" },
-                "jueves": { "materia": "FÍSICA", "profesor": "Laura Aldeco (Sup. Candela Villarreal)" },
-                "viernes": { "materia": "INGLÉS", "profesor": "Carlos R. Bustos" }
+                "type": "subject",
+                "time": "15:10 a 15:50",
+                "monday": { "subject": "FÍSICA", "teacher": "Laura Aldeco (Sup. Candela Villarreal)" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Jorge González" },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Pablo Rinaldi" },
+                "thursday": { "subject": "FÍSICA", "teacher": "Laura Aldeco (Sup. Candela Villarreal)" },
+                "friday": { "subject": "INGLÉS", "teacher": "Carlos R. Bustos" }
             },
             {
-                "tipo": "materia",
-                "hora": "15:50 a 16:30",
-                "lunes": { "materia": "FÍSICA", "profesor": "Laura Aldeco (Sup. Candela Villarreal)" },
-                "martes": { "materia": "GEOGRAFÍA", "profesor": "Jorge González" },
-                "miercoles": { "materia": "QUÍMICA", "profesor": "Pablo Rinaldi" },
-                "jueves": { "materia": "ED. ART. MÚSICA", "profesor": "Emanuel Pérez" },
-                "viernes": { "materia": "INGLÉS", "profesor": "Carlos R. Bustos" }
+                "type": "subject",
+                "time": "15:50 a 16:30",
+                "monday": { "subject": "FÍSICA", "teacher": "Laura Aldeco (Sup. Candela Villarreal)" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Jorge González" },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Pablo Rinaldi" },
+                "thursday": { "subject": "ED. ART. MÚSICA", "teacher": "Emanuel Pérez" },
+                "friday": { "subject": "INGLÉS", "teacher": "Carlos R. Bustos" }
             },
             {
-                "tipo": "recreo",
-                "texto": "RECREO"
+                "type": "break",
+                "text": "RECREO"
             },
             {
-                "tipo": "materia",
-                "hora": "16:40 a 17:20",
-                "lunes": { "materia": "", "profesor": "" },
-                "martes": { "materia": "", "profesor": "" },
-                "miercoles": { "materia": "", "profesor": "" },
-                "jueves": { "materia": "ED. ART. MÚSICA", "profesor": "Emanuel Pérez" },
-                "viernes": { "materia": "", "profesor": "" }
+                "type": "subject",
+                "time": "16:40 a 17:20",
+                "monday": { "subject": "", "teacher": "" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "", "teacher": "" },
+                "thursday": { "subject": "ED. ART. MÚSICA", "teacher": "Emanuel Pérez" },
+                "friday": { "subject": "", "teacher": "" }
             }
         ]
     }
