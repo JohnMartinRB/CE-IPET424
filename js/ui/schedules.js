@@ -1,7 +1,7 @@
 /* ==========================================
     MÓDULO DE DESCARGA DE HORARIOS
 ========================================== */
-document.addEventListener("DOMContentLoaded", () => {
+export function initSchedules() {
     const selectYear = document.getElementById("select-year");
     const selectFont = document.getElementById("select-font");
     const toggleTeachers = document.getElementById("toggle-teachers");
@@ -110,4 +110,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
     loadData();
-});
+}
