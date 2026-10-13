@@ -22,6 +22,7 @@
 @import "components/cards.css";
 @import "components/accordion.css";
 @import "components/widgets.css";
+@import "components/calendar.css";
 
 /* ESTRUCTURA Y LAYOUT */
 @import "layout/header.css";

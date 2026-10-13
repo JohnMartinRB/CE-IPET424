@@ -1,3 +1,138 @@
 /* ==========================================
     MÓDULO DE CALENDARIO DESCARGABLE
 ========================================== */
+
+.calendario-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Panel de controles de personalización (estilo tarjeta flotante) */
+.controls-panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 1.2rem;
+    gap: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5rem;
+    backdrop-filter: blur(8px);
+    background: var(--bg-section-card, rgba(255, 255, 255, 0.05));
+    box-shadow: var(--shadow-section-card, 0 8px 20px rgba(0, 0, 0, 0.1));
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.control-group label {
+    color: var(--text-section-card, inherit);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.control-group select,
+.control-group input[type="color"] {
+    padding: 0.6rem;
+    border: 2px solid var(--border-input, #0088ff);
+    border-radius: 0.8rem;
+    outline: none;
+    background-color: var(--bg-input, #fff);
+    color: var(--text-input, #000);
+    font-size: 0.95krem;
+    font-family: inherit;
+    transition: all 0.2s ease;
+}
+
+.control-group input[type="color"] {
+    width: 100%;
+    height: 42px;
+    cursor: pointer;
+}
+
+/* Contenedor dinámico de los meses */
+#calendar-container {
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Vista 12 hojas (Grid de meses individuales) */
+#calendar-container.calendar-grid-12-hojas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Vista 1 hoja (Compacto general) */
+#calendar-container.calendar-grid-1-hoja {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+/* Tarjeta individual de cada mes */
+.month-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.8rem;
+    border: 1px solid rgba(0, 136, 255, 0.15);
+    border-radius: 1.2rem;
+    background: var(--bg-subsection-card, #ffffff);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    color: var(--text-subsection-card, #1a1a1a);
+}
+
+.month-title {
+    margin: 0;
+    font-weight: 800;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Grilla interna de días del mes */
+.grid-month-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3px;
+    text-align: center;
+}
+
+.header-day {
+    padding: 4px 0;
+    color: var(--azul3, #010f8f);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.cell-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    border-radius: 6px;
+    background-color: var(--claro2, #eee);
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: background-color 0.2s;
+}
+
+.cell-day.empty {
+    background-color: transparent;
+}
+
+.number-day {
+    color: inherit;
+}
+
+/* Placeholder inicial */
+.placeholder-text {
+    padding: 2rem;
+    font-style: italic;
+    text-align: center;
+    opacity: 0.7;
+}

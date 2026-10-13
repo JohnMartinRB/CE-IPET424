@@ -1,13 +1,15 @@
 /* ==========================================
     MÓDULO DE CALENDARIO DESCARGABLE
 ========================================== */
-document.addEventListener("DOMContentLoaded", () => {
+export function initCalendar() {
     const selectYear = document.getElementById("select-year");
     const selectView = document.getElementById("select-view");
     const selectFont = document.getElementById("select-font");
     const accentColor = document.getElementById("accent-color");
     const calendarContainer = document.getElementById("calendar-container");
     const buttonDownload = document.getElementById("button-download-calendar");
+
+    if (!calendarContainer) return;
 
     const monthNames = [
         "Enero",
@@ -37,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Generar los 12 meses
         for (let month = 0; month < 12; month++) {
-            const monthElement = document.asistenteCrearMes ? null : document.createElement("div"); // O un div normal
             const monthDiv = document.createElement("div");
             monthDiv.className = "month-card";
 
@@ -64,7 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
             // En JS, getDay() devuelve 0 para Domingo, 1 para Lunes, etc. Ajustamos para que la semana empiece en Lunes (0)
             const firstDayOfMonth = new Date(selectedYear, month, 1).getDay();
             const weekStartMonday = firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1;
-
             const totalMonthDays = new Date(selectedYear, month + 1, 0).getDate();
 
             // Espacios vacíos antes del primer día del mes
@@ -101,9 +101,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     accentColor.addEventListener("input", (e) => {
-        const titulos = calendarContainer.querySelectorAll(".month-title");
-        titulos.forEach((titulo) => {
-            titulo.style.color = e.target.value;
+        const titles = calendarContainer.querySelectorAll(".month-title");
+        titles.forEach((title) => {
+            title.style.color = e.target.value;
         });
     });
 
@@ -114,10 +114,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         html2canvas(calendarContainer, { scale: 2 })
             .then((canvas) => {
-                const enlace = document.createElement("a");
-                enlace.download = `Calendario_Anual_${selectYear.value}.png`;
-                enlace.href = canvas.toDataURL("image/png");
-                enlace.click();
+                const link = document.createElement("a");
+                link.download = `Calendario_Anual_${selectYear.value}.png`;
+                link.href = canvas.toDataURL("image/png");
+                link.click();
 
                 buttonDownload.textContent = "Descargar Calendario en PDF";
                 buttonDownload.disabled = false;
@@ -131,4 +131,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Renderizado inicial al cargar la página
     renderCalendar();
-});
+}

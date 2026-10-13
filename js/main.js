@@ -7,6 +7,7 @@ import { initFactsWidget } from "./ui/widgets.js";
 import { initBanners } from "./ui/banners.js";
 import { initTheme } from "./ui/theme.js";
 import { initModals } from "./ui/modals.js";
+import { initCalendar } from "./ui/calendar.js";
 import { initFontSize } from "./utils/font-size.js";
 import { initAnimations } from "./utils/animations.js";
 import { initDyslexia } from "./utils/dyslexia.js";
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initBanners();
     initTheme();
     initModals();
+    initCalendar();
     initFontSize();
     initAnimations();
     initDyslexia();
