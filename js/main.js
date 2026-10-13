@@ -6,6 +6,7 @@ import { initButtons } from "./ui/buttons.js";
 import { initFactsWidget } from "./ui/widgets.js";
 import { initBanners } from "./ui/banners.js";
 import { initTheme } from "./ui/theme.js";
+import { initSchedules } from "./ui/schedules.js";
 import { initModals } from "./ui/modals.js";
 import { initFontSize } from "./utils/font-size.js";
 import { initAnimations } from "./utils/animations.js";
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initFactsWidget();
     initBanners();
     initTheme();
+    initSchedules();
     initModals();
     initFontSize();
     initAnimations();
