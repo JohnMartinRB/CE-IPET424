@@ -1,0 +1,22 @@
+[
+    {
+        "fecha": "2026-05-25",
+        "titulo": "Día de la Revolución de Mayo",
+        "tipo": "inamovible"
+    },
+    {
+        "fecha": "2026-06-15",
+        "titulo": "Paso a la Inmortalidad del Gral. Don Martín Miguel de Güemes",
+        "tipo": "trasladable"
+    },
+    {
+        "fecha": "2026-06-20",
+        "titulo": "Paso a la Inmortalidad del Gral. Manuel Belgrano",
+        "tipo": "inamovible"
+    },
+    {
+        "fecha": "2026-07-09",
+        "titulo": "Día de la Independencia",
+        "tipo": "inamovible"
+    }
+]
