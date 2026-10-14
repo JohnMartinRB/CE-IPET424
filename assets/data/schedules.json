@@ -1,6 +1,6 @@
 {
     "1-A": {
-        "year": "1° Año División \"A\" - Turno Mañana",
+        "year": "1° Año \"A\" - T. Mañana",
         "rows": [
             {
                 "type": "subject",
@@ -70,7 +70,7 @@
         ]
     },
     "1-B": {
-        "year": "1° Año División \"B\" - Turno Tarde",
+        "year": "1° Año \"B\" - T. Tarde",
         "rows": [
             {
                 "type": "subject",
@@ -152,7 +152,7 @@
         ]
     },
     "2-A": {
-        "year": "2° Año División \"A\" - Turno Mañana",
+        "year": "2° Año \"A\" - T. Mañana",
         "rows": [
             {
                 "type": "subject",
@@ -219,7 +219,7 @@
         ]
     },
     "2-B": {
-        "year": "2° Año División \"B\" - Turno Tarde",
+        "year": "2° Año \"B\" - T. Tarde",
         "rows": [
             {
                 "type": "subject",
@@ -310,7 +310,7 @@
         ]
     },
     "3-A": {
-        "year": "3° Año División \"A\" - Turno Mañana",
+        "year": "3° Año \"A\" - T. Mañana",
         "rows": [
             {
                 "type": "subject",
@@ -386,7 +386,7 @@
         ]
     },
     "3-B": {
-        "year": "3° Año División \"B\" - Turno Tarde",
+        "year": "3° Año \"B\" - T. Tarde",
         "rows": [
             {
                 "type": "subject",
@@ -462,7 +462,7 @@
         ]
     },
     "4-A": {
-        "year": "4° Año División \"A\" - Turno Mañana",
+        "year": "4° Año \"A\" - T. Mañana - Informática",
         "rows": [
             {
                 "type": "subject",
@@ -611,7 +611,7 @@
         ]
     },
     "4-B": {
-        "year": "4° Año División \"B\" - Turno Tarde - Especialidad: Programación",
+        "year": "4° Año \"B\" - T. Tarde - Programación",
         "rows": [
             {
                 "type": "subject",
@@ -722,7 +722,7 @@
         ]
     },
     "5-A": {
-        "year": "5° Año División \"A\" - Turno Mañana",
+        "year": "5° Año \"A\" - T. Mañana - Informática",
         "rows": [
             {
                 "type": "subject",
@@ -854,8 +854,137 @@
             }
         ]
     },
+    "5-B": {
+        "year": "5° Año \"B\" - T. Tarde - Programación",
+        "rows": [
+            {
+                "type": "subject",
+                "time": "08:00 a 08:40",
+                "monday": { "subject": "ED. FÍSICA (Grupo 1)", "teacher": "Cynthia Barrionuevo" },
+                "tuesday": { "subject": "PROGRAMACIÓN II", "teacher": "Marcelo Ramírez" },
+                "wednesday": { "subject": "INFORMÁTICA A. II", "teacher": "Franco Prigent" },
+                "thursday": { "subject": "ED. FÍSICA (Grupo 1)", "teacher": "Cynthia Barrionuevo" },
+                "friday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" }
+            },
+            {
+                "type": "subject",
+                "time": "08:50 a 09:30",
+                "monday": { "subject": "", "teacher": "" },
+                "tuesday": { "subject": "PROGRAMACIÓN", "teacher": "Marcelo Ramírez" },
+                "wednesday": { "subject": "INFORMÁTICA A. II", "teacher": "Franco Prigent" },
+                "thursday": { "subject": "PROGRAMACIÓN II", "teacher": "Marcelo Ramírez" },
+                "friday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" }
+            },
+            {
+                "type": "subject",
+                "time": "09:30 a 10:10",
+                "monday": { "subject": "INFORMÁTICA A. II", "teacher": "Franco Prigent" },
+                "tuesday": { "subject": "PROGRAMACIÓN II", "teacher": "Marcelo Ramírez" },
+                "wednesday": { "subject": "INFORMÁTICA A. II", "teacher": "Franco Prigent" },
+                "thursday": { "subject": "INFORMÁTICA A. II", "teacher": "Franco Prigent" },
+                "friday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" }
+            },
+            {
+                "type": "subject",
+                "time": "10:10 a 10:50",
+                "monday": { "subject": "INFORMÁTICA A. II", "teacher": "Franco Prigent" },
+                "tuesday": { "subject": "PROGRAMACIÓN II", "teacher": "Marcelo Ramírez" },
+                "wednesday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" },
+                "thursday": { "subject": "PROGRAMACIÓN II", "teacher": "Marcelo Ramírez" },
+                "friday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "11:00 a 11:40",
+                "monday": { "subject": "INFORMÁTICA A. II", "teacher": "Franco Prigent" },
+                "tuesday": { "subject": "PROGRAMACIÓN II", "teacher": "Marcelo Ramírez" },
+                "wednesday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" },
+                "thursday": { "subject": "PROGRAMACIÓN II", "teacher": "Marcelo Ramírez" },
+                "friday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" }
+            },
+            {
+                "type": "subject",
+                "time": "11:40 a 12:20",
+                "monday": { "subject": "INFORMÁTICA A. II", "teacher": "Franco Prigent" },
+                "tuesday": { "subject": "PSICOLOGÍA", "teacher": "Soledad Rojas" },
+                "wednesday": { "subject": "LENGUA Y L.", "teacher": "Rocío Dambolena" },
+                "thursday": { "subject": "PROGRAMACIÓN II", "teacher": "Marcelo Ramírez" },
+                "friday": { "subject": "HISTORIA", "teacher": "Noemí Salgado" }
+            },
+            {
+                "type": "break",
+                "text": "ALMUERZO"
+            },
+            {
+                "type": "subject",
+                "time": "13:00 a 13:40",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "tuesday": { "subject": "PSICOLOGÍA", "teacher": "Soledad Rojas" },
+                "wednesday": { "subject": "LENGUA Y L.", "teacher": "Rocío Dambolena" },
+                "thursday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "friday": { "subject": "HISTORIA", "teacher": "Noemí Salgado" }
+            },
+            {
+                "type": "subject",
+                "time": "13:40 a 14:20",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "tuesday": { "subject": "PSICOLOGÍA", "teacher": "Soledad Rojas" },
+                "wednesday": { "subject": "LENGUA Y L.", "teacher": "Rocío Dambolena" },
+                "thursday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "friday": { "subject": "HISTORIA", "teacher": "Noemí Salgado" }
+            },
+            {
+                "type": "subject",
+                "time": "14:20 a 15:00",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Jorge González" },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Pablo Rinaldi" },
+                "thursday": { "subject": "FÍSICA", "teacher": "Laura Aldeco (Sup. Candela Villarreal)" },
+                "friday": { "subject": "INGLÉS", "teacher": "Carlos R. Bustos" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "15:10 a 15:50",
+                "monday": { "subject": "FÍSICA", "teacher": "Laura Aldeco (Sup. Candela Villarreal)" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Jorge González" },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Pablo Rinaldi" },
+                "thursday": { "subject": "FÍSICA", "teacher": "Laura Aldeco (Sup. Candela Villarreal)" },
+                "friday": { "subject": "INGLÉS", "teacher": "Carlos R. Bustos" }
+            },
+            {
+                "type": "subject",
+                "time": "15:50 a 16:30",
+                "monday": { "subject": "FÍSICA", "teacher": "Laura Aldeco (Sup. Candela Villarreal)" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Jorge González" },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Pablo Rinaldi" },
+                "thursday": { "subject": "ED. ART. MÚSICA", "teacher": "Emanuel Pérez" },
+                "friday": { "subject": "INGLÉS", "teacher": "Carlos R. Bustos" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "16:40 a 17:20",
+                "monday": { "subject": "", "teacher": "" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "", "teacher": "" },
+                "thursday": { "subject": "ED. ART. MÚSICA", "teacher": "Emanuel Pérez" },
+                "friday": { "subject": "", "teacher": "" }
+            }
+        ]
+    },
     "6-A": {
-        "year": "6° Año División \"A\" - Turno Mañana - Especialidad",
+        "year": "6° Año \"A\" - T. Mañana - Informática",
         "rows": [
             {
                 "type": "subject",
@@ -975,7 +1104,7 @@
         ]
     },
     "6-B": {
-        "year": "6° Año División \"B\" - Turno Tarde - Especialidad: Programación",
+        "year": "6° Año \"B\" - T. Tarde - Programación",
         "rows": [
             {
                 "type": "subject",
@@ -1094,7 +1223,7 @@
         ]
     },
     "7-A": {
-        "year": "7° Año División \"A\" - Turno Tarde - Especialidad: Informática",
+        "year": "7° Año \"A\" - T. Tarde - Informática",
         "rows": [
             {
                 "type": "subject",
@@ -1162,7 +1291,7 @@
         ]
     },
     "7-B": {
-        "year": "7° Año División \"B\" - Turno Tarde - Especialidad: Programación",
+        "year": "7° Año \"B\" - T. Tarde - Programación",
         "rows": [
             {
                 "type": "subject",
