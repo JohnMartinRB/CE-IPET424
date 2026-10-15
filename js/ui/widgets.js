@@ -35,11 +35,14 @@ export async function initHolidaysWidget() {
     const container = document.getElementById("next-holiday-container");
     if (!container) return;
     try {
-        // Ajustá la ruta según la profundidad de tu página (ej: "../assets/data/feriados.json")
-        const response = await fetch("../assets/data/holidays.json");
-        const holidays = await response.json();
+        // Usamos ruta absoluta desde la raíz para evitar problemas de carpetas (ajustá si tu proyecto usa otra estructura)
+        const response = await fetch("assets/data/holidays.json");
+        if (!response.ok) throw new Error("No se pudo cargar holidays.json");
+        let holidaysData = await response.json();
+        // Manejo por si el JSON viene envuelto en un array doble (ej: [[{...}]])
+        const holidays = Array.isArray(holidaysData[0]) ? holidaysData[0] : holidaysData;
         const today = new Date();
-        today.setHours(0, 0, 0, 0); // Limpiar horas para comparar solo fechas exactas
+        today.setHours(0, 0, 0, 0); // Limpiar horas para comparar fechas exactas
         // Mapear y filtrar feriados futuros o el de hoy mismo
         const futureHolidays = holidays
             .map((holiday) => {
@@ -66,10 +69,10 @@ export async function initHolidaysWidget() {
         } else {
             remainingText = `Faltan ${remainingDays} días`;
         }
-        // Formato de fecha bonita (ej: Lunes, 25 de Mayo)
+        // Formato de fecha (ej: Viernes, 1 de Enero)
         const dateOptions = { weekday: "long", day: "numeric", month: "long" };
         const formattedDate = nextHoliday.holidayObj.toLocaleDateString("es-AR", dateOptions);
-        // Inyectar el resultado en el widget
+        // Inyectar el resultado asegurando clases correctas
         container.innerHTML = `
             <div class="holiday-info">
                 <span class="holiday-badge ${nextHoliday.tipo}">${nextHoliday.tipo.toUpperCase()}</span>
