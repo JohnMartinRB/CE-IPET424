@@ -28,56 +28,59 @@ export async function initFactsWidget() {
     }
 }
 
+/* ==========================================
+    MÓDULO DE WIDGET DE FERIADOS
+========================================== */
 export async function initHolidaysWidget() {
     const container = document.getElementById("next-holiday-container");
     if (!container) return;
     try {
-        // Ajustá la ruta según la profundidad de tu página (ej: "../assets/data/ holidays.json" si estás en subpáginas)
-        const answer = await fetch("assets/data/holidays.json");
-        const holidays = await answer.json();
+        // Ajustá la ruta según la profundidad de tu página (ej: "../assets/data/feriados.json")
+        const response = await fetch("../assets/data/holidays.json");
+        const holidays = await response.json();
         const today = new Date();
         today.setHours(0, 0, 0, 0); // Limpiar horas para comparar solo fechas exactas
-        // Mapear y filtrar  holidays futuros o el de hoy mismo
+        // Mapear y filtrar feriados futuros o el de hoy mismo
         const futureHolidays = holidays
-            .map((f) => {
-                const [year, month, day] = f.fecha.split("-");
+            .map((holiday) => {
+                const [year, month, day] = holiday.fecha.split("-");
                 const holidayDate = new Date(year, month - 1, day);
-                return { ...f, fechaObj: holidayDate };
+                return { ...holiday, holidayObj: holidayDate };
             })
-            .filter((f) => f.fechaObj >= today);
+            .filter((holiday) => holiday.holidayObj >= today);
         // Ordenar por fecha más cercana
-        futureHolidays.sort((a, b) => a.fechaObj - b.fechaObj);
+        futureHolidays.sort((a, b) => a.holidayObj - b.holidayObj);
         if (futureHolidays.length === 0) {
-            container.innerHTML = `<p class="no-holidays">No hay más  holidays cargados.</p>`;
+            container.innerHTML = `<p class="no-holidays">No hay más feriados cargados.</p>`;
             return;
         }
-        const next = futureHolidays[0];
+        const nextHoliday = futureHolidays[0];
         // Cálculo de días restantes
-        const diferenciaTiempo = next.fechaObj - today;
-        const remainingDays = Math.ceil(diferenciaTiempo / (1000 * 60 * 60 * 24));
-        let textoFaltan = "";
+        const timeDifference = nextHoliday.holidayObj - today;
+        const remainingDays = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+        let remainingText = "";
         if (remainingDays === 0) {
-            textoFaltan = "¡Es hoy!";
+            remainingText = "¡Es hoy!";
         } else if (remainingDays === 1) {
-            textoFaltan = "Falta 1 día";
+            remainingText = "Falta 1 día";
         } else {
-            textoFaltan = `Faltan ${remainingDays} días`;
+            remainingText = `Faltan ${remainingDays} días`;
         }
         // Formato de fecha bonita (ej: Lunes, 25 de Mayo)
-        const opcionesFecha = { weekday: "long", day: "numeric", month: "long" };
-        const fechaFormateada = next.fechaObj.toLocaleDateString("es-AR", opcionesFecha);
+        const dateOptions = { weekday: "long", day: "numeric", month: "long" };
+        const formattedDate = nextHoliday.holidayObj.toLocaleDateString("es-AR", dateOptions);
         // Inyectar el resultado en el widget
         container.innerHTML = `
             <div class="holiday-info">
-                <span class="holiday-badge ${next.tipo}">${next.tipo.toUpperCase()}</span>
-                <h4 class="holiday-title">${next.titulo}</h4>
-                <p class="holiday-date">${fechaFormateada}</p>
-                <span class="holiday-countdown">${textoFaltan}</span>
+                <span class="holiday-badge ${nextHoliday.tipo}">${nextHoliday.tipo.toUpperCase()}</span>
+                <h4 class="holiday-title">${nextHoliday.nombre}</h4>
+                <p class="holiday-date">${formattedDate}</p>
+                <span class="holiday-countdown">${remainingText}</span>
             </div>
         `;
     } catch (error) {
-        console.error("Error al cargar los  holidays:", error);
-        container.innerHTML = `<p class="error">No se pudo cargar el próximo  holiday.</p>`;
+        console.error("Error loading holidays:", error);
+        container.innerHTML = `<p class="error">No se pudo cargar el próximo feriado.</p>`;
     }
 }
 

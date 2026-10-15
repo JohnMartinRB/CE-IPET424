@@ -38,7 +38,7 @@
     ESTILOS DEL WIDGET DE PRÓXIMO FERIADO (ASIDE)
    ========================================== */
 
-.feriados-widget-card {
+.holiday-widget-card {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.5rem;
@@ -55,13 +55,13 @@
         box-shadow 0.2s ease;
 }
 
-.feriados-widget-card:hover {
+.holiday-widget-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 28px rgba(0, 207, 255, 0.25);
 }
 
 /* Cabecera del Widget */
-.feriados-header {
+.holiday-header {
     display: flex;
     align-items: center;
     padding-bottom: 0.6rem;
@@ -69,11 +69,11 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.feriados-icon {
+.holiday-icon {
     font-size: 1.3rem;
 }
 
-.feriados-header h3 {
+.holiday-header h3 {
     margin: 0;
     color: var(--texto-destacado, var(--cian));
     font-weight: 700;
@@ -83,21 +83,21 @@
 }
 
 /* Contenido Interno */
-.feriados-content {
+.holiday-content {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     font-size: 0.95rem;
 }
 
-.feriado-info {
+.holiday-info {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
 }
 
 /* Badge de tipo de feriado (Inamovible, Movible, Puentes) */
-.feriado-badge {
+.holiday-badge {
     align-self: flex-start;
     padding: 0.2rem 0.6rem;
     border-radius: 6px;
@@ -108,37 +108,37 @@
 }
 
 /* Colores dinámicos según el tipo de feriado */
-.feriado-badge.inamovible {
+.holiday-badge.inamovible {
     background-color: var(--celeste2);
     color: var(--blanco);
 }
 
-.feriado-badge.movible {
+.holiday-badge.trasladable {
     background-color: var(--lila1);
     color: var(--azul1);
 }
 
-.feriado-badge.puente {
+.holiday-badge.puente {
     background-color: #e65100; /* Tono cálido de alerta/especial tipo flyer */
     color: var(--blanco);
 }
 
 /* Título y Fecha del Feriado */
-.feriado-titulo {
+.holiday-title {
     margin: 0;
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.3;
 }
 
-.feriado-fecha {
+.holiday-date {
     margin: 0;
     font-size: 0.85rem;
     opacity: 0.85;
 }
 
 /* Cuenta regresiva (Faltan X días) */
-.feriado-cuenta-regresiva {
+.holiday-countdown {
     margin-top: 0.2rem;
     color: var(--celeste4);
     font-weight: 800;
@@ -146,9 +146,9 @@
 }
 
 /* Estados de carga / error / sin datos */
-.feriados-content .cargando,
-.feriados-content .sin-feriados,
-.feriados-content .error {
+.holiday-content .cargando,
+.holiday-content .no-holidays,
+.holiday-content .error {
     margin: 0.5rem 0;
     font-style: italic;
     font-size: 0.85rem;
