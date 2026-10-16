@@ -90,11 +90,13 @@ export function initPageTitle() {
     // 3. Diccionario con el título específico para cada subpágina
     const pageTitles = {
         "index.html": "Inicio",
-        "nosotros.html": "Nosotros",
+        "nosotros.html": "Sobre Nosotros",
         "contacto.html": "Contacto",
         "proyectos.html": "Proyectos",
         "tramites.html": "Trámites",
         "creditos.html": "Créditos",
+        "escuela.html": "Nuestra Escuela",
+        "recursos.html": "Recursos útiles",
         "404.html": "Página no encontrada",
     };
     // 4. Seleccionamos el nombre o usamos uno genérico si no coincide
