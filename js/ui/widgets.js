@@ -32,13 +32,8 @@ export async function initFactsWidget() {
     MÓDULO DE WIDGET DE FERIADOS
 ========================================== */
 export async function initHolidaysWidget() {
-    const container = document.getElementById("holiday-container");
-    if (!container) {
-        console.warn("⚠️ Widget Feriados: No se encontró el contenedor #next-holiday-container en el DOM.");
-        return;
-    }
+    const container = document.getElementById("holidays-content");
     try {
-        console.log("✅ Widget Feriados: Contenedor encontrado. Cargando JSON...");
         // Cargar el JSON de feriados
         const response = await fetch("assets/data/holidays.json");
         if (!response.ok) throw new Error("No se pudo cargar holidays.json");
