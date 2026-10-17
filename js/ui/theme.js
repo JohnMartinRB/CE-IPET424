@@ -47,6 +47,11 @@ const THEMES = {
         favicon: "assets/img/favicons/summer.png",
         buttonText: "Modo Verano",
     },
+    summer: {
+        class: "pink-mode",
+        favicon: "assets/img/favicons/light.png",
+        buttonText: "Modo Rosa",
+    },
 };
 
 export function initTheme() {
