@@ -1,0 +1,19 @@
+backend:
+    name: github
+    repo: tu-usuario/tu-repositorio-de-github # Acá va el nombre de tu repo
+    branch: main
+
+media_folder: "assets/img/news" # Dónde se guardan las fotos que suban
+public_folder: "../assets/img/news"
+
+collections:
+    - name: "noticias"
+      label: "Novedades y Noticias"
+      folder: "assets/data/news/" # Carpeta donde se guardarán los archivos generados
+      create: true
+      slug: "{{slug}}"
+      fields:
+          - { label: "Título", name: "titulo", widget: "string" }
+          - { label: "Fecha", name: "fecha", widget: "date" }
+          - { label: "Imagen", name: "imagen", widget: "image" }
+          - { label: "Descripción", name: "descripcion", widget: "text" }

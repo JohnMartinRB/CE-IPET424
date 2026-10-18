@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- ETIQUETAS META -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta
+            name="description"
+            content="Sitio oficial del Centro de Estudiantes IPET 424. Novedades, proyectos y contacto."
+        />
+        <meta name="theme-color" id="theme-color" content="#0088FF" />
+        <!-- TITULO DE LA PESTAÑA Y FAVICON -->
+        <title>Noticias y Novedades | Centro de Estudiantes IPET N° 424</title>
+        <link rel="icon" id="favicon" type="image/png" href="assets/img/favicons/light.png" sizes="any" />
+        <!-- CSS Y JAVASCRIPT -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <script type="module" src="js/main.js"></script>
+    </head>
+
+    <body>
+        <!-- HEADER DE TITULO -->
+        <div id="header-container" class="header-container"></div>
+        <!-- BARRA DE NAVEGACIÓN -->
+        <nav id="nav-card" class="nav-card">
+            <button id="nav-button-menu" class="button nav-button-menu" aria-label="Abrir menú">☰</button>
+            <ul id="nav-menu" class="nav-menu">
+                <li>
+                    <a class="nav-menu-link" href="#quienes-somos">¿Quiénes Somos?</a>
+                </li>
+                <li>
+                    <a class="nav-menu-link" href="#autoridades">Comisión Directiva</a>
+                </li>
+                <li>
+                    <a class="nav-menu-link" href="#historia">Nuestra Historia</a>
+                </li>
+                <li>
+                    <a class="nav-menu-link" href="#estatuto">Estatuto Interno</a>
+                </li>
+                <li>
+                    <a class="nav-menu-link" href="#objetivos">Propuestas y Metas</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- PANEL LATERAL DE CONFIGURACIÓN -->
+        <div id="aside-config-container" class="aside-config-container"></div>
+        <!-- PANEL LATERAL DE NOVEDADES -->
+        <div id="aside-news-container" class="aside-news-container"></div>
+        <!-- CONTENEDOR PRINCIPAL -->
+        <div id="content-card" class="content-card">
+            <main>
+                <section id="news-section" class="section-card">
+                    <h2>Últimas Novedades y Eventos</h2>
+                    <p class="text">Enterate de todo lo que pasa en el colegio.</p>
+                    <!-- CONTENEDOR DINÁMICO: Aquí JavaScript inyectará las noticias -->
+                    <div id="news-container" class="grid-noticias">
+                        <p>Cargando novedades...</p>
+                    </div>
+                </section>
+                <!-- SECCIÓN 6: SUB SITIOS -->
+                <section id="about-section" class="section-card">
+                    <h2>¿Buscas algo específico?</h2>
+                    <p>Visitá nuestros diferentes sitios de consultas</p>
+                    <!-- Botones de enlaces a sub-páginas -->
+                    <ul id="subpages" class="subpages">
+                        <li><a class="subpages-link button" href="index.html">Inicio</a></li>
+                        <li><a class="subpages-link button button-active" href="#">Nosotros</a></li>
+                        <li><a class="subpages-link button" href="contacto.html">Contacto</a></li>
+                        <li><a class="subpages-link button" href="proyectos.html">Proyectos</a></li>
+                        <li><a class="subpages-link button" href="tramites.html">Trámites</a></li>
+                        <li><a class="subpages-link button" href="creditos.html">Créditos</a></li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <!-- PIE DE PÁGINA -->
+        <div id="footer-container" class="footer-container"></div>
+        <!-- BOTÓN DE VOLVER ARRIBA -->
+        <button class="button-round button-scroll-top" id="button-scroll-top" aria-label="Volver arriba">↑</button>
+        <!-- VENTANA MODAL "EN DESARROLLO" -->
+        <div id="modal-in-dev-container" class="modal-in-dev-container"></div>
+        <!-- VENTANA MODAL DE NOVEDADES -->
+        <div id="modal-whats-new-container" class="modal-whats-new-container"></div>
+    </body>
+</html>

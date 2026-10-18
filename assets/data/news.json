@@ -1,0 +1,10 @@
+{
+    "noticias": [
+        {
+            "titulo": "¡Inauguración de la nueva página del Centro!",
+            "fecha": "2026-10-17",
+            "imagen": "../assets/img/news/bienvenida.jpg",
+            "descripcion": "Bienvenidos a todos los estudiantes al nuevo portal web oficial. Aquí encontrarán novedades, horarios y más."
+        }
+    ]
+}
