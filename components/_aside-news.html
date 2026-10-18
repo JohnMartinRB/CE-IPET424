@@ -7,50 +7,56 @@
         <span id="aside-news-icon-toggle" class="aside-icon-toggle">◀</span>
     </button>
     <div id="aside-news-options" class="aside-options">
-        <!-- WIDGET DE DATOS CURIOSOS -->
-        <div id="facts-widget" class="widget facts-widget">
-            <div class="facts-header">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#ffffff"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="facts-icon icon icon-tabler icons-tabler-outline icon-tabler-bulb"
-                >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"></path>
-                    <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"></path>
-                    <path d="M9.7 17l4.6 0"></path>
-                </svg>
-                <h3>¿Sabías que...?</h3>
+        <!-- WIDGET DE PRÓXIMOS FERIADOS -->
+        <div id="holidays-widget" class="widget holidays-widget">
+            <div id="holidays-header" class="widget-header">
+                <img src="assets/img/icons/calendar.svg" class="widget-icon" loading="lazy" />
+                <h3 class="widget-title">Próximo Feriado</h3>
             </div>
-            <div class="facts-content">
-                <p id="fact-text">Cargando dato curioso...</p>
+            <div id="holidays-content" class="holidays-content">
+                <p id="holidays-text">Calculando próximo feriado...</p>
             </div>
         </div>
-        <button id="button-reroll-fact" class="button button-reroll-fact" aria-label="Mostrar otro dato">
-            Otro dato ↻
-        </button>
+        <!-- WIDGET DE FRASE DIARIA -->
         <div id="quote-widget" class="quote-widget widget">
-            <div class="widget-header">
-                <span class="quote-icon">📜</span>
-                <h3>Frase del Día</h3>
+            <div id="quote-header" class="widget-header">
+                <img src="assets/img/icons/coffee.svg" class="widget-icon" loading="lazy" />
+                <h3 class="widget-title">Frase del Día</h3>
             </div>
             <div class="widget-content">
                 <p id="quote-text" class="widget-text">Cargando frase...</p>
                 <span id="quote-author" class="quote-author"></span>
-        <!-- WIDGET DE PRÓXIMOS FERIADOS -->
-        <div id="holidays-widget" class="widget holidays-widget">
-            <div id="holidays-header" class="holidays-header">
-                <h3>Próximo Feriado</h3>
             </div>
-            <div id="holidays-content" class="holidays-content">
-                <p id="holidays-text">Calculando próximo feriado...</p>
+        </div>
+        <!-- WIDGET DE DATOS CURIOSOS -->
+        <div id="facts-widget" class="widget facts-widget">
+            <div id="facts-header" class="widget-header">
+                <img src="assets/img/icons/bulb.svg" class="widget-icon" loading="lazy" />
+                <h3 class="widget-title">¿Sabías que...?</h3>
+            </div>
+            <div class="facts-content">
+                <p id="fact-text">Cargando dato curioso...</p>
+            </div>
+            <button id="button-reroll-fact" class="button button-reroll-fact" aria-label="Mostrar otro dato">
+                Otro dato ↻
+            </button>
+        </div>
+        <!-- WIDGET DE TIEMPO ATMOSFÉRICO -->
+        <div id="weather-widget" class="widget weather-widget">
+            <div id="weather-header" class="widget-header">
+                <img src="assets/img/icons/temp.svg" class="widget-icon" loading="lazy" />
+                <h3 class="widget-title">El Tiempo y Hora</h3>
+            </div>
+            <div class="weather-content">
+                <div id="weather-datetime" class="weather-datetime">
+                    <div id="weather-time" class="weather-time">--:--:--</div>
+                    <div id="weather-date" class="weather-date">Cargando fecha...</div>
+                </div>
+                <div class="weather-main-info">
+                    <span class="weather-icon" id="weather-icon">☀️</span>
+                    <span class="weather-temp" id="weather-temp">--°C</span>
+                    <span class="weather-location">Villa Dolores</span>
+                </div>
             </div>
         </div>
     </div>

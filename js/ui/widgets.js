@@ -2,13 +2,16 @@
     WIDGETS DECORATIVOS
 ========================================== */
 
+/* ==========================================
+    WIDGETS DE DATOS CURIOSOS
+========================================== */
 let factsList = [];
 let lastIndex = -1;
 /* Carga el archivo JSON con los datos curiosos */
 export async function initFactsWidget() {
     const factText = document.getElementById("fact-text");
-    const rerollBtn = document.getElementById("button-reroll-fact");
-    if (!factText || !rerollBtn) return;
+    const rerollButton = document.getElementById("button-reroll-fact");
+    if (!factText || !rerollButton) return;
     try {
         const response = await fetch("assets/data/facts.json");
         if (!response.ok) throw new Error("No se pudo cargar facts.json");
@@ -16,7 +19,7 @@ export async function initFactsWidget() {
         if (factsList.length > 0) {
             displayRandomFact();
             // Evento para el botón de Reroll
-            rerollBtn.addEventListener("click", () => {
+            rerollButton.addEventListener("click", () => {
                 displayRandomFact();
             });
         } else {
@@ -28,7 +31,31 @@ export async function initFactsWidget() {
     }
 }
 
+/* Selecciona y muestra un dato aleatorio garantizando que no sea el mismo que el anterior */
+function displayRandomFact() {
+    const factText = document.getElementById("fact-text");
+    if (!factText || factsList.length === 0) return;
+    let newIndex;
+    // Si hay más de 1 dato, evitamos repetir el dato actual de forma consecutiva
+    if (factsList.length > 1) {
+        do {
+            newIndex = Math.floor(Math.random() * factsList.length);
+        } while (newIndex === lastIndex);
+    } else {
+        newIndex = 0;
+    }
+    lastIndex = newIndex;
+    // Pequeña animación de transición al cambiar el texto
+    factText.classList.add("fade-out");
+    setTimeout(() => {
+        factText.textContent = factsList[newIndex];
+        factText.classList.remove("fade-out");
+    }, 150);
+}
 
+/* ==========================================
+    WIDGET DE FRASE DIARIA
+========================================== */
 export async function initDailyQuoteWidget() {
     const quoteTextContainer = document.getElementById("quote-text");
     const quoteAuthorContainer = document.getElementById("quote-author");
@@ -58,7 +85,12 @@ export async function initDailyQuoteWidget() {
     } catch (error) {
         console.error("Error loading the daily quote:", error);
         quoteTextContainer.textContent = "Today's effort is tomorrow's success.";
-    MÓDULO DE WIDGET DE FERIADOS
+    }
+}
+
+/* ==========================================
+    WIDGET DE PROXIMO FERIADO
+========================================== */
 export async function initHolidaysWidget() {
     const container = document.getElementById("holidays-content");
     try {
@@ -118,24 +150,28 @@ export async function initHolidaysWidget() {
     }
 }
 
-/* Selecciona y muestra un dato aleatorio garantizando que no sea el mismo que el anterior */
-function displayRandomFact() {
-    const factText = document.getElementById("fact-text");
-    if (!factText || factsList.length === 0) return;
-    let newIndex;
-    // Si hay más de 1 dato, evitamos repetir el dato actual de forma consecutiva
-    if (factsList.length > 1) {
-        do {
-            newIndex = Math.floor(Math.random() * factsList.length);
-        } while (newIndex === lastIndex);
-    } else {
-        newIndex = 0;
+/* ==========================================
+    WIDGET DE HORA, FECHA Y CLIMA
+========================================== */
+export function initWeatherDateTimeWidget() {
+    const timeElement = document.getElementById("weather-time");
+    const dateElement = document.getElementById("weather-date");
+    if (!timeElement || !dateElement) return;
+    function updateDateTime() {
+        const now = new Date();
+        // 1. Formato de Hora con segundos (Ej: 15:16:55)
+        const hours = String(now.getHours()).padStart(2, "0");
+        const minutes = String(now.getMinutes()).padStart(2, "0");
+        const seconds = String(now.getSeconds()).padStart(2, "0");
+        timeElement.textContent = `${hours}:${minutes}:${seconds}`;
+        // 2. Formato de Fecha (Ej: Miércoles 12 de octubre de 2026)
+        const options = { weekday: "long", day: "numeric", month: "long", year: "numeric" };
+        let formattedDate = now.toLocaleDateString("es-AR", options);
+        // Capitalizar la primera letra
+        formattedDate = formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
+        dateElement.textContent = formattedDate;
     }
-    lastIndex = newIndex;
-    // Pequeña animación de transición al cambiar el texto
-    factText.classList.add("fade-out");
-    setTimeout(() => {
-        factText.textContent = factsList[newIndex];
-        factText.classList.remove("fade-out");
-    }, 150);
+    // Ejecutar al instante y luego actualizar cada 1 segundo (1000ms)
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
 }

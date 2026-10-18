@@ -3,7 +3,7 @@
 ========================================================================== */
 import { renderLoader, initComponents, initPageTitle } from "./ui/components.js";
 import { initButtons } from "./ui/buttons.js";
-import { initFactsWidget, initHolidaysWidget } from "./ui/widgets.js";
+import { initFactsWidget, initHolidaysWidget, initDailyQuoteWidget, initWeatherDateTimeWidget } from "./ui/widgets.js";
 import { initBanners } from "./ui/banners.js";
 import { initTheme } from "./ui/theme.js";
 import { initModals } from "./ui/modals.js";
@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     initButtons();
     initFactsWidget();
     initHolidaysWidget();
+    initDailyQuoteWidget();
+    initWeatherDateTimeWidget();
     initBanners();
     initTheme();
     initModals();

@@ -3,7 +3,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.32%20%28Alpha%29-blue)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.33%20%28Alpha%29-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
@@ -38,7 +38,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.32` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.33` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
 | **Lanzamiento Estable (v1.0)** | Martes 9 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
@@ -102,7 +102,23 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.32-alpha` (Actual)**
+- **`v0.33-alpha` (Actual)**
+    - Nuevos widgets en el aside de novedades:
+        - Widget para mostrar Próximos feriados
+        - Widget de frase diaria aleatoria
+    - Se reordenaron los widgets de este aside
+    - El widget de tiempo atmosférico ahora tiene título, ícono, y muestra la fecha y hora
+    - Se movió el widget de tiempo atmosférico al aside de noticias
+    - Nuevo botón en el aside de configuración que abre un modal para compartir el sitio a través de una red social
+    - Se cambió el color de los botones e inputs a un lila más intenso
+    - Los botones ahora tienen mucha menos separación vertical
+    - Los títulos de las secciones del aside tienen una nueva clase y menos separación con respecto a los botones
+    - Nuevos easter eggs
+    - Ahora los íconos de los widgets se encuentran en la carpeta `assets/img/icons`
+    - Nuevos archivos `holidays.json` y `quotes.json` para almacenar el contenido de los widget
+    - Nuevas funciones js para manejar los nuevos widgets
+
+- **`v0.32-alpha` (Anterior)**
     - Nueva organización del footer: tres columnas
         - Primera columna: Logo completo del C.E, nombre y descripción
         - Segunda columna: Contacto (el contenido no cambió)
@@ -119,32 +135,6 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
     - Ahora el footer es más ancho
     - Se oscureció el color del toast
     - Corrección de ortografía en CONTRIBUTING
-
-- **`v0.31-alpha` (Anterior)**
-    - Ahora todas las subpáginas tienen su nombre en español
-    - La tarjeta principal y el enlace ahora son más anchos
-    - En consecuencia, los aside son más delgados
-    - Las tarjetas de header y contenido tienen mas redondeado
-    - Todas las sombras son más intensas
-    - Se agregó una sombra al header al hacer scroll
-    - Nuevos estilos para manejar cómo se ven las imágenes que no cargan o con rutas rotas
-    - Se agregaron muchos easter eggs y funciones random secretas insertando mensajes
-    - Ahora la página del colegio se abre en una pestaña nueva (desde el logo del header)
-    - Se cambió la función para renderizar la pantalla de carga, de forma que muestra un texto diferente dependiendo la subpágina
-    - Se añadió una función de respaldo para cargar dinámicamente el título de las páginas
-    - Se renombró la carpeta `pages` a `misc` para incluir reglas css especificas o aleatorias
-    - Se actualizó el árbol de carpetas
-    - Se agregaron flechas a los botones de descarga
-    - Se actualizó la flecha del botón de volver arriba
-    - Se agregó un PDF del uso del uniforme
-    - Se agregaron los logos de Instagram y algunos logos/favicons para temas de evento
-    - Se actualizó `humans.txt` y `CONTRIBUTING.md`
-    - Se agregaron algunos archivos nuevos en `.github/`
-    - `CODE_OF_CONDUCT.m` y `PULL_REQUEST_TEMPLATE.md`
-    - Y otra subcarpeta `ISSUES_TEMPLATE/`: `bug_report.yml` y `feature_request.yml`
-    - Estos archivos de momento están vacíos
-    - Se agregaron muchas carpetas y subcarpetas para futuras adiciones en `assets/` las cuales tienen `.gitkeep` adentro
-    - Se cambiaron comentarios
 
 Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 

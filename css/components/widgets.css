@@ -2,6 +2,7 @@
     WIDGETS
 ========================================== */
 .widget {
+    margin: var(--space-sm) 0;
     padding: var(--space-base);
     border: 2px solid var(--border-weather-widget);
     border-radius: var(--radius-md);
@@ -12,11 +13,14 @@
     transition: var(--transition-fast);
     user-select: none;
 }
+.widget-title {
+    margin: 0 0 var(--space-sm) 0;
+}
+
 .weather-widget {
     width: 13rem;
     min-width: 10rem;
     margin: var(--space-base) auto;
-    font-weight: bold;
     text-align: center;
     text-transform: capitalize;
 }
@@ -26,13 +30,13 @@
     stroke: var(--text-body);
     stroke-width: 1.5;
 }
-
-.facts-icon,
-.holidays-icon {
-    width: 45px;
-    height: 45px;
-    margin-bottom: 0;
-    stroke: var(--celeste2);
+.weather-time {
+    margin-bottom: var(--space-xs);
+    font-size: var(--fs-md);
+}
+.weather-date {
+    margin-bottom: var(--space-xs);
+    font-size: var(--fs-xs);
 }
 
 /* ==========================================
