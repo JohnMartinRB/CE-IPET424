@@ -166,6 +166,45 @@ export function initTheme() {
         const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         return prefersDark ? "dark" : "light";
     }
+    // Detecta si hay una fecha estacional activa (prioridad alta por período corto)
+    function getSeasonalTheme() {
+        const now = new Date();
+        const month = now.getMonth() + 1; // 1 = Enero, 12 = Diciembre
+        const day = now.getDate();
+        // 1. Verano (Enero y Febrero) -> Hemisferio Sur
+        if (month === 1 || month === 2) {
+            return "summer";
+        }
+        // 2. Mes Rosa / Prevención (Del 1 al 26 de octubre)
+        if (month === 10 && day >= 1 && day <= 26) {
+            return "pink";
+        }
+        // 3. Halloween (Del 27 de octubre al 2 de noviembre)
+        if ((month === 10 && day >= 27) || (month === 11 && day <= 2)) {
+            return "halloween";
+        }
+        // 4. Navidad y Año Nuevo (Del 15 de diciembre al 6 de enero)
+        if ((month === 12 && day >= 15) || (month === 1 && day <= 6)) {
+            return "christmas";
+        }
+        return null;
+    }
+    // Detecta el tema priorizando las fechas estacionales sobre el localStorage
+    function getCurrentTheme() {
+        // 1. PRIMERA PRIORIDAD: Fechas estacionales (períodos cortos obligatorios)
+        const seasonalTheme = getSeasonalTheme();
+        if (seasonalTheme && THEMES[seasonalTheme]) {
+            return seasonalTheme;
+        }
+        // 2. SEGUNDA PRIORIDAD: Elección manual guardada en localStorage
+        const savedTheme = localStorage.getItem("activeTheme");
+        if (savedTheme && THEMES[savedTheme]) {
+            return savedTheme;
+        }
+        // 3. TERCERA PRIORIDAD: Preferencia del sistema operativo
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        return prefersDark ? "dark" : "light";
+    }
     // -------------------------------------------------------------
     // 1. CARGA INICIAL
     // -------------------------------------------------------------
