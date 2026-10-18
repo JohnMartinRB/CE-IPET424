@@ -27,7 +27,8 @@
     stroke-width: 1.5;
 }
 
-.facts-icon {
+.facts-icon,
+.quote-icon {
     width: 45px;
     height: 45px;
     margin-bottom: 0;
