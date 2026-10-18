@@ -342,7 +342,7 @@ export function menu() {
             emptyClicks = 0;
             rightClicks = 0;
         }, 1500);
-        if (emptyClicks >= 4 || rightClicks >= 3) {
+        if (emptyClicks >= 7 || rightClicks >= 4) {
             emptyClicks = 0;
             rightClicks = 0;
             clearTimeout(clickResetTimer);
