@@ -12,7 +12,7 @@ import { initAnimations } from "./utils/animations.js";
 import { initDyslexia } from "./utils/dyslexia.js";
 import { initSound, playSound } from "./utils/sound.js";
 import { initShortcuts } from "./utils/shortcuts.js";
-import { config, party, matrix, flip, terminal } from "./config.js";
+import { config, party, matrix, flip, terminal, paint, menu } from "./config.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     renderLoader();
@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     matrix();
     flip();
     terminal();
+    paint();
+    menu();
 });
 
 console.log("C.E. IPET 424 - Sitio inicializado correctamente");

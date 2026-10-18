@@ -28,9 +28,37 @@ export async function initFactsWidget() {
     }
 }
 
-/* ==========================================
+
+export async function initDailyQuoteWidget() {
+    const quoteTextContainer = document.getElementById("quote-text");
+    const quoteAuthorContainer = document.getElementById("quote-author");
+    if (!quoteTextContainer) return;
+    try {
+        const response = await fetch("assets/data/quotes.json");
+        if (!response.ok) throw new Error("Failed to load quotes.json");
+        const quotesList = await response.json();
+        if (!quotesList || quotesList.length === 0) {
+            quoteTextContainer.textContent = "No quotes available at the moment.";
+            return;
+        }
+        // Calculate the current day of the year (0 - 365)
+        const currentDate = new Date();
+        const startOfYear = new Date(currentDate.getFullYear(), 0, 0);
+        const timeDifference = currentDate - startOfYear;
+        const oneDayInMs = 1000 * 60 * 60 * 24;
+        const dayOfYear = Math.floor(timeDifference / oneDayInMs);
+        // Select a quote deterministically based on today's date
+        const selectedIndex = dayOfYear % quotesList.length;
+        const dailyQuote = quotesList[selectedIndex];
+        // Render to DOM
+        quoteTextContainer.textContent = `"${dailyQuote.quote}"`;
+        if (quoteAuthorContainer) {
+            quoteAuthorContainer.textContent = dailyQuote.author ? `— ${dailyQuote.author}` : "";
+        }
+    } catch (error) {
+        console.error("Error loading the daily quote:", error);
+        quoteTextContainer.textContent = "Today's effort is tomorrow's success.";
     MÓDULO DE WIDGET DE FERIADOS
-========================================== */
 export async function initHolidaysWidget() {
     const container = document.getElementById("holidays-content");
     try {
