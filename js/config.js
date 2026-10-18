@@ -137,6 +137,8 @@ export function party() {
             "#f89ab6",
             "#6e0feb",
             "#c5140e",
+            "#221fff",
+            "#3597c5",
         ];
         const confettiCount = 60;
         for (let i = 0; i < confettiCount; i++) {
@@ -227,4 +229,169 @@ export function terminal() {
         "color: #00ff66; font-weight: bold; background: #111; padding: 2px 6px; border-radius: 3px;",
         "color: #888;",
     );
+}
+
+export function paint() {
+    let paintCanvas = null;
+    let paintCtx = null;
+    let isPaintingActive = false;
+    document.addEventListener("keydown", (e) => {
+        // Ignoramos si el usuario está escribiendo en un input o textarea
+        if (["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) return;
+        // Combinación Alt + P para alternar el modo
+        if (e.altKey && e.key.toLowerCase() === "p") {
+            e.preventDefault();
+            togglePaintMode();
+        }
+        // Escape cancela el dibujo
+        if (e.key === "Escape" && isPaintingActive) {
+            togglePaintMode(false);
+        }
+    });
+    function togglePaintMode(forceState) {
+        isPaintingActive = forceState !== undefined ? forceState : !isPaintingActive;
+        if (isPaintingActive) {
+            setupPaintCanvas();
+            console.log(
+                "%c 🎨 Modo Paint Activado: Mové el mouse para dibujar. Presioná Escape o Alt+P para salir. ",
+                "color: #ff007f; font-weight: bold;",
+            );
+        } else {
+            removePaintCanvas();
+        }
+    }
+    function setupPaintCanvas() {
+        if (document.getElementById("paint-canvas")) return;
+        paintCanvas = document.createElement("canvas");
+        paintCanvas.id = "paint-canvas";
+        Object.assign(paintCanvas.style, {
+            position: "fixed",
+            top: "0",
+            left: "0",
+            width: "100vw",
+            height: "100vh",
+            zIndex: "99998",
+            pointerEvents: "none", // Permite seguir cliqueando botones debajo si se desea
+        });
+        document.body.appendChild(paintCanvas);
+        paintCtx = paintCanvas.getContext("2d");
+        paintCanvas.width = window.innerWidth;
+        paintCanvas.height = window.innerHeight;
+        document.addEventListener("mousemove", drawCursorTrail);
+    }
+    function removePaintCanvas() {
+        document.removeEventListener("mousemove", drawCursorTrail);
+        if (paintCanvas) {
+            paintCanvas.remove();
+            paintCanvas = null;
+            paintCtx = null;
+        }
+    }
+    function drawCursorTrail(e) {
+        if (!paintCtx) return;
+        const colors = [
+            "#00db58",
+            "#00cde4",
+            "#ffa703",
+            "#ebe700",
+            "#f03029",
+            "#c20ee2",
+            "#a1da07",
+            "#008516",
+            "#f89ab6",
+            "#6e0feb",
+            "#c5140e",
+            "#221fff",
+            "#3597c5",
+        ];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        paintCtx.beginPath();
+        paintCtx.arc(e.clientX, e.clientY, 6, 0, Math.PI * 2);
+        paintCtx.fillStyle = randomColor;
+        paintCtx.shadowColor = randomColor;
+        //paintCtx.shadowBlur = 10;
+        paintCtx.fill();
+    }
+}
+
+export function menu() {
+    let emptyClicks = 0;
+    let rightClicks = 0;
+    let clickResetTimer = null;
+    // Escucha clics izquierdos en áreas vacías
+    document.addEventListener("click", (e) => {
+        // Solo contamos si hizo clic directo sobre el fondo (body, main, wrappers sin botones ni enlaces)
+        const isClickable = e.target.closest("a, button, input, textarea, select, [role='button']");
+        if (!isClickable) {
+            emptyClicks++;
+            checkTriggers();
+        }
+    });
+    // Escucha clics derechos rápidos
+    document.addEventListener("contextmenu", (e) => {
+        rightClicks++;
+        // Si hace ráfaga de clics derechos, evitamos el menú contextual molesto en la ráfaga
+        if (rightClicks > 1) {
+            e.preventDefault();
+        }
+        checkTriggers(true);
+    });
+    function checkTriggers(isRightClick = false) {
+        clearTimeout(clickResetTimer);
+        clickResetTimer = setTimeout(() => {
+            emptyClicks = 0;
+            rightClicks = 0;
+        }, 1500);
+        if (emptyClicks >= 4 || rightClicks >= 3) {
+            emptyClicks = 0;
+            rightClicks = 0;
+            clearTimeout(clickResetTimer);
+            showCheekyToast();
+        }
+    }
+    function showCheekyToast() {
+        if (document.getElementById("cheeky-toast")) return;
+        const toast = document.createElement("div");
+        toast.id = "cheeky-toast";
+        toast.innerHTML = `
+        <div style="font-size: 1.4rem; margin-bottom: 0.5rem;"> <strong>¿Buscando algo oculto?</strong>🕵️</div>
+        <p style="margin: 0; font-size: 1rem;">
+            Acá no hay botones invisibles... probá escribiendo 'matrix' o 'flip' en el teclado, o abrí la consola (F12) y escribí 'ce.ayuda()' 😉
+        </p>
+    `;
+        Object.assign(toast.style, {
+            position: "fixed",
+            bottom: "20px",
+            right: "20px",
+            backgroundColor: "#0088ff",
+            color: "#d4f2fd",
+            padding: "1rem 1.5rem",
+            borderRadius: "1.5rem",
+            boxShadow: "0 8px 24px rgba(0, 0, 0, 0.3)",
+            zIndex: "99998",
+            maxWidth: "360px",
+            animation: "toastSlideIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards",
+            fontFamily: "Nunito",
+        });
+        // Inyectamos keyframes dinámicos para la entrada si no existen
+        if (!document.getElementById("toast-style")) {
+            const style = document.createElement("style");
+            style.id = "toast-style";
+            style.textContent = `
+            @keyframes toastSlideIn {
+                from { transform: translateY(100px); opacity: 0; }
+                to { transform: translateY(0); opacity: 1; }
+            }
+        `;
+            document.head.appendChild(style);
+        }
+        document.body.appendChild(toast);
+        // Se oculta automáticamente a los 8 segundos
+        setTimeout(() => {
+            toast.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+            toast.style.opacity = "0";
+            toast.style.transform = "translateY(20px)";
+            setTimeout(() => toast.remove(), 500);
+        }, 8000);
+    }
 }
