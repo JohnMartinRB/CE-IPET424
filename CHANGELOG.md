@@ -4,6 +4,25 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## [v0.33.0-alpha] - Versión Principal
+
+- Nuevos widgets en el aside de novedades:
+    - Widget para mostrar Próximos feriados
+    - Widget de frase diaria aleatoria
+- Se reordenaron los widgets de este aside
+- El widget de tiempo atmosférico ahora tiene título, ícono, y muestra la fecha y hora
+- Se movió el widget de tiempo atmosférico al aside de noticias
+- Nuevo botón en el aside de configuración que abre un modal para compartir el sitio a través de una red social
+- Se cambió el color de los botones e inputs a un lila más intenso
+- Los botones ahora tienen mucha menos separación vertical
+- Los títulos de las secciones del aside tienen una nueva clase y menos separación con respecto a los botones
+- Nuevos easter eggs
+- Ahora los íconos de los widgets se encuentran en la carpeta `assets/img/icons`
+- Nuevos archivos `holidays.json` y `quotes.json` para almacenar el contenido de los widget
+- Nuevas funciones js para manejar los nuevos widgets
+
+---
+
 ## [v0.32.0-alpha] - Versión Principal
 
 - Nueva organización del footer: tres columnas

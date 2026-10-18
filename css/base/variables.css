@@ -63,16 +63,16 @@
     --text-titles: var(--azul1);
     /* BOTONES / ENLACES */
     --bg-button: var(--blanco);
-    --bg-button-hover: var(--lila3);
+    --bg-button-hover: var(--lila1);
     --text-button: var(--azul1);
     --text-button-hover: var(--azul1);
-    --border-button: var(--lila3);
+    --border-button: var(--lila1);
     --bg-aside-button-hover: var(--celeste7);
     /* INPUTS */
     --bg-input: var(--blanco);
     --text-input: var(--azul1);
-    --border-input: var(--lila3);
-    --border-input-focus: var(--lila1);
+    --border-input: var(--lila1);
+    --border-input-focus: var(--celeste2);
     /* FOOOTER */
     --bg-footer: linear-gradient(90deg, var(--celeste3) 0%, var(--celeste4) 100%);
     --text-footer: var(--azul1);
@@ -100,6 +100,7 @@
     --font-main: "Nunito", serif;
 
     /* Escala tipográfica */
+    --fs-2xs: 0.7rem;
     --fs-xs: 0.8rem;
     --fs-sm: 0.9rem;
     --fs-base: 1rem;

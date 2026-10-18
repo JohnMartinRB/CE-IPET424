@@ -5,7 +5,7 @@
 a.button {
     width: 12rem;
     min-width: 10rem;
-    margin: var(--space-base) auto;
+    margin: var(--space-xs) auto;
     padding: var(--space-sm);
     border: 2px solid var(--border-button);
     border-radius: var(--radius-md);
@@ -20,6 +20,7 @@ a.button {
 }
 .button:hover,
 a.button:hover {
+    transform: scale(0.98) translateY(1px);
     background-color: var(--bg-button-hover);
     color: var(--text-button-hover) !important;
 }
@@ -29,7 +30,7 @@ a:hover {
 }
 .button:active,
 a.button:active {
-    transform: scale(0.95) translateY(2px);
+    transform: scale(0.95) translateY(3px);
     background-color: var(--bg-button-hover);
     transition: var(--transition-active);
 }
@@ -70,7 +71,7 @@ a.button:focus {
     opacity: 1;
 }
 .button-scroll-top:hover {
-    transform: translateY(-3px);
+    transform: scale(1.05) translateY(-3px);
     background-color: var(--scrollbar-thumb-hover);
 }
 .button-round {
@@ -93,3 +94,47 @@ a.button:focus {
         opacity: 0.4;
     }
 }
+
+/* ==========================================
+   COLORES INTENSOS PARA BOTONES DE TEMA
+========================================== 
+
+#button-theme {
+    border-color: #0f172a;
+}
+#button-theme:hover {
+    background-color: #0f172a;
+    color: var(--blanco) !important;
+}
+
+#button-high-contrast {
+    border-color: #b45309;
+}
+#button-high-contrast:hover {
+    background-color: #b45309;
+    color: var(--blanco) !important;
+}
+
+#button-code {
+    border-color: #047857;
+}
+#button-code:hover {
+    background-color: #047857;
+    color: var(--blanco) !important;
+}
+
+#button-grayscale {
+    border-color: #334155;
+}
+#button-grayscale:hover {
+    background-color: #334155;
+    color: var(--blanco) !important;
+}
+
+#button-colorblind {
+    border-color: #6d28d9;
+}
+#button-colorblind:hover {
+    background-color: #6d28d9;
+    color: var(--blanco) !important;
+}*/

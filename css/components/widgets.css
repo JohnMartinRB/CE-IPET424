@@ -2,6 +2,7 @@
     WIDGETS
 ========================================== */
 .widget {
+    margin: var(--space-sm) 0;
     padding: var(--space-base);
     border: 2px solid var(--border-weather-widget);
     border-radius: var(--radius-md);
@@ -12,11 +13,14 @@
     transition: var(--transition-fast);
     user-select: none;
 }
+.widget-title {
+    margin: 0 0 var(--space-sm) 0;
+}
+
 .weather-widget {
     width: 13rem;
     min-width: 10rem;
     margin: var(--space-base) auto;
-    font-weight: bold;
     text-align: center;
     text-transform: capitalize;
 }
@@ -26,10 +30,81 @@
     stroke: var(--text-body);
     stroke-width: 1.5;
 }
+.weather-time {
+    margin-bottom: var(--space-xs);
+    font-size: var(--fs-md);
+}
+.weather-date {
+    margin-bottom: var(--space-xs);
+    font-size: var(--fs-xs);
+}
 
-.facts-icon {
-    width: 45px;
-    height: 45px;
-    margin-bottom: 0;
-    stroke: var(--celeste2);
+/* ==========================================
+    ESTILOS DEL WIDGET DE PRÓXIMO FERIADO (ASIDE)
+   ========================================== */
+
+/* Badge de tipo de feriado (Inamovible, Movible, Puentes) */
+.holiday-badge {
+    align-self: center;
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius-xs);
+    font-weight: bold;
+    font-size: var(--fs-2xs);
+    text-transform: uppercase;
+}
+
+/* Colores dinámicos según el tipo de feriado */
+.holiday-badge.inamovible {
+    background-color: var(--celeste2);
+    color: var(--blanco);
+}
+
+.holiday-badge.trasladable {
+    background-color: var(--lila1);
+    color: var(--azul1);
+}
+
+.holiday-badge.puente {
+    background-color: #e65100; /* Tono cálido de alerta/especial tipo flyer */
+    color: var(--blanco);
+}
+
+/* Título y Fecha del Feriado */
+.holiday-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.holiday-date {
+    margin: 0;
+    font-size: var(--fs-sm);
+    opacity: 0.8;
+}
+
+/* Cuenta regresiva (Faltan X días) */
+.holiday-countdown {
+    color: var(--celeste2);
+    font-weight: bold;
+    font-size: var(--fs-sm);
+}
+
+/* Estados de carga / error / sin datos */
+/* Corrección de selector en plural para coincidir con _aside-news.html */
+.holidays-content .cargando,
+.holidays-content .no-holidays,
+.holidays-content .error {
+    margin: var(--space-xs) 0;
+    font-style: italic;
+    font-size: var(--fs-xs);
+    text-align: center;
+    opacity: 0.7;
+}
+/* Alineación limpia para la tarjeta inyectada por JS */
+.holiday-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
 }

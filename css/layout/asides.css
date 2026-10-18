@@ -67,6 +67,10 @@
         opacity: 0;
         transition: var(--transition-drawer-content);
     }
+    .aside-title {
+        margin-top: var(--space-md);
+        margin-bottom: var(--space-sm);
+    }
     .aside-options::-webkit-scrollbar {
         width: 0.3rem;
     }
@@ -139,4 +143,8 @@
         font-weight: bold;
         user-select: none;
     }
+}
+
+.button-reroll-fact {
+    width: 8rem;
 }

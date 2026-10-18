@@ -49,6 +49,32 @@ export function initButtons() {
             });
         });
     }
+    // Botón de compartir sitio
+    const buttonShare = document.getElementById("button-share");
+    if (!buttonShare) return;
+    buttonShare.addEventListener("click", async () => {
+        const shareData = {
+            title: "Centro de Estudiantes IPET N° 424",
+            text: "¡Entrá a la web oficial del Centro de Estudiantes del IPET 424 para ver las novedades, proyectos y trámites!",
+            url: window.location.href, // O podés poner tu URL fija: 'https://johnmartinrb.github.io/CE-IPET-424/'
+        };
+        // Si el navegador soporta el menú nativo de compartir
+        if (navigator.share) {
+            try {
+                await navigator.share(shareData);
+            } catch (err) {
+                // El usuario simplemente cerró la ventana de compartir
+            }
+        } else {
+            // FALLBACK PARA COMPUS VIEJAS: Copia el enlace y muestra el Toast
+            navigator.clipboard.writeText(shareData.url);
+            const toast = document.getElementById("toast-copied");
+            if (toast) {
+                toast.classList.add("visible");
+                setTimeout(() => toast.classList.remove("visible"), 2500);
+            }
+        }
+    });
 }
 
 export async function getVillaDoloresWeather() {
