@@ -103,7 +103,7 @@ export function initPageTitle() {
         "404.html": "Página no encontrada",
     };
     // 4. Seleccionamos el nombre o usamos uno genérico si no coincide
-    const sectionName = pageTitles[page] || "Portal";
+    const sectionName = pageTitles[page];
     // 5. Asignamos el título final a la pestaña con la estructura: [Sección] | [Marca]
     document.title = `${sectionName} ${SITE_SUFFIX}`;
 }
