@@ -91,12 +91,15 @@ export function initPageTitle() {
     const pageTitles = {
         "index.html": "Inicio",
         "nosotros.html": "Sobre Nosotros",
-        "contacto.html": "Contacto",
+        "noticias.html": "Noticias y Novedades",
         "proyectos.html": "Proyectos",
+        "herramientas.html": "Herramientas Estudiantiles",
         "tramites.html": "Trámites",
-        "creditos.html": "Créditos",
-        "escuela.html": "Nuestra Escuela",
         "recursos.html": "Recursos útiles",
+        "escuela.html": "Nuestra Escuela",
+        "contacto.html": "Contacto",
+        "creditos.html": "Créditos",
+        "terminos.html": "Términos y Condiciones",
         "404.html": "Página no encontrada",
     };
     // 4. Seleccionamos el nombre o usamos uno genérico si no coincide

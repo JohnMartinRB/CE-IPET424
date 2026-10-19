@@ -4,6 +4,12 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## [v0.34.0-alpha] - Versión Principal
+
+- Nuevas subpáginas
+
+---
+
 ## [v0.33.0-alpha] - Versión Principal
 
 - Nuevos widgets en el aside de novedades:
