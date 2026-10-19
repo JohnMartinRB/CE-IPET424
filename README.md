@@ -102,10 +102,28 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.34-alpha`**
-    -
+- **`v0.34-alpha` (Actual)**
+    - Nuevas subpáginas:
+        - Recursos, para descargar músicas y archivos. Algunos archivo descargables de momento
+        - Escuela, para conocer sobre la escuela. contenido placeholder y enlace a la web del colegio
+        - Herramientas, vacía de momento
+- Nueva función js para guardar en localStorage si los aside están abiertos o cerrados, para que el estado se mantenga al reiniciar la página o dirigirse a una subpágina
+    - Se eliminó la flecha hacia abajo en los botones de descarga de archivos
+    - El escudo del header ahora dirige a escuela.html
+    - Nueva organziación del menú de subpáginas (ahora con un grid)
+    - Se reordenaron las subpáginas del menú
+    - Se reordenó la función para poner título a la página y se agregaron nuevos
+    - Se cambiaron algunos títulos de subpáginas
+    - Se cambió el ancho y margin de los botones del aside
+    - Se subdividió la carpeta de `assets/audio` en `effects/` y `music/`
+    - Se subdividió la carpeta `assets/docs` en `school/` y `patrio/`
+    - Nueva carpeta `img/resources`
+    - Nuevos archivos en `resources`
+    - Se eliminaron muchas carpetas vacías
+    - Se eliminaron todas las funciones de `accesibility.js` debido a que no se usaban
+    - Se actualizaron varias rutas de archivos
 
-- **`v0.33-alpha` (Actual)**
+- **`v0.33-alpha` (Anterior)**
     - Nuevos widgets en el aside de novedades:
         - Widget para mostrar Próximos feriados
         - Widget de frase diaria aleatoria
@@ -120,24 +138,6 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
     - Ahora los íconos de los widgets se encuentran en la carpeta `assets/img/icons`
     - Nuevos archivos `holidays.json` y `quotes.json` para almacenar el contenido de los widget
     - Nuevas funciones js para manejar los nuevos widgets
-
-- **`v0.32-alpha` (Anterior)**
-    - Nueva organización del footer: tres columnas
-        - Primera columna: Logo completo del C.E, nombre y descripción
-        - Segunda columna: Contacto (el contenido no cambió)
-        - Tercer columna: Proyecto (nuevo enlace al historial de cambios)
-    - El copyright tiene solo una línea
-    - El logo completo ya no estáa debajo del copyright
-    - Se cambió la puntuación del subtítulo del header
-    - Se cambió el color de borde y hover de los botones/inputs: ahora es lila
-    - Se cambió el color de hover del botón de los aside
-    - El footer de 404.html ahora tiene una sola línea y no tiene el logo
-    - Se cambiaron los colores del party-mode y se agregaron más
-    - Se corrigió un enlace del README
-    - Se separó más el copyright del borde superior
-    - Ahora el footer es más ancho
-    - Se oscureció el color del toast
-    - Corrección de ortografía en CONTRIBUTING
 
 Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 
