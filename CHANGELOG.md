@@ -35,6 +35,11 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Pequeño cambio en la función de título de página
 - Se arregló un link del menú de subpáginas en `contacto.html`
 
+## [v0.34.3-alpha]
+
+- Ahora 404.html tiene el footer insertado en lugar de su propio footer
+- Se arregló la función de `initPageTitle`
+
 ---
 
 ## [v0.33.0-alpha] - Versión Principal
