@@ -67,6 +67,11 @@
         opacity: 0;
         transition: var(--transition-drawer-content);
     }
+    .config-button {
+        width: 12rem;
+        margin: var(--space-xs) auto;
+    }
+
     .aside-title {
         margin-top: var(--space-md);
         margin-bottom: var(--space-sm);

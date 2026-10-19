@@ -4,6 +4,30 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## [v0.34.0-alpha] - Versión Principal
+
+- Nuevas subpáginas:
+    - Recursos, para descargar músicas y archivos. Algunos archivo descargables de momento
+    - Escuela, para conocer sobre la escuela. contenido placeholder y enlace a la web del colegio
+    - Herramientas, vacía de momento
+- Nueva función js para guardar en localStorage si los aside están abiertos o cerrados, para que el estado se mantenga al reiniciar la página o dirigirse a una subpágina
+- Se eliminó la flecha hacia abajo en los botones de descarga de archivos
+- El escudo del header ahora dirige a escuela.html
+- Nueva organziación del menú de subpáginas (ahora con un grid)
+- Se reordenaron las subpáginas del menú
+- Se reordenó la función para poner título a la página y se agregaron nuevos
+- Se cambiaron algunos títulos de subpáginas
+- Se cambió el ancho y margin de los botones del aside
+- Se subdividió la carpeta de `assets/audio` en `effects/` y `music/`
+- Se subdividió la carpeta `assets/docs` en `school/` y `patrio/`
+- Nueva carpeta `img/resources`
+- Nuevos archivos en `resources`
+- Se eliminaron muchas carpetas vacías
+- Se eliminaron todas las funciones de `accesibility.js` debido a que no se usaban
+- Se actualizaron varias rutas de archivos
+
+---
+
 ## [v0.33.0-alpha] - Versión Principal
 
 - Nuevos widgets en el aside de novedades:

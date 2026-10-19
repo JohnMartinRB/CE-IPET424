@@ -3,7 +3,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.33%20%28Alpha%29-blue)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.34%20%28Alpha%29-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
@@ -38,7 +38,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.33` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.34` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
 | **Lanzamiento Estable (v1.0)** | Martes 9 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
@@ -102,7 +102,28 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.33-alpha` (Actual)**
+- **`v0.34-alpha` (Actual)**
+    - Nuevas subpáginas:
+        - Recursos, para descargar músicas y archivos. Algunos archivo descargables de momento
+        - Escuela, para conocer sobre la escuela. contenido placeholder y enlace a la web del colegio
+        - Herramientas, vacía de momento
+- Nueva función js para guardar en localStorage si los aside están abiertos o cerrados, para que el estado se mantenga al reiniciar la página o dirigirse a una subpágina
+    - Se eliminó la flecha hacia abajo en los botones de descarga de archivos
+    - El escudo del header ahora dirige a escuela.html
+    - Nueva organziación del menú de subpáginas (ahora con un grid)
+    - Se reordenaron las subpáginas del menú
+    - Se reordenó la función para poner título a la página y se agregaron nuevos
+    - Se cambiaron algunos títulos de subpáginas
+    - Se cambió el ancho y margin de los botones del aside
+    - Se subdividió la carpeta de `assets/audio` en `effects/` y `music/`
+    - Se subdividió la carpeta `assets/docs` en `school/` y `patrio/`
+    - Nueva carpeta `img/resources`
+    - Nuevos archivos en `resources`
+    - Se eliminaron muchas carpetas vacías
+    - Se eliminaron todas las funciones de `accesibility.js` debido a que no se usaban
+    - Se actualizaron varias rutas de archivos
+
+- **`v0.33-alpha` (Anterior)**
     - Nuevos widgets en el aside de novedades:
         - Widget para mostrar Próximos feriados
         - Widget de frase diaria aleatoria
@@ -117,24 +138,6 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
     - Ahora los íconos de los widgets se encuentran en la carpeta `assets/img/icons`
     - Nuevos archivos `holidays.json` y `quotes.json` para almacenar el contenido de los widget
     - Nuevas funciones js para manejar los nuevos widgets
-
-- **`v0.32-alpha` (Anterior)**
-    - Nueva organización del footer: tres columnas
-        - Primera columna: Logo completo del C.E, nombre y descripción
-        - Segunda columna: Contacto (el contenido no cambió)
-        - Tercer columna: Proyecto (nuevo enlace al historial de cambios)
-    - El copyright tiene solo una línea
-    - El logo completo ya no estáa debajo del copyright
-    - Se cambió la puntuación del subtítulo del header
-    - Se cambió el color de borde y hover de los botones/inputs: ahora es lila
-    - Se cambió el color de hover del botón de los aside
-    - El footer de 404.html ahora tiene una sola línea y no tiene el logo
-    - Se cambiaron los colores del party-mode y se agregaron más
-    - Se corrigió un enlace del README
-    - Se separó más el copyright del borde superior
-    - Ahora el footer es más ancho
-    - Se oscureció el color del toast
-    - Corrección de ortografía en CONTRIBUTING
 
 Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 
