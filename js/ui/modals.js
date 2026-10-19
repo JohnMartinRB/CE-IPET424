@@ -2,7 +2,7 @@
     VENTANAS MODALES EN SECUENCIA
 ========================================== */
 export function initModals() {
-    const CURRENT_VERSION = "v0.33.0"; // Actualizar manualmente al subir nueva versión
+    const CURRENT_VERSION = "v0.34.0"; // Actualizar manualmente al subir nueva versión
     // 1. COMPROBACIÓN INICIAL AL CARGAR
     const hasSeenInDev = localStorage.getItem("inDevWarningSeen");
     const savedVersion = localStorage.getItem("siteVersion");
