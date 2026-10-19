@@ -30,6 +30,11 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 - Se arregló el menú de subpáginas en `escuela.html`
 
+## [v0.34.2-alpha]
+
+- Pequeño cambio en la función de título de página
+- Se arregló un link del menú de subpáginas en `contacto.html`
+
 ---
 
 ## [v0.33.0-alpha] - Versión Principal
