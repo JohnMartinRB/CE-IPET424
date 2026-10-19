@@ -84,9 +84,13 @@ export async function initComponents() {
 export function initPageTitle() {
     // 1. Identificador institucional único (sufijo)
     const SITE_SUFFIX = "| Centro de Estudiantes IPET N° 424";
-    // 2. Obtenemos el nombre de la página actual desde la URL
+    // 2. Obtenemos el nombre de la página actual descartando parámetros o hash
     const path = window.location.pathname;
-    const page = path.split("/").pop() || "index.html";
+    let page = path.split("/").pop();
+    // Si la ruta termina en / o está vacía, asumimos index.html
+    if (!page || page === "") {
+        page = "index.html";
+    }
     // 3. Diccionario con el título específico para cada subpágina
     const pageTitles = {
         "index.html": "Inicio",
@@ -95,15 +99,15 @@ export function initPageTitle() {
         "proyectos.html": "Proyectos",
         "herramientas.html": "Herramientas Estudiantiles",
         "tramites.html": "Trámites",
-        "recursos.html": "Recursos útiles",
+        "recursos.html": "Recursos Útiles",
         "escuela.html": "Nuestra Escuela",
         "contacto.html": "Contacto",
         "creditos.html": "Créditos",
         "terminos.html": "Términos y Condiciones",
         "404.html": "Página no encontrada",
     };
-    // 4. Seleccionamos el nombre o usamos uno genérico si no coincide
-    const sectionName = pageTitles[page];
-    // 5. Asignamos el título final a la pestaña con la estructura: [Sección] | [Marca]
+    // 4. Seleccionamos el nombre o usamos "Inicio" como genérico si no coincide la clave
+    const sectionName = pageTitles[page] || "Inicio";
+    // 5. Asignamos el título final a la pestaña
     document.title = `${sectionName} ${SITE_SUFFIX}`;
 }
