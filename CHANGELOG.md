@@ -26,6 +26,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se eliminaron todas las funciones de `accesibility.js` debido a que no se usaban
 - Se actualizaron varias rutas de archivos
 
+## [v0.34.1-alpha]
+
+- Se arregló el menú de subpáginas en `escuela.html`
+
 ---
 
 ## [v0.33.0-alpha] - Versión Principal
