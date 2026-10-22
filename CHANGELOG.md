@@ -4,6 +4,19 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## [v0.35.0-alpha] - Versión Principal
+
+- Nueva subpágina de Términos y Condiciones para protección legal y de conducta del sitio
+- Nuevo modal para aceptar términos y condiciones al entrar por primera vez al sitio
+- El footer ahora tiene una columna más, de título Legal, con link a Terminos y Licencia (se movió a esta columna)
+- En la columna proyecto ahora se encuentra un enlace a Créditos
+- Modificación en la función js para inciar los modales en orden
+- Se renombraron los svg del widget y se actualizaron las rutas
+- Renombrado `home.css` a `specific.css`
+- Iconos del footer en carpeta `assets/icons/footer` (sin usar de momento)
+
+---
+
 ## [v0.34.0-alpha] - Versión Principal
 
 - Nuevas subpáginas:
