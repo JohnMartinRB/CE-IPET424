@@ -16,6 +16,14 @@
     border-radius: var(--radius-md);
 }
 
+.terms-title {
+    margin-top: var(--space-lg);
+}
+.button-home {
+    margin-top: var(--space-lg);
+    text-align: center;
+}
+
 @media (min-width: 1024px) {
     .iframe-container {
         display: flex;

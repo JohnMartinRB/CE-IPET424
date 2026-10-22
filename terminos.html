@@ -28,26 +28,73 @@
         <!-- CONTENEDOR PRINCIPAL -->
         <div id="content-card" class="content-card">
             <main>
-                <section id="guias-estudiantiles" class="section-card guias-section">
-                    <h2>Guías Rápidas y Tutoriales</h2>
-                </section>
-                <!-- SECCIÓN 6: SUB SITIOS -->
-                <section class="section-card">
-                    <h2>¿Buscas algo específico?</h2>
-                    <p>Visitá nuestros diferentes sitios de consultas</p>
-                    <!-- Botones de enlaces a sub-páginas -->
-                    <ul id="subpages" class="subpages">
-                        <li><a class="subpages-link button" href="index.html">Inicio</a></li>
-                        <li><a class="subpages-link button" href="nosotros.html">Nosotros</a></li>
-                        <li><a class="subpages-link button" href="noticias.html">Noticias</a></li>
-                        <li><a class="subpages-link button" href="proyectos.html">Proyectos</a></li>
-                        <li><a class="subpages-link button" href="herramientas.html">Herramientas</a></li>
-                        <li><a class="subpages-link button" href="tramites.html">Trámites</a></li>
-                        <li><a class="subpages-link button" href="recursos.html">Recursos</a></li>
-                        <li><a class="subpages-link button" href="escuela.html">Escuela</a></li>
-                        <li><a class="subpages-link button" href="contacto.html">Contacto</a></li>
-                        <li><a class="subpages-link button" href="creditos.html">Créditos</a></li>
-                    </ul>
+                <!-- SECCIÓN DE TÉRMINOS Y CONDICIONES CON EL ESPACIADO CORRECTO -->
+                <section id="terminos-condiciones" class="section-card" style="padding-top: 2rem; margin-bottom: 2rem">
+                    <h2>Términos, Condiciones y Políticas de Privacidad</h2>
+                    <p class="text paragraph" style="opacity: 0.8; margin-bottom: 1.5rem">
+                        Última actualización y vigencia: 21 de Octubre de 2026 | Versión Beta 0.34-alpha en adelante
+                    </p>
+                    <div class="terms-content">
+                        <h3 class="terms-title">1. Introducción y Marco Institucional</h3>
+                        <p class="text paragraph">
+                            El presente portal web oficial del
+                            <strong>Centro de Estudiantes del IPET N° 424</strong> (Villa Dolores, Córdoba) constituye
+                            un canal de comunicación digital, transparente y colaborativo creado por y para estudiantes.
+                            La utilización de este sitio web implica la aceptación plena de los presentes Términos y
+                            Condiciones de Uso.
+                        </p>
+                        <h3 class="terms-title">2. Naturaleza del Sitio y Versión Beta</h3>
+                        <p class="text paragraph">
+                            Se informa que la plataforma opera actualmente bajo una fase de desarrollo denominada
+                            <strong>Versión Beta</strong>:
+                        </p>
+                        <ul style="margin-left: 1.5rem; margin-top: 0.5rem; margin-bottom: 1rem" class="text paragraph">
+                            <li>
+                                <strong>Modificaciones continuas:</strong> Las secciones, enlaces a normativas y
+                                recursos descargables están sujetos a actualizaciones constantes.
+                            </li>
+                            <li>
+                                <strong>Disponibilidad:</strong> Se trabaja continuamente en mejoras técnicas, sin
+                                garantizar una disponibilidad ininterrumpida o libre de errores imprevistos.
+                            </li>
+                        </ul>
+                        <h3 class="terms-title">3. Privacidad y Tratamiento de Datos Personales</h3>
+                        <p class="text paragraph">
+                            El Centro de Estudiantes respeta profundamente la privacidad de los usuarios:
+                        </p>
+                        <ul class="text paragraph">
+                            <li>
+                                <strong>Operación local:</strong> Las herramientas interactivas (como la calculadora de
+                                promedios) procesan la información de manera estrictamente local en el navegador.
+                            </li>
+                            <li>
+                                <strong>Sin comercialización:</strong> No se recopilan bases de datos con información
+                                personal sensible ni se ceden registros a terceras partes ajenas a la institución.
+                            </li>
+                        </ul>
+                        <h3 class="terms-title">4. Propiedad Intelectual</h3>
+                        <p class="text paragraph">
+                            Los logotipos, escudos institucionales, textos oficiales y recursos gráficos publicados
+                            pertenecen al IPET N° 424 o al Centro de Estudiantes. Queda prohibida su reproducción total
+                            o parcial con fines lucrativos sin autorización previa.
+                        </p>
+                        <h3 class="terms-title">5. Conducta y Uso Esperado</h3>
+                        <p class="text paragraph">
+                            Al interactuar con los formularios y recursos del portal, los usuarios se comprometen a
+                            hacer un uso responsable, ético y constructivo, respetando el espíritu de convivencia
+                            pacífica del establecimiento.
+                        </p>
+                        <h3 class="terms-title">6. Contacto Institucional</h3>
+                        <p class="text paragraph">
+                            Para consultas sobre estos términos o el funcionamiento del portal, podés comunicarte a
+                            través de los canales oficiales de la institución.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="index.html" id="button-home" class="button button-home"
+                            >Volver a la página principal</a
+                        >
+                    </div>
                 </section>
             </main>
         </div>
@@ -55,6 +102,8 @@
         <div id="footer-container" class="footer-container"></div>
         <!-- BOTÓN DE VOLVER ARRIBA -->
         <button class="button-round button-scroll-top" id="button-scroll-top" aria-label="Volver arriba">↑</button>
+        <!-- VENTANA MODAL DE ACEPTAR TÉRMINOS -->
+        <div id="modal-terms-container" class="modal-terms-container"></div>
         <!-- VENTANA MODAL "EN DESARROLLO" -->
         <div id="modal-in-dev-container" class="modal-in-dev-container"></div>
         <!-- VENTANA MODAL DE NOVEDADES -->
