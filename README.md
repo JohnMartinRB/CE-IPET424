@@ -3,7 +3,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.34%20%28Alpha%29-blue)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.35%20%28Alpha%29-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
@@ -38,7 +38,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.34` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.35` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
 | **Lanzamiento Estable (v1.0)** | Martes 9 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
@@ -102,7 +102,17 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.34-alpha` (Actual)**
+- **`v0.35-alpha` (Actual)**
+    - Nueva subpágina de Términos y Condiciones para protección legal y de conducta del sitio
+    - Nuevo modal para aceptar términos y condiciones al entrar por primera vez al sitio
+    - El footer ahora tiene una columna más, de título Legal, con link a Terminos y Licencia (se movió a esta columna)
+    - En la columna proyecto ahora se encuentra un enlace a Créditos
+    - Modificación en la función js para inciar los modales en orden
+    - Se renombraron los svg del widget y se actualizaron las rutas
+    - Renombrado `home.css` a `specific.css`
+    - Iconos del footer en carpeta `assets/icons/footer` (sin usar de momento)
+
+- **`v0.34-alpha` (Anterior)**
     - Nuevas subpáginas:
         - Recursos, para descargar músicas y archivos. Algunos archivo descargables de momento
         - Escuela, para conocer sobre la escuela. contenido placeholder y enlace a la web del colegio
@@ -122,22 +132,6 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
     - Se eliminaron muchas carpetas vacías
     - Se eliminaron todas las funciones de `accesibility.js` debido a que no se usaban
     - Se actualizaron varias rutas de archivos
-
-- **`v0.33-alpha` (Anterior)**
-    - Nuevos widgets en el aside de novedades:
-        - Widget para mostrar Próximos feriados
-        - Widget de frase diaria aleatoria
-    - Se reordenaron los widgets de este aside
-    - El widget de tiempo atmosférico ahora tiene título, ícono, y muestra la fecha y hora
-    - Se movió el widget de tiempo atmosférico al aside de noticias
-    - Nuevo botón en el aside de configuración que abre un modal para compartir el sitio a través de una red social
-    - Se cambió el color de los botones e inputs a un lila más intenso
-    - Los botones ahora tienen mucha menos separación vertical
-    - Los títulos de las secciones del aside tienen una nueva clase y menos separación con respecto a los botones
-    - Nuevos easter eggs
-    - Ahora los íconos de los widgets se encuentran en la carpeta `assets/img/icons`
-    - Nuevos archivos `holidays.json` y `quotes.json` para almacenar el contenido de los widget
-    - Nuevas funciones js para manejar los nuevos widgets
 
 Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 
