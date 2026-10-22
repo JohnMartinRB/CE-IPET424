@@ -6,15 +6,44 @@ export function initModals() {
     // 1. COMPROBACIÓN INICIAL AL CARGAR
     const hasSeenInDev = localStorage.getItem("inDevWarningSeen");
     const savedVersion = localStorage.getItem("siteVersion");
-    if (!hasSeenInDev) {
-        // Primera vez en el sitio: mostrar In Dev
+    const termsAccepted = localStorage.getItem("ceipet424_terms_accepted");
+    // Verificar primero si aceptó los términos obligatoriamente
+    if (!termsAccepted) {
+        showTermsModal();
+    } else if (!hasSeenInDev) {
+        // Primera vez en el sitio (con términos aceptados): mostrar In Dev
         showInDevModal();
     } else if (savedVersion !== CURRENT_VERSION) {
         // Ya vio In Dev en el pasado, pero hay una nueva versión: mostrar Whats New directamente
         checkAndShowWhatsNew();
     }
+    // MODAL: TÉRMINOS Y CONDICIONES
+    function showTermsModal() {
+        const modal = document.getElementById("modal-terms");
+        const acceptButton = document.getElementById("button-accept-terms"); // Coincide con el id del botón sugerido antes
+        if (!modal || !acceptButton) return;
+        // Mostramos el modal (si usas la clase 'hidden' en tus modales, podés usar modal.classList.remove('hidden'))
+        modal.classList.remove("hidden");
+        // Evento al hacer clic en el botón de aceptar
+        acceptButton.addEventListener(
+            "click",
+            () => {
+                // Guardamos el registro en el localStorage
+                localStorage.setItem("ceipet424_terms_accepted", "true");
+                // Ocultamos el modal
+                modal.classList.add("hidden");
+                // Una vez aceptados los términos, continuamos con la secuencia normal de modales
+                if (!hasSeenInDev) {
+                    showInDevModal();
+                } else if (savedVersion !== CURRENT_VERSION) {
+                    checkAndShowWhatsNew();
+                }
+            },
+            { once: true },
+        );
+    }
 
-    // 2. MODAL: EN DESARROLLO (ALPHA)
+    // MODAL: EN DESARROLLO (ALPHA)
     function showInDevModal() {
         const modal = document.getElementById("modal-in-dev");
         const closeButton = document.getElementById("button-close-in-dev");
@@ -38,7 +67,7 @@ export function initModals() {
         }
     }
 
-    // 3. MODAL: NOVEDADES (WHATS NEW)
+    // MODAL: NOVEDADES (WHATS NEW)
     async function checkAndShowWhatsNew() {
         const modal = document.getElementById("modal-whats-new");
         const contentBox = document.getElementById("whats-new-body");
@@ -75,19 +104,15 @@ export function initModals() {
         const versionRegex = new RegExp(`(?:##|###)?\\s*\\[?v?${baseVersion}(?:\\.\\d+)*[^\\]\\n]*\\]?`, "i");
         const match = fullText.match(versionRegex);
         if (!match) return `<p>¡Bienvenido a la versión ${CURRENT_VERSION}!</p>`;
-
         // Cortamos el texto desde el inicio de la versión actual
         const textFromCurrent = fullText.substring(match.index);
         const lines = textFromCurrent.split("\n");
         let htmlResult = "";
         let inList = false;
-
         for (let i = 0; i < lines.length; i++) {
             let line = lines[i].trim();
-
             // 1. Omitir líneas vacías y separadores
             if (!line || line === "---") continue;
-
             // 2. DETECTAR FRENADO: Si encontramos otra versión principal anterior (ej: v0.29 o v0.28)
             if (i > 0 && line.match(/^##\s*\[?v?\d+\.\d+/i)) {
                 const foundVersionMatch = line.match(/\d+\.\d+/);
@@ -99,7 +124,6 @@ export function initModals() {
                     }
                 }
             }
-
             // 3. DETECTAR ENCABEZADOS (Títulos principales ## y subversiones ###)
             if (line.startsWith("#")) {
                 if (inList) {
@@ -113,7 +137,6 @@ export function initModals() {
                     .replace(/\[(.*?)\]/g, "$1"); // Convierte [v0.30.0] en v0.30.0
                 htmlResult += `<h3 style="margin: 1.2rem 0 0.5rem; color: var(--azul1, #0284c7); font-size: 1.1rem; font-weight: bold;">${cleanTitle}</h3>`;
             }
-
             // 4. DETECTAR ÍTEMS DE LISTA (- o *)
             else if (line.startsWith("-") || line.startsWith("*")) {
                 if (!inList) {
@@ -124,7 +147,6 @@ export function initModals() {
                 let cleanItem = line.replace(/^[-*]\s*/, "").replace(/\[(.*?)\]/g, "$1");
                 htmlResult += `<li style="margin-bottom: 0.4rem; line-height: 1.4; font-weight: normal;">${cleanItem}</li>`;
             }
-
             // 5. TEXTO SUELTO / SUBTÍTULOS O NÚMEROS (ej: "1. ARCHITECTURE.md...")
             else {
                 if (inList) {
@@ -134,7 +156,6 @@ export function initModals() {
                 htmlResult += `<p style="margin: 0.4rem 0; line-height: 1.4;">${line}</p>`;
             }
         }
-
         if (inList) htmlResult += "</ul>";
         return htmlResult;
     }

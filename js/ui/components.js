@@ -74,6 +74,7 @@ export async function initComponents() {
         loadComponent("aside-config-container", "components/_aside-config.html"),
         loadComponent("aside-news-container", "components/_aside-news.html"),
         loadComponent("footer-container", "components/_footer.html"),
+        loadComponent("modal-terms-container", "components/_modal-terms.html"),
         loadComponent("modal-in-dev-container", "components/_modal-in-dev.html"),
         loadComponent("modal-whats-new-container", "components/_modal-whats-new.html"),
     ]);
@@ -104,6 +105,7 @@ export function initPageTitle() {
         "contacto.html": "Contacto",
         "creditos.html": "Créditos",
         "terminos.html": "Términos y Condiciones",
+        "privacidad.html": "Política de Privacidad",
         "404.html": "Página no encontrada",
     };
     // 4. Seleccionamos el nombre o usamos "Inicio" como genérico si no coincide la clave
