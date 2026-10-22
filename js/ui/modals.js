@@ -17,14 +17,13 @@ export function initModals() {
         // Ya vio In Dev en el pasado, pero hay una nueva versión: mostrar Whats New directamente
         checkAndShowWhatsNew();
     }
-
     // MODAL: TÉRMINOS Y CONDICIONES
     function showTermsModal() {
         const modal = document.getElementById("modal-terms");
         const acceptButton = document.getElementById("button-accept-terms"); // Coincide con el id del botón sugerido antes
         if (!modal || !acceptButton) return;
         // Mostramos el modal (si usas la clase 'hidden' en tus modales, podés usar modal.classList.remove('hidden'))
-        modal.style.display = "flex";
+        modal.classList.remove("hidden");
         // Evento al hacer clic en el botón de aceptar
         acceptButton.addEventListener(
             "click",
@@ -32,7 +31,7 @@ export function initModals() {
                 // Guardamos el registro en el localStorage
                 localStorage.setItem("ceipet424_terms_accepted", "true");
                 // Ocultamos el modal
-                modal.style.display = "none";
+                modal.classList.add("hidden");
                 // Una vez aceptados los términos, continuamos con la secuencia normal de modales
                 if (!hasSeenInDev) {
                     showInDevModal();
