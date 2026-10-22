@@ -47,7 +47,7 @@ const THEMES = {
         favicon: "assets/img/favicons/summer.png",
         buttonText: "Modo Verano",
     },
-    summer: {
+    pink: {
         class: "pink-mode",
         favicon: "assets/img/favicons/light.png",
         buttonText: "Modo Rosa",
@@ -76,15 +76,15 @@ export function initTheme() {
         const logoHeader = document.getElementById("header-logo-centro");
         if (logoHeader) {
             if (themeKey === "dark" || themeKey === "high-contrast" || themeKey === "code") {
-                logoHeader.src = "assets/img/logos/centro-dark.png";
+                logoHeader.src = "assets/img/logos/ce/dark.png";
             } else if (themeKey === "halloween") {
-                logoHeader.src = "assets/img/logos/centro-halloween.png";
+                logoHeader.src = "assets/img/logos/ce/halloween.png";
             } else if (themeKey === "christmas") {
-                logoHeader.src = "assets/img/logos/centro-christmas.png";
+                logoHeader.src = "assets/img/logos/ce/christmas.png";
             } else if (themeKey === "summer") {
-                logoHeader.src = "assets/img/logos/centro-summer.png";
+                logoHeader.src = "assets/img/logos/ce/summer.png";
             } else {
-                logoHeader.src = "assets/img/logos/centro.png";
+                logoHeader.src = "assets/img/logos/ce/centro.png";
             }
         }
     }
@@ -172,7 +172,7 @@ export function initTheme() {
         const month = now.getMonth() + 1; // 1 = Enero, 12 = Diciembre
         const day = now.getDate();
         // 1. Verano (Enero y Febrero) -> Hemisferio Sur
-        if (month === 1 || month === 2) {
+        if ((month === 1 && day >= 7) || (month === 2 && day <= 20)) {
             return "summer";
         }
         // 2. Mes Rosa / Prevención (Del 1 al 26 de octubre)
@@ -184,7 +184,7 @@ export function initTheme() {
             return "halloween";
         }
         // 4. Navidad y Año Nuevo (Del 15 de diciembre al 6 de enero)
-        if ((month === 12 && day >= 15) || (month === 1 && day <= 6)) {
+        if ((month === 12 && day >= 8) || (month === 1 && day <= 6)) {
             return "christmas";
         }
         return null;
