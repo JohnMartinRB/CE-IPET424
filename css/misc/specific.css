@@ -23,6 +23,9 @@
     margin-top: var(--space-lg);
     text-align: center;
 }
+.link-underline {
+    text-decoration: underline;
+}
 
 @media (min-width: 1024px) {
     .iframe-container {
