@@ -40,9 +40,8 @@ html.dyslexic-mode * {
 /* ==========================================
     MODO ESCALA DE GRISES
 ========================================== */
-html.grayscale-mode,
-body.grayscale-mode {
-    filter: grayscale(100%);
+html.grayscale-mode {
+    filter: grayscale(100%) !important;
 }
 
 /* ==========================================

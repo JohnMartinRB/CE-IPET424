@@ -17,11 +17,6 @@ const THEMES = {
         favicon: "assets/img/favicons/contrast.png",
         buttonText: "Modo Normal",
     },
-    grayscale: {
-        class: "grayscale-mode",
-        favicon: "assets/img/favicons/gray.png",
-        buttonText: "Modo Normal",
-    },
     code: {
         class: "code-mode",
         favicon: "assets/img/favicons/dark.png",
@@ -93,7 +88,6 @@ export function initTheme() {
         const body = document.body;
         if (body.classList.contains("dark-mode")) return "dark";
         if (body.classList.contains("high-contrast-mode")) return "high-contrast";
-        if (body.classList.contains("grayscale-mode")) return "grayscale";
         if (body.classList.contains("code-mode")) return "code";
         if (body.classList.contains("colorblind-mode")) return "colorblind";
         if (body.classList.contains("halloween-mode")) return "halloween";
@@ -110,7 +104,6 @@ export function initTheme() {
         body.classList.remove(
             "dark-mode",
             "high-contrast-mode",
-            "grayscale-mode",
             "code-mode",
             "colorblind-mode",
             "halloween-mode",
@@ -142,6 +135,16 @@ export function initTheme() {
         const buttonRestMode = document.getElementById("button-rest");
         if (buttonRestMode) {
             buttonRestMode.textContent = enabled ? "Modo Normal" : "Modo Descanso";
+        }
+    }
+    // Activa o desactiva el Modo Escala de Grises de forma independiente
+    function setGrayscaleMode(enabled) {
+        const html = document.documentElement;
+        html.classList.toggle("grayscale-mode", enabled);
+        localStorage.setItem("grayscaleMode", enabled ? "activado" : "desactivado");
+        const buttonGrayscale = document.getElementById("button-grayscale");
+        if (buttonGrayscale) {
+            buttonGrayscale.textContent = enabled ? "Modo Normal" : "Escala de grises";
         }
     }
     // Sincroniza el texto/estado de los botones en el DOM (o al inyectarse por Fetch)
@@ -220,6 +223,10 @@ export function initTheme() {
     if (localStorage.getItem("restMode") === "activado") {
         setRestMode(true);
     }
+    // Restaurar Escala de Grises
+    if (localStorage.getItem("grayscaleMode") === "activado") {
+        setGrayscaleMode(true);
+    }
     // -------------------------------------------------------------
     // 2. DELEGACIÓN DE EVENTOS DE CLIC (BOTONES)
     // -------------------------------------------------------------
@@ -234,6 +241,11 @@ export function initTheme() {
         else if (e.target.closest("#button-rest")) {
             const isRestActive = document.documentElement.classList.contains("rest-mode");
             setRestMode(!isRestActive);
+        }
+        // Botón de escala de grises
+        else if (e.target.closest("#button-grayscale")) {
+            const isGrayscaleActive = document.documentElement.classList.contains("grayscale-mode");
+            setGrayscaleMode(!isGrayscaleActive);
         }
         // Botones dedicados con atributo data-set-theme (Se ignora si ya era #button-theme)
         else if (e.target.closest("[data-set-theme]")) {
