@@ -99,6 +99,7 @@ export function initTheme() {
         if (body.classList.contains("halloween-mode")) return "halloween";
         if (body.classList.contains("christmas-mode")) return "christmas";
         if (body.classList.contains("summer-mode")) return "summer";
+        if (body.classList.contains("pink-mode")) return "pink";
         return "light";
     }
     // Aplica el tema seleccionado al <body> borrando otros temas previos
@@ -115,6 +116,7 @@ export function initTheme() {
             "halloween-mode",
             "christmas-mode",
             "summer-mode",
+            "pink-mode",
         );
         html.classList.remove("grayscale-mode");
         // Si hay una clase para el tema elegido, la agregamos
@@ -156,13 +158,33 @@ export function initTheme() {
             buttonRest.textContent = isRestActive ? "Modo Normal" : "Modo Descanso";
         }
     }
-    // Detecta el tema preferido (localStorage > Preferencia del Sistema > Light)
+    // Detecta el tema priorizando el inicio de nuevas estaciones, pero permitiendo cambios manuales
     function getCurrentTheme() {
+        const seasonalTheme = getSeasonalTheme();
+        const lastSeason = localStorage.getItem("lastActiveSeason");
+        // Si estamos en un período estacional
+        if (seasonalTheme && THEMES[seasonalTheme]) {
+            // Si es una NUEVA estación que acaba de empezar (cambió la fecha/temporada respecto a la última registrada)
+            if (seasonalTheme !== lastSeason) {
+                localStorage.setItem("lastActiveSeason", seasonalTheme);
+                localStorage.removeItem("activeTheme"); // Borramos el modo anterior para forzar el estacional por defecto
+                return seasonalTheme;
+            }
+            // Si ya estamos dentro de la misma estación, permitimos que la elección manual del usuario tenga prioridad
+            const savedTheme = localStorage.getItem("activeTheme");
+            if (savedTheme && THEMES[savedTheme]) {
+                return savedTheme;
+            }
+            return seasonalTheme;
+        }
+        // Si ya pasó la fecha estacional, limpiamos el registro de estación
+        localStorage.removeItem("lastActiveSeason");
+        // Elección manual normal fuera de fechas estacionales
         const savedTheme = localStorage.getItem("activeTheme");
         if (savedTheme && THEMES[savedTheme]) {
             return savedTheme;
         }
-        // Preferencia del sistema
+        // Preferencia del sistema operativo
         const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         return prefersDark ? "dark" : "light";
     }
@@ -188,22 +210,6 @@ export function initTheme() {
             return "christmas";
         }
         return null;
-    }
-    // Detecta el tema priorizando las fechas estacionales sobre el localStorage
-    function getCurrentTheme() {
-        // 1. PRIMERA PRIORIDAD: Fechas estacionales (períodos cortos obligatorios)
-        const seasonalTheme = getSeasonalTheme();
-        if (seasonalTheme && THEMES[seasonalTheme]) {
-            return seasonalTheme;
-        }
-        // 2. SEGUNDA PRIORIDAD: Elección manual guardada en localStorage
-        const savedTheme = localStorage.getItem("activeTheme");
-        if (savedTheme && THEMES[savedTheme]) {
-            return savedTheme;
-        }
-        // 3. TERCERA PRIORIDAD: Preferencia del sistema operativo
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        return prefersDark ? "dark" : "light";
     }
     // -------------------------------------------------------------
     // 1. CARGA INICIAL
