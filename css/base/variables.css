@@ -96,8 +96,8 @@
     /* ==========================================================================
     2. TIPOGRAFÍAS Y ESCALA (FONT-SIZE)
     ========================================================================== */
-    --font-titles: "Nunito Sans", sans-serif;
-    --font-main: "Nunito", serif;
+    --font-titles: "Nunito", serif;
+    --font-main: "Nunito Sans", sans-serif;
 
     /* Escala tipográfica */
     --fs-xs: 0.8rem;
