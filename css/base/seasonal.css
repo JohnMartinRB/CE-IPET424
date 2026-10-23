@@ -172,57 +172,6 @@ body.summer-mode {
     MODO ROSA (Octubre Rosa)
 ========================================== */
 body.pink-mode {
-    /* Variables locales del modo */
-    --bg-pink-primario: #2b1622;
-    --bg-pink-secundario: #422237;
-    --text-pink-claro: #faedf5;
-    --text-pink-gris: #d4a3c3;
-    --acento-pink-principal: #ff69b4;
-    --acento-pink-claro: #ffb6c1;
-    --acento-pink-magenta: #d90368;
-
-    /* Mapeo */
-    --bg-body: var(--bg-pink-primario);
-    --text-body: var(--text-pink-claro);
-    --bg-loader-screen: var(--bg-pink-secundario);
-    --bg-whats-new-version: var(--acento-pink-magenta);
-    --text-whats-new-version: var(--blanco);
-    --bg-base: linear-gradient(90deg, var(--bg-pink-primario) 0%, var(--bg-pink-secundario) 100%);
-    --bg-base-inverted: linear-gradient(-90deg, var(--bg-pink-primario) 0%, var(--bg-pink-secundario) 100%);
-    --link: var(--acento-pink-claro);
-    --link-hover: var(--blanco);
-    --bg-link-hover: rgba(255, 105, 180, 0.2);
-    --progress-bar: var(--acento-pink-principal);
-    --bg-section-card: linear-gradient(90deg, var(--bg-pink-secundario) 0%, var(--bg-pink-primario) 100%);
-    --text-section-card: var(--text-pink-claro);
-    --bg-subsection-card: linear-gradient(-90deg, var(--bg-pink-secundario) 0%, var(--bg-pink-primario) 100%);
-    --text-subsection-card: var(--text-pink-claro);
-    --text-titles: var(--acento-pink-principal);
-    --bg-button: var(--bg-pink-secundario);
-    --bg-button-hover: var(--acento-pink-principal);
-    --text-button: var(--text-pink-claro);
-    --text-button-hover: var(--blanco);
-    --border-button: var(--acento-pink-claro);
-    --bg-aside-button-hover: var(--bg-pink-secundario);
-    --bg-input: var(--bg-pink-secundario);
-    --text-input: var(--text-pink-claro);
-    --border-input: var(--text-pink-gris);
-    --border-input-focus: var(--acento-pink-principal);
-    --bg-footer: linear-gradient(90deg, var(--bg-pink-primario) 0%, var(--bg-pink-secundario) 100%);
-    --text-footer: var(--acento-pink-claro);
-    --text-footer-hover: var(--blanco);
-    --text-copy: var(--text-pink-gris);
-    --bg-toast: var(--bg-pink-secundario);
-    --text-toast: var(--acento-pink-claro);
-    --bg-banner: var(--acento-pink-magenta);
-    --bg-selection: var(--acento-pink-principal);
-    --text-selection: var(--blanco);
-    --scrollbar-thumb: var(--text-pink-gris);
-    --scrollbar-thumb-hover: var(--acento-pink-principal);
-    --bg-weather-widget: rgba(66, 34, 55, 0.6);
-    --text-weather-widget: var(--text-pink-claro);
-    --border-weather-widget: var(--text-pink-gris);
-
     /* BODY */
     --bg-body: var(--celeste6);
     --text-body: var(--azul1);
@@ -278,4 +227,55 @@ body.pink-mode {
     --bg-weather-widget: rgba(129, 129, 129, 0.15);
     --text-weather-widget: var(--azul1);
     --border-weather-widget: rgba(129, 129, 129, 0.2);
+
+    /* Variables locales del modo */
+    --bg-pink-primario: #2b1622;
+    --bg-pink-secundario: #422237;
+    --text-pink-claro: #faedf5;
+    --text-pink-gris: #d4a3c3;
+    --acento-pink-principal: #ff69b4;
+    --acento-pink-claro: #ffb6c1;
+    --acento-pink-magenta: #d90368;
+
+    /* Mapeo */
+    --bg-body: var(--bg-pink-primario);
+    --text-body: var(--text-pink-claro);
+    --bg-loader-screen: var(--bg-pink-secundario);
+    --bg-whats-new-version: var(--acento-pink-magenta);
+    --text-whats-new-version: var(--blanco);
+    --bg-base: linear-gradient(90deg, var(--bg-pink-primario) 0%, var(--bg-pink-secundario) 100%);
+    --bg-base-inverted: linear-gradient(-90deg, var(--bg-pink-primario) 0%, var(--bg-pink-secundario) 100%);
+    --link: var(--acento-pink-claro);
+    --link-hover: var(--blanco);
+    --bg-link-hover: rgba(255, 105, 180, 0.2);
+    --progress-bar: var(--acento-pink-principal);
+    --bg-section-card: linear-gradient(90deg, var(--bg-pink-secundario) 0%, var(--bg-pink-primario) 100%);
+    --text-section-card: var(--text-pink-claro);
+    --bg-subsection-card: linear-gradient(-90deg, var(--bg-pink-secundario) 0%, var(--bg-pink-primario) 100%);
+    --text-subsection-card: var(--text-pink-claro);
+    --text-titles: var(--acento-pink-principal);
+    --bg-button: var(--bg-pink-secundario);
+    --bg-button-hover: var(--acento-pink-principal);
+    --text-button: var(--text-pink-claro);
+    --text-button-hover: var(--blanco);
+    --border-button: var(--acento-pink-claro);
+    --bg-aside-button-hover: var(--bg-pink-secundario);
+    --bg-input: var(--bg-pink-secundario);
+    --text-input: var(--text-pink-claro);
+    --border-input: var(--text-pink-gris);
+    --border-input-focus: var(--acento-pink-principal);
+    --bg-footer: linear-gradient(90deg, var(--bg-pink-primario) 0%, var(--bg-pink-secundario) 100%);
+    --text-footer: var(--acento-pink-claro);
+    --text-footer-hover: var(--blanco);
+    --text-copy: var(--text-pink-gris);
+    --bg-toast: var(--bg-pink-secundario);
+    --text-toast: var(--acento-pink-claro);
+    --bg-banner: var(--acento-pink-magenta);
+    --bg-selection: var(--acento-pink-principal);
+    --text-selection: var(--blanco);
+    --scrollbar-thumb: var(--text-pink-gris);
+    --scrollbar-thumb-hover: var(--acento-pink-principal);
+    --bg-weather-widget: rgba(66, 34, 55, 0.6);
+    --text-weather-widget: var(--text-pink-claro);
+    --border-weather-widget: var(--text-pink-gris);
 }
