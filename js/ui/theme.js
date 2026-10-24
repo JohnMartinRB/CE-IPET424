@@ -27,14 +27,14 @@ const THEMES = {
         favicon: "assets/img/favicons/dark.png",
         buttonText: "Modo Daltónico",
     },
-    halloween: {
-        class: "halloween-mode",
-        favicon: "assets/img/favicons/halloween.png",
-        buttonText: "Modo Halloween",
+    mistery: {
+        class: "mistery-mode",
+        favicon: "assets/img/favicons/mistery.png",
+        buttonText: "Modo mistery",
     },
-    christmas: {
-        class: "christmas-mode",
-        favicon: "assets/img/favicons/christmas.png",
+    holidays: {
+        class: "holidays-mode",
+        favicon: "assets/img/favicons/holidays.png",
         buttonText: "Modo Navidad",
     },
     summer: {
@@ -72,10 +72,10 @@ export function initTheme() {
         if (logoHeader) {
             if (themeKey === "dark" || themeKey === "high-contrast" || themeKey === "code") {
                 logoHeader.src = "assets/img/logos/ce/dark.png";
-            } else if (themeKey === "halloween") {
-                logoHeader.src = "assets/img/logos/ce/halloween.png";
-            } else if (themeKey === "christmas") {
-                logoHeader.src = "assets/img/logos/ce/christmas.png";
+            } else if (themeKey === "mistery") {
+                logoHeader.src = "assets/img/logos/ce/mistery.png";
+            } else if (themeKey === "holidays") {
+                logoHeader.src = "assets/img/logos/ce/holidays.png";
             } else if (themeKey === "summer") {
                 logoHeader.src = "assets/img/logos/ce/summer.png";
             } else if (themeKey === "pink") {
@@ -92,8 +92,8 @@ export function initTheme() {
         if (body.classList.contains("high-contrast-mode")) return "high-contrast";
         if (body.classList.contains("code-mode")) return "code";
         if (body.classList.contains("colorblind-mode")) return "colorblind";
-        if (body.classList.contains("halloween-mode")) return "halloween";
-        if (body.classList.contains("christmas-mode")) return "christmas";
+        if (body.classList.contains("mistery-mode")) return "mistery";
+        if (body.classList.contains("holidays-mode")) return "holidays";
         if (body.classList.contains("summer-mode")) return "summer";
         if (body.classList.contains("pink-mode")) return "pink";
         return "light";
@@ -108,8 +108,8 @@ export function initTheme() {
             "high-contrast-mode",
             "code-mode",
             "colorblind-mode",
-            "halloween-mode",
-            "christmas-mode",
+            "mistery-mode",
+            "holidays-mode",
             "summer-mode",
             "pink-mode",
         );
@@ -206,13 +206,13 @@ export function initTheme() {
         if (month === 10 && day >= 1 && day <= 26) {
             return "pink";
         }
-        // 3. Halloween (Del 27 de octubre al 2 de noviembre)
+        // 3. mistery (Del 27 de octubre al 2 de noviembre)
         if ((month === 10 && day >= 27) || (month === 11 && day <= 2)) {
-            return "halloween";
+            return "mistery";
         }
         // 4. Navidad y Año Nuevo (Del 15 de diciembre al 6 de enero)
         if ((month === 12 && day >= 8) || (month === 1 && day <= 6)) {
-            return "christmas";
+            return "holidays";
         }
         return null;
     }

@@ -106,8 +106,8 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
     - Nuevos temas de estacionales por temporadas
         - Verano: enero y febrero
         - Mes rosa: octubre
-        - Halloween: última semana de octubre
-        - Navidad: últimas semanas de diciembre
+        - Misterio: última semana de octubre
+        - Festividades: semanas de diciembre y la primera de enero
     - Estos temas se encuentran en `seasonal.css`
     - Se agregaron botones en el aside de opciones para activar los temas estacionales
     - Se inviertieron las fuentes: Nunito como Titles y Nunito Sans como Main
@@ -125,6 +125,7 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
     - Eliminada una variable inutilizada
     - Se agregaron muchas variables de color nuevas para elementos que antes usaban las variables de color de otro elemento
     - Se renombraron muchas variables
+    - Se agregó `.gitkeep` a algunas carpetas vacías que no lo tenían
 
 - **`v0.35-alpha` (Anterior)**
     - Nueva subpágina de Términos y Condiciones para protección legal y de conducta del sitio
