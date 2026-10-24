@@ -51,7 +51,6 @@
     /* LINK */
     --link: var(--azul1);
     --link-hover: var(--celeste1);
-    --bg-link-hover: rgba(168, 228, 250, 0.4);
     /* BARRA DE PROGRESO */
     --progress-bar: var(--celeste2);
     /* TARJETAS */

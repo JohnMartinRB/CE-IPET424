@@ -62,7 +62,6 @@ body.colorblind-mode {
     /* LINK */
     --link: #ffc20a;
     --link-hover: #ffffff;
-    --bg-link-hover: rgba(255, 194, 10, 0.2);
     /* BARRA DE PROGRESO */
     --progress-bar: #ffc20a;
     /* TARJETAS */

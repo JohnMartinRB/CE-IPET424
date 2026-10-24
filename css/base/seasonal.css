@@ -25,7 +25,6 @@ body.halloween-mode {
     --bg-base-inverted: linear-gradient(-90deg, var(--bg-halloween-primario) 0%, var(--bg-halloween-secundario) 100%);
     --link: var(--acento-halloween-naranja);
     --link-hover: var(--acento-halloween-amarillo);
-    --bg-link-hover: rgba(255, 102, 0, 0.2);
     --progress-bar: var(--acento-halloween-naranja);
     --bg-section-card: linear-gradient(90deg, var(--bg-halloween-secundario) 0%, var(--bg-halloween-primario) 100%);
     --text-section-card: var(--text-halloween-claro);
@@ -80,7 +79,6 @@ body.christmas-mode {
     --bg-base-inverted: linear-gradient(-90deg, var(--bg-xmas-primario) 0%, var(--bg-xmas-secundario) 100%);
     --link: var(--acento-xmas-dorado);
     --link-hover: var(--blanco);
-    --bg-link-hover: rgba(242, 201, 76, 0.2);
     --progress-bar: var(--acento-xmas-rojo);
     --bg-section-card: linear-gradient(90deg, var(--bg-xmas-secundario) 0%, var(--bg-xmas-primario) 100%);
     --text-section-card: var(--text-xmas-claro);
@@ -135,7 +133,6 @@ body.summer-mode {
     --bg-base-inverted: linear-gradient(-90deg, var(--bg-summer-primario) 0%, var(--bg-summer-secundario) 100%);
     --link: var(--acento-summer-amarillo);
     --link-hover: var(--blanco);
-    --bg-link-hover: rgba(255, 183, 3, 0.2);
     --progress-bar: var(--acento-summer-amarillo);
     --bg-section-card: linear-gradient(90deg, var(--bg-summer-secundario) 0%, var(--bg-summer-primario) 100%);
     --text-section-card: var(--text-summer-claro);
@@ -172,110 +169,64 @@ body.summer-mode {
     MODO ROSA (Octubre Rosa)
 ========================================== */
 body.pink-mode {
-    /* BODY */
+    /* Variables locales de acento rosa y pasteles combinados */
+    --rosa1: #ff69c5;
+    --rosa2: #ff8fd4;
+    --rosa3: #ffb4e2;
+    --rosa4: #ffdaf1;
+
+    /* BODY (Mantiene la base celeste original) */
     --bg-body: var(--celeste6);
     --text-body: var(--azul1);
     /* PANTALLA DE CARGA */
     --bg-loader-screen: var(--celeste2);
-    /* WHATS NEW VERSION */
-    --bg-whats-new-version: var(--azul4);
+    /* WHATS NEW VERSION (Toque magenta de acento) */
+    --bg-whats-new-version: var(--rosa1);
     --text-whats-new-version: var(--blanco);
-    /* CONTENIDO */
-    --bg-base: linear-gradient(90deg, var(--blanco) 0%, var(--celeste7) 100%);
-    --bg-base-inverted: linear-gradient(-90deg, var(--blanco) 0%, var(--celeste7) 100%);
-    /* LINK */
+    /* CONTENIDO (Degradado celeste mezclado con un toque suave de rosa) */
+    --bg-base: linear-gradient(90deg, var(--rosa4) 0%, var(--blanco) 50%, var(--celeste7) 100%);
+    --bg-base-inverted: linear-gradient(-90deg, var(--rosa4) 0%, var(--blanco) 50%, var(--celeste7) 100%);
+    /* LINK (Hover con un toque rosa vibrante) */
     --link: var(--azul1);
-    --link-hover: var(--celeste1);
-    --bg-link-hover: rgba(168, 228, 250, 0.4);
+    --link-hover: var(--rosa1);
     /* BARRA DE PROGRESO */
-    --progress-bar: var(--celeste2);
-    /* TARJETAS */
-    --bg-section-card: linear-gradient(90deg, var(--celeste7) 0%, var(--celeste6) 100%);
+    --progress-bar: var(--rosa2);
+    /* TARJETAS (Mezcla armónica de celestes con rosa suave en los degradados) */
+    --bg-section-card: linear-gradient(90deg, var(--celeste7) 0%, var(--rosa4) 100%);
     --text-section-card: var(--azul2);
-    --bg-subsection-card: linear-gradient(-90deg, var(--celeste7) 0%, var(--celeste5) 100%);
+    --bg-subsection-card: linear-gradient(-90deg, var(--celeste7) 0%, var(--rosa3) 100%);
     --text-subsection-card: var(--azul1);
     /* TITULOS */
     --text-titles: var(--azul1);
-    /* BOTONES / ENLACES */
+    /* BOTONES / ENLACES (Bordes y hover con sutiles tonos rosados) */
     --bg-button: var(--blanco);
-    --bg-button-hover: var(--lila3);
+    --bg-button-hover: var(--rosa2);
     --text-button: var(--azul1);
     --text-button-hover: var(--azul1);
-    --border-button: var(--lila3);
-    --bg-aside-button-hover: var(--celeste7);
-    /* INPUTS */
+    --border-button: var(--rosa2);
+    --bg-aside-button-hover: var(--rosa4);
+    /* INPUTS (Foco destacado en rosa fuerte) */
     --bg-input: var(--blanco);
     --text-input: var(--azul1);
-    --border-input: var(--lila3);
-    --border-input-focus: var(--lila1);
-    /* FOOOTER */
-    --bg-footer: linear-gradient(90deg, var(--celeste3) 0%, var(--celeste4) 100%);
+    --border-input: var(--rosa3);
+    --border-input-focus: var(--rosa2);
+    /* FOOTER (Degradado de celestes integrando un paso intermedio rosa) */
+    --bg-footer: linear-gradient(90deg, var(--celeste3) 0%, var(--rosa3) 50%, var(--celeste4) 100%);
     --text-footer: var(--azul1);
-    --text-footer-hover: var(--celeste1);
+    --text-footer-hover: var(--rosa1);
     --text-copy: var(--gris1);
     /* TOAST / BANNER */
-    --bg-toast: var(--celeste2);
+    --bg-toast: var(--rosa3);
     --text-toast: var(--azul1);
-    --bg-banner: var(--naranja);
-    /* SELECTION */
-    --bg-selection: var(--celeste2);
+    --bg-banner: var(--rosa1);
+    /* SELECTION (Texto seleccionado resaltado en rosa) */
+    --bg-selection: var(--rosa2);
     --text-selection: var(--blanco);
     /* SCROLLBAR */
-    --scrollbar-thumb: var(--celeste3);
-    --scrollbar-thumb-hover: var(--celeste2);
+    --scrollbar-thumb: var(--rosa2);
+    --scrollbar-thumb-hover: var(--rosa1);
     /* WEATHER WIDGET */
-    --bg-weather-widget: rgba(129, 129, 129, 0.15);
+    --bg-weather-widget: rgba(255, 182, 193, 0.25);
     --text-weather-widget: var(--azul1);
-    --border-weather-widget: rgba(129, 129, 129, 0.2);
-
-    /* Variables locales del modo */
-    --bg-pink-primario: #2b1622;
-    --bg-pink-secundario: #422237;
-    --text-pink-claro: #faedf5;
-    --text-pink-gris: #d4a3c3;
-    --acento-pink-principal: #ff69b4;
-    --acento-pink-claro: #ffb6c1;
-    --acento-pink-magenta: #d90368;
-
-    /* Mapeo */
-    --bg-body: var(--bg-pink-primario);
-    --text-body: var(--text-pink-claro);
-    --bg-loader-screen: var(--bg-pink-secundario);
-    --bg-whats-new-version: var(--acento-pink-magenta);
-    --text-whats-new-version: var(--blanco);
-    --bg-base: linear-gradient(90deg, var(--bg-pink-primario) 0%, var(--bg-pink-secundario) 100%);
-    --bg-base-inverted: linear-gradient(-90deg, var(--bg-pink-primario) 0%, var(--bg-pink-secundario) 100%);
-    --link: var(--acento-pink-claro);
-    --link-hover: var(--blanco);
-    --bg-link-hover: rgba(255, 105, 180, 0.2);
-    --progress-bar: var(--acento-pink-principal);
-    --bg-section-card: linear-gradient(90deg, var(--bg-pink-secundario) 0%, var(--bg-pink-primario) 100%);
-    --text-section-card: var(--text-pink-claro);
-    --bg-subsection-card: linear-gradient(-90deg, var(--bg-pink-secundario) 0%, var(--bg-pink-primario) 100%);
-    --text-subsection-card: var(--text-pink-claro);
-    --text-titles: var(--acento-pink-principal);
-    --bg-button: var(--bg-pink-secundario);
-    --bg-button-hover: var(--acento-pink-principal);
-    --text-button: var(--text-pink-claro);
-    --text-button-hover: var(--blanco);
-    --border-button: var(--acento-pink-claro);
-    --bg-aside-button-hover: var(--bg-pink-secundario);
-    --bg-input: var(--bg-pink-secundario);
-    --text-input: var(--text-pink-claro);
-    --border-input: var(--text-pink-gris);
-    --border-input-focus: var(--acento-pink-principal);
-    --bg-footer: linear-gradient(90deg, var(--bg-pink-primario) 0%, var(--bg-pink-secundario) 100%);
-    --text-footer: var(--acento-pink-claro);
-    --text-footer-hover: var(--blanco);
-    --text-copy: var(--text-pink-gris);
-    --bg-toast: var(--bg-pink-secundario);
-    --text-toast: var(--acento-pink-claro);
-    --bg-banner: var(--acento-pink-magenta);
-    --bg-selection: var(--acento-pink-principal);
-    --text-selection: var(--blanco);
-    --scrollbar-thumb: var(--text-pink-gris);
-    --scrollbar-thumb-hover: var(--acento-pink-principal);
-    --bg-weather-widget: rgba(66, 34, 55, 0.6);
-    --text-weather-widget: var(--text-pink-claro);
-    --border-weather-widget: var(--text-pink-gris);
+    --border-weather-widget: rgba(255, 105, 180, 0.3);
 }

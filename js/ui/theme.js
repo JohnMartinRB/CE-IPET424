@@ -44,7 +44,7 @@ const THEMES = {
     },
     pink: {
         class: "pink-mode",
-        favicon: "assets/img/favicons/light.png",
+        favicon: "assets/img/favicons/pink.png",
         buttonText: "Modo Rosa",
     },
 };
@@ -78,6 +78,8 @@ export function initTheme() {
                 logoHeader.src = "assets/img/logos/ce/christmas.png";
             } else if (themeKey === "summer") {
                 logoHeader.src = "assets/img/logos/ce/summer.png";
+            } else if (themeKey === "pink") {
+                logoHeader.src = "assets/img/logos/ce/pink.png";
             } else {
                 logoHeader.src = "assets/img/logos/ce/centro.png";
             }
