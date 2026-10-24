@@ -42,6 +42,7 @@
     --text-body: var(--azul1);
     /* PANTALLA DE CARGA */
     --bg-loader-screen: var(--celeste2);
+    --text-loader-screen: var(--blanco);
     /* WHATS NEW VERSION */
     --bg-whats-new-version: var(--azul4);
     --text-whats-new-version: var(--blanco);
@@ -51,7 +52,6 @@
     /* LINK */
     --link: var(--azul1);
     --link-hover: var(--celeste1);
-    --bg-link-hover: rgba(168, 228, 250, 0.4);
     /* BARRA DE PROGRESO */
     --progress-bar: var(--celeste2);
     /* TARJETAS */
@@ -68,6 +68,9 @@
     --text-button-hover: var(--azul1);
     --border-button: var(--lila1);
     --bg-aside-button-hover: var(--celeste7);
+    --aside-button-icon: var(--celeste5);
+    --bg-scroll-button: var(--celeste3);
+    --bg-scroll-button-hover: var(--celeste2);
     /* INPUTS */
     --bg-input: var(--blanco);
     --text-input: var(--azul1);
@@ -88,16 +91,16 @@
     /* SCROLLBAR */
     --scrollbar-thumb: var(--celeste3);
     --scrollbar-thumb-hover: var(--celeste2);
-    /* WEATHER WIDGET */
-    --bg-weather-widget: rgba(129, 129, 129, 0.15);
-    --text-weather-widget: var(--azul1);
-    --border-weather-widget: rgba(129, 129, 129, 0.2);
+    /* WIDGET */
+    --bg-widget: rgba(129, 129, 129, 0.15);
+    --text-widget: var(--azul1);
+    --border-widget: rgba(129, 129, 129, 0.2);
 
     /* ==========================================================================
     2. TIPOGRAFÍAS Y ESCALA (FONT-SIZE)
     ========================================================================== */
-    --font-titles: "Nunito Sans", sans-serif;
-    --font-main: "Nunito", serif;
+    --font-titles: "Nunito", serif;
+    --font-main: "Nunito Sans", sans-serif;
 
     /* Escala tipográfica */
     --fs-2xs: 0.7rem;

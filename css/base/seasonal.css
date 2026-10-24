@@ -1,0 +1,248 @@
+/* ==========================================
+    TEMAS DE COLOR ESTACIONALES
+========================================== */
+
+/* ==========================================
+    MODO HALLOWEEN
+========================================== */
+body.halloween-mode {
+    /* Variables locales del modo */
+    --bg-halloween-primario: #120d1a;
+    --bg-halloween-secundario: #1c1427;
+    --text-halloween-claro: #f3f0f7;
+    --text-halloween-gris: #a19bb5;
+    --acento-halloween-naranja: #ff6600;
+    --acento-halloween-morado: #9933ff;
+    --acento-halloween-amarillo: #ffcc00;
+
+    /* Mapeo */
+    --bg-body: var(--bg-halloween-primario);
+    --text-body: var(--text-halloween-claro);
+    --bg-loader-screen: var(--bg-halloween-primario);
+    --text-loader-screen: var(--blanco);
+    --bg-whats-new-version: var(--acento-halloween-morado);
+    --text-whats-new-version: var(--blanco);
+    --bg-base: linear-gradient(90deg, var(--bg-halloween-primario) 0%, var(--bg-halloween-secundario) 100%);
+    --bg-base-inverted: linear-gradient(-90deg, var(--bg-halloween-primario) 0%, var(--bg-halloween-secundario) 100%);
+    --link: var(--acento-halloween-naranja);
+    --link-hover: var(--acento-halloween-amarillo);
+    --progress-bar: var(--acento-halloween-naranja);
+    --bg-section-card: linear-gradient(90deg, var(--bg-halloween-secundario) 0%, var(--bg-halloween-primario) 100%);
+    --text-section-card: var(--text-halloween-claro);
+    --bg-subsection-card: linear-gradient(-90deg, var(--bg-halloween-secundario) 0%, var(--bg-halloween-primario) 100%);
+    --text-subsection-card: var(--text-halloween-claro);
+    --text-titles: var(--acento-halloween-naranja);
+    --bg-button: var(--bg-halloween-secundario);
+    --bg-button-hover: var(--acento-halloween-naranja);
+    --text-button: var(--text-halloween-claro);
+    --text-button-hover: var(--blanco);
+    --border-button: var(--acento-halloween-morado);
+    --bg-aside-button-hover: var(--bg-halloween-secundario);
+    --aside-button-icon: var(--celeste5);
+    --bg-scroll-button: var(--acento-halloween-morado);
+    --bg-scroll-button-hover: var(--acento-halloween-naranja);
+    --bg-input: var(--bg-halloween-secundario);
+    --text-input: var(--text-halloween-claro);
+    --border-input: var(--acento-halloween-morado);
+    --border-input-focus: var(--acento-halloween-naranja);
+    --bg-footer: linear-gradient(90deg, var(--bg-halloween-primario) 0%, var(--bg-halloween-secundario) 100%);
+    --text-footer: var(--acento-halloween-naranja);
+    --text-footer-hover: var(--acento-halloween-amarillo);
+    --text-copy: var(--text-halloween-gris);
+    --bg-toast: var(--bg-halloween-secundario);
+    --text-toast: var(--acento-halloween-naranja);
+    --bg-banner: var(--acento-halloween-naranja);
+    --bg-selection: var(--acento-halloween-morado);
+    --text-selection: var(--blanco);
+    --scrollbar-thumb: var(--acento-halloween-morado);
+    --scrollbar-thumb-hover: var(--acento-halloween-naranja);
+    --bg-widget: rgba(28, 20, 39, 0.7);
+    --text-widget: var(--text-halloween-claro);
+    --border-widget: var(--acento-halloween-morado);
+}
+
+/* ==========================================
+    MODO NAVIDAD
+========================================== */
+body.christmas-mode {
+    /* Variables locales del modo */
+    --bg-xmas-primario: #0b2217;
+    --bg-xmas-secundario: #113524;
+    --text-xmas-claro: #f0f7f4;
+    --text-xmas-gris: #9cb3a8;
+    --acento-xmas-rojo: #d92b2b;
+    --acento-xmas-verde: #1fb355;
+    --acento-xmas-dorado: #f2c94c;
+    /* Mapeo */
+    --bg-body: var(--bg-xmas-primario);
+    --text-body: var(--text-xmas-claro);
+    --bg-loader-screen: var(--bg-xmas-primario);
+    --text-loader-screen: var(--blanco);
+    --bg-whats-new-version: var(--acento-xmas-rojo);
+    --text-whats-new-version: var(--blanco);
+    --bg-base: linear-gradient(90deg, var(--bg-xmas-primario) 0%, var(--bg-xmas-secundario) 100%);
+    --bg-base-inverted: linear-gradient(-90deg, var(--bg-xmas-primario) 0%, var(--bg-xmas-secundario) 100%);
+    --link: var(--acento-xmas-dorado);
+    --link-hover: var(--blanco);
+    --progress-bar: var(--acento-xmas-rojo);
+    --bg-section-card: linear-gradient(90deg, var(--bg-xmas-secundario) 0%, var(--bg-xmas-primario) 100%);
+    --text-section-card: var(--text-xmas-claro);
+    --bg-subsection-card: linear-gradient(-90deg, var(--bg-xmas-secundario) 0%, var(--bg-xmas-primario) 100%);
+    --text-subsection-card: var(--text-xmas-claro);
+    --text-titles: var(--acento-xmas-dorado);
+    --bg-button: var(--bg-xmas-secundario);
+    --bg-button-hover: var(--acento-xmas-rojo);
+    --text-button: var(--text-xmas-claro);
+    --text-button-hover: var(--blanco);
+    --border-button: var(--acento-xmas-dorado);
+    --bg-aside-button-hover: var(--bg-xmas-secundario);
+    --aside-button-icon: var(--celeste5);
+    --bg-scroll-button: var(--acento-xmas-verde);
+    --bg-scroll-button-hover: var(--acento-xmas-dorado);
+    --bg-input: var(--bg-xmas-secundario);
+    --text-input: var(--text-xmas-claro);
+    --border-input: var(--acento-xmas-verde);
+    --border-input-focus: var(--acento-xmas-dorado);
+    --bg-footer: linear-gradient(90deg, var(--bg-xmas-primario) 0%, var(--bg-xmas-secundario) 100%);
+    --text-footer: var(--acento-xmas-dorado);
+    --text-footer-hover: var(--blanco);
+    --text-copy: var(--text-xmas-gris);
+    --bg-toast: var(--bg-xmas-secundario);
+    --text-toast: var(--acento-xmas-dorado);
+    --bg-banner: var(--acento-xmas-rojo);
+    --bg-selection: var(--acento-xmas-rojo);
+    --text-selection: var(--blanco);
+    --scrollbar-thumb: var(--acento-xmas-verde);
+    --scrollbar-thumb-hover: var(--acento-xmas-dorado);
+    --bg-widget: rgba(17, 53, 36, 0.7);
+    --text-widget: var(--text-xmas-claro);
+    --border-widget: var(--acento-xmas-dorado);
+}
+
+/* ==========================================
+    MODO VERANO
+========================================== */
+body.summer-mode {
+    /* Variables locales del modo */
+    --bg-summer-primario: #004e7c;
+    --bg-summer-secundario: #0077b6;
+    --text-summer-claro: #edf6f9;
+    --text-summer-gris: #8ecae6;
+    --acento-summer-amarillo: #ffb703;
+    --acento-summer-naranja: #fb8500;
+
+    /* Mapeo */
+    --bg-body: var(--bg-summer-primario);
+    --text-body: var(--text-summer-claro);
+    --bg-loader-screen: var(--bg-summer-secundario);
+    --text-loader-screen: var(--blanco);
+    --bg-whats-new-version: var(--acento-summer-naranja);
+    --text-whats-new-version: var(--blanco);
+    --bg-base: linear-gradient(90deg, var(--bg-summer-primario) 0%, var(--bg-summer-secundario) 100%);
+    --bg-base-inverted: linear-gradient(-90deg, var(--bg-summer-primario) 0%, var(--bg-summer-secundario) 100%);
+    --link: var(--acento-summer-amarillo);
+    --link-hover: var(--blanco);
+    --progress-bar: var(--acento-summer-amarillo);
+    --bg-section-card: linear-gradient(90deg, var(--bg-summer-secundario) 0%, var(--bg-summer-primario) 100%);
+    --text-section-card: var(--text-summer-claro);
+    --bg-subsection-card: linear-gradient(-90deg, var(--bg-summer-secundario) 0%, var(--bg-summer-primario) 100%);
+    --text-subsection-card: var(--text-summer-claro);
+    --text-titles: var(--acento-summer-amarillo);
+    --bg-button: var(--bg-summer-secundario);
+    --bg-button-hover: var(--acento-summer-amarillo);
+    --text-button: var(--text-summer-claro);
+    --text-button-hover: var(--bg-summer-primario);
+    --border-button: var(--acento-summer-amarillo);
+    --bg-aside-button-hover: var(--bg-summer-secundario);
+    --aside-button-icon: var(--celeste5);
+    --bg-scroll-button: var(--text-summer-gris);
+    --bg-scroll-button-hover: var(--acento-summer-amarillo);
+    --bg-input: var(--bg-summer-secundario);
+    --text-input: var(--text-summer-claro);
+    --border-input: var(--text-summer-gris);
+    --border-input-focus: var(--acento-summer-amarillo);
+    --bg-footer: linear-gradient(90deg, var(--bg-summer-primario) 0%, var(--bg-summer-secundario) 100%);
+    --text-footer: var(--acento-summer-amarillo);
+    --text-footer-hover: var(--blanco);
+    --text-copy: var(--text-summer-gris);
+    --bg-toast: var(--bg-summer-secundario);
+    --text-toast: var(--acento-summer-amarillo);
+    --bg-banner: var(--acento-summer-naranja);
+    --bg-selection: var(--acento-summer-amarillo);
+    --text-selection: var(--bg-summer-primario);
+    --scrollbar-thumb: var(--text-summer-gris);
+    --scrollbar-thumb-hover: var(--acento-summer-amarillo);
+    --bg-widget: rgba(0, 119, 182, 0.4);
+    --text-widget: var(--text-summer-claro);
+    --border-widget: var(--text-summer-gris);
+}
+
+/* ==========================================
+    MODO ROSA (Octubre Rosa)
+========================================== */
+body.pink-mode {
+    /* Variables locales de acento rosa y pasteles combinados */
+    --rosa1: #ff69c5;
+    --rosa2: #ff8fd4;
+    --rosa3: #ffb4e2;
+    --rosa4: #ffdaf1;
+
+    /* BODY (Mantiene la base celeste original) */
+    --bg-body: var(--celeste6);
+    --text-body: var(--azul1);
+    /* PANTALLA DE CARGA */
+    --bg-loader-screen: var(--celeste2);
+    --text-loader-screen: var(--blanco);
+    /* WHATS NEW VERSION (Toque magenta de acento) */
+    --bg-whats-new-version: var(--rosa1);
+    --text-whats-new-version: var(--blanco);
+    /* CONTENIDO (Degradado celeste mezclado con un toque suave de rosa) */
+    --bg-base: linear-gradient(90deg, var(--rosa4) 0%, var(--blanco) 50%, var(--celeste7) 100%);
+    --bg-base-inverted: linear-gradient(-90deg, var(--rosa4) 0%, var(--blanco) 50%, var(--celeste7) 100%);
+    /* LINK (Hover con un toque rosa vibrante) */
+    --link: var(--azul1);
+    --link-hover: var(--rosa1);
+    /* BARRA DE PROGRESO */
+    --progress-bar: var(--rosa2);
+    /* TARJETAS (Mezcla armónica de celestes con rosa suave en los degradados) */
+    --bg-section-card: linear-gradient(90deg, var(--celeste7) 0%, var(--rosa4) 100%);
+    --text-section-card: var(--azul2);
+    --bg-subsection-card: linear-gradient(-90deg, var(--celeste7) 0%, var(--rosa3) 100%);
+    --text-subsection-card: var(--azul1);
+    /* TITULOS */
+    --text-titles: var(--azul1);
+    /* BOTONES / ENLACES (Bordes y hover con sutiles tonos rosados) */
+    --bg-button: var(--blanco);
+    --bg-button-hover: var(--rosa2);
+    --text-button: var(--azul1);
+    --text-button-hover: var(--azul1);
+    --border-button: var(--rosa2);
+    --bg-aside-button-hover: var(--rosa4);
+    --aside-button-icon: var(--celeste5);
+    --bg-scroll-button: var(--rosa2);
+    --bg-scroll-button-hover: var(--rosa1);
+    /* INPUTS (Foco destacado en rosa fuerte) */
+    --bg-input: var(--blanco);
+    --text-input: var(--azul1);
+    --border-input: var(--rosa3);
+    --border-input-focus: var(--rosa2);
+    /* FOOTER (Degradado de celestes integrando un paso intermedio rosa) */
+    --bg-footer: linear-gradient(90deg, var(--celeste3) 0%, var(--rosa3) 50%, var(--celeste4) 100%);
+    --text-footer: var(--azul1);
+    --text-footer-hover: var(--rosa1);
+    --text-copy: var(--gris1);
+    /* TOAST / BANNER */
+    --bg-toast: var(--rosa3);
+    --text-toast: var(--azul1);
+    --bg-banner: var(--rosa1);
+    /* SELECTION (Texto seleccionado resaltado en rosa) */
+    --bg-selection: var(--rosa2);
+    --text-selection: var(--blanco);
+    /* SCROLLBAR */
+    --scrollbar-thumb: var(--rosa2);
+    --scrollbar-thumb-hover: var(--rosa1);
+    /* WIDGET */
+    --bg-widget: rgba(255, 182, 193, 0.25);
+    --text-widget: var(--azul1);
+    --border-widget: rgba(255, 105, 180, 0.3);
+}

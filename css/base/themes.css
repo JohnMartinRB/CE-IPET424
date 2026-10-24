@@ -11,6 +11,7 @@ body.dark-mode {
     --text-body: var(--celeste6);
     /* PANTALLA DE CARGA */
     --bg-loader-screen: var(--azul3);
+    --text-loader-screen: var(--blanco);
     /* WHATS NEW VERSION */
     --bg-whats-new-version: var(--azul3);
     --text-whats-new-version: var(--blanco);
@@ -40,7 +41,10 @@ body.dark-mode {
     --text-button-hover: var(--azul1);
     --border-button: var(--celeste2);
     --outline-button-focus: var(--blanco);
-    --bg-aside-button-hover: var(--azul4);
+    --bg-aside-button-hover: var(--azul3);
+    --aside-button-icon: var(--celeste2);
+    --bg-scroll-button: var(--azul4);
+    --bg-scroll-button-hover: var(--azul3);
     /* INPUTS */
     --bg-input: var(--blanco);
     --text-input: var(--azul1);
@@ -68,10 +72,10 @@ body.dark-mode {
     /* SCROLLBAR */
     --scrollbar-thumb: var(--azul4);
     --scrollbar-thumb-hover: var(--azul3);
-    /* WEATHER WIDGET */
-    --bg-weather-widget: rgba(255, 255, 255, 0.15);
-    --text-weather-widget: var(--blanco);
-    --border-weather-widget: rgba(255, 255, 255, 0.2);
+    /* WIDGET */
+    --bg-widget: rgba(255, 255, 255, 0.15);
+    --text-widget: var(--blanco);
+    --border-widget: rgba(255, 255, 255, 0.2);
 }
 body.dark-mode {
     cursor: var(--cursor-default-dark);
@@ -108,6 +112,7 @@ body.high-contrast-mode {
     --text-body: var(--blanco);
     /* PANTALLA DE CARGA */
     --bg-loader-screen: var(--negro);
+    --text-loader-screen: var(--blanco);
     /* WHATS NEW VERSION */
     --bg-whats-new-version: var(--azul3);
     --text-whats-new-version: var(--blanco);
@@ -137,6 +142,9 @@ body.high-contrast-mode {
     --border-button: var(--amarillo);
     --outline-button-focus: var(--cian);
     --bg-aside-button-hover: var(--cian);
+    --aside-button-icon: var(--amarillo);
+    --bg-scroll-button: var(--cian);
+    --bg-scroll-button-hover: var(--amarillo);
     /* INPUTS */
     --bg-input: var(--negro);
     --text-input: var(--blanco);
@@ -157,10 +165,10 @@ body.high-contrast-mode {
     /* SCROLLBAR */
     --scrollbar-thumb: var(--cian);
     --scrollbar-thumb-hover: var(--amarillo);
-    /* WEATHER WIDGET */
-    --bg-weather-widget: var(--negro);
-    --text-weather-widget: var(--blanco);
-    --border-weather-widget: var(--cian);
+    /* WIDGET */
+    --bg-widget: var(--negro);
+    --text-widget: var(--blanco);
+    --border-widget: var(--cian);
 }
 
 body.high-contrast-mode {
@@ -205,6 +213,7 @@ body.code-mode {
     --text-body: #e0e0e0;
     /* PANTALLA DE CARGA */
     --bg-loader-screen: #0a0a0a;
+    --text-loader-screen: var(--blanco);
     /* WHATS NEW VERSION */
     --bg-whats-new-version: var(--azul3);
     --text-whats-new-version: var(--blanco);
@@ -234,6 +243,9 @@ body.code-mode {
     --border-button: #00ff66;
     --outline-button-focus: var(--azul3);
     --bg-aside-button-hover: #00e5ff;
+    --aside-button-icon: #00ff66;
+    --bg-scroll-button: #00cc55;
+    --bg-scroll-button-hover: #00ff66;
     /* INPUTS */
     --bg-input: #121212;
     --text-input: #00ff66;
@@ -254,10 +266,10 @@ body.code-mode {
     /* SCROLLBAR */
     --scrollbar-thumb: #00cc55;
     --scrollbar-thumb-hover: #00ff66;
-    /* WEATHER WIDGET */
-    --bg-weather-widget: #121212;
-    --text-weather-widget: #00ff66;
-    --border-weather-widget: #00cc55;
+    /* WIDGET */
+    --bg-widget: #121212;
+    --text-widget: #00ff66;
+    --border-widget: #00cc55;
 }
 
 body.code-mode
