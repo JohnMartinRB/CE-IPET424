@@ -3,10 +3,10 @@
 ========================================== */
 .widget {
     padding: var(--space-base);
-    border: 2px solid var(--border-weather-widget);
+    border: 2px solid var(--border-widget);
     border-radius: var(--radius-md);
-    background-color: var(--bg-weather-widget);
-    color: var(--text-weather-widget);
+    background-color: var(--bg-widget);
+    color: var(--text-widget);
     text-align: center;
     text-transform: capitalize;
     transition: var(--transition-fast);

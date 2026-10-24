@@ -19,6 +19,7 @@ body.halloween-mode {
     --bg-body: var(--bg-halloween-primario);
     --text-body: var(--text-halloween-claro);
     --bg-loader-screen: var(--bg-halloween-primario);
+    --text-loader-screen: var(--blanco);
     --bg-whats-new-version: var(--acento-halloween-morado);
     --text-whats-new-version: var(--blanco);
     --bg-base: linear-gradient(90deg, var(--bg-halloween-primario) 0%, var(--bg-halloween-secundario) 100%);
@@ -37,6 +38,9 @@ body.halloween-mode {
     --text-button-hover: var(--blanco);
     --border-button: var(--acento-halloween-morado);
     --bg-aside-button-hover: var(--bg-halloween-secundario);
+    --aside-button-icon: var(--celeste5);
+    --bg-scroll-button: var(--acento-halloween-morado);
+    --bg-scroll-button-hover: var(--acento-halloween-naranja);
     --bg-input: var(--bg-halloween-secundario);
     --text-input: var(--text-halloween-claro);
     --border-input: var(--acento-halloween-morado);
@@ -52,9 +56,9 @@ body.halloween-mode {
     --text-selection: var(--blanco);
     --scrollbar-thumb: var(--acento-halloween-morado);
     --scrollbar-thumb-hover: var(--acento-halloween-naranja);
-    --bg-weather-widget: rgba(28, 20, 39, 0.7);
-    --text-weather-widget: var(--text-halloween-claro);
-    --border-weather-widget: var(--acento-halloween-morado);
+    --bg-widget: rgba(28, 20, 39, 0.7);
+    --text-widget: var(--text-halloween-claro);
+    --border-widget: var(--acento-halloween-morado);
 }
 
 /* ==========================================
@@ -73,6 +77,7 @@ body.christmas-mode {
     --bg-body: var(--bg-xmas-primario);
     --text-body: var(--text-xmas-claro);
     --bg-loader-screen: var(--bg-xmas-primario);
+    --text-loader-screen: var(--blanco);
     --bg-whats-new-version: var(--acento-xmas-rojo);
     --text-whats-new-version: var(--blanco);
     --bg-base: linear-gradient(90deg, var(--bg-xmas-primario) 0%, var(--bg-xmas-secundario) 100%);
@@ -91,6 +96,9 @@ body.christmas-mode {
     --text-button-hover: var(--blanco);
     --border-button: var(--acento-xmas-dorado);
     --bg-aside-button-hover: var(--bg-xmas-secundario);
+    --aside-button-icon: var(--celeste5);
+    --bg-scroll-button: var(--acento-xmas-verde);
+    --bg-scroll-button-hover: var(--acento-xmas-dorado);
     --bg-input: var(--bg-xmas-secundario);
     --text-input: var(--text-xmas-claro);
     --border-input: var(--acento-xmas-verde);
@@ -106,9 +114,9 @@ body.christmas-mode {
     --text-selection: var(--blanco);
     --scrollbar-thumb: var(--acento-xmas-verde);
     --scrollbar-thumb-hover: var(--acento-xmas-dorado);
-    --bg-weather-widget: rgba(17, 53, 36, 0.7);
-    --text-weather-widget: var(--text-xmas-claro);
-    --border-weather-widget: var(--acento-xmas-dorado);
+    --bg-widget: rgba(17, 53, 36, 0.7);
+    --text-widget: var(--text-xmas-claro);
+    --border-widget: var(--acento-xmas-dorado);
 }
 
 /* ==========================================
@@ -127,6 +135,7 @@ body.summer-mode {
     --bg-body: var(--bg-summer-primario);
     --text-body: var(--text-summer-claro);
     --bg-loader-screen: var(--bg-summer-secundario);
+    --text-loader-screen: var(--blanco);
     --bg-whats-new-version: var(--acento-summer-naranja);
     --text-whats-new-version: var(--blanco);
     --bg-base: linear-gradient(90deg, var(--bg-summer-primario) 0%, var(--bg-summer-secundario) 100%);
@@ -145,6 +154,9 @@ body.summer-mode {
     --text-button-hover: var(--bg-summer-primario);
     --border-button: var(--acento-summer-amarillo);
     --bg-aside-button-hover: var(--bg-summer-secundario);
+    --aside-button-icon: var(--celeste5);
+    --bg-scroll-button: var(--text-summer-gris);
+    --bg-scroll-button-hover: var(--acento-summer-amarillo);
     --bg-input: var(--bg-summer-secundario);
     --text-input: var(--text-summer-claro);
     --border-input: var(--text-summer-gris);
@@ -160,9 +172,9 @@ body.summer-mode {
     --text-selection: var(--bg-summer-primario);
     --scrollbar-thumb: var(--text-summer-gris);
     --scrollbar-thumb-hover: var(--acento-summer-amarillo);
-    --bg-weather-widget: rgba(0, 119, 182, 0.4);
-    --text-weather-widget: var(--text-summer-claro);
-    --border-weather-widget: var(--text-summer-gris);
+    --bg-widget: rgba(0, 119, 182, 0.4);
+    --text-widget: var(--text-summer-claro);
+    --border-widget: var(--text-summer-gris);
 }
 
 /* ==========================================
@@ -180,6 +192,7 @@ body.pink-mode {
     --text-body: var(--azul1);
     /* PANTALLA DE CARGA */
     --bg-loader-screen: var(--celeste2);
+    --text-loader-screen: var(--blanco);
     /* WHATS NEW VERSION (Toque magenta de acento) */
     --bg-whats-new-version: var(--rosa1);
     --text-whats-new-version: var(--blanco);
@@ -205,6 +218,9 @@ body.pink-mode {
     --text-button-hover: var(--azul1);
     --border-button: var(--rosa2);
     --bg-aside-button-hover: var(--rosa4);
+    --aside-button-icon: var(--celeste5);
+    --bg-scroll-button: var(--rosa2);
+    --bg-scroll-button-hover: var(--rosa1);
     /* INPUTS (Foco destacado en rosa fuerte) */
     --bg-input: var(--blanco);
     --text-input: var(--azul1);
@@ -225,8 +241,8 @@ body.pink-mode {
     /* SCROLLBAR */
     --scrollbar-thumb: var(--rosa2);
     --scrollbar-thumb-hover: var(--rosa1);
-    /* WEATHER WIDGET */
-    --bg-weather-widget: rgba(255, 182, 193, 0.25);
-    --text-weather-widget: var(--azul1);
-    --border-weather-widget: rgba(255, 105, 180, 0.3);
+    /* WIDGET */
+    --bg-widget: rgba(255, 182, 193, 0.25);
+    --text-widget: var(--azul1);
+    --border-widget: rgba(255, 105, 180, 0.3);
 }

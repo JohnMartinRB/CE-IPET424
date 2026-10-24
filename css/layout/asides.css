@@ -47,7 +47,7 @@
     }
     .aside-icon-toggle {
         transform: scaleY(4);
-        color: var(--celeste5);
+        color: var(--aside-button-icon);
         font-weight: bold;
         font-size: var(--fs-xl);
         transition: var(--transition-button);
