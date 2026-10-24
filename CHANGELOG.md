@@ -36,6 +36,14 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se arregló el estilo de `button-scroll-top`
 - Se agregó `.gitkeep` a algunas carpetas vacías que no lo tenían
 
+## [v0.36.2-alpha]
+
+- El texto de `terminos.html` ahora se encuentra directamente en la tarjeta principal
+- Ahora los botones de temas estacionales tienen la misma clase que los demás del aside, para controlar su tamaño y separación
+- Se cambió la fuente del título del Loader (de main a titles)
+- Se cambió un color en modo rosa
+- Se agregó otra pequeña transición a los botones
+
 ---
 
 ## [v0.35.0-alpha] - Versión Principal

@@ -229,7 +229,7 @@ body.pink-mode {
     /* FOOTER (Degradado de celestes integrando un paso intermedio rosa) */
     --bg-footer: linear-gradient(90deg, var(--celeste3) 0%, var(--rosa3) 50%, var(--celeste4) 100%);
     --text-footer: var(--azul1);
-    --text-footer-hover: var(--rosa1);
+    --text-footer-hover: var(--azul4);
     --text-copy: var(--gris1);
     /* TOAST / BANNER */
     --bg-toast: var(--rosa3);

@@ -171,7 +171,7 @@
     --transition-ultra-fast: color 0.1s ease, transform 0.1s ease, width 0.1s ease-out;
     --transition-fast: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
     --transition-smooth: transform 0.2s ease, box-shadow 0.2s ease;
-    --transition-button: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+    --transition-button: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, translate 0.4s ease;
     --transition-fade:
         opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, height 0.3s ease, background-color 0.3s ease,
         box-shadow 0.3s ease, backdrop-filder 0.3s ease;

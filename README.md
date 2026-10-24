@@ -111,6 +111,7 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
     - Estos temas se encuentran en `seasonal.css`
     - Se agregaron botones en el aside de opciones para activar los temas estacionales
     - Se inviertieron las fuentes: Nunito como Titles y Nunito Sans como Main
+    - El texto de `terminos.html` ahora se encuentra directamente en la tarjeta principal
     - Se modificaron levemente algunos colores
     - Se modificó el color del icono del boton del aside en la mayoria de temas
     - Se reworkeó el funcionamiento de `grayscale-mode` para que se aplique como una capa en lugar de un tema independiente (así como rest-mode)
