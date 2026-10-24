@@ -7,12 +7,18 @@ export function renderLoader() {
     const path = window.location.pathname;
     const page = path.split("/").pop() || "index.html";
     const pageTitles = {
-        "index.html": "¡Bienvenido al sitio!",
-        "about.html": "Sobre nosotros",
-        "contact.html": "Contacto y sugerencias",
-        "projects.html": "Nuestros proyectos",
-        "school.html": "Trámites y reglamento",
-        "credits.html": "Créditos y colaboradores",
+        "index.html": "Inicio",
+        "nosotros.html": "Sobre Nosotros",
+        "noticias.html": "Noticias y Novedades",
+        "proyectos.html": "Proyectos",
+        "herramientas.html": "Herramientas Estudiantiles",
+        "tramites.html": "Trámites",
+        "recursos.html": "Recursos Útiles",
+        "escuela.html": "Nuestra Escuela",
+        "contacto.html": "Contacto",
+        "creditos.html": "Créditos",
+        "terminos.html": "Términos y Condiciones",
+        "privacidad.html": "Política de Privacidad",
     };
     // 3. Evaluamos la página actual
     const isHomePage = page === "index.html" || page === "";

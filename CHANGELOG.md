@@ -44,6 +44,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se cambió un color en modo rosa
 - Se agregó otra pequeña transición a los botones
 
+## [v0.36.3-alpha]
+
+- Se corrigieron algunos títulos de página en `components.js`
+
 ---
 
 ## [v0.35.0-alpha] - Versión Principal
