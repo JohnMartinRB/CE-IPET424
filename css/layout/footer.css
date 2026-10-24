@@ -93,8 +93,8 @@ a.footer-link,
         overflow: visible;
     }
     .footer-links {
-        grid-template-columns: repeat(3, 1fr);
-        gap: var(--space-xl);
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--space-md);
     }
     .footer-icon {
         width: 20px;

@@ -4,6 +4,76 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## [v0.35.0-alpha] - Versión Principal
+
+- Nueva subpágina de Términos y Condiciones para protección legal y de conducta del sitio
+- Nuevo modal para aceptar términos y condiciones al entrar por primera vez al sitio
+- El footer ahora tiene una columna más, de título Legal, con link a Terminos y Licencia (se movió a esta columna)
+- En la columna proyecto ahora se encuentra un enlace a Créditos
+- Modificación en la función js para inciar los modales en orden
+- Se renombraron los svg del widget y se actualizaron las rutas
+- Renombrado `home.css` a `specific.css`
+- Iconos del footer en carpeta `assets/icons/footer` (sin usar de momento)
+
+---
+
+## [v0.34.0-alpha] - Versión Principal
+
+- Nuevas subpáginas:
+    - Recursos, para descargar músicas y archivos. Algunos archivo descargables de momento
+    - Escuela, para conocer sobre la escuela. contenido placeholder y enlace a la web del colegio
+    - Herramientas, vacía de momento
+- Nueva función js para guardar en localStorage si los aside están abiertos o cerrados, para que el estado se mantenga al reiniciar la página o dirigirse a una subpágina
+- Se eliminó la flecha hacia abajo en los botones de descarga de archivos
+- El escudo del header ahora dirige a escuela.html
+- Nueva organziación del menú de subpáginas (ahora con un grid)
+- Se reordenaron las subpáginas del menú
+- Se reordenó la función para poner título a la página y se agregaron nuevos
+- Se cambiaron algunos títulos de subpáginas
+- Se cambió el ancho y margin de los botones del aside
+- Se subdividió la carpeta de `assets/audio` en `effects/` y `music/`
+- Se subdividió la carpeta `assets/docs` en `school/` y `patrio/`
+- Nueva carpeta `img/resources`
+- Nuevos archivos en `resources`
+- Se eliminaron muchas carpetas vacías
+- Se eliminaron todas las funciones de `accesibility.js` debido a que no se usaban
+- Se actualizaron varias rutas de archivos
+
+## [v0.34.1-alpha]
+
+- Se arregló el menú de subpáginas en `escuela.html`
+
+## [v0.34.2-alpha]
+
+- Pequeño cambio en la función de título de página
+- Se arregló un link del menú de subpáginas en `contacto.html`
+
+## [v0.34.3-alpha]
+
+- Ahora 404.html tiene el footer insertado en lugar de su propio footer
+- Se arregló la función de `initPageTitle`
+
+---
+
+## [v0.33.0-alpha] - Versión Principal
+
+- Nuevos widgets en el aside de novedades:
+    - Widget para mostrar Próximos feriados
+    - Widget de frase diaria aleatoria
+- Se reordenaron los widgets de este aside
+- El widget de tiempo atmosférico ahora tiene título, ícono, y muestra la fecha y hora
+- Se movió el widget de tiempo atmosférico al aside de noticias
+- Nuevo botón en el aside de configuración que abre un modal para compartir el sitio a través de una red social
+- Se cambió el color de los botones e inputs a un lila más intenso
+- Los botones ahora tienen mucha menos separación vertical
+- Los títulos de las secciones del aside tienen una nueva clase y menos separación con respecto a los botones
+- Nuevos easter eggs
+- Ahora los íconos de los widgets se encuentran en la carpeta `assets/img/icons`
+- Nuevos archivos `holidays.json` y `quotes.json` para almacenar el contenido de los widget
+- Nuevas funciones js para manejar los nuevos widgets
+
+---
+
 ## [v0.32.0-alpha] - Versión Principal
 
 - Nueva organización del footer: tres columnas

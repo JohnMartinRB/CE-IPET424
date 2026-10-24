@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- ETIQUETAS META -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta
+            name="description"
+            content="Sitio oficial del Centro de Estudiantes IPET 424. Novedades, proyectos y contacto."
+        />
+        <meta name="theme-color" id="theme-color" content="#0088FF" />
+        <!-- TITULO DE LA PESTAÑA Y FAVICON -->
+        <title>Recursos Útiles | Centro de Estudiantes IPET N° 424</title>
+        <link rel="icon" id="favicon" type="image/png" href="assets/img/favicons/light.png" sizes="any" />
+        <!-- CSS Y JAVASCRIPT -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <script type="module" src="js/main.js"></script>
+    </head>
+    <body>
+        <!-- HEADER DE TITULO -->
+        <div id="header-container" class="header-container"></div>
+        <!-- BARRA DE NAVEGACIÓN -->
+        <nav id="nav-card" class="nav-card">
+            <button id="nav-button-menu" class="button nav-button-menu" aria-label="Abrir menú">☰</button>
+            <ul id="nav-menu" class="nav-menu">
+                <li>
+                    <a class="nav-menu-link" href="#himnos">Símbolos Patrios</a>
+                </li>
+                <li>
+                    <a class="nav-menu-link" href="#descargas-patrias">Mapas y Banderas</a>
+                </li>
+                <li>
+                    <a class="nav-menu-link" href="#emergencias">Contactos Útiles</a>
+                </li>
+                <li>
+                    <a class="nav-menu-link" href="#guias-estudiantiles">Guías Rápidas</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- PANEL LATERAL DE CONFIGURACIÓN -->
+        <div id="aside-config-container" class="aside-config-container"></div>
+        <!-- PANEL LATERAL DE NOVEDADES -->
+        <div id="aside-news-container" class="aside-news-container"></div>
+        <!-- CONTENEDOR PRINCIPAL -->
+        <div id="content-card" class="content-card">
+            <main>
+                <!-- SECCIÓN: INICIO / INFORMATIVA -->
+                <section id="inicio" class="section-card hero-section">
+                    <h2>Recursos Útiles y Herramientas</h2>
+                    <p class="text paragraph">
+                        Espacio de consulta con material patrio, símbolos nacionales para trabajos prácticos, números de
+                        emergencia y guías escolares.
+                    </p>
+                </section>
+                <!-- SECCIÓN 1: HIMNOS Y CANCIONES PATRIAS -->
+                <section id="himnos" class="section-card himnos-section">
+                    <h2>Símbolos y Canciones Patrias</h2>
+                    <p class="text paragraph">
+                        Escuchá las versiones oficiales, descargá la pista de audio o bajá la letra en formato PDF para
+                        los actos institucionales.
+                    </p>
+                    <div id="grid-tarjetas" class="grid-tarjetas">
+                        <!-- Tarjeta: Himno Nacional Argentino -->
+                        <article class="subsection-card download-card">
+                            <h3>Himno Nacional Argentino</h3>
+                            <p class="text paragraph">Versión oficial completa.</p>
+                            <audio controls class="audio-player">
+                                <source src="assets/audio/music/himno-nacional.mp3" type="audio/mpeg" />
+                                Tu navegador no soporta la reproducción de audio.
+                            </audio>
+                            <!-- Contenedor de botones de descarga dual -->
+                            <div
+                                class="download-buttons-group"
+                                style="display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap"
+                            >
+                                <a
+                                    href="assets/audio/music/himno-nacional.mp3"
+                                    download="Himno_Nacional_Argentino.mp3"
+                                    class="button download-button"
+                                    style="flex: 1; text-align: center"
+                                    >Descargar Música</a
+                                >
+                                <a
+                                    href="assets/docs/patria/himno-nacional-letra.pdf"
+                                    download="Himno_Nacional_Letra.pdf"
+                                    class="button download-button"
+                                    style="flex: 1; text-align: center"
+                                    >Descargar Letra</a
+                                >
+                            </div>
+                        </article>
+                        <!-- Tarjeta: Marcha de San Lorenzo -->
+                        <article class="subsection-card download-card">
+                            <h3>Marcha de San Lorenzo</h3>
+                            <p class="text paragraph">Homenaje al General José de San Martín.</p>
+                            <audio controls class="audio-player">
+                                <source src="assets/audio/music/marcha-san-lorenzo.mp3" type="audio/mpeg" />
+                                Tu navegador no soporta la reproducción de audio.
+                            </audio>
+                            <div
+                                class="download-buttons-group"
+                                style="display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap"
+                            >
+                                <a
+                                    href="assets/audio/music/marcha-san-lorenzo.mp3"
+                                    download="Marcha_San_Lorenzo.mp3"
+                                    class="button download-button"
+                                    style="flex: 1; text-align: center"
+                                    >Descargar Música</a
+                                >
+                                <a
+                                    href="assets/docs/patria/marcha-san-lorenzo-letra.pdf"
+                                    download="Marcha_San_Lorenzo_Letra.pdf"
+                                    class="button download-button"
+                                    style="flex: 1; text-align: center"
+                                    >Descargar Letra</a
+                                >
+                            </div>
+                        </article>
+                        <!-- Tarjeta: Canción a la Bandera (Aurora) -->
+                        <article class="subsection-card download-card">
+                            <h3>Canción a la Bandera (Aurora)</h3>
+                            <p class="text paragraph">Interpretación para izamiento.</p>
+                            <audio controls class="audio-player">
+                                <source src="assets/audio/music/aurora.mp3" type="audio/mpeg" />
+                                Tu navegador no soporta la reproducción de audio.
+                            </audio>
+                            <div
+                                class="download-buttons-group"
+                                style="display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap"
+                            >
+                                <a
+                                    href="assets/audio/music/aurora.mp3"
+                                    download="Aurora_Himno.mp3"
+                                    class="button download-button"
+                                    style="flex: 1; text-align: center"
+                                    >Descargar Música</a
+                                >
+                                <a
+                                    href="assets/docs/patria/aurora-letra.pdf"
+                                    download="Aurora_Letra.pdf"
+                                    class="button download-button"
+                                    style="flex: 1; text-align: center"
+                                    >Descargar Letra</a
+                                >
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <!-- SECCIÓN 2: DESCARGA DE MAPAS, BANDERAS Y ESCUDOS -->
+                <section id="descargas-patrias" class="section-card descargas-patrias-section">
+                    <h2>Mapas, Escudos y Banderas</h2>
+                    <p class="text paragraph">
+                        Archivos e imágenes vectoriales en alta calidad sin marcas de agua para maquetas, láminas y
+                        trabajos prácticos.
+                    </p>
+                    <div class="grid-tarjetas">
+                        <article class="subsection-card download-card">
+                            <h3>Bandera Argentina (HD)</h3>
+                            <p class="text paragraph">Formato transparente PNG y SVG oficial.</p>
+                            <a
+                                href="assets/img/resources/bandera-arg.png"
+                                download="Bandera Argentina.png"
+                                class="button download-button"
+                                >Descargar Bandera</a
+                            >
+                        </article>
+                        <article class="subsection-card download-card">
+                            <h3>Escudo Nacional Argentino</h3>
+                            <p class="text paragraph">Imagen vectorizada limpia para portadas.</p>
+                            <a
+                                href="assets/img/resources/escudo-arg.png"
+                                download="Escudo Nacional Argentino.png"
+                                class="button download-button"
+                                >Descargar Escudo</a
+                            >
+                        </article>
+                        <article class="subsection-card download-card">
+                            <h3>Mapa Político de Argentina</h3>
+                            <p class="text paragraph">Mapa con división política en formato A4 listo para imprimir.</p>
+                            <a
+                                href="assets/img/resources/mapa-arg.svg"
+                                download="Mapa Político Argentina.svg"
+                                class="button download-button"
+                                >Descargar Mapa</a
+                            >
+                        </article>
+                        <article class="subsection-card download-card">
+                            <h3>Mapa de Córdoba (Provincial)</h3>
+                            <p class="text paragraph">Mapa de departamentos e hidrografía escolar.</p>
+                            <a
+                                href="assets/img/resources/mapa-cordoba.svg"
+                                download="Mapa Político Cordoba.svg"
+                                class="button download-button"
+                                >Descargar Mapa</a
+                            >
+                        </article>
+                        <article class="subsection-card download-card">
+                            <h3>Bandera de Córdoba</h3>
+                            <p class="text paragraph">
+                                Diseño oficial de la Provincia de Córdoba en alta resolución (PNG/SVG).
+                            </p>
+                            <a
+                                href="assets/img/resources/bandera-cordoba.svg"
+                                download="Bandera_Provincia_de_Cordoba.png"
+                                class="button download-button"
+                                >Descargar Bandera</a
+                            >
+                        </article>
+                        <article class="subsection-card download-card">
+                            <h3>Bandera de Villa Dolores</h3>
+                            <p class="text paragraph">Símbolo oficial de nuestra ciudad sede escolar.</p>
+                            <a
+                                href="assets/img/resources/bandera-villa-dolores.png"
+                                download="Bandera Villa Dolores.png"
+                                class="button download-button"
+                                >Descargar Bandera</a
+                            >
+                        </article>
+                        <article class="subsection-card download-card">
+                            <h3>Planisferio Mundial (Escolar)</h3>
+                            <p class="text paragraph">
+                                Mapa mundial político y físico en formato PDF listo para imprimir.
+                            </p>
+                            <a
+                                href="assets/img/resources/planisferio.png"
+                                download="Planisferio Mundial.png"
+                                class="button download-button"
+                                >Descargar Mapa</a
+                            >
+                        </article>
+                        <article class="subsection-card download-card">
+                            <h3>Escudo del IPET N° 424</h3>
+                            <p class="text paragraph">
+                                Logotipo institucional oficial en alta calidad para portadas de trabajos.
+                            </p>
+                            <a
+                                href="assets/img/logos/escudo.png"
+                                download="Escudo IPET 424.png"
+                                class="button download-button"
+                                >Descargar Escudo</a
+                            >
+                        </article>
+                    </div>
+                </section>
+                <!-- SECCIÓN 3: CONTACTOS Y NÚMEROS DE EMERGENCIA -->
+                <section id="emergencias" class="section-card emergencias-section">
+                    <h2>Teléfonos y Líneas de Emergencia</h2>
+                    <p class="text paragraph">
+                        Líneas de asistencia gratuita y directa ante urgencias o situaciones de riesgo. Toca cualquier
+                        botón para marcar directamente.
+                    </p>
+                    <div class="table-container">
+                        <h3>Directorio de Urgencias Públicas</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Servicio / Institución</th>
+                                    <th>Teléfono Directo</th>
+                                    <th>Acción Rápida</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Policía de Córdoba</td>
+                                    <td>101 / 911</td>
+                                    <td><a href="tel:101" class="button">Llamar 📞</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Bomberos Voluntarios</td>
+                                    <td>100</td>
+                                    <td><a href="tel:100" class="button">Llamar 📞</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Urgencias Médicas / Hospital</td>
+                                    <td>107</td>
+                                    <td><a href="tel:107" class="button">Llamar 📞</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Línea 144 (Violencia de Género)</td>
+                                    <td>144</td>
+                                    <td><a href="tel:144" class="button">Llamar 📞</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <!-- SECCIÓN 4: PLACEHOLDER / GUÍAS ESTUDIANTILES (Futuros módulos) -->
+                <section id="guias-estudiantiles" class="section-card guias-section">
+                    <h2>Guías Rápidas y Tutoriales</h2>
+                    <div id="more-info" class="subsection-card more-info">
+                        <h3>Próximos Instructivos en Desarrollo</h3>
+                        <ol>
+                            <li>Cómo gestionar el Boleto Educativo Cordobés (BEC).</li>
+                            <li>Pasos para solicitar certificado de alumno regular.</li>
+                            <li>Guía de uso para las herramientas de los talleres técnicos.</li>
+                        </ol>
+                    </div>
+                </section>
+                <!-- SECCIÓN: SUB SITIOS -->
+                <section id="about-section" class="section-card">
+                    <h2>¿Buscás algo específico?</h2>
+                    <p>Visitá nuestros diferentes sitios de consultas</p>
+                    <!-- Botones de enlaces a sub-páginas -->
+                    <ul id="subpages" class="subpages">
+                        <li><a class="subpages-link button" href="index.html">Inicio</a></li>
+                        <li><a class="subpages-link button" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="subpages-link button" href="noticias.html">Noticias</a></li>
+                        <li><a class="subpages-link button" href="proyectos.html">Proyectos</a></li>
+                        <li><a class="subpages-link button" href="herramientas.html">Herramientas</a></li>
+                        <li><a class="subpages-link button" href="tramites.html">Trámites</a></li>
+                        <li><a class="subpages-link button button-active" href="#">Recursos</a></li>
+                        <li><a class="subpages-link button" href="escuela.html">Escuela</a></li>
+                        <li><a class="subpages-link button" href="contacto.html">Contacto</a></li>
+                        <li><a class="subpages-link button" href="creditos.html">Créditos</a></li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <!-- PIE DE PÁGINA -->
+        <div id="footer-container" class="footer-container"></div>
+        <!-- BOTÓN DE VOLVER ARRIBA -->
+        <button class="button-round button-scroll-top" id="button-scroll-top" aria-label="Volver arriba">↑</button>
+        <!-- VENTANA MODAL DE ACEPTAR TÉRMINOS -->
+        <div id="modal-terms-container" class="modal-terms-container"></div>
+        <!-- VENTANA MODAL "EN DESARROLLO" -->
+        <div id="modal-in-dev-container" class="modal-in-dev-container"></div>
+        <!-- VENTANA MODAL DE NOVEDADES -->
+        <div id="modal-whats-new-container" class="modal-whats-new-container"></div>
+    </body>
+</html>

@@ -32,6 +32,6 @@
 @import "layout/footer.css";
 
 /* ESTILOS ESPECÍFICAS */
-@import "misc/home.css";
+@import "misc/specific.css";
 @import "misc/error.css";
 @import "misc/secret.css";
