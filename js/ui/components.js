@@ -7,16 +7,16 @@ export function renderLoader() {
     const path = window.location.pathname;
     const page = path.split("/").pop() || "index.html";
     const pageTitles = {
-        "index.html": "Inicio",
+        "index.html": "¡Bienvenido al sitio!",
         "nosotros.html": "Sobre Nosotros",
         "noticias.html": "Noticias y Novedades",
-        "proyectos.html": "Proyectos",
+        "proyectos.html": "Nuestros Proyectos",
         "herramientas.html": "Herramientas Estudiantiles",
-        "tramites.html": "Trámites",
+        "tramites.html": "Trámites y Reglamento",
         "recursos.html": "Recursos Útiles",
         "escuela.html": "Nuestra Escuela",
         "contacto.html": "Contacto",
-        "creditos.html": "Créditos",
+        "creditos.html": "Créditos y Colaboradores",
         "terminos.html": "Términos y Condiciones",
         "privacidad.html": "Política de Privacidad",
     };
@@ -91,14 +91,15 @@ export async function initComponents() {
 export function initPageTitle() {
     // 1. Identificador institucional único (sufijo)
     const SITE_SUFFIX = "| Centro de Estudiantes IPET N° 424";
-    // 2. Obtenemos el nombre de la página actual descartando parámetros o hash
+    // 2. Obtenemos el nombre de la página actual en minúsculas para evitar errores
     const path = window.location.pathname;
-    let page = path.split("/").pop();
+    let page = path.split("/").pop().toLowerCase();
     // Si la ruta termina en / o está vacía, asumimos index.html
     if (!page || page === "") {
         page = "index.html";
     }
-    // 3. Diccionario con el título específico para cada subpágina
+    console.log("Página detectada por initPageTitle:", page); // 🔍 Útil para depurar en consola (F12)
+    // 3. Diccionario con el título específico para cada subpágina (claves en minúsculas)
     const pageTitles = {
         "index.html": "Inicio",
         "nosotros.html": "Sobre Nosotros",
@@ -111,10 +112,9 @@ export function initPageTitle() {
         "contacto.html": "Contacto",
         "creditos.html": "Créditos",
         "terminos.html": "Términos y Condiciones",
-        "privacidad.html": "Política de Privacidad",
         "404.html": "Página no encontrada",
     };
-    // 4. Seleccionamos el nombre o usamos "Inicio" como genérico si no coincide la clave
+    // 4. Seleccionamos el nombre o usamos "Inicio" como respaldo si no coincide
     const sectionName = pageTitles[page] || "Inicio";
     // 5. Asignamos el título final a la pestaña
     document.title = `${sectionName} ${SITE_SUFFIX}`;
