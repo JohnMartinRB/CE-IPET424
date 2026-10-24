@@ -68,10 +68,8 @@ a.button:focus {
     opacity: 1;
 }
 .button-scroll-top:hover {
-    transform: translateY(-3px);
-    background-color: var(--bg-scroll-button-hover);
     transform: scale(1.05) translateY(-3px);
-    background-color: var(--scrollbar-thumb-hover);
+    background-color: var(--bg-scroll-button-hover);
 }
 .button-round {
     border-radius: var(--radius-full);

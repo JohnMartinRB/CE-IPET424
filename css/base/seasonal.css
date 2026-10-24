@@ -3,120 +3,120 @@
 ========================================== */
 
 /* ==========================================
-    MODO HALLOWEEN
+    MODO misterio
 ========================================== */
-body.halloween-mode {
+body.mistery-mode {
     /* Variables locales del modo */
-    --bg-halloween-primario: #120d1a;
-    --bg-halloween-secundario: #1c1427;
-    --text-halloween-claro: #f3f0f7;
-    --text-halloween-gris: #a19bb5;
-    --acento-halloween-naranja: #ff6600;
-    --acento-halloween-morado: #9933ff;
-    --acento-halloween-amarillo: #ffcc00;
+    --bg-misterio-primario: #120d1a;
+    --bg-misterio-secundario: #1c1427;
+    --text-misterio-claro: #f3f0f7;
+    --text-misterio-gris: #a19bb5;
+    --acento-misterio-naranja: #ff6600;
+    --acento-misterio-morado: #9933ff;
+    --acento-misterio-amarillo: #ffcc00;
 
     /* Mapeo */
-    --bg-body: var(--bg-halloween-primario);
-    --text-body: var(--text-halloween-claro);
-    --bg-loader-screen: var(--bg-halloween-primario);
+    --bg-body: var(--bg-misterio-primario);
+    --text-body: var(--text-misterio-claro);
+    --bg-loader-screen: var(--bg-misterio-primario);
     --text-loader-screen: var(--blanco);
-    --bg-whats-new-version: var(--acento-halloween-morado);
+    --bg-whats-new-version: var(--acento-misterio-morado);
     --text-whats-new-version: var(--blanco);
-    --bg-base: linear-gradient(90deg, var(--bg-halloween-primario) 0%, var(--bg-halloween-secundario) 100%);
-    --bg-base-inverted: linear-gradient(-90deg, var(--bg-halloween-primario) 0%, var(--bg-halloween-secundario) 100%);
-    --link: var(--acento-halloween-naranja);
-    --link-hover: var(--acento-halloween-amarillo);
-    --progress-bar: var(--acento-halloween-naranja);
-    --bg-section-card: linear-gradient(90deg, var(--bg-halloween-secundario) 0%, var(--bg-halloween-primario) 100%);
-    --text-section-card: var(--text-halloween-claro);
-    --bg-subsection-card: linear-gradient(-90deg, var(--bg-halloween-secundario) 0%, var(--bg-halloween-primario) 100%);
-    --text-subsection-card: var(--text-halloween-claro);
-    --text-titles: var(--acento-halloween-naranja);
-    --bg-button: var(--bg-halloween-secundario);
-    --bg-button-hover: var(--acento-halloween-naranja);
-    --text-button: var(--text-halloween-claro);
+    --bg-base: linear-gradient(90deg, var(--bg-misterio-primario) 0%, var(--bg-misterio-secundario) 100%);
+    --bg-base-inverted: linear-gradient(-90deg, var(--bg-misterio-primario) 0%, var(--bg-misterio-secundario) 100%);
+    --link: var(--acento-misterio-naranja);
+    --link-hover: var(--acento-misterio-amarillo);
+    --progress-bar: var(--acento-misterio-naranja);
+    --bg-section-card: linear-gradient(90deg, var(--bg-misterio-secundario) 0%, var(--bg-misterio-primario) 100%);
+    --text-section-card: var(--text-misterio-claro);
+    --bg-subsection-card: linear-gradient(-90deg, var(--bg-misterio-secundario) 0%, var(--bg-misterio-primario) 100%);
+    --text-subsection-card: var(--text-misterio-claro);
+    --text-titles: var(--acento-misterio-naranja);
+    --bg-button: var(--bg-misterio-secundario);
+    --bg-button-hover: var(--acento-misterio-naranja);
+    --text-button: var(--text-misterio-claro);
     --text-button-hover: var(--blanco);
-    --border-button: var(--acento-halloween-morado);
-    --bg-aside-button-hover: var(--bg-halloween-secundario);
+    --border-button: var(--acento-misterio-morado);
+    --bg-aside-button-hover: var(--bg-misterio-secundario);
     --aside-button-icon: var(--celeste5);
-    --bg-scroll-button: var(--acento-halloween-morado);
-    --bg-scroll-button-hover: var(--acento-halloween-naranja);
-    --bg-input: var(--bg-halloween-secundario);
-    --text-input: var(--text-halloween-claro);
-    --border-input: var(--acento-halloween-morado);
-    --border-input-focus: var(--acento-halloween-naranja);
-    --bg-footer: linear-gradient(90deg, var(--bg-halloween-primario) 0%, var(--bg-halloween-secundario) 100%);
-    --text-footer: var(--acento-halloween-naranja);
-    --text-footer-hover: var(--acento-halloween-amarillo);
-    --text-copy: var(--text-halloween-gris);
-    --bg-toast: var(--bg-halloween-secundario);
-    --text-toast: var(--acento-halloween-naranja);
-    --bg-banner: var(--acento-halloween-naranja);
-    --bg-selection: var(--acento-halloween-morado);
+    --bg-scroll-button: var(--acento-misterio-morado);
+    --bg-scroll-button-hover: var(--acento-misterio-naranja);
+    --bg-input: var(--bg-misterio-secundario);
+    --text-input: var(--text-misterio-claro);
+    --border-input: var(--acento-misterio-morado);
+    --border-input-focus: var(--acento-misterio-naranja);
+    --bg-footer: linear-gradient(90deg, var(--bg-misterio-primario) 0%, var(--bg-misterio-secundario) 100%);
+    --text-footer: var(--acento-misterio-naranja);
+    --text-footer-hover: var(--acento-misterio-amarillo);
+    --text-copy: var(--text-misterio-gris);
+    --bg-toast: var(--bg-misterio-secundario);
+    --text-toast: var(--acento-misterio-naranja);
+    --bg-banner: var(--acento-misterio-naranja);
+    --bg-selection: var(--acento-misterio-morado);
     --text-selection: var(--blanco);
-    --scrollbar-thumb: var(--acento-halloween-morado);
-    --scrollbar-thumb-hover: var(--acento-halloween-naranja);
+    --scrollbar-thumb: var(--acento-misterio-morado);
+    --scrollbar-thumb-hover: var(--acento-misterio-naranja);
     --bg-widget: rgba(28, 20, 39, 0.7);
-    --text-widget: var(--text-halloween-claro);
-    --border-widget: var(--acento-halloween-morado);
+    --text-widget: var(--text-misterio-claro);
+    --border-widget: var(--acento-misterio-morado);
 }
 
 /* ==========================================
     MODO NAVIDAD
 ========================================== */
-body.christmas-mode {
+body.holidays-mode {
     /* Variables locales del modo */
-    --bg-xmas-primario: #0b2217;
-    --bg-xmas-secundario: #113524;
-    --text-xmas-claro: #f0f7f4;
-    --text-xmas-gris: #9cb3a8;
-    --acento-xmas-rojo: #d92b2b;
-    --acento-xmas-verde: #1fb355;
-    --acento-xmas-dorado: #f2c94c;
+    --bg-navidad-primario: #0b2217;
+    --bg-navidad-secundario: #113524;
+    --text-navidad-claro: #f0f7f4;
+    --text-navidad-gris: #9cb3a8;
+    --acento-navidad-rojo: #d92b2b;
+    --acento-navidad-verde: #1fb355;
+    --acento-navidad-dorado: #f2c94c;
     /* Mapeo */
-    --bg-body: var(--bg-xmas-primario);
-    --text-body: var(--text-xmas-claro);
-    --bg-loader-screen: var(--bg-xmas-primario);
+    --bg-body: var(--bg-navidad-primario);
+    --text-body: var(--text-navidad-claro);
+    --bg-loader-screen: var(--bg-navidad-primario);
     --text-loader-screen: var(--blanco);
-    --bg-whats-new-version: var(--acento-xmas-rojo);
+    --bg-whats-new-version: var(--acento-navidad-rojo);
     --text-whats-new-version: var(--blanco);
-    --bg-base: linear-gradient(90deg, var(--bg-xmas-primario) 0%, var(--bg-xmas-secundario) 100%);
-    --bg-base-inverted: linear-gradient(-90deg, var(--bg-xmas-primario) 0%, var(--bg-xmas-secundario) 100%);
-    --link: var(--acento-xmas-dorado);
+    --bg-base: linear-gradient(90deg, var(--bg-navidad-primario) 0%, var(--bg-navidad-secundario) 100%);
+    --bg-base-inverted: linear-gradient(-90deg, var(--bg-navidad-primario) 0%, var(--bg-navidad-secundario) 100%);
+    --link: var(--acento-navidad-dorado);
     --link-hover: var(--blanco);
-    --progress-bar: var(--acento-xmas-rojo);
-    --bg-section-card: linear-gradient(90deg, var(--bg-xmas-secundario) 0%, var(--bg-xmas-primario) 100%);
-    --text-section-card: var(--text-xmas-claro);
-    --bg-subsection-card: linear-gradient(-90deg, var(--bg-xmas-secundario) 0%, var(--bg-xmas-primario) 100%);
-    --text-subsection-card: var(--text-xmas-claro);
-    --text-titles: var(--acento-xmas-dorado);
-    --bg-button: var(--bg-xmas-secundario);
-    --bg-button-hover: var(--acento-xmas-rojo);
-    --text-button: var(--text-xmas-claro);
+    --progress-bar: var(--acento-navidad-rojo);
+    --bg-section-card: linear-gradient(90deg, var(--bg-navidad-secundario) 0%, var(--bg-navidad-primario) 100%);
+    --text-section-card: var(--text-navidad-claro);
+    --bg-subsection-card: linear-gradient(-90deg, var(--bg-navidad-secundario) 0%, var(--bg-navidad-primario) 100%);
+    --text-subsection-card: var(--text-navidad-claro);
+    --text-titles: var(--acento-navidad-dorado);
+    --bg-button: var(--bg-navidad-secundario);
+    --bg-button-hover: var(--acento-navidad-rojo);
+    --text-button: var(--text-navidad-claro);
     --text-button-hover: var(--blanco);
-    --border-button: var(--acento-xmas-dorado);
-    --bg-aside-button-hover: var(--bg-xmas-secundario);
+    --border-button: var(--acento-navidad-dorado);
+    --bg-aside-button-hover: var(--bg-navidad-secundario);
     --aside-button-icon: var(--celeste5);
-    --bg-scroll-button: var(--acento-xmas-verde);
-    --bg-scroll-button-hover: var(--acento-xmas-dorado);
-    --bg-input: var(--bg-xmas-secundario);
-    --text-input: var(--text-xmas-claro);
-    --border-input: var(--acento-xmas-verde);
-    --border-input-focus: var(--acento-xmas-dorado);
-    --bg-footer: linear-gradient(90deg, var(--bg-xmas-primario) 0%, var(--bg-xmas-secundario) 100%);
-    --text-footer: var(--acento-xmas-dorado);
+    --bg-scroll-button: var(--acento-navidad-verde);
+    --bg-scroll-button-hover: var(--acento-navidad-dorado);
+    --bg-input: var(--bg-navidad-secundario);
+    --text-input: var(--text-navidad-claro);
+    --border-input: var(--acento-navidad-verde);
+    --border-input-focus: var(--acento-navidad-dorado);
+    --bg-footer: linear-gradient(90deg, var(--bg-navidad-primario) 0%, var(--bg-navidad-secundario) 100%);
+    --text-footer: var(--acento-navidad-dorado);
     --text-footer-hover: var(--blanco);
-    --text-copy: var(--text-xmas-gris);
-    --bg-toast: var(--bg-xmas-secundario);
-    --text-toast: var(--acento-xmas-dorado);
-    --bg-banner: var(--acento-xmas-rojo);
-    --bg-selection: var(--acento-xmas-rojo);
+    --text-copy: var(--text-navidad-gris);
+    --bg-toast: var(--bg-navidad-secundario);
+    --text-toast: var(--acento-navidad-dorado);
+    --bg-banner: var(--acento-navidad-rojo);
+    --bg-selection: var(--acento-navidad-rojo);
     --text-selection: var(--blanco);
-    --scrollbar-thumb: var(--acento-xmas-verde);
-    --scrollbar-thumb-hover: var(--acento-xmas-dorado);
+    --scrollbar-thumb: var(--acento-navidad-verde);
+    --scrollbar-thumb-hover: var(--acento-navidad-dorado);
     --bg-widget: rgba(17, 53, 36, 0.7);
-    --text-widget: var(--text-xmas-claro);
-    --border-widget: var(--acento-xmas-dorado);
+    --text-widget: var(--text-navidad-claro);
+    --border-widget: var(--acento-navidad-dorado);
 }
 
 /* ==========================================

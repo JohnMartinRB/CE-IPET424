@@ -29,6 +29,13 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se agregaron muchas variables de color nuevas para elementos que antes usaban las variables de color de otro elemento
 - Se renombraron muchas variables
 
+## [v0.36.1-alpha]
+
+- Se renombró el tema Halloween a Misterio y Navidad a Festividades para evitar conflictos institucionales
+- Se renombraron las variables, botones y clases
+- Se arregló el estilo de `button-scroll-top`
+- Se agregó `.gitkeep` a algunas carpetas vacías que no lo tenían
+
 ---
 
 ## [v0.35.0-alpha] - Versión Principal
