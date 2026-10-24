@@ -4,6 +4,33 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## [v0.36.0-alpha] - Versión Principal
+
+- Nuevos temas de estacionales por temporadas
+    - Verano: enero y febrero
+    - Mes rosa: octubre
+    - Halloween: última semana de octubre
+    - Navidad: últimas semanas de diciembre
+- Estos temas se encuentran en `seasonal.css`
+- Se agregaron botones en el aside de opciones para activar los temas estacionales
+- Se inviertieron las fuentes: Nunito como Titles y Nunito Sans como Main
+- Se modificaron levemente algunos colores
+- Se modificó el color del icono del boton del aside en la mayoria de temas
+- Se reworkeó el funcionamiento de `grayscale-mode` para que se aplique como una capa en lugar de un tema independiente (así como rest-mode)
+- Se eliminó el favicon gris
+- Función js actualizada para comprobar ciertos periodos de fecha y aplicar temas estacionales por defecto
+- Nuevos logos y favicons rosa y mascota rosa para el mes de octubre
+- Se actualizaron los logos y favicons de halloween y navidad
+- Se agregó el logo de instagram con colores patrios y se actualizaron los de halloween y navidad
+- Se separaron los logos de `assets/logos` en `ig/`, `ce/` y `app/`
+- Se renombraron los archivos de logos
+- Se actualizaron las rutas de los logos
+- Eliminada una variable inutilizada
+- Se agregaron muchas variables de color nuevas para elementos que antes usaban las variables de color de otro elemento
+- Se renombraron muchas variables
+
+---
+
 ## [v0.35.0-alpha] - Versión Principal
 
 - Nueva subpágina de Términos y Condiciones para protección legal y de conducta del sitio
