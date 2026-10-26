@@ -81,7 +81,7 @@
     }
     .header-card {
         width: 100%;
-        max-width: 98%;
+        max-width: 94%;
     }
     .header-logo-container {
         display: grid !important;
@@ -104,24 +104,21 @@
     }
     .header-subtitle {
         display: block;
-        text-align: left;
     }
     /* Cuadrícula 2x2 para el Menú de Navegación */
     .header-nav-grid {
         display: grid;
         grid-template-columns: repeat(2, auto);
         justify-content: end;
-        gap: 2px var(--space-sm);
+        gap: var(--space-base) var(--space-lg);
     }
     .header-nav-button {
         display: flex;
         align-items: center;
-        padding: var(--space-2xs) var(--space-xs);
-        gap: 4px;
         border: none;
         background: transparent;
         font-weight: bold;
-        font-size: var(--fs-sm);
+        font-size: var(--fs-base);
         transition: color var(--transition-fast);
     }
     .header-nav-button:hover {
@@ -153,7 +150,7 @@
     .dropdown-content a {
         display: block;
         padding: 6px 12px;
-        font-size: var(--fs-sm);
+        font-size: var(--fs-base);
         text-decoration: none;
         white-space: nowrap;
     }
@@ -167,7 +164,6 @@
         grid-template-columns: repeat(2, 2.45rem) !important; /* Dos columnas fijas */
         align-items: center;
         justify-content: center;
-        gap: 0.4rem;
     }
     .header-icon-button {
         display: flex;
@@ -176,17 +172,13 @@
         width: 100%;
         height: 100%;
         margin: 0 auto;
-        border: 1px solid var(--border-color);
-        border-radius: var(--radius-sm);
-        background: var(--bg-button);
-        font-size: var(--fs-sm);
-        transition:
-            transform var(--transition-fast),
-            background var(--transition-fast);
+        border-radius: var(--radius-full);
+        background-color: transparent;
+        transition: var(--transition-button);
     }
     .header-icon-button:hover {
         transform: scale(1.08);
-        background: var(--bg-button-hover);
+        background: var(--celeste6);
     }
     .header-progress-bar-container {
         left: 19.2%;
