@@ -53,6 +53,11 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se corrigió el funcionamiento de `initPageTitle`
 - Se cambiaron muchos títulos en la pantalla de carga
 
+## [v0.36.5-alpha]
+
+- Se actualizaron algunos logos del CE y de instagram
+- Se renombró el logo de ig de halloween
+
 ---
 
 ## [v0.35.0-alpha] - Versión Principal
