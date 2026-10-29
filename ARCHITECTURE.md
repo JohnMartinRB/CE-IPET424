@@ -6,17 +6,26 @@ El código está estructurado de forma modular y limpia, facilitando la escalabi
 
 ```text
 CE-IPET424/
+├── .github/                          # Configuraciones y workflows de GitHub
 ├── .well-known/                      # Archivos de seguridad e infraestructura
 │   └── security.txt                  # Contacto oficial para reportes de seguridad
 ├── assets/                           # Recursos estáticos del sitio
-│   ├── audio/                        # Archivos de audio (comunicados, accesibilidad)
+│   ├── audio/                        # Archivos de audio
+│   │   ├── effects/                  # Efectos sonoros de interfaz
+│   │   └── music/                    # Pistas de audio o música ambiental
 │   ├── data/                         # Archivos de datos estructurados
 │   │   ├── events.json               # Datos de eventos y calendario
+│   │   ├── facts.json                # Datos curiosos para widgets
 │   │   ├── faqs.json                 # Preguntas frecuentes
+│   │   ├── holidays.json             # Días festivos o calendarios especiales
 │   │   ├── manifest.json             # Manifiesto para instalación PWA
 │   │   ├── news.json                 # Noticias y comunicados
+│   │   ├── quotes.json               # Frases o citas célebres
 │   │   └── team.json                 # Integrantes del Centro de Estudiantes
 │   ├── docs/                         # Documentos descargables (PDFs, autorizaciones)
+│   │   ├── arg/                      # Documentación y normativas generales
+│   │   ├── downloads/                # Archivos generales para descarga
+│   │   └── school/                   # Documentación institucional y escolar
 │   ├── fonts/                        # Tipografías locales
 │   ├── img/                          # Imágenes del sitio
 │   │   ├── bg/                       # Imágenes tecnológicas de fondo (.jpg)
@@ -24,23 +33,31 @@ CE-IPET424/
 │   │   ├── favicons/                 # Favicons para modo claro y oscuro
 │   │   ├── gallery/                  # Galería de fotos e instalaciones
 │   │   ├── icons/                    # Íconos de interfaz y redes
+│   │   │   ├── footer/               # Íconos específicos del pie de página
+│   │   │   └── widget/               # Íconos para widgets interactivos
 │   │   ├── logos/                    # Logos e insignias del CE e IPET
+│   │   │   ├── app/                  # Logos adaptados para aplicaciones / PWA
+│   │   │   ├── ce/                   # Insignias del Centro de Estudiantes
+│   │   │   └── ig/                   # Recursos gráficos para Instagram/redes
 │   │   ├── mascot/                   # Ilustraciones de la mascota
-│   │   └── schedules/                # Horarios por curso
+│   │   ├── resources/                # Recursos gráficos adicionales
+│   │   └── plano.jpg                 # Plano de las instalaciones
 │   └── videos/                       # Clips y videos institucionales
 ├── components/                       # Componentes HTML reutilizables
-│   ├── _aside-config.html            # Aside desplegable modular
-│   ├── _aside-news.html              # Aside desplegable modular
+│   ├── _aside-config.html            # Aside desplegable modular de configuración
+│   ├── _aside-news.html              # Aside desplegable modular de novedades
 │   ├── _footer.html                  # Pie de página modular
 │   ├── _header.html                  # Encabezado y navegación modular
-│   ├── _modal-in-dev.html             # Modal de advertencia de desarrollo
-│   └── _modal-whats-new.html         # Modal de novedades de la version
+│   ├── _modal-in-dev.html            # Modal de advertencia de desarrollo
+│   ├── _modal-terms.html             # Modal para aceptar términos y condiciones
+│   └── _modal-whats-new.html         # Modal de novedades de la versión
 ├── css/                              # Hojas de estilos CSS
 │   ├── base/                         # Hojas de estilos principales
 │   │   ├── accessibility.css         # Estilos para opciones de accesibilidad
 │   │   ├── fonts.css                 # Carga y definición de tipografías
 │   │   ├── normalize.css             # Normalización entre navegadores
 │   │   ├── reset.css                 # Reset y estilos globales del DOM
+│   │   ├── seasonal.css              # Estilos estacionales o temporales
 │   │   ├── themes.css                # Variables CSS de temas de color
 │   │   ├── typography.css            # Jerarquía y estilos tipográficos
 │   │   └── variables.css             # Variables generales del sistema
@@ -64,7 +81,8 @@ CE-IPET424/
 │   ├── misc/                         # Hojas de estilos específicas o random
 │   │   ├── error.css                 # Estilos para la página 404 / errores
 │   │   ├── home.css                  # Estilos específicos de la página principal
-│   │   └── secret.css                # Estilos para los elementos easter egg
+│   │   ├── secret.css                # Estilos para los elementos easter egg
+│   │   └── specific.css              # Estilos específicos varios
 │   └── styles.css                    # Hoja de ruta principal (@import maestro)
 ├── js/                               # Funciones Javascript
 │   ├── ui/                           # Funciones de la interfaz
@@ -74,15 +92,17 @@ CE-IPET424/
 │   │   ├── modals.js                 # Apertura y cierre de ventanas modales
 │   │   ├── theme.js                  # Lógica de conmutación de temas (oscuro/claro)
 │   │   └── widgets.js                # Widgets interactivos
-│   ├── utils/                        # Funciones del back
+│   ├── utils/                        # Funciones utilitarias del sistema
 │   │   ├── accessibility.js          # Utilidades generales de accesibilidad
 │   │   ├── animations.js             # Efectos y animaciones
 │   │   ├── dyslexia.js               # Modo de tipografía accesible (Atkinson)
 │   │   ├── font-size.js              # Ajuste dinámico de tamaño de fuente
 │   │   ├── shortcuts.js              # Atajos de teclado
 │   │   └── sound.js                  # Efectos de audio / feedback sonoro
-│   ├── config.js                     # Configuraciones
+│   ├── config.js                     # Configuraciones generales
 │   └── main.js                       # Punto de entrada principal e inicializador
+├── models/                           # Modelos o recursos tridimensionales/estructurales
+├── videos/                           # Archivos de video globales del proyecto
 ├── .gitignore                        # Ignora ciertos archivos al hacer commit
 ├── .nojekyll                         # Evita que GitHub Pages omita carpetas con guion bajo
 ├── 404.html                          # Página personalizada de error 404
@@ -91,13 +111,18 @@ CE-IPET424/
 ├── contacto.html                     # Sub-página con formulario y datos de contacto
 ├── CONTRIBUTING.md                   # Guía de estándares y convenciones de desarrollo
 ├── creditos.html                     # Sub-página de créditos del equipo de desarrollo
+├── escuela.html                      # Sub-página institucional de la escuela
+├── herramientas.html                 # Sub-página de herramientas y utilidades estudiantiles
 ├── humans.txt                        # Créditos e información de autores del proyecto
 ├── index.html                        # Portal principal (Landing Page)
 ├── LICENSE                           # Licencia de software libre (Licencia MIT)
 ├── nosotros.html                     # Sub-página institucional ("Sobre Nosotros")
+├── notes.txt                         # Notas rápidas de desarrollo
 ├── proyectos.html                    # Sub-página de proyectos y propuestas
+├── recursos.html                     # Sub-página de recursos y enlaces de utilidad
 ├── README.md                         # Documentación principal del repositorio
 ├── ROADMAP.md                        # Hoja de ruta de próximas versiones
 ├── robots.txt                        # Instrucciones para motores de búsqueda
-└── tramites.html                     # Sub-página sobre la historia e instalaciones de la escuela
+├── terminos.html                     # Sub-página de términos y condiciones de uso
+└── tramites.html                     # Sub-página sobre trámites y gestiones escolares
 ```
