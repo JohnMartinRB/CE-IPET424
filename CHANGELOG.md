@@ -62,6 +62,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 - Se actualizó el árbol de carpetas de `ARCHITECTURE.md`
 
+## [v0.36.7-alpha]
+
+- Se actualizó el favicon del modo Misterio
+
 ---
 
 ## [v0.35.0-alpha] - Versión Principal
