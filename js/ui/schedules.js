@@ -35,6 +35,8 @@ export function initSchedules() {
             subjectUpper.includes("PROGRAMACIÓN") ||
             subjectUpper.includes("EMPRENDIMIENTO") ||
             subjectUpper.includes("TECNOLOGÍAS") ||
+            subjectUpper.includes("ORGANIZACIONES") ||
+            subjectUpper.includes("APLICACIONES") ||
             subjectUpper.includes("TELECOMUNICACIONES");
         const cellClass = isLongName ? "schedule-cell subject-small" : "schedule-cell";
         return `
