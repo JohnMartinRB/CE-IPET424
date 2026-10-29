@@ -102,7 +102,7 @@ export function initSchedules() {
         }
         html2canvas(container).then((canvas) => {
             const link = document.createElement("a");
-            link.download = `Horario_${selectYear.value}_IPET424.png`;
+            link.download = `Horario_${selectYear.value}_IPET_424.png`;
             link.href = canvas.toDataURL("image/png");
             link.click();
         });

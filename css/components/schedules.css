@@ -7,17 +7,17 @@
     padding: 1rem;
     overflow-x: auto;
     gap: 6px;
-    border-radius: var(--radius-card, 12px);
-    background-color: var(--bg-card, #f0f0f0);
+    border-radius: var(--radius-sm);
+    background-color: var(--claro2);
 }
 
 .schedule-header {
     padding: 10px;
     border-radius: 6px;
-    background-color: var(--primary, #333);
-    color: #fff;
+    background-color: var(--azul2);
+    color: var(--blanco);
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: var(--fs-sm);
     text-align: center;
 }
 
@@ -27,9 +27,9 @@
     justify-content: center;
     padding: 8px;
     border-radius: 6px;
-    background-color: var(--bg-muted, #e2e8f0);
+    background-color: var(--claro1);
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: var(--fs-xs);
     text-align: center;
 }
 
@@ -40,26 +40,25 @@
     min-height: 60px;
     padding: 8px;
     gap: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 6px;
-    background-color: #ffffff;
+    border-radius: var(--radius-xs);
+    background-color: var(--blanco);
     text-align: center;
     transition: background-color 0.2s ease;
 }
 
 /* Clase para materias con nombres largos */
 .schedule-cell.subject-small .subject-name {
-    font-size: var(--fs-xs);
+    font-size: 0.75rem;
     line-height: 1.1;
 }
 
 .subject-name {
-    font-weight: 700;
+    font-weight: bold;
     font-size: 0.85rem;
 }
 
 .teacher-name {
-    color: #666;
+    color: var(--gris1);
     font-size: 0.75rem;
 }
 
@@ -69,11 +68,10 @@
 
 .schedule-break-row {
     grid-column: 1 / -1;
-    padding: 6px;
-    border-radius: 6px;
-    background-color: var(--bg-accent, #cbd5e1);
+    padding: var(--space-xs);
+    border-radius: var(--radius-xs);
+    background-color: var(--lila3);
     font-weight: bold;
     font-size: 0.85rem;
-    letter-spacing: 1px;
     text-align: center;
 }
