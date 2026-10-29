@@ -7,6 +7,16 @@ export function initSchedules() {
     const toggleTeachers = document.getElementById("toggle-teachers");
     const container = document.getElementById("schedule-container");
     const buttonDownload = document.getElementById("button-download-schedule");
+
+    // Configuración para los selectores de color con cuadrícula desplegable
+    const colorPickersConfig = [
+        { id: "color-header", btnId: "btn-color-header", dropdownId: "dropdown-header", cssVar: "--header-bg" },
+        { id: "color-time", btnId: "btn-color-time", dropdownId: "dropdown-time", cssVar: "--time-bg" },
+        { id: "color-break", btnId: "btn-color-break", dropdownId: "dropdown-break", cssVar: "--break-bg" },
+        { id: "color-subjects", btnId: "btn-color-subjects", dropdownId: "dropdown-subjects", cssVar: "--subject-bg" },
+        { id: "color-grid", btnId: "btn-color-grid", dropdownId: "dropdown-grid", cssVar: "--grid-bg" },
+    ];
+
     let dataSchedules = {};
 
     // 1. Cargar el JSON con fetch
@@ -37,7 +47,8 @@ export function initSchedules() {
             subjectUpper.includes("TECNOLOGÍAS") ||
             subjectUpper.includes("ORGANIZACIONES") ||
             subjectUpper.includes("APLICACIONES") ||
-            subjectUpper.includes("TELECOMUNICACIONES");
+            subjectUpper.includes("TELECOMUNICACIONES") ||
+            subjectUpper.length > 30;
         const cellClass = isLongName ? "schedule-cell subject-small" : "schedule-cell";
         return `
             <div class="${cellClass}">
@@ -80,7 +91,9 @@ export function initSchedules() {
         });
         container.innerHTML = html;
     }
-    // Eventos de interacción
+    // ==========================================
+    // EVENTOS DE INTERACCIÓN
+    // ==========================================
     selectYear.addEventListener("change", (e) => {
         renderSchedule(e.target.value);
     });
@@ -94,6 +107,48 @@ export function initSchedules() {
             container.classList.remove("no-teachers");
         }
     });
+
+    // Configuración de la cuadrícula de colores desplegable para los 4 elementos
+    colorPickersConfig.forEach((item) => {
+        const input = document.getElementById(item.id);
+        const btn = document.getElementById(item.btnId);
+        const dropdown = document.getElementById(item.dropdownId);
+        if (input && btn && dropdown) {
+            // Abrir / cerrar menú flotante al hacer clic en el botón principal
+            btn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                // Cerrar otros dropdowns abiertos por si acaso
+                document.querySelectorAll(".color-dropdown").forEach((d) => {
+                    if (d !== dropdown) d.classList.remove("show");
+                });
+                dropdown.classList.toggle("show");
+            });
+            // Al hacer clic en un color de la cuadrícula de los 10 pastel
+            dropdown.querySelectorAll(".color-swatch[data-color]").forEach((swatch) => {
+                swatch.addEventListener("click", () => {
+                    const selectedColor = swatch.getAttribute("data-color");
+                    container.style.setProperty(item.cssVar, selectedColor);
+                    btn.style.backgroundColor = selectedColor;
+                    input.value = selectedColor;
+                    dropdown.classList.remove("show");
+                });
+            });
+            // Si el usuario usa el selector personalizado (el botón de engranaje)
+            input.addEventListener("input", (e) => {
+                const customColor = e.target.value;
+                container.style.setProperty(item.cssVar, customColor);
+                btn.style.backgroundColor = customColor;
+                dropdown.classList.remove("show");
+            });
+        }
+    });
+    // Cerrar los menús flotantes de colores si se hace clic fuera de ellos
+    document.addEventListener("click", () => {
+        document.querySelectorAll(".color-dropdown").forEach((d) => {
+            d.classList.remove("show");
+        });
+    });
+
     // 3. Descargar imagen con html2canvas
     buttonDownload.addEventListener("click", () => {
         if (!selectYear.value) {

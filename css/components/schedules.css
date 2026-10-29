@@ -1,4 +1,99 @@
 /* ==========================================
+    PALETA DE COLORES PERSONALIZADA (GRID)
+========================================== */
+.color-pickers-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: var(--space-sm);
+    gap: var(--space-sm);
+    border-radius: var(--radius-xs);
+    background: var(--claro1);
+}
+
+.color-picker-wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.color-label {
+    color: var(--gris1);
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.color-trigger {
+    width: 28px;
+    height: 28px;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.color-trigger:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Menú desplegable flotante */
+.color-dropdown {
+    display: none;
+    z-index: 100;
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    padding: 8px;
+    transform: translateX(-50%);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.color-dropdown.show {
+    display: block;
+}
+
+/* Cuadrícula de 5x2 para los colores */
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 24px);
+    gap: 6px;
+}
+
+.color-swatch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.color-swatch:hover {
+    transform: scale(1.2);
+}
+
+.custom-swatch {
+    background: #f1f5f9;
+    font-size: 10px;
+}
+
+.hidden-color-input {
+    display: none;
+}
+
+/* ==========================================
     MÓDULO DE DESCARGA DE HORARIOS
 ========================================== */
 .schedule-grid {
@@ -8,13 +103,20 @@
     overflow-x: auto;
     gap: 6px;
     border-radius: var(--radius-sm);
-    background-color: var(--claro2);
+    background-color: var(--grid-bg);
+
+    /* Valores por defecto pedidos */
+    --grid-bg: #eee; /* Gris para Fondo */
+    --header-bg: #0088ff; /* Azul para Header */
+    --time-bg: #e2e8f0; /* Gris para Hora */
+    --break-bg: #cbd5e1; /* Lila/Grisáceo para Recreo */
+    --subject-bg: #ffffff; /* Blanco para Materias */
 }
 
 .schedule-header {
     padding: 10px;
     border-radius: 6px;
-    background-color: var(--azul2);
+    background-color: var(--header-bg);
     color: var(--blanco);
     font-weight: bold;
     font-size: var(--fs-sm);
@@ -27,7 +129,7 @@
     justify-content: center;
     padding: 8px;
     border-radius: 6px;
-    background-color: var(--claro1);
+    background-color: var(--time-bg);
     font-weight: bold;
     font-size: var(--fs-xs);
     text-align: center;
@@ -41,7 +143,7 @@
     padding: 8px;
     gap: 4px;
     border-radius: var(--radius-xs);
-    background-color: var(--blanco);
+    background-color: var(--subject-bg);
     text-align: center;
     transition: background-color 0.2s ease;
 }
@@ -70,7 +172,7 @@
     grid-column: 1 / -1;
     padding: var(--space-xs);
     border-radius: var(--radius-xs);
-    background-color: var(--lila3);
+    background-color: var(--break-bg);
     font-weight: bold;
     font-size: 0.85rem;
     text-align: center;
