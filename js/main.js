@@ -8,6 +8,7 @@ import { initBanners } from "./ui/banners.js";
 import { initTheme } from "./ui/theme.js";
 import { initSchedules } from "./ui/schedules.js";
 import { initModals } from "./ui/modals.js";
+import { initCalendar } from "./ui/calendar.js";
 import { initFontSize } from "./utils/font-size.js";
 import { initAnimations } from "./utils/animations.js";
 import { initDyslexia } from "./utils/dyslexia.js";
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initTheme();
     initSchedules();
     initModals();
+    initCalendar();
     initFontSize();
     initAnimations();
     initDyslexia();
