@@ -3,7 +3,7 @@
 ========================================== */
 .schedule-grid {
     display: grid;
-    grid-template-columns: 110px repeat(5, 1fr);
+    grid-template-columns: 95px repeat(5, 1fr);
     padding: 1rem;
     overflow-x: auto;
     gap: 6px;
@@ -45,6 +45,12 @@
     background-color: #ffffff;
     text-align: center;
     transition: background-color 0.2s ease;
+}
+
+/* Clase para materias con nombres largos */
+.schedule-cell.subject-small .subject-name {
+    font-size: var(--fs-xs);
+    line-height: 1.1;
 }
 
 .subject-name {
