@@ -130,6 +130,7 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
     - Se renombraron muchas variables
     - Se agregó `.gitkeep` a algunas carpetas vacías que no lo tenían
     - Se actualizó el árbol de carpetas de `ARCHITECTURE.md`
+    - ROADMAP ampliado y actualizado
 
 - **`v0.35-alpha` (Anterior)**
     - Nueva subpágina de Términos y Condiciones para protección legal y de conducta del sitio
