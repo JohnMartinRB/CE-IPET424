@@ -66,6 +66,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 - Se actualizó el favicon del modo Misterio
 
+## [v0.36.8-alpha]
+
+- ROADMAP ampliado y actualizado
+
 ---
 
 ## [v0.35.0-alpha] - Versión Principal
