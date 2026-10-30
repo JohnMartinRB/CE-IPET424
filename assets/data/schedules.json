@@ -479,8 +479,8 @@
                 "monday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" },
                 "tuesday": { "subject": "MATEMÁTICA", "teacher": "Paola Ramírez" },
                 "wednesday": { "subject": "HISTORIA", "teacher": "Melisa Sosa" },
-                "thursday": { "subject": "LAB. DE APLICACIONES I", "teacher": "Ivana Guzmán" },
-                "friday": { "subject": "LAB. DE APLICACIONES I", "teacher": "Ivana Guzmán" }
+                "thursday": { "subject": "LABORATORIO DE APLICACIONES I", "teacher": "Ivana Guzmán" },
+                "friday": { "subject": "LABORATORIO DE APLICACIONES I", "teacher": "Ivana Guzmán" }
             },
             {
                 "type": "subject",
@@ -488,8 +488,8 @@
                 "monday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" },
                 "tuesday": { "subject": "MATEMÁTICA", "teacher": "Paola Ramírez" },
                 "wednesday": { "subject": "HISTORIA", "teacher": "Melisa Sosa" },
-                "thursday": { "subject": "LAB. DE APLICACIONES I", "teacher": "Ivana Guzmán" },
-                "friday": { "subject": "LAB. DE APLICACIONES I", "teacher": "Ivana Guzmán" }
+                "thursday": { "subject": "LABORATORIO DE APLICACIONES I", "teacher": "Ivana Guzmán" },
+                "friday": { "subject": "LABORATORIO DE APLICACIONES I", "teacher": "Ivana Guzmán" }
             },
             {
                 "type": "break",
@@ -501,7 +501,7 @@
                 "monday": { "subject": "MATEMÁTICA", "teacher": "Paola Ramírez" },
                 "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Yamilé Garay (Sup.)" },
                 "wednesday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" },
-                "thursday": { "subject": "LAB. DE APLICACIONES I", "teacher": "Ivana Guzmán" },
+                "thursday": { "subject": "LABORATORIO DE APLICACIONES I", "teacher": "Ivana Guzmán" },
                 "friday": { "subject": "ARTES VISUALES", "teacher": "Melisa Ochoa" }
             },
             {
@@ -510,7 +510,7 @@
                 "monday": { "subject": "MATEMÁTICA", "teacher": "Paola Ramírez" },
                 "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Yamilé Garay (Sup.)" },
                 "wednesday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" },
-                "thursday": { "subject": "LAB. DE APLICACIONES I", "teacher": "Ivana Guzmán" },
+                "thursday": { "subject": "LABORATORIO DE APLICACIONES I", "teacher": "Ivana Guzmán" },
                 "friday": { "subject": "ARTES VISUALES", "teacher": "Melisa Ochoa" }
             },
             {
@@ -736,19 +736,19 @@
             {
                 "type": "subject",
                 "time": "08:00 a 08:40",
-                "monday": { "subject": "LAB. DE HARDWARE", "teacher": "Daiana Lujan" },
+                "monday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" },
                 "tuesday": { "subject": "HISTORIA", "teacher": "Marisa Sappia" },
                 "wednesday": { "subject": "", "teacher": "" },
-                "thursday": { "subject": "SIST. Y ORGANIZACIONES", "teacher": "Romina Carreras" },
+                "thursday": { "subject": "SISTEMAS Y ORGANIZACIONES", "teacher": "Romina Carreras" },
                 "friday": { "subject": "", "teacher": "" }
             },
             {
                 "type": "subject",
                 "time": "08:40 a 09:20",
-                "monday": { "subject": "LAB. DE HARDWARE", "teacher": "Daiana Lujan" },
+                "monday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" },
                 "tuesday": { "subject": "HISTORIA", "teacher": "Marisa Sappia" },
                 "wednesday": { "subject": "GEOGRAFÍA", "teacher": "Valeria Altamirano" },
-                "thursday": { "subject": "SIST. Y ORGANIZACIONES", "teacher": "Romina Carreras" },
+                "thursday": { "subject": "SISTEMAS Y ORGANIZACIONES", "teacher": "Romina Carreras" },
                 "friday": { "subject": "", "teacher": "" }
             },
             {
@@ -758,20 +758,20 @@
             {
                 "type": "subject",
                 "time": "09:30 a 10:10",
-                "monday": { "subject": "SIST. Y ORGANIZACIONES", "teacher": "Romina Carreras" },
+                "monday": { "subject": "SISTEMAS Y ORGANIZACIONES", "teacher": "Romina Carreras" },
                 "tuesday": { "subject": "HISTORIA", "teacher": "Marisa Sappia" },
                 "wednesday": { "subject": "GESTIÓN DE DATOS", "teacher": "Aldana Cruceño (Sup.)" },
-                "thursday": { "subject": "SIST. Y ORGANIZACIONES", "teacher": "Romina Carreras" },
-                "friday": { "subject": "LAB. DE HARDWARE", "teacher": "Daiana Lujan" }
+                "thursday": { "subject": "SISTEMAS Y ORGANIZACIONES", "teacher": "Romina Carreras" },
+                "friday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" }
             },
             {
                 "type": "subject",
                 "time": "10:10 a 10:50",
-                "monday": { "subject": "SIST. Y ORGANIZACIONES", "teacher": "Romina Carreras" },
-                "tuesday": { "subject": "LAB. DE HARDWARE", "teacher": "Daiana Lujan" },
+                "monday": { "subject": "SISTEMAS Y ORGANIZACIONES", "teacher": "Romina Carreras" },
+                "tuesday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" },
                 "wednesday": { "subject": "GESTIÓN DE DATOS", "teacher": "Aldana Cruceño (Sup.)" },
-                "thursday": { "subject": "SIST. Y ORGANIZACIONES", "teacher": "Romina Carreras" },
-                "friday": { "subject": "LAB. DE HARDWARE", "teacher": "Daiana Lujan" }
+                "thursday": { "subject": "SISTEMAS Y ORGANIZACIONES", "teacher": "Romina Carreras" },
+                "friday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" }
             },
             {
                 "type": "break",
@@ -781,19 +781,19 @@
                 "type": "subject",
                 "time": "11:00 a 11:40",
                 "monday": { "subject": "GESTIÓN DE DATOS", "teacher": "Aldana Cruceño (Sup.)" },
-                "tuesday": { "subject": "LAB. DE HARDWARE", "teacher": "Daiana Lujan" },
+                "tuesday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" },
                 "wednesday": { "subject": "GESTIÓN DE DATOS", "teacher": "Aldana Cruceño (Sup.)" },
                 "thursday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
-                "friday": { "subject": "LAB. DE HARDWARE", "teacher": "Daiana Lujan" }
+                "friday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" }
             },
             {
                 "type": "subject",
                 "time": "11:40 a 12:20",
                 "monday": { "subject": "GESTIÓN DE DATOS", "teacher": "Aldana Cruceño (Sup.)" },
-                "tuesday": { "subject": "LAB. DE HARDWARE", "teacher": "Daiana Lujan" },
+                "tuesday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" },
                 "wednesday": { "subject": "GESTIÓN DE DATOS", "teacher": "Aldana Cruceño (Sup.)" },
                 "thursday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
-                "friday": { "subject": "LAB. DE HARDWARE", "teacher": "Daiana Lujan" }
+                "friday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" }
             },
             {
                 "type": "break",
@@ -999,18 +999,18 @@
                 "type": "subject",
                 "time": "08:00 a 08:40",
                 "monday": { "subject": "RECURSOS HUMANOS", "teacher": "M. Sotocorno" },
-                "tuesday": { "subject": "LAB. DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
+                "tuesday": { "subject": "LABORATORIO DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
                 "wednesday": { "subject": "ANÁLISIS MATEMÁTICO", "teacher": "Lucas Oviedo" },
-                "thursday": { "subject": "LAB. DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
+                "thursday": { "subject": "LABORATORIO DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
                 "friday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" }
             },
             {
                 "type": "subject",
                 "time": "08:40 a 09:20",
                 "monday": { "subject": "RECURSOS HUMANOS", "teacher": "M. Sotocorno" },
-                "tuesday": { "subject": "LAB. DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
+                "tuesday": { "subject": "LABORATORIO DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
                 "wednesday": { "subject": "ANÁLISIS MATEMÁTICO", "teacher": "Lucas Oviedo" },
-                "thursday": { "subject": "LAB. DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
+                "thursday": { "subject": "LABORATORIO DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
                 "friday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" }
             },
             {
@@ -1021,7 +1021,7 @@
                 "type": "subject",
                 "time": "09:30 a 10:10",
                 "monday": { "subject": "RECURSOS HUMANOS", "teacher": "M. Sotocorno" },
-                "tuesday": { "subject": "LAB. DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
+                "tuesday": { "subject": "LABORATORIO DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
                 "wednesday": { "subject": "ANÁLISIS MATEMÁTICO", "teacher": "Lucas Oviedo" },
                 "thursday": {
                     "subject": "ECONOMÍA Y G. DE LA P.I.",
@@ -1033,8 +1033,8 @@
                 "type": "subject",
                 "time": "10:10 a 10:50",
                 "monday": { "subject": "ANÁLISIS MATEMÁTICO", "teacher": "Lucas Oviedo" },
-                "tuesday": { "subject": "LAB. DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
-                "wednesday": { "subject": "LAB. DE APLICACIONES II", "teacher": "Franco Prigent" },
+                "tuesday": { "subject": "LABORATORIO DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
+                "wednesday": { "subject": "LABORATORIO DE APLICACIONES II", "teacher": "Franco Prigent" },
                 "thursday": {
                     "subject": "ECONOMÍA Y G. DE LA P.I.",
                     "teacher": "Myriam Ribba"
@@ -1049,8 +1049,8 @@
                 "type": "subject",
                 "time": "11:00 a 11:40",
                 "monday": { "subject": "ANÁLISIS MATEMÁTICO", "teacher": "Lucas Oviedo" },
-                "tuesday": { "subject": "LAB. DE APLICACIONES II", "teacher": "Franco Prigent" },
-                "wednesday": { "subject": "LAB. DE APLICACIONES II", "teacher": "Franco Prigent" },
+                "tuesday": { "subject": "LABORATORIO DE APLICACIONES II", "teacher": "Franco Prigent" },
+                "wednesday": { "subject": "LABORATORIO DE APLICACIONES II", "teacher": "Franco Prigent" },
                 "thursday": {
                     "subject": "ECONOMÍA Y G. DE LA P.I.",
                     "teacher": "Myriam Ribba"
@@ -1061,8 +1061,8 @@
                 "type": "subject",
                 "time": "11:40 a 12:20",
                 "monday": { "subject": "ESTADÍSTICA", "teacher": "Romina Sosa" },
-                "tuesday": { "subject": "LAB. DE APLICACIONES II", "teacher": "Franco Prigent" },
-                "wednesday": { "subject": "LAB. DE APLICACIONES II", "teacher": "Franco Prigent" },
+                "tuesday": { "subject": "LABORATORIO DE APLICACIONES II", "teacher": "Franco Prigent" },
+                "wednesday": { "subject": "LABORATORIO DE APLICACIONES II", "teacher": "Franco Prigent" },
                 "thursday": {
                     "subject": "ECONOMÍA Y G. DE LA P.I.",
                     "teacher": "Myriam Ribba"
@@ -1074,7 +1074,7 @@
                 "time": "12:20 a 13:00",
                 "monday": { "subject": "INGLÉS", "teacher": "Bibiana Trescher" },
                 "tuesday": { "subject": "BASE DE DATOS", "teacher": "Ivana Guzmán" },
-                "wednesday": { "subject": "LAB. DE APLICACIONES II", "teacher": "Franco Prigent" },
+                "wednesday": { "subject": "LABORATORIO DE APLICACIONES II", "teacher": "Franco Prigent" },
                 "thursday": { "subject": "BASE DE DATOS", "teacher": "Ivana Guzmán" },
                 "friday": { "subject": "INGLÉS", "teacher": "Bibiana Trescher" }
             },
@@ -1432,7 +1432,7 @@
                 "type": "subject",
                 "time": "13:30 a 14:10",
                 "monday": { "subject": "INGLÉS TÉCNICO", "teacher": "Trescher Bibiana" },
-                "tuesday": { "subject": "LAB. DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
+                "tuesday": { "subject": "LABORATORIO DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
                 "wednesday": { "subject": "APP. DE NUEVAS TECNOLOGÍAS", "teacher": "Rojo Pedro" },
                 "thursday": { "subject": "BASE DE DATOS II", "teacher": "Ligorria Dolores" },
                 "friday": { "subject": "HIGIENE Y SEGURIDAD", "teacher": "Emiliano Romero" }
@@ -1441,7 +1441,7 @@
                 "type": "subject",
                 "time": "14:10 a 14:50",
                 "monday": { "subject": "INGLÉS TÉCNICO", "teacher": "Trescher Bibiana" },
-                "tuesday": { "subject": "LAB. DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
+                "tuesday": { "subject": "LABORATORIO DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
                 "wednesday": { "subject": "APP. DE NUEVAS TECNOLOGÍAS", "teacher": "Rojo Pedro" },
                 "thursday": { "subject": "BASE DE DATOS II", "teacher": "Ligorria Dolores" },
                 "friday": { "subject": "HIGIENE Y SEGURIDAD", "teacher": "Emiliano Romero" }
@@ -1454,7 +1454,7 @@
                 "type": "subject",
                 "time": "15:00 a 15:40",
                 "monday": { "subject": "INGLÉS TÉCNICO", "teacher": "Trescher Bibiana" },
-                "tuesday": { "subject": "LAB. DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
+                "tuesday": { "subject": "LABORATORIO DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
                 "wednesday": { "subject": "APP. DE NUEVAS TECNOLOGÍAS", "teacher": "Rojo Pedro" },
                 "thursday": { "subject": "BASE DE DATOS II", "teacher": "Ligorria Dolores" },
                 "friday": { "subject": "HIGIENE Y SEGURIDAD", "teacher": "Emiliano Romero" }
@@ -1463,9 +1463,9 @@
                 "type": "subject",
                 "time": "15:40 a 16:20",
                 "monday": { "subject": "INGLÉS TÉCNICO", "teacher": "TrescherBibiana" },
-                "tuesday": { "subject": "LAB. DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
+                "tuesday": { "subject": "LABORATORIO DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
                 "wednesday": { "subject": "EMPRENDIMIENTO", "teacher": "Myriam Ribba (Sup. Martínez F.)" },
-                "thursday": { "subject": "LAB. DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
+                "thursday": { "subject": "LABORATORIO DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
                 "friday": { "subject": "APP. DE NUEVAS TECNOLOGÍAS", "teacher": "Rojo Pedro" }
             },
             {
@@ -1478,7 +1478,7 @@
                 "monday": { "subject": "BASE DE DATOS II", "teacher": "Ligorria Dolores" },
                 "tuesday": { "subject": "MARCO JURÍDICO", "teacher": "Myriam Ribba (Sup. Rovetto Natali)" },
                 "wednesday": { "subject": "EMPRENDIMIENTO", "teacher": "Myriam Ribba (Sup. Martínez F.)" },
-                "thursday": { "subject": "LAB. DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
+                "thursday": { "subject": "LABORATORIO DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
                 "friday": { "subject": "APP. DE NUEVAS TECNOLOGÍAS", "teacher": "Rojo Pedro" }
             },
             {
@@ -1487,7 +1487,7 @@
                 "monday": { "subject": "BASE DE DATOS II", "teacher": "Ligorria Dolores" },
                 "tuesday": { "subject": "MARCO JURÍDICO", "teacher": "Myriam Ribba (Sup. Rovetto Natali)" },
                 "wednesday": { "subject": "EMPRENDIMIENTO", "teacher": "Myriam Ribba (Sup. Martínez F.)" },
-                "thursday": { "subject": "LAB. DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
+                "thursday": { "subject": "LABORATORIO DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
                 "friday": { "subject": "APP. DE NUEVAS TECNOLOGÍAS", "teacher": "Rojo Pedro" }
             },
             {
@@ -1496,7 +1496,7 @@
                 "monday": { "subject": "BASE DE DATOS II", "teacher": "Ligorria Dolores" },
                 "tuesday": { "subject": "MARCO JURÍDICO", "teacher": "Myriam Ribba (Sup. Rovetto Natali)" },
                 "wednesday": { "subject": "EMPRENDIMIENTO", "teacher": "Myriam Ribba (Sup. Martínez F.)" },
-                "thursday": { "subject": "LAB. DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
+                "thursday": { "subject": "LABORATORIO DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
                 "friday": { "subject": "", "teacher": "" }
             }
         ]

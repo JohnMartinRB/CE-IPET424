@@ -435,6 +435,19 @@
                                     profesores
                                 </label>
                             </div>
+                            <div class="control-group">
+                                <label for="select-format">Formato de descarga</label>
+                                <select id="select-format">
+                                    <option value="image" selected>Imagen PNG</option>
+                                    <option value="pdf">Documento PDF</option>
+                                </select>
+                            </div>
+                            <!-- Botón de descarga -->
+                            <div class="control-group">
+                                <label for="button-download-schedule">Exportar archivo</label>
+                                <button id="button-download-schedule" class="button">Descargar horario</button>
+                            </div>
+
                             <!-- Botón para resetear valores
                             <div class="control-group">
                                 <label for="button-reset-defaults">Resetear</label>
@@ -446,15 +459,6 @@
                     <div id="schedule-container" class="schedule-grid">
                         <p class="placeholder-text">Seleccioná un curso arriba para ver su horario.</p>
                     </div>
-                    <div class="control-group">
-                        <label for="select-format">Formato de Descarga</label>
-                        <select id="select-format">
-                            <option value="image" selected>Imagen PNG</option>
-                            <option value="pdf">Documento PDF</option>
-                        </select>
-                    </div>
-                    <!-- Botón de descarga en PDF -->
-                    <button id="button-download-schedule" class="button">Descargar Horario</button>
                 </section>
 
                 <!-- SECCIÓN 6: SUB SITIOS -->

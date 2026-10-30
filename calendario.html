@@ -63,7 +63,7 @@
                                 <label for="select-view">Visualización</label>
                                 <select id="select-view">
                                     <option value="12-hojas">Mensual (12 páginas)</option>
-                                    <option value="1-hoja">Anual Compacto (1 página)</option>
+                                    <option value="1-hoja">Anual (1 página)</option>
                                 </select>
                             </div>
 
@@ -427,6 +427,18 @@
                                     <option value="Atkinson Hyperlegible">Dislexia</option>
                                 </select>
                             </div>
+                            <div class="control-group">
+                                <label for="select-format">Formato de descarga</label>
+                                <select id="select-format">
+                                    <option value="image" selected>Imagen PNG</option>
+                                    <option value="pdf">Documento PDF</option>
+                                </select>
+                            </div>
+                            <!-- Botón de descarga -->
+                            <div class="control-group">
+                                <label for="button-download-calendar">Exportar archivo</label>
+                                <button id="button-download-calendar" class="button">Descargar Calendario</button>
+                            </div>
                         </div>
                     </div>
                     <!-- CONTENEDOR DINÁMICO: Aquí JavaScript generará los meses -->
@@ -434,15 +446,6 @@
                         <!-- Los meses se dibujarán automáticamente aquí -->
                         <p class="placeholder-text">Cargando calendarios...</p>
                     </div>
-                    <div class="control-group">
-                        <label for="select-format">Formato de Descarga</label>
-                        <select id="select-format">
-                            <option value="image" selected>Imagen PNG</option>
-                            <option value="pdf">Documento PDF</option>
-                        </select>
-                    </div>
-                    <!-- Botón de descarga en PDF -->
-                    <button id="button-download-calendar" class="button">Descargar Calendario</button>
                 </section>
                 <!-- SECCIÓN 6: SUB SITIOS -->
                 <section class="section-card">

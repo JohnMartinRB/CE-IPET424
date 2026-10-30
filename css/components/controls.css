@@ -30,10 +30,8 @@
 
 /* Fila superior que contiene el Curso y el botón Personalizar */
 .controls-top-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     gap: var(--space-md);
 }
@@ -41,6 +39,7 @@
 /* Panel desplegable de opciones que se muestra abajo */
 .customize-panel {
     display: none;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 2fr 1fr;
     margin-top: var(--space-sm);
     padding-top: var(--space-base);

@@ -6,6 +6,7 @@
 .calendar-container {
     width: 100%;
     margin-bottom: var(--space-lg);
+    border-radius: var(--radius-sm);
     background-color: var(--calendar-bg, transparent);
 
     /* Variables por defecto para los 5 elementos personalizables */
@@ -19,15 +20,15 @@
 /* Vista 12 hojas (Grid de meses individuales) */
 #calendar-container.calendar-grid-12-hojas {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    gap: var(--space-base);
 }
 
 /* Vista 1 hoja (Compacto general) */
 #calendar-container.calendar-grid-1-hoja {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xs);
 }
 
 /* Tarjeta individual de cada mes */

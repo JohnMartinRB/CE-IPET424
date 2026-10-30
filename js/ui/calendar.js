@@ -134,44 +134,98 @@ export function initCalendar() {
     // Eventos para actualizar en tiempo real
     selectYear.addEventListener("change", renderCalendar);
     selectView.addEventListener("change", renderCalendar);
+    // Evento para cambiar la tipografía en todo el calendario
     selectFont.addEventListener("change", (e) => {
-        calendarContainer.style.fontFamily = e.target.value;
+        const chosenFont = e.target.value;
+        calendarContainer.style.fontFamily = chosenFont;
+        // Forzamos la tipografía a todas las tarjetas y textos hijos creados dinámicamente
+        const cards = calendarContainer.querySelectorAll(".month-card, .month-title, .header-day, .cell-day");
+        cards.forEach((el) => {
+            el.style.fontFamily = chosenFont;
+        });
     });
-    // Función de descarga dual (PDF o Imagen)
-    buttonDownload.addEventListener("click", () => {
+    // Función de descarga dual (PDF multipágina o Imagen)
+    buttonDownload.addEventListener("click", async () => {
         const downloadFormat = document.getElementById("select-format").value;
+        const formatoVista = selectView.value; // "12-hojas" o "1-hoja"
+
         buttonDownload.textContent = "Generando archivo...";
         buttonDownload.disabled = true;
-        html2canvas(calendarContainer, { scale: 2 })
-            .then((canvas) => {
+
+        try {
+            if (downloadFormat === "image") {
+                // OPCCIÓN A: DESCARGAR COMO IMAGEN PNG
+                const canvas = await html2canvas(calendarContainer, { scale: 2 });
                 const imgData = canvas.toDataURL("image/png");
-                if (downloadFormat === "image") {
-                    const enlace = document.createElement("a");
-                    enlace.download = `Calendario_Anual_${selectYear.value}.png`;
-                    enlace.href = imgData;
-                    enlace.click();
-                } else {
-                    const { jsPDF } = window.jspdf;
-                    const isSinglePage = selectView.value === "1-hoja";
-                    const pdfOrientation = isSinglePage ? "portrait" : "landscape";
+                const enlace = document.createElement("a");
+                enlace.download = `Calendario_Anual_${selectYear.value}_CE_IPET_424.png`;
+                enlace.href = imgData;
+                enlace.click();
+            } else {
+                // OPCIÓN B: DESCARGAR COMO PDF CON jspdf
+                const { jsPDF } = window.jspdf;
+
+                if (formatoVista === "12-hojas") {
+                    // --- MODO MULTIPÁGINA: 1 PÁGINA A4 POR MES (12 PÁGINAS) ---
+                    const monthCards = calendarContainer.querySelectorAll(".month-card");
+
+                    // Creamos el PDF en formato A4 Horizontal (Landscape)
                     const pdf = new jsPDF({
-                        orientation: pdfOrientation,
+                        orientation: "landscape",
                         unit: "mm",
                         format: "a4",
                     });
+
+                    const pdfWidth = pdf.internal.pageSize.getWidth();
+                    const pdfHeight = pdf.internal.pageSize.getHeight();
+
+                    for (let i = 0; i < monthCards.length; i++) {
+                        const card = monthCards[i];
+
+                        // Capturamos cada tarjeta de mes individualmente
+                        const canvas = await html2canvas(card, { scale: 2 });
+                        const imgData = canvas.toDataURL("image/png");
+
+                        // Calculamos dimensiones para centrar el mes en la página A4 con margen
+                        const imgWidth = pdfWidth - 20; // 10mm de margen a cada lado
+                        const imgHeight = (canvas.height * imgWidth) / canvas.width;
+                        const yPosition = (pdfHeight - imgHeight) / 2; // Centrado vertical
+
+                        // Si no es la primera página (Enero), agregamos una nueva hoja al PDF
+                        if (i > 0) {
+                            pdf.addPage();
+                        }
+
+                        // Dibujamos la imagen del mes centreada
+                        pdf.addImage(imgData, "PNG", 10, Math.max(yPosition, 10), imgWidth, imgHeight);
+                    }
+
+                    pdf.save(`Calendario_Mensual_${selectYear.value}_CE_IPET_424.pdf`);
+                } else {
+                    // --- MODO 1 HOJA: TODO EL AÑO EN UNA SOLA PÁGINA A4 VERTICAL ---
+                    const canvas = await html2canvas(calendarContainer, { scale: 2 });
+                    const imgData = canvas.toDataURL("image/png");
+
+                    const pdf = new jsPDF({
+                        orientation: "portrait",
+                        unit: "mm",
+                        format: "a4",
+                    });
+
                     const pdfWidth = pdf.internal.pageSize.getWidth();
                     const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
-                    pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
-                    pdf.save(`Calendario_Anual_${selectYear.value}.pdf`);
+
+                    pdf.addImage(imgData, "PNG", 0, 10, pdfWidth, pdfHeight);
+                    pdf.save(`Calendario_Anual_${selectYear.value}_IPET_424.pdf`);
                 }
-                buttonDownload.textContent = "Descargar Calendario";
-                buttonDownload.disabled = false;
-            })
-            .catch((error) => {
-                console.error("Error al generar la descarga:", error);
-                buttonDownload.textContent = "Descargar Calendario";
-                buttonDownload.disabled = false;
-            });
+            }
+        } catch (error) {
+            console.error("Error al generar el archivo de descarga:", error);
+            alert("Ocurrió un error al generar la descarga.");
+        } finally {
+            buttonDownload.textContent = "Descargar Calendario";
+            buttonDownload.disabled = false;
+        }
     });
     // Renderizado inicial al cargar la página
     renderCalendar();
