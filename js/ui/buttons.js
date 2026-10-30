@@ -61,6 +61,40 @@ export function initButtons() {
             buttonToggleCustomize.textContent = isVisible ? "Personalizar" : "Cerrar Panel";
         });
     }
+    // ==========================================
+    // BOTÓN DE RESTAURAR VALORES POR DEFECTO
+    // ==========================================
+    const buttonResetDefaults = document.getElementById("button-reset-defaults");
+    if (buttonResetDefaults) {
+        buttonResetDefaults.addEventListener("click", () => {
+            // 1. Resetear Tipografía
+            if (selectFont) {
+                selectFont.value = "Nunito";
+                container.style.fontFamily = "Nunito";
+            }
+            // 2. Resetear Ocultar Profesores
+            if (toggleTeachers) {
+                toggleTeachers.checked = false;
+                container.classList.remove("no-teachers");
+            }
+            // 3. Resetear Colores a sus valores por defecto
+            const defaultColors = {
+                "color-header": { cssVar: "--header-bg", defaultVal: "#0088ff", buttonId: "button-color-header" },
+                "color-time": { cssVar: "--time-bg", defaultVal: "#e2e8f0", buttonId: "button-color-time" },
+                "color-break": { cssVar: "--break-bg", defaultVal: "#cbd5e1", buttonId: "button-color-break" },
+                "color-subjects": { cssVar: "--subject-bg", defaultVal: "#ffffff", buttonId: "button-color-subjects" },
+                "color-grid": { cssVar: "--grid-bg", defaultVal: "#f1f5f9", buttonId: "button-color-grid" },
+            };
+            Object.keys(defaultColors).forEach((key) => {
+                const config = defaultColors[key];
+                const input = document.getElementById(key);
+                const button = document.getElementById(config.buttonId);
+                if (input) input.value = config.defaultVal;
+                if (button) button.style.backgroundColor = config.defaultVal;
+                container.style.setProperty(config.cssVar, config.defaultVal);
+            });
+        });
+    }
 }
 
 export async function getVillaDoloresWeather() {

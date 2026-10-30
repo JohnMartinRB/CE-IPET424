@@ -19,6 +19,10 @@
     --subject-bg: #ffffff; /* Blanco para Materias */
 }
 
+.schedule-grid > .placeholder-text {
+    grid-column: 1 / -1;
+}
+
 .schedule-header {
     padding: 10px;
     border-radius: 6px;
@@ -45,7 +49,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 60px;
+    min-height: 5rem;
     padding: 8px;
     gap: 4px;
     border-radius: var(--radius-xs);

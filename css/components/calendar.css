@@ -80,7 +80,7 @@
 
 /* Placeholder inicial */
 .placeholder-text {
-    padding: 2rem;
+    padding: var(--space-lg);
     font-style: italic;
     text-align: center;
     opacity: 0.7;
