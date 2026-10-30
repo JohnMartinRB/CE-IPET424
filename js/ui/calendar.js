@@ -14,33 +14,33 @@ export function initCalendar() {
     // por lo que no hace falta duplicar su listener aquí.
     // Configuración para los 5 selectores de color personalizados con cuadrícula
     const colorPickersConfig = [
-        { id: "color-title", btnId: "button-color-title", dropdownId: "dropdown-title", cssVar: "--title-color" },
+        { id: "color-title", buttonId: "button-color-title", dropdownId: "dropdown-title", cssVar: "--title-color" },
         {
             id: "color-dayheader",
-            btnId: "button-color-dayheader",
+            buttonId: "button-color-dayheader",
             dropdownId: "dropdown-dayheader",
             cssVar: "--dayheader-color",
         },
-        { id: "color-cell", btnId: "button-color-cell", dropdownId: "dropdown-cell", cssVar: "--cell-bg" },
+        { id: "color-cell", buttonId: "button-color-cell", dropdownId: "dropdown-cell", cssVar: "--cell-bg" },
         {
             id: "color-monthbg",
-            btnId: "button-color-monthbg",
+            buttonId: "button-color-monthbg",
             dropdownId: "dropdown-monthbg",
             cssVar: "--monthbg-color",
         },
         {
             id: "color-calendarbg",
-            btnId: "button-color-calendarbg",
+            buttonId: "button-color-calendarbg",
             dropdownId: "dropdown-calendarbg",
             cssVar: "--calendar-bg",
         },
     ];
     colorPickersConfig.forEach((item) => {
         const input = document.getElementById(item.id);
-        const btn = document.getElementById(item.btnId);
+        const button = document.getElementById(item.buttonId);
         const dropdown = document.getElementById(item.dropdownId);
-        if (input && btn && dropdown) {
-            btn.addEventListener("click", (e) => {
+        if (input && button && dropdown) {
+            button.addEventListener("click", (e) => {
                 e.stopPropagation();
                 document.querySelectorAll(".color-dropdown").forEach((d) => {
                     if (d !== dropdown) d.classList.remove("show");
@@ -51,7 +51,7 @@ export function initCalendar() {
                 swatch.addEventListener("click", () => {
                     const selectedColor = swatch.getAttribute("data-color");
                     calendarContainer.style.setProperty(item.cssVar, selectedColor);
-                    btn.style.backgroundColor = selectedColor;
+                    button.style.backgroundColor = selectedColor;
                     input.value = selectedColor;
                     dropdown.classList.remove("show");
                 });
@@ -59,7 +59,7 @@ export function initCalendar() {
             input.addEventListener("input", (e) => {
                 const customColor = e.target.value;
                 calendarContainer.style.setProperty(item.cssVar, customColor);
-                btn.style.backgroundColor = customColor;
+                button.style.backgroundColor = customColor;
                 dropdown.classList.remove("show");
             });
         }
@@ -144,14 +144,51 @@ export function initCalendar() {
             el.style.fontFamily = chosenFont;
         });
     });
+    // ==========================================
+    // CONTROL DE TAMAÑO DE TEXTO ESPECÍFICO DEL CALENDARIO
+    // ==========================================
+    const LEVELS = [80, 90, 100, 110, 120, 130, 140]; // Porcentajes de escala
+    let currentLevelIndex = 2; // Por defecto 100% (índice 2)
+    const buttonDecrease = document.getElementById("controls-button-font-decrease");
+    const buttonIncrease = document.getElementById("controls-button-font-increase");
+    const buttonReset = document.getElementById("controls-button-font-reset");
+    const indicator = document.getElementById("controls-font-size-indicator");
+    function updateCalendarFontSize() {
+        const scalePercent = LEVELS[currentLevelIndex];
+        // Aplicamos una variable CSS local al contenedor del calendario para escalar las fuentes
+        calendarContainer.style.setProperty("--calendar-font-scale", `${scalePercent}%`);
+        if (indicator) indicator.textContent = `${scalePercent}%`;
+        if (buttonDecrease) buttonDecrease.disabled = currentLevelIndex === 0;
+        if (buttonIncrease) buttonIncrease.disabled = currentLevelIndex === LEVELS.length - 1;
+    }
+    if (buttonDecrease) {
+        buttonDecrease.addEventListener("click", () => {
+            if (currentLevelIndex > 0) {
+                currentLevelIndex--;
+                updateCalendarFontSize();
+            }
+        });
+    }
+    if (buttonIncrease) {
+        buttonIncrease.addEventListener("click", () => {
+            if (currentLevelIndex < LEVELS.length - 1) {
+                currentLevelIndex++;
+                updateCalendarFontSize();
+            }
+        });
+    }
+    if (buttonReset) {
+        buttonReset.addEventListener("click", () => {
+            currentLevelIndex = 2;
+            updateCalendarFontSize();
+        });
+    }
     // Función de descarga dual (PDF multipágina o Imagen)
     buttonDownload.addEventListener("click", async () => {
         const downloadFormat = document.getElementById("select-format").value;
         const formatoVista = selectView.value; // "12-hojas" o "1-hoja"
-
         buttonDownload.textContent = "Generando archivo...";
         buttonDownload.disabled = true;
-
         try {
             if (downloadFormat === "image") {
                 // OPCCIÓN A: DESCARGAR COMO IMAGEN PNG
@@ -164,57 +201,45 @@ export function initCalendar() {
             } else {
                 // OPCIÓN B: DESCARGAR COMO PDF CON jspdf
                 const { jsPDF } = window.jspdf;
-
                 if (formatoVista === "12-hojas") {
                     // --- MODO MULTIPÁGINA: 1 PÁGINA A4 POR MES (12 PÁGINAS) ---
                     const monthCards = calendarContainer.querySelectorAll(".month-card");
-
                     // Creamos el PDF en formato A4 Horizontal (Landscape)
                     const pdf = new jsPDF({
                         orientation: "landscape",
                         unit: "mm",
                         format: "a4",
                     });
-
                     const pdfWidth = pdf.internal.pageSize.getWidth();
                     const pdfHeight = pdf.internal.pageSize.getHeight();
-
                     for (let i = 0; i < monthCards.length; i++) {
                         const card = monthCards[i];
-
                         // Capturamos cada tarjeta de mes individualmente
                         const canvas = await html2canvas(card, { scale: 2 });
                         const imgData = canvas.toDataURL("image/png");
-
                         // Calculamos dimensiones para centrar el mes en la página A4 con margen
                         const imgWidth = pdfWidth - 20; // 10mm de margen a cada lado
                         const imgHeight = (canvas.height * imgWidth) / canvas.width;
                         const yPosition = (pdfHeight - imgHeight) / 2; // Centrado vertical
-
                         // Si no es la primera página (Enero), agregamos una nueva hoja al PDF
                         if (i > 0) {
                             pdf.addPage();
                         }
-
                         // Dibujamos la imagen del mes centreada
                         pdf.addImage(imgData, "PNG", 10, Math.max(yPosition, 10), imgWidth, imgHeight);
                     }
-
                     pdf.save(`Calendario_Mensual_${selectYear.value}_CE_IPET_424.pdf`);
                 } else {
                     // --- MODO 1 HOJA: TODO EL AÑO EN UNA SOLA PÁGINA A4 VERTICAL ---
                     const canvas = await html2canvas(calendarContainer, { scale: 2 });
                     const imgData = canvas.toDataURL("image/png");
-
                     const pdf = new jsPDF({
                         orientation: "portrait",
                         unit: "mm",
                         format: "a4",
                     });
-
                     const pdfWidth = pdf.internal.pageSize.getWidth();
                     const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
-
                     pdf.addImage(imgData, "PNG", 0, 10, pdfWidth, pdfHeight);
                     pdf.save(`Calendario_Anual_${selectYear.value}_IPET_424.pdf`);
                 }

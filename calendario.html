@@ -59,12 +59,36 @@
                             </div>
                         </div>
                         <div id="customize-panel" class="customize-panel">
-                            <div class="control-group">
-                                <label for="select-view">Visualización</label>
-                                <select id="select-view">
-                                    <option value="12-hojas">Mensual (12 páginas)</option>
-                                    <option value="1-hoja">Anual (1 página)</option>
-                                </select>
+                            <!-- Control de Tamaño de Texto -->
+                            <div class="control-group font-size-control-container">
+                                <span class="font-size-label">Tamaño de Texto</span>
+                                <div class="font-size-buttons-group">
+                                    <button
+                                        type="button"
+                                        id="controls-button-font-decrease"
+                                        class="button button-small"
+                                        aria-label="Achicar tamaño de texto"
+                                    >
+                                        A-
+                                    </button>
+                                    <span id="controls-font-size-indicator" class="font-size-value">100%</span>
+                                    <button
+                                        type="button"
+                                        id="controls-button-font-increase"
+                                        class="button button-small"
+                                        aria-label="Agrandar tamaño de texto"
+                                    >
+                                        A+
+                                    </button>
+                                    <button
+                                        type="button"
+                                        id="controls-button-font-reset"
+                                        class="button button-small"
+                                        aria-label="Restablecer tamaño de texto"
+                                    >
+                                        ⟲
+                                    </button>
+                                </div>
                             </div>
 
                             <!-- Contenedor de los 5 selectores de color -->
@@ -417,6 +441,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="control-group">
                                 <label for="select-font">Tipografía</label>
                                 <select id="select-font">
@@ -425,6 +450,13 @@
                                     <option value="Arial">Arial</option>
                                     <option value="Calibri">Calibri</option>
                                     <option value="Atkinson Hyperlegible">Dislexia</option>
+                                </select>
+                            </div>
+                            <div class="control-group">
+                                <label for="select-view">Visualización</label>
+                                <select id="select-view">
+                                    <option value="12-hojas">Mensual (12 páginas)</option>
+                                    <option value="1-hoja">Anual (1 página)</option>
                                 </select>
                             </div>
                             <div class="control-group">

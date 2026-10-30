@@ -163,10 +163,9 @@
 
 /* Personalización del checkbox de ocultar profesores */
 .toggle-teachers {
-    width: 1.25rem; /* Hace que el cuadro sea más grande */
-    height: 1.25rem;
+    width: 2.5rem; /* Hace que el cuadro sea más grande */
+    height: 2.5rem;
     margin-right: var(--space-xs);
-
     accent-color: var(--celeste2); /* Cambia el color del tilde y fondo al seleccionarlo */
     vertical-align: middle;
     cursor: var(--cursor-hover);
