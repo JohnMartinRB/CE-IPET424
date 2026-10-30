@@ -6,8 +6,8 @@ import { initButtons } from "./ui/buttons.js";
 import { initFactsWidget } from "./ui/widgets.js";
 import { initBanners } from "./ui/banners.js";
 import { initTheme } from "./ui/theme.js";
-import { initSchedules } from "./ui/schedules.js";
 import { initModals } from "./ui/modals.js";
+import { initSchedules } from "./ui/schedules.js";
 import { initCalendar } from "./ui/calendar.js";
 import { initFontSize } from "./utils/font-size.js";
 import { initAnimations } from "./utils/animations.js";
@@ -24,22 +24,20 @@ document.addEventListener("DOMContentLoaded", async () => {
     initFactsWidget();
     initBanners();
     initTheme();
-    initSchedules();
     initModals();
-    initCalendar();
     initFontSize();
     initAnimations();
     initDyslexia();
     initSound();
     initShortcuts();
+    initSchedules();
+    initCalendar();
     config();
     party();
     matrix();
     flip();
     terminal();
 });
-
-console.log("C.E. IPET 424 - Sitio inicializado correctamente");
 
 // Delegación global para interceptar el clic derecho en imágenes fijas y dinámicas
 document.addEventListener("contextmenu", function (e) {
@@ -108,3 +106,5 @@ document.addEventListener(
     },
     true,
 ); // El 'true' es vital: permite interceptar el evento 'error' durante la fase de captura
+
+console.log("C.E. IPET 424 - Sitio inicializado correctamente");

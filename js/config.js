@@ -3,7 +3,7 @@
 ========================================== */
 export function config() {
     console.log(
-        "%c ¡Hola usuario! 🚀 %c\n¿Te interesa la programación o querés colaborar en la web del Centro de Estudiantes? ¡Sumate al equipo!",
+        "%c Hola usuario! %c\n¿Te interesa la programación y querés colaborar en la web del Centro de Estudiantes? ¡Sumate al equipo!",
         "font-size: 1.5rem; font-weight: bold; color: #00C4FF;",
         "font-size: 1rem; color: #ccc;",
     );

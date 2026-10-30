@@ -2,6 +2,10 @@
     MÓDULO DE DESCARGA DE HORARIOS
 ========================================== */
 export function initSchedules() {
+    // 🛡️ Guardia: Si no estamos en la página de horarios (no existe el contenedor), salimos sin romper nada
+    const scheduleContainer = document.getElementById("schedule-container"); // (o el ID principal que uses en horarios)
+    if (!scheduleContainer) return;
+
     const selectYear = document.getElementById("select-year");
     const selectFont = document.getElementById("select-font");
     const toggleTeachers = document.getElementById("toggle-teachers");
@@ -149,18 +153,47 @@ export function initSchedules() {
         });
     });
 
-    // 3. Descargar imagen con html2canvas
+    // 3. Descargar horario (Imagen PNG o PDF)
     buttonDownload.addEventListener("click", () => {
         if (!selectYear.value) {
             alert("Por favor, seleccioná un curso antes de descargar.");
             return;
         }
-        html2canvas(container).then((canvas) => {
-            const link = document.createElement("a");
-            link.download = `Horario_${selectYear.value}_IPET_424.png`;
-            link.href = canvas.toDataURL("image/png");
-            link.click();
-        });
+        const downloadFormat = document.getElementById("select-format")?.value || "image";
+        buttonDownload.textContent = "Generando archivo...";
+        buttonDownload.disabled = true;
+        html2canvas(container, { scale: 2 })
+            .then((canvas) => {
+                const imgData = canvas.toDataURL("image/png");
+                if (downloadFormat === "image") {
+                    // Opción A: Descargar como Imagen PNG
+                    const enlace = document.createElement("a");
+                    enlace.download = `Horario_${selectYear.value}_IPET_424.png`;
+                    enlace.href = imgData;
+                    enlace.click();
+                } else {
+                    // Opción B: Descargar como PDF usando jsPDF
+                    const { jsPDF } = window.jspdf;
+                    const pdf = new jsPDF({
+                        orientation: "portrait", // Vertical para que el horario encaje perfecto
+                        unit: "mm",
+                        format: "a4",
+                    });
+                    const pdfWidth = pdf.internal.pageSize.getWidth();
+                    const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+                    pdf.addImage(imgData, "PNG", 0, 10, pdfWidth, pdfHeight);
+                    pdf.save(`Horario_${selectYear.value}_IPET_424.pdf`);
+                }
+                buttonDownload.textContent = "Descargar Horario";
+                buttonDownload.disabled = false;
+            })
+            .catch((error) => {
+                console.error("Error al generar la descarga:", error);
+                alert("Ocurrió un error al generar el archivo.");
+                buttonDownload.textContent = "Descargar Horario";
+                buttonDownload.disabled = false;
+            });
     });
+
     loadData();
 }
