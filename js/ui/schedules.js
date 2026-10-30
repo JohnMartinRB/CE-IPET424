@@ -173,7 +173,7 @@ export function initSchedules() {
                 if (downloadFormat === "image") {
                     // Opción A: Descargar como Imagen PNG
                     const enlace = document.createElement("a");
-                    enlace.download = `Horario_${selectYear.value}_IPET_424.png`;
+                    enlace.download = `Horario_${selectYear.value}_IPET_424_2026.png`;
                     enlace.href = imgData;
                     enlace.click();
                 } else {
@@ -187,7 +187,7 @@ export function initSchedules() {
                     const pdfWidth = pdf.internal.pageSize.getWidth();
                     const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
                     pdf.addImage(imgData, "PNG", 0, 10, pdfWidth, pdfHeight);
-                    pdf.save(`Horario_${selectYear.value}_IPET_424.pdf`);
+                    pdf.save(`Horario_${selectYear.value}_IPET_424_2026.pdf`);
                 }
                 buttonDownload.textContent = "Descargar Horario";
                 buttonDownload.disabled = false;

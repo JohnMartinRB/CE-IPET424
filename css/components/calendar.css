@@ -6,6 +6,14 @@
 .calendar-container {
     width: 100%;
     margin-bottom: var(--space-lg);
+    background-color: var(--calendar-bg, transparent);
+
+    /* Variables por defecto para los 5 elementos personalizables */
+    --title-color: #2b6cb0;
+    --dayheader-color: #010f8f;
+    --cell-bg: #eee;
+    --monthbg-color: #ffffff;
+    --calendar-bg: transparent;
 }
 
 /* Vista 12 hojas (Grid de meses individuales) */
@@ -30,12 +38,13 @@
     gap: 0.8rem;
     border: 1px solid rgba(0, 136, 255, 0.15);
     border-radius: 1.2rem;
-    background: var(--bg-subsection-card);
+    background: linear-gradient(135deg, var(--monthbg-color) 0%, rgba(235, 243, 255, 0.4) 100%);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .month-title {
     margin: 0;
+    color: var(--title-color); /* Conectado a la variable */
     font-weight: 800;
     font-size: 1.2rem;
     letter-spacing: 0.5px;
@@ -53,7 +62,7 @@
 
 .header-day {
     padding: 4px 0;
-    color: var(--azul3, #010f8f);
+    color: var(--dayheader-color); /* Conectado a la variable */
     font-weight: bold;
     font-size: 0.8rem;
 }
@@ -64,7 +73,7 @@
     justify-content: center;
     aspect-ratio: 1;
     border-radius: 6px;
-    background-color: var(--claro2, #eee);
+    background-color: var(--cell-bg); /* Conectado a la variable */
     font-weight: 600;
     font-size: 0.85rem;
     transition: background-color 0.2s;

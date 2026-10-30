@@ -4,13 +4,71 @@
 export function initCalendar() {
     const calendarContainer = document.getElementById("calendar-container");
     if (!calendarContainer) return;
-
     const selectYear = document.getElementById("select-year");
     const selectView = document.getElementById("select-view");
     const selectFont = document.getElementById("select-font");
-    const accentColor = document.getElementById("accent-color");
     const buttonDownload = document.getElementById("button-download-calendar");
 
+    // NOTA: El botón "Personalizar" (#button-toggle-customize) y el panel
+    // ya se manejan automáticamente de forma global en buttons.js,
+    // por lo que no hace falta duplicar su listener aquí.
+    // Configuración para los 5 selectores de color personalizados con cuadrícula
+    const colorPickersConfig = [
+        { id: "color-title", btnId: "button-color-title", dropdownId: "dropdown-title", cssVar: "--title-color" },
+        {
+            id: "color-dayheader",
+            btnId: "button-color-dayheader",
+            dropdownId: "dropdown-dayheader",
+            cssVar: "--dayheader-color",
+        },
+        { id: "color-cell", btnId: "button-color-cell", dropdownId: "dropdown-cell", cssVar: "--cell-bg" },
+        {
+            id: "color-monthbg",
+            btnId: "button-color-monthbg",
+            dropdownId: "dropdown-monthbg",
+            cssVar: "--monthbg-color",
+        },
+        {
+            id: "color-calendarbg",
+            btnId: "button-color-calendarbg",
+            dropdownId: "dropdown-calendarbg",
+            cssVar: "--calendar-bg",
+        },
+    ];
+    colorPickersConfig.forEach((item) => {
+        const input = document.getElementById(item.id);
+        const btn = document.getElementById(item.btnId);
+        const dropdown = document.getElementById(item.dropdownId);
+        if (input && btn && dropdown) {
+            btn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                document.querySelectorAll(".color-dropdown").forEach((d) => {
+                    if (d !== dropdown) d.classList.remove("show");
+                });
+                dropdown.classList.toggle("show");
+            });
+            dropdown.querySelectorAll(".color-swatch[data-color]").forEach((swatch) => {
+                swatch.addEventListener("click", () => {
+                    const selectedColor = swatch.getAttribute("data-color");
+                    calendarContainer.style.setProperty(item.cssVar, selectedColor);
+                    btn.style.backgroundColor = selectedColor;
+                    input.value = selectedColor;
+                    dropdown.classList.remove("show");
+                });
+            });
+            input.addEventListener("input", (e) => {
+                const customColor = e.target.value;
+                calendarContainer.style.setProperty(item.cssVar, customColor);
+                btn.style.backgroundColor = customColor;
+                dropdown.classList.remove("show");
+            });
+        }
+    });
+    document.addEventListener("click", () => {
+        document.querySelectorAll(".color-dropdown").forEach((d) => {
+            d.classList.remove("show");
+        });
+    });
     const monthNames = [
         "Enero",
         "Febrero",
@@ -25,47 +83,41 @@ export function initCalendar() {
         "Noviembre",
         "Diciembre",
     ];
-    const dayNames = ["L", "M", "X", "J", "V", "S", "D"]; // Lunes a Domingo
+    const dayNames = ["L", "M", "X", "J", "V", "S", "D"];
 
     // Función principal para renderizar el calendario completo
     function renderCalendar() {
         const selectedYear = parseInt(selectYear.value) || 2026;
-        const formatoVista = selectView.value; // "12-hojas" o "1-hoja"
-        // Aplicar clase de vista al contenedor
-        calendarContainer.className = `calendar-grid-${formatoVista}`;
+        const formatoVista = selectView.value;
+        // Mantener la clase base y actualizar la vista dinámicamente sin borrar clases previas
+        calendarContainer.className = `calendar-container calendar-grid-${formatoVista}`;
         calendarContainer.innerHTML = "";
         // Generar los 12 meses
         for (let month = 0; month < 12; month++) {
             const monthDiv = document.createElement("div");
             monthDiv.className = "month-card";
-            // Título del Mes
+            // Título del Mes (toma el color directamente de la clase CSS conectada a la variable)
             const monthTitle = document.createElement("h3");
             monthTitle.className = "month-title";
-            monthTitle.style.color = accentColor.value;
             monthTitle.textContent = `${monthNames[month]} ${selectedYear}`;
             monthDiv.appendChild(monthTitle);
             // Grilla de días de la semana
             const daysGrid = document.createElement("div");
             daysGrid.className = "grid-month-days";
-            // Cabeceras de días (L, M, X, J, V, S, D)
             dayNames.forEach((day) => {
                 const headerDay = document.createElement("div");
                 headerDay.className = "header-day";
                 headerDay.textContent = day;
                 daysGrid.appendChild(headerDay);
             });
-            // Calcular días del mes
-            // En JS, getDay() devuelve 0 para Domingo, 1 para Lunes, etc. Ajustamos para que la semana empiece en Lunes (0)
             const firstDayOfMonth = new Date(selectedYear, month, 1).getDay();
             const weekStartMonday = firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1;
             const totalMonthDays = new Date(selectedYear, month + 1, 0).getDate();
-            // Espacios vacíos antes del primer día del mes
             for (let i = 0; i < weekStartMonday; i++) {
                 const emptySpace = document.createElement("div");
                 emptySpace.className = "cell-day empty";
                 daysGrid.appendChild(emptySpace);
             }
-            // Días del mes
             for (let day = 1; day <= totalMonthDays; day++) {
                 const cellDay = document.createElement("div");
                 cellDay.className = "cell-day";
@@ -85,13 +137,6 @@ export function initCalendar() {
     selectFont.addEventListener("change", (e) => {
         calendarContainer.style.fontFamily = e.target.value;
     });
-    accentColor.addEventListener("input", (e) => {
-        const titles = calendarContainer.querySelectorAll(".month-title");
-        titles.forEach((title) => {
-            title.style.color = e.target.value;
-        });
-    });
-
     // Función de descarga dual (PDF o Imagen)
     buttonDownload.addEventListener("click", () => {
         const downloadFormat = document.getElementById("select-format").value;
@@ -101,15 +146,12 @@ export function initCalendar() {
             .then((canvas) => {
                 const imgData = canvas.toDataURL("image/png");
                 if (downloadFormat === "image") {
-                    // Opción A: Descargar como Imagen PNG
                     const enlace = document.createElement("a");
                     enlace.download = `Calendario_Anual_${selectYear.value}.png`;
                     enlace.href = imgData;
                     enlace.click();
                 } else {
-                    // Opción B: Descargar como PDF real usando jsPDF
                     const { jsPDF } = window.jspdf;
-                    // Definimos si es orientación vertical u horizontal según la vista
                     const isSinglePage = selectView.value === "1-hoja";
                     const pdfOrientation = isSinglePage ? "portrait" : "landscape";
                     const pdf = new jsPDF({
@@ -131,7 +173,6 @@ export function initCalendar() {
                 buttonDownload.disabled = false;
             });
     });
-
     // Renderizado inicial al cargar la página
     renderCalendar();
 }

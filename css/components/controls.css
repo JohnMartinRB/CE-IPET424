@@ -24,6 +24,7 @@
 .control-group label,
 .control-group span {
     font-weight: bold;
+    text-align: center;
     cursor: var(--cursor-default);
 }
 
