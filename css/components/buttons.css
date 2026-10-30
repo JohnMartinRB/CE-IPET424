@@ -3,9 +3,6 @@
 ========================================== */
 .button,
 a.button {
-    width: 12rem;
-    min-width: 10rem;
-    margin: var(--space-base) auto;
     padding: var(--space-sm);
     border: 2px solid var(--border-button);
     border-radius: var(--radius-md);

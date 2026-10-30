@@ -49,6 +49,18 @@ export function initButtons() {
             });
         });
     }
+    // Control para desplegar/ocultar el panel de personalización
+    const buttonToggleCustomize = document.getElementById("button-toggle-customize");
+    const customizePanel = document.getElementById("customize-panel");
+    if (buttonToggleCustomize && customizePanel) {
+        buttonToggleCustomize.addEventListener("click", () => {
+            // Verificamos si actualmente está visible
+            const isVisible = customizePanel.style.display === "grid";
+            // Si está visible lo ocultamos, si está oculto lo mostramos como "flex"
+            customizePanel.style.display = isVisible ? "none" : "grid";
+            buttonToggleCustomize.textContent = isVisible ? "Personalizar" : "Cerrar Panel";
+        });
+    }
 }
 
 export async function getVillaDoloresWeather() {

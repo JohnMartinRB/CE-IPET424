@@ -38,33 +38,48 @@
                     </p>
                     <!-- Panel de Controles de Personalización -->
                     <div class="controls-panel">
-                        <div class="control-group">
-                            <label for="select-year">Año:</label>
-                            <select id="select-year">
-                                <option value="2026" selected>2026</option>
-                                <option value="2027">2027</option>
-                            </select>
+                        <!-- Fila superior: Año y Botón -->
+                        <div class="controls-top-row" id="controls-top-row">
+                            <div class="control-group">
+                                <label for="select-year">Año:</label>
+                                <select id="select-year">
+                                    <option value="2026" selected>2026</option>
+                                    <option value="2027">2027</option>
+                                </select>
+                            </div>
+                            <div class="control-group">
+                                <label for="button-toggle-customize">Abrir panel de opciones:</label>
+                                <button
+                                    type="button button-toggle-customize"
+                                    id="button-toggle-customize"
+                                    class="button"
+                                >
+                                    Personalizar
+                                </button>
+                            </div>
                         </div>
-                        <div class="control-group">
-                            <label for="select-view">Formato de Descarga:</label>
-                            <select id="select-view">
-                                <option value="12-hojas">Mensual (12 Páginas - Casilleros Grandes)</option>
-                                <option value="1-hoja">Anual Compacto (1 Página - Todo el Año)</option>
-                            </select>
-                        </div>
-                        <div class="control-group">
-                            <label for="select-font">Tipografía:</label>
-                            <select id="select-font">
-                                <option value="Nunito">Nunito</option>
-                                <option value="Nunito Sans">Nunito Sans</option>
-                                <option value="Arial">Arial</option>
-                                <option value="Calibri">Calibri</option>
-                                <option value="Atkinson Hyperlegible">Dislexia</option>
-                            </select>
-                        </div>
-                        <div class="control-group">
-                            <label for="accent-color">Color de Encabezados:</label>
-                            <input type="color" id="accent-color" value="#2b6cb0" />
+                        <div id="customize-panel" class="customize-panel">
+                            <div class="control-group">
+                                <label for="select-view">Formato de Descarga:</label>
+                                <select id="select-view">
+                                    <option value="12-hojas">Mensual (12 Páginas - Casilleros Grandes)</option>
+                                    <option value="1-hoja">Anual Compacto (1 Página - Todo el Año)</option>
+                                </select>
+                            </div>
+                            <div class="control-group">
+                                <label for="select-font">Tipografía:</label>
+                                <select id="select-font">
+                                    <option value="Nunito">Nunito</option>
+                                    <option value="Nunito Sans">Nunito Sans</option>
+                                    <option value="Arial">Arial</option>
+                                    <option value="Calibri">Calibri</option>
+                                    <option value="Atkinson Hyperlegible">Dislexia</option>
+                                </select>
+                            </div>
+                            <div class="control-group">
+                                <label for="accent-color">Color de Encabezados:</label>
+                                <input type="color" id="accent-color" value="#2b6cb0" />
+                            </div>
                         </div>
                     </div>
                     <!-- CONTENEDOR DINÁMICO: Aquí JavaScript generará los meses -->
