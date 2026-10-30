@@ -14,11 +14,16 @@ export function initSchedules() {
 
     // Configuración para los selectores de color con cuadrícula desplegable
     const colorPickersConfig = [
-        { id: "color-header", btnId: "btn-color-header", dropdownId: "dropdown-header", cssVar: "--header-bg" },
-        { id: "color-time", btnId: "btn-color-time", dropdownId: "dropdown-time", cssVar: "--time-bg" },
-        { id: "color-break", btnId: "btn-color-break", dropdownId: "dropdown-break", cssVar: "--break-bg" },
-        { id: "color-subjects", btnId: "btn-color-subjects", dropdownId: "dropdown-subjects", cssVar: "--subject-bg" },
-        { id: "color-grid", btnId: "btn-color-grid", dropdownId: "dropdown-grid", cssVar: "--grid-bg" },
+        { id: "color-header", buttonId: "button-color-header", dropdownId: "dropdown-header", cssVar: "--header-bg" },
+        { id: "color-time", buttonId: "button-color-time", dropdownId: "dropdown-time", cssVar: "--time-bg" },
+        { id: "color-break", buttonId: "button-color-break", dropdownId: "dropdown-break", cssVar: "--break-bg" },
+        {
+            id: "color-subjects",
+            buttonId: "button-color-subjects",
+            dropdownId: "dropdown-subjects",
+            cssVar: "--subject-bg",
+        },
+        { id: "color-grid", buttonId: "button-color-grid", dropdownId: "dropdown-grid", cssVar: "--grid-bg" },
     ];
 
     let dataSchedules = {};
@@ -115,11 +120,11 @@ export function initSchedules() {
     // Configuración de la cuadrícula de colores desplegable para los 4 elementos
     colorPickersConfig.forEach((item) => {
         const input = document.getElementById(item.id);
-        const btn = document.getElementById(item.btnId);
+        const button = document.getElementById(item.buttonId);
         const dropdown = document.getElementById(item.dropdownId);
-        if (input && btn && dropdown) {
+        if (input && button && dropdown) {
             // Abrir / cerrar menú flotante al hacer clic en el botón principal
-            btn.addEventListener("click", (e) => {
+            button.addEventListener("click", (e) => {
                 e.stopPropagation();
                 // Cerrar otros dropdowns abiertos por si acaso
                 document.querySelectorAll(".color-dropdown").forEach((d) => {
@@ -132,7 +137,7 @@ export function initSchedules() {
                 swatch.addEventListener("click", () => {
                     const selectedColor = swatch.getAttribute("data-color");
                     container.style.setProperty(item.cssVar, selectedColor);
-                    btn.style.backgroundColor = selectedColor;
+                    button.style.backgroundColor = selectedColor;
                     input.value = selectedColor;
                     dropdown.classList.remove("show");
                 });
@@ -141,7 +146,7 @@ export function initSchedules() {
             input.addEventListener("input", (e) => {
                 const customColor = e.target.value;
                 container.style.setProperty(item.cssVar, customColor);
-                btn.style.backgroundColor = customColor;
+                button.style.backgroundColor = customColor;
                 dropdown.classList.remove("show");
             });
         }
