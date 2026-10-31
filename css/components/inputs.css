@@ -9,7 +9,7 @@
     background-color: var(--bg-input);
     color: var(--text-input);
     caret-color: var(--text-input);
-    cursor: var(--cursor-text);
+    cursor: var(--text);
 }
 .input:focus {
     border-color: var(--border-input-focus);

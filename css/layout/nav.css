@@ -12,7 +12,7 @@
     margin: var(--space-xs) auto;
     border-radius: var(--radius-lg);
     background: var(--bg-base-inverted);
-    box-shadow: var(--shadow-base);
+    box-shadow: var(--shadow-section-card-hover);
 }
 a.nav-menu-link,
 a.nav-menu-link:visited {

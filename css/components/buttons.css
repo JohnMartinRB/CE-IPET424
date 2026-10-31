@@ -23,7 +23,7 @@ a.button:hover {
 }
 .button:hover,
 a:hover {
-    cursor: var(--cursor-hover);
+    cursor: var(--pointer);
 }
 .button:active,
 a.button:active {
@@ -34,7 +34,7 @@ a.button:active {
 .button-active {
     background-color: var(--bg-button-hover) !important;
     color: var(--text-button-hover) !important;
-    cursor: var(--cursor-hover);
+    cursor: var(--pointer);
 }
 .button:visited,
 a.button:visited {
@@ -74,7 +74,7 @@ a.button:focus {
 .button-round {
     border-radius: var(--radius-full);
     font-weight: bold;
-    cursor: var(--cursor-hover);
+    cursor: var(--pointer);
 }
 
 @media (min-width: 1024px) {

@@ -161,8 +161,8 @@
     /* Botón de Aside lateral (proyección de sombra marcada) */
     --shadow-aside-button: 5px 0 14px rgba(0, 0, 0, 0.3);
     /* Desenfoque de modales y color de overlay */
-    --blur-modal: blur(10px);
-    --blur-modal-color: rgba(0, 0, 0, 0.65);
+    --blur-modal: blur(8px);
+    --blur-modal-color: rgba(41, 40, 40, 0.65);
 
     /* ==========================================================================
     6. TIEMPOS Y FUNCIONES DE TRANSICIÓN
@@ -182,11 +182,7 @@
     /* ==========================================================================
     7. CURSORES
     ========================================================================== */
-    --cursor-default: url("../../assets/img/cursors/cursor-default.svg"), auto;
-    --cursor-hover: url("../../assets/img/cursors/cursor-hover.svg"), pointer;
-    --cursor-text: url("../../assets/img/cursors/cursor-text.svg"), text;
-    /* Modo Oscuro */
-    --cursor-default-dark: url("../../assets/img/cursors/cursor-default-dark.svg"), auto;
-    --cursor-hover-dark: url("../../assets/img/cursors/cursor-hover-dark.svg"), pointer;
-    --cursor-text-dark: url("../../assets/img/cursors/cursor-text-dark.svg"), text;
+    --default: url("../../assets/img/cursors/default.svg"), auto;
+    --pointer: url("../../assets/img/cursors/pointer.svg"), pointer;
+    --text: url("../../assets/img/cursors/text.svg"), text;
 }

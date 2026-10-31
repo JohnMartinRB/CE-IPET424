@@ -43,7 +43,7 @@
     }
     .aside-button-toggle:hover {
         background-color: var(--bg-aside-button-hover);
-        cursor: var(--cursor-hover);
+        cursor: var(--pointer);
     }
     .aside-icon-toggle {
         transform: scaleY(4);

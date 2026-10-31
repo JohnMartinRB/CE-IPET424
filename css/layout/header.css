@@ -20,9 +20,9 @@
     box-shadow: var(--shadow-base);
     transition: var(--transition-fade);
 }
-.header-card.scrolled {
+/*.header-card.scrolled {
     box-shadow: var(--shadow-section-card-hover);
-}
+}*/
 .header-logo-container {
     display: flex;
     flex-direction: column;
@@ -119,6 +119,7 @@
         background: transparent;
         font-weight: bold;
         font-size: var(--fs-base);
+        cursor: var(--pointer);
         transition: color var(--transition-fast);
     }
     .header-nav-button:hover {
@@ -174,6 +175,7 @@
         margin: 0 auto;
         border-radius: var(--radius-full);
         background-color: transparent;
+        cursor: var(--pointer);
         transition: var(--transition-button);
     }
     .header-icon-button:hover {
