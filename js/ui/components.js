@@ -12,13 +12,14 @@ export function renderLoader() {
         "noticias.html": "Noticias y Novedades",
         "proyectos.html": "Nuestros Proyectos",
         "herramientas.html": "Herramientas Estudiantiles",
+        "horarios.html": "Horarios",
+        "calendario.html": "Calendario",
         "tramites.html": "Trámites y Reglamento",
         "recursos.html": "Recursos Útiles",
         "escuela.html": "Nuestra Escuela",
         "contacto.html": "Contacto",
         "creditos.html": "Créditos y Colaboradores",
         "terminos.html": "Términos y Condiciones",
-        "privacidad.html": "Política de Privacidad",
     };
     // 3. Evaluamos la página actual
     const isHomePage = page === "index.html" || page === "";
@@ -106,6 +107,8 @@ export function initPageTitle() {
         "noticias.html": "Noticias y Novedades",
         "proyectos.html": "Proyectos",
         "herramientas.html": "Herramientas Estudiantiles",
+        "horarios.html": "Horarios - Herramientas Estudiantiles",
+        "calendario.html": "Calendario - Herramientas Estudiantiles",
         "tramites.html": "Trámites",
         "recursos.html": "Recursos Útiles",
         "escuela.html": "Nuestra Escuela",

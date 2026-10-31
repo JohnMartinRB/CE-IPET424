@@ -3,7 +3,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.36%20%28Alpha%29-blue)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.37%20%28Alpha%29-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
@@ -38,7 +38,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.36` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.37` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
 | **Lanzamiento Estable (v1.0)** | Martes 9 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
@@ -102,7 +102,41 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.36-alpha` (Actual)**
+- **`v0.37-alpha` (Actual)**
+    - Nuevos módulos de Horarios y Calendario: Visualización Personalización y Descarga
+    - Se encuentran en dos nuevas subpáginas a las cuales se accede desde Herramientas
+    - Características principales de `horarios.html`:
+        - Mapeo de datos dinámico: Carga asíncrona mediante JSON para poblar los cursos de manera automatizada.
+        - Panel Desplegable (`Personalizar`) : Interfaz limpia que agrupa todas las herramientas de edición.
+            - Soporte para cambiar entre fuentes como Nunito, Arial, Calibri y dislexia.
+            - Botones de escala tipográfica exclusivos para el calendario.
+            - Opción para ocultar los nombres de los profesores
+            - Menús desplegables con 10 opciones predefinidas y selector personalizado por rueda.
+            - Control personalizado de headers, casillas, hora, recreos y fondo general.
+        - Gestión de profesores: Casilla de verificación para mostrar u ocultar los nombres del cuerpo docente.
+        - Exportación PNG : Motor de captura visual en alta resolución con `html2canvas`.
+        - Exportación a PDF: Generación de documentos listos para imprimir en formato vertical A4 mediante `jsPDF`.
+    - Características principales de `calendario.html`:
+        - Vista Dual (12 Hojas / 1 Hoja) : Opciones de visualización mensual detallada o anual compacta.
+        - Panel Desplegable (`Personalizar`) : Interfaz limpia que agrupa todas las herramientas de edición.
+            - Soporte para cambiar entre fuentes como Nunito, Arial, Calibri y dislexia.
+            - Botones de escala tipográfica exclusivos para el calendario.
+            - Paleta de colores pastel: Menús desplegables con 10 opciones predefinidas y selector personalizado por rueda.
+            - Control personalizado de título, headers de semana, casillas, fondo del mes y fondo general.
+        - Exportación PNG : Motor de captura visual en alta resolución con `html2canvas`.
+        - PDF Multipágina : Generación automática de un documento horizontal de 12 páginas exactas (una por mes).
+        - PDF Anual : Opción de exportación vertical compacta de todo el año en una sola hoja, mediante `jsPDF` (igual que el anterior)
+    - Nueva carpeta `assets/libs` que contiene las librerías `html2canvas` y `jsPDF` descargadas.
+    - Se cambió el símbolo de flecha circular de los botones que la incluían.
+    - Nuevos archivos js `calendar.js` y `schedules.js` para manejar el renderizado y personalización
+    - Nuevos archivos css `calendar.css`, `schedules.css` y `controls.css` para manejar los estilos
+    - Archivo json para guardar los horarios
+    - Se eliminaron las carpetas `assets/img/` `placeholder`, `posts` y `schedules`
+    - Se actualizó el árbol de carpetas y humans.txt
+    - Se actualizaron comentarios
+    - Cambios secretos
+
+- **`v0.36-alpha` (Anterior)**
     - Nuevos temas de estacionales por temporadas
         - Verano: enero y febrero
         - Mes rosa: octubre
@@ -131,16 +165,6 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
     - Se agregó `.gitkeep` a algunas carpetas vacías que no lo tenían
     - Se actualizó el árbol de carpetas de `ARCHITECTURE.md`
     - ROADMAP ampliado y actualizado
-
-- **`v0.35-alpha` (Anterior)**
-    - Nueva subpágina de Términos y Condiciones para protección legal y de conducta del sitio
-    - Nuevo modal para aceptar términos y condiciones al entrar por primera vez al sitio
-    - El footer ahora tiene una columna más, de título Legal, con link a Terminos y Licencia (se movió a esta columna)
-    - En la columna proyecto ahora se encuentra un enlace a Créditos
-    - Modificación en la función js para inciar los modales en orden
-    - Se renombraron los svg del widget y se actualizaron las rutas
-    - Renombrado `home.css` a `specific.css`
-    - Iconos del footer en carpeta `assets/icons/footer` (sin usar de momento)
 
 Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 
