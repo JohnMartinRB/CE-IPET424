@@ -21,6 +21,7 @@ CE-IPET424/
 │   │   ├── manifest.json             # Manifiesto para instalación PWA
 │   │   ├── news.json                 # Noticias y comunicados
 │   │   ├── quotes.json               # Frases o citas célebres
+│   │   ├── schedules.json            # Horarios de cada curso
 │   │   └── team.json                 # Integrantes del Centro de Estudiantes
 │   ├── docs/                         # Documentos descargables (PDFs, autorizaciones)
 │   │   ├── arg/                      # Documentación y normativas generales
@@ -42,6 +43,8 @@ CE-IPET424/
 │   │   ├── mascot/                   # Ilustraciones de la mascota
 │   │   ├── resources/                # Recursos gráficos adicionales
 │   │   └── plano.jpg                 # Plano de las instalaciones
+│   ├── libs/                         # Librerías externas
+│   ├── models/                       # Modelos 3D
 │   └── videos/                       # Clips y videos institucionales
 ├── components/                       # Componentes HTML reutilizables
 │   ├── _aside-config.html            # Aside desplegable modular de configuración
@@ -65,10 +68,13 @@ CE-IPET424/
 │   │   ├── accordion.css             # Estilos para acordeones desplegables
 │   │   ├── banners.css               # Banners informativos
 │   │   ├── buttons.css               # Botones e interactividad
+│   │   ├── calendar.css              # Módulo del calendario
 │   │   ├── cards.css                 # Tarjetas de contenido
+│   │   ├── controls.css              # Paneles de control y personalización
 │   │   ├── inputs.css                # Campos de formulario y controles
 │   │   ├── loader.css                # Pantalla y animación de carga
 │   │   ├── modals.css                # Ventanas modales
+│   │   ├── schedules.css             # Módulo de horarios
 │   │   ├── scrollbar.css             # Personalización de la barra de desplazamiento
 │   │   ├── toasts.css                # Notificaciones flotantes / mensajes emergentes
 │   │   └── widgets.css               # Widgets (clima, accesibilidad, etc.)
@@ -88,8 +94,10 @@ CE-IPET424/
 │   ├── ui/                           # Funciones de la interfaz
 │   │   ├── banners.js                # Control de banners de aviso
 │   │   ├── buttons.js                # Comportamiento e interacción de botones
+│   │   ├── calendar.js               # Control y renderizado del calendario
 │   │   ├── components.js             # Control de componentes varios
 │   │   ├── modals.js                 # Apertura y cierre de ventanas modales
+│   │   ├── schedules.js              # Control y renderizado de horarios
 │   │   ├── theme.js                  # Lógica de conmutación de temas (oscuro/claro)
 │   │   └── widgets.js                # Widgets interactivos
 │   ├── utils/                        # Funciones utilitarias del sistema
@@ -107,12 +115,14 @@ CE-IPET424/
 ├── .nojekyll                         # Evita que GitHub Pages omita carpetas con guion bajo
 ├── 404.html                          # Página personalizada de error 404
 ├── ARCHITECTURE.md                   # Árbol de carpetas y archivos del proyecto
+├── calendario.html                   # Sub-página de calendario personalizable
 ├── CHANGELOG.md                      # Registro de cambios y actualizaciones
 ├── contacto.html                     # Sub-página con formulario y datos de contacto
 ├── CONTRIBUTING.md                   # Guía de estándares y convenciones de desarrollo
 ├── creditos.html                     # Sub-página de créditos del equipo de desarrollo
 ├── escuela.html                      # Sub-página institucional de la escuela
 ├── herramientas.html                 # Sub-página de herramientas y utilidades estudiantiles
+├── horarios.html                     # Sub-página de horario personalizable
 ├── humans.txt                        # Créditos e información de autores del proyecto
 ├── index.html                        # Portal principal (Landing Page)
 ├── LICENSE                           # Licencia de software libre (Licencia MIT)

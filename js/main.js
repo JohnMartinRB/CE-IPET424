@@ -14,7 +14,15 @@ import { initAnimations } from "./utils/animations.js";
 import { initDyslexia } from "./utils/dyslexia.js";
 import { initSound, playSound } from "./utils/sound.js";
 import { initShortcuts } from "./utils/shortcuts.js";
-import { config, party, matrix, flip, terminal, paint, menu } from "./config.js";
+import {
+    configBase,
+    configParty,
+    configMatrix,
+    configFlip,
+    configTerminal,
+    configPaint,
+    configMenu,
+} from "./config.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     renderLoader();
@@ -35,13 +43,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     initShortcuts();
     initSchedules();
     initCalendar();
-    config();
-    party();
-    matrix();
-    flip();
-    terminal();
-    paint();
-    menu();
+    configBase();
+    configParty();
+    configMatrix();
+    configFlip();
+    configTerminal();
+    configPaint();
+    configMenu();
 });
 
 // Delegación global para interceptar el clic derecho en imágenes fijas y dinámicas

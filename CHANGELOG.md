@@ -4,6 +4,43 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## [v0.37.0-alpha] - Versión Principal
+
+- Nuevos módulos de Horarios y Calendario: Visualización Personalización y Descarga
+- Se encuentran en dos nuevas subpáginas a las cuales se accede desde Herramientas
+- Características principales de `horarios.html`:
+    - Mapeo de datos dinámico: Carga asíncrona mediante JSON para poblar los cursos de manera automatizada.
+    - Panel Desplegable (`Personalizar`) : Interfaz limpia que agrupa todas las herramientas de edición.
+        - Soporte para cambiar entre fuentes como Nunito, Arial, Calibri y dislexia.
+        - Botones de escala tipográfica exclusivos para el calendario.
+        - Opción para ocultar los nombres de los profesores
+        - Menús desplegables con 10 opciones predefinidas y selector personalizado por rueda.
+        - Control personalizado de headers, casillas, hora, recreos y fondo general.
+    - Gestión de profesores: Casilla de verificación para mostrar u ocultar los nombres del cuerpo docente.
+    - Exportación PNG : Motor de captura visual en alta resolución con `html2canvas`.
+    - Exportación a PDF: Generación de documentos listos para imprimir en formato vertical A4 mediante `jsPDF`.
+- Características principales de `calendario.html`:
+    - Vista Dual (12 Hojas / 1 Hoja) : Opciones de visualización mensual detallada o anual compacta.
+    - Panel Desplegable (`Personalizar`) : Interfaz limpia que agrupa todas las herramientas de edición.
+        - Soporte para cambiar entre fuentes como Nunito, Arial, Calibri y dislexia.
+        - Botones de escala tipográfica exclusivos para el calendario.
+        - Paleta de colores pastel: Menús desplegables con 10 opciones predefinidas y selector personalizado por rueda.
+        - Control personalizado de título, headers de semana, casillas, fondo del mes y fondo general.
+    - Exportación PNG : Motor de captura visual en alta resolución con `html2canvas`.
+    - PDF Multipágina : Generación automática de un documento horizontal de 12 páginas exactas (una por mes).
+    - PDF Anual : Opción de exportación vertical compacta de todo el año en una sola hoja, mediante `jsPDF` (igual que el anterior)
+- Nueva carpeta `assets/libs` que contiene las librerías `html2canvas` y `jsPDF` descargadas.
+- Se cambió el símbolo de flecha circular de los botones que la incluían.
+- Nuevos archivos js `calendar.js` y `schedules.js` para manejar el renderizado y personalización
+- Nuevos archivos css `calendar.css`, `schedules.css` y `controls.css` para manejar los estilos
+- Archivo json para guardar los horarios
+- Se eliminaron las carpetas `assets/img/` `placeholder`, `posts` y `schedules`
+- Se actualizó el árbol de carpetas y humans.txt
+- Se actualizaron comentarios
+- Cambios secretos
+
+---
+
 ## [v0.36.0-alpha] - Versión Principal
 
 - Nuevos temas de estacionales por temporadas

@@ -62,7 +62,7 @@ _Enfoque: Arquitectura base, modularización, sistema de temas, accesibilidad y 
     - Implementación de temas personalizados por temporadas (Verano, Mes Rosa, Misterio/Halloween y Festividades/Navidad).
     - Refactorización completa del modo escala de grises como capa visual y optimización de variables globales de color.
 
-* [ ] **v0.37 - Módulo de Personalización & Descarga de Horarios / Calendario**
+* [x] **v0.37 - Módulo de Personalización & Descarga de Horarios / Calendario**
     - Selector interactivo de cursos, divisiones y materias.
     - Personalización de fuentes, paletas de colores y visibilidad de profesores.
     - Exportación e impresión directa a formato PNG/PDF local.

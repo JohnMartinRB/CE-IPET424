@@ -25,11 +25,7 @@
         <nav id="nav-card" class="nav-card">
             <button id="nav-button-menu" class="button nav-button-menu" aria-label="Abrir menú">☰</button>
             <ul id="nav-menu" class="nav-menu">
-                <li><a class="nav-menu-link" href="#activos">Proyectos en Curso</a></li>
-                <li><a class="nav-menu-link" href="#eventos">Torneos y Eventos</a></li>
-                <li><a class="nav-menu-link" href="#talleres">Talleres Estudiantiles</a></li>
-                <li><a class="nav-menu-link" href="#comunitarios">Acción Social</a></li>
-                <li><a class="nav-menu-link" href="#historial">Proyectos Finalizados</a></li>
+                <li><a class="nav-menu-link" href="#herramientas-interactivas">Generadores</a></li>
             </ul>
         </nav>
         <!-- PANEL LATERAL DE CONFIGURACIÓN -->
@@ -41,13 +37,62 @@
             <main>
                 <!-- SECCIÓN: INICIO / INFORMATIVA -->
                 <section id="inicio" class="section-card hero-section">
-                    <h2>Herramientas Estudiantiles</h2>
+                    <h2>Herramientas y Utilidades Estudiantiles</h2>
                     <p class="text paragraph">
-                        Conocé las actividades, torneos y mejoras planificadas por la comisión estudiantil.
+                        Espacio digital del Centro de Estudiantes del IPET N° 424 destinado a facilitar la organización
+                        académica. Accedé a creadores personalizados de horarios de cursada y calendarios anuales
+                        diseñados a medida para la comunidad escolar.
                     </p>
                 </section>
 
-                <!-- SECCIÓN 6: SUB SITIOS -->
+                <!-- SECCIÓN: TARJETAS DE ACCESO A HERRAMIENTAS NUEVAS -->
+                <section id="herramientas-interactivas" class="section-card">
+                    <h2>Generadores y Utilidades Online</h2>
+                    <p class="text paragraph">
+                        Herramientas diseñadas para organizar tu cursada, consultar módulos y planificar el año lectivo.
+                    </p>
+
+                    <div
+                        class="grid-tarjetas"
+                        style="
+                            display: grid;
+                            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                            gap: var(--space-base);
+                        "
+                    >
+                        <!-- Tarjeta 1: Horarios -->
+                        <article class="subsection-card download-card">
+                            <div>
+                                <h3>Generador de Horarios</h3>
+                                <p class="text paragraph">
+                                    Consultá los módulos de clases por curso (desde 1° hasta 7° año), personaliza los
+                                    colores, ajusta la tipografía y descargá tu grilla horaria en formato de imagen o
+                                    PDF de manera rápida.
+                                </p>
+                            </div>
+                            <div>
+                                <a href="horarios.html" class="button download-button"> Ir a Horarios </a>
+                            </div>
+                        </article>
+
+                        <!-- Tarjeta 2: Calendario -->
+                        <article class="subsection-card download-card">
+                            <div>
+                                <h3>Generador de Calendario Anual</h3>
+                                <p class="text paragraph">
+                                    Diseñá y personaliza tu propio calendario anual (vistas de 12 meses o de 1 página),
+                                    configura los colores institucionales, adapta el tamaño de texto y exportalo listo
+                                    para imprimir.
+                                </p>
+                            </div>
+                            <div>
+                                <a href="calendario.html" class="button download-button"> Ir a Calendario </a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- SECCIÓN: SUB SITIOS -->
                 <section class="section-card">
                     <h2>¿Buscas algo específico?</h2>
                     <p>Visitá nuestros diferentes sitios de consultas</p>
