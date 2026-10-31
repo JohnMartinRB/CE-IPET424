@@ -1,0 +1,94 @@
+/* ==========================================
+    MÓDULO DE DESCARGA DE HORARIOS
+========================================== */
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: 95px repeat(5, 1fr);
+    margin-bottom: var(--space-lg);
+    padding: 1rem;
+    overflow-x: auto;
+    gap: 6px;
+    border-radius: var(--radius-sm);
+    background-color: var(--grid-bg);
+
+    /* Variable de escala de fuente local para los horarios */
+    --schedule-font-scale: 100%;
+    font-size: var(--schedule-font-scale);
+
+    /* Valores por defecto pedidos */
+    --grid-bg: #eee; /* Gris para Fondo */
+    --header-bg: #0088ff; /* Azul para Header */
+    --time-bg: #e2e8f0; /* Gris para Hora */
+    --break-bg: #cbd5e1; /* Lila/Grisáceo para Recreo */
+    --subject-bg: #ffffff; /* Blanco para Materias */
+}
+
+.schedule-grid > .placeholder-text {
+    grid-column: 1 / -1;
+}
+
+.schedule-header {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--header-bg);
+    color: var(--blanco);
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.schedule-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: var(--time-bg);
+    font-weight: bold;
+    font-size: 0.5em;
+    text-align: center;
+}
+
+.schedule-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 5rem;
+    padding: 8px;
+    gap: 4px;
+    border-radius: var(--radius-xs);
+    background-color: var(--subject-bg);
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+/* Clase para materias con nombres largos */
+.schedule-cell.subject-small .subject-name {
+    font-size: 0.75em;
+    line-height: 1.1;
+}
+
+.subject-name {
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+.teacher-name {
+    color: var(--gris1);
+    font-size: 0.75em;
+}
+
+.schedule-grid.no-teachers .teacher-name {
+    display: none;
+}
+
+.schedule-break-row {
+    grid-column: 1 / -1;
+    padding: var(--space-xs);
+    border-radius: var(--radius-xs);
+    background-color: var(--break-bg);
+    font-weight: bold;
+    font-size: 0.85em;
+    text-align: center;
+}

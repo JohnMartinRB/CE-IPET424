@@ -111,6 +111,7 @@ export function initPageTitle() {
         "escuela.html": "Nuestra Escuela",
         "contacto.html": "Contacto",
         "creditos.html": "Créditos",
+        "herramientas.html": "Herramientas",
         "terminos.html": "Términos y Condiciones",
         "404.html": "Página no encontrada",
     };
