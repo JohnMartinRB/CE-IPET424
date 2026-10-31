@@ -158,6 +158,45 @@ export function initSchedules() {
         });
     });
 
+    // ==========================================
+    // CONTROL DE TAMAÑO DE TEXTO DEL HORARIO
+    // ==========================================
+    const LEVELS = [80, 90, 100, 110, 120]; // Porcentajes de escala
+    let currentLevelIndex = 2; // Por defecto 100% (índice 2)
+    const buttonDecrease = document.getElementById("controls-button-font-decrease");
+    const buttonIncrease = document.getElementById("controls-button-font-increase");
+    const buttonReset = document.getElementById("controls-button-font-reset");
+    const indicator = document.getElementById("controls-font-size-indicator");
+    function updateScheduleFontSize() {
+        const scalePercent = LEVELS[currentLevelIndex];
+        // Aplicamos la variable de escala al contenedor principal de la grilla
+        container.style.setProperty("--schedule-font-scale", `${scalePercent}%`);
+        if (indicator) indicator.textContent = `${scalePercent}%`;
+        if (buttonDecrease) buttonDecrease.disabled = currentLevelIndex === 0;
+        if (buttonIncrease) buttonIncrease.disabled = currentLevelIndex === LEVELS.length - 1;
+    }
+    if (buttonDecrease) {
+        buttonDecrease.addEventListener("click", () => {
+            if (currentLevelIndex > 0) {
+                currentLevelIndex--;
+                updateScheduleFontSize();
+            }
+        });
+    }
+    if (buttonIncrease) {
+        buttonIncrease.addEventListener("click", () => {
+            if (currentLevelIndex < LEVELS.length - 1) {
+                currentLevelIndex++;
+                updateScheduleFontSize();
+            }
+        });
+    }
+    if (buttonReset) {
+        buttonReset.addEventListener("click", () => {
+            currentLevelIndex = 2;
+            updateScheduleFontSize();
+        });
+    }
     // 3. Descargar horario (Imagen PNG o PDF)
     buttonDownload.addEventListener("click", () => {
         if (!selectYear.value) {

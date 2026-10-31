@@ -12,6 +12,10 @@
     border-radius: var(--radius-sm);
     background-color: var(--grid-bg);
 
+    /* Variable de escala de fuente local para los horarios */
+    --schedule-font-scale: 100%;
+    font-size: var(--schedule-font-scale);
+
     /* Valores por defecto pedidos */
     --grid-bg: #eee; /* Gris para Fondo */
     --header-bg: #0088ff; /* Azul para Header */
@@ -30,7 +34,7 @@
     background-color: var(--header-bg);
     color: var(--blanco);
     font-weight: bold;
-    font-size: var(--fs-sm);
+    font-size: 0.8em;
     text-align: center;
 }
 
@@ -42,7 +46,7 @@
     border-radius: 6px;
     background-color: var(--time-bg);
     font-weight: bold;
-    font-size: var(--fs-xs);
+    font-size: 0.5em;
     text-align: center;
 }
 
@@ -61,18 +65,18 @@
 
 /* Clase para materias con nombres largos */
 .schedule-cell.subject-small .subject-name {
-    font-size: 0.75rem;
+    font-size: 0.75em;
     line-height: 1.1;
 }
 
 .subject-name {
     font-weight: bold;
-    font-size: 0.85rem;
+    font-size: 0.85em;
 }
 
 .teacher-name {
     color: var(--gris1);
-    font-size: 0.75rem;
+    font-size: 0.75em;
 }
 
 .schedule-grid.no-teachers .teacher-name {
@@ -85,6 +89,6 @@
     border-radius: var(--radius-xs);
     background-color: var(--break-bg);
     font-weight: bold;
-    font-size: 0.85rem;
+    font-size: 0.85em;
     text-align: center;
 }
