@@ -19,16 +19,33 @@ export function initButtons() {
         }
     });
     // Control de asides desplegables (independientes)
+    const allAsides = document.querySelectorAll(".aside-drawer");
+    allAsides.forEach((aside) => {
+        // Obtenemos una clave única basada en el ID (o una clase si no tiene ID)
+        const asideKey = `asideState_${aside.id || aside.classList[1]}`;
+        const savedState = localStorage.getItem(asideKey);
+        // Si estaba guardado como 'open', restauramos la clase .open en el aside y su botón
+        if (savedState === "open") {
+            aside.classList.add("open");
+            const buttonToggle = aside.querySelector(".aside-button-toggle");
+            if (buttonToggle) {
+                buttonToggle.classList.add("open");
+            }
+        }
+    });
     document.addEventListener("click", (e) => {
-        // Detectamos si el clic fue en un botón de toggle de aside
         const buttonToggle = e.target.closest(".aside-button-toggle");
         if (buttonToggle) {
-            // Encontramos el aside específico al que pertenece este botón
             const currentAside = buttonToggle.closest(".aside-drawer");
             if (currentAside) {
-                // Alternamos la clase .open SOLO en el aside clickeado
+                // Alternamos la clase .open
                 currentAside.classList.toggle("open");
                 buttonToggle.classList.toggle("open");
+                // Clave única para localStorage
+                const asideKey = `asideState_${currentAside.id || currentAside.classList[1]}`;
+                const isOpen = currentAside.classList.contains("open");
+                // Guardamos el estado 'open' o 'closed'
+                localStorage.setItem(asideKey, isOpen ? "open" : "closed");
             }
         }
     });
@@ -95,6 +112,32 @@ export function initButtons() {
             });
         });
     }
+    // Botón de compartir sitio
+    const buttonShare = document.getElementById("button-share");
+    if (!buttonShare) return;
+    buttonShare.addEventListener("click", async () => {
+        const shareData = {
+            title: "Centro de Estudiantes IPET N° 424",
+            text: "¡Entrá a la web oficial del Centro de Estudiantes del IPET 424 para ver las novedades, proyectos y trámites!",
+            url: window.location.href, // O podés poner tu URL fija: 'https://johnmartinrb.github.io/CE-IPET-424/'
+        };
+        // Si el navegador soporta el menú nativo de compartir
+        if (navigator.share) {
+            try {
+                await navigator.share(shareData);
+            } catch (err) {
+                // El usuario simplemente cerró la ventana de compartir
+            }
+        } else {
+            // FALLBACK PARA COMPUS VIEJAS: Copia el enlace y muestra el Toast
+            navigator.clipboard.writeText(shareData.url);
+            const toast = document.getElementById("toast-copied");
+            if (toast) {
+                toast.classList.add("visible");
+                setTimeout(() => toast.classList.remove("visible"), 2500);
+            }
+        }
+    });
 }
 
 export async function getVillaDoloresWeather() {

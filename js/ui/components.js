@@ -8,11 +8,17 @@ export function renderLoader() {
     const page = path.split("/").pop() || "index.html";
     const pageTitles = {
         "index.html": "¡Bienvenido al sitio!",
-        "about.html": "Sobre nosotros",
-        "contact.html": "Contacto y sugerencias",
-        "projects.html": "Nuestros proyectos",
-        "school.html": "Trámites y reglamento",
-        "credits.html": "Créditos y colaboradores",
+        "nosotros.html": "Sobre Nosotros",
+        "noticias.html": "Noticias y Novedades",
+        "proyectos.html": "Nuestros Proyectos",
+        "herramientas.html": "Herramientas Estudiantiles",
+        "tramites.html": "Trámites y Reglamento",
+        "recursos.html": "Recursos Útiles",
+        "escuela.html": "Nuestra Escuela",
+        "contacto.html": "Contacto",
+        "creditos.html": "Créditos y Colaboradores",
+        "terminos.html": "Términos y Condiciones",
+        "privacidad.html": "Política de Privacidad",
     };
     // 3. Evaluamos la página actual
     const isHomePage = page === "index.html" || page === "";
@@ -74,6 +80,7 @@ export async function initComponents() {
         loadComponent("aside-config-container", "components/_aside-config.html"),
         loadComponent("aside-news-container", "components/_aside-news.html"),
         loadComponent("footer-container", "components/_footer.html"),
+        loadComponent("modal-terms-container", "components/_modal-terms.html"),
         loadComponent("modal-in-dev-container", "components/_modal-in-dev.html"),
         loadComponent("modal-whats-new-container", "components/_modal-whats-new.html"),
     ]);
@@ -84,22 +91,32 @@ export async function initComponents() {
 export function initPageTitle() {
     // 1. Identificador institucional único (sufijo)
     const SITE_SUFFIX = "| Centro de Estudiantes IPET N° 424";
-    // 2. Obtenemos el nombre de la página actual desde la URL
+    // 2. Obtenemos el nombre de la página actual en minúsculas para evitar errores
     const path = window.location.pathname;
-    const page = path.split("/").pop() || "index.html";
-    // 3. Diccionario con el título específico para cada subpágina
+    let page = path.split("/").pop().toLowerCase();
+    // Si la ruta termina en / o está vacía, asumimos index.html
+    if (!page || page === "") {
+        page = "index.html";
+    }
+    console.log("Página detectada por initPageTitle:", page); // 🔍 Útil para depurar en consola (F12)
+    // 3. Diccionario con el título específico para cada subpágina (claves en minúsculas)
     const pageTitles = {
         "index.html": "Inicio",
-        "nosotros.html": "Nosotros",
-        "contacto.html": "Contacto",
+        "nosotros.html": "Sobre Nosotros",
+        "noticias.html": "Noticias y Novedades",
         "proyectos.html": "Proyectos",
+        "herramientas.html": "Herramientas Estudiantiles",
         "tramites.html": "Trámites",
+        "recursos.html": "Recursos Útiles",
+        "escuela.html": "Nuestra Escuela",
+        "contacto.html": "Contacto",
         "creditos.html": "Créditos",
         "herramientas.html": "Herramientas",
+        "terminos.html": "Términos y Condiciones",
         "404.html": "Página no encontrada",
     };
-    // 4. Seleccionamos el nombre o usamos uno genérico si no coincide
-    const sectionName = pageTitles[page] || "Portal";
-    // 5. Asignamos el título final a la pestaña con la estructura: [Sección] | [Marca]
+    // 4. Seleccionamos el nombre o usamos "Inicio" como respaldo si no coincide
+    const sectionName = pageTitles[page] || "Inicio";
+    // 5. Asignamos el título final a la pestaña
     document.title = `${sectionName} ${SITE_SUFFIX}`;
 }

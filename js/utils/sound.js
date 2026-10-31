@@ -16,7 +16,7 @@ export function playSound(fileName, volume = 0.25) {
     }
     // Si el usuario desactivó los sonidos, no reproduce nada
     if (!soundEnabled) return;
-    const audio = new Audio(`assets/audio/${fileName}`);
+    const audio = new Audio(`assets/audio/effects/${fileName}`);
     audio.volume = volume;
     // 1. Forzamos a que el audio empiece desde el milisegundo 0 exacto
     audio.currentTime = 0;

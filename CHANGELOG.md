@@ -4,6 +4,144 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## [v0.36.0-alpha] - Versión Principal
+
+- Nuevos temas de estacionales por temporadas
+    - Verano: enero y febrero
+    - Mes rosa: octubre
+    - Halloween: última semana de octubre
+    - Navidad: últimas semanas de diciembre
+- Estos temas se encuentran en `seasonal.css`
+- Se agregaron botones en el aside de opciones para activar los temas estacionales
+- Se inviertieron las fuentes: Nunito como Titles y Nunito Sans como Main
+- Se modificaron levemente algunos colores
+- Se modificó el color del icono del boton del aside en la mayoria de temas
+- Se reworkeó el funcionamiento de `grayscale-mode` para que se aplique como una capa en lugar de un tema independiente (así como rest-mode)
+- Se eliminó el favicon gris
+- Función js actualizada para comprobar ciertos periodos de fecha y aplicar temas estacionales por defecto
+- Nuevos logos y favicons rosa y mascota rosa para el mes de octubre
+- Se actualizaron los logos y favicons de halloween y navidad
+- Se agregó el logo de instagram con colores patrios y se actualizaron los de halloween y navidad
+- Se separaron los logos de `assets/logos` en `ig/`, `ce/` y `app/`
+- Se renombraron los archivos de logos
+- Se actualizaron las rutas de los logos
+- Eliminada una variable inutilizada
+- Se agregaron muchas variables de color nuevas para elementos que antes usaban las variables de color de otro elemento
+- Se renombraron muchas variables
+
+## [v0.36.1-alpha]
+
+- Se renombró el tema Halloween a Misterio y Navidad a Festividades para evitar conflictos institucionales
+- Se renombraron las variables, botones y clases
+- Se arregló el estilo de `button-scroll-top`
+- Se agregó `.gitkeep` a algunas carpetas vacías que no lo tenían
+
+## [v0.36.2-alpha]
+
+- El texto de `terminos.html` ahora se encuentra directamente en la tarjeta principal
+- Ahora los botones de temas estacionales tienen la misma clase que los demás del aside, para controlar su tamaño y separación
+- Se cambió la fuente del título del Loader (de main a titles)
+- Se cambió un color en modo rosa
+- Se agregó otra pequeña transición a los botones
+
+## [v0.36.3-alpha]
+
+- Se corrigieron algunos títulos de página en `components.js`
+
+## [v0.36.4-alpha]
+
+- Se corrigió el funcionamiento de `initPageTitle`
+- Se cambiaron muchos títulos en la pantalla de carga
+
+## [v0.36.5-alpha]
+
+- Se actualizaron algunos logos del CE y de instagram
+- Se renombró el logo de ig de halloween
+
+## [v0.36.6-alpha]
+
+- Se actualizó el árbol de carpetas de `ARCHITECTURE.md`
+
+## [v0.36.7-alpha]
+
+- Se actualizó el favicon del modo Misterio
+
+## [v0.36.8-alpha]
+
+- ROADMAP ampliado y actualizado
+
+---
+
+## [v0.35.0-alpha] - Versión Principal
+
+- Nueva subpágina de Términos y Condiciones para protección legal y de conducta del sitio
+- Nuevo modal para aceptar términos y condiciones al entrar por primera vez al sitio
+- El footer ahora tiene una columna más, de título Legal, con link a Terminos y Licencia (se movió a esta columna)
+- En la columna proyecto ahora se encuentra un enlace a Créditos
+- Modificación en la función js para inciar los modales en orden
+- Se renombraron los svg del widget y se actualizaron las rutas
+- Renombrado `home.css` a `specific.css`
+- Iconos del footer en carpeta `assets/icons/footer` (sin usar de momento)
+
+---
+
+## [v0.34.0-alpha] - Versión Principal
+
+- Nuevas subpáginas:
+    - Recursos, para descargar músicas y archivos. Algunos archivo descargables de momento
+    - Escuela, para conocer sobre la escuela. contenido placeholder y enlace a la web del colegio
+    - Herramientas, vacía de momento
+- Nueva función js para guardar en localStorage si los aside están abiertos o cerrados, para que el estado se mantenga al reiniciar la página o dirigirse a una subpágina
+- Se eliminó la flecha hacia abajo en los botones de descarga de archivos
+- El escudo del header ahora dirige a escuela.html
+- Nueva organziación del menú de subpáginas (ahora con un grid)
+- Se reordenaron las subpáginas del menú
+- Se reordenó la función para poner título a la página y se agregaron nuevos
+- Se cambiaron algunos títulos de subpáginas
+- Se cambió el ancho y margin de los botones del aside
+- Se subdividió la carpeta de `assets/audio` en `effects/` y `music/`
+- Se subdividió la carpeta `assets/docs` en `school/` y `patrio/`
+- Nueva carpeta `img/resources`
+- Nuevos archivos en `resources`
+- Se eliminaron muchas carpetas vacías
+- Se eliminaron todas las funciones de `accesibility.js` debido a que no se usaban
+- Se actualizaron varias rutas de archivos
+
+## [v0.34.1-alpha]
+
+- Se arregló el menú de subpáginas en `escuela.html`
+
+## [v0.34.2-alpha]
+
+- Pequeño cambio en la función de título de página
+- Se arregló un link del menú de subpáginas en `contacto.html`
+
+## [v0.34.3-alpha]
+
+- Ahora 404.html tiene el footer insertado en lugar de su propio footer
+- Se arregló la función de `initPageTitle`
+
+---
+
+## [v0.33.0-alpha] - Versión Principal
+
+- Nuevos widgets en el aside de novedades:
+    - Widget para mostrar Próximos feriados
+    - Widget de frase diaria aleatoria
+- Se reordenaron los widgets de este aside
+- El widget de tiempo atmosférico ahora tiene título, ícono, y muestra la fecha y hora
+- Se movió el widget de tiempo atmosférico al aside de noticias
+- Nuevo botón en el aside de configuración que abre un modal para compartir el sitio a través de una red social
+- Se cambió el color de los botones e inputs a un lila más intenso
+- Los botones ahora tienen mucha menos separación vertical
+- Los títulos de las secciones del aside tienen una nueva clase y menos separación con respecto a los botones
+- Nuevos easter eggs
+- Ahora los íconos de los widgets se encuentran en la carpeta `assets/img/icons`
+- Nuevos archivos `holidays.json` y `quotes.json` para almacenar el contenido de los widget
+- Nuevas funciones js para manejar los nuevos widgets
+
+---
+
 ## [v0.32.0-alpha] - Versión Principal
 
 - Nueva organización del footer: tres columnas

@@ -3,7 +3,7 @@
 ========================================================================== */
 import { renderLoader, initComponents, initPageTitle } from "./ui/components.js";
 import { initButtons } from "./ui/buttons.js";
-import { initFactsWidget } from "./ui/widgets.js";
+import { initFactsWidget, initHolidaysWidget, initDailyQuoteWidget, initWeatherDateTimeWidget } from "./ui/widgets.js";
 import { initBanners } from "./ui/banners.js";
 import { initTheme } from "./ui/theme.js";
 import { initModals } from "./ui/modals.js";
@@ -14,7 +14,7 @@ import { initAnimations } from "./utils/animations.js";
 import { initDyslexia } from "./utils/dyslexia.js";
 import { initSound, playSound } from "./utils/sound.js";
 import { initShortcuts } from "./utils/shortcuts.js";
-import { config, party, matrix, flip, terminal } from "./config.js";
+import { config, party, matrix, flip, terminal, paint, menu } from "./config.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     renderLoader();
@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     initPageTitle();
     initButtons();
     initFactsWidget();
+    initHolidaysWidget();
+    initDailyQuoteWidget();
+    initWeatherDateTimeWidget();
     initBanners();
     initTheme();
     initModals();
@@ -37,6 +40,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     matrix();
     flip();
     terminal();
+    paint();
+    menu();
 });
 
 // Delegación global para interceptar el clic derecho en imágenes fijas y dinámicas

@@ -3,7 +3,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.32%20%28Alpha%29-blue)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.36%20%28Alpha%29-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
@@ -38,7 +38,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.32` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.36` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
 | **Lanzamiento Estable (v1.0)** | Martes 9 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
@@ -102,49 +102,45 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.32-alpha` (Actual)**
-    - Nueva organización del footer: tres columnas
-        - Primera columna: Logo completo del C.E, nombre y descripción
-        - Segunda columna: Contacto (el contenido no cambió)
-        - Tercer columna: Proyecto (nuevo enlace al historial de cambios)
-    - El copyright tiene solo una línea
-    - El logo completo ya no estáa debajo del copyright
-    - Se cambió la puntuación del subtítulo del header
-    - Se cambió el color de borde y hover de los botones/inputs: ahora es lila
-    - Se cambió el color de hover del botón de los aside
-    - El footer de 404.html ahora tiene una sola línea y no tiene el logo
-    - Se cambiaron los colores del party-mode y se agregaron más
-    - Se corrigió un enlace del README
-    - Se separó más el copyright del borde superior
-    - Ahora el footer es más ancho
-    - Se oscureció el color del toast
-    - Corrección de ortografía en CONTRIBUTING
+- **`v0.36-alpha` (Actual)**
+    - Nuevos temas de estacionales por temporadas
+        - Verano: enero y febrero
+        - Mes rosa: octubre
+        - Misterio: última semana de octubre
+        - Festividades: semanas de diciembre y la primera de enero
+    - Estos temas se encuentran en `seasonal.css`
+    - Se agregaron botones en el aside de opciones para activar los temas estacionales
+    - Se inviertieron las fuentes: Nunito como Titles y Nunito Sans como Main
+    - El texto de `terminos.html` ahora se encuentra directamente en la tarjeta principal
+    - Se corrigió el funcionamiento de `initPageTitle`
+    - Se agregaron y cambiaron muchos títulos en la pantalla de carga
+    - Se modificaron levemente algunos colores
+    - Se modificó el color del icono del boton del aside en la mayoria de temas
+    - Se reworkeó el funcionamiento de `grayscale-mode` para que se aplique como una capa en lugar de un tema independiente (así como rest-mode)
+    - Se eliminó el favicon gris
+    - Función js actualizada para comprobar ciertos periodos de fecha y aplicar temas estacionales por defecto
+    - Nuevos logos y favicons rosa y mascota rosa para el mes de octubre
+    - Se actualizaron los logos y favicons de halloween y navidad
+    - Se agregó el logo de instagram con colores patrios y se actualizaron los de halloween y navidad
+    - Se separaron los logos de `assets/logos` en `ig/`, `ce/` y `app/`
+    - Se renombraron los archivos de logos
+    - Se actualizaron las rutas de los logos
+    - Eliminada una variable inutilizada
+    - Se agregaron muchas variables de color nuevas para elementos que antes usaban las variables de color de otro elemento
+    - Se renombraron muchas variables
+    - Se agregó `.gitkeep` a algunas carpetas vacías que no lo tenían
+    - Se actualizó el árbol de carpetas de `ARCHITECTURE.md`
+    - ROADMAP ampliado y actualizado
 
-- **`v0.31-alpha` (Anterior)**
-    - Ahora todas las subpáginas tienen su nombre en español
-    - La tarjeta principal y el enlace ahora son más anchos
-    - En consecuencia, los aside son más delgados
-    - Las tarjetas de header y contenido tienen mas redondeado
-    - Todas las sombras son más intensas
-    - Se agregó una sombra al header al hacer scroll
-    - Nuevos estilos para manejar cómo se ven las imágenes que no cargan o con rutas rotas
-    - Se agregaron muchos easter eggs y funciones random secretas insertando mensajes
-    - Ahora la página del colegio se abre en una pestaña nueva (desde el logo del header)
-    - Se cambió la función para renderizar la pantalla de carga, de forma que muestra un texto diferente dependiendo la subpágina
-    - Se añadió una función de respaldo para cargar dinámicamente el título de las páginas
-    - Se renombró la carpeta `pages` a `misc` para incluir reglas css especificas o aleatorias
-    - Se actualizó el árbol de carpetas
-    - Se agregaron flechas a los botones de descarga
-    - Se actualizó la flecha del botón de volver arriba
-    - Se agregó un PDF del uso del uniforme
-    - Se agregaron los logos de Instagram y algunos logos/favicons para temas de evento
-    - Se actualizó `humans.txt` y `CONTRIBUTING.md`
-    - Se agregaron algunos archivos nuevos en `.github/`
-    - `CODE_OF_CONDUCT.m` y `PULL_REQUEST_TEMPLATE.md`
-    - Y otra subcarpeta `ISSUES_TEMPLATE/`: `bug_report.yml` y `feature_request.yml`
-    - Estos archivos de momento están vacíos
-    - Se agregaron muchas carpetas y subcarpetas para futuras adiciones en `assets/` las cuales tienen `.gitkeep` adentro
-    - Se cambiaron comentarios
+- **`v0.35-alpha` (Anterior)**
+    - Nueva subpágina de Términos y Condiciones para protección legal y de conducta del sitio
+    - Nuevo modal para aceptar términos y condiciones al entrar por primera vez al sitio
+    - El footer ahora tiene una columna más, de título Legal, con link a Terminos y Licencia (se movió a esta columna)
+    - En la columna proyecto ahora se encuentra un enlace a Créditos
+    - Modificación en la función js para inciar los modales en orden
+    - Se renombraron los svg del widget y se actualizaron las rutas
+    - Renombrado `home.css` a `specific.css`
+    - Iconos del footer en carpeta `assets/icons/footer` (sin usar de momento)
 
 Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 

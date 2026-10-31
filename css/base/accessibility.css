@@ -40,9 +40,8 @@ html.dyslexic-mode * {
 /* ==========================================
     MODO ESCALA DE GRISES
 ========================================== */
-html.grayscale-mode,
-body.grayscale-mode {
-    filter: grayscale(100%);
+html.grayscale-mode {
+    filter: grayscale(100%) !important;
 }
 
 /* ==========================================
@@ -51,48 +50,51 @@ body.grayscale-mode {
 body.colorblind-mode {
     /* BODY */
     --bg-body: #0b131e;
-    --text-body: #ffffff;
+    --text-body: var(--blanco);
     /* PANTALLA DE CARGA */
     --bg-loader-screen: #0b131e;
+    --text-loader-screen: var(--blanco);
     /* WHATS NEW VERSION */
     --bg-whats-new-version: #005ab5;
-    --text-whats-new-version: #ffffff;
+    --text-whats-new-version: var(--blanco);
     /* CONTENIDO */
     --bg-base: linear-gradient(90deg, #121d2d 0%, #0b131e 100%);
     --bg-base-inverted: linear-gradient(-90deg, #121d2d 0%, #0b131e 100%);
     /* LINK */
     --link: #ffc20a;
-    --link-hover: #ffffff;
-    --bg-link-hover: rgba(255, 194, 10, 0.2);
+    --link-hover: var(--blanco);
     /* BARRA DE PROGRESO */
     --progress-bar: #ffc20a;
     /* TARJETAS */
     --bg-section-card: linear-gradient(90deg, #1a293d 0%, #121d2d 100%);
-    --text-section-card: #ffffff;
+    --text-section-card: var(--blanco);
     --bg-subsection-card: linear-gradient(-90deg, #22344d 0%, #1a293d 100%);
-    --text-subsection-card: #ffffff;
+    --text-subsection-card: var(--blanco);
     /* TITULOS */
     --text-titles: #ffc20a;
     /* BOTONES / ENLACES */
     --bg-button: #005ab5;
     --bg-button-hover: #ffc20a;
-    --text-button: #ffffff;
+    --text-button: var(--blanco);
     --text-button-hover: #0b131e;
     --border-button: #005ab5;
     --bg-aside-button-hover: #005ab5;
+    --aside-button-icon: #ffc20a;
+    --bg-scroll-button: #005ab5;
+    --bg-scroll-button-hover: #ffc20a;
     /* INPUTS */
     --bg-input: #0b131e;
-    --text-input: #ffffff;
+    --text-input: var(--blanco);
     --border-input: #005ab5;
     --border-input-focus: #ffc20a;
     /* FOOTER */
     --bg-footer: linear-gradient(90deg, #080d14 0%, #0b131e 50%, #080d14 100%);
     --text-footer: #ffc20a;
-    --text-footer-hover: #ffffff;
+    --text-footer-hover: var(--blanco);
     --text-copy: #a0aec0;
     /* TOAST / BANNER */
     --bg-toast: #005ab5;
-    --text-toast: #ffffff;
+    --text-toast: var(--blanco);
     --bg-banner: #d55e00;
     /* SELECTION */
     --bg-selection: #ffc20a;
@@ -100,10 +102,10 @@ body.colorblind-mode {
     /* SCROLLBAR */
     --scrollbar-thumb: #005ab5;
     --scrollbar-thumb-hover: #ffc20a;
-    /* WEATHER WIDGET */
-    --bg-weather-widget: rgba(26, 41, 61, 0.7);
-    --text-weather-widget: #ffffff;
-    --border-weather-widget: #005ab5;
+    /* WIDGET */
+    --bg-widget: rgba(26, 41, 61, 0.7);
+    --text-widget: var(--blanco);
+    --border-widget: #005ab5;
 }
 
 body.colorblind-mode {

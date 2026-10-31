@@ -47,7 +47,7 @@
     }
     .aside-icon-toggle {
         transform: scaleY(4);
-        color: var(--celeste5);
+        color: var(--aside-button-icon);
         font-weight: bold;
         font-size: var(--fs-xl);
         transition: var(--transition-button);
@@ -66,6 +66,15 @@
         overflow-y: auto;
         opacity: 0;
         transition: var(--transition-drawer-content);
+    }
+    .config-button {
+        width: 12rem;
+        margin: var(--space-xs) auto;
+    }
+
+    .aside-title {
+        margin-top: var(--space-md);
+        margin-bottom: var(--space-sm);
     }
     .aside-options::-webkit-scrollbar {
         width: 0.3rem;
@@ -139,4 +148,8 @@
         font-weight: bold;
         user-select: none;
     }
+}
+
+.button-reroll-fact {
+    width: 8rem;
 }

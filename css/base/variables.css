@@ -42,6 +42,7 @@
     --text-body: var(--azul1);
     /* PANTALLA DE CARGA */
     --bg-loader-screen: var(--celeste2);
+    --text-loader-screen: var(--blanco);
     /* WHATS NEW VERSION */
     --bg-whats-new-version: var(--azul4);
     --text-whats-new-version: var(--blanco);
@@ -51,7 +52,6 @@
     /* LINK */
     --link: var(--azul1);
     --link-hover: var(--celeste1);
-    --bg-link-hover: rgba(168, 228, 250, 0.4);
     /* BARRA DE PROGRESO */
     --progress-bar: var(--celeste2);
     /* TARJETAS */
@@ -63,16 +63,19 @@
     --text-titles: var(--azul1);
     /* BOTONES / ENLACES */
     --bg-button: var(--blanco);
-    --bg-button-hover: var(--lila3);
+    --bg-button-hover: var(--lila1);
     --text-button: var(--azul1);
     --text-button-hover: var(--azul1);
-    --border-button: var(--lila3);
+    --border-button: var(--lila1);
     --bg-aside-button-hover: var(--celeste7);
+    --aside-button-icon: var(--celeste5);
+    --bg-scroll-button: var(--celeste3);
+    --bg-scroll-button-hover: var(--celeste2);
     /* INPUTS */
     --bg-input: var(--blanco);
     --text-input: var(--azul1);
-    --border-input: var(--lila3);
-    --border-input-focus: var(--lila1);
+    --border-input: var(--lila1);
+    --border-input-focus: var(--celeste2);
     /* FOOOTER */
     --bg-footer: linear-gradient(90deg, var(--celeste3) 0%, var(--celeste4) 100%);
     --text-footer: var(--azul1);
@@ -88,18 +91,19 @@
     /* SCROLLBAR */
     --scrollbar-thumb: var(--celeste3);
     --scrollbar-thumb-hover: var(--celeste2);
-    /* WEATHER WIDGET */
-    --bg-weather-widget: rgba(129, 129, 129, 0.15);
-    --text-weather-widget: var(--azul1);
-    --border-weather-widget: rgba(129, 129, 129, 0.2);
+    /* WIDGET */
+    --bg-widget: rgba(129, 129, 129, 0.15);
+    --text-widget: var(--azul1);
+    --border-widget: rgba(129, 129, 129, 0.2);
 
     /* ==========================================================================
     2. TIPOGRAFÍAS Y ESCALA (FONT-SIZE)
     ========================================================================== */
-    --font-titles: "Nunito Sans", sans-serif;
-    --font-main: "Nunito", serif;
+    --font-titles: "Nunito", serif;
+    --font-main: "Nunito Sans", sans-serif;
 
     /* Escala tipográfica */
+    --fs-2xs: 0.7rem;
     --fs-xs: 0.8rem;
     --fs-sm: 0.9rem;
     --fs-base: 1rem;
@@ -167,7 +171,7 @@
     --transition-ultra-fast: color 0.1s ease, transform 0.1s ease, width 0.1s ease-out;
     --transition-fast: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
     --transition-smooth: transform 0.2s ease, box-shadow 0.2s ease;
-    --transition-button: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+    --transition-button: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, translate 0.4s ease;
     --transition-fade:
         opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, height 0.3s ease, background-color 0.3s ease,
         box-shadow 0.3s ease, backdrop-filder 0.3s ease;

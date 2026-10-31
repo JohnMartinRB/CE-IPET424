@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- ETIQUETAS META -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta
+            name="description"
+            content="Sitio oficial del Centro de Estudiantes IPET 424. Novedades, proyectos y contacto."
+        />
+        <meta name="theme-color" id="theme-color" content="#0088FF" />
+        <!-- TITULO DE LA PESTAÑA Y FAVICON -->
+        <title>Nuestra Escuela | Centro de Estudiantes IPET N° 424</title>
+        <link rel="icon" id="favicon" type="image/png" href="assets/img/favicons/light.png" sizes="any" />
+        <!-- CSS Y JAVASCRIPT -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <script type="module" src="js/main.js"></script>
+    </head>
+
+    <body>
+        <!-- HEADER DE TITULO -->
+        <div id="header-container" class="header-container"></div>
+        <!-- BARRA DE NAVEGACIÓN -->
+        <nav id="nav-card" class="nav-card">
+            <button id="nav-button-menu" class="button nav-button-menu" aria-label="Abrir menú">☰</button>
+            <ul id="nav-menu" class="nav-menu">
+                <li>
+                    <a class="nav-menu-link" href="#institucional">El IPET N° 424</a>
+                </li>
+                <li>
+                    <a class="nav-menu-link" href="#portal-oficial">Sitio Oficial</a>
+                </li>
+                <li>
+                    <a class="nav-menu-link" href="#especialidades">Especialidades</a>
+                </li>
+                <li>
+                    <a class="nav-menu-link" href="#ubicacion">Ubicación</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- PANEL LATERAL DE CONFIGURACIÓN -->
+        <div id="aside-config-container" class="aside-config-container"></div>
+        <!-- PANEL LATERAL DE NOVEDADES -->
+        <div id="aside-news-container" class="aside-news-container"></div>
+        <!-- CONTENEDOR PRINCIPAL -->
+        <div id="content-card" class="content-card">
+            <main>
+                <!-- SECCIÓN: INICIO / INFORMATIVA -->
+                <section id="inicio" class="section-card hero-section">
+                    <h2>Nuestra Institución</h2>
+                    <p class="text paragraph">
+                        Conocé más sobre el IPET N° 424, su historia técnica, orientación y el acceso directo al portal
+                        oficial del colegio.
+                    </p>
+                </section>
+                <!-- SECCIÓN 1: INFORMACIÓN GENERAL DE LA ESCUELA -->
+                <section id="institucional" class="section-card institucional-section">
+                    <h2>Sobre el IPET N° 424</h2>
+                    <p class="text paragraph">
+                        Nuestro establecimiento educativo forma jóvenes profesionales con fuertes valores técnicos,
+                        humanos y comunitarios en Villa Dolores, Córdoba. Funciona como un espacio de crecimiento,
+                        capacitación en talleres y desarrollo tecnológico constante.
+                    </p>
+                    <div id="grid-tarjetas" class="grid-tarjetas">
+                        <article class="subsection-card download-card">
+                            <h3>Educación Técnica</h3>
+                            <p class="text paragraph">
+                                Articulación entre saberes teóricos y práctica intensiva en talleres especializados.
+                            </p>
+                        </article>
+                        <article class="subsection-card download-card">
+                            <h3>Comunidad Activa</h3>
+                            <p class="text paragraph">
+                                Un espacio donde directivos, docentes, familias y el centro de estudiantes tiran para el
+                                mismo lado.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+                <!-- SECCIÓN 2: IFRAME DEL SITIO OFICIAL DE LA ESCUELA -->
+                <section id="portal-oficial" class="section-card portal-section">
+                    <h2>Portal Oficial de la Escuela</h2>
+                    <p class="text paragraph">
+                        Visualizá en tiempo real la página web institucional del IPET N° 424 directamente desde este
+                        visor integrado.
+                    </p>
+                    <div
+                        id="iframe-container"
+                        class="iframe-container"
+                        style="
+                            border-radius: 12px;
+                            overflow: hidden;
+                            border: 2px solid var(--border-color, #ccc);
+                            margin-top: 15px;
+                        "
+                    >
+                        <!-- Reemplazá el src con el link oficial de la web de la escuela si lo tienen, o de su red principal -->
+                        <iframe
+                            src="https://ipet424.edu.ar"
+                            id="school-website-frame"
+                            class="school-website-frame"
+                            width="100%"
+                            height="550px"
+                            frameborder="0"
+                            loading="lazy"
+                            sandbox="allow-scripts allow-same-origin allow-popups"
+                            title="Sitio Oficial IPET 424"
+                        >
+                        </iframe>
+                    </div>
+                    <div style="margin-top: 12px; text-align: right">
+                        <a href="https://ipet424.edu.ar" target="_blank" rel="noopener" class="button download-button"
+                            >Abrir en pestaña nueva ↗</a
+                        >
+                    </div>
+                </section>
+                <!-- SECCIÓN 3: ESPECIALIDADES TÉCNICAS -->
+                <section id="especialidades" class="section-card orientaciones-section">
+                    <h2>Especialidades de la Institución</h2>
+                    <p class="text paragraph">
+                        El colegio ofrece tecnicaturas preparadas para el mundo laboral actual y estudios superiores:
+                    </p>
+                    <div class="grid-tarjetas">
+                        <article class="subsection-card download-card">
+                            <h3>💻 Informática</h3>
+                            <p class="text paragraph">
+                                Desarrollo de software, redes, bases de datos y soporte técnico especializado.
+                            </p>
+                        </article>
+                        <article class="subsection-card download-card">
+                            <h3>⚙️ Electromecánica</h3>
+                            <p class="text paragraph">
+                                Sistemas mecánicos, electricidad industrial, neumática y automatización.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+                <!-- SECCIÓN 4: UBICACIÓN Y CONTACTO ESCOLAR -->
+                <section id="ubicacion" class="section-card ubicacion-section">
+                    <h2>Ubicación del Establecimiento</h2>
+                    <p class="text paragraph">
+                        Nos encontramos en <strong>20 de Junio 201, Bº Porvenir</strong>, Villa Dolores, Provincia de
+                        Córdoba.
+                    </p>
+                    <div id="school-map-container" class="subsection-card school-map-container">
+                        <h3>Dirección y Accesos</h3>
+                        <a
+                            href="https://maps.app.goo.gl/sc4sqfdvuMJjbHG78"
+                            target="_blank"
+                            rel="noopener"
+                            class="button download-button"
+                            >Abrir ubicación en Google Maps 📍</a
+                        >
+                    </div>
+                </section>
+                <!-- SECCIÓN: SUB SITIOS -->
+                <section id="sub-sitios" class="section-card">
+                    <h2>¿Buscas algo específico?</h2>
+                    <p class="text">Visitá nuestros diferentes sitios de consultas</p>
+                    <!-- Botones de enlaces a sub-páginas -->
+                    <ul id="subpages" class="subpages">
+                        <li><a class="subpages-link button" href="index.html">Inicio</a></li>
+                        <li><a class="subpages-link button" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="subpages-link button" href="noticias.html">Noticias</a></li>
+                        <li><a class="subpages-link button" href="proyectos.html">Proyectos</a></li>
+                        <li><a class="subpages-link button" href="herramientas.html">Herramientas</a></li>
+                        <li><a class="subpages-link button" href="tramites.html">Trámites</a></li>
+                        <li><a class="subpages-link button" href="recursos.html">Recursos</a></li>
+                        <li><a class="subpages-link button button-active" href="#">Escuela</a></li>
+                        <li><a class="subpages-link button" href="contacto.html">Contacto</a></li>
+                        <li><a class="subpages-link button" href="creditos.html">Créditos</a></li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <!-- PIE DE PÁGINA -->
+        <div id="footer-container" class="footer-container"></div>
+        <!-- BOTÓN DE VOLVER ARRIBA -->
+        <button class="button-round button-scroll-top" id="button-scroll-top" aria-label="Volver arriba">↑</button>
+        <!-- VENTANA MODAL DE ACEPTAR TÉRMINOS -->
+        <div id="modal-terms-container" class="modal-terms-container"></div>
+        <!-- VENTANA MODAL "EN DESARROLLO" -->
+        <div id="modal-in-dev-container" class="modal-in-dev-container"></div>
+        <!-- VENTANA MODAL DE NOVEDADES -->
+        <div id="modal-whats-new-container" class="modal-whats-new-container"></div>
+    </body>
+</html>

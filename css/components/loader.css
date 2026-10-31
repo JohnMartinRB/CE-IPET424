@@ -21,14 +21,14 @@
     opacity: 0;
 }
 .loader-content {
-    color: var(--blanco);
+    color: var(--text-loader-screen);
     text-align: center;
 }
 .loader-content h2 {
     margin-top: var(--space-base);
     margin-bottom: var(--space-xs);
     font-size: var(--fs-2xl);
-    font-family: var(--font-main);
+    font-family: var(--font-titles);
 }
 .loader-content p {
     font-size: var(--fs-xl);
