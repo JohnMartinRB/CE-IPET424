@@ -12,11 +12,11 @@
         display: flex;
         z-index: 100;
         position: fixed;
-        top: 59vh;
+        top: 58vh;
         align-items: center;
         width: 20px;
-        height: 80%;
-        max-height: 80vh;
+        height: 81%;
+        max-height: 82vh;
         padding: var(--space-base) var(--space-md);
         overflow: hidden;
         transform: translateY(-50%);

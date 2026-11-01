@@ -2,11 +2,9 @@
     BARRA DE NAVEGACIÓN
 ========================================== */
 .nav-card {
-    /* Menor que el header (que tiene z-index: 200) para que pase por detrás */
     z-index: 150;
     position: sticky;
-    /* Al ser menor que la altura del header, frena antes y se oculta parcialmente arriba */
-    top: 102px;
+    top: 95px;
     width: 95%;
     max-width: 95%;
     margin: var(--space-xs) auto;
@@ -20,20 +18,20 @@ a.nav-menu-link:visited {
     transition: var(--transition-fast);
 }
 a.nav-menu-link:hover {
+    transform: scale(0.98);
     color: var(--link-hover) !important;
 }
 a.nav-menu-link:active {
-    transform: scale(0.95);
+    transform: scale(0.98);
     color: var(--link-hover) !important;
 }
 
 @media (min-width: 1024px) {
     .nav-card {
         display: flex;
-
         justify-content: center;
         width: 100%;
-        max-width: 61%;
+        max-width: 61.5%;
     }
     .nav-menu {
         display: flex;

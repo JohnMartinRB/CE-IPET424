@@ -13,7 +13,7 @@
     max-width: 95%;
     height: auto;
     margin: var(--space-xs) auto;
-    padding: var(--space-sm) var(--space-md);
+    padding: var(--space-xs) var(--space-base);
     overflow: visible; /* Importante para que los desplegables no se corten */
     border-radius: var(--radius-2xl);
     background: var(--bg-base);
@@ -32,7 +32,7 @@
 }
 .header-logo {
     width: auto;
-    height: 3.5rem;
+    height: 3.2rem;
     object-fit: contain;
 }
 .header-escudo-ipet {
@@ -162,8 +162,8 @@
     /* Cuadrícula 2x2 para los Iconos (tamaño ajustado a la altura del logo) */
     .header-icons-grid {
         display: grid;
-        grid-template-rows: repeat(2, 2.45rem) !important; /* Dos filas fijas */
-        grid-template-columns: repeat(2, 2.45rem) !important; /* Dos columnas fijas */
+        grid-template-rows: repeat(2, 2.2rem) !important; /* Dos filas fijas */
+        grid-template-columns: repeat(2, 2.2rem) !important; /* Dos columnas fijas */
         align-items: center;
         justify-content: center;
     }
