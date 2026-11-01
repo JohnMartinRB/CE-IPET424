@@ -117,14 +117,14 @@
         align-items: center;
         border: none;
         background: transparent;
-        color: var(--text-body);
+        color: var(--link);
         font-weight: bold;
         font-size: var(--fs-base);
         cursor: var(--pointer);
         transition: color var(--transition-fast);
     }
     .header-nav-button:hover {
-        color: var(--celeste1);
+        color: var(--link-hover);
     }
     .arrow {
         font-size: var(--fs-sm);
