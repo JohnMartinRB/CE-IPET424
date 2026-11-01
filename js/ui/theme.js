@@ -4,47 +4,47 @@
 const THEMES = {
     light: {
         class: "",
-        favicon: "assets/img/favicons/light.png",
+        favicon: "/assets/img/favicons/light.png",
         buttonText: "Modo Oscuro",
     },
     dark: {
         class: "dark-mode",
-        favicon: "assets/img/favicons/dark.png",
+        favicon: "/assets/img/favicons/dark.png",
         buttonText: "Modo Claro",
     },
     "high-contrast": {
         class: "high-contrast-mode",
-        favicon: "assets/img/favicons/contrast.png",
+        favicon: "/assets/img/favicons/dark.png",
         buttonText: "Modo Normal",
     },
     code: {
         class: "code-mode",
-        favicon: "assets/img/favicons/dark.png",
+        favicon: "/assets/img/favicons/dark.png",
         buttonText: "Modo Código",
     },
     colorblind: {
         class: "colorblind-mode",
-        favicon: "assets/img/favicons/dark.png",
+        favicon: "/assets/img/favicons/light.png",
         buttonText: "Modo Daltónico",
     },
     mistery: {
         class: "mistery-mode",
-        favicon: "assets/img/favicons/mistery.png",
-        buttonText: "Modo mistery",
+        favicon: "/assets/img/favicons/dark.png",
+        buttonText: "Modo Misterio",
     },
     holidays: {
         class: "holidays-mode",
-        favicon: "assets/img/favicons/holidays.png",
+        favicon: "/assets/img/favicons/light.png",
         buttonText: "Modo Navidad",
     },
     summer: {
         class: "summer-mode",
-        favicon: "assets/img/favicons/summer.png",
+        favicon: "/assets/img/favicons/light.png",
         buttonText: "Modo Verano",
     },
     pink: {
         class: "pink-mode",
-        favicon: "assets/img/favicons/pink.png",
+        favicon: "/assets/img/favicons/light.png",
         buttonText: "Modo Rosa",
     },
 };
