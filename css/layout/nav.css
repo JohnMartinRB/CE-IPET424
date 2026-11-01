@@ -6,13 +6,12 @@
     z-index: 150;
     position: sticky;
     /* Al ser menor que la altura del header, frena antes y se oculta parcialmente arriba */
-    top: 110px;
+    top: 102px;
     width: 95%;
     max-width: 95%;
     margin: var(--space-xs) auto;
     border-radius: var(--radius-lg);
     background: var(--bg-base-inverted);
-    box-shadow: var(--shadow-section-card-hover);
 }
 a.nav-menu-link,
 a.nav-menu-link:visited {

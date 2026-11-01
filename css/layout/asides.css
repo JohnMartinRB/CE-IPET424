@@ -71,11 +71,11 @@
         width: 12rem;
         margin: var(--space-xs) auto;
     }
-
-    .aside-title {
-        margin-top: var(--space-md);
-        margin-bottom: var(--space-sm);
+    .config-themes-button {
+        width: 100%;
+        margin: var(--space-xs) auto;
     }
+
     .aside-options::-webkit-scrollbar {
         width: 0.3rem;
     }

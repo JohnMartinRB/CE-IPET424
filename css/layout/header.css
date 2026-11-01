@@ -13,7 +13,7 @@
     max-width: 95%;
     height: auto;
     margin: var(--space-xs) auto;
-    padding: var(--space-base) var(--space-lg);
+    padding: var(--space-sm) var(--space-md);
     overflow: visible; /* Importante para que los desplegables no se corten */
     border-radius: var(--radius-2xl);
     background: var(--bg-base);
@@ -117,6 +117,7 @@
         align-items: center;
         border: none;
         background: transparent;
+        color: var(--text-body);
         font-weight: bold;
         font-size: var(--fs-base);
         cursor: var(--pointer);
@@ -180,11 +181,91 @@
     }
     .header-icon-button:hover {
         transform: scale(1.08);
-        background: var(--celeste6);
+        background: var(--celeste5);
     }
     .header-progress-bar-container {
         left: 19.2%;
         width: 62.3%;
         margin: 0;
     }
+}
+
+/* ==========================================
+    MODAL / POPUPS DEL HEADER
+========================================== */
+.header-modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition-fade);
+}
+
+.header-modal.is-active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.header-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.header-modal-card {
+    z-index: 1001;
+    position: relative;
+    width: 100%;
+    max-width: 35%;
+    padding: var(--space-lg);
+    transform: translateY(-10px) scale(0.95);
+    border-radius: var(--radius-lg);
+    background: var(--bg-base);
+    box-shadow: var(--shadow-modal);
+    color: var(--text-body);
+    transition: transform var(--transition-fast);
+}
+
+.header-modal.is-active .header-modal-card {
+    transform: translateY(0) scale(1);
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    border: none;
+    background: transparent;
+    color: var(--text-body);
+    font-size: var(--fs-xl);
+    cursor: var(--pointer);
+}
+
+.modal-title {
+    margin-top: 0;
+    margin-bottom: var(--space-sm);
+    font-size: var(--fs-md);
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    max-height: 70vh;
+    gap: var(--space-xs);
+}
+
+.content-themes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
 }

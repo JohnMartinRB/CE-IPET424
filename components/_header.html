@@ -58,16 +58,16 @@
         </nav>
         <!-- Cuadrícula 2x2 de iconos (Config, Accesibilidad, Temas, Opciones) -->
         <div class="header-icons-grid" aria-label="Controles rápidos">
-            <button class="header-icon-button" id="button-config" title="Configuración">
+            <button class="header-icon-button" id="header-button-settings" title="Configuración">
                 <img src="assets/img/icons/header/settings.svg" />
             </button>
-            <button class="header-icon-button" id="button-accessibility" title="Accesibilidad">
+            <button class="header-icon-button" id="header-button-accessibility" title="Accesibilidad">
                 <img src="assets/img/icons/header/accessibility.svg" />
             </button>
-            <button class="header-icon-button" id="button-themes" title="Temas">
+            <button class="header-icon-button" id="header-button-themes" title="Temas">
                 <img src="assets/img/icons/header/themes.svg" />
             </button>
-            <button class="header-icon-button" id="button-options" title="Opciones">
+            <button class="header-icon-button" id="header-button-share" title="Compartir">
                 <img src="assets/img/icons/header/share.svg" />
             </button>
         </div>
@@ -76,3 +76,94 @@
         <div id="header-progress-bar" class="header-progress-bar"></div>
     </div>
 </header>
+
+<!-- Modal global del header -->
+<div id="header-modal" class="header-modal" aria-hidden="true">
+    <div class="header-modal-overlay" id="modal-overlay"></div>
+    <div class="header-modal-card">
+        <button id="modal-close-button" class="modal-close-button" aria-label="Cerrar">&times;</button>
+        <h2 id="modal-title" class="modal-title"></h2>
+        <div id="modal-body" class="modal-body"></div>
+    </div>
+</div>
+
+<!-- Contenedores con los elementos originales (conservan sus IDs y clases exactas) -->
+<div id="content-themes" class="modal-source-content" style="display: none">
+    <div class="content-themes">
+        <div class="content-themes-column">
+            <h3>Temas</h3>
+            <button id="button-theme" class="button config-themes-button button-theme" data-set-theme="dark">
+                Modo oscuro
+            </button>
+            <button
+                id="button-high-contrast"
+                class="button config-themes-button button-high-contrast"
+                data-set-theme="high-contrast"
+            >
+                Alto contraste
+            </button>
+            <button id="button-code" class="button config-themes-button button-code" data-set-theme="code">
+                Modo código
+            </button>
+            <button
+                id="button-grayscale"
+                class="button config-themes-button button-grayscale"
+                data-set-theme="grayscale"
+            >
+                Escala de grises
+            </button>
+            <button
+                id="button-colorblind"
+                class="button config-themes-button button-colorblind"
+                data-set-theme="colorblind"
+            >
+                Modo daltónico
+            </button>
+        </div>
+        <div class="content-themes-column">
+            <h3>Estacionales</h3>
+            <button id="button-mistery" class="button config-themes-button button-mistery" data-set-theme="mistery">
+                Modo Misterio
+            </button>
+            <button id="button-holidays" class="button config-themes-button button-holidays" data-set-theme="holidays">
+                Modo Festividades
+            </button>
+            <button id="button-summer" class="button config-themes-button button-summer" data-set-theme="summer">
+                Modo Verano
+            </button>
+            <button id="button-pink" class="button config-themes-button button-pink" data-set-theme="pink">
+                Modo Rosa
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="content-accessibility" class="modal-source-content" style="display: none">
+    <button id="button-dyslexic" class="button config-button button-dyslexic">Modo dislexia: sí</button>
+    <div class="font-size-control-container">
+        <h4 class="font-size-label">Tamaño de texto</h4>
+        <div class="font-size-buttons-group">
+            <button id="button-font-decrease" class="button button-small" aria-label="Achicar tamaño de texto">
+                A-
+            </button>
+            <span id="font-size-indicator" class="font-size-value">100%</span>
+            <button id="button-font-increase" class="button button-small" aria-label="Agrandar tamaño de texto">
+                A+
+            </button>
+            <button id="button-font-reset" class="button button-small" aria-label="Restablecer tamaño de texto">
+                ↻
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="content-settings" class="modal-source-content" style="display: none">
+    <button id="button-sound" class="button config-button button-sound">Sonido: sí</button>
+    <button id="button-animations" class="button config-button button-animations">Animaciones: sí</button>
+    <button id="button-rest" class="button config-button button-rest" data-set-theme="rest">Modo descanso</button>
+</div>
+
+<div id="content-share" class="modal-source-content" style="display: none">
+    <button id="button-copy-link" class="button config-button button-copy-link">Copiar enlace web</button>
+    <button id="button-share" class="button config-button button-share">Compartir sitio</button>
+</div>

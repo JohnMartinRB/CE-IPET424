@@ -28,7 +28,7 @@
     max-width: 45%;
     padding: var(--space-lg);
     border-radius: var(--radius-lg);
-    background: var(--bg-section-card);
+    background: var(--bg-base);
     box-shadow: var(--shadow-modal);
     color: var(--text-body);
 }

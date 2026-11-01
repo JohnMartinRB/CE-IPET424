@@ -38,7 +38,7 @@
     --naranja: #912c28;
 
     /* BODY */
-    --bg-body: var(--celeste6);
+    --bg-body: var(--celeste2);
     --text-body: var(--azul1);
     /* PANTALLA DE CARGA */
     --bg-loader-screen: var(--celeste2);
@@ -47,17 +47,17 @@
     --bg-whats-new-version: var(--azul4);
     --text-whats-new-version: var(--blanco);
     /* CONTENIDO */
-    --bg-base: linear-gradient(90deg, var(--blanco) 0%, var(--celeste7) 100%);
-    --bg-base-inverted: linear-gradient(-90deg, var(--blanco) 0%, var(--celeste7) 100%);
+    --bg-base: linear-gradient(90deg, var(--blanco) 0%, var(--celeste6) 100%);
+    --bg-base-inverted: linear-gradient(-90deg, var(--blanco) 0%, var(--celeste6) 100%);
     /* LINK */
     --link: var(--azul1);
     --link-hover: var(--celeste1);
     /* BARRA DE PROGRESO */
     --progress-bar: var(--celeste2);
     /* TARJETAS */
-    --bg-section-card: linear-gradient(90deg, var(--celeste7) 0%, var(--celeste6) 100%);
+    --bg-section-card: linear-gradient(90deg, var(--celeste6) 0%, var(--celeste5) 100%);
     --text-section-card: var(--azul2);
-    --bg-subsection-card: linear-gradient(-90deg, var(--celeste7) 0%, var(--celeste5) 100%);
+    --bg-subsection-card: linear-gradient(-90deg, var(--celeste6) 0%, var(--celeste4) 100%);
     --text-subsection-card: var(--azul1);
     /* TITULOS */
     --text-titles: var(--azul1);
@@ -67,17 +67,17 @@
     --text-button: var(--azul1);
     --text-button-hover: var(--azul1);
     --border-button: var(--lila1);
-    --bg-aside-button-hover: var(--celeste7);
+    --bg-aside-button-hover: var(--celeste6);
     --aside-button-icon: var(--celeste5);
-    --bg-scroll-button: var(--celeste3);
-    --bg-scroll-button-hover: var(--celeste2);
+    --bg-scroll-button: var(--celeste5);
+    --bg-scroll-button-hover: var(--celeste3);
     /* INPUTS */
     --bg-input: var(--blanco);
     --text-input: var(--azul1);
     --border-input: var(--lila1);
     --border-input-focus: var(--celeste2);
     /* FOOOTER */
-    --bg-footer: linear-gradient(90deg, var(--celeste3) 0%, var(--celeste4) 100%);
+    --bg-footer: linear-gradient(90deg, var(--celeste3) 0%, var(--celeste5) 100%);
     --text-footer: var(--azul1);
     --text-footer-hover: var(--celeste1);
     --text-copy: var(--gris1);
@@ -89,8 +89,8 @@
     --bg-selection: var(--celeste2);
     --text-selection: var(--blanco);
     /* SCROLLBAR */
-    --scrollbar-thumb: var(--celeste3);
-    --scrollbar-thumb-hover: var(--celeste2);
+    --scrollbar-thumb: var(--celeste5);
+    --scrollbar-thumb-hover: var(--celeste3);
     /* WIDGET */
     --bg-widget: rgba(129, 129, 129, 0.15);
     --text-widget: var(--azul1);
@@ -181,8 +181,12 @@
 
     /* ==========================================================================
     7. CURSORES
-    ========================================================================== */
+    ========================================================================== 
     --default: url("../../assets/img/cursors/default.svg"), auto;
     --pointer: url("../../assets/img/cursors/pointer.svg"), pointer;
-    --text: url("../../assets/img/cursors/text.svg"), text;
+    --text: url("../../assets/img/cursors/text.svg"), text;*/
+
+    --default: url("../../assets/img/cursors/default.cur"), auto;
+    --pointer: url("../../assets/img/cursors/pointer.cur"), pointer;
+    --text: url("../../assets/img/cursors/text.cur"), text;
 }
