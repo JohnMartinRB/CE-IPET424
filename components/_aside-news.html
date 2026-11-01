@@ -2,66 +2,66 @@
     <button
         id="aside-news-button-toggle"
         class="aside-button-toggle aside-news-button-toggle"
-        aria-label="Abrir panel de novedades"
+        aria-label="Abrir panel de opciones"
     >
-        <span id="aside-news-icon-toggle" class="aside-icon-toggle">◀</span>
+        <span id="aside-news-icon-toggle" class="aside-icon-toggle">▶</span>
     </button>
     <div id="aside-news-options" class="aside-options">
-        <!-- WIDGET DE PRÓXIMOS FERIADOS -->
-        <div id="holidays-widget" class="widget holidays-widget">
-            <div id="holidays-header" class="widget-header">
-                <img src="assets/img/icons/widget/holiday.svg" class="widget-icon" loading="lazy" />
-                <h3 class="widget-title">Próximo Feriado</h3>
-            </div>
-            <div id="holidays-content" class="holidays-content">
-                <p id="holidays-text">Calculando próximo feriado...</p>
-            </div>
-        </div>
-        <!-- WIDGET DE FRASE DIARIA -->
-        <div id="quote-widget" class="quote-widget widget">
-            <div id="quote-header" class="widget-header">
-                <img src="assets/img/icons/widget/quote.svg" class="widget-icon" loading="lazy" />
-                <h3 class="widget-title">Frase del Día</h3>
-            </div>
-            <div class="widget-content">
-                <p id="quote-text" class="widget-text">Cargando frase...</p>
-                <span id="quote-author" class="quote-author"></span>
-            </div>
-        </div>
-        <!-- WIDGET DE DATOS CURIOSOS -->
-        <div id="facts-widget" class="widget facts-widget">
-            <div id="facts-header" class="widget-header">
-                <img src="assets/img/icons/widget/fact.svg" class="widget-icon" loading="lazy" />
-                <h3 class="widget-title">¿Sabías que...</h3>
-            </div>
-            <div class="facts-content">
-                <p id="fact-text">Cargando dato curioso...</p>
-            </div>
-            <button
-                id="button-reroll-fact"
-                class="button config-button button-reroll-fact"
-                aria-label="Mostrar otro dato"
-            >
-                Otro dato ↻
-            </button>
-        </div>
-        <!-- WIDGET DE TIEMPO ATMOSFÉRICO -->
-        <div id="weather-widget" class="widget weather-widget">
-            <div id="weather-header" class="widget-header">
-                <img src="assets/img/icons/widget/weather.svg" class="widget-icon" loading="lazy" />
-                <h3 class="widget-title">El Tiempo y Hora</h3>
-            </div>
-            <div class="weather-content">
-                <div id="weather-datetime" class="weather-datetime">
-                    <div id="weather-time" class="weather-time">--:--:--</div>
-                    <div id="weather-date" class="weather-date">Cargando fecha...</div>
-                </div>
-                <div class="weather-main-info">
-                    <span class="weather-icon" id="weather-icon">☀️</span>
-                    <span class="weather-temp" id="weather-temp">--°C</span>
-                    <span class="weather-location">Villa Dolores</span>
-                </div>
+        <!-- TEMAS (Todos los modificadores de paletas) -->
+        <h3 class="aside-title">Temas</h3>
+        <button id="button-theme" class="button config-button button-theme" data-set-theme="dark">Modo oscuro</button>
+        <button
+            id="button-high-contrast"
+            class="button config-button button-high-contrast"
+            data-set-theme="high-contrast"
+        >
+            Alto contraste
+        </button>
+        <button id="button-code" class="button config-button button-code" data-set-theme="code">Modo código</button>
+        <button id="button-grayscale" class="button config-button button-grayscale" data-set-theme="grayscale">
+            Escala de grises
+        </button>
+        <button id="button-colorblind" class="button config-button button-colorblind" data-set-theme="colorblind">
+            Modo daltónico
+        </button>
+        <!-- TEMAS ESTACIONALES -->
+        <h3>Temas Estacionales</h3>
+        <button id="button-mistery" class="button config-button button-mistery" data-set-theme="mistery">
+            Modo Misterio
+        </button>
+        <button id="button-holidays" class="button config-button button-holidays" data-set-theme="holidays">
+            Modo Festividades
+        </button>
+        <button id="button-summer" class="button config-button button-summer" data-set-theme="summer">
+            Modo Verano
+        </button>
+        <button id="button-pink" class="button config-button button-pink" data-set-theme="pink">Modo Rosa</button>
+        <!-- ACCESIBILIDAD (Herramientas directas de lectura y tipografía) -->
+        <h3 class="aside-title">Accesibilidad</h3>
+        <button id="button-dyslexic" class="button config-button button-dyslexic">Modo dislexia: sí</button>
+        <div class="font-size-control-container">
+            <h4 class="font-size-label">Tamaño de texto</h4>
+            <div class="font-size-buttons-group">
+                <button id="button-font-decrease" class="button button-small" aria-label="Achicar tamaño de texto">
+                    A-
+                </button>
+                <span id="font-size-indicator" class="font-size-value">100%</span>
+                <button id="button-font-increase" class="button button-small" aria-label="Agrandar tamaño de texto">
+                    A+
+                </button>
+                <button id="button-font-reset" class="button button-small" aria-label="Restablecer tamaño de texto">
+                    ↻
+                </button>
             </div>
         </div>
+        <!-- OPCIONES / PREFERENCIAS (Comportamiento de la interfaz) -->
+        <h3 class="aside-title">Opciones</h3>
+        <button id="button-sound" class="button config-button button-sound">Sonido: sí</button>
+        <button id="button-animations" class="button config-button button-animations">Animaciones: sí</button>
+        <button id="button-rest" class="button config-button button-rest" data-set-theme="rest">Modo descanso</button>
+        <!-- OTROS (Utilidades varias) -->
+        <h3 class="aside-title">Otros</h3>
+        <button id="button-copy-link" class="button config-button button-copy-link">Copiar enlace web</button>
+        <button id="button-share" class="button config-button button-share">Compartir sitio</button>
     </div>
 </aside>

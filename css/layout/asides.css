@@ -101,24 +101,24 @@
     .aside-drawer.open .aside-icon-toggle {
         transition: var(--transition-drawer-content);
     }
-    .aside-config.open .aside-icon-toggle {
-        transform: rotate(180deg) scaleY(4);
-    }
     .aside-news.open .aside-icon-toggle {
         transform: rotate(180deg) scaleY(4);
     }
-    .aside-config {
+    .aside-widgets.open .aside-icon-toggle {
+        transform: rotate(180deg) scaleY(4);
+    }
+    .aside-news {
         left: 1%;
         background: var(--bg-base);
     }
-    .aside-config-button-toggle {
+    .aside-news-button-toggle {
         right: 1%;
     }
-    .aside-news {
+    .aside-widgets {
         right: 1%;
         background: var(--bg-base-inverted);
     }
-    .aside-news-button-toggle {
+    .aside-widgets-button-toggle {
         left: 1%;
     }
 

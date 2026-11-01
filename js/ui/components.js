@@ -77,8 +77,8 @@ export async function initComponents() {
     // Esperamos a que todos los componentes se terminen de inyectar
     await Promise.all([
         loadComponent("header-container", "components/_header.html"),
-        loadComponent("aside-config-container", "components/_aside-config.html"),
         loadComponent("aside-news-container", "components/_aside-news.html"),
+        loadComponent("aside-widgets-container", "components/_aside-widgets.html"),
         loadComponent("footer-container", "components/_footer.html"),
         loadComponent("modal-terms-container", "components/_modal-terms.html"),
         loadComponent("modal-in-dev-container", "components/_modal-in-dev.html"),
