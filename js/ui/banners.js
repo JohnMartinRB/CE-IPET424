@@ -39,7 +39,6 @@ export function initBanners() {
     window.addEventListener("offline", () => {
         const banner = offlineBanner();
         banner.classList.add("visible");
-        // Reprodúcí el sonido offline cuando se va la conexión
         playSound("offline.mp3", 0.3);
     });
     window.addEventListener("online", () => {

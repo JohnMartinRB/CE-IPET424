@@ -8,7 +8,6 @@ export function initHeader() {
     const modalBody = document.getElementById("modal-body");
     const closebutton = document.getElementById("modal-close-button");
     const overlay = document.getElementById("modal-overlay");
-    // Mapeo de cada botón del header con su título y el ID del contenido HTML
     const modalMap = {
         "header-button-themes": { title: "Temas y Colores", contentId: "content-themes" },
         "header-button-accessibility": { title: "Accesibilidad", contentId: "content-accessibility" },
@@ -25,7 +24,6 @@ export function initHeader() {
         activeSourceContainer = document.getElementById(config.contentId);
         if (activeSourceContainer) {
             activeContentNode = activeSourceContainer.firstElementChild;
-            // Movemos los elementos hijos al body del modal
             while (activeSourceContainer.firstChild) {
                 modalBody.appendChild(activeSourceContainer.firstChild);
             }
@@ -34,7 +32,6 @@ export function initHeader() {
         modal.setAttribute("aria-hidden", "false");
     };
     const closeModal = () => {
-        // Devolvemos los elementos a su contenedor oculto original al cerrar
         if (activeSourceContainer && modalBody.hasChildNodes()) {
             while (modalBody.firstChild) {
                 activeSourceContainer.appendChild(modalBody.firstChild);
@@ -43,7 +40,6 @@ export function initHeader() {
         modal.classList.remove("is-active");
         modal.setAttribute("aria-hidden", "true");
     };
-    // Conectar eventos a los 4 botones del header
     Object.keys(modalMap).forEach((id) => {
         const button = document.getElementById(id);
         if (button) {

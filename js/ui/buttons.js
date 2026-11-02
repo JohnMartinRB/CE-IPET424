@@ -73,7 +73,8 @@ export function initButtons() {
         const shareData = {
             title: "Centro de Estudiantes IPET N° 424",
             text: "¡Entrá a la web oficial del Centro de Estudiantes del IPET 424 para ver las novedades, proyectos y trámites!",
-            url: window.location.href, // O podés poner tu URL fija: 'https://johnmartinrb.github.io/CE-IPET-424/'
+            url: window.location.href,
+            s,
         };
         // Si el navegador soporta el menú nativo de compartir
         if (navigator.share) {
@@ -95,7 +96,6 @@ export function initButtons() {
 }
 
 export async function getVillaDoloresWeather() {
-    // Widget de Clima Local (Villa Dolores)
     const lat = -31.9458;
     const lon = -65.1883;
     const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`;
