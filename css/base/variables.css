@@ -15,8 +15,6 @@
     --oscuro: #1a1a1a;
     --gris1: #444;
     --gris2: #888;
-    --negro: #000;
-    --amarillo: #ffff00;
     /* azules */
     --azul1: #000423;
     --azul2: #000745;
@@ -34,7 +32,6 @@
     --lila1: #b078f0;
     --lila2: #cb93eb;
     --lila3: #c5a1ff;
-    --cian: #00ffff;
     --naranja: #912c28;
 
     /* BODY */
@@ -67,6 +64,7 @@
     --text-button: var(--azul1);
     --text-button-hover: var(--azul1);
     --border-button: var(--lila1);
+    --bg-header-icon-hover: var(--celeste5);
     --bg-aside-button-hover: var(--celeste6);
     --aside-button-icon: var(--celeste5);
     --bg-scroll-button: var(--celeste5);
