@@ -10,8 +10,6 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    backdrop-filter: var(--blur-modal);
-    -webkit-backdrop-filter: var(--blur-modal);
     background-color: var(--blur-modal-color);
     opacity: 1;
     transition: var(--transition-fade);
