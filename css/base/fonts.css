@@ -65,6 +65,38 @@
     font-family: "Nunito Sans";
     font-display: swap;
 }
+/* Lora (regular) */
+@font-face {
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/lora-v37-latin-regular.woff2") format("woff2");
+    font-family: "Lora";
+    font-display: swap;
+}
+/* Lora (cursiva) */
+@font-face {
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/lora-v37-latin-italic.woff2") format("woff2");
+    font-family: "Lora";
+    font-display: swap;
+}
+/* Lora (negrita) */
+@font-face {
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/lora-v37-latin-700.woff2") format("woff2");
+    font-family: "Lora";
+    font-display: swap;
+}
+/* Lora (negrita y cursiva) */
+@font-face {
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/lora-v37-latin-700italic.woff2") format("woff2");
+    font-family: "Lora";
+    font-display: swap;
+}
 /* Atkinson Hyperlegible (regular) */
 @font-face {
     font-style: normal;

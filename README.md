@@ -111,6 +111,8 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
     - Se amplió el changelog incluyendo el historial desde la primera versión
     - Las versiones de número redondo ahora incluyen el título de Versión Principal Mayor (a excepción de la 0.10)
     - Se corrigieron algunos niveles de viñeta en el changelog
+    - Se agregaron los archivos de la fuente de texto Lora
+    - Se agregó Lora en @font-face
 
 - **`v0.37-alpha` (Anterior)**
     - Nuevos módulos de Horarios y Calendario: Visualización Personalización y Descarga
