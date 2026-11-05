@@ -1,0 +1,50 @@
+name: 🐛 Reporte de Error (Bug)
+description: Reporta un error visual, falla de script o comportamiento inesperado en el sitio web del C.E. IPET N° 424.
+title: "[BUG]: "
+labels: ["bug", "needs-triage"]
+body:
+    - type: markdown
+      attributes:
+          value: |
+              ¡Gracias por avisarnos! Por favor, completá los siguientes datos para ayudarnos a localizar y solucionar el problema rápidamente.
+    - type: textarea
+      id: what-happened
+      attributes:
+          label: Descripción del problema
+          description: ¿Qué sucedió exactamente y qué esperabas que pasara?
+          placeholder: Ej. El botón de cambio de modo oscuro no responde al hacer clic en dispositivos móviles.
+      validations:
+          required: true
+    - type: textarea
+      id: steps-to-reproduce
+      attributes:
+          label: Pasos para reproducir el fallo
+          description: ¿Cómo podemos ver el error paso a paso?
+          placeholder: |
+              1. Ingresar a la sección de Horarios.
+              2. Seleccionar el curso X.
+              3. Hacer clic en...
+      validations:
+          required: true
+    - type: dropdown
+      id: browser-device
+      attributes:
+          label: Dispositivo y Navegador
+          description: ¿Dónde experimentaste el error?
+          options:
+              - PC - Google Chrome
+              - PC - Mozilla Firefox
+              - PC - Microsoft Edge
+              - Celular - Android (Chrome)
+              - Celular - iOS (Safari)
+              - Otro / Desconocido
+      validations:
+          required: true
+    - type: textarea
+      id: additional-context
+      attributes:
+          label: Contexto adicional o capturas
+          description: Agregá detalles extra, mensajes de error de la consola o capturas de pantalla si las tenés.
+          placeholder: Capturas, enlaces o notas adicionales...
+      validations:
+          required: false
