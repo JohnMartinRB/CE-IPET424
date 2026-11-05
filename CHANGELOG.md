@@ -38,6 +38,11 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 - Se quitó el título de versión principal a versiones previas a la 0.6 debido a que esta fue la primera en tener contenido completo
 
+### [v0.38.5-alpha]
+
+- Se agregaron los archivos de la fuente de texto Lora
+- Se agregó Lora en @font-face
+
 ---
 
 ## [v0.37.0-alpha] - Versión Principal
