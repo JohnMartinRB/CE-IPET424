@@ -15,7 +15,7 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Las versiones de número redondo ahora incluyen el título de Versión Principal Mayor (a excepción de la 0.10)
 - Se corrigieron algunos niveles de viñeta en el changelog
 
-## [v0.38.1-alpha]
+### [v0.38.1-alpha]
 
 - Se agregó contenido a los siguientes archivos:
     - `.github/ISSUE_TEMPLATE/bug_report.yml`
@@ -26,9 +26,13 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Las versiones de número redondo ahora incluyen el título de Versión Principal Mayor (a excepción de la 0.10)
 - Se corrigieron algunos niveles de viñeta en el changelog
 
-## [v0.38.2-alpha]
+### [v0.38.2-alpha]
 
 - Changelog
+
+### [v0.38.3-alpha]
+
+- Corregidos niveles del changelog
 
 ---
 
