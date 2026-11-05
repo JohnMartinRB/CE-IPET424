@@ -15,6 +15,21 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Las versiones de número redondo ahora incluyen el título de Versión Principal Mayor (a excepción de la 0.10)
 - Se corrigieron algunos niveles de viñeta en el changelog
 
+## [v0.38.1-alpha]
+
+- Se agregó contenido a los siguientes archivos:
+    - `.github/ISSUE_TEMPLATE/bug_report.yml`
+    - `.github/ISSUE_TEMPLATE/feature_request.yml`
+    - `.github/CODE_OF_CONDUCT.md`
+    - `.github/PULL_REQUEST_TEMPLATE.md`
+- Se amplió el changelog incluyendo el historial desde la primera versión
+- Las versiones de número redondo ahora incluyen el título de Versión Principal Mayor (a excepción de la 0.10)
+- Se corrigieron algunos niveles de viñeta en el changelog
+
+## [v0.38.2-alpha]
+
+- Changelog
+
 ---
 
 ## [v0.37.0-alpha] - Versión Principal
