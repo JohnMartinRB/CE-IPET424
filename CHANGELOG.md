@@ -34,6 +34,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 - Corregidos niveles del changelog
 
+### [v0.38.4-alpha]
+
+- Se quitó el título de versión principal a versiones previas a la 0.6 debido a que esta fue la primera en tener contenido completo
+
 ---
 
 ## [v0.37.0-alpha] - Versión Principal
@@ -1134,7 +1138,7 @@ FUNCIONES:
 
 ---
 
-## [v0.5-alfa] - Versión Principal
+## [v0.5-alfa]
 
 - Header
 - Titulo
@@ -1150,7 +1154,7 @@ FUNCIONES:
 
 ---
 
-## [v0.4-alfa] - Versión Principal
+## [v0.4-alfa]
 
 - Modo oscuro (primera funcion en main.js)
 - Cambiado el color de fondo a un gris claro
@@ -1161,7 +1165,7 @@ FUNCIONES:
 
 ---
 
-## [v0.3-alfa] - Versión Principal
+## [v0.3-alfa]
 
 - Fuentes Nunito
 - Correo y ubicacion en el footer
@@ -1186,7 +1190,7 @@ FUNCIONES:
 
 ---
 
-## [v0.2-alfa] - Versión Principal
+## [v0.2-alfa]
 
 - Normalize.css
 - Link a main.js
@@ -1195,7 +1199,7 @@ FUNCIONES:
 
 ---
 
-## [v0.1-alfa] - Versión Principal
+## [v0.1-alfa]
 
 - Estructura básica de carpetas
 
