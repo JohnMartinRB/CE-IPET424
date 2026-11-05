@@ -1,0 +1,33 @@
+name: 💡 Propuesta de Nueva Función
+description: Sugiere una idea, mejora o nueva sección para el portal web del C.E. IPET N° 424.
+title: "[IDEA]: "
+labels: ["enhancement", "suggestion"]
+body:
+    - type: markdown
+      attributes:
+          value: |
+              ¡Nos encanta recibir ideas de la comunidad! Usá este formulario para proponer mejoras orientadas a los estudiantes y al colegio.
+    - type: textarea
+      id: idea-description
+      attributes:
+          label: Descripción de la propuesta
+          description: Explicá detalladamente en qué consiste la nueva función o sección que te gustaría ver en el sitio.
+          placeholder: Ej. Agregar una sección de calendarios de mesas de examen con filtros por materia técnica.
+      validations:
+          required: true
+    - type: textarea
+      id: user-benefit
+      attributes:
+          label: ¿A quién beneficia y por qué?
+          description: Explicá qué problema resuelve para los alumnos, profesores o el Centro de Estudiantes.
+          placeholder: Ayudaría a los estudiantes a organizarse mejor con las fechas de exámenes previos y libres.
+      validations:
+          required: true
+    - type: checkboxes
+      id: terms-agreement
+      attributes:
+          label: Compromiso con las normas
+          description: Confirmá que leíste las pautas del proyecto.
+          options:
+              - label: Me comprometo a mantener una comunicación respetuosa y constructiva.
+                required: true

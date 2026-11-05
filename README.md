@@ -3,7 +3,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.37%20%28Alpha%29-blue)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.38%20%28Alpha%29-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
@@ -38,7 +38,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.37` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.38` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
 | **Lanzamiento Estable (v1.0)** | Martes 9 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
@@ -102,7 +102,17 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.37-alpha` (Actual)**
+- **`v0.38-alpha` (Actual)**
+    - Se agregó contenido a los siguientes archivos:
+        - `.github/ISSUE_TEMPLATE/bug_report.yml`
+        - `.github/ISSUE_TEMPLATE/feature_request.yml`
+        - `.github/CODE_OF_CONDUCT.md`
+        - `.github/PULL_REQUEST_TEMPLATE.md`
+    - Se amplió el changelog incluyendo el historial desde la primera versión
+    - Las versiones de número redondo ahora incluyen el título de Versión Principal Mayor (a excepción de la 0.10)
+    - Se corrigieron algunos niveles de viñeta en el changelog
+
+- **`v0.37-alpha` (Anterior)**
     - Nuevos módulos de Horarios y Calendario: Visualización Personalización y Descarga
     - Se encuentran en dos nuevas subpáginas a las cuales se accede desde Herramientas
     - Características principales de `horarios.html`:
@@ -135,36 +145,6 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
     - Se actualizó el árbol de carpetas y humans.txt
     - Se actualizaron comentarios
     - Cambios secretos
-
-- **`v0.36-alpha` (Anterior)**
-    - Nuevos temas de estacionales por temporadas
-        - Verano: enero y febrero
-        - Mes rosa: octubre
-        - Misterio: última semana de octubre
-        - Festividades: semanas de diciembre y la primera de enero
-    - Estos temas se encuentran en `seasonal.css`
-    - Se agregaron botones en el aside de opciones para activar los temas estacionales
-    - Se inviertieron las fuentes: Nunito como Titles y Nunito Sans como Main
-    - El texto de `terminos.html` ahora se encuentra directamente en la tarjeta principal
-    - Se corrigió el funcionamiento de `initPageTitle`
-    - Se agregaron y cambiaron muchos títulos en la pantalla de carga
-    - Se modificaron levemente algunos colores
-    - Se modificó el color del icono del boton del aside en la mayoria de temas
-    - Se reworkeó el funcionamiento de `grayscale-mode` para que se aplique como una capa en lugar de un tema independiente (así como rest-mode)
-    - Se eliminó el favicon gris
-    - Función js actualizada para comprobar ciertos periodos de fecha y aplicar temas estacionales por defecto
-    - Nuevos logos y favicons rosa y mascota rosa para el mes de octubre
-    - Se actualizaron los logos y favicons de halloween y navidad
-    - Se agregó el logo de instagram con colores patrios y se actualizaron los de halloween y navidad
-    - Se separaron los logos de `assets/logos` en `ig/`, `ce/` y `app/`
-    - Se renombraron los archivos de logos
-    - Se actualizaron las rutas de los logos
-    - Eliminada una variable inutilizada
-    - Se agregaron muchas variables de color nuevas para elementos que antes usaban las variables de color de otro elemento
-    - Se renombraron muchas variables
-    - Se agregó `.gitkeep` a algunas carpetas vacías que no lo tenían
-    - Se actualizó el árbol de carpetas de `ARCHITECTURE.md`
-    - ROADMAP ampliado y actualizado
 
 Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 
