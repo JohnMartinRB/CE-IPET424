@@ -2,8 +2,6 @@
     TARJETAS DE SECCIONES Y SUBSECCIONES
 ========================================== */
 .section-card {
-    max-width: 100%;
-    margin: var(--space-md) auto;
     padding: var(--space-base) var(--space-md);
     border-radius: var(--radius-xl);
     background: var(--bg-section-card);
@@ -16,7 +14,6 @@
     box-shadow: var(--shadow-section-card-hover);
 }
 .subsection-card {
-    max-width: 100%;
     margin: var(--space-md) auto;
     padding: var(--space-base) var(--space-md);
     border-radius: var(--radius-lg);

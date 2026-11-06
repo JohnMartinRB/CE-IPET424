@@ -2,13 +2,16 @@
     TARJETA DE CONTENIDO PRINCIPAL
 ========================================== */
 .content-card {
+    display: flex;
+    flex-direction: column;
     width: 95%;
     max-width: 95%;
     margin: var(--space-xs) auto;
-    padding: var(--space-base) var(--space-lg);
+    gap: var(--space-base);
+    /*padding: var(--space-base) var(--space-lg);
     border-radius: var(--radius-2xl);
     background: var(--bg-base);
-    box-shadow: var(--shadow-base);
+    box-shadow: var(--shadow-base);*/
 }
 
 @media (min-width: 1024px) {

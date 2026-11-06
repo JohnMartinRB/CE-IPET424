@@ -35,7 +35,7 @@ h6 {
     text-wrap: balance;
 }
 .text:hover {
-    cursor: var(--cursor-text);
+    cursor: var(--text);
 }
 
 @media (min-width: 1024px) {

@@ -12,12 +12,12 @@
         display: flex;
         z-index: 100;
         position: fixed;
-        top: 59vh;
+        top: 58vh;
         align-items: center;
         width: 20px;
-        height: 78%;
-        max-height: 80vh;
-        padding: var(--space-base) var(--space-md);
+        height: 81%;
+        max-height: 82vh;
+        padding: var(--space-md);
         overflow: hidden;
         transform: translateY(-50%);
         border-radius: var(--radius-xl);
@@ -43,7 +43,7 @@
     }
     .aside-button-toggle:hover {
         background-color: var(--bg-aside-button-hover);
-        cursor: var(--cursor-hover);
+        cursor: var(--pointer);
     }
     .aside-icon-toggle {
         transform: scaleY(4);
@@ -71,10 +71,15 @@
         width: 12rem;
         margin: var(--space-xs) auto;
     }
+    .config-themes-button {
+        width: 100%;
+        margin: var(--space-xs) auto;
+    }
     .aside-title {
         margin-top: var(--space-md);
         margin-bottom: var(--space-sm);
     }
+
     .aside-options::-webkit-scrollbar {
         width: 0.3rem;
     }
@@ -100,24 +105,24 @@
     .aside-drawer.open .aside-icon-toggle {
         transition: var(--transition-drawer-content);
     }
-    .aside-config.open .aside-icon-toggle {
-        transform: rotate(180deg) scaleY(4);
-    }
     .aside-news.open .aside-icon-toggle {
         transform: rotate(180deg) scaleY(4);
     }
-    .aside-config {
+    .aside-widgets.open .aside-icon-toggle {
+        transform: rotate(180deg) scaleY(4);
+    }
+    .aside-news {
         left: 1%;
         background: var(--bg-base);
     }
-    .aside-config-button-toggle {
+    .aside-news-button-toggle {
         right: 1%;
     }
-    .aside-news {
+    .aside-widgets {
         right: 1%;
         background: var(--bg-base-inverted);
     }
-    .aside-news-button-toggle {
+    .aside-widgets-button-toggle {
         left: 1%;
     }
     .font-size-control-container {

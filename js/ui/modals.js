@@ -17,6 +17,7 @@ export function initModals() {
         // Ya vio In Dev en el pasado, pero hay una nueva versión: mostrar Whats New directamente
         checkAndShowWhatsNew();
     }
+
     // MODAL: TÉRMINOS Y CONDICIONES
     function showTermsModal() {
         const modal = document.getElementById("modal-terms");
