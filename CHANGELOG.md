@@ -4,6 +4,24 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## [v0.39.0-alpha] - Versión Principal
+
+- Nuevos widgets:
+    - Widget de Efeméride diaria (Día de...)
+    - Widget de vistas del sitio (diarias, mensuales, anuale y totales)
+- Nuevas funciones js para manejar los widgets
+- Archivo `days.json` para guardar las efemérides (aún en progreso)
+- Se reordenó la carga de los widgets en las funciones js
+- Se agregaron variables a algunos elementos con tamaños de fuente fijo
+- Se eliminaron algunas propiedades innecesarias
+- Se mejoraron los comentarios de css y se eliminaron muchos
+
+### [v0.39.1-alpha]
+
+- Se eliminaron los emojis del widget de vistas
+
+---
+
 ## [v0.38.0-alpha] - Versión Principal
 
 - Se agregó contenido a los siguientes archivos:

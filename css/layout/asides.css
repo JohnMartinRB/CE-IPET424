@@ -71,7 +71,6 @@
         width: 12rem;
         margin: var(--space-xs) auto;
     }
-
     .aside-title {
         margin-top: var(--space-md);
         margin-bottom: var(--space-sm);
@@ -121,10 +120,6 @@
     .aside-news-button-toggle {
         left: 1%;
     }
-
-    /* ==========================================
-    ACCESIBILIDAD: CONTROL DE TAMAÑO DE TEXTO
-    ========================================== */
     .font-size-control-container {
         width: 100%;
         margin: 1rem 0;

@@ -3,7 +3,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.38%20%28Alpha%29-blue)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.39%20%28Alpha%29-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
@@ -38,7 +38,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.38` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.39` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
 | **Lanzamiento Estable (v1.0)** | Martes 9 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
@@ -96,13 +96,24 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 
 ## 📂 Arquitectura y Estructura del Proyecto
 
-El código está estructurado de forma modular y limpia[cite: 3]. Para consultar el árbol completo de archivos y módulos, revisá la [Guía de Arquitectura del Proyecto](./ARCHITECTURE.md).
+El código está estructurado de forma modular y limpia. Para consultar el árbol completo de archivos y módulos, revisá la [Guía de Arquitectura del Proyecto](./ARCHITECTURE.md).
 
 ---
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.38-alpha` (Actual)**
+- **`v0.39-alpha` (Actual)**
+    - Nuevos widgets:
+        - Widget de Efeméride diaria (Día de...)
+        - Widget de vistas del sitio (diarias, mensuales, anuale y totales)
+    - Nuevas funciones js para manejar los widgets
+    - Archivo `days.json` para guardar las efemérides (aún en progreso)
+    - Se reordenó la carga de los widgets en las funciones js
+    - Se agregaron variables a algunos elementos con tamaños de fuente fijo
+    - Se eliminaron algunas propiedades innecesarias
+    - Se mejoraron los comentarios de css y se eliminaron muchos
+
+- **`v0.38-alpha` (Anterior)**
     - Se agregó contenido a los siguientes archivos:
         - `.github/ISSUE_TEMPLATE/bug_report.yml`
         - `.github/ISSUE_TEMPLATE/feature_request.yml`
@@ -113,40 +124,6 @@ El código está estructurado de forma modular y limpia[cite: 3]. Para consultar
     - Se corrigieron algunos niveles de viñeta en el changelog
     - Se agregaron los archivos de la fuente de texto Lora
     - Se agregó Lora en @font-face
-
-- **`v0.37-alpha` (Anterior)**
-    - Nuevos módulos de Horarios y Calendario: Visualización Personalización y Descarga
-    - Se encuentran en dos nuevas subpáginas a las cuales se accede desde Herramientas
-    - Características principales de `horarios.html`:
-        - Mapeo de datos dinámico: Carga asíncrona mediante JSON para poblar los cursos de manera automatizada.
-        - Panel Desplegable (`Personalizar`) : Interfaz limpia que agrupa todas las herramientas de edición.
-            - Soporte para cambiar entre fuentes como Nunito, Arial, Calibri y dislexia.
-            - Botones de escala tipográfica exclusivos para el calendario.
-            - Opción para ocultar los nombres de los profesores
-            - Menús desplegables con 10 opciones predefinidas y selector personalizado por rueda.
-            - Control personalizado de headers, casillas, hora, recreos y fondo general.
-        - Gestión de profesores: Casilla de verificación para mostrar u ocultar los nombres del cuerpo docente.
-        - Exportación PNG : Motor de captura visual en alta resolución con `html2canvas`.
-        - Exportación a PDF: Generación de documentos listos para imprimir en formato vertical A4 mediante `jsPDF`.
-    - Características principales de `calendario.html`:
-        - Vista Dual (12 Hojas / 1 Hoja) : Opciones de visualización mensual detallada o anual compacta.
-        - Panel Desplegable (`Personalizar`) : Interfaz limpia que agrupa todas las herramientas de edición.
-            - Soporte para cambiar entre fuentes como Nunito, Arial, Calibri y dislexia.
-            - Botones de escala tipográfica exclusivos para el calendario.
-            - Paleta de colores pastel: Menús desplegables con 10 opciones predefinidas y selector personalizado por rueda.
-            - Control personalizado de título, headers de semana, casillas, fondo del mes y fondo general.
-        - Exportación PNG : Motor de captura visual en alta resolución con `html2canvas`.
-        - PDF Multipágina : Generación automática de un documento horizontal de 12 páginas exactas (una por mes).
-        - PDF Anual : Opción de exportación vertical compacta de todo el año en una sola hoja, mediante `jsPDF` (igual que el anterior)
-    - Nueva carpeta `assets/libs` que contiene las librerías `html2canvas` y `jsPDF` descargadas.
-    - Se cambió el símbolo de flecha circular de los botones que la incluían.
-    - Nuevos archivos js `calendar.js` y `schedules.js` para manejar el renderizado y personalización
-    - Nuevos archivos css `calendar.css`, `schedules.css` y `controls.css` para manejar los estilos
-    - Archivo json para guardar los horarios
-    - Se eliminaron las carpetas `assets/img/` `placeholder`, `posts` y `schedules`
-    - Se actualizó el árbol de carpetas y humans.txt
-    - Se actualizaron comentarios
-    - Cambios secretos
 
 Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 
