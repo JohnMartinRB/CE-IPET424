@@ -1,0 +1,1504 @@
+{
+    "1-A": {
+        "year": "1° Año \"A\" - T. Mañana",
+        "rows": [
+            {
+                "type": "subject",
+                "time": "08:00 a 08:40",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "tuesday": { "subject": "ARTES VISUALES", "teacher": "Melisa Ochoa" },
+                "wednesday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "thursday": { "subject": "BIOLOGÍA", "teacher": "Sandra Altamirano" },
+                "friday": { "subject": "BIOLOGÍA", "teacher": "Sandra Altamirano" }
+            },
+            {
+                "type": "subject",
+                "time": "08:40 a 09:20",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "tuesday": { "subject": "ARTES VISUALES", "teacher": "Melisa Ochoa" },
+                "wednesday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "thursday": { "subject": "FÍSICA", "teacher": "Gloria Gazzia" },
+                "friday": { "subject": "BIOLOGÍA", "teacher": "Sandra Altamirano" }
+            },
+            {
+                "type": "break",
+                "text": "1° RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "09:30 a 10:10",
+                "monday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" },
+                "tuesday": { "subject": "ARTES VISUALES", "teacher": "Melisa Ochoa" },
+                "wednesday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "thursday": { "subject": "FÍSICA", "teacher": "Gloria Gazzia" },
+                "friday": { "subject": "GEOGRAFÍA", "teacher": "Melisa Regis" }
+            },
+            {
+                "type": "subject",
+                "time": "10:10 a 10:50",
+                "monday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Melisa Regis" },
+                "wednesday": { "subject": "DIBUJO TÉCNICO", "teacher": "Gabriel Zelada" },
+                "thursday": { "subject": "FÍSICA", "teacher": "Gloria Gazzia" },
+                "friday": { "subject": "GEOGRAFÍA", "teacher": "Melisa Regis" }
+            },
+            {
+                "type": "break",
+                "text": "2° RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "11:00 a 11:40",
+                "monday": { "subject": "INGLÉS", "teacher": "Gabriela Suárez (Sup.)" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Melisa Regis" },
+                "wednesday": { "subject": "DIBUJO TÉCNICO", "teacher": "Gabriel Zelada" },
+                "thursday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" },
+                "friday": { "subject": "CIUDADANÍA Y PARTICIPACIÓN", "teacher": "Olga Bonino" }
+            },
+            {
+                "type": "subject",
+                "time": "11:40 a 12:20",
+                "monday": { "subject": "INGLÉS", "teacher": "Gabriela Suárez (Sup.)" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Melisa Regis" },
+                "wednesday": {
+                    "subject": "LENGUA Y LIT.",
+                    "teacher": "Marisa Sappia"
+                },
+                "thursday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" },
+                "friday": { "subject": "CIUDADANÍA Y PARTICIPACIÓN", "teacher": "Olga Bonino" }
+            }
+        ]
+    },
+    "1-B": {
+        "year": "1° Año \"B\" - T. Tarde",
+        "rows": [
+            {
+                "type": "subject",
+                "time": "13:30 a 14:10",
+                "monday": { "subject": "GEOGRAFÍA", "teacher": "Yamilé Garay" },
+                "tuesday": { "subject": "ARTES VISUALES", "teacher": "Mariela Nievas" },
+                "wednesday": { "subject": "GEOGRAFÍA", "teacher": "Yamilé Garay" },
+                "thursday": { "subject": "INGLÉS", "teacher": "Viviana Zárate (Sup.)" },
+                "friday": { "subject": "EDUCACIÓN TECNOLÓGICA", "teacher": "Mario Tomassini" }
+            },
+            {
+                "type": "subject",
+                "time": "14:10 a 14:50",
+                "monday": { "subject": "GEOGRAFÍA", "teacher": "Yamilé Garay" },
+                "tuesday": { "subject": "ARTES VISUALES", "teacher": "Mariela Nievas" },
+                "wednesday": { "subject": "GEOGRAFÍA", "teacher": "Yamilé Garay" },
+                "thursday": { "subject": "INGLÉS", "teacher": "Viviana Zárate (Sup.)" },
+                "friday": { "subject": "EDUCACIÓN TECNOLÓGICA", "teacher": "Mario Tomassini" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "15:00 a 15:40",
+                "monday": { "subject": "GEOGRAFÍA", "teacher": "Yamilé Garay" },
+                "tuesday": { "subject": "ARTES VISUALES", "teacher": "Mariela Nievas" },
+                "wednesday": { "subject": "MATEMÁTICA", "teacher": "Gloria Gazzia" },
+                "thursday": { "subject": "INGLÉS", "teacher": "Viviana Zárate (Sup.)" },
+                "friday": { "subject": "EDUCACIÓN TECNOLÓGICA", "teacher": "Mario Tomassini" }
+            },
+            {
+                "type": "subject",
+                "time": "15:40 a 16:20",
+                "monday": { "subject": "LENGUA Y LIT.", "teacher": "Maximiliano González" },
+                "tuesday": { "subject": "MATEMÁTICA", "teacher": "Gloria Gazzia" },
+                "wednesday": { "subject": "MATEMÁTICA", "teacher": "Gloria Gazzia" },
+                "thursday": {
+                    "subject": "LENGUA Y LIT.",
+                    "teacher": "Maximiliano González (Sup. Valentina Carreras)"
+                },
+                "friday": { "subject": "EDUCACIÓN TECNOLÓGICA", "teacher": "Mario Tomassini" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "16:30 a 17:10",
+                "monday": { "subject": "LENGUA Y LIT.", "teacher": "Maximiliano González" },
+                "tuesday": { "subject": "MATEMÁTICA", "teacher": "Gloria Gazzia" },
+                "wednesday": { "subject": "BIOLOGÍA", "teacher": "Sandra Altamirano" },
+                "thursday": {
+                    "subject": "LENGUA Y LIT.",
+                    "teacher": "Maximiliano González (Sup. Valentina Carreras)"
+                },
+                "friday": { "subject": "FÍSICA", "teacher": "Darío Aguirre" }
+            },
+            {
+                "type": "subject",
+                "time": "17:10 a 17:50",
+                "monday": { "subject": "LENGUA Y LIT.", "teacher": "Maximiliano González" },
+                "tuesday": { "subject": "MATEMÁTICA", "teacher": "Gloria Gazzia" },
+                "wednesday": { "subject": "BIOLOGÍA", "teacher": "Sandra Altamirano" },
+                "thursday": { "subject": "CIUDADANÍA Y PARTICIPACIÓN", "teacher": "Victoria Oviedo" },
+                "friday": { "subject": "FÍSICA", "teacher": "Darío Aguirre" }
+            },
+            {
+                "type": "subject",
+                "time": "17:50 a 18:30",
+                "monday": { "subject": "CIUDADANÍA Y PARTICIPACIÓN", "teacher": "Victoria Oviedo" },
+                "tuesday": { "subject": "BIOLOGÍA", "teacher": "Sandra Altamirano" },
+                "wednesday": { "subject": "", "teacher": "" },
+                "thursday": { "subject": "CIUDADANÍA Y PARTICIPACIÓN", "teacher": "Victoria Oviedo" },
+                "friday": { "subject": "FÍSICA", "teacher": "Darío Aguirre" }
+            }
+        ]
+    },
+    "2-A": {
+        "year": "2° Año \"A\" - T. Mañana",
+        "rows": [
+            {
+                "type": "subject",
+                "time": "08:00 a 08:40",
+                "monday": { "subject": "CIUDADANÍA", "teacher": "Olga Bonino" },
+                "tuesday": { "subject": "HISTORIA", "teacher": "Melisa Sosa" },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Lourdes Torres" },
+                "thursday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "friday": { "subject": "BIOLOGÍA", "teacher": "Lourdes Torres" }
+            },
+            {
+                "type": "subject",
+                "time": "08:40 a 09:20",
+                "monday": { "subject": "CIUDADANÍA", "teacher": "Olga Bonino" },
+                "tuesday": { "subject": "HISTORIA", "teacher": "Melisa Sosa" },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Lourdes Torres" },
+                "thursday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "friday": { "subject": "BIOLOGÍA", "teacher": "Lourdes Torres" }
+            },
+            {
+                "type": "break",
+                "text": "1° RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "09:30 a 10:10",
+                "monday": { "subject": "CIUDADANÍA", "teacher": "Olga Bonino" },
+                "tuesday": { "subject": "INGLÉS", "teacher": "Elizabeth Suarez" },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Lourdes Torres" },
+                "thursday": { "subject": "LENGUA Y LIT.", "teacher": "Silvia Ligorria" },
+                "friday": { "subject": "BIOLOGÍA", "teacher": "Lourdes Torres" }
+            },
+            {
+                "type": "subject",
+                "time": "10:10 a 10:50",
+                "monday": { "subject": "LENGUA Y LIT.", "teacher": "Silvia Ligorria" },
+                "tuesday": { "subject": "INGLÉS", "teacher": "Elizabeth Suarez" },
+                "wednesday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "thursday": { "subject": "LENGUA Y LIT.", "teacher": "Silvia Ligorria" },
+                "friday": { "subject": "MÚSICA / ED. FÍSICA", "teacher": "Vanesa Oliva / Marita Molfa" }
+            },
+            {
+                "type": "break",
+                "text": "2° RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "11:00 a 11:40",
+                "monday": { "subject": "LENGUA Y LIT.", "teacher": "Silvia Ligorria" },
+                "tuesday": { "subject": "INGLÉS", "teacher": "Elizabeth Suarez" },
+                "wednesday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "thursday": { "subject": "HISTORIA", "teacher": "Melisa Sosa" },
+                "friday": { "subject": "MÚSICA / ED. FÍSICA", "teacher": "Vanesa Oliva / Marita Molfa" }
+            },
+            {
+                "type": "subject",
+                "time": "11:40 a 12:20",
+                "monday": { "subject": "LENGUA Y LIT.", "teacher": "Silvia Ligorria" },
+                "tuesday": { "subject": "DIBUJO TÉCNICO", "teacher": "Belén Quinteros" },
+                "wednesday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "thursday": { "subject": "HISTORIA", "teacher": "Melisa Sosa" },
+                "friday": { "subject": "MÚSICA / ED. FÍSICA", "teacher": "Vanesa Oliva / Marita Molfa" }
+            }
+        ]
+    },
+    "2-B": {
+        "year": "2° Año \"B\" - T. Tarde",
+        "rows": [
+            {
+                "type": "subject",
+                "time": "13:30 a 14:10",
+                "monday": { "subject": "BIOLOGÍA", "teacher": "S. Altamirano" },
+                "tuesday": { "subject": "INGLÉS", "teacher": "Viviana Zárate (Sup.)" },
+                "wednesday": { "subject": "MATEMÁTICA", "teacher": "Facundo Sosena" },
+                "thursday": {
+                    "subject": "MÚSICA / ED. FÍSICA",
+                    "teacher": "Emanuel Pérez / Cynthia Barrionuevo"
+                },
+                "friday": { "subject": "BIOLOGÍA", "teacher": "S. Altamirano" }
+            },
+            {
+                "type": "subject",
+                "time": "14:10 a 14:50",
+                "monday": { "subject": "BIOLOGÍA", "teacher": "S. Altamirano" },
+                "tuesday": { "subject": "INGLÉS", "teacher": "Viviana Zárate (Sup.)" },
+                "wednesday": { "subject": "MATEMÁTICA", "teacher": "Facundo Sosena" },
+                "thursday": {
+                    "subject": "MÚSICA / ED. FÍSICA",
+                    "teacher": "Emanuel Pérez / Cynthia Barrionuevo"
+                },
+                "friday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "15:00 a 15:40",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Facundo Sosena" },
+                "tuesday": { "subject": "INGLÉS", "teacher": "Viviana Zárate (Sup.)" },
+                "wednesday": { "subject": "HISTORIA", "teacher": "Victoria Oviedo" },
+                "thursday": {
+                    "subject": "MÚSICA / ED. FÍSICA",
+                    "teacher": "Emanuel Pérez / Cynthia Barrionuevo"
+                },
+                "friday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" }
+            },
+            {
+                "type": "subject",
+                "time": "15:40 a 16:20",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Facundo Sosena" },
+                "tuesday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" },
+                "wednesday": { "subject": "HISTORIA", "teacher": "Victoria Oviedo" },
+                "thursday": { "subject": "EDUCACIÓN TECNOLÓGICA", "teacher": "Mario Tomassini" },
+                "friday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "16:30 a 17:10",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Facundo Sosena" },
+                "tuesday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Lorena Bequis" },
+                "thursday": { "subject": "EDUCACIÓN TECNOLÓGICA", "teacher": "Mario Tomassini" },
+                "friday": { "subject": "HISTORIA", "teacher": "Victoria Oviedo" }
+            },
+            {
+                "type": "subject",
+                "time": "17:10 a 17:50",
+                "monday": {
+                    "subject": "EDUCACIÓN TECNOLÓGICA / DIBUJO TÉCNICO",
+                    "teacher": "Mario Tomassini / Mabel Faggioli"
+                },
+                "tuesday": {
+                    "subject": "CIUDADANÍA Y PARTICIPACIÓN",
+                    "teacher": "Marisa Sappia"
+                },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Lorena Bequis" },
+                "thursday": {
+                    "subject": "CIUDADANÍA Y PARTICIPACIÓN",
+                    "teacher": "Marisa Sappia"
+                },
+                "friday": { "subject": "HISTORIA", "teacher": "Victoria Oviedo" }
+            },
+            {
+                "type": "subject",
+                "time": "17:50 a 18:30",
+                "monday": {
+                    "subject": "EDUCACIÓN TECNOLÓGICA / DIBUJO TÉCNICO",
+                    "teacher": "Mario Tomassini / Mabel Faggioli"
+                },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Lorena Bequis" },
+                "thursday": {
+                    "subject": "CIUDADANÍA Y PARTICIPACIÓN",
+                    "teacher": "Marisa Sappia"
+                },
+                "friday": { "subject": "HISTORIA", "teacher": "Victoria Oviedo" }
+            }
+        ]
+    },
+    "3-A": {
+        "year": "3° Año \"A\" - T. Mañana",
+        "rows": [
+            {
+                "type": "subject",
+                "time": "08:00 a 08:40",
+                "monday": { "subject": "LENGUA", "teacher": "Silvia Ligorria" },
+                "tuesday": { "subject": "F.V.T.", "teacher": "Myriam Ribba" },
+                "wednesday": { "subject": "LENGUA", "teacher": "Silvia Ligorria" },
+                "thursday": { "subject": "INGLÉS", "teacher": "Luciana Alasia (Sup.)" },
+                "friday": { "subject": "HISTORIA", "teacher": "Melisa Sosa" }
+            },
+            {
+                "type": "subject",
+                "time": "08:40 a 09:20",
+                "monday": { "subject": "LENGUA", "teacher": "Silvia Ligorria" },
+                "tuesday": { "subject": "F.V.T.", "teacher": "Myriam Ribba" },
+                "wednesday": { "subject": "LENGUA", "teacher": "Silvia Ligorria" },
+                "thursday": { "subject": "INGLÉS", "teacher": "Luciana Alasia (Sup.)" },
+                "friday": { "subject": "HISTORIA", "teacher": "Melisa Sosa" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "09:30 a 10:10",
+                "monday": { "subject": "LENGUA", "teacher": "Silvia Ligorria" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Valeria Altamirano" },
+                "wednesday": { "subject": "HISTORIA", "teacher": "Melisa Sosa" },
+                "thursday": { "subject": "INGLÉS", "teacher": "Luciana Alasia (Sup.)" },
+                "friday": { "subject": "F.V.T.", "teacher": "Myriam Ribba" }
+            },
+            {
+                "type": "subject",
+                "time": "10:10 a 10:50",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Laura Gómez" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Valeria Altamirano" },
+                "wednesday": { "subject": "HISTORIA", "teacher": "Melisa Sosa" },
+                "thursday": { "subject": "MATEMÁTICA", "teacher": "Laura Gómez" },
+                "friday": { "subject": "F.V.T.", "teacher": "Myriam Ribba" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "11:00 a 11:40",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Laura Gómez" },
+                "tuesday": { "subject": "ARTES VISUALES", "teacher": "Mariela Nievas" },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Candela Villarreal" },
+                "thursday": { "subject": "MATEMÁTICA", "teacher": "Laura Gómez" },
+                "friday": { "subject": "GEOGRAFÍA", "teacher": "Valeria Altamirano" }
+            },
+            {
+                "type": "subject",
+                "time": "11:40 a 12:20",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Laura Gómez" },
+                "tuesday": { "subject": "ARTES VISUALES", "teacher": "Mariela Nievas" },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Candela Villarreal" },
+                "thursday": { "subject": "FÍSICA", "teacher": "Laura Aldeco" },
+                "friday": { "subject": "GEOGRAFÍA", "teacher": "Valeria Altamirano" }
+            },
+            {
+                "type": "subject",
+                "time": "12:25 a 13:05",
+                "monday": { "subject": "FÍSICA", "teacher": "Laura Aldeco" },
+                "tuesday": { "subject": "ARTES VISUALES", "teacher": "Mariela Nievas" },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Candela Villarreal" },
+                "thursday": { "subject": "FÍSICA", "teacher": "Laura Aldeco" },
+                "friday": { "subject": "", "teacher": "" }
+            }
+        ]
+    },
+    "3-B": {
+        "year": "3° Año \"B\" - T. Tarde",
+        "rows": [
+            {
+                "type": "subject",
+                "time": "13:30 a 14:10",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Laura Gómez" },
+                "tuesday": { "subject": "MATEMÁTICA", "teacher": "Laura Gómez" },
+                "wednesday": { "subject": "F.V.T.", "teacher": "Melisa Sosa" },
+                "thursday": { "subject": "FÍSICA", "teacher": "Laura Aldeco" },
+                "friday": { "subject": "ARTES VISUALES", "teacher": "Mariela Nievas" }
+            },
+            {
+                "type": "subject",
+                "time": "14:10 a 14:50",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Laura Gómez" },
+                "tuesday": { "subject": "MATEMÁTICA", "teacher": "Laura Gómez" },
+                "wednesday": { "subject": "F.V.T.", "teacher": "Melisa Sosa" },
+                "thursday": { "subject": "F.V.T.", "teacher": "Melisa Sosa" },
+                "friday": { "subject": "ARTES VISUALES", "teacher": "Mariela Nievas" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "15:00 a 15:40",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Laura Gómez" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Valeria Altamirano" },
+                "wednesday": { "subject": "FÍSICA", "teacher": "Laura Aldeco" },
+                "thursday": { "subject": "F.V.T.", "teacher": "Melisa Sosa" },
+                "friday": { "subject": "ARTES VISUALES", "teacher": "Mariela Nievas" }
+            },
+            {
+                "type": "subject",
+                "time": "15:40 a 16:20",
+                "monday": { "subject": "INGLÉS", "teacher": "Romina Escudero (Sup.)" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Valeria Altamirano" },
+                "wednesday": { "subject": "FÍSICA", "teacher": "Laura Aldeco" },
+                "thursday": { "subject": "QUÍMICA", "teacher": "Lorena Bequis" },
+                "friday": { "subject": "GEOGRAFÍA", "teacher": "Valeria Altamirano" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "16:30 a 17:10",
+                "monday": { "subject": "INGLÉS", "teacher": "Romina Escudero (Sup.)" },
+                "tuesday": { "subject": "HISTORIA", "teacher": "Melisa Sosa" },
+                "wednesday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" },
+                "thursday": { "subject": "HISTORIA", "teacher": "Melisa Sosa" },
+                "friday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" }
+            },
+            {
+                "type": "subject",
+                "time": "17:10 a 17:50",
+                "monday": { "subject": "QUÍMICA", "teacher": "Lorena Bequis" },
+                "tuesday": { "subject": "HISTORIA", "teacher": "Melisa Sosa" },
+                "wednesday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" },
+                "thursday": { "subject": "HISTORIA", "teacher": "Melisa Sosa" },
+                "friday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" }
+            },
+            {
+                "type": "subject",
+                "time": "17:50 a 18:30",
+                "monday": { "subject": "QUÍMICA", "teacher": "Lorena Bequis" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Valeria Altamirano" },
+                "wednesday": { "subject": "GEOGRAFÍA", "teacher": "Valeria Altamirano" },
+                "thursday": { "subject": "INGLÉS", "teacher": "Romina Escudero (Sup.)" },
+                "friday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" }
+            }
+        ]
+    },
+    "4-A": {
+        "year": "4° Año \"A\" - T. Mañana - Informática",
+        "rows": [
+            {
+                "type": "subject",
+                "time": "08:00 a 08:40",
+                "monday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" },
+                "tuesday": { "subject": "MATEMÁTICA", "teacher": "Paola Ramírez" },
+                "wednesday": { "subject": "HISTORIA", "teacher": "Melisa Sosa" },
+                "thursday": { "subject": "LABORATORIO DE APLICACIONES I", "teacher": "Ivana Guzmán" },
+                "friday": { "subject": "LABORATORIO DE APLICACIONES I", "teacher": "Ivana Guzmán" }
+            },
+            {
+                "type": "subject",
+                "time": "08:40 a 09:20",
+                "monday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" },
+                "tuesday": { "subject": "MATEMÁTICA", "teacher": "Paola Ramírez" },
+                "wednesday": { "subject": "HISTORIA", "teacher": "Melisa Sosa" },
+                "thursday": { "subject": "LABORATORIO DE APLICACIONES I", "teacher": "Ivana Guzmán" },
+                "friday": { "subject": "LABORATORIO DE APLICACIONES I", "teacher": "Ivana Guzmán" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "09:30 a 10:10",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Paola Ramírez" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Yamilé Garay (Sup.)" },
+                "wednesday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" },
+                "thursday": { "subject": "LABORATORIO DE APLICACIONES I", "teacher": "Ivana Guzmán" },
+                "friday": { "subject": "ARTES VISUALES", "teacher": "Melisa Ochoa" }
+            },
+            {
+                "type": "subject",
+                "time": "10:10 a 10:50",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Paola Ramírez" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Yamilé Garay (Sup.)" },
+                "wednesday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" },
+                "thursday": { "subject": "LABORATORIO DE APLICACIONES I", "teacher": "Ivana Guzmán" },
+                "friday": { "subject": "ARTES VISUALES", "teacher": "Melisa Ochoa" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "11:00 a 11:40",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Paola Ramírez" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Yamilé Garay (Sup.)" },
+                "wednesday": { "subject": "FÍSICA", "teacher": "Paola Ramírez" },
+                "thursday": {
+                    "subject": "INTRO. A LA PROGRAMACIÓN",
+                    "teacher": "Luciano Gigena (Sup.)"
+                },
+                "friday": { "subject": "BIOLOGÍA", "teacher": "Lorena Bequis" }
+            },
+            {
+                "type": "subject",
+                "time": "11:40 a 12:20",
+                "monday": { "subject": "BIOLOGÍA", "teacher": "Lorena Bequis" },
+                "tuesday": { "subject": "FÍSICA", "teacher": "Paola Ramírez" },
+                "wednesday": { "subject": "FÍSICA", "teacher": "Paola Ramírez" },
+                "thursday": {
+                    "subject": "INTRO. A LA PROGRAMACIÓN",
+                    "teacher": "Luciano Gigena (Sup.)"
+                },
+                "friday": { "subject": "BIOLOGÍA", "teacher": "Lorena Bequis" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "12:30 a 13:05",
+                "monday": { "subject": "BIOLOGÍA", "teacher": "Lorena Bequis" },
+                "tuesday": { "subject": "FÍSICA", "teacher": "Paola Ramírez" },
+                "wednesday": { "subject": "", "teacher": "" },
+                "thursday": { "subject": "HISTORIA", "teacher": "Melisa Sosa" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "break",
+                "text": "ALMUERZO"
+            },
+            {
+                "type": "subject",
+                "time": "13:30 a 14:10",
+                "monday": { "subject": "INGLÉS", "teacher": "Viviana Zárate (Sup.)" },
+                "tuesday": {
+                    "subject": "INTRO. A LA PROGRAMACIÓN",
+                    "teacher": "Luciano Gigena (Sup.)"
+                },
+                "wednesday": { "subject": "LAB. SIST. OPERATIVOS", "teacher": "Franco Prigent" },
+                "thursday": { "subject": "ED. FÍSICA", "teacher": "Cynthia Barrionuevo" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "subject",
+                "time": "14:10 a 14:50",
+                "monday": { "subject": "INGLÉS", "teacher": "Viviana Zárate (Sup.)" },
+                "tuesday": {
+                    "subject": "INTRO. A LA PROGRAMACIÓN",
+                    "teacher": "Luciano Gigena (Sup.)"
+                },
+                "wednesday": { "subject": "LAB. SIST. OPERATIVOS", "teacher": "Franco Prigent" },
+                "thursday": { "subject": "ED. FÍSICA", "teacher": "Cynthia Barrionuevo" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "15:00 a 15:40",
+                "monday": { "subject": "INGLÉS", "teacher": "Viviana Zárate (Sup.)" },
+                "tuesday": { "subject": "QUÍMICA", "teacher": "Candela Villarreal" },
+                "wednesday": { "subject": "LAB. SIST. OPERATIVOS", "teacher": "Franco Prigent" },
+                "thursday": { "subject": "", "teacher": "" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "subject",
+                "time": "15:40 a 16:20",
+                "monday": { "subject": "INGLÉS", "teacher": "Viviana Zárate (Sup.)" },
+                "tuesday": { "subject": "QUÍMICA", "teacher": "Candela Villarreal" },
+                "wednesday": { "subject": "LAB. SIST. OPERATIVOS", "teacher": "Franco Prigent" },
+                "thursday": { "subject": "", "teacher": "" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "16:30 a 17:10",
+                "monday": { "subject": "", "teacher": "" },
+                "tuesday": { "subject": "QUÍMICA", "teacher": "Candela Villarreal" },
+                "wednesday": { "subject": "", "teacher": "" },
+                "thursday": { "subject": "", "teacher": "" },
+                "friday": { "subject": "", "teacher": "" }
+            }
+        ]
+    },
+    "4-B": {
+        "year": "4° Año \"B\" - T. Tarde - Programación",
+        "rows": [
+            {
+                "type": "subject",
+                "time": "09:30 a 10:10",
+                "monday": { "subject": "LÓGICA MAT.", "teacher": "Fátima Escudero" },
+                "tuesday": { "subject": "INFORM. APLIC. I", "teacher": "Franco Prigent" },
+                "wednesday": { "subject": "PROGRAMACIÓN I", "teacher": "Walter Melián" },
+                "thursday": { "subject": "PROGRAMACIÓN I", "teacher": "Walter Melián" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "subject",
+                "time": "10:10 a 10:50",
+                "monday": { "subject": "LÓGICA MAT.", "teacher": "Fátima Escudero" },
+                "tuesday": { "subject": "INFORM. APLIC. I", "teacher": "Franco Prigent" },
+                "wednesday": { "subject": "PROGRAMACIÓN I", "teacher": "Walter Melián" },
+                "thursday": { "subject": "PROGRAMACIÓN I", "teacher": "Walter Melián" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "11:00 a 11:40",
+                "monday": { "subject": "BIOLOGÍA", "teacher": "Sandra Altamirano" },
+                "tuesday": { "subject": "LÓGICA MAT.", "teacher": "Fátima Escudero" },
+                "wednesday": { "subject": "PROGRAMACIÓN I", "teacher": "Walter Melián" },
+                "thursday": { "subject": "INFORM. APLIC. I", "teacher": "Franco Prigent" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "subject",
+                "time": "11:40 a 12:20",
+                "monday": { "subject": "BIOLOGÍA", "teacher": "Sandra Altamirano" },
+                "tuesday": { "subject": "LÓGICA MAT.", "teacher": "Fátima Escudero" },
+                "wednesday": { "subject": "PROGRAMACIÓN I", "teacher": "Walter Melián" },
+                "thursday": { "subject": "INFORM. APLIC. I", "teacher": "Franco Prigent" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "break",
+                "text": "ALMUERZO"
+            },
+            {
+                "type": "subject",
+                "time": "13:00 a 13:40",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Fátima Escudero" },
+                "tuesday": { "subject": "LENGUA Y LIT.", "teacher": "Rocio Dambolena" },
+                "wednesday": { "subject": "BIOLOGÍA", "teacher": "Sandra Altamirano" },
+                "thursday": { "subject": "MATEMÁTICA", "teacher": "Fátima Escudero" },
+                "friday": { "subject": "LENGUA Y LIT.", "teacher": "Rocio Dambolena" }
+            },
+            {
+                "type": "subject",
+                "time": "13:40 a 14:20",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Fátima Escudero" },
+                "tuesday": { "subject": "LENGUA Y LIT.", "teacher": "Rocio Dambolena" },
+                "wednesday": { "subject": "BIOLOGÍA", "teacher": "Sandra Altamirano" },
+                "thursday": { "subject": "MATEMÁTICA", "teacher": "Fátima Escudero" },
+                "friday": { "subject": "INGLÉS", "teacher": "Carlos R. Bustos" }
+            },
+            {
+                "type": "subject",
+                "time": "14:20 a 15:00",
+                "monday": { "subject": "INGLÉS", "teacher": "Carlos R. Bustos" },
+                "tuesday": { "subject": "LENGUA Y LIT.", "teacher": "Rocio Dambolena" },
+                "wednesday": { "subject": "HISTORIA", "teacher": "Noemi Salgado" },
+                "thursday": { "subject": "MATEMÁTICA", "teacher": "Fátima Escudero" },
+                "friday": { "subject": "HISTORIA", "teacher": "Noemi Salgado" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "15:10 a 15:50",
+                "monday": { "subject": "INGLÉS", "teacher": "Carlos R. Bustos" },
+                "tuesday": { "subject": "QUÍMICA", "teacher": "Pablo Rinaldi" },
+                "wednesday": { "subject": "GEOGRAFÍA", "teacher": "Mariana Gómez" },
+                "thursday": { "subject": "ARTES VISUALES", "teacher": "Melisa Ochoa" },
+                "friday": { "subject": "HISTORIA", "teacher": "Noemi Salgado" }
+            },
+            {
+                "type": "subject",
+                "time": "15:50 a 16:30",
+                "monday": { "subject": "FÍSICA", "teacher": "Gloria Gazzia" },
+                "tuesday": { "subject": "QUÍMICA", "teacher": "Pablo Rinaldi" },
+                "wednesday": { "subject": "GEOGRAFÍA", "teacher": "Mariana Gómez" },
+                "thursday": { "subject": "ARTES VISUALES", "teacher": "Melisa Ochoa" },
+                "friday": { "subject": "FÍSICA", "teacher": "Gloria Gazzia" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "16:40 a 17:20",
+                "monday": { "subject": "FÍSICA", "teacher": "Gloria Gazzia" },
+                "tuesday": { "subject": "QUÍMICA", "teacher": "Pablo Rinaldi" },
+                "wednesday": { "subject": "GEOGRAFÍA", "teacher": "Mariana Gómez" },
+                "thursday": { "subject": "", "teacher": "" },
+                "friday": { "subject": "FÍSICA", "teacher": "Gloria Gazzia" }
+            }
+        ]
+    },
+    "5-A": {
+        "year": "5° Año \"A\" - T. Mañana - Informática",
+        "rows": [
+            {
+                "type": "subject",
+                "time": "08:00 a 08:40",
+                "monday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" },
+                "tuesday": { "subject": "HISTORIA", "teacher": "Marisa Sappia" },
+                "wednesday": { "subject": "", "teacher": "" },
+                "thursday": { "subject": "SISTEMAS Y ORGANIZACIONES", "teacher": "Romina Carreras" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "subject",
+                "time": "08:40 a 09:20",
+                "monday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" },
+                "tuesday": { "subject": "HISTORIA", "teacher": "Marisa Sappia" },
+                "wednesday": { "subject": "GEOGRAFÍA", "teacher": "Valeria Altamirano" },
+                "thursday": { "subject": "SISTEMAS Y ORGANIZACIONES", "teacher": "Romina Carreras" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "09:30 a 10:10",
+                "monday": { "subject": "SISTEMAS Y ORGANIZACIONES", "teacher": "Romina Carreras" },
+                "tuesday": { "subject": "HISTORIA", "teacher": "Marisa Sappia" },
+                "wednesday": { "subject": "GESTIÓN DE DATOS", "teacher": "Aldana Cruceño (Sup.)" },
+                "thursday": { "subject": "SISTEMAS Y ORGANIZACIONES", "teacher": "Romina Carreras" },
+                "friday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" }
+            },
+            {
+                "type": "subject",
+                "time": "10:10 a 10:50",
+                "monday": { "subject": "SISTEMAS Y ORGANIZACIONES", "teacher": "Romina Carreras" },
+                "tuesday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" },
+                "wednesday": { "subject": "GESTIÓN DE DATOS", "teacher": "Aldana Cruceño (Sup.)" },
+                "thursday": { "subject": "SISTEMAS Y ORGANIZACIONES", "teacher": "Romina Carreras" },
+                "friday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "11:00 a 11:40",
+                "monday": { "subject": "GESTIÓN DE DATOS", "teacher": "Aldana Cruceño (Sup.)" },
+                "tuesday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" },
+                "wednesday": { "subject": "GESTIÓN DE DATOS", "teacher": "Aldana Cruceño (Sup.)" },
+                "thursday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "friday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" }
+            },
+            {
+                "type": "subject",
+                "time": "11:40 a 12:20",
+                "monday": { "subject": "GESTIÓN DE DATOS", "teacher": "Aldana Cruceño (Sup.)" },
+                "tuesday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" },
+                "wednesday": { "subject": "GESTIÓN DE DATOS", "teacher": "Aldana Cruceño (Sup.)" },
+                "thursday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "friday": { "subject": "LABORATORIO DE HARDWARE", "teacher": "Daiana Lujan" }
+            },
+            {
+                "type": "break",
+                "text": "ALMUERZO"
+            },
+            {
+                "type": "subject",
+                "time": "13:30 a 14:10",
+                "monday": { "subject": "FÍSICA", "teacher": "Gloria Gazzia" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Valeria Altamirano" },
+                "wednesday": { "subject": "ED. FÍSICA", "teacher": "Natalia Gómez (13:30 a 15:30)" },
+                "thursday": { "subject": "QUÍMICA", "teacher": "Lorena Bequis" },
+                "friday": { "subject": "MÚSICA", "teacher": "Vanesa Oliva" }
+            },
+            {
+                "type": "subject",
+                "time": "14:10 a 14:50",
+                "monday": { "subject": "FÍSICA", "teacher": "Gloria Gazzia" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Valeria Altamirano" },
+                "wednesday": { "subject": "ED. FÍSICA", "teacher": "Natalia Gómez" },
+                "thursday": { "subject": "QUÍMICA", "teacher": "Lorena Bequis" },
+                "friday": { "subject": "MÚSICA", "teacher": "Vanesa Oliva" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "15:00 a 15:40",
+                "monday": { "subject": "FÍSICA", "teacher": "Gloria Gazzia" },
+                "tuesday": { "subject": "FÍSICA", "teacher": "Gloria Gazzia" },
+                "wednesday": { "subject": "INGLÉS", "teacher": "Trescher Bibiana" },
+                "thursday": { "subject": "QUÍMICA", "teacher": "Lorena Bequis" },
+                "friday": { "subject": "PSICOLOGÍA", "teacher": "Rosana Urquiza" }
+            },
+            {
+                "type": "subject",
+                "time": "15:40 a 16:20",
+                "monday": { "subject": "LENGUA Y LIT.", "teacher": "Silvia Ligorria" },
+                "tuesday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "wednesday": { "subject": "INGLÉS", "teacher": "Trescher Bibiana" },
+                "thursday": { "subject": "", "teacher": "" },
+                "friday": { "subject": "PSICOLOGÍA", "teacher": "Rosana Urquiza" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "16:30 a 17:10",
+                "monday": { "subject": "LENGUA Y LIT.", "teacher": "Silvia Ligorria" },
+                "tuesday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "wednesday": { "subject": "INGLÉS", "teacher": "Trescher Bibiana" },
+                "thursday": { "subject": "", "teacher": "" },
+                "friday": { "subject": "PSICOLOGÍA", "teacher": "Rosana Urquiza" }
+            },
+            {
+                "type": "subject",
+                "time": "17:10 a 17:50",
+                "monday": { "subject": "LENGUA Y LIT.", "teacher": "Silvia Ligorria" },
+                "tuesday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "wednesday": { "subject": "", "teacher": "" },
+                "thursday": { "subject": "", "teacher": "" },
+                "friday": { "subject": "", "teacher": "" }
+            }
+        ]
+    },
+    "5-B": {
+        "year": "5° Año \"B\" - T. Tarde - Programación",
+        "rows": [
+            {
+                "type": "subject",
+                "time": "08:00 a 08:40",
+                "monday": { "subject": "ED. FÍSICA", "teacher": "Cynthia Barrionuevo" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "", "teacher": "" },
+                "thursday": { "subject": "ED. FÍSICA", "teacher": "Cynthia Barrionuevo" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "subject",
+                "time": "08:50 a 09:30",
+                "monday": { "subject": "", "teacher": "" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "INFORM. APLIC. II", "teacher": "Franco Prigent" },
+                "thursday": { "subject": "PROGRAMACIÓN II", "teacher": "Miguel Berezosky" },
+                "friday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" }
+            },
+            {
+                "type": "subject",
+                "time": "09:30 a 10:10",
+                "monday": { "subject": "INFORM. APLIC. II", "teacher": "Franco Prigent" },
+                "tuesday": { "subject": "PROGRAMACIÓN II", "teacher": "Miguel Berezosky" },
+                "wednesday": { "subject": "INFORM. APLIC. II", "teacher": "Franco Prigent" },
+                "thursday": { "subject": "INFORM. APLIC. II", "teacher": "Franco Prigent" },
+                "friday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" }
+            },
+            {
+                "type": "subject",
+                "time": "10:10 a 10:50",
+                "monday": { "subject": "INFORM. APLIC. II", "teacher": "Franco Prigent" },
+                "tuesday": { "subject": "PROGRAMACIÓN II", "teacher": "Miguel Berezosky" },
+                "wednesday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" },
+                "thursday": { "subject": "PROGRAMACIÓN II", "teacher": "Miguel Berezosky" },
+                "friday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "11:00 a 11:40",
+                "monday": { "subject": "INFORM. APLIC. II", "teacher": "Franco Prigent" },
+                "tuesday": { "subject": "PROGRAMACIÓN II", "teacher": "Miguel Berezosky" },
+                "wednesday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" },
+                "thursday": { "subject": "PROGRAMACIÓN II", "teacher": "Miguel Berezosky" },
+                "friday": { "subject": "SIST. DE INFO.", "teacher": "Luciano Gigena" }
+            },
+            {
+                "type": "subject",
+                "time": "11:40 a 12:20",
+                "monday": { "subject": "INFORM. APLIC. II", "teacher": "Franco Prigent" },
+                "tuesday": { "subject": "PSICOLOGÍA", "teacher": "Soledad Rojas" },
+                "wednesday": { "subject": "LENGUA Y LIT.", "teacher": "Rocío Dambolena" },
+                "thursday": { "subject": "PROGRAMACIÓN II", "teacher": "Miguel Berezosky" },
+                "friday": { "subject": "HISTORIA", "teacher": "Victoria Oviedo (Sup.)" }
+            },
+            {
+                "type": "break",
+                "text": "ALMUERZO"
+            },
+            {
+                "type": "subject",
+                "time": "13:00 a 13:40",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "tuesday": { "subject": "PSICOLOGÍA", "teacher": "Soledad Rojas" },
+                "wednesday": { "subject": "LENGUA Y LIT.", "teacher": "Rocío Dambolena" },
+                "thursday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "friday": { "subject": "HISTORIA", "teacher": "Victoria Oviedo (Sup.)" }
+            },
+            {
+                "type": "subject",
+                "time": "13:40 a 14:20",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "tuesday": { "subject": "PSICOLOGÍA", "teacher": "Soledad Rojas" },
+                "wednesday": { "subject": "LENGUA Y LIT.", "teacher": "Rocío Dambolena" },
+                "thursday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "friday": { "subject": "HISTORIA", "teacher": "Victoria Oviedo (Sup.)" }
+            },
+            {
+                "type": "subject",
+                "time": "14:20 a 15:00",
+                "monday": { "subject": "MATEMÁTICA", "teacher": "Romina Sosa" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Jorge González" },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Pablo Rinaldi" },
+                "thursday": { "subject": "FÍSICA", "teacher": "Laura Aldeco" },
+                "friday": { "subject": "INGLÉS", "teacher": "Carlos R. Bustos" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "15:10 a 15:50",
+                "monday": { "subject": "FÍSICA", "teacher": "Laura Aldeco" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Jorge González" },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Pablo Rinaldi" },
+                "thursday": { "subject": "FÍSICA", "teacher": "Laura Aldeco" },
+                "friday": { "subject": "INGLÉS", "teacher": "Carlos R. Bustos" }
+            },
+            {
+                "type": "subject",
+                "time": "15:50 a 16:30",
+                "monday": { "subject": "FÍSICA", "teacher": "Laura Aldeco" },
+                "tuesday": { "subject": "GEOGRAFÍA", "teacher": "Jorge González" },
+                "wednesday": { "subject": "QUÍMICA", "teacher": "Pablo Rinaldi" },
+                "thursday": { "subject": "MÚSICA", "teacher": "Emanuel Pérez" },
+                "friday": { "subject": "INGLÉS", "teacher": "Carlos R. Bustos" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "16:40 a 17:20",
+                "monday": { "subject": "", "teacher": "" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "", "teacher": "" },
+                "thursday": { "subject": "MÚSICA", "teacher": "Emanuel Pérez" },
+                "friday": { "subject": "", "teacher": "" }
+            }
+        ]
+    },
+    "6-A": {
+        "year": "6° Año \"A\" - T. Mañana - Informática",
+        "rows": [
+            {
+                "type": "subject",
+                "time": "08:00 a 08:40",
+                "monday": { "subject": "RECURSOS HUMANOS", "teacher": "M. Sotocorno" },
+                "tuesday": { "subject": "LABORATORIO DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
+                "wednesday": { "subject": "ANÁLISIS MATEMÁTICO", "teacher": "Lucas Oviedo" },
+                "thursday": { "subject": "LABORATORIO DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
+                "friday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" }
+            },
+            {
+                "type": "subject",
+                "time": "08:40 a 09:20",
+                "monday": { "subject": "RECURSOS HUMANOS", "teacher": "M. Sotocorno" },
+                "tuesday": { "subject": "LABORATORIO DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
+                "wednesday": { "subject": "ANÁLISIS MATEMÁTICO", "teacher": "Lucas Oviedo" },
+                "thursday": { "subject": "LABORATORIO DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
+                "friday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "09:30 a 10:10",
+                "monday": { "subject": "RECURSOS HUMANOS", "teacher": "M. Sotocorno" },
+                "tuesday": { "subject": "LABORATORIO DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
+                "wednesday": { "subject": "ANÁLISIS MATEMÁTICO", "teacher": "Lucas Oviedo" },
+                "thursday": {
+                    "subject": "ECONOMÍA Y G. DE LA P.I.",
+                    "teacher": "Myriam Ribba"
+                },
+                "friday": { "subject": "LENGUA Y LIT.", "teacher": "Marisa Sappia" }
+            },
+            {
+                "type": "subject",
+                "time": "10:10 a 10:50",
+                "monday": { "subject": "ANÁLISIS MATEMÁTICO", "teacher": "Lucas Oviedo" },
+                "tuesday": { "subject": "LABORATORIO DE PROGRAMACIÓN", "teacher": "Aldana Cruceño (Sup.)" },
+                "wednesday": { "subject": "LABORATORIO DE APLICACIONES II", "teacher": "Franco Prigent" },
+                "thursday": {
+                    "subject": "ECONOMÍA Y G. DE LA P.I.",
+                    "teacher": "Myriam Ribba"
+                },
+                "friday": { "subject": "ESTADÍSTICA", "teacher": "Romina Sosa" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "11:00 a 11:40",
+                "monday": { "subject": "ANÁLISIS MATEMÁTICO", "teacher": "Lucas Oviedo" },
+                "tuesday": { "subject": "LABORATORIO DE APLICACIONES II", "teacher": "Franco Prigent" },
+                "wednesday": { "subject": "LABORATORIO DE APLICACIONES II", "teacher": "Franco Prigent" },
+                "thursday": {
+                    "subject": "ECONOMÍA Y G. DE LA P.I.",
+                    "teacher": "Myriam Ribba"
+                },
+                "friday": { "subject": "ESTADÍSTICA", "teacher": "Romina Sosa" }
+            },
+            {
+                "type": "subject",
+                "time": "11:40 a 12:20",
+                "monday": { "subject": "ESTADÍSTICA", "teacher": "Romina Sosa" },
+                "tuesday": { "subject": "LABORATORIO DE APLICACIONES II", "teacher": "Franco Prigent" },
+                "wednesday": { "subject": "LABORATORIO DE APLICACIONES II", "teacher": "Franco Prigent" },
+                "thursday": {
+                    "subject": "ECONOMÍA Y G. DE LA P.I.",
+                    "teacher": "Myriam Ribba"
+                },
+                "friday": { "subject": "ESTADÍSTICA", "teacher": "Romina Sosa" }
+            },
+            {
+                "type": "subject",
+                "time": "12:20 a 13:00",
+                "monday": { "subject": "INGLÉS", "teacher": "Bibiana Trescher" },
+                "tuesday": { "subject": "BASE DE DATOS", "teacher": "Ivana Guzmán" },
+                "wednesday": { "subject": "LABORATORIO DE APLICACIONES II", "teacher": "Franco Prigent" },
+                "thursday": { "subject": "BASE DE DATOS", "teacher": "Ivana Guzmán" },
+                "friday": { "subject": "INGLÉS", "teacher": "Bibiana Trescher" }
+            },
+            {
+                "type": "break",
+                "text": "ALMUERZO"
+            },
+            {
+                "type": "subject",
+                "time": "13:30 a 14:10",
+                "monday": { "subject": "CIUDADANÍA Y POLÍTICA", "teacher": "Olga Bonino" },
+                "tuesday": { "subject": "BASE DE DATOS", "teacher": "Ivana Guzmán" },
+                "wednesday": { "subject": "FILOSOFÍA", "teacher": "Rosana Urquiza" },
+                "thursday": { "subject": "BASE DE DATOS", "teacher": "Ivana Guzmán" },
+                "friday": { "subject": "INGLÉS", "teacher": "Bibiana Trescher" }
+            },
+            {
+                "type": "subject",
+                "time": "14:10 a 14:50",
+                "monday": { "subject": "CIUDADANÍA Y POLÍTICA", "teacher": "Olga Bonino" },
+                "tuesday": { "subject": "TEATRO", "teacher": "Maria E. Bonel" },
+                "wednesday": { "subject": "FILOSOFÍA", "teacher": "Rosana Urquiza" },
+                "thursday": { "subject": "BASE DE DATOS", "teacher": "Ivana Guzmán" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "15:00 a 15:40",
+                "monday": { "subject": "CIUDADANÍA Y POLÍTICA", "teacher": "Olga Bonino" },
+                "tuesday": { "subject": "TEATRO", "teacher": "Maria E. Bonel" },
+                "wednesday": { "subject": "FILOSOFÍA", "teacher": "Rosana Urquiza" },
+                "thursday": { "subject": "BASE DE DATOS", "teacher": "Ivana Guzmán" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "subject",
+                "time": "15:40 a 16:20",
+                "monday": { "subject": "ED. FÍSICA", "teacher": "Marita Molfa (16 a 17 hs)" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "ED. FÍSICA", "teacher": "Marita Molfa (16 a 17 hs)" },
+                "thursday": { "subject": "", "teacher": "" },
+                "friday": { "subject": "", "teacher": "" }
+            }
+        ]
+    },
+    "6-B": {
+        "year": "6° Año \"B\" - T. Tarde - Programación",
+        "rows": [
+            {
+                "type": "subject",
+                "time": "09:30 a 10:10",
+                "monday": { "subject": "BASE DE DATOS I", "teacher": "Luciano Gigena" },
+                "tuesday": { "subject": "SISTEMAS Y TELEC.", "teacher": "Pedro Rojo" },
+                "wednesday": { "subject": "BASE DE DATOS I", "teacher": "Luciano Gigena" },
+                "thursday": { "subject": "", "teacher": "" },
+                "friday": { "subject": "PROGRAMACIÓN III", "teacher": "Marcelo Ramirez (Sup.)" }
+            },
+            {
+                "type": "subject",
+                "time": "10:10 a 10:50",
+                "monday": { "subject": "BASE DE DATOS I", "teacher": "Luciano Gigena" },
+                "tuesday": { "subject": "SISTEMAS Y TELEC.", "teacher": "Pedro Rojo" },
+                "wednesday": { "subject": "SISTEMAS Y TELEC.", "teacher": "Pedro Rojo" },
+                "thursday": { "subject": "", "teacher": "" },
+                "friday": { "subject": "PROGRAMACIÓN III", "teacher": "Marcelo Ramirez (Sup.)" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "11:00 a 11:40",
+                "monday": { "subject": "BASE DE DATOS I", "teacher": "Luciano Gigena" },
+                "tuesday": { "subject": "SISTEMAS Y TELEC.", "teacher": "Pedro Rojo" },
+                "wednesday": { "subject": "SISTEMAS Y TELEC.", "teacher": "Pedro Rojo" },
+                "thursday": {
+                    "subject": "ECONOMÍA Y G. DE LA P.I.",
+                    "teacher": "Florencia Martínez (Sup.)"
+                },
+                "friday": { "subject": "PROGRAMACIÓN III", "teacher": "Marcelo Ramirez (Sup.)" }
+            },
+            {
+                "type": "subject",
+                "time": "11:40 a 12:20",
+                "monday": { "subject": "BASE DE DATOS I", "teacher": "Luciano Gigena" },
+                "tuesday": { "subject": "BASE DE DATOS I", "teacher": "Luciano Gigena" },
+                "wednesday": { "subject": "SISTEMAS Y TELEC.", "teacher": "Pedro Rojo" },
+                "thursday": {
+                    "subject": "ECONOMÍA Y G. DE LA P.I.",
+                    "teacher": "Florencia Martínez (Sup.)"
+                },
+                "friday": { "subject": "FILOSOFÍA", "teacher": "Martin Formini" }
+            },
+            {
+                "type": "break",
+                "text": "ALMUERZO"
+            },
+            {
+                "type": "subject",
+                "time": "13:00 a 13:40",
+                "monday": { "subject": "LENGUA Y LIT.", "teacher": "Rocio Dambolena" },
+                "tuesday": { "subject": "ANÁLISIS MATEMÁTICO", "teacher": "Paola Ramírez (Sup.)" },
+                "wednesday": { "subject": "PROGRAMACIÓN III", "teacher": "Marcelo Ramirez (Sup.)" },
+                "thursday": { "subject": "ANÁLISIS MATEMÁTICO", "teacher": "Paola Ramírez (Sup.)" },
+                "friday": { "subject": "FILOSOFÍA", "teacher": "Martin Formini" }
+            },
+            {
+                "type": "subject",
+                "time": "13:40 a 14:20",
+                "monday": { "subject": "LENGUA Y LIT.", "teacher": "Rocio Dambolena" },
+                "tuesday": { "subject": "ANÁLISIS MATEMÁTICO", "teacher": "Paola Ramírez (Sup.)" },
+                "wednesday": { "subject": "PROGRAMACIÓN III", "teacher": "Marcelo Ramirez (Sup.)" },
+                "thursday": { "subject": "ANÁLISIS MATEMÁTICO", "teacher": "Paola Ramírez (Sup.)" },
+                "friday": { "subject": "FILOSOFÍA", "teacher": "Martin Formini" }
+            },
+            {
+                "type": "subject",
+                "time": "14:20 a 15:00",
+                "monday": { "subject": "LENGUA Y LIT.", "teacher": "Rocio Dambolena" },
+                "tuesday": { "subject": "RECURSOS HUMANOS", "teacher": "Luciana Farias" },
+                "wednesday": { "subject": "ESTADÍSTICA", "teacher": "Romina Sosa" },
+                "thursday": { "subject": "ANÁLISIS MATEMÁTICO", "teacher": "Paola Ramírez (Sup.)" },
+                "friday": { "subject": "TEATRO", "teacher": "Maria E. Bonel" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "15:10 a 15:50",
+                "monday": {
+                    "subject": "ECONOMÍA Y G. DE LA P.I.",
+                    "teacher": "Florencia Martínez (Sup.)"
+                },
+                "tuesday": { "subject": "RECURSOS HUMANOS", "teacher": "Luciana Farias" },
+                "wednesday": { "subject": "ESTADÍSTICA", "teacher": "Romina Sosa" },
+                "thursday": { "subject": "INGLÉS", "teacher": "Bibiana Trescher" },
+                "friday": { "subject": "TEATRO", "teacher": "Maria E. Bonel" }
+            },
+            {
+                "type": "subject",
+                "time": "15:50 a 16:30",
+                "monday": {
+                    "subject": "ECONOMÍA Y G. DE LA P.I.",
+                    "teacher": "Florencia Martínez (Sup.)"
+                },
+                "tuesday": { "subject": "RECURSOS HUMANOS", "teacher": "Luciana Farias" },
+                "wednesday": { "subject": "ESTADÍSTICA", "teacher": "Romina Sosa" },
+                "thursday": { "subject": "INGLÉS", "teacher": "Bibiana Trescher" },
+                "friday": { "subject": "CIUDADANÍA Y POLÍTICA", "teacher": "Yanina Heredia (Sup)." }
+            },
+            {
+                "type": "subject",
+                "time": "16:30 a 17:10",
+                "monday": { "subject": "PROGRAMACIÓN III", "teacher": "Marcelo Ramirez (Sup.)" },
+                "tuesday": { "subject": "CIUDADANÍA Y POLÍTICA", "teacher": "Yanina Heredia (Sup)." },
+                "wednesday": { "subject": "ESTADÍSTICA", "teacher": "Romina Sosa" },
+                "thursday": { "subject": "INGLÉS", "teacher": "Bibiana Trescher" },
+                "friday": { "subject": "CIUDADANÍA Y POLÍTICA", "teacher": "Yanina Heredia (Sup)." }
+            }
+        ]
+    },
+    "7-A": {
+        "year": "7° Año \"A\" - T. Tarde - Informática",
+        "rows": [
+            {
+                "type": "subject",
+                "time": "08:40 a 09:20",
+                "monday": { "subject": "", "teacher": "" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "F.A.T.", "teacher": "" },
+                "thursday": { "subject": "F.A.T.", "teacher": "" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "09:30 a 10:10",
+                "monday": { "subject": "", "teacher": "" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "F.A.T.", "teacher": "" },
+                "thursday": { "subject": "F.A.T.", "teacher": "" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "subject",
+                "time": "10:10 a 10:50",
+                "monday": { "subject": "", "teacher": "" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "F.A.T.", "teacher": "" },
+                "thursday": { "subject": "F.A.T.", "teacher": "" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "11:00 a 11:40",
+                "monday": { "subject": "", "teacher": "" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "F.A.T.", "teacher": "" },
+                "thursday": { "subject": "F.A.T.", "teacher": "" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "subject",
+                "time": "11:40 a 12.20",
+                "monday": { "subject": "", "teacher": "" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "F.A.T.", "teacher": "" },
+                "thursday": { "subject": "F.A.T.", "teacher": "" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "break",
+                "text": "ALMUERZO"
+            },
+            {
+                "type": "subject",
+                "time": "13:30 a 14:10",
+                "monday": { "subject": "MARCO JURÍDICO", "teacher": "Claudia Petraco" },
+                "tuesday": { "subject": "MHMYS", "teacher": "Franco Prigent" },
+                "wednesday": { "subject": "HIGIENE Y SEGURIDAD", "teacher": "Emiliano Romero" },
+                "thursday": { "subject": "EMPRENDIMIENTO", "teacher": "Alicia Ortíz (Sup. Romina Carreras)" },
+                "friday": { "subject": "EMPRENDIMIENTO", "teacher": "Alicia Ortíz (Sup. Romina Carreras)" }
+            },
+            {
+                "type": "subject",
+                "time": "14:10 a 14:50",
+                "monday": { "subject": "MARCO JURÍDICO", "teacher": "Claudia Petraco" },
+                "tuesday": { "subject": "MHMYS", "teacher": "Franco Prigent" },
+                "wednesday": { "subject": "HIGIENE Y SEGURIDAD", "teacher": "Emiliano Romero" },
+                "thursday": { "subject": "EMPRENDIMIENTO", "teacher": "Alicia Ortíz (Sup. Romina Carreras)" },
+                "friday": { "subject": "EMPRENDIMIENTO", "teacher": "Alicia Ortíz (Sup. Romina Carreras)" }
+            },
+            {
+                "type": "subject",
+                "time": "15:00 a 15:40",
+                "monday": { "subject": "MARCO JURÍDICO", "teacher": "Claudia Petraco" },
+                "tuesday": { "subject": "MHMYS", "teacher": "Franco Prigent" },
+                "wednesday": { "subject": "HIGIENE Y SEGURIDAD", "teacher": "Emiliano Romero" },
+                "thursday": { "subject": "MHMYS", "teacher": "Franco Prigent" },
+                "friday": { "subject": "INGLÉS TÉCNICO", "teacher": "Bibiana Trescher" }
+            },
+            {
+                "type": "subject",
+                "time": "15:40 a 16:20",
+                "monday": { "subject": "I. Y M. REDES LOCALES", "teacher": "Pedro Rojo" },
+                "tuesday": { "subject": "MHMYS", "teacher": "Franco Prigent" },
+                "wednesday": { "subject": "CONEXIÓN A REDES EXT.", "teacher": "Pedro Rojo" },
+                "thursday": { "subject": "MHMYS", "teacher": "Franco Prigent" },
+                "friday": { "subject": "INGLÉS TÉCNICO", "teacher": "Bibiana Trescher" }
+            },
+            {
+                "type": "subject",
+                "time": "16:30 a 17:10",
+                "monday": { "subject": "I. Y M. REDES LOCALES", "teacher": "Pedro Rojo" },
+                "tuesday": { "subject": "I. Y M. REDES LOCALES", "teacher": "Pedro Rojo" },
+                "wednesday": { "subject": "CONEXIÓN A REDES EXT.", "teacher": "Pedro Rojo" },
+                "thursday": { "subject": "MHMYS", "teacher": "Franco Prigent" },
+                "friday": { "subject": "INGLÉS TÉCNICO", "teacher": "Bibiana Trescher" }
+            },
+            {
+                "type": "subject",
+                "time": "17:10 a 17:50",
+                "monday": { "subject": "I. Y M. REDES LOCALES", "teacher": "Pedro Rojo" },
+                "tuesday": { "subject": "CONEXIÓN A REDES EXT.", "teacher": "Pedro Rojo" },
+                "wednesday": { "subject": "CONEXIÓN A REDES EXT.", "teacher": "Pedro Rojo" },
+                "thursday": { "subject": "MHMYS", "teacher": "Franco Prigent" },
+                "friday": { "subject": "INGLÉS TÉCNICO", "teacher": "Bibiana Trescher" }
+            },
+            {
+                "type": "subject",
+                "time": "17:55 a 18:35",
+                "monday": { "subject": "I. Y M. REDES LOCALES", "teacher": "Pedro Rojo" },
+                "tuesday": { "subject": "CONEXIÓN A REDES EXT.", "teacher": "Pedro Rojo" },
+                "wednesday": { "subject": "CONEXIÓN A REDES EXT.", "teacher": "Pedro Rojo" },
+                "thursday": { "subject": "I. Y M. REDES LOCALES", "teacher": "Pedro Rojo" },
+                "friday": { "subject": "", "teacher": "" }
+            }
+        ]
+    },
+    "7-B": {
+        "year": "7° Año \"B\" - T. Tarde - Programación",
+        "rows": [
+            {
+                "type": "subject",
+                "time": "08:40 a 09:20",
+                "monday": { "subject": "F.A.T.", "teacher": "" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "", "teacher": "" },
+                "thursday": { "subject": "F.A.T.", "teacher": "" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "09:30 a 10:10",
+                "monday": { "subject": "F.A.T.", "teacher": "" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "", "teacher": "" },
+                "thursday": { "subject": "F.A.T.", "teacher": "" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "subject",
+                "time": "10:10 a 10:50",
+                "monday": { "subject": "F.A.T.", "teacher": "" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "", "teacher": "" },
+                "thursday": { "subject": "F.A.T.", "teacher": "" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "11:00 a 11:40",
+                "monday": { "subject": "F.A.T.", "teacher": "" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "", "teacher": "" },
+                "thursday": { "subject": "F.A.T.", "teacher": "" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "subject",
+                "time": "11:40 a 12.20",
+                "monday": { "subject": "F.A.T.", "teacher": "" },
+                "tuesday": { "subject": "", "teacher": "" },
+                "wednesday": { "subject": "", "teacher": "" },
+                "thursday": { "subject": "F.A.T.", "teacher": "" },
+                "friday": { "subject": "", "teacher": "" }
+            },
+            {
+                "type": "break",
+                "text": "ALMUERZO"
+            },
+            {
+                "type": "subject",
+                "time": "13:30 a 14:10",
+                "monday": { "subject": "INGLÉS TÉCNICO", "teacher": "Trescher Bibiana" },
+                "tuesday": { "subject": "LABORATORIO DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
+                "wednesday": { "subject": "APP. DE NUEVAS TECNOLOGÍAS", "teacher": "Rojo Pedro" },
+                "thursday": { "subject": "BASE DE DATOS II", "teacher": "Ligorria Dolores" },
+                "friday": { "subject": "HIGIENE Y SEGURIDAD", "teacher": "Emiliano Romero" }
+            },
+            {
+                "type": "subject",
+                "time": "14:10 a 14:50",
+                "monday": { "subject": "INGLÉS TÉCNICO", "teacher": "Trescher Bibiana" },
+                "tuesday": { "subject": "LABORATORIO DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
+                "wednesday": { "subject": "APP. DE NUEVAS TECNOLOGÍAS", "teacher": "Rojo Pedro" },
+                "thursday": { "subject": "BASE DE DATOS II", "teacher": "Ligorria Dolores" },
+                "friday": { "subject": "HIGIENE Y SEGURIDAD", "teacher": "Emiliano Romero" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "15:00 a 15:40",
+                "monday": { "subject": "INGLÉS TÉCNICO", "teacher": "Trescher Bibiana" },
+                "tuesday": { "subject": "LABORATORIO DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
+                "wednesday": { "subject": "APP. DE NUEVAS TECNOLOGÍAS", "teacher": "Rojo Pedro" },
+                "thursday": { "subject": "BASE DE DATOS II", "teacher": "Ligorria Dolores" },
+                "friday": { "subject": "HIGIENE Y SEGURIDAD", "teacher": "Emiliano Romero" }
+            },
+            {
+                "type": "subject",
+                "time": "15:40 a 16:20",
+                "monday": { "subject": "INGLÉS TÉCNICO", "teacher": "TrescherBibiana" },
+                "tuesday": { "subject": "LABORATORIO DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
+                "wednesday": { "subject": "EMPRENDIMIENTO", "teacher": "Myriam Ribba (Sup. Martínez F.)" },
+                "thursday": { "subject": "LABORATORIO DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
+                "friday": { "subject": "APP. DE NUEVAS TECNOLOGÍAS", "teacher": "Rojo Pedro" }
+            },
+            {
+                "type": "break",
+                "text": "RECREO"
+            },
+            {
+                "type": "subject",
+                "time": "16:30 a 17:10",
+                "monday": { "subject": "BASE DE DATOS II", "teacher": "Ligorria Dolores" },
+                "tuesday": { "subject": "MARCO JURÍDICO", "teacher": "Myriam Ribba (Sup. Rovetto Natali)" },
+                "wednesday": { "subject": "EMPRENDIMIENTO", "teacher": "Myriam Ribba (Sup. Martínez F.)" },
+                "thursday": { "subject": "LABORATORIO DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
+                "friday": { "subject": "APP. DE NUEVAS TECNOLOGÍAS", "teacher": "Rojo Pedro" }
+            },
+            {
+                "type": "subject",
+                "time": "17:10 a 17:50",
+                "monday": { "subject": "BASE DE DATOS II", "teacher": "Ligorria Dolores" },
+                "tuesday": { "subject": "MARCO JURÍDICO", "teacher": "Myriam Ribba (Sup. Rovetto Natali)" },
+                "wednesday": { "subject": "EMPRENDIMIENTO", "teacher": "Myriam Ribba (Sup. Martínez F.)" },
+                "thursday": { "subject": "LABORATORIO DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
+                "friday": { "subject": "APP. DE NUEVAS TECNOLOGÍAS", "teacher": "Rojo Pedro" }
+            },
+            {
+                "type": "subject",
+                "time": "17:55 a 18:35",
+                "monday": { "subject": "BASE DE DATOS II", "teacher": "Ligorria Dolores" },
+                "tuesday": { "subject": "MARCO JURÍDICO", "teacher": "Myriam Ribba (Sup. Rovetto Natali)" },
+                "wednesday": { "subject": "EMPRENDIMIENTO", "teacher": "Myriam Ribba (Sup. Martínez F.)" },
+                "thursday": { "subject": "LABORATORIO DE INFORMÁTICA", "teacher": "Miguel Berezosky" },
+                "friday": { "subject": "", "teacher": "" }
+            }
+        ]
+    }
+}

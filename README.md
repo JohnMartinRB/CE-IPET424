@@ -3,7 +3,7 @@
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
 [![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.36%20%28Alpha%29-blue)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.39%20%28Alpha%29-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
@@ -38,7 +38,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.36` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.39` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
 | **Lanzamiento Estable (v1.0)** | Martes 9 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
@@ -96,49 +96,34 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 
 ## 📂 Arquitectura y Estructura del Proyecto
 
-El código está estructurado de forma modular y limpia[cite: 3]. Para consultar el árbol completo de archivos y módulos, revisá la [Guía de Arquitectura del Proyecto](./ARCHITECTURE.md).
+El código está estructurado de forma modular y limpia. Para consultar el árbol completo de archivos y módulos, revisá la [Guía de Arquitectura del Proyecto](./ARCHITECTURE.md).
 
 ---
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.36-alpha` (Actual)**
-    - Nuevos temas de estacionales por temporadas
-        - Verano: enero y febrero
-        - Mes rosa: octubre
-        - Misterio: última semana de octubre
-        - Festividades: semanas de diciembre y la primera de enero
-    - Estos temas se encuentran en `seasonal.css`
-    - Se agregaron botones en el aside de opciones para activar los temas estacionales
-    - Se inviertieron las fuentes: Nunito como Titles y Nunito Sans como Main
-    - El texto de `terminos.html` ahora se encuentra directamente en la tarjeta principal
-    - Se corrigió el funcionamiento de `initPageTitle`
-    - Se agregaron y cambiaron muchos títulos en la pantalla de carga
-    - Se modificaron levemente algunos colores
-    - Se modificó el color del icono del boton del aside en la mayoria de temas
-    - Se reworkeó el funcionamiento de `grayscale-mode` para que se aplique como una capa en lugar de un tema independiente (así como rest-mode)
-    - Se eliminó el favicon gris
-    - Función js actualizada para comprobar ciertos periodos de fecha y aplicar temas estacionales por defecto
-    - Nuevos logos y favicons rosa y mascota rosa para el mes de octubre
-    - Se actualizaron los logos y favicons de halloween y navidad
-    - Se agregó el logo de instagram con colores patrios y se actualizaron los de halloween y navidad
-    - Se separaron los logos de `assets/logos` en `ig/`, `ce/` y `app/`
-    - Se renombraron los archivos de logos
-    - Se actualizaron las rutas de los logos
-    - Eliminada una variable inutilizada
-    - Se agregaron muchas variables de color nuevas para elementos que antes usaban las variables de color de otro elemento
-    - Se renombraron muchas variables
-    - Se agregó `.gitkeep` a algunas carpetas vacías que no lo tenían
+- **`v0.39-alpha` (Actual)**
+    - Nuevos widgets:
+        - Widget de Efeméride diaria (Día de...)
+        - Widget de vistas del sitio (diarias, mensuales, anuale y totales)
+    - Nuevas funciones js para manejar los widgets
+    - Archivo `days.json` para guardar las efemérides (aún en progreso)
+    - Se reordenó la carga de los widgets en las funciones js
+    - Se agregaron variables a algunos elementos con tamaños de fuente fijo
+    - Se eliminaron algunas propiedades innecesarias
+    - Se mejoraron los comentarios de css y se eliminaron muchos
 
-- **`v0.35-alpha` (Anterior)**
-    - Nueva subpágina de Términos y Condiciones para protección legal y de conducta del sitio
-    - Nuevo modal para aceptar términos y condiciones al entrar por primera vez al sitio
-    - El footer ahora tiene una columna más, de título Legal, con link a Terminos y Licencia (se movió a esta columna)
-    - En la columna proyecto ahora se encuentra un enlace a Créditos
-    - Modificación en la función js para inciar los modales en orden
-    - Se renombraron los svg del widget y se actualizaron las rutas
-    - Renombrado `home.css` a `specific.css`
-    - Iconos del footer en carpeta `assets/icons/footer` (sin usar de momento)
+- **`v0.38-alpha` (Anterior)**
+    - Se agregó contenido a los siguientes archivos:
+        - `.github/ISSUE_TEMPLATE/bug_report.yml`
+        - `.github/ISSUE_TEMPLATE/feature_request.yml`
+        - `.github/CODE_OF_CONDUCT.md`
+        - `.github/PULL_REQUEST_TEMPLATE.md`
+    - Se amplió el changelog incluyendo el historial desde la primera versión
+    - Las versiones de número redondo ahora incluyen el título de Versión Principal Mayor (a excepción de la 0.10)
+    - Se corrigieron algunos niveles de viñeta en el changelog
+    - Se agregaron los archivos de la fuente de texto Lora
+    - Se agregó Lora en @font-face
 
 Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 

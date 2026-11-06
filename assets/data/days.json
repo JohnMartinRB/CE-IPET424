@@ -1,0 +1,22 @@
+[
+    {
+        "fecha": "04-01",
+        "titulo": "Día Mundial del Braille",
+        "descripcion": "Se conmemora el nacimiento de Louis Braille, creador del sistema de lectura y escritura táctil para personas ciegas."
+    },
+    {
+        "fecha": "05-25",
+        "titulo": "Revolución de Mayo",
+        "descripcion": "Se recuerda el primer gobierno patrio argentino constituido en el Cabildo de Buenos Aires en 1810."
+    },
+    {
+        "fecha": "09-11",
+        "titulo": "Día del Maestro",
+        "descripcion": "En homenaje a Domingo Faustino Sarmiento en el aniversario de su fallecimiento."
+    },
+    {
+        "fecha": "11-17",
+        "titulo": "Día de la Militancia",
+        "descripcion": "Conmemoración del regreso de Juan Domingo Perón a la Argentina en 1972 tras 18 años de exilio."
+    }
+]

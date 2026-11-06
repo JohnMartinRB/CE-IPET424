@@ -75,6 +75,10 @@
         width: 100%;
         margin: var(--space-xs) auto;
     }
+    .aside-title {
+        margin-top: var(--space-md);
+        margin-bottom: var(--space-sm);
+    }
 
     .aside-options::-webkit-scrollbar {
         width: 0.3rem;
@@ -121,10 +125,6 @@
     .aside-widgets-button-toggle {
         left: 1%;
     }
-
-    /* ==========================================
-    ACCESIBILIDAD: CONTROL DE TAMAÑO DE TEXTO
-    ========================================== */
     .font-size-control-container {
         width: 100%;
         margin: 1rem 0;

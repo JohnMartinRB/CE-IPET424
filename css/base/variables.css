@@ -6,7 +6,7 @@
     interpolate-size: allow-keywords;
 
     /* ==========================================================================
-    1. COLORES Y PALETAS
+    COLORES Y PALETAS
     ========================================================================== */
     /* colores principales */
     --blanco: #fff;
@@ -95,7 +95,7 @@
     --border-widget: rgba(129, 129, 129, 0.2);
 
     /* ==========================================================================
-    2. TIPOGRAFÍAS Y ESCALA (FONT-SIZE)
+    TIPOGRAFÍAS Y ESCALA (FONT-SIZE)
     ========================================================================== */
     --font-titles: "Nunito", serif;
     --font-main: "Nunito Sans", sans-serif;
@@ -117,7 +117,7 @@
     --lh-normal: 1.5;
 
     /* ==========================================================================
-    3. ESPACIADO (PADDING, MARGIN, GAP)
+    ESPACIADO (PADDING, MARGIN, GAP)
     ========================================================================== */
     --space-2xs: 0.1rem;
     --space-xs: 0.5rem;
@@ -128,7 +128,7 @@
     --space-xl: 4rem;
 
     /* ==========================================================================
-    4. BORDES / REDONDEO
+    BORDES / REDONDEO
     ========================================================================== */
     --radius-xs: 0.5rem;
     --radius-sm: 1rem;
@@ -139,7 +139,7 @@
     --radius-full: 50%;
 
     /* ==========================================================================
-    5. SOMBRAS Y EFECTOS
+    SOMBRAS Y EFECTOS
     ==========================================================================
 
     /* Sombra base sutil pero más definida (aumentamos opacidad del azul) */
@@ -162,7 +162,7 @@
     --blur-modal-color: rgba(6, 2, 27, 0.75);
 
     /* ==========================================================================
-    6. TIEMPOS Y FUNCIONES DE TRANSICIÓN
+    TIEMPOS Y FUNCIONES DE TRANSICIÓN
     ========================================================================== */
     --transition-active: transform 0.05s ease;
     --transition-ultra-fast: color 0.1s ease, transform 0.1s ease, width 0.1s ease-out;
@@ -177,7 +177,7 @@
     --transition-loader: opacity 1s ease, visibility 1s ease;
 
     /* ==========================================================================
-    7. CURSORES
+    CURSORES
     ========================================================================== */
     --default: url("../../assets/img/cursors/default.cur"), auto;
     --pointer: url("../../assets/img/cursors/pointer.cur"), pointer;

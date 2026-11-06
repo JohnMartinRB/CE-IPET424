@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- ETIQUETAS META -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta
+            name="description"
+            content="Sitio oficial del Centro de Estudiantes IPET 424. Novedades, proyectos y contacto."
+        />
+        <meta name="theme-color" id="theme-color" content="#0088FF" />
+        <!-- TITULO DE LA PESTAÑA Y FAVICON -->
+        <title>Calendario | Centro de Estudiantes IPET N° 424</title>
+        <link rel="icon" id="favicon" type="image/png" href="assets/img/favicons/light.png" sizes="any" />
+        <!-- CSS Y JAVASCRIPT -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <script type="module" src="js/main.js"></script>
+        <script src="assets/libs/html2canvas.min.js"></script>
+        <script src="assets/libs/jspdf.umd.min.js"></script>
+    </head>
+
+    <body>
+        <!-- HEADER DE TITULO -->
+        <div id="header-container" class="header-container"></div>
+        <!-- PANEL LATERAL DE CONFIGURACIÓN -->
+        <div id="aside-config-container" class="aside-config-container"></div>
+        <!-- PANEL LATERAL DE NOVEDADES -->
+        <div id="aside-news-container" class="aside-news-container"></div>
+        <!-- CONTENEDOR PRINCIPAL -->
+        <div id="content-card" class="content-card">
+            <main>
+                <!-- SECCIÓN: CALENDARIO Y DESCARGA -->
+                <section id="calendario" class="section-card calendario-section">
+                    <h2>Generador de Calendario Anual Personalizable</h2>
+                    <p class="subtitle-section paragraph text">
+                        Diseñá tu propio calendario para imprimir, armá tus feriados y organizá tu año.
+                    </p>
+                    <!-- Panel de Controles de Personalización -->
+                    <div class="controls-panel">
+                        <!-- Fila superior: Año y Botón -->
+                        <div class="controls-top-row" id="controls-top-row">
+                            <div class="control-group">
+                                <label for="select-year">Año</label>
+                                <select id="select-year">
+                                    <option value="2026" selected>2026</option>
+                                    <option value="2027">2027</option>
+                                </select>
+                            </div>
+                            <div class="control-group">
+                                <label for="button-toggle-customize">Abrir panel de opciones</label>
+                                <button
+                                    type="button"
+                                    id="button-toggle-customize"
+                                    class="button button-toggle-customize"
+                                >
+                                    Personalizar
+                                </button>
+                            </div>
+                        </div>
+                        <div id="customize-panel" class="customize-panel">
+                            <!-- Control de Tamaño de Texto -->
+                            <div class="control-group font-size-control-container">
+                                <span class="font-size-label">Tamaño de Texto</span>
+                                <div class="font-size-buttons-group">
+                                    <button
+                                        type="button"
+                                        id="controls-button-font-decrease"
+                                        class="button button-small"
+                                        aria-label="Achicar tamaño de texto"
+                                    >
+                                        A-
+                                    </button>
+                                    <span id="controls-font-size-indicator" class="font-size-value">100%</span>
+                                    <button
+                                        type="button"
+                                        id="controls-button-font-increase"
+                                        class="button button-small"
+                                        aria-label="Agrandar tamaño de texto"
+                                    >
+                                        A+
+                                    </button>
+                                    <button
+                                        type="button"
+                                        id="controls-button-font-reset"
+                                        class="button button-small"
+                                        aria-label="Restablecer tamaño de texto"
+                                    >
+                                        ⟲
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Contenedor de los 5 selectores de color -->
+                            <div class="control-group">
+                                <span>Colores</span>
+                                <div class="color-pickers-container">
+                                    <!-- 1. Color Título del Mes -->
+                                    <div class="color-picker-wrapper">
+                                        <span class="color-label">Título</span>
+                                        <button
+                                            type="button"
+                                            class="color-trigger"
+                                            id="button-color-title"
+                                            style="background-color: #2b6cb0"
+                                            title="Cambiar color de Título"
+                                        ></button>
+                                        <div class="color-dropdown" id="dropdown-title">
+                                            <div class="color-grid">
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #2b6cb0"
+                                                    data-color="#2b6cb0"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #0088ff"
+                                                    data-color="#0088ff"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #3b82f6"
+                                                    data-color="#3b82f6"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #34d399"
+                                                    data-color="#34d399"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #f87171"
+                                                    data-color="#f87171"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #fbbf24"
+                                                    data-color="#fbbf24"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #a78bfa"
+                                                    data-color="#a78bfa"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #334155"
+                                                    data-color="#334155"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #000000"
+                                                    data-color="#000000"
+                                                ></span>
+                                                <label class="color-swatch custom-swatch" title="Color personalizado">
+                                                    ⚙️<input
+                                                        type="color"
+                                                        class="hidden-color-input"
+                                                        id="color-title"
+                                                        value="#2b6cb0"
+                                                    />
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 2. Color Headers Días (L, M, X...) -->
+                                    <div class="color-picker-wrapper">
+                                        <span class="color-label">Semana</span>
+                                        <button
+                                            type="button"
+                                            class="color-trigger"
+                                            id="button-color-dayheader"
+                                            style="background-color: #010f8f"
+                                            title="Cambiar color de Días"
+                                        ></button>
+                                        <div class="color-dropdown" id="dropdown-dayheader">
+                                            <div class="color-grid">
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #010f8f"
+                                                    data-color="#010f8f"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #0088ff"
+                                                    data-color="#0088ff"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #334155"
+                                                    data-color="#334155"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #34d399"
+                                                    data-color="#34d399"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #f87171"
+                                                    data-color="#f87171"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #fbbf24"
+                                                    data-color="#fbbf24"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #a78bfa"
+                                                    data-color="#a78bfa"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #64748b"
+                                                    data-color="#64748b"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #000000"
+                                                    data-color="#000000"
+                                                ></span>
+                                                <label class="color-swatch custom-swatch" title="Color personalizado">
+                                                    ⚙️<input
+                                                        type="color"
+                                                        class="hidden-color-input"
+                                                        id="color-dayheader"
+                                                        value="#010f8f"
+                                                    />
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 3. Color Cuadrículas (Casillas de días) -->
+                                    <div class="color-picker-wrapper">
+                                        <span class="color-label">Día</span>
+                                        <button
+                                            type="button"
+                                            class="color-trigger"
+                                            id="button-color-cell"
+                                            style="background-color: #eee"
+                                            title="Cambiar color de Casillas"
+                                        ></button>
+                                        <div class="color-dropdown" id="dropdown-cell">
+                                            <div class="color-grid">
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #eee"
+                                                    data-color="#eee"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #ffffff"
+                                                    data-color="#ffffff"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #f8fafc"
+                                                    data-color="#f8fafc"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #e2e8f0"
+                                                    data-color="#e2e8f0"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #bfdbfe"
+                                                    data-color="#bfdbfe"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #bbf7d0"
+                                                    data-color="#bbf7d0"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #fef08a"
+                                                    data-color="#fef08a"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #fed7aa"
+                                                    data-color="#fed7aa"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #e9d5ff"
+                                                    data-color="#e9d5ff"
+                                                ></span>
+                                                <label class="color-swatch custom-swatch" title="Color personalizado">
+                                                    ⚙️<input
+                                                        type="color"
+                                                        class="hidden-color-input"
+                                                        id="color-cell"
+                                                        value="#eeeeee"
+                                                    />
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 4. Color Fondo del Mes (con degradé) -->
+                                    <div class="color-picker-wrapper">
+                                        <span class="color-label">Mes</span>
+                                        <button
+                                            type="button"
+                                            class="color-trigger"
+                                            id="button-color-monthbg"
+                                            style="background-color: #ffffff"
+                                            title="Cambiar color de Fondo del Mes"
+                                        ></button>
+                                        <div class="color-dropdown" id="dropdown-monthbg">
+                                            <div class="color-grid">
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #ffffff"
+                                                    data-color="#ffffff"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #f8fafc"
+                                                    data-color="#f8fafc"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #eff6ff"
+                                                    data-color="#eff6ff"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #f0fdf4"
+                                                    data-color="#f0fdf4"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #fff7ed"
+                                                    data-color="#fff7ed"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #faf5ff"
+                                                    data-color="#faf5ff"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #e2e8f0"
+                                                    data-color="#e2e8f0"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #94a3b8"
+                                                    data-color="#94a3b8"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #1e293b"
+                                                    data-color="#1e293b"
+                                                ></span>
+                                                <label class="color-swatch custom-swatch" title="Color personalizado">
+                                                    ⚙️<input
+                                                        type="color"
+                                                        class="hidden-color-input"
+                                                        id="color-monthbg"
+                                                        value="#ffffff"
+                                                    />
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 5. Color Fondo General del Calendario -->
+                                    <div class="color-picker-wrapper">
+                                        <span class="color-label">Fondo</span>
+                                        <button
+                                            type="button"
+                                            class="color-trigger"
+                                            id="button-color-calendarbg"
+                                            style="background-color: transparent"
+                                            title="Cambiar Fondo General"
+                                        ></button>
+                                        <div class="color-dropdown" id="dropdown-calendarbg">
+                                            <div class="color-grid">
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: transparent"
+                                                    data-color="transparent"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #f8fafc"
+                                                    data-color="#f8fafc"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #e2e8f0"
+                                                    data-color="#e2e8f0"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #dbeafe"
+                                                    data-color="#dbeafe"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #dcfce7"
+                                                    data-color="#dcfce7"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #fef9c3"
+                                                    data-color="#fef9c3"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #ffedd5"
+                                                    data-color="#ffedd5"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #f3e8ff"
+                                                    data-color="#f3e8ff"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #0c316d"
+                                                    data-color="#0c316d"
+                                                ></span>
+                                                <label class="color-swatch custom-swatch" title="Color personalizado">
+                                                    ⚙️<input
+                                                        type="color"
+                                                        class="hidden-color-input"
+                                                        id="color-calendarbg"
+                                                        value="#ffffff"
+                                                    />
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label for="select-font">Tipografía</label>
+                                <select id="select-font">
+                                    <option value="Nunito">Nunito</option>
+                                    <option value="Nunito Sans">Nunito Sans</option>
+                                    <option value="Arial">Arial</option>
+                                    <option value="Calibri">Calibri</option>
+                                    <option value="Atkinson Hyperlegible">Dislexia</option>
+                                </select>
+                            </div>
+                            <div class="control-group">
+                                <label for="select-view">Visualización</label>
+                                <select id="select-view">
+                                    <option value="12-hojas">Mensual (12 páginas)</option>
+                                    <option value="1-hoja">Anual (1 página)</option>
+                                </select>
+                            </div>
+                            <div class="control-group">
+                                <label for="select-format">Formato de descarga</label>
+                                <select id="select-format">
+                                    <option value="image" selected>Imagen PNG</option>
+                                    <option value="pdf">Documento PDF</option>
+                                </select>
+                            </div>
+                            <!-- Botón de descarga -->
+                            <div class="control-group">
+                                <label for="button-download-calendar">Exportar archivo</label>
+                                <button id="button-download-calendar" class="button">Descargar Calendario</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CONTENEDOR DINÁMICO: Aquí JavaScript generará los meses -->
+                    <div id="calendar-container" class="calendar-container vista-12-hojas">
+                        <!-- Los meses se dibujarán automáticamente aquí -->
+                        <p class="placeholder-text">Cargando calendarios...</p>
+                    </div>
+                </section>
+                <!-- SECCIÓN: SUB SITIOS -->
+                <section class="section-card">
+                    <h2>¿Buscas algo específico?</h2>
+                    <p>Visitá nuestros diferentes sitios de consultas</p>
+                    <!-- Botones de enlaces a sub-páginas -->
+                    <ul id="subpages" class="subpages">
+                        <li><a class="subpages-link button" href="index.html">Inicio</a></li>
+                        <li><a class="subpages-link button" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="subpages-link button" href="noticias.html">Noticias</a></li>
+                        <li><a class="subpages-link button" href="proyectos.html">Proyectos</a></li>
+                        <li><a class="subpages-link button" href="herramientas.html">Herramientas</a></li>
+                        <li><a class="subpages-link button" href="tramites.html">Trámites</a></li>
+                        <li><a class="subpages-link button" href="recursos.html">Recursos</a></li>
+                        <li><a class="subpages-link button" href="escuela.html">Escuela</a></li>
+                        <li><a class="subpages-link button" href="contacto.html">Contacto</a></li>
+                        <li><a class="subpages-link button" href="creditos.html">Créditos</a></li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <!-- PIE DE PÁGINA -->
+        <div id="footer-container" class="footer-container"></div>
+        <!-- BOTÓN DE VOLVER ARRIBA -->
+        <button class="button-round button-scroll-top" id="button-scroll-top" aria-label="Volver arriba">↑</button>
+        <!-- VENTANA MODAL "EN DESARROLLO" -->
+        <div id="modal-in-dev-container" class="modal-in-dev-container"></div>
+        <!-- VENTANA MODAL DE NOVEDADES -->
+        <div id="modal-whats-new-container" class="modal-whats-new-container"></div>
+    </body>
+</html>

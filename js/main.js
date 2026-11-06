@@ -3,27 +3,49 @@
 ========================================================================== */
 import { renderLoader, initComponents, initPageTitle } from "./ui/components.js";
 import { initButtons } from "./ui/buttons.js";
-import { initFactsWidget, initHolidaysWidget, initDailyQuoteWidget, initWeatherDateTimeWidget } from "./ui/widgets.js";
+import {
+    initHolidaysWidget,
+    initDaysWidget,
+    initDailyQuoteWidget,
+    initFactsWidget,
+    initWeatherDateTimeWidget,
+    initViewsWidget,
+} from "./ui/widgets.js";
 import { initBanners } from "./ui/banners.js";
 import { initTheme } from "./ui/theme.js";
 import { initModals } from "./ui/modals.js";
+<<<<<<< HEAD
 import { initHeader } from "./ui/header.js";
+=======
+import { initSchedules } from "./ui/schedules.js";
+import { initCalendar } from "./ui/calendar.js";
+>>>>>>> dev
 import { initFontSize } from "./utils/font-size.js";
 import { initAnimations } from "./utils/animations.js";
 import { initDyslexia } from "./utils/dyslexia.js";
 import { initSound, playSound } from "./utils/sound.js";
 import { initShortcuts } from "./utils/shortcuts.js";
-import { config, party, matrix, flip, terminal, paint, menu } from "./config.js";
+import {
+    configBase,
+    configParty,
+    configMatrix,
+    configFlip,
+    configTerminal,
+    configPaint,
+    configMenu,
+} from "./config.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     renderLoader();
     await initComponents();
     initPageTitle();
     initButtons();
-    initFactsWidget();
     initHolidaysWidget();
+    initDaysWidget();
     initDailyQuoteWidget();
+    initFactsWidget();
     initWeatherDateTimeWidget();
+    initViewsWidget();
     initBanners();
     initTheme();
     initModals();
@@ -33,16 +55,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     initDyslexia();
     initSound();
     initShortcuts();
-    config();
-    party();
-    matrix();
-    flip();
-    terminal();
-    paint();
-    menu();
+    initSchedules();
+    initCalendar();
+    configBase();
+    configParty();
+    configMatrix();
+    configFlip();
+    configTerminal();
+    configPaint();
+    configMenu();
 });
-
-console.log("C.E. IPET 424 - Sitio inicializado correctamente");
 
 // Delegación global para interceptar el clic derecho en imágenes fijas y dinámicas
 document.addEventListener("contextmenu", function (e) {
@@ -111,3 +133,5 @@ document.addEventListener(
     },
     true,
 ); // El 'true' es vital: permite interceptar el evento 'error' durante la fase de captura
+
+console.log("C.E. IPET 424 - Sitio inicializado correctamente");

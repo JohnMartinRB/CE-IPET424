@@ -1,9 +1,9 @@
 /* ==========================================
     EASTER EGGS: KONAMI CODE Y MOSTRAR MENSAJE EN LA CONSOLA
 ========================================== */
-export function config() {
+export function configBase() {
     console.log(
-        "%c ¡Hola usuario! 🚀 %c\n¿Te interesa la programación o querés colaborar en la web del Centro de Estudiantes? ¡Sumate al equipo!",
+        "%c Hola usuario! %c\n¿Te interesa la programación y querés colaborar en la web del Centro de Estudiantes? ¡Sumate al equipo!",
         "font-size: 1.5rem; font-weight: bold; color: #00C4FF;",
         "font-size: 1rem; color: #ccc;",
     );
@@ -22,7 +22,7 @@ export function config() {
     });
 }
 
-export function matrix() {
+export function configMatrix() {
     // Variable privada para almacenar el historial de teclas ingresadas
     let matrixBuffer = "";
     /**
@@ -97,7 +97,7 @@ export function matrix() {
     }
 }
 
-export function party() {
+export function configParty() {
     let clicks = 0;
     let clickTimer = null;
     document.addEventListener("click", (e) => {
@@ -165,7 +165,7 @@ export function party() {
     }
 }
 
-export function flip() {
+export function configFlip() {
     let flipBuffer = "";
     document.addEventListener("keydown", (e) => {
         // Se ignora el evento si el usuario está tipeando en un input o textarea
@@ -189,7 +189,7 @@ export function flip() {
     }
 }
 
-export function terminal() {
+export function configTerminal() {
     // Exponemos el comando principal 'ce' o 'ipet' en el ámbito global window
     window.ce = {
         ayuda: function () {
@@ -231,7 +231,7 @@ export function terminal() {
     );
 }
 
-export function paint() {
+export function configPaint() {
     let paintCanvas = null;
     let paintCtx = null;
     let isPaintingActive = false;
@@ -314,7 +314,7 @@ export function paint() {
     }
 }
 
-export function menu() {
+export function configMenu() {
     let emptyClicks = 0;
     let rightClicks = 0;
     let clickResetTimer = null;
@@ -392,6 +392,6 @@ export function menu() {
             toast.style.opacity = "0";
             toast.style.transform = "translateY(20px)";
             setTimeout(() => toast.remove(), 500);
-        }, 8000);
+        }, 12000);
     }
 }

@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- ETIQUETAS META -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta
+            name="description"
+            content="Sitio oficial del Centro de Estudiantes IPET 424. Novedades, proyectos y contacto."
+        />
+        <meta name="theme-color" id="theme-color" content="#0088FF" />
+        <!-- TITULO DE LA PESTAÑA Y FAVICON -->
+        <title>Horarios | Centro de Estudiantes IPET N° 424</title>
+        <link rel="icon" id="favicon" type="image/png" href="assets/img/favicons/light.png" sizes="any" />
+        <!-- CSS Y JAVASCRIPT -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <script type="module" src="js/main.js"></script>
+        <script src="assets/libs/html2canvas.min.js"></script>
+        <script src="assets/libs/jspdf.umd.min.js"></script>
+    </head>
+
+    <body>
+        <!-- HEADER DE TITULO -->
+        <div id="header-container" class="header-container"></div>
+        <!-- PANEL LATERAL DE CONFIGURACIÓN -->
+        <div id="aside-config-container" class="aside-config-container"></div>
+        <!-- PANEL LATERAL DE NOVEDADES -->
+        <div id="aside-news-container" class="aside-news-container"></div>
+        <!-- CONTENEDOR PRINCIPAL -->
+        <div id="content-card" class="content-card">
+            <main>
+                <!-- SECCIÓN: HORARIOS Y DESCARGA -->
+                <section id="horarios" class="section-card horarios-section">
+                    <h2>Generador y Personalizador de Horarios</h2>
+                    <!-- Controles de personalización (Selectores, botones, etc.) -->
+                    <div class="controls-panel">
+                        <!-- Fila superior: Curso y Botón -->
+                        <div class="controls-top-row" id="controls-top-row">
+                            <div class="control-group">
+                                <label for="select-year">Curso</label>
+                                <select id="select-year">
+                                    <option value="1-A">1° A</option>
+                                    <option value="1-B">1° B</option>
+                                    <option value="2-A">2° A</option>
+                                    <option value="2-B">2° B</option>
+                                    <option value="3-A">3° A</option>
+                                    <option value="3-B">3° B</option>
+                                    <option value="4-A">4° A</option>
+                                    <option value="4-B">4° B</option>
+                                    <option value="5-A">5° A</option>
+                                    <option value="5-B">5° B</option>
+                                    <option value="6-A">6° A</option>
+                                    <option value="6-B">6° B</option>
+                                    <option value="7-A">7° A</option>
+                                    <option value="7-B">7° B</option>
+                                    <!-- Opciones cargadas o dinámicas -->
+                                </select>
+                            </div>
+                            <div class="control-group">
+                                <label for="button-toggle-customize">Abrir panel de opciones</label>
+                                <button
+                                    type="button button-toggle-customize"
+                                    id="button-toggle-customize"
+                                    class="button"
+                                >
+                                    Personalizar
+                                </button>
+                            </div>
+                        </div>
+                        <div id="customize-panel" class="customize-panel">
+                            <div class="control-group">
+                                <label for="select-font">Tipografía</label>
+                                <select id="select-font">
+                                    <option value="Nunito">Nunito</option>
+                                    <option value="Nunito Sans">Nunito Sans</option>
+                                    <option value="Arial">Arial</option>
+                                    <option value="Calibri">Calibri</option>
+                                    <option value="Atkinson Hyperlegible">Dislexia</option>
+                                </select>
+                            </div>
+
+                            <div class="control-group">
+                                <span>Colores</span>
+                                <div class="color-pickers-container">
+                                    <!-- 1. Color Header -->
+                                    <div class="color-picker-wrapper">
+                                        <span class="color-label">Rótulo</span>
+                                        <button
+                                            type="button"
+                                            class="color-trigger"
+                                            id="button-color-header"
+                                            style="background-color: #0088ff"
+                                            title="Cambiar color de Header"
+                                        ></button>
+                                        <div class="color-dropdown" id="dropdown-header">
+                                            <div class="color-grid">
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #0088ff"
+                                                    data-color="#0088FF"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #3b82f6"
+                                                    data-color="#3B82F6"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #60a5fa"
+                                                    data-color="#60A5FA"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #93c5fd"
+                                                    data-color="#93C5FD"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #34d399"
+                                                    data-color="#34D399"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #f87171"
+                                                    data-color="#F87171"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #fbbf24"
+                                                    data-color="#FBBF24"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #a78bfa"
+                                                    data-color="#A78BFA"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #334155"
+                                                    data-color="#334155"
+                                                ></span>
+                                                <label class="color-swatch custom-swatch" title="Color personalizado">
+                                                    ⚙️<input
+                                                        type="color"
+                                                        class="hidden-color-input"
+                                                        id="color-header"
+                                                        value="#0088FF"
+                                                    />
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 2. Color Hora -->
+                                    <div class="color-picker-wrapper">
+                                        <span class="color-label">Hora</span>
+                                        <button
+                                            type="button"
+                                            class="color-trigger"
+                                            id="button-color-time"
+                                            style="background-color: #e2e8f0"
+                                            title="Cambiar color de Hora"
+                                        ></button>
+                                        <div class="color-dropdown" id="dropdown-time">
+                                            <div class="color-grid">
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #f8fafc"
+                                                    data-color="#f8fafc"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #e2e8f0"
+                                                    data-color="#e2e8f0"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #cbd5e1"
+                                                    data-color="#cbd5e1"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #bfdbfe"
+                                                    data-color="#bfdbfe"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #bbf7d0"
+                                                    data-color="#bbf7d0"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #fef08a"
+                                                    data-color="#fef08a"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #fed7aa"
+                                                    data-color="#fed7aa"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #fecdd3"
+                                                    data-color="#fecdd3"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #e9d5ff"
+                                                    data-color="#e9d5ff"
+                                                ></span>
+                                                <label class="color-swatch custom-swatch" title="Color personalizado">
+                                                    ⚙️<input
+                                                        type="color"
+                                                        class="hidden-color-input"
+                                                        id="color-time"
+                                                        value="#e2e8f0"
+                                                    />
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 3. Color Recreo -->
+                                    <div class="color-picker-wrapper">
+                                        <span class="color-label">Recreo</span>
+                                        <button
+                                            type="button"
+                                            class="color-trigger"
+                                            id="button-color-break"
+                                            style="background-color: #cbd5e1"
+                                            title="Cambiar color de Recreo"
+                                        ></button>
+                                        <div class="color-dropdown" id="dropdown-break">
+                                            <div class="color-grid">
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #e2e8f0"
+                                                    data-color="#e2e8f0"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #cbd5e1"
+                                                    data-color="#cbd5e1"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #e9d5ff"
+                                                    data-color="#e9d5ff"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #fecdd3"
+                                                    data-color="#fecdd3"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #fed7aa"
+                                                    data-color="#fed7aa"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #fef08a"
+                                                    data-color="#fef08a"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #bbf7d0"
+                                                    data-color="#bbf7d0"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #bae6fd"
+                                                    data-color="#bae6fd"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #94a3b8"
+                                                    data-color="#94a3b8"
+                                                ></span>
+                                                <label class="color-swatch custom-swatch" title="Color personalizado">
+                                                    ⚙️<input
+                                                        type="color"
+                                                        class="hidden-color-input"
+                                                        id="color-break"
+                                                        value="#cbd5e1"
+                                                    />
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 4. Color Materia -->
+                                    <div class="color-picker-wrapper">
+                                        <span class="color-label">Materia</span>
+                                        <button
+                                            type="button"
+                                            class="color-trigger"
+                                            id="button-color-subjects"
+                                            style="background-color: #ffffff"
+                                            title="Cambiar color de Materia"
+                                        ></button>
+                                        <div class="color-dropdown" id="dropdown-subjects">
+                                            <div class="color-grid">
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #ffffff"
+                                                    data-color="#ffffff"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #f8fafc"
+                                                    data-color="#f8fafc"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #eff6ff"
+                                                    data-color="#eff6ff"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #f0fdf4"
+                                                    data-color="#f0fdf4"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #fefce8"
+                                                    data-color="#fefce8"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #fff7ed"
+                                                    data-color="#fff7ed"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #fff1f2"
+                                                    data-color="#fff1f2"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #faf5ff"
+                                                    data-color="#faf5ff"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #f1f5f9"
+                                                    data-color="#f1f5f9"
+                                                ></span>
+                                                <label class="color-swatch custom-swatch" title="Color personalizado">
+                                                    ⚙️<input
+                                                        type="color"
+                                                        class="hidden-color-input"
+                                                        id="color-subjects"
+                                                        value="#ffffff"
+                                                    />
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 5. Color Fondo General -->
+                                    <div class="color-picker-wrapper">
+                                        <span class="color-label">Fondo</span>
+                                        <button
+                                            type="button"
+                                            class="color-trigger"
+                                            id="button-color-grid"
+                                            style="background-color: #eee"
+                                            title="Cambiar color de Fondo"
+                                        ></button>
+                                        <div class="color-dropdown" id="dropdown-grid">
+                                            <div class="color-grid">
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #eee"
+                                                    data-color="#f1f5f9"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #e2e8f0"
+                                                    data-color="#e2e8f0"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #dbeafe"
+                                                    data-color="#dbeafe"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #dcfce7"
+                                                    data-color="#dcfce7"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #fef9c3"
+                                                    data-color="#fef9c3"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #ffedd5"
+                                                    data-color="#ffedd5"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #ffe4e6"
+                                                    data-color="#ffe4e6"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #f3e8ff"
+                                                    data-color="#f3e8ff"
+                                                ></span>
+                                                <span
+                                                    class="color-swatch"
+                                                    style="background-color: #0c316d"
+                                                    data-color="#1e293b"
+                                                ></span>
+                                                <label class="color-swatch custom-swatch" title="Color personalizado">
+                                                    ⚙️<input
+                                                        type="color"
+                                                        class="hidden-color-input"
+                                                        id="color-grid"
+                                                        value="#0c316d"
+                                                    />
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group font-size-control-container">
+                                <span class="font-size-label">Tamaño de Texto</span>
+                                <div class="font-size-buttons-group">
+                                    <button
+                                        type="button"
+                                        id="controls-button-font-decrease"
+                                        class="button button-small"
+                                        aria-label="Achicar tamaño de texto"
+                                    >
+                                        A-
+                                    </button>
+                                    <span id="controls-font-size-indicator" class="font-size-value">100%</span>
+                                    <button
+                                        type="button"
+                                        id="controls-button-font-increase"
+                                        class="button button-small"
+                                        aria-label="Agrandar tamaño de texto"
+                                    >
+                                        A+
+                                    </button>
+                                    <button
+                                        type="button"
+                                        id="controls-button-font-reset"
+                                        class="button button-small"
+                                        aria-label="Restablecer tamaño de texto"
+                                    >
+                                        ⟲
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label for="toggle-teachers">Ocultar profesores</label>
+                                <input type="checkbox" class="toggle-teachers" id="toggle-teachers" />
+                            </div>
+                            <div class="control-group">
+                                <label for="select-format">Formato de descarga</label>
+                                <select id="select-format">
+                                    <option value="image" selected>Imagen PNG</option>
+                                    <option value="pdf">Documento PDF</option>
+                                </select>
+                            </div>
+                            <!-- Botón de descarga -->
+                            <div class="control-group">
+                                <label for="button-download-schedule">Exportar archivo</label>
+                                <button id="button-download-schedule" class="button">Descargar horario</button>
+                            </div>
+
+                            <!-- Botón para resetear valores
+                            <div class="control-group">
+                                <label for="button-reset-defaults">Resetear</label>
+                                <button type="button" id="button-reset-defaults" class="button button-small">⟲</button>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- CONTENEDOR DINÁMICO: Aquí es donde JavaScript dibujará el CSS Grid -->
+                    <div id="schedule-container" class="schedule-grid">
+                        <p class="placeholder-text">Seleccioná un curso arriba para ver su horario.</p>
+                    </div>
+                </section>
+
+                <!-- SECCIÓN: SUB SITIOS -->
+                <section class="section-card">
+                    <h2>¿Buscas algo específico?</h2>
+                    <p>Visitá nuestros diferentes sitios de consultas</p>
+                    <!-- Botones de enlaces a sub-páginas -->
+                    <ul id="subpages" class="subpages">
+                        <li><a class="subpages-link button" href="index.html">Inicio</a></li>
+                        <li><a class="subpages-link button" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="subpages-link button" href="noticias.html">Noticias</a></li>
+                        <li><a class="subpages-link button" href="proyectos.html">Proyectos</a></li>
+                        <li><a class="subpages-link button" href="herramientas.html">Herramientas</a></li>
+                        <li><a class="subpages-link button" href="tramites.html">Trámites</a></li>
+                        <li><a class="subpages-link button" href="recursos.html">Recursos</a></li>
+                        <li><a class="subpages-link button" href="escuela.html">Escuela</a></li>
+                        <li><a class="subpages-link button" href="contacto.html">Contacto</a></li>
+                        <li><a class="subpages-link button" href="creditos.html">Créditos</a></li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <!-- PIE DE PÁGINA -->
+        <div id="footer-container" class="footer-container"></div>
+        <!-- BOTÓN DE VOLVER ARRIBA -->
+        <button class="button-round button-scroll-top" id="button-scroll-top" aria-label="Volver arriba">↑</button>
+        <!-- VENTANA MODAL "EN DESARROLLO" -->
+        <div id="modal-in-dev-container" class="modal-in-dev-container"></div>
+        <!-- VENTANA MODAL DE NOVEDADES -->
+        <div id="modal-whats-new-container" class="modal-whats-new-container"></div>
+    </body>
+</html>
