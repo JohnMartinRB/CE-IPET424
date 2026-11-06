@@ -14,12 +14,9 @@ import {
 import { initBanners } from "./ui/banners.js";
 import { initTheme } from "./ui/theme.js";
 import { initModals } from "./ui/modals.js";
-<<<<<<< HEAD
 import { initHeader } from "./ui/header.js";
-=======
 import { initSchedules } from "./ui/schedules.js";
 import { initCalendar } from "./ui/calendar.js";
->>>>>>> dev
 import { initFontSize } from "./utils/font-size.js";
 import { initAnimations } from "./utils/animations.js";
 import { initDyslexia } from "./utils/dyslexia.js";
