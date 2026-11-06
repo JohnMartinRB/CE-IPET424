@@ -16,6 +16,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se eliminaron algunas propiedades innecesarias
 - Se mejoraron los comentarios de css y se eliminaron muchos
 
+### [v0.39.1-alpha]
+
+- Se eliminaron los emojis del widget de vistas
+
 ---
 
 ## [v0.38.0-alpha] - Versión Principal
