@@ -3,7 +3,14 @@
 ========================================================================== */
 import { renderLoader, initComponents, initPageTitle } from "./ui/components.js";
 import { initButtons } from "./ui/buttons.js";
-import { initFactsWidget, initHolidaysWidget, initDailyQuoteWidget, initWeatherDateTimeWidget } from "./ui/widgets.js";
+import {
+    initHolidaysWidget,
+    initDaysWidget,
+    initDailyQuoteWidget,
+    initFactsWidget,
+    initWeatherDateTimeWidget,
+    initViewsWidget,
+} from "./ui/widgets.js";
 import { initBanners } from "./ui/banners.js";
 import { initTheme } from "./ui/theme.js";
 import { initModals } from "./ui/modals.js";
@@ -29,10 +36,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     await initComponents();
     initPageTitle();
     initButtons();
-    initFactsWidget();
     initHolidaysWidget();
+    initDaysWidget();
     initDailyQuoteWidget();
+    initFactsWidget();
     initWeatherDateTimeWidget();
+    initViewsWidget();
     initBanners();
     initTheme();
     initModals();

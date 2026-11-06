@@ -1,92 +1,6 @@
 /* ==========================================
-    WIDGETS DECORATIVOS
+    WIDGETS
 ========================================== */
-
-/* ==========================================
-    WIDGETS DE DATOS CURIOSOS
-========================================== */
-let factsList = [];
-let lastIndex = -1;
-/* Carga el archivo JSON con los datos curiosos */
-export async function initFactsWidget() {
-    const factText = document.getElementById("fact-text");
-    const rerollButton = document.getElementById("button-reroll-fact");
-    if (!factText || !rerollButton) return;
-    try {
-        const response = await fetch("assets/data/facts.json");
-        if (!response.ok) throw new Error("No se pudo cargar facts.json");
-        factsList = await response.json();
-        if (factsList.length > 0) {
-            displayRandomFact();
-            // Evento para el botón de Reroll
-            rerollButton.addEventListener("click", () => {
-                displayRandomFact();
-            });
-        } else {
-            factText.textContent = "No hay datos curiosos disponibles por el momento.";
-        }
-    } catch (error) {
-        console.error("Error al inicializar el widget de datos:", error);
-        factText.textContent = "No se pudieron cargar los datos curiosos.";
-    }
-}
-
-/* Selecciona y muestra un dato aleatorio garantizando que no sea el mismo que el anterior */
-function displayRandomFact() {
-    const factText = document.getElementById("fact-text");
-    if (!factText || factsList.length === 0) return;
-    let newIndex;
-    // Si hay más de 1 dato, evitamos repetir el dato actual de forma consecutiva
-    if (factsList.length > 1) {
-        do {
-            newIndex = Math.floor(Math.random() * factsList.length);
-        } while (newIndex === lastIndex);
-    } else {
-        newIndex = 0;
-    }
-    lastIndex = newIndex;
-    // Pequeña animación de transición al cambiar el texto
-    factText.classList.add("fade-out");
-    setTimeout(() => {
-        factText.textContent = factsList[newIndex];
-        factText.classList.remove("fade-out");
-    }, 150);
-}
-
-/* ==========================================
-    WIDGET DE FRASE DIARIA
-========================================== */
-export async function initDailyQuoteWidget() {
-    const quoteTextContainer = document.getElementById("quote-text");
-    const quoteAuthorContainer = document.getElementById("quote-author");
-    if (!quoteTextContainer) return;
-    try {
-        const response = await fetch("assets/data/quotes.json");
-        if (!response.ok) throw new Error("Failed to load quotes.json");
-        const quotesList = await response.json();
-        if (!quotesList || quotesList.length === 0) {
-            quoteTextContainer.textContent = "No quotes available at the moment.";
-            return;
-        }
-        // Calculate the current day of the year (0 - 365)
-        const currentDate = new Date();
-        const startOfYear = new Date(currentDate.getFullYear(), 0, 0);
-        const timeDifference = currentDate - startOfYear;
-        const oneDayInMs = 1000 * 60 * 60 * 24;
-        const dayOfYear = Math.floor(timeDifference / oneDayInMs);
-        // Select a quote deterministically based on today's date
-        const selectedIndex = dayOfYear % quotesList.length;
-        const dailyQuote = quotesList[selectedIndex];
-        // Render to DOM
-        quoteTextContainer.textContent = `"${dailyQuote.quote}"`;
-        if (quoteAuthorContainer) {
-            quoteAuthorContainer.textContent = dailyQuote.author ? `— ${dailyQuote.author}` : "";
-        }
-    } catch (error) {
-        console.error("Error loading the daily quote:", error);
-        quoteTextContainer.textContent = "Today's effort is tomorrow's success.";
-    }
-}
 
 /* ==========================================
     WIDGET DE PROXIMO FERIADO
@@ -151,6 +65,129 @@ export async function initHolidaysWidget() {
 }
 
 /* ==========================================
+    WIDGET DE EFEMÉRIDES (DÍA DE...)
+========================================== */
+export async function initDaysWidget() {
+    const dayTitleContainer = document.getElementById("day-title");
+    const dayTextContainer = document.getElementById("day-text");
+    if (!dayTextContainer) return;
+    try {
+        const response = await fetch("assets/data/days.json");
+        if (!response.ok) throw new Error("No se pudo cargar days.json");
+        const daysList = await response.json();
+        if (!daysList || daysList.length === 0) {
+            if (dayTitleContainer) dayTitleContainer.textContent = "Sin efemérides";
+            dayTextContainer.textContent = "No hay registros disponibles para hoy.";
+            return;
+        }
+        // Obtener mes y día actual en formato MM-DD (ej: "11-05")
+        const now = new Date();
+        const month = String(now.getMonth() + 1).padStart(2, "0");
+        const day = String(now.getDate()).padStart(2, "0");
+        const todayString = `${month}-${day}`;
+        // Buscar si hay una efeméride para hoy
+        const todayEvent = daysList.find((item) => item.fecha === todayString);
+        if (todayEvent) {
+            if (dayTitleContainer) dayTitleContainer.textContent = todayEvent.titulo;
+            dayTextContainer.textContent = todayEvent.descripcion;
+        } else {
+            if (dayTitleContainer) dayTitleContainer.textContent = "Jornada escolar";
+            dayTextContainer.textContent = "Actividades habituales en el IPET 424.";
+        }
+    } catch (error) {
+        console.error("Error al cargar el widget de efemérides:", error);
+        if (dayTitleContainer) dayTitleContainer.textContent = "Aviso";
+        dayTextContainer.textContent = "Efemérides no disponibles temporalmente.";
+    }
+}
+
+/* ==========================================
+    WIDGET DE FRASE DIARIA
+========================================== */
+export async function initDailyQuoteWidget() {
+    const quoteTextContainer = document.getElementById("quote-text");
+    const quoteAuthorContainer = document.getElementById("quote-author");
+    if (!quoteTextContainer) return;
+    try {
+        const response = await fetch("assets/data/quotes.json");
+        if (!response.ok) throw new Error("Failed to load quotes.json");
+        const quotesList = await response.json();
+        if (!quotesList || quotesList.length === 0) {
+            quoteTextContainer.textContent = "No quotes available at the moment.";
+            return;
+        }
+        // Calculate the current day of the year (0 - 365)
+        const currentDate = new Date();
+        const startOfYear = new Date(currentDate.getFullYear(), 0, 0);
+        const timeDifference = currentDate - startOfYear;
+        const oneDayInMs = 1000 * 60 * 60 * 24;
+        const dayOfYear = Math.floor(timeDifference / oneDayInMs);
+        // Select a quote deterministically based on today's date
+        const selectedIndex = dayOfYear % quotesList.length;
+        const dailyQuote = quotesList[selectedIndex];
+        // Render to DOM
+        quoteTextContainer.textContent = `"${dailyQuote.quote}"`;
+        if (quoteAuthorContainer) {
+            quoteAuthorContainer.textContent = dailyQuote.author ? `— ${dailyQuote.author}` : "";
+        }
+    } catch (error) {
+        console.error("Error loading the daily quote:", error);
+        quoteTextContainer.textContent = "Today's effort is tomorrow's success.";
+    }
+}
+
+/* ==========================================
+    WIDGETS DE DATOS CURIOSOS
+========================================== */
+let factsList = [];
+let lastIndex = -1;
+/* Carga el archivo JSON con los datos curiosos */
+export async function initFactsWidget() {
+    const factText = document.getElementById("fact-text");
+    const rerollButton = document.getElementById("button-reroll-fact");
+    if (!factText || !rerollButton) return;
+    try {
+        const response = await fetch("assets/data/facts.json");
+        if (!response.ok) throw new Error("No se pudo cargar facts.json");
+        factsList = await response.json();
+        if (factsList.length > 0) {
+            displayRandomFact();
+            // Evento para el botón de Reroll
+            rerollButton.addEventListener("click", () => {
+                displayRandomFact();
+            });
+        } else {
+            factText.textContent = "No hay datos curiosos disponibles por el momento.";
+        }
+    } catch (error) {
+        console.error("Error al inicializar el widget de datos:", error);
+        factText.textContent = "No se pudieron cargar los datos curiosos.";
+    }
+}
+
+/* Selecciona y muestra un dato aleatorio garantizando que no sea el mismo que el anterior */
+function displayRandomFact() {
+    const factText = document.getElementById("fact-text");
+    if (!factText || factsList.length === 0) return;
+    let newIndex;
+    // Si hay más de 1 dato, evitamos repetir el dato actual de forma consecutiva
+    if (factsList.length > 1) {
+        do {
+            newIndex = Math.floor(Math.random() * factsList.length);
+        } while (newIndex === lastIndex);
+    } else {
+        newIndex = 0;
+    }
+    lastIndex = newIndex;
+    // Pequeña animación de transición al cambiar el texto
+    factText.classList.add("fade-out");
+    setTimeout(() => {
+        factText.textContent = factsList[newIndex];
+        factText.classList.remove("fade-out");
+    }, 150);
+}
+
+/* ==========================================
     WIDGET DE HORA, FECHA Y CLIMA
 ========================================== */
 export function initWeatherDateTimeWidget() {
@@ -174,4 +211,59 @@ export function initWeatherDateTimeWidget() {
     // Ejecutar al instante y luego actualizar cada 1 segundo (1000ms)
     updateDateTime();
     setInterval(updateDateTime, 1000);
+}
+
+/* ==========================================
+    WIDGET DE VISTAS (DIARIAS, MENSUALES, ANUALES)
+========================================== */
+export function initViewsWidget() {
+    const dailyEl = document.getElementById("views-daily");
+    const monthlyEl = document.getElementById("views-monthly");
+    const annualEl = document.getElementById("views-annual");
+    const totalEl = document.getElementById("views-total");
+    if (!totalEl) return;
+    const storageKey = "ce_ipet424_advanced_views";
+    const now = new Date();
+    // Obtener fecha actual en formatos clave
+    const currentDay = now.toISOString().split("T")[0] || now.toLocaleDateString("en-CA"); // Formato YYYY-MM-DD
+    const currentMonth = currentDay.substring(0, 7); // Formato YYYY-MM
+    const currentYear = String(now.getFullYear()); // Formato YYYY
+    // Recuperar estadísticas guardadas o inicializarlas desde 0 / 1
+    let stats = JSON.parse(localStorage.getItem(storageKey));
+    if (!stats) {
+        stats = {
+            daily: { date: currentDay, count: 1 },
+            monthly: { month: currentMonth, count: 1 },
+            annual: { year: currentYear, count: 1 },
+            total: 1,
+        };
+    } else {
+        // Incrementar el total histórico general
+        stats.total = Number(stats.total) + 1;
+        // Control Diario: Si cambió el día, se reinicia a 1; sino, suma 1
+        if (stats.daily.date === currentDay) {
+            stats.daily.count += 1;
+        } else {
+            stats.daily = { date: currentDay, count: 1 };
+        }
+        // Control Mensual: Si cambió el mes, se reinicia a 1; sino, suma 1
+        if (stats.monthly.month === currentMonth) {
+            stats.monthly.count += 1;
+        } else {
+            stats.monthly = { month: currentMonth, count: 1 };
+        }
+        // Control Anual: Si cambió el año, se reinicia a 1; sino, suma 1
+        if (stats.annual.year === currentYear) {
+            stats.annual.count += 1;
+        } else {
+            stats.annual = { year: currentYear, count: 1 };
+        }
+    }
+    // Guardar el objeto actualizado en el navegador
+    localStorage.setItem(storageKey, JSON.stringify(stats));
+    // Renderizar los valores formateados en el DOM
+    if (dailyEl) dailyEl.textContent = stats.daily.count.toLocaleString("es-AR");
+    if (monthlyEl) monthlyEl.textContent = stats.monthly.count.toLocaleString("es-AR");
+    if (annualEl) annualEl.textContent = stats.annual.count.toLocaleString("es-AR");
+    if (totalEl) totalEl.textContent = stats.total.toLocaleString("es-AR");
 }

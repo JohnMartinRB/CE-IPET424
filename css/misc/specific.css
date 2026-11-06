@@ -1,5 +1,5 @@
 /* ==========================================
-    PÁGINAS ESPECÍFICAS
+    ESTILOS ESPECÍFICAS
 ========================================== */
 .hero-section {
     background-image: url("../../assets/img/bg/bg_6.jpg");
@@ -15,7 +15,6 @@
     width: 100%;
     border-radius: var(--radius-md);
 }
-
 .terms-title {
     margin-top: var(--space-lg);
 }
