@@ -62,8 +62,8 @@ document.addEventListener("click", (e) => {
     LISTENERS GLOBALES PARA EFECTOS DE SONIDO
 ========================================== */
 document.addEventListener("click", (e) => {
-    const isButton = e.target.closest('.button, button, [role="button"]');
-    const isLink = e.target.closest("summary, .nav-menu-item");
+    const isButton = e.target.closest(".button, .aside-button-toggle, .button-scroll-top");
+    const isLink = e.target.closest("summary, .nav-menu-link, .header-icon-button, .footer-links");
     if (isButton) {
         playSound("pop-medium.mp3", 0.5);
     }

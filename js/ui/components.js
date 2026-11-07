@@ -83,31 +83,3 @@ export async function initComponents() {
     // Una vez inyectado el HTML del aside en el DOM:
     await getVillaDoloresWeather();
 }
-
-export function initPageTitle() {
-    const SITE_SUFFIX = "| Centro de Estudiantes IPET N° 424";
-    const path = window.location.pathname;
-    let page = path.split("/").pop().toLowerCase();
-    if (!page || page === "") {
-        page = "index.html";
-    }
-    // Diccionario con el título específico para cada subpágina
-    const pageTitles = {
-        "index.html": "Inicio",
-        "nosotros.html": "Sobre Nosotros",
-        "noticias.html": "Noticias y Novedades",
-        "proyectos.html": "Proyectos",
-        "herramientas.html": "Herramientas Estudiantiles",
-        "horarios.html": "Horarios - Herramientas Estudiantiles",
-        "calendario.html": "Calendario - Herramientas Estudiantiles",
-        "tramites.html": "Trámites",
-        "recursos.html": "Recursos Útiles",
-        "escuela.html": "Nuestra Escuela",
-        "contacto.html": "Contacto",
-        "creditos.html": "Créditos",
-        "terminos.html": "Términos y Condiciones",
-        "404.html": "Página no encontrada",
-    };
-    const sectionName = pageTitles[page] || "Inicio";
-    document.title = `${sectionName} ${SITE_SUFFIX}`;
-}

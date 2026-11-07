@@ -4,6 +4,71 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## [v0.40.0-alpha] - Versión Principal Mayor
+
+HEADER Y NAVEGACIÓN
+
+- Estructura del header renovada: logos juntos, título más hacia la izquierda, nuevas columnas con menús y botones.
+- El header ahora es más bajo y más ancho.
+- Se achicó el tamaño de los logos e iconos del header.
+- Se agregaron modales con opciones a los botones del header (son los mismos que el aside-config pero divididos).
+- La barra de progreso de lectura es más fina.
+- Se agregó el archivo `header.js` para renderizar los modales.
+- Se unificó el color de fondo de los modales nuevos y ya existentes
+- El fondo de los modales ya no tiene blur.
+- Se movió el botón de Modo Daltónico a Accesibilidad.
+- Se cambió la clase del botón de Modo daltónico.
+- Se agregó una pequeña animación de hover a los enlaces del nav.
+- Se quitó el padding del nav de subpágina y ahora tiene position sticky al hacer scroll.
+- Iconos en `assets/icons/header`.
+- Svg de lupa para un botón futuro
+
+ESTRUCTURA
+
+- Ahora la etiqueta MAIN tiene la clase e ID de `content-card` en lugar de un `div` fuera de main.
+- Se eliminó el color, padding y sombra de la `content-card`. Ahora actúa solo como contenedor invisible.
+- Se renombró el `aside-config` a `aside-news` y el `aside-news` a `aside-widgets`.
+- Se renombraron las respectivas clases, IDs y rutas.
+- Se cambió el padding del aside, y ahora son más altos.
+
+FONDO Y TEMAS
+
+- Se cambió el fondo liso del sitio por una textura tecnológica infinita, en el modo Claro, Oscuro, Daltónico, Código y Alto Contraste.
+    - El modo rosa usa el del modo claro y el de los demás temas aún no cambió.
+- Se cambiaron varios colores en modo claro.
+- Se actualizaron los celestes del modo rosa para ir acorde con el nuevo modo claro.
+- Se cambiaron algunos colores y se arreglaron los border-radius del modo código.
+- Se cambió cómo se maneja la fuente de texto en el modo código.
+- El botón del aside ya no está redondeado en modo código.
+- Ahora los colores del modo código, daltónico y alto contraste se manejan con variables.
+- Se eliminaron los favicon temáticos, dejando únicamente el de modo claro y oscuro.
+- Los favicon de modo claro / oscuro están más simplificados.
+- Se actualizacon las rutas.
+
+CURSORES
+
+- Ahora el sitio usa nuevos cursores en formato `.cur` y son los mismos para modo claro / oscuro
+- Se eliminaron los cursores svg antiguos y se actualizaron las rutas y variables de cursores
+
+CAMBIOS VARIADOS
+
+- Las tarjetas de descarga de la primer sección del Inicio ahora están organizadas en un grid de 2 columnas
+- Los párrafos ahora tienen `text-wrap: pretty` y los encabezados `text-wrap: balance`
+- Las tarjetas y los widgets tienen más `border-radius`
+- Se actualizó la función de `sounds.js` para incluir nuevos elementos y botones.
+- Se intentó corregir el iframe de la subpágina escuela.html.
+- Se arregló el enlace del Google Maps en escuela.html.
+- La página `terminos.html` ya no incluye los asides.
+- Se eliminó el modal de aceptar términos en `terminos.html`.
+- Se eliminaron muchos comentarios / Se modificaron otros.
+- Se cambió el título del widget de datos.
+- Se cambió la puntuación de unos datos de `facts.json`.
+- Se cambió el nombre de una función.
+- Se eliminó la función de `initPageTitle` ya que daba muchos problemas.
+- Se corrigió una badge del README.
+
+---
+
 ## [v0.39.0-alpha] - Versión Principal
 
 - Nuevos widgets:

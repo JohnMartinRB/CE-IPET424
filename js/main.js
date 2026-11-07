@@ -1,7 +1,7 @@
 /* ==========================================================================
     MAIN.JS - ARCHIVO PRINCIPAL DE JAVASCRIPT
 ========================================================================== */
-import { renderLoader, initComponents, initPageTitle } from "./ui/components.js";
+import { renderLoader, initComponents } from "./ui/components.js";
 import { initButtons } from "./ui/buttons.js";
 import {
     initHolidaysWidget,
@@ -35,7 +35,6 @@ import {
 document.addEventListener("DOMContentLoaded", async () => {
     renderLoader();
     await initComponents();
-    initPageTitle();
     initButtons();
     initHolidaysWidget();
     initDaysWidget();

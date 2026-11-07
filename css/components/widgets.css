@@ -6,7 +6,7 @@
     margin: var(--space-sm) 0;
     padding: var(--space-base);
     border: 2px solid var(--border-widget);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
     background-color: var(--bg-widget);
     color: var(--text-widget);
     text-align: center;

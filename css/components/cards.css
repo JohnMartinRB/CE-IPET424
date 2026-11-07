@@ -3,7 +3,7 @@
 ========================================== */
 .section-card {
     padding: var(--space-base) var(--space-md);
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-2xl);
     background: var(--bg-section-card);
     box-shadow: var(--shadow-section-card);
     color: var(--text-section-card);
