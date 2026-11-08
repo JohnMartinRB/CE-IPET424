@@ -63,24 +63,23 @@
 
 .whats-new-body .whats-new-title {
     margin: 1.2rem 0 0.5rem;
-    color: var(--azul1, #0284c7);
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: var(--lh-tight);
 }
 
 .whats-new-body .whats-new-list {
     margin: 0 0 1rem 0;
-    padding-left: 1.2rem;
+    padding-left: var(--lh-tight);
 }
 
 .whats-new-body .whats-new-list li {
     margin-bottom: 0.4rem;
-    line-height: 1.4;
+    line-height: var(--lh-normal);
 }
 
 .whats-new-body .whats-new-text {
     margin: 0.4rem 0;
-    line-height: 1.4;
+    line-height: var(--lh-normal);
 }
 
 .whats-new-body code {
@@ -88,5 +87,5 @@
     border-radius: 4px;
     background: var(--gris-claro, rgba(0, 0, 0, 0.06));
     font-size: 0.9em;
-    font-family: monospace;
+    font-family: "JetBrains Mono", monospace;
 }

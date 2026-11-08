@@ -48,7 +48,7 @@
     --bg-base-inverted: linear-gradient(-90deg, var(--blanco) 0%, var(--celeste6) 100%);
     /* LINK */
     --link: var(--azul1);
-    --link-hover: var(--celeste1);
+    --link-hover: var(--azul4);
     /* BARRA DE PROGRESO */
     --progress-bar: var(--celeste2);
     /* TARJETAS */
@@ -77,7 +77,7 @@
     /* FOOOTER */
     --bg-footer: linear-gradient(90deg, var(--celeste4) 0%, var(--celeste1) 100%);
     --text-footer: var(--azul1);
-    --text-footer-hover: var(--celeste1);
+    --text-footer-hover: var(--azul4);
     --text-copy: var(--gris1);
     /* TOAST / BANNER */
     --bg-toast: var(--celeste2);

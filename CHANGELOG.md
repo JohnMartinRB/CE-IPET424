@@ -18,6 +18,12 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - La clase `content-card` se renombró a `main-content`
 - Se actualizó el árbol de carpetas
 
+### v0.42.1-alpha
+
+- Se cambió el color de hover de los links del nav y el footer
+- Se cambió el color y la altura de línea de algunos elementos del modal de novedades
+- Se corrigió el término Beta por Alpha en este modal
+
 ---
 
 ## v0.41.0-alpha - Versión Principal
