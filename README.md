@@ -2,8 +2,8 @@
 
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
-[![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.40%20%28Alpha%29-blue)
+[![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET424/actions/workflows/static.yml)
+![Versión](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/JohnMartinRB/CE-IPET424/main/data/version.json&query=$.label&label=versi%C3%B3n&color=blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
@@ -102,83 +102,25 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.41-alpha` (Actual)**
+- **`v0.42-alpha` (Actual)**
+    - El número de versión ahora se maneja desde `version.json`
+        - Los archivos de README, footer y modals ahora tienen automatizado el numerado de versión
+    - La función para extrar los cambios del changelog fue movida a `js/utils/changelog.js` y se rescribió gran parte de la función
+    - Los estilos del modal de novedades ahora se encuentran en `modals.js`
+    - Se agregó el atributo `defer` a la importación de librerías en calendario y horarios
+    - Se corrigió el contenedor de los aside en calendario y horarios
+    - Los easter eggs ahora se encuentran en archivos individuales dentro de `js/extras/` y se exportan desde `extras.js`
+    - La carpeta `data/` ahora se encuentra en la raíz del proyecto
+    - Se actualizaron las rutas
+    - La clase `content-card` se renombró a `main-content`
+    - Se actualizó el árbol de carpetas
+
+- **`v0.41-alpha` (Anterior)**
     - Se actualizaron completamente los Términos y Condiciones
     - Se agregó la subpágina `noticias.html` (vacía de momento) para evitar los enlaces rotos
     - En el changelog, los números de versiones ya no incluyen corchetes
     - Corregidos muchos errores de ortografía en varios archivos
     - Se actulizó el árbol de carpetas
-
-- **`v0.40-alpha` (Anterior)**
-  HEADER Y NAVEGACIÓN
-    - Estructura del header renovada: logos juntos, título más hacia la izquierda, nuevas columnas con menús y botones.
-    - El header ahora es más bajo y más ancho.
-    - Se achicó el tamaño de los logos e iconos del header.
-    - Se agregaron modales con opciones a los botones del header (son los mismos que el aside-config pero divididos).
-    - La barra de progreso de lectura es más fina.
-    - Se agregó el archivo `header.js` para renderizar los modales.
-    - Se unificó el color de fondo de los modales nuevos y ya existentes
-    - El fondo de los modales ya no tiene blur.
-    - Se movió el botón de Modo Daltónico a Accesibilidad.
-    - Se cambió la clase del botón de Modo daltónico.
-    - Se agregó una pequeña animación de hover a los enlaces del nav.
-    - Se quitó el padding del nav de subpágina y ahora tiene position sticky al hacer scroll.
-    - Iconos en `assets/icons/header`.
-    - Svg de lupa para un botón futuro
-
-    ESTRUCTURA
-    - Ahora la etiqueta MAIN tiene la clase e ID de `content-card` en lugar de un `div` fuera de main.
-    - Se eliminó el color, padding y sombra de la `content-card`. Ahora actúa solo como contenedor invisible.
-    - Se renombró el `aside-config` a `aside-news` y el `aside-news` a `aside-widgets`.
-    - Se renombraron las respectivas clases, IDs y rutas.
-    - Se cambió el padding del aside, y ahora son más altos.
-
-    FONDO Y TEMAS
-    - Se cambió el fondo liso del sitio por una textura tecnológica infinita, en el modo Claro, Oscuro, Daltónico, Código y Alto Contraste.
-        - El modo rosa usa el del modo claro y el de los demás temas aún no cambió.
-    - Se cambiaron varios colores en modo claro.
-    - Se actualizaron los celestes del modo rosa para ir acorde con el nuevo modo claro.
-    - Se cambiaron algunos colores y se arreglaron los border-radius del modo código.
-    - Se cambió cómo se maneja la fuente de texto en el modo código.
-    - El botón del aside ya no está redondeado en modo código.
-    - Ahora los colores del modo código, daltónico y alto contraste se manejan con variables.
-    - Se eliminaron los favicon temáticos, dejando únicamente el de modo claro y oscuro.
-    - Los favicon de modo claro / oscuro están más simplificados.
-    - Se actualizacon las rutas.
-
-    CURSORES
-    - Ahora el sitio usa nuevos cursores en formato `.cur` y son los mismos para modo claro / oscuro
-    - Se eliminaron los cursores svg antiguos y se actualizaron las rutas y variables de cursores
-
-    CAMBIOS VARIADOS
-    - El título de pestaña del index ya no incluye "Inicio"
-    - Las tarjetas de descarga de la primer sección del Inicio ahora están organizadas en un grid de 2 columnas
-    - La clase `grid-tarjetas` se renombró a `grid-cards` y está mejor trabajda desde css
-    - Se agregó este estilo de tarjetas cuadradas a varias secciones en subpáginas
-    - Se cambió el gradiente de fondo del footer, haciéndolo más oscuro
-    - El spinner de carga es más grande y ancho
-    - Los párrafos ahora tienen `text-wrap: pretty` y los encabezados `text-wrap: balance`
-    - Las tarjetas y los widgets tienen más `border-radius`
-    - Se actualizó la función de `sounds.js` para incluir nuevos elementos y botones.
-    - Se intentó corregir el iframe de la subpágina escuela.html.
-    - Se arregló el enlace del Google Maps en escuela.html.
-    - La página `terminos.html` ya no incluye los asides.
-    - Se eliminó el modal de aceptar términos en `terminos.html`.
-    - Se eliminaron muchos comentarios / Se modificaron otros.
-    - Se cambió el título del widget de datos.
-    - Se cambió la puntuación de unos datos de `facts.json`.
-    - Se cambió el nombre de una función.
-    - Se eliminó la función de `initPageTitle` ya que daba muchos problemas.
-    - Se corrigió una badge del README.
-    - Se actualizó el árbol de carpetas y archivos.
-        - Se eliminó la función `renderLoader` debido a problemas con la carga de estilos
-    - Ahora cada archivo html tiene su propio loader con contenido personalizado
-    - Se cambiaron muchos comentarios
-    - Se agregó la fuente Lora a la personalización del horario y calendario
-    - Se renombraron algunos ids en js
-    - Se agruparon las funciones de `dyslexia.js` y `animations.js` en `accessibility.js`, ahora se exportan/importan desde ahí
-    - Estos archivos fueron eliminados
-    - Se actualizó `humans.txt`
 
 Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 

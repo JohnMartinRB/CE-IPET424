@@ -4,7 +4,23 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
-## v0.41.0-alpha
+## v0.42.0-alpha - Versión Principal
+
+- El número de versión ahora se maneja desde `version.json`
+    - Los archivos de README, footer y modals ahora tienen automatizado el numerado de versión
+- La función para extrar los cambios del changelog fue movida a `js/utils/changelog.js` y se rescribió gran parte de la función
+- Los estilos del modal de novedades ahora se encuentran en `modals.js`
+- Se agregó el atributo `defer` a la importación de librerías en calendario y horarios
+- Se corrigió el contenedor de los aside en calendario y horarios
+- Los easter eggs ahora se encuentran en archivos individuales dentro de `js/extras/` y se exportan desde `extras.js`
+- La carpeta `data/` ahora se encuentra en la raíz del proyecto
+- Se actualizaron las rutas
+- La clase `content-card` se renombró a `main-content`
+- Se actualizó el árbol de carpetas
+
+---
+
+## v0.41.0-alpha - Versión Principal
 
 - Se actualizaron completamente los Términos y Condiciones
 - Se agregó la subpágina `noticias.html` (vacía de momento) para evitar los enlaces rotos

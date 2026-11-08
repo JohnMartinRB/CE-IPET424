@@ -29,7 +29,7 @@ export function initSchedules() {
     // 1. Cargar el JSON con fetch
     async function loadData() {
         try {
-            const answer = await fetch("../assets/data/schedules.json");
+            const answer = await fetch("data/schedules.json");
             dataSchedules = await answer.json();
             // Popular el selector de cursos dinámicamente si existieran varios
             selectYear.innerHTML = '<option value="">Seleccioná tu curso...</option>';
