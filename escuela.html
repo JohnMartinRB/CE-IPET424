@@ -19,9 +19,17 @@
     </head>
 
     <body>
-        <!-- HEADER DE TITULO -->
+        <!-- PANTALLA DE CARGA -->
+        <div id="loader-screen" class="loader-screen">
+            <div id="loader-content" class="loader-content">
+                <div id="loader-spinner" class="loader-spinner"></div>
+                <h2 id="loader-title">Nuestra Escuela</h2>
+                <div id="loader-subtext"><p>Cargando...</p></div>
+            </div>
+        </div>
+        <!-- HEADER: TÍTULO, NAVEGACIÓN Y OPCIONES -->
         <div id="header-container" class="header-container"></div>
-        <!-- BARRA DE NAVEGACIÓN -->
+        <!-- BARRA DE NAVEGACIÓN POR SUBPÁGINA -->
         <nav id="nav-card" class="nav-card">
             <button id="nav-button-menu" class="button nav-button-menu" aria-label="Abrir menú">☰</button>
             <ul id="nav-menu" class="nav-menu">
@@ -53,7 +61,7 @@
                     oficial del colegio.
                 </p>
             </section>
-            <!-- SECCIÓN 1: INFORMACIÓN GENERAL DE LA ESCUELA -->
+            <!-- SECCIÓN: INFORMACIÓN GENERAL DE LA ESCUELA -->
             <section id="institucional" class="section-card institucional-section">
                 <h2>Sobre el IPET N° 424</h2>
                 <p class="text paragraph">
@@ -77,7 +85,7 @@
                     </article>
                 </div>
             </section>
-            <!-- SECCIÓN 2: IFRAME DEL SITIO OFICIAL DE LA ESCUELA -->
+            <!-- SECCIÓN: IFRAME DEL SITIO OFICIAL DE LA ESCUELA -->
             <section id="portal-oficial" class="section-card portal-section">
                 <h2>Portal Oficial de la Escuela</h2>
                 <p class="text paragraph">
@@ -94,7 +102,6 @@
                         margin-top: 15px;
                     "
                 >
-                    <!-- Reemplazá el src con el link oficial de la web de la escuela si lo tienen, o de su red principal -->
                     <iframe
                         src="https://ipet424.edu.ar"
                         id="school-website-frame"
@@ -114,7 +121,7 @@
                     >
                 </div>
             </section>
-            <!-- SECCIÓN 3: ESPECIALIDADES TÉCNICAS -->
+            <!-- SECCIÓN: ESPECIALIDADES TÉCNICAS -->
             <section id="especialidades" class="section-card orientaciones-section">
                 <h2>Especialidades de la Institución</h2>
                 <p class="text paragraph">
@@ -135,7 +142,7 @@
                     </article>
                 </div>
             </section>
-            <!-- SECCIÓN 4: UBICACIÓN Y CONTACTO ESCOLAR -->
+            <!-- SECCIÓN: UBICACIÓN Y CONTACTO ESCOLAR -->
             <section id="ubicacion" class="section-card ubicacion-section">
                 <h2>Ubicación del Establecimiento</h2>
                 <p class="text paragraph">

@@ -164,6 +164,14 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
     - Se eliminó la función de `initPageTitle` ya que daba muchos problemas.
     - Se corrigió una badge del README.
     - Se actualizó el árbol de carpetas y archivos.
+        - Se eliminó la función `renderLoader` debido a problemas con la carga de estilos
+    - Ahora cada archivo html tiene su propio loader con contenido personalizado
+    - Se cambiaron muchos comentarios
+    - Se agregó la fuente Lora a la personalización del horario y calendario
+    - Se renombraron algunos ids en js
+    - Se agruparon las funciones de `dyslexia.js` y `animations.js` en `accessibility.js`, ahora se exportan/importan desde ahí
+    - Estos archivos fueron eliminados
+    - Se actualizó `humans.txt`
 
 - **`v0.39-alpha` (Anterior)**
     - Nuevos widgets:

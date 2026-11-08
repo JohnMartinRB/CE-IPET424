@@ -44,17 +44,17 @@ export function initFontSize() {
 }
 
 function updateUI() {
-    const btnDecrease = document.getElementById("button-font-decrease");
-    const btnIncrease = document.getElementById("button-font-increase");
+    const buttonDecrease = document.getElementById("button-font-decrease");
+    const buttonIncrease = document.getElementById("button-font-increase");
     const indicator = document.getElementById("font-size-indicator");
     if (indicator) {
         indicator.textContent = `${LEVELS[currentLevelIndex]}%`;
     }
-    if (btnDecrease) {
-        btnDecrease.disabled = currentLevelIndex === 0;
+    if (buttonDecrease) {
+        buttonDecrease.disabled = currentLevelIndex === 0;
     }
-    if (btnIncrease) {
-        btnIncrease.disabled = currentLevelIndex === LEVELS.length - 1;
+    if (buttonIncrease) {
+        buttonIncrease.disabled = currentLevelIndex === LEVELS.length - 1;
     }
 }
 

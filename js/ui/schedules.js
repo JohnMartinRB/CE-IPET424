@@ -2,7 +2,7 @@
     MÓDULO DE DESCARGA DE HORARIOS
 ========================================== */
 export function initSchedules() {
-    // 🛡️ Guardia: Si no estamos en la página de horarios (no existe el contenedor), salimos sin romper nada
+    // Guardia: Si no estamos en la página de horarios (no existe el contenedor), salimos sin romper nada
     const scheduleContainer = document.getElementById("schedule-container"); // (o el ID principal que uses en horarios)
     if (!scheduleContainer) return;
 
@@ -11,7 +11,6 @@ export function initSchedules() {
     const toggleTeachers = document.getElementById("toggle-teachers");
     const container = document.getElementById("schedule-container");
     const buttonDownload = document.getElementById("button-download-schedule");
-
     // Configuración para los selectores de color con cuadrícula desplegable
     const colorPickersConfig = [
         { id: "color-header", buttonId: "button-color-header", dropdownId: "dropdown-header", cssVar: "--header-bg" },
@@ -25,7 +24,6 @@ export function initSchedules() {
         },
         { id: "color-grid", buttonId: "button-color-grid", dropdownId: "dropdown-grid", cssVar: "--grid-bg" },
     ];
-
     let dataSchedules = {};
 
     // 1. Cargar el JSON con fetch
@@ -238,6 +236,5 @@ export function initSchedules() {
                 buttonDownload.disabled = false;
             });
     });
-
     loadData();
 }

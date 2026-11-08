@@ -76,6 +76,18 @@ CAMBIOS VARIADOS
 - El spinner de carga es más grande y ancho
 - Se actualizó el árbol de carpetas y archivos
 
+### [v0.40.2-alpha]
+
+- Se eliminó la función `renderLoader` debido a problemas con la carga de estilos
+- Ahora cada archivo html tiene su propio loader con contenido personalizado
+- Se cambiaron muchos comentarios
+- Se agregó la fuente Lora a la personalización del horario y calendario
+- Se renombraron algunos ids en js
+- Se agruparon las funciones de `dyslexia.js` y `animations.js` en `accessibility.js`, ahora se exportan/importan desde ahí
+- Estos archivos fueron eliminados
+- Se corrigió el div con clase content-card en `horarios.html` y `calendario.html`
+- Se actualizó `humans.txt`
+
 ---
 
 ## [v0.39.0-alpha] - Versión Principal

@@ -3,40 +3,6 @@
 ========================================== */
 import { getVillaDoloresWeather } from "./buttons.js";
 
-export function renderLoader() {
-    const path = window.location.pathname;
-    const page = path.split("/").pop() || "index.html";
-    const pageTitles = {
-        "index.html": "¡Bienvenido al sitio!",
-        "nosotros.html": "Sobre Nosotros",
-        "noticias.html": "Noticias y Novedades",
-        "proyectos.html": "Nuestros Proyectos",
-        "herramientas.html": "Herramientas Estudiantiles",
-        "horarios.html": "Horarios",
-        "calendario.html": "Calendario",
-        "tramites.html": "Trámites y Reglamento",
-        "recursos.html": "Recursos Útiles",
-        "escuela.html": "Nuestra Escuela",
-        "contacto.html": "Contacto",
-        "creditos.html": "Créditos y Colaboradores",
-        "terminos.html": "Términos y Condiciones",
-    };
-    const isHomePage = page === "index.html" || page === "";
-    const loaderText = pageTitles[page] || "Cargando...";
-    const loaderSubtext = isHomePage ? "<p>Centro de Estudiantes IPET Nº 424</p>" : "<p>Cargando...</p>";
-    const loaderHTML = `
-        <div id="loader-screen" class="loader-screen">
-            <div id="loader-content" class="loader-content">
-                <div id="loader-spinner" class="loader-spinner"></div>
-                <h2>${loaderText}</h2>
-                ${loaderSubtext}
-            </div>
-        </div>
-    `;
-    // Se inserta como primer elemento dentro del <body>
-    document.body.insertAdjacentHTML("afterbegin", loaderHTML);
-}
-
 export async function initComponents() {
     function loadComponent(containerId, htmlFile) {
         return fetch(htmlFile)

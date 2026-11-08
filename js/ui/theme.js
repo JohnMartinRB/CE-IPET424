@@ -218,8 +218,8 @@ export function initTheme() {
             const isGrayscaleActive = document.documentElement.classList.contains("grayscale-mode");
             setGrayscaleMode(!isGrayscaleActive);
         } else if (e.target.closest("[data-set-theme]")) {
-            const themeBtn = e.target.closest("[data-set-theme]");
-            const targetTheme = themeBtn.dataset.setTheme;
+            const themeButton = e.target.closest("[data-set-theme]");
+            const targetTheme = themeButton.dataset.setTheme;
             const currentTheme = getActiveThemeFromDOM();
             if (currentTheme === targetTheme) {
                 applyTheme("light");
