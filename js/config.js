@@ -206,7 +206,7 @@ export function configTerminal() {
             return "⌨️ Escribí cualquiera de los comandos anteriores con paréntesis y presioná Enter.";
         },
         info: function () {
-            return "🏫 Centro de Estudiantes IPET Nº 424 - Sitio Oficial desarrollado por y para estudiantes.";
+            return "🏫 Centro de Estudiantes IPET N° 424 - Sitio Oficial desarrollado por y para estudiantes.";
         },
         estatuto: function () {
             return "📜 El estatuto garantiza la representación democrática y participativa de todos los estudiantes del IPET 424.";

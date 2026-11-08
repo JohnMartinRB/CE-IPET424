@@ -93,7 +93,6 @@ CE-IPET424/
 │   │   └── nav.css                   # Barra de navegación
 │   ├── misc/                         # Hojas de estilos específicas o random
 │   │   ├── error.css                 # Estilos para la página 404 / errores
-│   │   ├── home.css                  # Estilos específicos de la página principal
 │   │   ├── secret.css                # Estilos para los elementos easter egg
 │   │   └── specific.css              # Estilos específicos varios
 │   └── styles.css                    # Hoja de ruta principal (@import maestro)
@@ -109,9 +108,7 @@ CE-IPET424/
 │   │   ├── theme.js                  # Lógica de conmutación de temas (oscuro/claro)
 │   │   └── widgets.js                # Widgets interactivos
 │   ├── utils/                        # Funciones utilitarias del sistema
-│   │   ├── accessibility.js          # Utilidades generales de accesibilidad
-│   │   ├── animations.js             # Efectos y animaciones
-│   │   ├── dyslexia.js               # Modo de tipografía accesible (Atkinson)
+│   │   ├── accessibility.js          # Controles de accesibilidad (fuente, animaciones)
 │   │   ├── font-size.js              # Ajuste dinámico de tamaño de fuente
 │   │   ├── shortcuts.js              # Atajos de teclado
 │   │   └── sound.js                  # Efectos de audio / feedback sonoro

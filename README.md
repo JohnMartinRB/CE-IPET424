@@ -102,7 +102,14 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.40-alpha` (Actual)**
+- **`v0.41-alpha` (Actual)**
+    - Se actualizaron completamente los Términos y Condiciones
+    - Se agregó la subpágina `noticias.html` (vacía de momento) para evitar los enlaces rotos
+    - En el changelog, los números de versiones ya no incluyen corchetes
+    - Corregidos muchos errores de ortografía en varios archivos
+    - Se actulizó el árbol de carpetas
+
+- **`v0.40-alpha` (Anterior)**
   HEADER Y NAVEGACIÓN
     - Estructura del header renovada: logos juntos, título más hacia la izquierda, nuevas columnas con menús y botones.
     - El header ahora es más bajo y más ancho.
@@ -173,17 +180,6 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
     - Estos archivos fueron eliminados
     - Se actualizó `humans.txt`
 
-- **`v0.39-alpha` (Anterior)**
-    - Nuevos widgets:
-        - Widget de Efeméride diaria (Día de...)
-        - Widget de vistas del sitio (diarias, mensuales, anuale y totales)
-    - Nuevas funciones js para manejar los widgets
-    - Archivo `days.json` para guardar las efemérides (aún en progreso)
-    - Se reordenó la carga de los widgets en las funciones js
-    - Se agregaron variables a algunos elementos con tamaños de fuente fijo
-    - Se eliminaron algunas propiedades innecesarias
-    - Se mejoraron los comentarios de css y se eliminaron muchos
-
 Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 
 ---
@@ -192,7 +188,7 @@ Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para
 
 ### 🚀 Próximas Versiones
 
-Para conocer las funcionalidades en la que está trabajando el equipo, te invitamos a concoer nuestra [Hoja de Ruta de Desarrollo](./ROADMAP.md).
+Para conocer las funcionalidades en las que está trabajando el equipo, te invitamos a conocer nuestra [Hoja de Ruta de Desarrollo](./ROADMAP.md).
 
 ---
 
