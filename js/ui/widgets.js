@@ -9,7 +9,7 @@ export async function initHolidaysWidget() {
     const container = document.getElementById("holidays-content");
     try {
         // Cargar el JSON de feriados
-        const response = await fetch("assets/data/holidays.json");
+        const response = await fetch("data/holidays.json");
         if (!response.ok) throw new Error("No se pudo cargar holidays.json");
         let holidaysData = await response.json();
         // Corregir si el JSON viene dentro de una matriz anidada [[...]]
@@ -72,7 +72,7 @@ export async function initDaysWidget() {
     const dayTextContainer = document.getElementById("day-text");
     if (!dayTextContainer) return;
     try {
-        const response = await fetch("assets/data/days.json");
+        const response = await fetch("data/days.json");
         if (!response.ok) throw new Error("No se pudo cargar days.json");
         const daysList = await response.json();
         if (!daysList || daysList.length === 0) {
@@ -109,7 +109,7 @@ export async function initDailyQuoteWidget() {
     const quoteAuthorContainer = document.getElementById("quote-author");
     if (!quoteTextContainer) return;
     try {
-        const response = await fetch("assets/data/quotes.json");
+        const response = await fetch("data/quotes.json");
         if (!response.ok) throw new Error("Failed to load quotes.json");
         const quotesList = await response.json();
         if (!quotesList || quotesList.length === 0) {
@@ -147,7 +147,7 @@ export async function initFactsWidget() {
     const rerollButton = document.getElementById("button-reroll-fact");
     if (!factText || !rerollButton) return;
     try {
-        const response = await fetch("assets/data/facts.json");
+        const response = await fetch("data/facts.json");
         if (!response.ok) throw new Error("No se pudo cargar facts.json");
         factsList = await response.json();
         if (factsList.length > 0) {

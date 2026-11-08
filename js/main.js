@@ -11,6 +11,7 @@ import {
     initWeatherDateTimeWidget,
     initViewsWidget,
 } from "./ui/widgets.js";
+import { initVersion } from "./ui/version.js";
 import { initBanners } from "./ui/banners.js";
 import { initTheme } from "./ui/theme.js";
 import { initModals } from "./ui/modals.js";
@@ -21,15 +22,7 @@ import { initFontSize } from "./utils/font-size.js";
 import { initDyslexia, initAnimations } from "./utils/accessibility.js";
 import { initSound, playSound } from "./utils/sound.js";
 import { initShortcuts } from "./utils/shortcuts.js";
-import {
-    configBase,
-    configParty,
-    configMatrix,
-    configFlip,
-    configTerminal,
-    configPaint,
-    configMenu,
-} from "./config.js";
+import { initExtras } from "./extras/extras.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
     await initComponents();
@@ -40,6 +33,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initFactsWidget();
     initWeatherDateTimeWidget();
     initViewsWidget();
+    initVersion();
     initBanners();
     initTheme();
     initModals();
@@ -51,26 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initShortcuts();
     initSchedules();
     initCalendar();
-    configBase();
-    configParty();
-    configMatrix();
-    configFlip();
-    configTerminal();
-    configPaint();
-    configMenu();
-});
-
-// Delegación global para interceptar el clic derecho en imágenes fijas y dinámicas
-document.addEventListener("contextmenu", function (e) {
-    if (e.target.tagName === "IMG" || e.target.closest("img")) {
-        e.preventDefault();
-    }
-});
-// Previene que se arrastren fuera de la ventana
-document.addEventListener("dragstart", function (e) {
-    if (e.target.tagName === "IMG" || e.target.closest("img")) {
-        e.preventDefault();
-    }
+    initExtras();
 });
 
 // Ocultar pantalla de bienvenida 1 segundo después de que todo cargue
@@ -80,7 +55,7 @@ window.addEventListener("load", () => {
         if (loader) {
             loader.classList.add("fade-out");
         }
-    }, 1000); // 1000 ms = 1 segundo de espera
+    }, 1000); // 1000 ms de espera
     playSound("toast.mp3", 0.5);
 });
 

@@ -1,7 +1,7 @@
 /* ==========================================
     TARJETA DE CONTENIDO PRINCIPAL
 ========================================== */
-.content-card {
+.main-content {
     display: flex;
     flex-direction: column;
     width: 95%;
@@ -15,7 +15,7 @@
 }
 
 @media (min-width: 1024px) {
-    .content-card {
+    .main-content {
         width: 100%;
         max-width: 60%;
     }

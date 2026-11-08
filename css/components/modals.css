@@ -60,3 +60,33 @@
 .modal-in-dev {
     z-index: 400;
 }
+
+.whats-new-body .whats-new-title {
+    margin: 1.2rem 0 0.5rem;
+    color: var(--azul1, #0284c7);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.whats-new-body .whats-new-list {
+    margin: 0 0 1rem 0;
+    padding-left: 1.2rem;
+}
+
+.whats-new-body .whats-new-list li {
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+}
+
+.whats-new-body .whats-new-text {
+    margin: 0.4rem 0;
+    line-height: 1.4;
+}
+
+.whats-new-body code {
+    padding: 0.1em 0.3em;
+    border-radius: 4px;
+    background: var(--gris-claro, rgba(0, 0, 0, 0.06));
+    font-size: 0.9em;
+    font-family: monospace;
+}

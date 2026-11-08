@@ -20,16 +20,6 @@ CE-IPET424/
 │   ├── audio/                        # Archivos de audio
 │   │   ├── effects/                  # Efectos sonoros de interfaz
 │   │   └── music/                    # Pistas de audio o música ambiental
-│   ├── data/                         # Archivos de datos estructurados
-│   │   ├── events.json               # Datos de eventos y calendario
-│   │   ├── facts.json                # Datos curiosos para widgets
-│   │   ├── faqs.json                 # Preguntas frecuentes
-│   │   ├── holidays.json             # Días festivos o calendarios especiales
-│   │   ├── manifest.json             # Manifiesto para instalación PWA
-│   │   ├── news.json                 # Noticias y comunicados
-│   │   ├── quotes.json               # Frases o citas célebres
-│   │   ├── schedules.json            # Horarios de cada curso
-│   │   └── team.json                 # Integrantes del Centro de Estudiantes
 │   ├── docs/                         # Documentos descargables (PDFs, autorizaciones)
 │   │   ├── arg/                      # Documentación y normativas generales
 │   │   ├── downloads/                # Archivos generales para descarga
@@ -37,11 +27,12 @@ CE-IPET424/
 │   ├── fonts/                        # Tipografías locales
 │   ├── img/                          # Imágenes del sitio
 │   │   ├── bg/                       # Imágenes tecnológicas de fondo (.jpg)
-│   │   ├── cursors/                  # Punteros personalizados (.svg)
+│   │   ├── cursors/                  # Punteros personalizados (.cur)
 │   │   ├── favicons/                 # Favicons para modo claro y oscuro
 │   │   ├── gallery/                  # Galería de fotos e instalaciones
 │   │   ├── icons/                    # Íconos de interfaz y redes
 │   │   │   ├── footer/               # Íconos específicos del pie de página
+│   │   │   ├── header/               # Íconos de los botones del headeer
 │   │   │   └── widget/               # Íconos para widgets interactivos
 │   │   ├── logos/                    # Logos e insignias del CE e IPET
 │   │   │   ├── app/                  # Logos adaptados para aplicaciones / PWA
@@ -51,8 +42,8 @@ CE-IPET424/
 │   │   ├── resources/                # Recursos gráficos adicionales
 │   │   └── plano.jpg                 # Plano de las instalaciones
 │   ├── libs/                         # Librerías externas
-│   ├── models/                       # Modelos 3D
-│   └── videos/                       # Clips y videos institucionales
+│   ├── models/                       # Modelos o recursos tridimensionales/estructurales
+│   └── videos/                       # Archivos de video globales del proyecto
 ├── components/                       # Componentes HTML reutilizables
 │   ├── _aside-news.html              # Aside desplegable modular de configuración (novedades en un futuro)
 │   ├── _aside-widgets.html           # Aside desplegable modular de widgets
@@ -96,7 +87,20 @@ CE-IPET424/
 │   │   ├── secret.css                # Estilos para los elementos easter egg
 │   │   └── specific.css              # Estilos específicos varios
 │   └── styles.css                    # Hoja de ruta principal (@import maestro)
+├── data/                             # Archivos de datos estructurados
+│   ├── days.json                     # Efemérides y "días de..."
+│   ├── events.json                   # Datos de eventos y calendario
+│   ├── facts.json                    # Datos curiosos para widgets
+│   ├── faqs.json                     # Preguntas frecuentes
+│   ├── holidays.json                 # Días festivos o calendarios especiales
+│   ├── manifest.json                 # Manifiesto para instalación PWA
+│   ├── news.json                     # Noticias y comunicados
+│   ├── quotes.json                   # Frases o citas célebres
+│   ├── schedules.json                # Horarios de cada curso
+│   ├── team.json                     # Integrantes del Centro de Estudiantes
+│   └── version.json                  # Versión de desarrollo
 ├── js/                               # Funciones Javascript
+│   ├── extras/                       # Funciones random
 │   ├── ui/                           # Funciones de la interfaz
 │   │   ├── banners.js                # Control de banners de aviso
 │   │   ├── buttons.js                # Comportamiento e interacción de botones
@@ -106,16 +110,15 @@ CE-IPET424/
 │   │   ├── modals.js                 # Apertura y cierre de ventanas modales
 │   │   ├── schedules.js              # Control y renderizado de horarios
 │   │   ├── theme.js                  # Lógica de conmutación de temas (oscuro/claro)
+│   │   ├── version.js                # Extrar la versión desde el json
 │   │   └── widgets.js                # Widgets interactivos
 │   ├── utils/                        # Funciones utilitarias del sistema
 │   │   ├── accessibility.js          # Controles de accesibilidad (fuente, animaciones)
+│   │   ├── changelog.js              # Estilizador del changelog para los modales
 │   │   ├── font-size.js              # Ajuste dinámico de tamaño de fuente
 │   │   ├── shortcuts.js              # Atajos de teclado
 │   │   └── sound.js                  # Efectos de audio / feedback sonoro
-│   ├── config.js                     # Configuraciones generales
 │   └── main.js                       # Punto de entrada principal e inicializador
-├── models/                           # Modelos o recursos tridimensionales/estructurales
-├── videos/                           # Archivos de video globales del proyecto
 ├── .gitignore                        # Ignora ciertos archivos al hacer commit
 ├── .nojekyll                         # Evita que GitHub Pages omita carpetas con guion bajo
 ├── 404.html                          # Página personalizada de error 404
