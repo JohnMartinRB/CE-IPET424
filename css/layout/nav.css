@@ -18,11 +18,11 @@ a.nav-menu-link:visited {
     transition: var(--transition-fast);
 }
 a.nav-menu-link:hover {
-    transform: scale(0.98);
+    transform: scale(0.99);
     color: var(--link-hover) !important;
 }
 a.nav-menu-link:active {
-    transform: scale(0.98);
+    transform: scale(0.99);
     color: var(--link-hover) !important;
 }
 
