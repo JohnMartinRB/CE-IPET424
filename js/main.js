@@ -1,7 +1,7 @@
 /* ==========================================================================
     MAIN.JS - ARCHIVO PRINCIPAL DE JAVASCRIPT
 ========================================================================== */
-import { renderLoader, initComponents, initPageTitle } from "./ui/components.js";
+import { renderLoader, initComponents } from "./ui/components.js";
 import { initButtons } from "./ui/buttons.js";
 import {
     initHolidaysWidget,
@@ -14,6 +14,7 @@ import {
 import { initBanners } from "./ui/banners.js";
 import { initTheme } from "./ui/theme.js";
 import { initModals } from "./ui/modals.js";
+import { initHeader } from "./ui/header.js";
 import { initSchedules } from "./ui/schedules.js";
 import { initCalendar } from "./ui/calendar.js";
 import { initFontSize } from "./utils/font-size.js";
@@ -34,7 +35,6 @@ import {
 document.addEventListener("DOMContentLoaded", async () => {
     renderLoader();
     await initComponents();
-    initPageTitle();
     initButtons();
     initHolidaysWidget();
     initDaysWidget();
@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initBanners();
     initTheme();
     initModals();
+    initHeader();
     initFontSize();
     initAnimations();
     initDyslexia();

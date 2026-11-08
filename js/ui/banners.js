@@ -25,7 +25,7 @@ export function initBanners() {
         }
     });
     // Banner de sin conexión a internet (offline toast)
-    function asegurarBannerOffline() {
+    function offlineBanner() {
         let banner = document.getElementById("offline-banner");
         if (!banner) {
             banner = document.createElement("div");
@@ -37,9 +37,8 @@ export function initBanners() {
         return banner;
     }
     window.addEventListener("offline", () => {
-        const banner = asegurarBannerOffline();
+        const banner = offlineBanner();
         banner.classList.add("visible");
-        // Reprodúcí el sonido offline cuando se va la conexión
         playSound("offline.mp3", 0.3);
     });
     window.addEventListener("online", () => {

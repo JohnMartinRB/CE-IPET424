@@ -78,7 +78,6 @@ _Enfoque: Arquitectura base, modularización, sistema de temas, accesibilidad y 
 
 * [ ] **v0.40 - Rediseño Integral de Header & Menú de Navegación (Hito Principal)**
     - Reestructuración completa de la cabecera superior (_Header Card_).
-    - Nuevo menú de navegación más intuitivo, responsivo y fluido para móviles y escritorio.
 
 ---
 

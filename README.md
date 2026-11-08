@@ -2,8 +2,8 @@
 
 > **Portal Institucional Digital, Gestión Escolar e Informática Estudiantil**
 
-[![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.39%20%28Alpha%29-blue)
+[![Estado del Despliegue](https://github.com/JohnMartinRB/CE-IPET424/actions/workflows/static.yml/badge.svg)](https://github.com/JohnMartinRB/CE-IPET-424/actions/workflows/static.yml)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.40%20%28Alpha%29-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Tecnologías](<https://img.shields.io/badge/stack-HTML5%20%7C%20CSS3%20%7C%20JS%20(ES6%2B)-orange>)
 
@@ -38,7 +38,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.39` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.40` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
 | **Lanzamiento Estable (v1.0)** | Martes 9 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
@@ -102,7 +102,64 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.39-alpha` (Actual)**
+- **`v0.40-alpha` (Actual)**
+  HEADER Y NAVEGACIÓN
+    - Estructura del header renovada: logos juntos, título más hacia la izquierda, nuevas columnas con menús y botones.
+    - El header ahora es más bajo y más ancho.
+    - Se achicó el tamaño de los logos e iconos del header.
+    - Se agregaron modales con opciones a los botones del header (son los mismos que el aside-config pero divididos).
+    - La barra de progreso de lectura es más fina.
+    - Se agregó el archivo `header.js` para renderizar los modales.
+    - Se unificó el color de fondo de los modales nuevos y ya existentes
+    - El fondo de los modales ya no tiene blur.
+    - Se movió el botón de Modo Daltónico a Accesibilidad.
+    - Se cambió la clase del botón de Modo daltónico.
+    - Se agregó una pequeña animación de hover a los enlaces del nav.
+    - Se quitó el padding del nav de subpágina y ahora tiene position sticky al hacer scroll.
+    - Iconos en `assets/icons/header`.
+    - Svg de lupa para un botón futuro
+
+    ESTRUCTURA
+    - Ahora la etiqueta MAIN tiene la clase e ID de `content-card` en lugar de un `div` fuera de main.
+    - Se eliminó el color, padding y sombra de la `content-card`. Ahora actúa solo como contenedor invisible.
+    - Se renombró el `aside-config` a `aside-news` y el `aside-news` a `aside-widgets`.
+    - Se renombraron las respectivas clases, IDs y rutas.
+    - Se cambió el padding del aside, y ahora son más altos.
+
+    FONDO Y TEMAS
+    - Se cambió el fondo liso del sitio por una textura tecnológica infinita, en el modo Claro, Oscuro, Daltónico, Código y Alto Contraste.
+        - El modo rosa usa el del modo claro y el de los demás temas aún no cambió.
+    - Se cambiaron varios colores en modo claro.
+    - Se actualizaron los celestes del modo rosa para ir acorde con el nuevo modo claro.
+    - Se cambiaron algunos colores y se arreglaron los border-radius del modo código.
+    - Se cambió cómo se maneja la fuente de texto en el modo código.
+    - El botón del aside ya no está redondeado en modo código.
+    - Ahora los colores del modo código, daltónico y alto contraste se manejan con variables.
+    - Se eliminaron los favicon temáticos, dejando únicamente el de modo claro y oscuro.
+    - Los favicon de modo claro / oscuro están más simplificados.
+    - Se actualizacon las rutas.
+
+    CURSORES
+    - Ahora el sitio usa nuevos cursores en formato `.cur` y son los mismos para modo claro / oscuro
+    - Se eliminaron los cursores svg antiguos y se actualizaron las rutas y variables de cursores
+
+    CAMBIOS VARIADOS
+    - Las tarjetas de descarga de la primer sección del Inicio ahora están organizadas en un grid de 2 columnas
+    - Los párrafos ahora tienen `text-wrap: pretty` y los encabezados `text-wrap: balance`
+    - Las tarjetas y los widgets tienen más `border-radius`
+    - Se actualizó la función de `sounds.js` para incluir nuevos elementos y botones.
+    - Se intentó corregir el iframe de la subpágina escuela.html.
+    - Se arregló el enlace del Google Maps en escuela.html.
+    - La página `terminos.html` ya no incluye los asides.
+    - Se eliminó el modal de aceptar términos en `terminos.html`.
+    - Se eliminaron muchos comentarios / Se modificaron otros.
+    - Se cambió el título del widget de datos.
+    - Se cambió la puntuación de unos datos de `facts.json`.
+    - Se cambió el nombre de una función.
+    - Se eliminó la función de `initPageTitle` ya que daba muchos problemas.
+    - Se corrigió una badge del README.
+
+- **`v0.39-alpha` (Anterior)**
     - Nuevos widgets:
         - Widget de Efeméride diaria (Día de...)
         - Widget de vistas del sitio (diarias, mensuales, anuale y totales)
@@ -112,18 +169,6 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
     - Se agregaron variables a algunos elementos con tamaños de fuente fijo
     - Se eliminaron algunas propiedades innecesarias
     - Se mejoraron los comentarios de css y se eliminaron muchos
-
-- **`v0.38-alpha` (Anterior)**
-    - Se agregó contenido a los siguientes archivos:
-        - `.github/ISSUE_TEMPLATE/bug_report.yml`
-        - `.github/ISSUE_TEMPLATE/feature_request.yml`
-        - `.github/CODE_OF_CONDUCT.md`
-        - `.github/PULL_REQUEST_TEMPLATE.md`
-    - Se amplió el changelog incluyendo el historial desde la primera versión
-    - Las versiones de número redondo ahora incluyen el título de Versión Principal Mayor (a excepción de la 0.10)
-    - Se corrigieron algunos niveles de viñeta en el changelog
-    - Se agregaron los archivos de la fuente de texto Lora
-    - Se agregó Lora en @font-face
 
 Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 

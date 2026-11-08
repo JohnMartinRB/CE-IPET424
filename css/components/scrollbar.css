@@ -8,6 +8,7 @@
     height: 8rem;
     border-radius: var(--radius-sm);
     background-color: var(--scrollbar-thumb);
+    cursor: var(--pointer);
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--scrollbar-thumb-hover);

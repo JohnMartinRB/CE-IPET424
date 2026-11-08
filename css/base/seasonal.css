@@ -37,6 +37,7 @@ body.mistery-mode {
     --text-button: var(--text-misterio-claro);
     --text-button-hover: var(--blanco);
     --border-button: var(--acento-misterio-morado);
+    --bg-header-icon-hover: var(--acento-misterio-morado);
     --bg-aside-button-hover: var(--bg-misterio-secundario);
     --aside-button-icon: var(--celeste5);
     --bg-scroll-button: var(--acento-misterio-morado);
@@ -95,6 +96,7 @@ body.holidays-mode {
     --text-button: var(--text-navidad-claro);
     --text-button-hover: var(--blanco);
     --border-button: var(--acento-navidad-dorado);
+    --bg-header-icon-hover: var(--acento-navidad-dorado);
     --bg-aside-button-hover: var(--bg-navidad-secundario);
     --aside-button-icon: var(--celeste5);
     --bg-scroll-button: var(--acento-navidad-verde);
@@ -153,6 +155,7 @@ body.summer-mode {
     --text-button: var(--text-summer-claro);
     --text-button-hover: var(--bg-summer-primario);
     --border-button: var(--acento-summer-amarillo);
+    --bg-header-icon-hover: var(--acento-summer-amarillo);
     --bg-aside-button-hover: var(--bg-summer-secundario);
     --aside-button-icon: var(--celeste5);
     --bg-scroll-button: var(--text-summer-gris);
@@ -188,7 +191,7 @@ body.pink-mode {
     --rosa4: #ffdaf1;
 
     /* BODY (Mantiene la base celeste original) */
-    --bg-body: var(--celeste6);
+    --bg-body: var(--celeste2);
     --text-body: var(--azul1);
     /* PANTALLA DE CARGA */
     --bg-loader-screen: var(--celeste2);
@@ -197,17 +200,17 @@ body.pink-mode {
     --bg-whats-new-version: var(--rosa1);
     --text-whats-new-version: var(--blanco);
     /* CONTENIDO (Degradado celeste mezclado con un toque suave de rosa) */
-    --bg-base: linear-gradient(90deg, var(--rosa4) 0%, var(--blanco) 50%, var(--celeste7) 100%);
-    --bg-base-inverted: linear-gradient(-90deg, var(--rosa4) 0%, var(--blanco) 50%, var(--celeste7) 100%);
+    --bg-base: linear-gradient(90deg, var(--rosa4) 0%, var(--blanco) 50%, var(--celeste6) 100%);
+    --bg-base-inverted: linear-gradient(-90deg, var(--rosa4) 0%, var(--blanco) 50%, var(--celeste6) 100%);
     /* LINK (Hover con un toque rosa vibrante) */
     --link: var(--azul1);
     --link-hover: var(--rosa1);
     /* BARRA DE PROGRESO */
     --progress-bar: var(--rosa2);
     /* TARJETAS (Mezcla armónica de celestes con rosa suave en los degradados) */
-    --bg-section-card: linear-gradient(90deg, var(--celeste7) 0%, var(--rosa4) 100%);
+    --bg-section-card: linear-gradient(90deg, var(--celeste6) 0%, var(--rosa4) 100%);
     --text-section-card: var(--azul2);
-    --bg-subsection-card: linear-gradient(-90deg, var(--celeste7) 0%, var(--rosa3) 100%);
+    --bg-subsection-card: linear-gradient(-90deg, var(--celeste6) 0%, var(--rosa3) 100%);
     --text-subsection-card: var(--azul1);
     /* TITULOS */
     --text-titles: var(--azul1);
@@ -217,6 +220,7 @@ body.pink-mode {
     --text-button: var(--azul1);
     --text-button-hover: var(--azul1);
     --border-button: var(--rosa2);
+    --bg-header-icon-hover: var(--rosa2);
     --bg-aside-button-hover: var(--rosa4);
     --aside-button-icon: var(--celeste5);
     --bg-scroll-button: var(--rosa2);
@@ -227,7 +231,7 @@ body.pink-mode {
     --border-input: var(--rosa3);
     --border-input-focus: var(--rosa2);
     /* FOOTER (Degradado de celestes integrando un paso intermedio rosa) */
-    --bg-footer: linear-gradient(90deg, var(--celeste3) 0%, var(--rosa3) 50%, var(--celeste4) 100%);
+    --bg-footer: linear-gradient(90deg, var(--celeste3) 0%, var(--rosa3) 50%, var(--celeste5) 100%);
     --text-footer: var(--azul1);
     --text-footer-hover: var(--azul4);
     --text-copy: var(--gris1);

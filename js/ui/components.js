@@ -21,13 +21,9 @@ export function renderLoader() {
         "creditos.html": "Créditos y Colaboradores",
         "terminos.html": "Términos y Condiciones",
     };
-    // 3. Evaluamos la página actual
     const isHomePage = page === "index.html" || page === "";
-    // Título principal
     const loaderText = pageTitles[page] || "Cargando...";
-    // Subtítulo: si es el inicio muestra la institución, en subpáginas dice "Cargando..."
     const loaderSubtext = isHomePage ? "<p>Centro de Estudiantes IPET Nº 424</p>" : "<p>Cargando...</p>";
-    // 4. Inyectamos la estructura HTML en el DOM
     const loaderHTML = `
         <div id="loader-screen" class="loader-screen">
             <div id="loader-content" class="loader-content">
@@ -42,7 +38,6 @@ export function renderLoader() {
 }
 
 export async function initComponents() {
-    // Función para cargar HTML dinámicamente
     function loadComponent(containerId, htmlFile) {
         return fetch(htmlFile)
             .then((response) => {
@@ -78,8 +73,8 @@ export async function initComponents() {
     // Esperamos a que todos los componentes se terminen de inyectar
     await Promise.all([
         loadComponent("header-container", "components/_header.html"),
-        loadComponent("aside-config-container", "components/_aside-config.html"),
         loadComponent("aside-news-container", "components/_aside-news.html"),
+        loadComponent("aside-widgets-container", "components/_aside-widgets.html"),
         loadComponent("footer-container", "components/_footer.html"),
         loadComponent("modal-terms-container", "components/_modal-terms.html"),
         loadComponent("modal-in-dev-container", "components/_modal-in-dev.html"),
@@ -87,38 +82,4 @@ export async function initComponents() {
     ]);
     // Una vez inyectado el HTML del aside en el DOM:
     await getVillaDoloresWeather();
-}
-
-export function initPageTitle() {
-    // 1. Identificador institucional único (sufijo)
-    const SITE_SUFFIX = "| Centro de Estudiantes IPET N° 424";
-    // 2. Obtenemos el nombre de la página actual en minúsculas para evitar errores
-    const path = window.location.pathname;
-    let page = path.split("/").pop().toLowerCase();
-    // Si la ruta termina en / o está vacía, asumimos index.html
-    if (!page || page === "") {
-        page = "index.html";
-    }
-    console.log("Página detectada por initPageTitle:", page); // 🔍 Útil para depurar en consola (F12)
-    // 3. Diccionario con el título específico para cada subpágina (claves en minúsculas)
-    const pageTitles = {
-        "index.html": "Inicio",
-        "nosotros.html": "Sobre Nosotros",
-        "noticias.html": "Noticias y Novedades",
-        "proyectos.html": "Proyectos",
-        "herramientas.html": "Herramientas Estudiantiles",
-        "horarios.html": "Horarios - Herramientas Estudiantiles",
-        "calendario.html": "Calendario - Herramientas Estudiantiles",
-        "tramites.html": "Trámites",
-        "recursos.html": "Recursos Útiles",
-        "escuela.html": "Nuestra Escuela",
-        "contacto.html": "Contacto",
-        "creditos.html": "Créditos",
-        "terminos.html": "Términos y Condiciones",
-        "404.html": "Página no encontrada",
-    };
-    // 4. Seleccionamos el nombre o usamos "Inicio" como respaldo si no coincide
-    const sectionName = pageTitles[page] || "Inicio";
-    // 5. Asignamos el título final a la pestaña
-    document.title = `${sectionName} ${SITE_SUFFIX}`;
 }

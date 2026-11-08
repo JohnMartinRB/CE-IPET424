@@ -10,6 +10,7 @@ h6 {
     line-height: var(--lh-normal);
     font-family: var(--font-titles);
     text-align: center;
+    text-wrap: balance;
 }
 h1 {
     font-size: var(--fs-xl);
@@ -32,10 +33,10 @@ h6 {
     text-align: center;
 }
 .paragraph {
-    text-wrap: balance;
+    text-wrap: pretty;
 }
 .text:hover {
-    cursor: var(--cursor-text);
+    cursor: var(--text);
 }
 
 @media (min-width: 1024px) {

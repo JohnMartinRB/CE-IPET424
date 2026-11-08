@@ -1,0 +1,91 @@
+<aside id="aside-widgets" class="aside-drawer aside-widgets">
+    <button
+        id="aside-widgets-button-toggle"
+        class="aside-button-toggle aside-widgets-button-toggle"
+        aria-label="Abrir panel de novedades"
+    >
+        <span id="aside-widgets-icon-toggle" class="aside-icon-toggle">◀</span>
+    </button>
+    <div id="aside-widgets-options" class="aside-options">
+        <!-- WIDGET DE PRÓXIMOS FERIADOS -->
+        <div id="holidays-widget" class="widget holidays-widget">
+            <div id="holidays-header" class="widget-header">
+                <img src="assets/img/icons/widget/holiday.svg" class="widget-icon" loading="lazy" />
+                <h3 class="widget-title">Próximo Feriado</h3>
+            </div>
+            <div id="holidays-content" class="holidays-content">
+                <p id="holidays-text">Calculando próximo feriado...</p>
+            </div>
+        </div>
+        <!-- WIDGET DE EFEMÉRIDES -->
+        <div id="day-widget" class="day-widget widget">
+            <div id="day-header" class="widget-header">
+                <img src="assets/img/icons/widget/day.svg" class="widget-icon" loading="lazy" />
+                <h3 class="widget-title">Día de...</h3>
+            </div>
+            <div class="widget-content">
+                <h4 id="day-title" class="day-title" style="font-weight: bold; margin-bottom: 5px">Cargando...</h4>
+                <p id="day-text" class="day-text">Buscando efeméride...</p>
+            </div>
+        </div>
+        <!-- WIDGET DE FRASE DIARIA -->
+        <div id="quote-widget" class="quote-widget widget">
+            <div id="quote-header" class="widget-header">
+                <img src="assets/img/icons/widget/quote.svg" class="widget-icon" loading="lazy" />
+                <h3 class="widget-title">Frase del Día</h3>
+            </div>
+            <div class="widget-content">
+                <p id="quote-text" class="widget-text">Cargando frase...</p>
+                <span id="quote-author" class="quote-author"></span>
+            </div>
+        </div>
+        <!-- WIDGET DE DATOS CURIOSOS -->
+        <div id="facts-widget" class="widget facts-widget">
+            <div id="facts-header" class="widget-header">
+                <img src="assets/img/icons/widget/fact.svg" class="widget-icon" loading="lazy" />
+                <h3 class="widget-title">¿Sabías que...?</h3>
+            </div>
+            <div class="facts-content">
+                <p id="fact-text">Cargando dato curioso...</p>
+            </div>
+            <button
+                id="button-reroll-fact"
+                class="button config-button button-reroll-fact"
+                aria-label="Mostrar otro dato"
+            >
+                Otro dato ⟲
+            </button>
+        </div>
+        <!-- WIDGET DE TIEMPO ATMOSFÉRICO -->
+        <div id="weather-widget" class="widget weather-widget">
+            <div id="weather-header" class="widget-header">
+                <img src="assets/img/icons/widget/weather.svg" class="widget-icon" loading="lazy" />
+                <h3 class="widget-title">El Tiempo y Hora</h3>
+            </div>
+            <div class="weather-content">
+                <div id="weather-datetime" class="weather-datetime">
+                    <div id="weather-time" class="weather-time">--:--:--</div>
+                    <div id="weather-date" class="weather-date">Cargando fecha...</div>
+                </div>
+                <div class="weather-main-info">
+                    <span class="weather-icon" id="weather-icon">☀️</span>
+                    <span class="weather-temp" id="weather-temp">--°C</span>
+                    <span class="weather-location">Villa Dolores</span>
+                </div>
+            </div>
+        </div>
+        <!-- WIDGET DE VISTAS -->
+        <div id="views-widget" class="views-widget widget">
+            <div id="views-header" class="widget-header">
+                <img src="assets/img/icons/widget/views.svg" class="widget-icon" loading="lazy" />
+                <h3 class="widget-title">Vistas del sitio</h3>
+            </div>
+            <div class="widget-content views-stats">
+                <div>Hoy: <strong id="views-daily">--</strong></div>
+                <div>Este mes: <strong id="views-monthly">--</strong></div>
+                <div>Este año: <strong id="views-annual">--</strong></div>
+                <div>Histórico: <strong id="views-total">--</strong></div>
+            </div>
+        </div>
+    </div>
+</aside>
