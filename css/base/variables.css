@@ -75,7 +75,7 @@
     --border-input: var(--lila1);
     --border-input-focus: var(--celeste2);
     /* FOOOTER */
-    --bg-footer: linear-gradient(90deg, var(--celeste3) 0%, var(--celeste5) 100%);
+    --bg-footer: linear-gradient(90deg, var(--celeste4) 0%, var(--celeste1) 100%);
     --text-footer: var(--azul1);
     --text-footer-hover: var(--celeste1);
     --text-copy: var(--gris1);

@@ -11,7 +11,7 @@
         />
         <meta name="theme-color" id="theme-color" content="#0088FF" />
         <!-- TITULO DE LA PESTAÑA Y FAVICON -->
-        <title>Inicio | Centro de Estudiantes IPET N° 424</title>
+        <title>Centro de Estudiantes IPET N° 424</title>
         <link rel="icon" id="favicon" type="image/png" href="assets/img/favicons/light.png" sizes="any" />
         <!-- CSS Y JAVASCRIPT -->
         <link rel="stylesheet" href="css/styles.css" />
@@ -19,9 +19,17 @@
     </head>
 
     <body>
-        <!-- HEADER DE TITULO -->
+        <!-- PANTALLA DE CARGA -->
+        <div id="loader-screen" class="loader-screen">
+            <div id="loader-content" class="loader-content">
+                <div id="loader-spinner" class="loader-spinner"></div>
+                <h2 id="loader-title">¡Bienvenido al sitio!</h2>
+                <div id="loader-subtext"><p>Centro de Estudiantes IPET Nº 424</p></div>
+            </div>
+        </div>
+        <!-- HEADER: TÍTULO, NAVEGACIÓN Y OPCIONES -->
         <div id="header-container" class="header-container"></div>
-        <!-- BARRA DE NAVEGACIÓN -->
+        <!-- BARRA DE NAVEGACIÓN POR SUBPÁGINA -->
         <nav id="nav-card" class="nav-card">
             <button id="nav-button-menu" class="button nav-button-menu" aria-label="Abrir menú">☰</button>
             <ul id="nav-menu" class="nav-menu">
@@ -52,14 +60,7 @@
                     Descargá los formularios oficiales. Imprimilos y entregalos en preceptoría o dirección según
                     corresponda.
                 </p>
-                <div
-                    class="grid-tarjetas"
-                    style="
-                        display: grid;
-                        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                        gap: var(--space-base);
-                    "
-                >
+                <div class="grid-cards">
                     <article class="subsection-card download-card">
                         <h3>Ficha Médica</h3>
                         <p class="text paragraph">
@@ -127,7 +128,6 @@
             <!-- SECCIÓN: REGLAMENTO Y HORARIOS -->
             <section id="reglamento" class="section-card reglamento-section">
                 <h2>Reglamento Interno y Horarios</h2>
-                <!-- Grilla de Timbres -->
                 <div id="table-container" class="subsection-card table-container">
                     <h3>Estructura Horaria de Turnos</h3>
                     <table>
@@ -167,7 +167,6 @@
                         </tbody>
                     </table>
                 </div>
-                <!-- Puntos clave del Acuerdo de Convivencia -->
                 <div id="aec" class="subsection-card aec">
                     <h3>Puntos clave del AEC</h3>
                     <details>
@@ -251,9 +250,7 @@
                         </div>
                         <button type="button" class="button" id="button-calculate">Calcular Promedio</button>
                     </form>
-                    <div id="result-promedio" class="result-box">
-                        <!-- JS insertará el resultado acá -->
-                    </div>
+                    <div id="result-promedio" class="result-box"></div>
                 </div>
             </section>
             <!-- SECCIÓN: INFORMACIÓN DEL CENTRO -->
@@ -295,7 +292,6 @@
                 <p class="text paragraph">
                     Tu opinión es anónima (si así lo preferís) y nos sirve para llevar propuestas a la dirección.
                 </p>
-                <!-- Integración sencilla con Google Forms -->
                 <div id="iframe-container" class="iframe-container">
                     <iframe
                         src="https://docs.google.com/forms/d/e/1FAIpQLSeHsjxAdZDWp6QH7vqKkcFEUpH4iLI4bY8FRK3d0nGlL-arpA/viewform?usp=header"
@@ -310,7 +306,6 @@
                     ></iframe>
                 </div>
             </section>
-
             <!-- SECCIÓN: SUB SITIOS -->
             <section id="sub-sitios" class="section-card">
                 <h2>¿Buscas algo específico?</h2>

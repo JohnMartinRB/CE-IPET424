@@ -19,9 +19,17 @@
     </head>
 
     <body>
-        <!-- HEADER DE TITULO -->
+        <!-- PANTALLA DE CARGA -->
+        <div id="loader-screen" class="loader-screen">
+            <div id="loader-content" class="loader-content">
+                <div id="loader-spinner" class="loader-spinner"></div>
+                <h2 id="loader-title">Herramientas Estudiantiles</h2>
+                <div id="loader-subtext"><p>Cargando...</p></div>
+            </div>
+        </div>
+        <!-- HEADER: TÍTULO, NAVEGACIÓN Y OPCIONES -->
         <div id="header-container" class="header-container"></div>
-        <!-- BARRA DE NAVEGACIÓN -->
+        <!-- BARRA DE NAVEGACIÓN POR SUBPÁGINA -->
         <nav id="nav-card" class="nav-card">
             <button id="nav-button-menu" class="button nav-button-menu" aria-label="Abrir menú">☰</button>
             <ul id="nav-menu" class="nav-menu">
@@ -49,14 +57,7 @@
                 <p class="text paragraph">
                     Herramientas diseñadas para organizar tu cursada, consultar módulos y planificar el año lectivo.
                 </p>
-                <div
-                    class="grid-tarjetas"
-                    style="
-                        display: grid;
-                        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                        gap: var(--space-base);
-                    "
-                >
+                <div class="grid-cards">
                     <!-- Tarjeta 1: Horarios -->
                     <article class="subsection-card download-card">
                         <div>

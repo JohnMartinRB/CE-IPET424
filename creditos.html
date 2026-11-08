@@ -19,9 +19,17 @@
     </head>
 
     <body>
-        <!-- HEADER DE TITULO -->
+        <!-- PANTALLA DE CARGA -->
+        <div id="loader-screen" class="loader-screen">
+            <div id="loader-content" class="loader-content">
+                <div id="loader-spinner" class="loader-spinner"></div>
+                <h2 id="loader-title">Créditos y Colaboradores</h2>
+                <div id="loader-subtext"><p>Cargando...</p></div>
+            </div>
+        </div>
+        <!-- HEADER: TÍTULO, NAVEGACIÓN Y OPCIONES -->
         <div id="header-container" class="header-container"></div>
-        <!-- BARRA DE NAVEGACIÓN -->
+        <!-- BARRA DE NAVEGACIÓN POR SUBPÁGINA -->
         <nav id="nav-card" class="nav-card">
             <button id="nav-button-menu" class="button nav-button-menu" aria-label="Abrir menú">☰</button>
             <ul id="nav-menu" class="nav-menu">
@@ -48,7 +56,7 @@
             <!-- SECCIÓN: EQUIPO WEB -->
             <section id="desarrolladores" class="section-card desarrolladores-section">
                 <h2>Equipo de Desarrollo</h2>
-                <div id="grid-tarjetas" class="grid-tarjetas">
+                <div id="grid-cards" class="grid-cards">
                     <article class="subsection-card download-card">
                         <h3>Desarrollo Frontend</h3>
                         <p class="text paragraph">Diseño de interfaz, maquetación CSS y JavaScript dinámico.</p>
