@@ -7,6 +7,13 @@ El código está estructurado de forma modular y limpia, facilitando la escalabi
 ```text
 CE-IPET424/
 ├── .github/                          # Configuraciones y workflows de GitHub
+│   ├── ISSUE_TEMPLATE/               # Plantillas para issues
+│   │   ├── bug_report.yml            # Plantilla para reporte de bugs
+│   │   └── feature_request.yml       # Plantilla para solicitud de funciones
+│   ├── workflows/                    # Flujos de trabajo de GitHub Actions
+│   │   └── static.yml                # Configuración de despliegue estático
+│   ├── CODE_OF_CONDUCT.md            # Código de conducta del proyecto
+│   └── PULL_REQUEST_TEMPLATE.md      # Plantilla para pull requests
 ├── .well-known/                      # Archivos de seguridad e infraestructura
 │   └── security.txt                  # Contacto oficial para reportes de seguridad
 ├── assets/                           # Recursos estáticos del sitio
@@ -47,8 +54,8 @@ CE-IPET424/
 │   ├── models/                       # Modelos 3D
 │   └── videos/                       # Clips y videos institucionales
 ├── components/                       # Componentes HTML reutilizables
-│   ├── _aside-config.html            # Aside desplegable modular de configuración
-│   ├── _aside-news.html              # Aside desplegable modular de novedades
+│   ├── _aside-news.html              # Aside desplegable modular de configuración (novedades en un futuro)
+│   ├── _aside-widgets.html           # Aside desplegable modular de widgets
 │   ├── _footer.html                  # Pie de página modular
 │   ├── _header.html                  # Encabezado y navegación modular
 │   ├── _modal-in-dev.html            # Modal de advertencia de desarrollo
@@ -96,6 +103,7 @@ CE-IPET424/
 │   │   ├── buttons.js                # Comportamiento e interacción de botones
 │   │   ├── calendar.js               # Control y renderizado del calendario
 │   │   ├── components.js             # Control de componentes varios
+│   │   ├── header.js                 # Control de los widget de opciones
 │   │   ├── modals.js                 # Apertura y cierre de ventanas modales
 │   │   ├── schedules.js              # Control y renderizado de horarios
 │   │   ├── theme.js                  # Lógica de conmutación de temas (oscuro/claro)

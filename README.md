@@ -144,7 +144,12 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
     - Se eliminaron los cursores svg antiguos y se actualizaron las rutas y variables de cursores
 
     CAMBIOS VARIADOS
+    - El título de pestaña del index ya no incluye "Inicio"
     - Las tarjetas de descarga de la primer sección del Inicio ahora están organizadas en un grid de 2 columnas
+    - La clase `grid-tarjetas` se renombró a `grid-cards` y está mejor trabajda desde css
+    - Se agregó este estilo de tarjetas cuadradas a varias secciones en subpáginas
+    - Se cambió el gradiente de fondo del footer, haciéndolo más oscuro
+    - El spinner de carga es más grande y ancho
     - Los párrafos ahora tienen `text-wrap: pretty` y los encabezados `text-wrap: balance`
     - Las tarjetas y los widgets tienen más `border-radius`
     - Se actualizó la función de `sounds.js` para incluir nuevos elementos y botones.
@@ -158,6 +163,7 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
     - Se cambió el nombre de una función.
     - Se eliminó la función de `initPageTitle` ya que daba muchos problemas.
     - Se corrigió una badge del README.
+    - Se actualizó el árbol de carpetas y archivos.
 
 - **`v0.39-alpha` (Anterior)**
     - Nuevos widgets:

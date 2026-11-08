@@ -67,6 +67,15 @@ CAMBIOS VARIADOS
 - Se eliminó la función de `initPageTitle` ya que daba muchos problemas.
 - Se corrigió una badge del README.
 
+### [v0.40.1-alpha]
+
+- El título de pestaña del index ya no incluye "Inicio"
+- La clase `grid-tarjetas` se renombró a `grid-cards` y está mejor trabajda desde css
+- Se agregó este estilo de tarjetas cuadradas a varias secciones en subpáginas
+- Se cambió el gradiente de fondo del footer, haciéndolo más oscuro
+- El spinner de carga es más grande y ancho
+- Se actualizó el árbol de carpetas y archivos
+
 ---
 
 ## [v0.39.0-alpha] - Versión Principal

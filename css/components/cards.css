@@ -36,3 +36,9 @@ h5,
 h6 {
     overflow-wrap: break-word;
 }
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-base);
+}
