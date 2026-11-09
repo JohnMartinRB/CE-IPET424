@@ -24,6 +24,11 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se cambió el color y la altura de línea de algunos elementos del modal de novedades
 - Se corrigió el término Beta por Alpha en este modal
 
+### v0.42.2-alpha
+
+- Se renombraron la mayoría de svg de la mascota
+- Se agregaron app icons temáticos
+
 ---
 
 ## v0.41.0-alpha - Versión Principal
