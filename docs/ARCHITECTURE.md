@@ -37,6 +37,7 @@ CE-IPET424/
 │   │   ├── logos/                    # Logos e insignias del CE e IPET
 │   │   │   ├── app/                  # Logos adaptados para aplicaciones / PWA
 │   │   │   ├── ce/                   # Insignias del Centro de Estudiantes
+│   │   │   └── channel/              # Logos del canal de WhatsApp
 │   │   │   └── ig/                   # Recursos gráficos para Instagram/redes
 │   │   ├── mascot/                   # Ilustraciones de la mascota
 │   │   ├── resources/                # Recursos gráficos adicionales
@@ -99,6 +100,10 @@ CE-IPET424/
 │   ├── schedules.json                # Horarios de cada curso
 │   ├── team.json                     # Integrantes del Centro de Estudiantes
 │   └── version.json                  # Versión de desarrollo
+├── docs/                             # Archivos de datos estructurados
+│   ├── ARCHITECTURE.md               # Árbol de carpetas y archivos del proyecto
+│   ├── CONTRIBUTING.md               # Guía de estándares y convenciones de desarrollo
+│   └── ROADMAP.md                    # Hoja de ruta de próximas versiones
 ├── js/                               # Funciones Javascript
 │   ├── extras/                       # Funciones random
 │   ├── ui/                           # Funciones de la interfaz
@@ -110,10 +115,12 @@ CE-IPET424/
 │   │   ├── modals.js                 # Apertura y cierre de ventanas modales
 │   │   ├── schedules.js              # Control y renderizado de horarios
 │   │   ├── theme.js                  # Lógica de conmutación de temas (oscuro/claro)
+│   │   ├── toasts.js                 # Manejo de los toasts flotantes
 │   │   ├── version.js                # Extrar la versión desde el json
 │   │   └── widgets.js                # Widgets interactivos
 │   ├── utils/                        # Funciones utilitarias del sistema
 │   │   ├── accessibility.js          # Controles de accesibilidad (fuente, animaciones)
+│   │   ├── animaciones.js            # Aplicación de animaciones personalizadas
 │   │   ├── changelog.js              # Estilizador del changelog para los modales
 │   │   ├── font-size.js              # Ajuste dinámico de tamaño de fuente
 │   │   ├── shortcuts.js              # Atajos de teclado
@@ -122,11 +129,9 @@ CE-IPET424/
 ├── .gitignore                        # Ignora ciertos archivos al hacer commit
 ├── .nojekyll                         # Evita que GitHub Pages omita carpetas con guion bajo
 ├── 404.html                          # Página personalizada de error 404
-├── ARCHITECTURE.md                   # Árbol de carpetas y archivos del proyecto
 ├── calendario.html                   # Sub-página de calendario personalizable
 ├── CHANGELOG.md                      # Registro de cambios y actualizaciones
 ├── contacto.html                     # Sub-página con formulario y datos de contacto
-├── CONTRIBUTING.md                   # Guía de estándares y convenciones de desarrollo
 ├── creditos.html                     # Sub-página de créditos del equipo de desarrollo
 ├── escuela.html                      # Sub-página institucional de la escuela
 ├── herramientas.html                 # Sub-página de herramientas y utilidades estudiantiles
@@ -139,7 +144,6 @@ CE-IPET424/
 ├── proyectos.html                    # Sub-página de proyectos y propuestas
 ├── recursos.html                     # Sub-página de recursos y enlaces de utilidad
 ├── README.md                         # Documentación principal del repositorio
-├── ROADMAP.md                        # Hoja de ruta de próximas versiones
 ├── robots.txt                        # Instrucciones para motores de búsqueda
 ├── terminos.html                     # Sub-página de términos y condiciones de uso
 └── tramites.html                     # Sub-página sobre trámites y gestiones escolares

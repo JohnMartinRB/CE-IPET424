@@ -38,7 +38,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.42` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.43` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
 | **Lanzamiento Estable (v1.0)** | Martes 9 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
@@ -96,13 +96,22 @@ Cada commit o pull request realizado sobre la rama principal (`main`) ejecuta un
 
 ## 📂 Arquitectura y Estructura del Proyecto
 
-El código está estructurado de forma modular y limpia. Para consultar el árbol completo de archivos y módulos, revisá la [Guía de Arquitectura del Proyecto](./ARCHITECTURE.md).
+El código está estructurado de forma modular y limpia. Para consultar el árbol completo de archivos y módulos, revisá la [Guía de Arquitectura del Proyecto](./docs/ARCHITECTURE.md).
 
 ---
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.42-alpha` (Actual)**
+- **`v0.43-alpha` (Actual)**
+    - Nueva animación de "Scroll Reveal" para las tarjetas del sitio
+    - Nuevos efectos para el botón de cerrar modal (header)
+    - Se agregaron las efemérides más importantes nacionales / mundiales a `days.json`, visibles desde el widget de efemérides
+    - Nuevo campo en `days.json`: TIPO, para separar entre Nacionales y Mundiales
+    - Nueva carpeta `docs/` en la raíz, la cual contiene los archivos ARCHITECTURE, CONTRIBUTING y ROADMAP
+    - Archivo `js/utils/animations.js` para manejar las animaciones de Scroll Reveal
+    - Árbol de carpetas actualizado
+
+- **`v0.42-alpha` (Anterior)**
     - El número de versión ahora se maneja desde `version.json`
         - Los archivos de README, footer y modals ahora tienen automatizado el numerado de versión
     - La función para extrar los cambios del changelog fue movida a `js/utils/changelog.js` y se rescribió gran parte de la función
@@ -125,14 +134,7 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
     - Se renombraron algunos archivos de logos
     - Nueva carpeta `assets/img/logos/channel` con los logos del canal de WhatsApp
 
-- **`v0.41-alpha` (Anterior)**
-    - Se actualizaron completamente los Términos y Condiciones
-    - Se agregó la subpágina `noticias.html` (vacía de momento) para evitar los enlaces rotos
-    - En el changelog, los números de versiones ya no incluyen corchetes
-    - Corregidos muchos errores de ortografía en varios archivos
-    - Se actulizó el árbol de carpetas
-
-Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
+Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./docs/CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 
 ---
 
@@ -146,7 +148,7 @@ Para conocer las funcionalidades en las que está trabajando el equipo, te invit
 
 ## 🤝 ¿Querés colaborar?
 
-Si sos parte del equipo o querés aportar al proyecto, leé nuestra [Guía de Contribución y Convenciones](./CONTRIBUTING.md) antes de enviar tus commits.
+Si sos parte del equipo o querés aportar al proyecto, leé nuestra [Guía de Contribución y Convenciones](./docs/CONTRIBUTING.md) antes de enviar tus commits.
 
 ---
 

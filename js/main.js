@@ -20,6 +20,7 @@ import { initHeader } from "./ui/header.js";
 import { initSchedules } from "./ui/schedules.js";
 import { initCalendar } from "./ui/calendar.js";
 import { initFontSize } from "./utils/font-size.js";
+import { initScrollAnimations } from "./utils/animations.js";
 import { initDyslexia, initAnimations } from "./utils/accessibility.js";
 import { initSound, playSound } from "./utils/sound.js";
 import { initShortcuts } from "./utils/shortcuts.js";
@@ -41,6 +42,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initModals();
     initHeader();
     initFontSize();
+    initScrollAnimations();
     initDyslexia();
     initAnimations();
     initSound();

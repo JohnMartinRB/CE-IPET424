@@ -4,6 +4,18 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## v0.43.0-alpha - Versión Principal
+
+- Nueva animación de "Scroll Reveal" para las tarjetas del sitio
+- Nuevos efectos para el botón de cerrar modal (header)
+- Se agregaron las efemérides más importantes nacionales / mundiales a `days.json`, visibles desde el widget de efemérides
+- Nuevo campo en `days.json`: TIPO, para separar entre Nacionales y Mundiales
+- Nueva carpeta `docs/` en la raíz, la cual contiene los archivos ARCHITECTURE, CONTRIBUTING y ROADMAP
+- Archivo `js/utils/animations.js` para manejar las animaciones de Scroll Reveal
+- Árbol de carpetas actualizado
+
+---
+
 ## v0.42.0-alpha - Versión Principal
 
 - El número de versión ahora se maneja desde `version.json`
