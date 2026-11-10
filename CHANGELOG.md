@@ -44,6 +44,15 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 - Se arregló el color de fondo del toast
 
+### v0.42.6-alpha
+
+- Nuevo link al Código de Conducta del sitio en la columna LEGAL del footer
+- El footer es un 2% más ancho
+- Se cambió de nuevo el color de los botones y el borde del input
+- Se actualizaron todos los archivos de logos e iconos (sin casi cambios visuales)
+- Se renombraron algunos archivos de logos
+- Nueva carpeta `assets/img/logos/channel` con los logos del canal de WhatsApp
+
 ---
 
 ## v0.41.0-alpha - Versión Principal

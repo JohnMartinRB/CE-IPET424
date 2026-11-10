@@ -60,10 +60,10 @@
     --text-titles: var(--azul1);
     /* BOTONES / ENLACES */
     --bg-button: var(--blanco);
-    --bg-button-hover: var(--lila3);
+    --bg-button-hover: var(--lila2);
     --text-button: var(--azul1);
     --text-button-hover: var(--azul1);
-    --border-button: var(--lila3);
+    --border-button: var(--lila2);
     --bg-header-icon-hover: var(--celeste5);
     --bg-aside-button-hover: var(--celeste6);
     --aside-button-icon: var(--celeste5);
@@ -72,7 +72,7 @@
     /* INPUTS */
     --bg-input: var(--blanco);
     --text-input: var(--azul1);
-    --border-input: var(--lila1);
+    --border-input: var(--lila2);
     --border-input-focus: var(--celeste2);
     /* FOOOTER */
     --bg-footer: linear-gradient(90deg, var(--celeste4) 0%, var(--celeste1) 100%);
