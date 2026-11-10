@@ -79,7 +79,7 @@ export function initTheme() {
             } else if (themeKey === "pink") {
                 logoHeader.src = "assets/img/logos/ce/pink.png";
             } else {
-                logoHeader.src = "assets/img/logos/ce/centro.png";
+                logoHeader.src = "assets/img/logos/ce/light.png";
             }
         }
     }

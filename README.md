@@ -118,6 +118,12 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
     - Se agregaron app icons temáticos
     - Nuevo toast para reiniciar la página si hay una nueva versión disponible
     - Archivo `toasts.js` para controlar su funcionamiento
+    - Nuevo link al Código de Conducta del sitio en la columna LEGAL del footer
+    - El footer es un 2% más ancho
+    - Se cambió el color de los botones y el borde del input
+    - Se actualizaron todos los archivos de logos e iconos (sin casi cambios visuales)
+    - Se renombraron algunos archivos de logos
+    - Nueva carpeta `assets/img/logos/channel` con los logos del canal de WhatsApp
 
 - **`v0.41-alpha` (Anterior)**
     - Se actualizaron completamente los Términos y Condiciones
