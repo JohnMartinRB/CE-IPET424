@@ -29,9 +29,9 @@
     --celeste6: #a8e4fa;
     --celeste7: #d4f2fd;
     /* otros */
-    --lila1: #b078f0;
-    --lila2: #cb93eb;
-    --lila3: #c5a1ff;
+    --lila1: #ab89fc;
+    --lila2: #ba9dff;
+    --lila3: #cab4fd;
     --naranja: #912c28;
 
     /* BODY */
@@ -60,10 +60,10 @@
     --text-titles: var(--azul1);
     /* BOTONES / ENLACES */
     --bg-button: var(--blanco);
-    --bg-button-hover: var(--lila1);
+    --bg-button-hover: var(--lila3);
     --text-button: var(--azul1);
     --text-button-hover: var(--azul1);
-    --border-button: var(--lila1);
+    --border-button: var(--lila3);
     --bg-header-icon-hover: var(--celeste5);
     --bg-aside-button-hover: var(--celeste6);
     --aside-button-icon: var(--celeste5);
@@ -171,7 +171,7 @@
     --transition-button: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, translate 0.4s ease;
     --transition-fade:
         opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, height 0.3s ease, background-color 0.3s ease,
-        box-shadow 0.3s ease, backdrop-filder 0.3s ease;
+        box-shadow 0.3s ease, backdrop-filter 0.3s ease;
     --transition-drawer-content: opacity 2s ease, visibility 2s ease, transform 2s ease;
     --transition-drawer: width 1.5s cubic-bezier(0.25, 1, 0.5, 1);
     --transition-loader: opacity 1s ease, visibility 1s ease;

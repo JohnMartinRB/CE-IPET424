@@ -35,6 +35,11 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Archivo `toasts.js` para controlar su funcionamiento
 - Se actualizó el README
 
+### v0.42.4-alpha
+
+- Se cambiaron algunos estilos del nuevo toast
+- Se cambiaron los colores de los botones
+
 ---
 
 ## v0.41.0-alpha - Versión Principal

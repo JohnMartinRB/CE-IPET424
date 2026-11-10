@@ -27,7 +27,7 @@ a:hover {
 }
 .button:active,
 a.button:active {
-    transform: scale(0.95) translateY(3px);
+    transform: scale(0.96) translateY(3px);
     background-color: var(--bg-button-hover);
     transition: var(--transition-active);
 }
