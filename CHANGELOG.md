@@ -40,6 +40,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se cambiaron algunos estilos del nuevo toast
 - Se cambiaron los colores de los botones
 
+### v0.42.5-alpha
+
+- Se arregló el color de fondo del toast
+
 ---
 
 ## v0.41.0-alpha - Versión Principal

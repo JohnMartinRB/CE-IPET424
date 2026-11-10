@@ -9,7 +9,9 @@
     padding: var(--space-base) var(--space-md);
     transform: translateY(0.8rem);
     border-radius: var(--radius-md);
+    background-color: var(--bg-toast);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    color: var(--text-toast);
     opacity: 0;
     pointer-events: none;
     transition: var(--transition-fade);
@@ -17,10 +19,6 @@
 .toast.visible {
     transform: translateY(0);
     opacity: 1;
-}
-.toast-copied-link {
-    background-color: var(--bg-toast);
-    color: var(--text-toast);
 }
 
 /* ==========================================
@@ -37,9 +35,8 @@
         transform 0.3s ease,
         opacity 0.3s ease;
 }
-
 .toast-update.visible {
     transform: translateY(0);
     opacity: 1;
-    pointer-events: auto; /* Permite hacer clic en los botones y la cruz */
+    pointer-events: auto;
 }
