@@ -21,3 +21,30 @@
     background-color: var(--bg-toast);
     color: var(--text-toast);
 }
+
+/* ==========================================
+    TOAST DE ACTUALIZACIÓN DE VERSIÓN
+========================================== */
+.toast-update {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--primary-color, #0088ff);
+    background-color: var(--bg-card, #ffffff);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    color: var(--text-main, #333333);
+    font-weight: 600;
+    font-size: 0.9rem;
+    /* Sobrescribimos propiedades del .toast genérico para que no se oculte solo */
+    opacity: 0;
+    pointer-events: none;
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.toast-update.visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto; /* Permite hacer clic en los botones y la cruz */
+}
