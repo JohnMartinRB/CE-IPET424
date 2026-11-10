@@ -53,6 +53,10 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se renombraron algunos archivos de logos
 - Nueva carpeta `assets/img/logos/channel` con los logos del canal de WhatsApp
 
+### v0.42.7-alpha
+
+- Se cambiaron unos estilos del toast
+
 ---
 
 ## v0.41.0-alpha - Versión Principal
