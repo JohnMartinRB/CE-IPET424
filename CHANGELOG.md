@@ -29,6 +29,12 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se renombraron la mayoría de svg de la mascota
 - Se agregaron app icons temáticos
 
+### v0.42.3-alpha
+
+- Nuevo toast para reiniciar la página si hay una nueva versión disponible
+- Archivo `toasts.js` para controlar su funcionamiento
+- Se actualizó el README
+
 ---
 
 ## v0.41.0-alpha - Versión Principal

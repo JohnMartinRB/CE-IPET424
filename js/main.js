@@ -12,6 +12,7 @@ import {
     initViewsWidget,
 } from "./ui/widgets.js";
 import { initVersion } from "./ui/version.js";
+import { initUpdateToast } from "./ui/toasts.js";
 import { initBanners } from "./ui/banners.js";
 import { initTheme } from "./ui/theme.js";
 import { initModals } from "./ui/modals.js";
@@ -34,6 +35,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initWeatherDateTimeWidget();
     initViewsWidget();
     initVersion();
+    initUpdateToast();
     initBanners();
     initTheme();
     initModals();

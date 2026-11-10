@@ -38,7 +38,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.40` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.42` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
 | **Lanzamiento Estable (v1.0)** | Martes 9 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
@@ -114,6 +114,10 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
     - Se actualizaron las rutas
     - La clase `content-card` se renombró a `main-content`
     - Se actualizó el árbol de carpetas
+    - Se renombraron la mayoría de svg de la mascota
+    - Se agregaron app icons temáticos
+    - Nuevo toast para reiniciar la página si hay una nueva versión disponible
+    - Archivo `toasts.js` para controlar su funcionamiento
 
 - **`v0.41-alpha` (Anterior)**
     - Se actualizaron completamente los Términos y Condiciones
