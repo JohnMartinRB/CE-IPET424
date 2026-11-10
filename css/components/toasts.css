@@ -8,7 +8,7 @@
     bottom: var(--space-md);
     padding: var(--space-base) var(--space-md);
     transform: translateY(0.8rem);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
     background-color: var(--bg-toast);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     color: var(--text-toast);
