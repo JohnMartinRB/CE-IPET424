@@ -4,17 +4,14 @@
 import { playSound } from "../utils/sound.js";
 
 const LEVELS = [85, 90, 95, 100, 105, 110, 115, 120, 125, 130];
-
 let currentLevelIndex =
     localStorage.getItem("fontSizeIndex") !== null ? parseInt(localStorage.getItem("fontSizeIndex"), 10) : 3;
-
 function applyFontSize() {
     const level = LEVELS[currentLevelIndex];
     document.documentElement.style.fontSize = `${level}%`;
     localStorage.setItem("fontSizeIndex", currentLevelIndex);
     updateUI();
 }
-
 export function decreaseFontSize() {
     if (currentLevelIndex > 0) {
         currentLevelIndex--;
@@ -22,7 +19,6 @@ export function decreaseFontSize() {
         playSound("pop-medium.mp3", 0.2);
     }
 }
-
 export function increaseFontSize() {
     if (currentLevelIndex < LEVELS.length - 1) {
         currentLevelIndex++;
@@ -30,7 +26,6 @@ export function increaseFontSize() {
         playSound("pop-high.mp3", 0.2);
     }
 }
-
 export function resetFontSize() {
     if (currentLevelIndex !== 3) {
         currentLevelIndex = 3;
@@ -38,11 +33,9 @@ export function resetFontSize() {
         playSound("pop-medium.mp3", 0.2);
     }
 }
-
 export function initFontSize() {
     applyFontSize();
 }
-
 function updateUI() {
     const buttonDecrease = document.getElementById("button-font-decrease");
     const buttonIncrease = document.getElementById("button-font-increase");
@@ -57,7 +50,6 @@ function updateUI() {
         buttonIncrease.disabled = currentLevelIndex === LEVELS.length - 1;
     }
 }
-
 document.addEventListener("click", (e) => {
     if (e.target.closest("#button-font-decrease")) decreaseFontSize();
     if (e.target.closest("#button-font-increase")) increaseFontSize();

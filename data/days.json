@@ -1,22 +1,152 @@
 [
     {
-        "fecha": "04-01",
+        "fecha": "01-04",
         "titulo": "Día Mundial del Braille",
-        "descripcion": "Se conmemora el nacimiento de Louis Braille, creador del sistema de lectura y escritura táctil para personas ciegas."
+        "descripcion": "Se conmemora el nacimiento de Louis Braille, creador del sistema de lectura y escritura táctil para personas ciegas.",
+        "tipo": "mundial"
+    },
+    {
+        "fecha": "03-08",
+        "titulo": "Día Internacional de la Mujer",
+        "descripcion": "Conmemoración de la lucha histórica de las mujeres por la igualdad de derechos, la participación en la sociedad y el desarrollo íntegro.",
+        "tipo": "mundial"
+    },
+    {
+        "fecha": "03-12",
+        "titulo": "Día del Escudo Nacional",
+        "descripcion": "Se recuerda la jornada de 1813 en la que la Asamblea General Constituyente aprobó el uso del Escudo Nacional como símbolo patrio.",
+        "tipo": "nacional"
+    },
+    {
+        "fecha": "03-22",
+        "titulo": "Día Mundial del Agua",
+        "descripcion": "Jornada de concientización sobre la importancia crucial de los recursos hídricos dulces y la gestión sostenible del agua.",
+        "tipo": "mundial"
+    },
+    {
+        "fecha": "03-24",
+        "titulo": "Día de la Memoria por la Verdad y la Justicia",
+        "descripcion": "Se rinde homenaje a las víctimas de la última dictadura cívico-militar iniciada en 1976, promoviendo la memoria colectiva, la búsqueda de la verdad y los derechos humanos.",
+        "tipo": "nacional"
+    },
+    {
+        "fecha": "04-02",
+        "titulo": "Día del Veterano y de los Caídos en la Guerra de Malvinas",
+        "descripcion": "Homenaje a los combatientes y fallecidos en el conflicto bélico de 1982, reafirmando los derechos de soberanía sobre las Islas Malvinas y del Atlántico Sur.",
+        "tipo": "nacional"
+    },
+    {
+        "fecha": "04-21",
+        "titulo": "Día Mundial del Libro",
+        "descripcion": "Celebración internacional impulsada para fomentar la lectura, la industria editorial y la protección de la propiedad intelectual a través de los derechos de autor.",
+        "tipo": "mundial"
+    },
+    {
+        "fecha": "04-22",
+        "titulo": "Día de la Tierra",
+        "descripcion": "Conmemoración global para concientizar sobre los desafíos ambientales del planeta, la superpoblación, la contaminación y la conservación de la biodiversidad.",
+        "tipo": "mundial"
+    },
+    {
+        "fecha": "05-01",
+        "titulo": "Día de la Constitución Nacional / Día del Trabajador",
+        "descripcion": "Doble conmemoración: el Día Internacional del Trabajador en homenaje al movimiento obrero y, en el contexto argentino, el aniversario de la sanción de la Constitución Nacional de 1853.",
+        "tipo": "nacional"
+    },
+    {
+        "fecha": "05-11",
+        "titulo": "Día del Himno Nacional Argentino",
+        "descripcion": "Se recuerda el día de 1813 en que la Asamblea del Año XIII sancionó como Himno Nacional la canción patriótica compuesta por Vicente López y Planes y Blas Parera.",
+        "tipo": "nacional"
+    },
+    {
+        "fecha": "05-18",
+        "titulo": "Día de la Escarapela Nacional",
+        "descripcion": "Homenaje al primer símbolo patrio de distinción instituido en 1812 por solicitud de Manuel Belgrano para unificar los colores del ejército criollo.",
+        "tipo": "nacional"
     },
     {
         "fecha": "05-25",
         "titulo": "Revolución de Mayo",
-        "descripcion": "Se recuerda el primer gobierno patrio argentino constituido en el Cabildo de Buenos Aires en 1810."
+        "descripcion": "Se celebra la conformación del primer gobierno patrio argentino en el Cabildo de Buenos Aires en 1810, inicio del proceso hacia la independencia.",
+        "tipo": "nacional"
+    },
+    {
+        "fecha": "06-05",
+        "titulo": "Día Mundial del Medio Ambiente",
+        "descripcion": "Principal fecha de la ONU para fomentar la sensibilización y la acción global en favor de la protección de nuestro entorno natural.",
+        "tipo": "mundial"
+    },
+    {
+        "fecha": "06-17",
+        "titulo": "Paso a la Inmortalidad del General Martín Miguel de Güemes",
+        "descripcion": "Homenaje al prócer gaucho que defendió la frontera norte argentina en la Guerra Gaucha contra las invasiones realistas.",
+        "tipo": "nacional"
+    },
+    {
+        "fecha": "06-20",
+        "titulo": "Día de la Bandera",
+        "descripcion": "Conmemoración del fallecimiento del General Manuel Belgrano, creador del símbolo patrio nacional.",
+        "tipo": "nacional"
+    },
+    {
+        "fecha": "07-09",
+        "titulo": "Día de la Declaración de la Independencia",
+        "descripcion": "Se conmemora la firma del Acta de la Independencia en la histórica casa de Tucumán en 1816, rompiendo los lazos de dominación española.",
+        "tipo": "nacional"
+    },
+    {
+        "fecha": "08-17",
+        "titulo": "Aniversario de la Muerte del General José de San Martín",
+        "descripcion": "Homenaje al Padre de la Patria y libertador de América en el aniversario de su paso a la inmortalidad.",
+        "tipo": "nacional"
+    },
+    {
+        "fecha": "08-29",
+        "titulo": "Día del Árbol",
+        "descripcion": "Jornada de concientización y defensa de los espacios verdes, la plantación y el cuidado fundamental de las masas forestales.",
+        "tipo": "nacional"
     },
     {
         "fecha": "09-11",
-        "titulo": "Día del Maestro",
-        "descripcion": "En homenaje a Domingo Faustino Sarmiento en el aniversario de su fallecimiento."
+        "titulo": "Día de las Maestras y los Maestros",
+        "descripcion": "Conmemoración en homenaje a Domingo Faustino Sarmiento en el aniversario de su fallecimiento y reconocimiento al rol docente en la sociedad.",
+        "tipo": "nacional"
     },
     {
-        "fecha": "11-17",
-        "titulo": "Día de la Militancia",
-        "descripcion": "Conmemoración del regreso de Juan Domingo Perón a la Argentina en 1972 tras 18 años de exilio."
+        "fecha": "09-16",
+        "titulo": "Día de los Derechos de los Estudiantes Secundarios",
+        "descripcion": "Conmemoración en memoria de la 'Noche de los Lápices' (1976), recordando la lucha y vigencia de los derechos estudiantiles secundarios.",
+        "tipo": "nacional"
+    },
+    {
+        "fecha": "09-21",
+        "titulo": "Día del Estudiante / Día de la Primavera",
+        "descripcion": "Celebración de la juventud, el compañerismo estudiantil y la bienvenida a la estación primaveral en todo el país.",
+        "tipo": "nacional"
+    },
+    {
+        "fecha": "10-12",
+        "titulo": "Día del Respeto a la Diversidad Cultural",
+        "descripcion": "Jornada de reflexión histórica, visibilización e intercambio para promover los derechos de los pueblos originarios y la diversidad.",
+        "tipo": "nacional"
+    },
+    {
+        "fecha": "11-10",
+        "titulo": "Día de la Tradición",
+        "descripcion": "Celebración de la identidad folclórica y las costumbres criollas en homenaje al nacimiento del poeta José Hernández, autor del 'Martín Fierro'.",
+        "tipo": "nacional"
+    },
+    {
+        "fecha": "11-20",
+        "titulo": "Día de la Soberanía Nacional",
+        "descripcion": "Conmemoración de la Batalla de la Vuelta de Obligado de 1845, hito histórico en defensa del territorio nacional y las vías navegables.",
+        "tipo": "nacional"
+    },
+    {
+        "fecha": "11-22",
+        "titulo": "Día de la Música",
+        "descripcion": "Homenaje internacional en honor a Santa Cecilia, patrona de los músicos, celebrando la expresión artística y cultural musical.",
+        "tipo": "mundial"
     }
 ]
