@@ -111,6 +111,7 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
     - Se agregó la clase de `section-card` a la tarjeta de 404.html
     - Se quitó la animación de Scroll Reveal de los botones
     - Se agrandó el tamaño de fuente de la hora de los horarios
+    - Se eliminó la tarjeta de navegación de todos los html (la última)
 
 - **`v0.44-alpha` (Anterior)**
     - Nueva función de lectura nativa de pdfs dentro del sitio

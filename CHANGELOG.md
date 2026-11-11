@@ -15,6 +15,11 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se quitó la animación de Scroll Reveal de los botones
 - Se agrandó el tamaño de fuente de la hora de los horarios
 
+### v0.45.1-alpha
+
+- Se eliminó la tarjeta de navegación de todos los html (la última)
+- Se actualizó el árbol de carpetas
+
 ---
 
 ## v0.44.0-alpha - Versión Principal

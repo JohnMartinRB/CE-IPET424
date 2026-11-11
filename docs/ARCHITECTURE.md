@@ -98,6 +98,7 @@ CE-IPET424/
 │   ├── news.json                     # Noticias y comunicados
 │   ├── quotes.json                   # Frases o citas célebres
 │   ├── schedules.json                # Horarios de cada curso
+│   ├── search-index.json             # Índice de palabras clave de búsqueda
 │   ├── team.json                     # Integrantes del Centro de Estudiantes
 │   └── version.json                  # Versión de desarrollo
 ├── docs/                             # Archivos de datos estructurados
@@ -113,6 +114,7 @@ CE-IPET424/
 │   │   ├── components.js             # Control de componentes varios
 │   │   ├── header.js                 # Control de los widget de opciones
 │   │   ├── modals.js                 # Apertura y cierre de ventanas modales
+│   │   ├── pdf-reader.js             # Contorl de modal de visor/lector de pdfs
 │   │   ├── schedules.js              # Control y renderizado de horarios
 │   │   ├── theme.js                  # Lógica de conmutación de temas (oscuro/claro)
 │   │   ├── toasts.js                 # Manejo de los toasts flotantes
@@ -120,7 +122,7 @@ CE-IPET424/
 │   │   └── widgets.js                # Widgets interactivos
 │   ├── utils/                        # Funciones utilitarias del sistema
 │   │   ├── accessibility.js          # Controles de accesibilidad (fuente, animaciones)
-│   │   ├── animaciones.js            # Aplicación de animaciones personalizadas
+│   │   ├── animations.js             # Aplicación de animaciones personalizadas
 │   │   ├── changelog.js              # Estilizador del changelog para los modales
 │   │   ├── font-size.js              # Ajuste dinámico de tamaño de fuente
 │   │   ├── shortcuts.js              # Atajos de teclado
