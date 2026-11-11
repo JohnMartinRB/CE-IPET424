@@ -4,6 +4,19 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## v0.44.0-alpha - Versión Principal
+
+- Nueva función de lectura nativa de pdfs dentro del sitio
+    - Las tarjetas de pdf ahora tienen un botón de LEER PDF junto al de DESCARGAR
+    - Abre un modal con el nombre del pdf, botón de cerrar, expandir y modo descanso y opciones nativas del lector de pdf
+- Ahora más secciones de pdfs se muestran como ``grid-cards`
+- Los botones ahora tienen también la animación de Scroll Reveal
+- El formulario de Google ahora tiene un botón para abrir en una pestaña nueva
+- Se modificó el autor y título de todos los pdf (en los metadatos)
+- Archivo `js/ui/pdf-reader.js` para controlar la lectura de pdf
+
+---
+
 ## v0.43.0-alpha - Versión Principal
 
 - Nueva animación de "Scroll Reveal" para las tarjetas del sitio

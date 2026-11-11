@@ -3,7 +3,7 @@
 ========================================== */
 export function initScrollAnimations() {
     // Seleccionamos todas las tarjetas o elementos que quieras animar
-    const animatedElements = document.querySelectorAll(".section-card, .subsection-card, .card");
+    const animatedElements = document.querySelectorAll(".section-card, .subsection-card, .button");
     if (animatedElements.length === 0) return;
     const observerOptions = {
         root: null, // Usa el viewport del navegador

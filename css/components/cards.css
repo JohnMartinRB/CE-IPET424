@@ -38,11 +38,12 @@ h6 {
 }
 
 /* ========================================
-   ANIMACIONES DE APARICIÓN AL HACER SCROLL
-   ======================================== */
+    ANIMACIONES DE APARICIÓN AL HACER SCROLL
+======================================== */
 
 .section-card,
-.subsection-card {
+.subsection-card,
+.button {
     transform: translateY(30px);
     opacity: 0;
     transition:
@@ -54,7 +55,7 @@ h6 {
 /* Estado final cuando entra en pantalla */
 .section-card.animated,
 .subsection-card.animated,
-.card.animated {
+.button.animated {
     transform: translateY(0);
     opacity: 1;
 }

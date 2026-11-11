@@ -97,6 +97,20 @@ a.button:focus {
     margin-top: var(--space-base);
 }
 
+.pdf-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xs);
+}
+
+.button-pdf {
+    border: none;
+    background-color: var(--lila1);
+}
+.button-pdf:hover {
+    background-color: var(--celeste2);
+}
+
 /* ==========================================
     COLORES INTENSOS PARA BOTONES DE TEMA
 ========================================== 

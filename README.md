@@ -38,7 +38,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.43` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.44` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
 | **Lanzamiento Estable (v1.0)** | Martes 9 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
@@ -102,7 +102,17 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.43-alpha` (Actual)**
+- **`v0.44-alpha` (Actual)**
+    -   - Nueva función de lectura nativa de pdfs dentro del sitio
+        - Las tarjetas de pdf ahora tienen un botón de LEER PDF junto al de DESCARGAR
+        - Abre un modal con el nombre del pdf, botón de cerrar, expandir y modo descanso y opciones nativas del lector de pdf
+    - Ahora más secciones de pdfs se muestran como ``grid-cards`
+    - Los botones ahora tienen también la animación de Scroll Reveal
+    - El formulario de Google ahora tiene un botón para abrir en una pestaña nueva
+    - Se modificó el autor y título de todos los pdf (en los metadatos)
+    - Archivo `js/ui/pdf-reader.js` para controlar la lectura de pdf
+
+- **`v0.43-alpha` (Anterior)**
     - Nueva animación de "Scroll Reveal" para las tarjetas del sitio
     - Nuevos efectos para el botón de cerrar modal (header)
     - Se agregaron las efemérides más importantes nacionales / mundiales a `days.json`, visibles desde el widget de efemérides
@@ -110,29 +120,6 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
     - Nueva carpeta `docs/` en la raíz, la cual contiene los archivos ARCHITECTURE, CONTRIBUTING y ROADMAP
     - Archivo `js/utils/animations.js` para manejar las animaciones de Scroll Reveal
     - Árbol de carpetas actualizado
-
-- **`v0.42-alpha` (Anterior)**
-    - El número de versión ahora se maneja desde `version.json`
-        - Los archivos de README, footer y modals ahora tienen automatizado el numerado de versión
-    - La función para extrar los cambios del changelog fue movida a `js/utils/changelog.js` y se rescribió gran parte de la función
-    - Los estilos del modal de novedades ahora se encuentran en `modals.js`
-    - Se agregó el atributo `defer` a la importación de librerías en calendario y horarios
-    - Se corrigió el contenedor de los aside en calendario y horarios
-    - Los easter eggs ahora se encuentran en archivos individuales dentro de `js/extras/` y se exportan desde `extras.js`
-    - La carpeta `data/` ahora se encuentra en la raíz del proyecto
-    - Se actualizaron las rutas
-    - La clase `content-card` se renombró a `main-content`
-    - Se actualizó el árbol de carpetas
-    - Se renombraron la mayoría de svg de la mascota
-    - Se agregaron app icons temáticos
-    - Nuevo toast para reiniciar la página si hay una nueva versión disponible
-    - Archivo `toasts.js` para controlar su funcionamiento
-    - Nuevo link al Código de Conducta del sitio en la columna LEGAL del footer
-    - El footer es un 2% más ancho
-    - Se cambió el color de los botones y el borde del input
-    - Se actualizaron todos los archivos de logos e iconos (sin casi cambios visuales)
-    - Se renombraron algunos archivos de logos
-    - Nueva carpeta `assets/img/logos/channel` con los logos del canal de WhatsApp
 
 Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./docs/CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 

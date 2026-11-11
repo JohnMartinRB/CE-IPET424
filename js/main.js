@@ -19,6 +19,7 @@ import { initModals } from "./ui/modals.js";
 import { initHeader } from "./ui/header.js";
 import { initSchedules } from "./ui/schedules.js";
 import { initCalendar } from "./ui/calendar.js";
+import { initPdfReader } from "./ui/pdf-reader.js";
 import { initFontSize } from "./utils/font-size.js";
 import { initScrollAnimations } from "./utils/animations.js";
 import { initDyslexia, initAnimations } from "./utils/accessibility.js";
@@ -49,6 +50,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initShortcuts();
     initSchedules();
     initCalendar();
+    initPdfReader();
     initExtras();
 });
 
