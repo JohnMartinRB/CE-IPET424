@@ -1,4 +1,50 @@
 <footer id="footer-card" class="footer-card">
+    <!-- VISOR DE PDF INTEGRADO (MODAL) -->
+    <div id="pdf-modal-overlay" class="pdf-modal-overlay hidden">
+        <div class="pdf-modal-container">
+            <div class="pdf-modal-header">
+                <span id="pdf-modal-title" class="pdf-modal-title">Leyendo documento</span>
+                <div id="pdf-reader-options">
+                    <button
+                        type="button"
+                        id="pdf-button-expand"
+                        class="button button-pdf button-small"
+                        aria-label="Expandir visor"
+                    >
+                        ⤢ Expandir
+                    </button>
+                    <button
+                        type="button"
+                        id="pdf-button-rest"
+                        class="button button-pdf button-small"
+                        data-set-theme="rest"
+                        aria-label="Modo descanso de vista"
+                    >
+                        Modo descanso
+                    </button>
+                    <button
+                        type="button"
+                        id="pdf-button-copy"
+                        class="button button-pdf button-small"
+                        aria-label="Copiar enlace del PDF"
+                    >
+                        Copiar enlace
+                    </button>
+                    <button
+                        type="button"
+                        id="pdf-modal-close"
+                        class="button button-pdf button-small"
+                        aria-label="Cerrar visor"
+                    >
+                        ✕ Cerrar
+                    </button>
+                </div>
+            </div>
+            <div class="pdf-modal-body">
+                <iframe id="pdf-iframe" src="" title="Visor de PDF"></iframe>
+            </div>
+        </div>
+    </div>
     <div id="footer-links" class="footer-links">
         <div id="footer-links-ce" class="footer-links-ce">
             <a href="index.html"
@@ -118,7 +164,6 @@
                     >Repositorio GitHub</a
                 >
             </div>
-
             <div id="footer-links-changelog" class="footer-icon-link footer-links-changelog">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -140,11 +185,11 @@
                     <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
                 </svg>
                 <a
-                    href="https://github.com/JohnMartinRB/CE-IPET424/blob/main/LICENSE"
+                    href="https://github.com/JohnMartinRB/CE-IPET424/blob/main/CHANGELOG.md"
                     target="_blank"
                     rel="noopener"
                     class="footer-link"
-                    >Novedades y cambios</a
+                    >Novedades y Cambios</a
                 >
             </div>
             <div id="footer-links-credits" class="footer-icon-link footer-links-credits">

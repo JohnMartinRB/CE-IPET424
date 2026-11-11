@@ -129,6 +129,10 @@ export function initTheme() {
         if (buttonRestMode) {
             buttonRestMode.textContent = enabled ? "Modo Normal" : "Modo Descanso";
         }
+        const pdfButtonRest = document.getElementById("pdf-button-rest");
+        if (pdfButtonRest) {
+            pdfButtonRest.textContent = enabled ? "Modo Normal" : "Modo Descanso";
+        }
     }
     function setGrayscaleMode(enabled) {
         const html = document.documentElement;
@@ -149,6 +153,11 @@ export function initTheme() {
         if (buttonRest) {
             const isRestActive = document.documentElement.classList.contains("rest-mode");
             buttonRest.textContent = isRestActive ? "Modo Normal" : "Modo Descanso";
+        }
+        const pdfButtonRest = document.getElementById("pdf-button-rest");
+        if (pdfButtonRest) {
+            const isRestActive = document.documentElement.classList.contains("rest-mode");
+            pdfButtonRest.textContent = isRestActive ? "Modo Normal" : "Modo Descanso";
         }
     }
     function getCurrentTheme() {
@@ -211,7 +220,7 @@ export function initTheme() {
             const currentTheme = getActiveThemeFromDOM();
             const nextTheme = currentTheme === "light" ? "dark" : "light";
             applyTheme(nextTheme);
-        } else if (e.target.closest("#button-rest")) {
+        } else if (e.target.closest("#button-rest") || e.target.closest("#pdf-button-rest")) {
             const isRestActive = document.documentElement.classList.contains("rest-mode");
             setRestMode(!isRestActive);
         } else if (e.target.closest("#button-grayscale")) {
