@@ -1,0 +1,214 @@
+[
+    {
+        "title": "Inicio",
+        "type": "Página",
+        "url": "index.html",
+        "description": "Página principal del portal estudiantil.",
+        "keywords": ["inicio", "home", "portada", "bienvenida"]
+    },
+    {
+        "title": "Noticias",
+        "type": "Página",
+        "url": "noticias.html",
+        "description": "Últimas novedades y comunicados del centro.",
+        "keywords": ["noticias", "novedades", "avisos", "comunicados", "eventos"]
+    },
+    {
+        "title": "Sobre Nosotros",
+        "type": "Página",
+        "url": "nosotros.html",
+        "description": "Conoce al equipo del Centro de Estudiantes.",
+        "keywords": ["nosotros", "equipo", "centro", "quienes somos", "integrantes"]
+    },
+    {
+        "title": "Nuestros Proyectos",
+        "type": "Página",
+        "url": "proyectos.html",
+        "description": "Proyectos y propuestas en desarrollo.",
+        "keywords": ["proyectos", "propuestas", "planes", "trabajos"]
+    },
+    {
+        "title": "Contacto",
+        "type": "Página",
+        "url": "contacto.html",
+        "description": "Formulario de contacto y redes sociales.",
+        "keywords": ["contacto", "redes", "instagram", "gmail", "correo", "comunicarse", "telefono", "redes sociales"]
+    },
+    {
+        "title": "Nuestra Escuela",
+        "type": "Página",
+        "url": "escuela.html",
+        "description": "Información institucional del IPET N° 424.",
+        "keywords": ["escuela", "institucion", "ipet", "ipet 424", "colegio", "taller"]
+    },
+    {
+        "title": "Trámites",
+        "type": "Página",
+        "url": "tramites.html",
+        "description": "Guías, planillas y gestiones escolares.",
+        "keywords": ["tramites", "gestiones", "planillas", "fichas", "inscripcion"]
+    },
+    {
+        "title": "Recursos Útiles",
+        "type": "Página",
+        "url": "recursos.html",
+        "description": "Mapas, archivos y documentos descargables.",
+        "keywords": ["recursos", "mapas", "archivos", "descargas", "banderas"]
+    },
+    {
+        "title": "Herramientas Estudiantiles",
+        "type": "Página",
+        "url": "herramientas.html",
+        "description": "Generador de horarios, calendarios y utilidades.",
+        "keywords": ["herramientas", "horarios", "calendarios", "generador", "utilidades"]
+    },
+    {
+        "title": "Créditos",
+        "type": "Página",
+        "url": "creditos.html",
+        "description": "Créditos y reconocimientos del desarrollo del sitio.",
+        "keywords": ["creditos", "desarrollador", "autor", "version"]
+    },
+    {
+        "title": "Generador de Horarios",
+        "type": "Herramienta",
+        "url": "horarios.html",
+        "description": "Consultá los módulos de clases por curso y descargá tu grilla.",
+        "keywords": ["horarios", "modulos", "clases", "cursos", "grilla", "generador de horarios"]
+    },
+    {
+        "title": "Generador de Calendario Anual",
+        "type": "Herramienta",
+        "url": "calendario.html",
+        "description": "Diseñá y personalizá tu propio calendario anual escolar.",
+        "keywords": ["calendario", "anual", "meses", "fechas", "personalizar", "generador de calendario"]
+    },
+    {
+        "title": "Acuerdos Escolares de Convivencia (AEC)",
+        "type": "PDF / Institucional",
+        "url": "assets/docs/school/aec.pdf",
+        "isPdf": true,
+        "description": "Reglas de convivencia institucional.",
+        "keywords": ["aec", "convivencia", "acuerdos", "reglas", "normas", "pdf"]
+    },
+    {
+        "title": "Anexo AEC",
+        "type": "PDF / Institucional",
+        "url": "assets/docs/school/aec-anexo.pdf",
+        "isPdf": true,
+        "description": "Anexo de los acuerdos escolares de convivencia.",
+        "keywords": ["aec", "anexo", "convivencia", "reglamento", "pdf"]
+    },
+    {
+        "title": "Autorización de Uso de Imagen, Voz y Video",
+        "type": "PDF / Trámite",
+        "url": "assets/docs/school/autorizacion-imagen-voz.pdf",
+        "isPdf": true,
+        "description": "Permiso firmado por tutor/a para salidas y eventos.",
+        "keywords": ["autorizacion", "imagen", "voz", "video", "permiso", "tutor", "pdf"]
+    },
+    {
+        "title": "Ficha Médica (C.U.S.)",
+        "type": "PDF / Trámite",
+        "url": "assets/docs/school/cus.pdf",
+        "isPdf": true,
+        "description": "Certificado Único de Salud obligatorio para educación física.",
+        "keywords": ["cus", "ficha", "medica", "salud", "certificado", "educacion fisica", "pdf"]
+    },
+    {
+        "title": "Estatuto del Centro de Estudiantes",
+        "type": "PDF / Institucional",
+        "url": "assets/docs/school/estatuto.pdf",
+        "isPdf": true,
+        "description": "Normativa oficial y reglamento interno.",
+        "keywords": ["estatuto", "normativa", "reglamento", "leyes", "pdf"]
+    },
+    {
+        "title": "Ficha de Datos Familiares",
+        "type": "PDF / Trámite",
+        "url": "assets/docs/school/ficha-datos-familiares.pdf",
+        "isPdf": true,
+        "description": "Formulario de datos familiares y de contacto del estudiante.",
+        "keywords": ["ficha", "datos", "familiares", "contacto", "formulario", "pdf"]
+    },
+    {
+        "title": "Importancia del Uso del Uniforme Escolar",
+        "type": "PDF / Institucional",
+        "url": "assets/docs/school/IMPORTANCIA DEL USO DEL UNIFORME ESCOLAR Res. Min. N°001121.pdf",
+        "isPdf": true,
+        "description": "Resolución e importancia sobre el uso del uniforme escolar.",
+        "keywords": ["uniforme", "escolar", "ropa", "normativa", "resolucion", "pdf"]
+    },
+    {
+        "title": "ISA",
+        "type": "PDF / Institucional",
+        "url": "assets/docs/school/isa.pdf",
+        "isPdf": true,
+        "description": "Documento institucional ISA.",
+        "keywords": ["isa", "documento", "institucional", "pdf"]
+    },
+    {
+        "title": "Solicitud de Matrícula",
+        "type": "PDF / Trámite",
+        "url": "assets/docs/school/solicitud-matricula.pdf",
+        "isPdf": true,
+        "description": "Formulario de solicitud de matrícula escolar.",
+        "keywords": ["solicitud", "matricula", "inscripcion", "ingreso", "pdf"]
+    },
+    {
+        "title": "Términos y Condiciones",
+        "type": "Legal",
+        "url": "terminos.html",
+        "description": "Términos y condiciones de uso del portal estudiantil.",
+        "keywords": ["terminos", "condiciones", "legal", "uso"]
+    },
+    {
+        "title": "Código de Conducta",
+        "type": "Documentación",
+        "url": "https://github.com/JohnMartinRB/CE-IPET424/blob/main/.github/CODE_OF_CONDUCT.md",
+        "description": "Código de conducta del proyecto y la comunidad.",
+        "keywords": ["codigo", "conducta", "normas", "comunidad"]
+    },
+    {
+        "title": "Licencia MIT",
+        "type": "Legal",
+        "url": "https://github.com/JohnMartinRB/CE-IPET424/blob/main/LICENSE",
+        "description": "Información sobre la licencia de código abierto del proyecto.",
+        "keywords": ["licencia", "mit", "open source", "codigo abierto"]
+    },
+    {
+        "title": "Repositorio GitHub",
+        "type": "Documentación",
+        "url": "https://github.com/JohnMartinRB/CE-IPET424",
+        "description": "Repositorio oficial del código fuente en GitHub.",
+        "keywords": ["github", "repositorio", "codigo", "fuente", "git"]
+    },
+    {
+        "title": "Novedades y Cambios (Changelog)",
+        "type": "Documentación",
+        "url": "https://github.com/JohnMartinRB/CE-IPET424/blob/main/CHANGELOG.md",
+        "description": "Historial de versiones, actualizaciones y cambios del sitio.",
+        "keywords": ["CHANGELOG", "novedades", "cambios", "versiones", "historial"]
+    },
+    {
+        "title": "Arquitectura del Sitio (Architecture)",
+        "type": "Documentación",
+        "url": "https://github.com/JohnMartinRB/CE-IPET424/blob/main/docs/ARCHITECTURE.md",
+        "description": "Documentación técnica sobre la estructura, diseño y organización del proyecto.",
+        "keywords": ["arquitectura", "architecture", "estructura", "diseño", "tecnico", "docs"]
+    },
+    {
+        "title": "Guía de Contribución (Contributing)",
+        "type": "Documentación",
+        "url": "https://github.com/JohnMartinRB/CE-IPET424/blob/main/docs/CONTRIBUTING.md",
+        "description": "Pautas, normas e instrucciones para colaborar en el desarrollo del portal.",
+        "keywords": ["contribuir", "contributing", "colaborar", "desarrollo", "guia", "docs"]
+    },
+    {
+        "title": "Hoja de Ruta (Roadmap)",
+        "type": "Documentación",
+        "url": "https://github.com/JohnMartinRB/CE-IPET424/blob/main/docs/ROADMAP.md",
+        "description": "Planificación a futuro, fases de desarrollo y próximas funciones del proyecto.",
+        "keywords": ["roadmap", "hoja de ruta", "plan", "futuro", "versiones", "etapas", "docs"]
+    }
+]

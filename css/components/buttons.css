@@ -3,6 +3,7 @@
 ========================================== */
 .button,
 a.button {
+    display: inline-block;
     padding: var(--space-sm);
     border: 2px solid var(--border-button);
     border-radius: var(--radius-md);

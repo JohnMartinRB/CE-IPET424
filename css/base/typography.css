@@ -11,6 +11,7 @@ h6 {
     font-family: var(--font-titles);
     text-align: center;
     text-wrap: balance;
+    user-select: none;
 }
 h1 {
     font-size: var(--fs-xl);
@@ -31,6 +32,7 @@ h6 {
     line-height: var(--lh-tight);
     font-family: var(--font-main);
     text-align: center;
+    user-select: none;
 }
 .paragraph {
     text-wrap: pretty;

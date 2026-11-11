@@ -38,7 +38,7 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.44` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.45` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
 | **Lanzamiento Estable (v1.0)** | Martes 9 de marzo de 2027          |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
@@ -102,8 +102,18 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.44-alpha` (Actual)**
-    -   - Nueva función de lectura nativa de pdfs dentro del sitio
+- **`v0.45-alpha` (Actual)**
+    - Nuevo modal de búsqueda, accesible desde un nuevo botón del Header
+        - Se pueden buscar subpáginas, pdfs, herramientas y documentación
+    - Nueva función en `header.js` para manejar el buscador
+    - Archivo `data/search-index.json` para guardar las búsquedas y palabras clave
+    - Ahora los botones tienen `display: inline-block` y se pueden separar mejor
+    - Se agregó la clase de `section-card` a la tarjeta de 404.html
+    - Se quitó la animación de Scroll Reveal de los botones
+    - Se agrandó el tamaño de fuente de la hora de los horarios
+
+- **`v0.44-alpha` (Anterior)**
+    - Nueva función de lectura nativa de pdfs dentro del sitio
         - Las tarjetas de pdf ahora tienen un botón de LEER PDF junto al de DESCARGAR
         - Abre un modal con el nombre del pdf, botón de cerrar, expandir y modo descanso y opciones nativas del lector de pdf
     - Ahora más secciones de pdfs se muestran como ``grid-cards`
@@ -111,15 +121,6 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
     - El formulario de Google ahora tiene un botón para abrir en una pestaña nueva
     - Se modificó el autor y título de todos los pdf (en los metadatos)
     - Archivo `js/ui/pdf-reader.js` para controlar la lectura de pdf
-
-- **`v0.43-alpha` (Anterior)**
-    - Nueva animación de "Scroll Reveal" para las tarjetas del sitio
-    - Nuevos efectos para el botón de cerrar modal (header)
-    - Se agregaron las efemérides más importantes nacionales / mundiales a `days.json`, visibles desde el widget de efemérides
-    - Nuevo campo en `days.json`: TIPO, para separar entre Nacionales y Mundiales
-    - Nueva carpeta `docs/` en la raíz, la cual contiene los archivos ARCHITECTURE, CONTRIBUTING y ROADMAP
-    - Archivo `js/utils/animations.js` para manejar las animaciones de Scroll Reveal
-    - Árbol de carpetas actualizado
 
 Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./docs/CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 
