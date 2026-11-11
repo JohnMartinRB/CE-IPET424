@@ -42,20 +42,18 @@ h6 {
 ======================================== */
 
 .section-card,
-.subsection-card,
-.button {
+.subsection-card {
     transform: translateY(30px);
     opacity: 0;
     transition:
-        opacity 0.6s ease,
-        transform 0.6s ease;
+        opacity 0.4s ease,
+        transform 0.4s ease;
     will-change: opacity, transform;
 }
 
 /* Estado final cuando entra en pantalla */
 .section-card.animated,
-.subsection-card.animated,
-.button.animated {
+.subsection-card.animated {
     transform: translateY(0);
     opacity: 1;
 }

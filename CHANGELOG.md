@@ -4,6 +4,19 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## v0.45.0-alpha - Versión Principal
+
+- Nuevo modal de búsqueda, accesible desde un nuevo botón del Header
+    - Se pueden buscar subpáginas, pdfs, herramientas y documentación
+- Nueva función en `header.js` para manejar el buscador
+- Archivo `data/search-index.json` para guardar las búsquedas y palabras clave
+- Ahora los botones tienen `display: inline-block` y se pueden separar mejor
+- Se agregó la clase de `section-card` a la tarjeta de 404.html
+- Se quitó la animación de Scroll Reveal de los botones
+- Se agrandó el tamaño de fuente de la hora de los horarios
+
+---
+
 ## v0.44.0-alpha - Versión Principal
 
 - Nueva función de lectura nativa de pdfs dentro del sitio

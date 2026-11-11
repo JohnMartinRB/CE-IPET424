@@ -7,9 +7,11 @@
 }
 .error-code {
     margin: 0;
-    padding: var(--space-base) 0;
     color: var(--text-body);
     font-size: var(--fs-4xl);
+}
+.button-home {
+    margin-top: var(--space-sm);
 }
 
 /* ==========================================================================

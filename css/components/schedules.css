@@ -40,7 +40,7 @@
     border-radius: 6px;
     background-color: var(--time-bg);
     font-weight: bold;
-    font-size: 0.5em;
+    font-size: 0.75em;
     text-align: center;
 }
 .schedule-cell {
