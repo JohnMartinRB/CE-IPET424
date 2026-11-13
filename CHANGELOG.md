@@ -20,6 +20,11 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se eliminó la tarjeta de navegación de todos los html (la última)
 - Se actualizó el árbol de carpetas
 
+### v0.45.2-alpha
+
+- Ahora los input tienen el mismo `border-radius` que los botones
+- Se arregló la tarjeta del Calendario agregando nuevos estilos
+
 ---
 
 ## v0.44.0-alpha - Versión Principal
