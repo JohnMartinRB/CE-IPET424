@@ -44,16 +44,6 @@ body {
     cursor: var(--default);
     transition: var(--transition-fast);
 }
-body,
-main,
-header,
-footer,
-section,
-article,
-aside,
-nav {
-    transition: var(--transition-fast);
-}
 ::selection {
     background-color: var(--bg-selection);
     color: var(--text-selection);
