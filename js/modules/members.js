@@ -60,3 +60,8 @@ export async function initMembers() {
         console.error("Error cargando los integrantes de la comisión:", error);
     }
 }
+
+// EJECUCIÓN AUTOMÁTICA AL CARGAR LA PÁGINA
+document.addEventListener("DOMContentLoaded", () => {
+    initMembers();
+});

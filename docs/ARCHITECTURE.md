@@ -67,13 +67,10 @@ CE-IPET424/
 │   │   ├── accordion.css             # Estilos para acordeones desplegables
 │   │   ├── banners.css               # Banners informativos
 │   │   ├── buttons.css               # Botones e interactividad
-│   │   ├── calendar.css              # Módulo del calendario
 │   │   ├── cards.css                 # Tarjetas de contenido
-│   │   ├── controls.css              # Paneles de control y personalización
 │   │   ├── inputs.css                # Campos de formulario y controles
 │   │   ├── loader.css                # Pantalla y animación de carga
 │   │   ├── modals.css                # Ventanas modales
-│   │   ├── schedules.css             # Módulo de horarios
 │   │   ├── scrollbar.css             # Personalización de la barra de desplazamiento
 │   │   ├── toasts.css                # Notificaciones flotantes / mensajes emergentes
 │   │   └── widgets.css               # Widgets (clima, accesibilidad, etc.)
@@ -85,8 +82,13 @@ CE-IPET424/
 │   │   └── nav.css                   # Barra de navegación
 │   ├── misc/                         # Hojas de estilos específicas o random
 │   │   ├── error.css                 # Estilos para la página 404 / errores
-│   │   ├── secret.css                # Estilos para los elementos easter egg
+│   │   ├── extras.css                # Estilos para los elementos easter egg
 │   │   └── specific.css              # Estilos específicos varios
+│   ├── modules/                      # Módulos específicos para subpáginas
+│   │   ├── calendar.css              # Módulo del calendario
+│   │   ├── controls.css              # Paneles de control y personalización
+│   │   ├── members.css               # Grilla de miembros y cargos
+│   │   └── schedules.css             # Módulo de horarios
 │   └── styles.css                    # Hoja de ruta principal (@import maestro)
 ├── data/                             # Archivos de datos estructurados
 │   ├── days.json                     # Efemérides y "días de..."
@@ -95,6 +97,7 @@ CE-IPET424/
 │   ├── faqs.json                     # Preguntas frecuentes
 │   ├── holidays.json                 # Días festivos o calendarios especiales
 │   ├── manifest.json                 # Manifiesto para instalación PWA
+│   ├── members.json                  # Lista de miembros y cargos del C.E.
 │   ├── news.json                     # Noticias y comunicados
 │   ├── quotes.json                   # Frases o citas célebres
 │   ├── schedules.json                # Horarios de cada curso
@@ -107,15 +110,17 @@ CE-IPET424/
 │   └── ROADMAP.md                    # Hoja de ruta de próximas versiones
 ├── js/                               # Funciones Javascript
 │   ├── extras/                       # Funciones random
+│   ├── modules/                      # Módulos específicos de subpáginas
+│   │   ├── calendar.js               # Control y renderizado del calendario
+│   │   ├── members.js                # Manejo de miembros del C.E.
+│   │   └── schedules.js              # Control y renderizado de horarios
 │   ├── ui/                           # Funciones de la interfaz
 │   │   ├── banners.js                # Control de banners de aviso
 │   │   ├── buttons.js                # Comportamiento e interacción de botones
-│   │   ├── calendar.js               # Control y renderizado del calendario
 │   │   ├── components.js             # Control de componentes varios
 │   │   ├── header.js                 # Control de los widget de opciones
 │   │   ├── modals.js                 # Apertura y cierre de ventanas modales
 │   │   ├── pdf-reader.js             # Contorl de modal de visor/lector de pdfs
-│   │   ├── schedules.js              # Control y renderizado de horarios
 │   │   ├── theme.js                  # Lógica de conmutación de temas (oscuro/claro)
 │   │   ├── toasts.js                 # Manejo de los toasts flotantes
 │   │   ├── version.js                # Extrar la versión desde el json

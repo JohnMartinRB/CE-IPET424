@@ -238,3 +238,8 @@ export function initSchedules() {
     });
     loadData();
 }
+
+// EJECUCIÓN AUTOMÁTICA AL CARGAR LA PÁGINA
+document.addEventListener("DOMContentLoaded", () => {
+    initSchedules();
+});

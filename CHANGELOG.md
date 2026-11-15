@@ -4,6 +4,19 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## v0.47.0-alpha - Versión Principal
+
+- Se personalizó la meta tag de Description para todas las subpáginas
+- Los archivos `schedules.css`, `calendar.css`, `controls.css` y `members.css` se movieron a `css/modules/` y se quitaron de la importación de `styles.css`
+- Ahora se importan únicamente en las páginas donde se utilizan
+- Los archivos `schedules.js`, `calendar.js` y `members.js` se movieron a `js/modules/` y se quitaron de la importación de `styles.css`
+- Ahora se importan únicamente en las páginas donde se utilizan
+- Se renombró `secret.css` a `extras.css`
+- Se reworkeó la función para subir los asides al llegar al footer
+- Se actualizó humans y el árbol de carpetas
+
+---
+
 ## v0.46.0-alpha - Versión Principal
 
 - Se reworkeó la función de los atajos de teclado
