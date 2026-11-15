@@ -4,6 +4,24 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## v0.46.0-alpha - Versión Principal
+
+- Se reworkeó la función de los atajos de teclado
+- Se cambiaron todos los atajos de teclado y se eliminaron otros
+    - Eliminados: modo código, escala de grises, alto contraste, desactivar sonido y animaciones
+    - Mantenidos: modo oscuro, modo descanso, copiar link, abrir asides (todos modificados)
+    - Nuevos: abrir panel de configuración, temas, búsqueda, accesibilidad y compartir
+- Nueva sección en `nosotros.html` con los integrantes del C.E. (nombre, curso y cargo)
+- Archivos `members.css` para las tarjetas, `members.js` y `members.json` para guardar y mostrar los nombres
+- El título de pestaña de 404.html ahora no incluye el sufijo de Centro[...]
+- El título de 404.html ahora es 404 Error
+- Carpeta `assets/img/gallery/members` con imágenes placeholder de los miembros del C.E.
+- Carpetas vacías futuras `assets/img/gallery/school` y `/icons/buttons`
+- Se corrigió el nombre de los mapas svg
+- ID de `button-theme` ahora es `button-dark` en todas las funciones
+
+---
+
 ## v0.45.0-alpha - Versión Principal
 
 - Nuevo modal de búsqueda, accesible desde un nuevo botón del Header

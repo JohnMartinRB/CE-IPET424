@@ -26,6 +26,7 @@
 @import "components/controls.css";
 @import "components/schedules.css";
 @import "components/calendar.css";
+@import "components/members.css";
 
 /* ESTRUCTURA Y LAYOUT */
 @import "layout/header.css";

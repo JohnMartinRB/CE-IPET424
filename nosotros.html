@@ -84,34 +84,307 @@
             <!-- SECCIÓN: COMISIÓN DIRECTIVA -->
             <section id="autoridades" class="section-card autoridades-section">
                 <h2>Comisión Directiva</h2>
-                <div id="table-container" class="table-container">
-                    <h3>Integrantes de la Lista Electa</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Cargo</th>
-                                <th>Nombre y Apellido</th>
-                                <th>Curso / Especialidad</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Presidente</td>
-                                <td>Estudiante A</td>
-                                <td>7° Año Informática</td>
-                            </tr>
-                            <tr>
-                                <td>Vicepresidente</td>
-                                <td>Estudiante B</td>
-                                <td>6° Año Electromecánica</td>
-                            </tr>
-                            <tr>
-                                <td>Secretario/a</td>
-                                <td>Estudiante C</td>
-                                <td>5° Año Informática</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <p class="text paragraph">
+                    Conocé a los representantes elegidos para llevar adelante la gestión del Centro de Estudiantes. Hacé
+                    clic en "Función" para conocer el rol de cada miembro.
+                </p>
+                <!-- 1. BLOQUE: CINCO CARGOS PRINCIPALES -->
+                <h3 class="subsection-title">Cargos Principales</h3>
+                <div class="grid-cards members-grid-5">
+                    <article class="member-card" data-member="presidente">
+                        <img
+                            src="assets/img/gallery/members/presidente.jpg"
+                            alt="Presidente"
+                            class="member-photo"
+                            loading="lazy"
+                        />
+                        <h4>Presidente</h4>
+                        <p class="member-name">Estudiante A</p>
+                        <p class="member-year">7° Año Informática</p>
+                        <a
+                            href="#funciones-comision"
+                            class="button button-small"
+                            onclick="document.getElementById('func-presidente').scrollIntoView({ behavior: 'smooth' })"
+                            >Función</a
+                        >
+                    </article>
+                    <article class="member-card" data-member="vicepresidente">
+                        <img
+                            src="assets/img/gallery/members/vicepresidente.jpg"
+                            alt="Vicepresidente"
+                            class="member-photo"
+                            loading="lazy"
+                        />
+                        <h4>Vicepresidente</h4>
+                        <p class="member-name">Estudiante B</p>
+                        <p class="member-year">6° Año Electromecánica</p>
+                        <a
+                            href="#funciones-comision"
+                            class="button button-small"
+                            onclick="
+                                document.getElementById('func-vicepresidente').scrollIntoView({ behavior: 'smooth' })
+                            "
+                            >Función</a
+                        >
+                    </article>
+                    <article class="member-card" data-member="sec-general">
+                        <img
+                            src="assets/img/gallery/members/sec-general.jpg"
+                            alt="Secretario/a General"
+                            class="member-photo"
+                            loading="lazy"
+                        />
+                        <h4>Sec. General</h4>
+                        <p class="member-name">Estudiante C</p>
+                        <p class="member-year">5° Año Informática</p>
+                        <a
+                            href="#funciones-comision"
+                            class="button button-small"
+                            onclick="document.getElementById('func-sec-general').scrollIntoView({ behavior: 'smooth' })"
+                            >Función</a
+                        >
+                    </article>
+                    <article class="member-card" data-member="tesorero">
+                        <img
+                            src="assets/img/gallery/members/tesorero.jpg"
+                            alt="Tesorero/a"
+                            class="member-photo"
+                            loading="lazy"
+                        />
+                        <h4>Tesorero/a</h4>
+                        <p class="member-name">Estudiante D</p>
+                        <p class="member-year">6° Año Informática</p>
+                        <a
+                            href="#funciones-comision"
+                            class="button button-small"
+                            onclick="document.getElementById('func-tesorero').scrollIntoView({ behavior: 'smooth' })"
+                            >Función</a
+                        >
+                    </article>
+                    <article class="member-card" data-member="protesorero">
+                        <img
+                            src="assets/img/gallery/members/protesorero.jpg"
+                            alt="Protesorero/a"
+                            class="member-photo"
+                            loading="lazy"
+                        />
+                        <h4>Protesorero/a</h4>
+                        <p class="member-name">Estudiante E</p>
+                        <p class="member-year">5° Año Electromecánica</p>
+                        <a
+                            href="#funciones-comision"
+                            class="button button-small"
+                            onclick="document.getElementById('func-protesorero').scrollIntoView({ behavior: 'smooth' })"
+                            >Función</a
+                        >
+                    </article>
+                </div>
+                <!-- 2. BLOQUE: OTRAS SECRETARÍAS -->
+                <h3 class="subsection-title">Secretarías Específicas</h3>
+                <div class="grid-cards members-grid-4">
+                    <article class="member-card" data-member="sec-accion-social">
+                        <img
+                            src="assets/img/gallery/members/sec-accion-social.jpg"
+                            alt="Sec. de Acción Social"
+                            class="member-photo"
+                            loading="lazy"
+                        />
+                        <h4>Acción Social</h4>
+                        <p class="member-name">Estudiante F</p>
+                        <p class="member-year">4° Año Informática</p>
+                        <a
+                            href="#funciones-comision"
+                            class="button button-small"
+                            onclick="
+                                document.getElementById('func-accion-social').scrollIntoView({ behavior: 'smooth' })
+                            "
+                            >Función</a
+                        >
+                    </article>
+                    <article class="member-card" data-member="sec-deporte">
+                        <img
+                            src="assets/img/gallery/members/sec-deporte.jpg"
+                            alt="Sec. de Deportes"
+                            class="member-photo"
+                            loading="lazy"
+                        />
+                        <h4>Deporte</h4>
+                        <p class="member-name">Estudiante G</p>
+                        <p class="member-year">5° Año Electromecánica</p>
+                        <a
+                            href="#funciones-comision"
+                            class="button button-small"
+                            onclick="document.getElementById('func-deportes').scrollIntoView({ behavior: 'smooth' })"
+                            >Función</a
+                        >
+                    </article>
+                    <article class="member-card" data-member="sec-rree-cultura">
+                        <img
+                            src="assets/img/gallery/members/sec-rree-cultura.jpg"
+                            alt="Sec. de Relaciones y Cultura"
+                            class="member-photo"
+                            loading="lazy"
+                        />
+                        <h4>RR. EE. y Cultura</h4>
+                        <p class="member-name">Estudiante H</p>
+                        <p class="member-year">6° Año Informática</p>
+                        <a
+                            href="#funciones-comision"
+                            class="button button-small"
+                            onclick="document.getElementById('func-cultura').scrollIntoView({ behavior: 'smooth' })"
+                            >Función</a
+                        >
+                    </article>
+                    <article class="member-card" data-member="sec-estudiantil">
+                        <img
+                            src="assets/img/gallery/members/sec-estudiantil.jpg"
+                            alt="Sec. Estudiantil"
+                            class="member-photo"
+                            loading="lazy"
+                        />
+                        <h4>Estudiantil</h4>
+                        <p class="member-name">Estudiante I</p>
+                        <p class="member-year">4° Año Electromecánica</p>
+                        <a
+                            href="#funciones-comision"
+                            class="button button-small"
+                            onclick="document.getElementById('func-estudiantil').scrollIntoView({ behavior: 'smooth' })"
+                            >Función</a
+                        >
+                    </article>
+                </div>
+                <!-- 3. BLOQUE: VOCALES (Fila de 4) -->
+                <h3 class="subsection-title">Vocales de la Secretaría</h3>
+                <div class="grid-cards members-grid-4" data-member="vocal-1">
+                    <article class="member-card">
+                        <div class="member-photo placeholder-photo">👤</div>
+                        <h4>Vocal 1°</h4>
+                        <p class="member-name">Estudiante J</p>
+                        <p class="member-year">3° Año Informática</p>
+                        <a
+                            href="#funciones-comision"
+                            class="button button-small"
+                            onclick="document.getElementById('func-vocal').scrollIntoView({ behavior: 'smooth' })"
+                            >Función</a
+                        >
+                    </article>
+                    <article class="member-card" data-member="vocal-2">
+                        <div class="member-photo placeholder-photo">👤</div>
+                        <h4>Vocal 2°</h4>
+                        <p class="member-name">Estudiante K</p>
+                        <p class="member-year">3° Año Electromecánica</p>
+                        <a
+                            href="#funciones-comision"
+                            class="button button-small"
+                            onclick="document.getElementById('func-vocal').scrollIntoView({ behavior: 'smooth' })"
+                            >Función</a
+                        >
+                    </article>
+                    <article class="member-card" data-member="vocal-3">
+                        <div class="member-photo placeholder-photo">👤</div>
+                        <h4>Vocal 3°</h4>
+                        <p class="member-name">Estudiante L</p>
+                        <p class="member-year">4° Año Informática</p>
+                        <a
+                            href="#funciones-comision"
+                            class="button button-small"
+                            onclick="document.getElementById('func-vocal').scrollIntoView({ behavior: 'smooth' })"
+                            >Función</a
+                        >
+                    </article>
+                    <article class="member-card" data-member="vocal-4">
+                        <div class="member-photo placeholder-photo">👤</div>
+                        <h4>Vocal 4°</h4>
+                        <p class="member-name">Estudiante M</p>
+                        <p class="member-year">4° Año Electromecánica</p>
+                        <a
+                            href="#funciones-comision"
+                            class="button button-small"
+                            onclick="document.getElementById('func-vocal').scrollIntoView({ behavior: 'smooth' })"
+                            >Función</a
+                        >
+                    </article>
+                </div>
+            </section>
+
+            <!-- SECCIÓN NUEVA: FUNCIONES Y DESCRIPCIONES DE LOS CARGOS -->
+            <section id="funciones-comision" class="section-card funciones-section">
+                <h2>Funciones de la Comisión Directiva</h2>
+                <p class="text paragraph">
+                    Detalle de las responsabilidades y tareas asignadas a cada cargo dentro del Centro de Estudiantes.
+                </p>
+                <div class="grid-cards">
+                    <article id="func-presidente" class="subsection-card">
+                        <h3>Presidente/a</h3>
+                        <p class="text paragraph">
+                            <strong>Función principal:</strong> Representar legal e institucionalmente al Centro de
+                            Estudiantes, presidir las asambleas y coordinar las actividades generales de la comisión.
+                        </p>
+                    </article>
+                    <article id="func-vicepresidente" class="subsection-card">
+                        <h3>Vicepresidente/a</h3>
+                        <p class="text paragraph">
+                            <strong>Función principal:</strong> Colaborar activamente con la presidencia y reemplazarla
+                            en caso de ausencia temporal o definitiva, supervisando las secretarías.
+                        </p>
+                    </article>
+                    <article id="func-sec-general" class="subsection-card">
+                        <h3>Secretario/a General</h3>
+                        <p class="text paragraph">
+                            <strong>Función principal:</strong> Llevar al día las actas de reuniones, gestionar la
+                            correspondencia oficial y redactar las comunicaciones formales del centro.
+                        </p>
+                    </article>
+                    <article id="func-tesorero" class="subsection-card">
+                        <h3>Tesorero/a</h3>
+                        <p class="text paragraph">
+                            <strong>Función principal:</strong> Administrar el patrimonio, llevar el registro contable
+                            de ingresos y egresos, y presentar los balances periódicos ante los estudiantes.
+                        </p>
+                    </article>
+                    <article id="func-protesorero" class="subsection-card">
+                        <h3>Protesorero/a</h3>
+                        <p class="text paragraph">
+                            <strong>Función principal:</strong> Asistir a la tesorería en el manejo de fondos, cobros y
+                            control de documentación financiera y presupuestaria.
+                        </p>
+                    </article>
+                    <article id="func-accion-social" class="subsection-card">
+                        <h3>Secretaría de Acción Social</h3>
+                        <p class="text paragraph">
+                            <strong>Función principal:</strong> Organizar campañas solidarias, asistencia a estudiantes
+                            y proyectos de vinculación comunitaria.
+                        </p>
+                    </article>
+                    <article id="func-deportes" class="subsection-card">
+                        <h3>Secretaría de Deportes</h3>
+                        <p class="text paragraph">
+                            <strong>Función principal:</strong> Coordinar torneos internos, intercolegiales y el cuidado
+                            o solicitud de material deportivo escolar.
+                        </p>
+                    </article>
+                    <article id="func-cultura" class="subsection-card">
+                        <h3>Secretaría de Relaciones y Cultura</h3>
+                        <p class="text paragraph">
+                            <strong>Función principal:</strong> Fomentar eventos artísticos, musicales, talleres
+                            culturales y la relación con centros de estudiantes de otros establecimientos.
+                        </p>
+                    </article>
+                    <article id="func-estudiantil" class="subsection-card">
+                        <h3>Secretaría de Asuntos Estudiantiles</h3>
+                        <p class="text paragraph">
+                            <strong>Función principal:</strong> Recoger inquietudes directas de los cursos, mediar en
+                            necesidades académicas y canalizar propuestas de mejora.
+                        </p>
+                    </article>
+                    <article id="func-vocal" class="subsection-card">
+                        <h3>Vocales</h3>
+                        <p class="text paragraph">
+                            <strong>Función principal:</strong> Colaborar en todas las secretarías según se requiera,
+                            participar con voz y voto en las decisiones y garantizar la conexión directa con las bases
+                            de cada curso.
+                        </p>
+                    </article>
                 </div>
             </section>
             <!-- SECCIÓN: NUESTRA HISTORIA -->
