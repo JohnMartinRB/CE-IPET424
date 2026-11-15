@@ -145,9 +145,9 @@ export function initTheme() {
     }
     function syncUIButtons() {
         const currentTheme = getActiveThemeFromDOM();
-        const buttonTheme = document.getElementById("button-theme");
-        if (buttonTheme) {
-            buttonTheme.textContent = currentTheme === "light" ? "Modo Oscuro" : "Modo Claro";
+        const buttonDark = document.getElementById("button-dark");
+        if (buttonDark) {
+            buttonDark.textContent = currentTheme === "light" ? "Modo Oscuro" : "Modo Claro";
         }
         const buttonRest = document.getElementById("button-rest");
         if (buttonRest) {
@@ -216,7 +216,7 @@ export function initTheme() {
     }
     // 2. DELEGACIÓN DE EVENTOS DE CLIC (BOTONES)
     document.addEventListener("click", (e) => {
-        if (e.target.closest("#button-theme")) {
+        if (e.target.closest("#button-dark")) {
             const currentTheme = getActiveThemeFromDOM();
             const nextTheme = currentTheme === "light" ? "dark" : "light";
             applyTheme(nextTheme);
@@ -239,8 +239,8 @@ export function initTheme() {
     });
     // 3. MUTATION OBSERVER (Para botones cargados por fetch en el Aside)
     const observer = new MutationObserver(() => {
-        const buttonTheme = document.getElementById("button-theme");
-        if (buttonTheme) {
+        const buttonDark = document.getElementById("button-dark");
+        if (buttonDark) {
             syncUIButtons();
             observer.disconnect(); // Detiene el observador inmediatamente
         }

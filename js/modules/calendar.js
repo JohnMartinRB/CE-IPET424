@@ -255,3 +255,8 @@ export function initCalendar() {
     // Renderizado inicial al cargar la página
     renderCalendar();
 }
+
+// EJECUCIÓN AUTOMÁTICA AL CARGAR LA PÁGINA
+document.addEventListener("DOMContentLoaded", () => {
+    initCalendar();
+});

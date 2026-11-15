@@ -4,6 +4,37 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 
 ---
 
+## v0.47.0-alpha - Versión Principal
+
+- Se personalizó la meta tag de Description para todas las subpáginas
+- Los archivos `schedules.css`, `calendar.css`, `controls.css` y `members.css` se movieron a `css/modules/` y se quitaron de la importación de `styles.css`
+- Ahora se importan únicamente en las páginas donde se utilizan
+- Los archivos `schedules.js`, `calendar.js` y `members.js` se movieron a `js/modules/` y se quitaron de la importación de `styles.css`
+- Ahora se importan únicamente en las páginas donde se utilizan
+- Se renombró `secret.css` a `extras.css`
+- Se reworkeó la función para subir los asides al llegar al footer
+- Se actualizó humans y el árbol de carpetas
+
+---
+
+## v0.46.0-alpha - Versión Principal
+
+- Se reworkeó la función de los atajos de teclado
+- Se cambiaron todos los atajos de teclado y se eliminaron otros
+    - Eliminados: modo código, escala de grises, alto contraste, desactivar sonido y animaciones
+    - Mantenidos: modo oscuro, modo descanso, copiar link, abrir asides (todos modificados)
+    - Nuevos: abrir panel de configuración, temas, búsqueda, accesibilidad y compartir
+- Nueva sección en `nosotros.html` con los integrantes del C.E. (nombre, curso y cargo)
+- Archivos `members.css` para las tarjetas, `members.js` y `members.json` para guardar y mostrar los nombres
+- El título de pestaña de 404.html ahora no incluye el sufijo de Centro[...]
+- El título de 404.html ahora es 404 Error
+- Carpeta `assets/img/gallery/members` con imágenes placeholder de los miembros del C.E.
+- Carpetas vacías futuras `assets/img/gallery/school` y `/icons/buttons`
+- Se corrigió el nombre de los mapas svg
+- ID de `button-theme` ahora es `button-dark` en todas las funciones
+
+---
+
 ## v0.45.0-alpha - Versión Principal
 
 - Nuevo modal de búsqueda, accesible desde un nuevo botón del Header

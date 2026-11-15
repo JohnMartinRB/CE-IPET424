@@ -1,0 +1,54 @@
+{
+    "presidente": {
+        "nombre": "Juan Martín Rodríguez",
+        "curso": "5° B"
+    },
+    "vicepresidente": {
+        "nombre": "Jazmín Rodríguez",
+        "curso": "7° A"
+    },
+    "sec-general": {
+        "nombre": "Sayra Maldonado",
+        "curso": "5° B"
+    },
+    "tesorero": {
+        "nombre": "Lorena Altamirano",
+        "curso": "7° A"
+    },
+    "protesorero": {
+        "nombre": "",
+        "curso": ""
+    },
+    "sec-accion-social": {
+        "nombre": "Santino Monzón",
+        "curso": "5° B"
+    },
+    "sec-deporte": {
+        "nombre": "Nicolás Saracho",
+        "curso": "5° B"
+    },
+    "sec-rree-cultura": {
+        "nombre": "Gabriel Campana",
+        "curso": "5° B"
+    },
+    "sec-estudiantil": {
+        "nombre": "Felipe Guzmán",
+        "curso": "4° B"
+    },
+    "vocal-1": {
+        "nombre": "",
+        "curso": ""
+    },
+    "vocal-2": {
+        "nombre": "",
+        "curso": ""
+    },
+    "vocal-3": {
+        "nombre": "",
+        "curso": ""
+    },
+    "vocal-4": {
+        "nombre": "",
+        "curso": ""
+    }
+}

@@ -38,9 +38,9 @@ Este proyecto busca resolver dicha problemática mediante una **plataforma acces
 
 | Parámetro                      | Detalle                            |
 | :----------------------------- | :--------------------------------- |
-| **Versión Actual**             | `0.45` (Fase Alpha, en desarrollo) |
+| **Versión Actual**             | `0.47` (Fase Alpha, en desarrollo) |
 | **Inicio de Desarrollo**       | Viernes 7 de agosto de 2026        |
-| **Lanzamiento Estable (v1.0)** | Martes 9 de marzo de 2027          |
+| **Lanzamiento Estable (v1.0)** | Martes 16 de marzo de 2027         |
 | **Entorno de Hosting**         | Cloudflare Pages / GitHub Pages    |
 | **Mantenimiento**              | Activo (CI/CD Automático)          |
 
@@ -102,26 +102,30 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
 
 ## 📜 Últimos Cambios y Actualizaciones
 
-- **`v0.45-alpha` (Actual)**
-    - Nuevo modal de búsqueda, accesible desde un nuevo botón del Header
-        - Se pueden buscar subpáginas, pdfs, herramientas y documentación
-    - Nueva función en `header.js` para manejar el buscador
-    - Archivo `data/search-index.json` para guardar las búsquedas y palabras clave
-    - Ahora los botones tienen `display: inline-block` y se pueden separar mejor
-    - Se agregó la clase de `section-card` a la tarjeta de 404.html
-    - Se quitó la animación de Scroll Reveal de los botones
-    - Se agrandó el tamaño de fuente de la hora de los horarios
-    - Se eliminó la tarjeta de navegación de todos los html (la última)
+- **`v0.47-alpha` (Actual)**
+    -   - Se personalizó la meta tag de Description para todas las subpáginas
+    - Los archivos `schedules.css`, `calendar.css`, `controls.css` y `members.css` se movieron a `css/modules/` y se quitaron de la importación de `styles.css`
+    - Ahora se importan únicamente en las páginas donde se utilizan
+    - Los archivos `schedules.js`, `calendar.js` y `members.js` se movieron a `js/modules/` y se quitaron de la importación de `styles.css`
+    - Ahora se importan únicamente en las páginas donde se utilizan
+    - Se renombró `secret.css` a `extras.css`
+    - Se reworkeó la función para subir los asides al llegar al footer
+    - Se actualizó humans y el árbol de carpetas
 
-- **`v0.44-alpha` (Anterior)**
-    - Nueva función de lectura nativa de pdfs dentro del sitio
-        - Las tarjetas de pdf ahora tienen un botón de LEER PDF junto al de DESCARGAR
-        - Abre un modal con el nombre del pdf, botón de cerrar, expandir y modo descanso y opciones nativas del lector de pdf
-    - Ahora más secciones de pdfs se muestran como ``grid-cards`
-    - Los botones ahora tienen también la animación de Scroll Reveal
-    - El formulario de Google ahora tiene un botón para abrir en una pestaña nueva
-    - Se modificó el autor y título de todos los pdf (en los metadatos)
-    - Archivo `js/ui/pdf-reader.js` para controlar la lectura de pdf
+- **`v0.46-alpha` (Anterior)**
+    - Se reworkeó la función de los atajos de teclado
+    - Se cambiaron todos los atajos de teclado y se eliminaron otros
+        - Eliminados: modo código, escala de grises, alto contraste, desactivar sonido y animaciones
+        - Mantenidos: modo oscuro, modo descanso, copiar link, abrir asides (todos modificados)
+        - Nuevos: abrir panel de configuración, temas, búsqueda, accesibilidad y compartir
+    - Nueva sección en `nosotros.html` con los integrantes del C.E. (nombre, curso y cargo)
+    - Archivos `members.css` para las tarjetas, `members.js` y `members.json` para guardar y mostrar los nombres
+    - El título de pestaña de 404.html ahora no incluye el sufijo de Centro[...]
+    - El título de 404.html ahora es 404 Error
+    - Carpeta `assets/img/gallery/members` con imágenes placeholder de los miembros del C.E.
+    - Carpetas vacías futuras `assets/img/gallery/school` y `/icons/buttons`
+    - Se corrigió el nombre de los mapas svg
+    - ID de `button-theme` ahora es `button-dark` en todas las funciones
 
 Consultá el [Historial Completo de Cambios (CHANGELOG.md)](./docs/CHANGELOG.md) para ver la bitácora detallada de todas las versiones y parches.
 

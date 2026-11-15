@@ -17,8 +17,6 @@ import { initBanners } from "./ui/banners.js";
 import { initTheme } from "./ui/theme.js";
 import { initModals } from "./ui/modals.js";
 import { initHeader } from "./ui/header.js";
-import { initSchedules } from "./ui/schedules.js";
-import { initCalendar } from "./ui/calendar.js";
 import { initPdfReader } from "./ui/pdf-reader.js";
 import { initFontSize } from "./utils/font-size.js";
 import { initScrollAnimations } from "./utils/animations.js";
@@ -48,8 +46,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     initAnimations();
     initSound();
     initShortcuts();
-    initSchedules();
-    initCalendar();
     initPdfReader();
     initExtras();
 });
@@ -65,24 +61,31 @@ window.addEventListener("load", () => {
     playSound("toast.mp3", 0.5);
 });
 
-// Ajustar posición del aside para no solapar el footer al hacer scroll
+/// Ajustar posición del aside para no solapar el footer al hacer scroll (Optimizado con rAF)
+let ticking = false;
 window.addEventListener("scroll", () => {
-    const asides = document.querySelectorAll(".aside-drawer");
-    const footer = document.querySelector("#footer-container") || document.querySelector("footer");
-    if (!asides.length || !footer) return;
-    const footerRect = footer.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-    const footerTop = footerRect.top;
-    asides.forEach((aside) => {
-        if (footerTop < windowHeight) {
-            // Calculamos cuánto invade el footer y subimos el aside
-            const overlap = windowHeight - footerTop;
-            aside.style.transform = `translateY(calc(-50% - ${overlap}px))`;
-        } else {
-            // Volver a la posición normal centrada
-            aside.style.transform = "translateY(-50%)";
-        }
-    });
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            const asides = document.querySelectorAll(".aside-drawer");
+            const footer = document.querySelector("#footer-container") || document.querySelector("footer");
+
+            if (asides.length && footer) {
+                const footerRect = footer.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                const footerTop = footerRect.top;
+                asides.forEach((aside) => {
+                    if (footerTop < windowHeight) {
+                        const overlap = windowHeight - footerTop;
+                        aside.style.transform = `translateY(calc(-50% - ${overlap}px))`;
+                    } else {
+                        aside.style.transform = "translateY(-50%)";
+                    }
+                });
+            }
+            ticking = false;
+        });
+        ticking = true;
+    }
 });
 
 // Manejador global para captura de imágenes rotas (404 / Fallback)

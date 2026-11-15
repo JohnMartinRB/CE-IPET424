@@ -1,7 +1,7 @@
 {
-    "label": "v0.45.2-alpha",
-    "version": "0.45.2",
+    "label": "v0.47.0-alpha",
+    "version": "0.47.0",
     "phase": "alpha",
-    "type": "minor",
-    "date": "2026-11-13"
+    "type": "major",
+    "date": "2026-11-15"
 }
