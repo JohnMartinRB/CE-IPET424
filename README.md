@@ -103,7 +103,11 @@ El código está estructurado de forma modular y limpia. Para consultar el árbo
 ## 📜 Últimos Cambios y Actualizaciones
 
 - **`v0.47-alpha` (Actual)**
-    -   - Se personalizó la meta tag de Description para todas las subpáginas
+    - Ahora 404.html no tiene header ni footer
+    - Encima del título de 404 Error, ahora hay una nueva ilustración de la mascota
+        - Esta es la primera vez que aparece la mascota oficialmente en el sitio web
+    - El título de 404 Error ahora es más pequeño
+    - Se personalizó la meta tag de Description para todas las subpáginas
     - Los archivos `schedules.css`, `calendar.css`, `controls.css` y `members.css` se movieron a `css/modules/` y se quitaron de la importación de `styles.css`
     - Ahora se importan únicamente en las páginas donde se utilizan
     - Los archivos `schedules.js`, `calendar.js` y `members.js` se movieron a `js/modules/` y se quitaron de la importación de `styles.css`

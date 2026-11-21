@@ -15,6 +15,13 @@ Todos los cambios notables y parches de este proyecto son registrados en este ar
 - Se reworkeó la función para subir los asides al llegar al footer
 - Se actualizó humans y el árbol de carpetas
 
+### v0.47.1-alpha
+
+- Ahora 404.html no tiene header ni footer
+- Encima del título de 404 Error, ahora hay una nueva ilustración de la mascota
+    - Esta es la primera vez que aparece la mascota oficialmente en el sitio web
+- El título de 404 Error ahora es más pequeño
+
 ---
 
 ## v0.46.0-alpha - Versión Principal

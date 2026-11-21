@@ -8,7 +8,10 @@
 .error-code {
     margin: 0;
     color: var(--text-body);
-    font-size: var(--fs-4xl);
+    font-size: var(--fs-3xl);
+}
+.error-image {
+    height: 15rem;
 }
 .button-home {
     margin-top: var(--space-sm);
