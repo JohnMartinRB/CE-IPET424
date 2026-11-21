@@ -10,10 +10,9 @@ export async function initHolidaysWidget() {
     try {
         // Cargar el JSON de feriados
         const response = await fetch("data/holidays.json");
+
         if (!response.ok) throw new Error("No se pudo cargar holidays.json");
-        let holidaysData = await response.json();
-        // Corregir si el JSON viene dentro de una matriz anidada [[...]]
-        const holidays = Array.isArray(holidaysData[0]) ? holidaysData[0] : holidaysData;
+        const holidays = (await response.json()).items;
         const today = new Date();
         today.setHours(0, 0, 0, 0); // Limpiar horas para comparación limpia
         // Mapear y procesar fechas
@@ -74,7 +73,7 @@ export async function initDaysWidget() {
     try {
         const response = await fetch("data/days.json");
         if (!response.ok) throw new Error("No se pudo cargar days.json");
-        const daysList = await response.json();
+        const { items: daysList } = await response.json();
         if (!daysList || daysList.length === 0) {
             if (dayTitleContainer) dayTitleContainer.textContent = "Sin efemérides";
             dayTextContainer.textContent = "No hay registros disponibles para hoy.";
@@ -111,7 +110,7 @@ export async function initDailyQuoteWidget() {
     try {
         const response = await fetch("data/quotes.json");
         if (!response.ok) throw new Error("Failed to load quotes.json");
-        const quotesList = await response.json();
+        const { items: quotesList } = await response.json();
         if (!quotesList || quotesList.length === 0) {
             quoteTextContainer.textContent = "No quotes available at the moment.";
             return;
@@ -149,7 +148,7 @@ export async function initFactsWidget() {
     try {
         const response = await fetch("data/facts.json");
         if (!response.ok) throw new Error("No se pudo cargar facts.json");
-        factsList = await response.json();
+        factsList = (await response.json()).items;
         if (factsList.length > 0) {
             displayRandomFact();
             // Evento para el botón de Reroll

@@ -1,0 +1,209 @@
+backend:
+    name: github
+    repo: JohnMartinRB/CE-IPET424
+    branch: main
+    base_url: https://TU-WORKER.workers.dev
+    auth_endpoint: auth
+
+local_backend: true # solo para probar en tu PC; quitarlo antes del commit final
+
+publish_mode: editorial_workflow
+
+collections:
+    - name: contenido
+      label: Contenido del sitio
+      files:
+          - name: frases
+            label: Frases del día
+            file: data/quotes.json
+            format: json
+            fields:
+                - label: Frases
+                  name: items
+                  widget: list
+                  fields:
+                      - { label: Frase, name: quote, widget: text }
+                      - { label: Autor, name: author, widget: string }
+
+          - name: datos-curiosos
+            label: Datos curiosos
+            file: data/facts.json
+            format: json
+            fields:
+                - label: Datos
+                  name: items
+                  widget: list
+                  field: { label: Dato, name: dato, widget: text }
+
+          - name: efemerides
+            label: Efemérides
+            file: data/days.json
+            format: json
+            fields:
+                - label: Efemérides
+                  name: items
+                  widget: list
+                  fields:
+                      - {
+                            label: Fecha (MM-DD),
+                            name: fecha,
+                            widget: string,
+                            pattern: ['^\d{2}-\d{2}$', "Usá el formato MM-DD"],
+                        }
+                      - { label: Título, name: titulo, widget: string }
+                      - { label: Descripción, name: descripcion, widget: text }
+                      - { label: Tipo, name: tipo, widget: select, options: [nacional, mundial] }
+
+          - name: feriados
+            label: Feriados
+            file: data/holidays.json
+            format: json
+            fields:
+                - label: Feriados
+                  name: items
+                  widget: list
+                  fields:
+                      - {
+                            label: Fecha (AAAA-MM-DD),
+                            name: fecha,
+                            widget: string,
+                            pattern: ['^\d{4}-\d{2}-\d{2}$', "Usá el formato AAAA-MM-DD"],
+                        }
+                      - { label: Tipo, name: tipo, widget: select, options: [inamovible, trasladable, puente] }
+                      - { label: Nombre, name: nombre, widget: string }
+
+          - name: integrantes
+            label: Integrantes del Centro
+            file: data/members.json
+            format: json
+            fields:
+                - {
+                      label: Presidente,
+                      name: presidente,
+                      widget: object,
+                      fields:
+                          [
+                              { label: Nombre, name: nombre, widget: string },
+                              { label: Curso, name: curso, widget: string },
+                          ],
+                  }
+                - {
+                      label: Vicepresidente,
+                      name: vicepresidente,
+                      widget: object,
+                      fields:
+                          [
+                              { label: Nombre, name: nombre, widget: string },
+                              { label: Curso, name: curso, widget: string },
+                          ],
+                  }
+                - {
+                      label: Secretario general,
+                      name: sec-general,
+                      widget: object,
+                      fields:
+                          [
+                              { label: Nombre, name: nombre, widget: string },
+                              { label: Curso, name: curso, widget: string },
+                          ],
+                  }
+                - {
+                      label: Tesorero,
+                      name: tesorero,
+                      widget: object,
+                      fields:
+                          [
+                              { label: Nombre, name: nombre, widget: string },
+                              { label: Curso, name: curso, widget: string },
+                          ],
+                  }
+                - {
+                      label: Protesorero,
+                      name: protesorero,
+                      widget: object,
+                      fields:
+                          [
+                              { label: Nombre, name: nombre, widget: string },
+                              { label: Curso, name: curso, widget: string },
+                          ],
+                  }
+                - {
+                      label: Secretario de acción social,
+                      name: sec-accion-social,
+                      widget: object,
+                      fields:
+                          [
+                              { label: Nombre, name: nombre, widget: string },
+                              { label: Curso, name: curso, widget: string },
+                          ],
+                  }
+                - {
+                      label: Secretario de deporte,
+                      name: sec-deporte,
+                      widget: object,
+                      fields:
+                          [
+                              { label: Nombre, name: nombre, widget: string },
+                              { label: Curso, name: curso, widget: string },
+                          ],
+                  }
+                - {
+                      label: Secretario de RR. EE. y cultura,
+                      name: sec-rree-cultura,
+                      widget: object,
+                      fields:
+                          [
+                              { label: Nombre, name: nombre, widget: string },
+                              { label: Curso, name: curso, widget: string },
+                          ],
+                  }
+                - {
+                      label: Secretario estudiantil,
+                      name: sec-estudiantil,
+                      widget: object,
+                      fields:
+                          [
+                              { label: Nombre, name: nombre, widget: string },
+                              { label: Curso, name: curso, widget: string },
+                          ],
+                  }
+                - {
+                      label: Vocal 1,
+                      name: vocal-1,
+                      widget: object,
+                      fields:
+                          [
+                              { label: Nombre, name: nombre, widget: string },
+                              { label: Curso, name: curso, widget: string },
+                          ],
+                  }
+                - {
+                      label: Vocal 2,
+                      name: vocal-2,
+                      widget: object,
+                      fields:
+                          [
+                              { label: Nombre, name: nombre, widget: string },
+                              { label: Curso, name: curso, widget: string },
+                          ],
+                  }
+                - {
+                      label: Vocal 3,
+                      name: vocal-3,
+                      widget: object,
+                      fields:
+                          [
+                              { label: Nombre, name: nombre, widget: string },
+                              { label: Curso, name: curso, widget: string },
+                          ],
+                  }
+                - {
+                      label: Vocal 4,
+                      name: vocal-4,
+                      widget: object,
+                      fields:
+                          [
+                              { label: Nombre, name: nombre, widget: string },
+                              { label: Curso, name: curso, widget: string },
+                          ],
+                  }
